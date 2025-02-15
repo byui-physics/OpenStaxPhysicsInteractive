@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://pyscript.net/latest/pyscript.js"></script>
+</head>
+<body>
+    <h2>Interactive Python in HTML</h2>
+    
+    <p>Change <code>a</code> and click "Run".</p>
+    
+    <textarea id="code">a = 5
+print(f"The square of {a} is {a**2}")</textarea><br>
+    <button onclick="runPython()">Run</button>
+
+    <pre id="output"></pre>
+
+    <script>
+        function runPython() {
+            let code = document.getElementById("code").value;
+            pyodide.runPythonAsync(code).then(output => {
+                document.getElementById("output").textContent = output;
+            });
+        }
+
+        async function loadPyodideAndRun() {
+            window.pyodide = await loadPyodide();
+        }
+        loadPyodideAndRun();
+    </script>
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.22.1/full/pyodide.js"></script>
+</body>
+</html>
