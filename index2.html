@@ -63,7 +63,6 @@ plt.show()
           const micropip = pyodide.pyimport("micropip");
           await micropip.install('numpy');
           await micropip.install('matplotlib')
-          await micropip.install('ipython')
           
           let oldcanvases = document.querySelectorAll(`[id*="matplotlib_"]`);
           oldcanvases.forEach(element => element.remove()); // Remove each matched element
@@ -71,6 +70,8 @@ plt.show()
           outstr = pyodide.runPython(code.value);
           // output = pyodide.globals.get('y').toJs();
           addToOutput(outstr);
+          
+        
         
           
         } catch (err) {
@@ -78,16 +79,46 @@ plt.show()
         }
       }
       
-      async function getWaveY(x, t) {
-        if (!pyodideReady) return canvas.height / 2; // Default center before Pyodide loads
-        return await pyodide.runPythonAsync(`f(${x}, ${t})`);
-      }
       
 
       
     </script>
+    
+    <canvas id="waveCanvas"></canvas>
+    <script>
+        const canvas = document.getElementById("waveCanvas");
+        const ctx = canvas.getContext("2d");
 
+        canvas.width = window.innerWidth * 0.9;
+        canvas.height = 300;
 
+        let time = 0;
+
+        function drawWave() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.beginPath();
+            ctx.strokeStyle = "red";
+            ctx.lineWidth = 2;
+
+            let amplitude = 50; // Wave height
+            let frequency = 0.02; // Wave frequency
+            let speed = 0.05; // Wave speed
+            let yOffset = canvas.height / 2; // Center wave vertically
+
+            for (let x = 0; x < canvas.width; x++) {
+                let y = amplitude * Math.sin(frequency * x - time) + yOffset;
+                if (x === 0) ctx.moveTo(x, y);
+                else ctx.lineTo(x, y);
+            }
+
+            ctx.stroke();
+            time += speed;
+            requestAnimationFrame(drawWave);
+        }
+
+        drawWave();
+    </script>
+    
   </body>
 
 </html>
