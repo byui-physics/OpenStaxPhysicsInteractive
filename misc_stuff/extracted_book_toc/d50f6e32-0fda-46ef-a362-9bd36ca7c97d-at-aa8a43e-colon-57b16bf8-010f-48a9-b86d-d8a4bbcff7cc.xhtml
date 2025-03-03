@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:epub="http://www.idpf.org/2007/ops">
+<head><title>10.3
+ 
+Relating Angular and Translational Quantities
+</title>
+<link rel="stylesheet" type="text/css" href="the-style-epub.css"/>
+</head>
+<body>
+    <div data-type="page" id="page_57b16bf8-010f-48a9-b86d-d8a4bbcff7cc" class="chapter-content-module" data-book-content="true"><h2 data-type="document-title" data-sm="./modules/m58328/index.cnxml:3:1" id="page_57b16bf8-010f-48a9-b86d-d8a4bbcff7cc_titlecreatedbycookbook"><span class="os-number">10.3</span>
+<span class="os-divider"> </span>
+<span data-type="" class="os-text">Relating Angular and Translational Quantities</span>
+</h2>
+<div data-type="abstract" data-sm="./modules/m58328/index.cnxml:7:3"><h3 data-type="title">Learning Objectives</h3>
+<p id="para-00001" data-sm="./modules/m58328/index.cnxml:7:16">By the end of this section, you will be able to:</p>
+<ul id="list-00001" data-sm="./modules/m58328/index.cnxml:8:1">
+<li data-sm="./modules/m58328/index.cnxml:9:1">Given the linear kinematic equation, write the corresponding rotational kinematic equation</li>
+<li data-sm="./modules/m58328/index.cnxml:10:1">Calculate the linear distances, velocities, and accelerations of points on a rotating system given the angular velocities and accelerations</li>
+</ul>
+</div>
+
+<p id="fs-id1167134822340" data-sm="./modules/m58328/index.cnxml:16:1">In this section, we relate each of the rotational variables to the translational variables defined in <a href="d50f6e32-0fda-46ef-a362-9bd36ca7c97d-at-aa8a43e-colon-0987c7f8-4a2c-42c0-9cd6-ac68721e8e84.xhtml" data-sm="./modules/m58328/index.cnxml:16:133" data-page-slug="3-introduction" data-page-uuid="0987c7f8-4a2c-42c0-9cd6-ac68721e8e84" data-page-fragment="">Motion Along a Straight Line</a> and <a href="d50f6e32-0fda-46ef-a362-9bd36ca7c97d-at-aa8a43e-colon-305e881e-18f9-4ccd-b96d-e7a1c4db654d.xhtml" data-sm="./modules/m58328/index.cnxml:16:197" data-page-slug="4-introduction" data-page-uuid="305e881e-18f9-4ccd-b96d-e7a1c4db654d" data-page-fragment="">Motion in Two and Three Dimensions</a>. This will complete our ability to describe rigid-body rotations.</p>
+
+<section data-depth="1" id="fs-id1167134896279" data-sm="./modules/m58328/index.cnxml:17:1"><h3 data-type="title" data-sm="./modules/m58328/index.cnxml:18:1">Angular vs. Linear Variables</h3>
+<p id="fs-id1167134666142" data-sm="./modules/m58328/index.cnxml:19:1">In <a href="d50f6e32-0fda-46ef-a362-9bd36ca7c97d-at-aa8a43e-colon-4b1a90cd-dfdb-43de-88a9-a7b602314c24.xhtml" data-sm="./modules/m58328/index.cnxml:19:34" data-page-slug="10-1-rotational-variables" data-page-uuid="4b1a90cd-dfdb-43de-88a9-a7b602314c24" data-page-fragment="">Rotational Variables</a>, we introduced angular variables. If we compare the rotational definitions with the definitions of linear kinematic variables from <a href="d50f6e32-0fda-46ef-a362-9bd36ca7c97d-at-aa8a43e-colon-0987c7f8-4a2c-42c0-9cd6-ac68721e8e84.xhtml" data-sm="./modules/m58328/index.cnxml:19:217" data-page-slug="3-introduction" data-page-uuid="0987c7f8-4a2c-42c0-9cd6-ac68721e8e84" data-page-fragment="">Motion Along a Straight Line</a> and <a href="d50f6e32-0fda-46ef-a362-9bd36ca7c97d-at-aa8a43e-colon-305e881e-18f9-4ccd-b96d-e7a1c4db654d.xhtml" data-sm="./modules/m58328/index.cnxml:19:281" data-page-slug="4-introduction" data-page-uuid="305e881e-18f9-4ccd-b96d-e7a1c4db654d" data-page-fragment="">Motion in Two and Three Dimensions</a>, we find that there is a mapping of the linear variables to the rotational ones. Linear position, velocity, and acceleration have their rotational counterparts, as we can see when we write them side by side:</p>
+<div class="os-table"><table id="fs-id1167134892588" class="unnumbered" data-sm="./modules/m58328/index.cnxml:20:1" data-label=""><thead data-sm="./modules/m58328/index.cnxml:26:1">
+<tr data-sm="./modules/m58328/index.cnxml:27:1">
+<th scope="col"></th>
+<th data-valign="top" data-align="left" scope="col">Linear</th>
+<th data-valign="top" data-align="left" scope="col">Rotational</th>
+</tr>
+</thead>
+<tbody data-sm="./modules/m58328/index.cnxml:33:1">
+<tr data-sm="./modules/m58328/index.cnxml:34:1">
+<td data-valign="top" data-align="left">Position</td>
+<td data-valign="top" data-align="left"><em data-effect="italics" data-sm="./modules/m58328/index.cnxml:36:34">x</em></td>
+<td data-valign="top" data-align="left"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mi data-sm="./modules/m58328/index.cnxml:37:42">θ</mi></mrow>
+</semantics>
+</math>
+</td>
+</tr>
+<tr data-sm="./modules/m58328/index.cnxml:39:1">
+<td data-valign="top" data-align="left">Velocity</td>
+<td data-valign="top" data-align="left"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58328/index.cnxml:41:42"><mi data-sm="./modules/m58328/index.cnxml:41:50">v</mi><mo data-sm="./modules/m58328/index.cnxml:41:64">=</mo><mfrac data-sm="./modules/m58328/index.cnxml:41:78"><mrow data-sm="./modules/m58328/index.cnxml:41:87"><mi data-sm="./modules/m58328/index.cnxml:41:95">d</mi><mi data-sm="./modules/m58328/index.cnxml:41:109">x</mi></mrow>
+<mrow data-sm="./modules/m58328/index.cnxml:41:132"><mi data-sm="./modules/m58328/index.cnxml:41:140">d</mi><mi data-sm="./modules/m58328/index.cnxml:41:154">t</mi></mrow>
+</mfrac>
+</mrow>
+</mrow>
+</semantics>
+</math>
+</td>
+<td data-valign="top" data-align="left"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58328/index.cnxml:42:42"><mi data-sm="./modules/m58328/index.cnxml:42:50">ω</mi><mo data-sm="./modules/m58328/index.cnxml:42:64">=</mo><mfrac data-sm="./modules/m58328/index.cnxml:42:78"><mrow data-sm="./modules/m58328/index.cnxml:42:87"><mi data-sm="./modules/m58328/index.cnxml:42:95">d</mi><mi data-sm="./modules/m58328/index.cnxml:42:109">θ</mi></mrow>
+<mrow data-sm="./modules/m58328/index.cnxml:42:132"><mi data-sm="./modules/m58328/index.cnxml:42:140">d</mi><mi data-sm="./modules/m58328/index.cnxml:42:154">t</mi></mrow>
+</mfrac>
+</mrow>
+</mrow>
+</semantics>
+</math>
+</td>
+</tr>
+<tr data-sm="./modules/m58328/index.cnxml:44:1">
+<td data-valign="top" data-align="left">Acceleration</td>
+<td data-valign="top" data-align="left"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58328/index.cnxml:46:42"><mi data-sm="./modules/m58328/index.cnxml:46:50">a</mi><mo data-sm="./modules/m58328/index.cnxml:46:64">=</mo><mfrac data-sm="./modules/m58328/index.cnxml:46:78"><mrow data-sm="./modules/m58328/index.cnxml:46:87"><mi data-sm="./modules/m58328/index.cnxml:46:95">d</mi><mi data-sm="./modules/m58328/index.cnxml:46:109">v</mi></mrow>
+<mrow data-sm="./modules/m58328/index.cnxml:46:132"><mi data-sm="./modules/m58328/index.cnxml:46:140">d</mi><mi data-sm="./modules/m58328/index.cnxml:46:154">t</mi></mrow>
+</mfrac>
+</mrow>
+</mrow>
+</semantics>
+</math>
+</td>
+<td data-valign="top" data-align="left"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58328/index.cnxml:47:42"><mi data-sm="./modules/m58328/index.cnxml:47:50">α</mi><mo data-sm="./modules/m58328/index.cnxml:47:64">=</mo><mfrac data-sm="./modules/m58328/index.cnxml:47:78"><mrow data-sm="./modules/m58328/index.cnxml:47:87"><mi data-sm="./modules/m58328/index.cnxml:47:95">d</mi><mi data-sm="./modules/m58328/index.cnxml:47:109">ω</mi></mrow>
+<mrow data-sm="./modules/m58328/index.cnxml:47:132"><mi data-sm="./modules/m58328/index.cnxml:47:140">d</mi><mi data-sm="./modules/m58328/index.cnxml:47:154">t</mi></mrow>
+</mfrac>
+</mrow>
+</mrow>
+</semantics>
+</math>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p id="fs-id1167134564750" data-sm="./modules/m58328/index.cnxml:52:1">Let’s compare the linear and rotational variables individually. The linear variable of position has physical units of meters, whereas the angular position variable has dimensionless units of radians, as can be seen from the definition of <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58328/index.cnxml:52:277"><mi data-sm="./modules/m58328/index.cnxml:52:285">θ</mi><mo data-sm="./modules/m58328/index.cnxml:52:299">=</mo><mfrac data-sm="./modules/m58328/index.cnxml:52:313"><mi data-sm="./modules/m58328/index.cnxml:52:322">s</mi><mi data-sm="./modules/m58328/index.cnxml:52:336">r</mi></mfrac>
+</mrow>
+</mrow>
+</semantics>
+</math></span>, which is the ratio of two lengths. The linear velocity has units of m/s, and its counterpart, the angular velocity, has units of rad/s. In <a href="d50f6e32-0fda-46ef-a362-9bd36ca7c97d-at-aa8a43e-colon-4b1a90cd-dfdb-43de-88a9-a7b602314c24.xhtml" data-sm="./modules/m58328/index.cnxml:52:519" data-page-slug="10-1-rotational-variables" data-page-uuid="4b1a90cd-dfdb-43de-88a9-a7b602314c24" data-page-fragment="">Rotational Variables</a>, we saw in the case of circular motion that the linear tangential speed of a particle at a radius <em data-effect="italics" data-sm="./modules/m58328/index.cnxml:52:669">r</em> from the axis of rotation is related to the angular velocity by the relation <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58328/index.cnxml:52:794"><msub data-sm="./modules/m58328/index.cnxml:52:802"><mi data-sm="./modules/m58328/index.cnxml:52:810">v</mi><mtext data-sm="./modules/m58328/index.cnxml:52:824">t</mtext></msub><mo data-sm="./modules/m58328/index.cnxml:52:853">=</mo><mi data-sm="./modules/m58328/index.cnxml:52:867">r</mi><mi data-sm="./modules/m58328/index.cnxml:52:881">ω</mi></mrow>
+</mrow>
+</semantics>
+</math></span>. This could also apply to points on a rigid body rotating about a fixed axis. Here, we consider only circular motion. In circular motion, both uniform and nonuniform, there exists a centripetal acceleration (<a href="d50f6e32-0fda-46ef-a362-9bd36ca7c97d-at-aa8a43e-colon-305e881e-18f9-4ccd-b96d-e7a1c4db654d.xhtml" data-sm="./modules/m58328/index.cnxml:52:1122" data-page-slug="4-introduction" data-page-uuid="305e881e-18f9-4ccd-b96d-e7a1c4db654d" data-page-fragment="">Motion in Two and Three Dimensions</a>). The <span data-type="term" class="no-emphasis" id="term-00001" data-sm="./modules/m58328/index.cnxml:52:1194">centripetal acceleration</span> vector points inward from the particle executing circular motion toward the axis of rotation. The derivation of the magnitude of the centripetal acceleration is given in <a href="d50f6e32-0fda-46ef-a362-9bd36ca7c97d-at-aa8a43e-colon-305e881e-18f9-4ccd-b96d-e7a1c4db654d.xhtml" data-sm="./modules/m58328/index.cnxml:52:1438" data-page-slug="4-introduction" data-page-uuid="305e881e-18f9-4ccd-b96d-e7a1c4db654d" data-page-fragment="">Motion in Two and Three Dimensions</a>. From that derivation, the magnitude of the centripetal acceleration was found to be</p>
+<div data-type="equation" id="fs-id1167134491870" data-sm="./modules/m58328/index.cnxml:53:1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58328/index.cnxml:53:43"><msub data-sm="./modules/m58328/index.cnxml:53:51"><mi data-sm="./modules/m58328/index.cnxml:53:59">a</mi><mtext data-sm="./modules/m58328/index.cnxml:53:73">c</mtext></msub><mo data-sm="./modules/m58328/index.cnxml:53:102">=</mo><mfrac data-sm="./modules/m58328/index.cnxml:53:116"><mrow data-sm="./modules/m58328/index.cnxml:53:125"><msubsup data-sm="./modules/m58328/index.cnxml:53:133"><mi data-sm="./modules/m58328/index.cnxml:53:144">v</mi><mtext data-sm="./modules/m58328/index.cnxml:53:158">t</mtext><mn data-sm="./modules/m58328/index.cnxml:53:178">2</mn></msubsup></mrow>
+<mi data-sm="./modules/m58328/index.cnxml:53:213">r</mi></mfrac>
+<mo data-sm="./modules/m58328/index.cnxml:53:237">,</mo></mrow>
+</mrow>
+</semantics>
+</math>
+<div class="os-equation-number">
+  <span class="os-number">10.14</span>
+</div>
+</div>
+<p id="fs-id1167134537887" data-sm="./modules/m58328/index.cnxml:54:1">where <em data-effect="italics" data-sm="./modules/m58328/index.cnxml:54:37">r</em> is the radius of the circle.</p>
+<p id="fs-id1167134566099" data-sm="./modules/m58328/index.cnxml:55:1">Thus, in uniform circular motion when the angular velocity is constant and the angular acceleration is zero, we have a linear acceleration—that is, centripetal acceleration—since the tangential speed in <a href="#fs-id1167134491870" data-sm="./modules/m58328/index.cnxml:55:234" class="autogenerated-content">Equation 10.14</a> is a constant. If nonuniform circular motion is present, the rotating system has an angular acceleration, and we have both a linear centripetal acceleration that is changing (because <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58328/index.cnxml:55:464"><msub data-sm="./modules/m58328/index.cnxml:55:472"><mi data-sm="./modules/m58328/index.cnxml:55:480">v</mi><mtext data-sm="./modules/m58328/index.cnxml:55:494">t</mtext></msub></mrow>
+</mrow>
+</semantics>
+</math></span> is changing) as well as a linear <span data-type="term" class="no-emphasis" id="term-00002" data-sm="./modules/m58328/index.cnxml:55:575">tangential acceleration</span>. These relationships are shown in <a href="#CNX_UPhysics_10_03_Cent" data-sm="./modules/m58328/index.cnxml:55:682" class="autogenerated-content">Figure 10.14</a>, where we show the centripetal and tangential accelerations for uniform and nonuniform circular motion.</p>
+<div class="os-figure"><figure id="CNX_UPhysics_10_03_Cent" data-sm="./modules/m58328/index.cnxml:56:1">
+<span data-type="media" id="fs-id1167134946160" data-alt="Figure A illustrates uniform circular motion. The centripetal acceleration ac has its vector inward toward the axis of rotation. There is no tangential acceleration and v2 is equivalent to v1. Figure A illustrates nonuniform circular motion. The centripetal acceleration ac has its vector inward toward the axis of rotation. Tangential acceleration at is present and v2 is larger than v1." data-sm="./modules/m58328/index.cnxml:57:1">
+<img src="1f4cc41891e20a177fbcfe0740b3217ee80680d6.jpeg" data-media-type="image/jpeg" alt="Figure A illustrates uniform circular motion. The centripetal acceleration ac has its vector inward toward the axis of rotation. There is no tangential acceleration and v2 is equivalent to v1. Figure A illustrates nonuniform circular motion. The centripetal acceleration ac has its vector inward toward the axis of rotation. Tangential acceleration at is present and v2 is larger than v1." data-sm="./modules/m58328/index.cnxml:58:1"/>
+</span>
+
+</figure>
+<div class="os-caption-container">
+  <span class="os-title-label">Figure </span>
+<span class="os-number">10.14</span>
+
+
+
+  <span class="os-divider"> </span>
+  <span data-sm="./modules/m58328/index.cnxml:60:1" class="os-caption">(a) Uniform circular motion: The centripetal acceleration <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58328/index.cnxml:60:76"><msub data-sm="./modules/m58328/index.cnxml:60:84"><mi data-sm="./modules/m58328/index.cnxml:60:92">a</mi><mtext data-sm="./modules/m58328/index.cnxml:60:106">c</mtext></msub></mrow>
+</mrow>
+</semantics>
+</math> has its vector inward toward the axis of rotation. There is no tangential acceleration. (b) Nonuniform circular motion: An angular acceleration produces an inward centripetal acceleration that is changing in magnitude, plus a tangential acceleration <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58328/index.cnxml:60:412"><msub data-sm="./modules/m58328/index.cnxml:60:420"><mi data-sm="./modules/m58328/index.cnxml:60:428">a</mi><mtext data-sm="./modules/m58328/index.cnxml:60:442">t</mtext></msub></mrow>
+</mrow>
+</semantics>
+</math>.</span>
+</div>
+</div>
+<p id="fs-id1167134562076" data-sm="./modules/m58328/index.cnxml:62:1">The centripetal acceleration is due to the change in the direction of tangential velocity, whereas the tangential acceleration is due to any change in the magnitude of the tangential velocity. The tangential and centripetal acceleration vectors <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58328/index.cnxml:62:284"><msub data-sm="./modules/m58328/index.cnxml:62:292"><mrow data-sm="./modules/m58328/index.cnxml:62:300"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58328/index.cnxml:62:308"><mover accent="true" data-sm="./modules/m58328/index.cnxml:62:355"><mi data-sm="./modules/m58328/index.cnxml:62:378">a</mi><mo stretchy="false" data-sm="./modules/m58328/index.cnxml:62:392">→</mo></mover>
+</mstyle>
+</mrow><mrow data-sm="./modules/m58328/index.cnxml:62:453"><mtext data-sm="./modules/m58328/index.cnxml:62:461">t</mtext></mrow></msub></mrow>
+</mrow>
+</semantics>
+</math></span> and <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58328/index.cnxml:62:530"><msub data-sm="./modules/m58328/index.cnxml:62:538"><mrow data-sm="./modules/m58328/index.cnxml:62:546"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58328/index.cnxml:62:554"><mover accent="true" data-sm="./modules/m58328/index.cnxml:62:601"><mi data-sm="./modules/m58328/index.cnxml:62:624">a</mi><mo stretchy="false" data-sm="./modules/m58328/index.cnxml:62:638">→</mo></mover>
+</mstyle>
+</mrow><mrow data-sm="./modules/m58328/index.cnxml:62:699"><mtext data-sm="./modules/m58328/index.cnxml:62:707">c</mtext></mrow></msub></mrow>
+</mrow>
+</semantics>
+</math></span> are always perpendicular to each other, as seen in <a href="#CNX_UPhysics_10_03_Cent" data-sm="./modules/m58328/index.cnxml:62:815" class="autogenerated-content">Figure 10.14</a>. To complete this description, we can assign a <span data-type="term" id="term-00003" data-sm="./modules/m58328/index.cnxml:62:906">total linear acceleration</span> vector to a point on a rotating rigid body or a particle executing circular motion at a radius <em data-effect="italics" data-sm="./modules/m58328/index.cnxml:62:1056">r</em> from a fixed axis. The total linear acceleration vector <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58328/index.cnxml:62:1160"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58328/index.cnxml:62:1168"><mover accent="true" data-sm="./modules/m58328/index.cnxml:62:1215"><mi data-sm="./modules/m58328/index.cnxml:62:1238">a</mi><mo stretchy="false" data-sm="./modules/m58328/index.cnxml:62:1252">→</mo></mover>
+</mstyle>
+</mrow>
+</mrow>
+</semantics>
+</math></span> is the vector sum of the centripetal and tangential accelerations,</p>
+<div data-type="note" id="fs-id1167134867303" class="equation-callout" data-sm="./modules/m58328/index.cnxml:63:1">
+<div data-type="equation" id="fs-id1167134832091" data-sm="./modules/m58328/index.cnxml:64:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58328/index.cnxml:64:51"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58328/index.cnxml:64:59"><mover accent="true" data-sm="./modules/m58328/index.cnxml:64:106"><mi data-sm="./modules/m58328/index.cnxml:64:129">a</mi><mo stretchy="false" data-sm="./modules/m58328/index.cnxml:64:143">→</mo></mover>
+</mstyle>
+<mo data-sm="./modules/m58328/index.cnxml:64:195">=</mo><msub data-sm="./modules/m58328/index.cnxml:64:209"><mrow data-sm="./modules/m58328/index.cnxml:64:217"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58328/index.cnxml:64:225"><mover accent="true" data-sm="./modules/m58328/index.cnxml:64:272"><mi data-sm="./modules/m58328/index.cnxml:64:295">a</mi><mo stretchy="false" data-sm="./modules/m58328/index.cnxml:64:309">→</mo></mover>
+</mstyle>
+</mrow><mrow data-sm="./modules/m58328/index.cnxml:64:370"><mtext data-sm="./modules/m58328/index.cnxml:64:378">c</mtext></mrow></msub><mo data-sm="./modules/m58328/index.cnxml:64:416">+</mo><msub data-sm="./modules/m58328/index.cnxml:64:430"><mrow data-sm="./modules/m58328/index.cnxml:64:438"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58328/index.cnxml:64:446"><mover accent="true" data-sm="./modules/m58328/index.cnxml:64:493"><mi data-sm="./modules/m58328/index.cnxml:64:516">a</mi><mo stretchy="false" data-sm="./modules/m58328/index.cnxml:64:530">→</mo></mover>
+</mstyle>
+</mrow><mrow data-sm="./modules/m58328/index.cnxml:64:591"><mtext data-sm="./modules/m58328/index.cnxml:64:599">t</mtext></mrow></msub><mo data-sm="./modules/m58328/index.cnxml:64:637">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+<div class="os-equation-number">
+  <span class="os-number">10.15</span>
+</div>
+</div>
+</div>
+<p id="fs-id1167134439710" data-sm="./modules/m58328/index.cnxml:66:1">The total linear acceleration vector in the case of nonuniform circular motion points at an angle between the centripetal and tangential acceleration vectors, as shown in <a href="#CNX_UPhysics_10_03_TotAcc" data-sm="./modules/m58328/index.cnxml:66:202" class="autogenerated-content">Figure 10.15</a>. Since <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58328/index.cnxml:66:263"><msub data-sm="./modules/m58328/index.cnxml:66:271"><mrow data-sm="./modules/m58328/index.cnxml:66:279"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58328/index.cnxml:66:287"><mover accent="true" data-sm="./modules/m58328/index.cnxml:66:334"><mi data-sm="./modules/m58328/index.cnxml:66:357">a</mi><mo stretchy="false" data-sm="./modules/m58328/index.cnxml:66:371">→</mo></mover>
+</mstyle>
+</mrow><mrow data-sm="./modules/m58328/index.cnxml:66:432"><mtext data-sm="./modules/m58328/index.cnxml:66:440">c</mtext></mrow></msub><mo data-sm="./modules/m58328/index.cnxml:66:478">⊥</mo><msub data-sm="./modules/m58328/index.cnxml:66:492"><mrow data-sm="./modules/m58328/index.cnxml:66:500"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58328/index.cnxml:66:508"><mover accent="true" data-sm="./modules/m58328/index.cnxml:66:555"><mi data-sm="./modules/m58328/index.cnxml:66:578">a</mi><mo stretchy="false" data-sm="./modules/m58328/index.cnxml:66:592">→</mo></mover>
+</mstyle>
+</mrow><mrow data-sm="./modules/m58328/index.cnxml:66:653"><mtext data-sm="./modules/m58328/index.cnxml:66:661">t</mtext></mrow></msub></mrow>
+</mrow>
+</semantics>
+</math></span>, the magnitude of the total linear acceleration is</p>
+<div data-type="equation" id="fs-id1167134712088" class="unnumbered" data-sm="./modules/m58328/index.cnxml:67:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58328/index.cnxml:67:70"><mrow data-sm="./modules/m58328/index.cnxml:67:78"><mo data-sm="./modules/m58328/index.cnxml:67:86">|</mo><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58328/index.cnxml:67:100"><mover accent="true" data-sm="./modules/m58328/index.cnxml:67:147"><mi data-sm="./modules/m58328/index.cnxml:67:170">a</mi><mo stretchy="false" data-sm="./modules/m58328/index.cnxml:67:184">→</mo></mover>
+</mstyle>
+<mo data-sm="./modules/m58328/index.cnxml:67:236">|</mo></mrow>
+<mo data-sm="./modules/m58328/index.cnxml:67:259">=</mo><msqrt data-sm="./modules/m58328/index.cnxml:67:273"><mrow data-sm="./modules/m58328/index.cnxml:67:282"><msubsup data-sm="./modules/m58328/index.cnxml:67:290"><mi data-sm="./modules/m58328/index.cnxml:67:301">a</mi><mtext data-sm="./modules/m58328/index.cnxml:67:315">c</mtext><mn data-sm="./modules/m58328/index.cnxml:67:335">2</mn></msubsup><mo data-sm="./modules/m58328/index.cnxml:67:361">+</mo><msubsup data-sm="./modules/m58328/index.cnxml:67:375"><mi data-sm="./modules/m58328/index.cnxml:67:386">a</mi><mtext data-sm="./modules/m58328/index.cnxml:67:400">t</mtext><mn data-sm="./modules/m58328/index.cnxml:67:420">2</mn></msubsup></mrow>
+</msqrt>
+<mo data-sm="./modules/m58328/index.cnxml:67:465">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1167134717859" data-sm="./modules/m58328/index.cnxml:68:1">Note that if the angular acceleration is zero, the total linear acceleration is equal to the centripetal acceleration.</p>
+<div class="os-figure"><figure id="CNX_UPhysics_10_03_TotAcc" data-sm="./modules/m58328/index.cnxml:69:1">
+<span data-type="media" id="fs-id1167134674871" data-alt="Figure shows a particle executing circular motion. The vector ac is at an angle between the vectors a and at." data-sm="./modules/m58328/index.cnxml:70:1">
+<img src="0d1c055e2d669ef6a63a850a6ec1f2777b2f1172.jpeg" data-media-type="image/jpeg" alt="Figure shows a particle executing circular motion. The vector ac is at an angle between the vectors a and at." data-sm="./modules/m58328/index.cnxml:71:1"/>
+</span>
+
+</figure>
+<div class="os-caption-container">
+  <span class="os-title-label">Figure </span>
+<span class="os-number">10.15</span>
+
+
+
+  <span class="os-divider"> </span>
+  <span data-sm="./modules/m58328/index.cnxml:73:1" class="os-caption">A particle is executing circular motion and has an angular acceleration. The total linear acceleration of the particle is the vector sum of the centripetal acceleration and tangential acceleration vectors. The total linear acceleration vector is at an angle in between the centripetal and tangential accelerations.</span>
+</div>
+</div>
+</section>
+
+<section data-depth="1" id="fs-id1167134642294" data-sm="./modules/m58328/index.cnxml:76:1"><h3 data-type="title" data-sm="./modules/m58328/index.cnxml:77:1">Relationships between Rotational and Translational Motion</h3>
+<p id="fs-id1167134458257" data-sm="./modules/m58328/index.cnxml:78:1">We can look at two relationships between rotational and translational motion.</p>
+<ol id="fs-id1167134451842" type="1" data-sm="./modules/m58328/index.cnxml:79:1">
+<li data-sm="./modules/m58328/index.cnxml:80:1">Generally speaking, the linear kinematic equations have their rotational counterparts. <a href="#fs-id1167134644463" data-sm="./modules/m58328/index.cnxml:80:94" class="autogenerated-content">Table 10.2</a> lists the four linear kinematic equations and the corresponding rotational counterpart. The two sets of equations look similar to each other, but describe two different physical situations, that is, rotation and translation.<span data-type="newline" data-sm="./modules/m58328/index.cnxml:80:357"><br/></span>
+<div class="os-table"><table id="fs-id1167134644463" data-sm="./modules/m58328/index.cnxml:81:1"><thead data-sm="./modules/m58328/index.cnxml:86:1">
+<tr data-sm="./modules/m58328/index.cnxml:87:1">
+<th data-valign="top" data-align="left" scope="col">Rotational</th>
+<th data-valign="top" data-align="left" scope="col">Translational</th>
+</tr>
+</thead>
+<tbody data-sm="./modules/m58328/index.cnxml:92:1">
+<tr data-sm="./modules/m58328/index.cnxml:93:1">
+<td data-valign="top" data-align="left"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58328/index.cnxml:94:42"><msub data-sm="./modules/m58328/index.cnxml:94:50"><mi data-sm="./modules/m58328/index.cnxml:94:58">θ</mi><mtext data-sm="./modules/m58328/index.cnxml:94:72">f</mtext></msub><mo data-sm="./modules/m58328/index.cnxml:94:101">=</mo><msub data-sm="./modules/m58328/index.cnxml:94:115"><mi data-sm="./modules/m58328/index.cnxml:94:123">θ</mi><mn data-sm="./modules/m58328/index.cnxml:94:137">0</mn></msub><mo data-sm="./modules/m58328/index.cnxml:94:160">+</mo><mover accent="true" data-sm="./modules/m58328/index.cnxml:94:174"><mi data-sm="./modules/m58328/index.cnxml:94:197">ω</mi><mo data-sm="./modules/m58328/index.cnxml:94:211">–</mo></mover>
+<mi data-sm="./modules/m58328/index.cnxml:94:235">t</mi></mrow>
+</mrow>
+</semantics>
+</math>
+</td>
+<td data-valign="top" data-align="left"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58328/index.cnxml:95:42"><mi data-sm="./modules/m58328/index.cnxml:95:50">x</mi><mo data-sm="./modules/m58328/index.cnxml:95:64">=</mo><msub data-sm="./modules/m58328/index.cnxml:95:78"><mi data-sm="./modules/m58328/index.cnxml:95:86">x</mi><mn data-sm="./modules/m58328/index.cnxml:95:100">0</mn></msub><mo data-sm="./modules/m58328/index.cnxml:95:123">+</mo><mover accent="true" data-sm="./modules/m58328/index.cnxml:95:137"><mi data-sm="./modules/m58328/index.cnxml:95:160">v</mi><mo data-sm="./modules/m58328/index.cnxml:95:174">–</mo></mover>
+<mi data-sm="./modules/m58328/index.cnxml:95:198">t</mi></mrow>
+</mrow>
+</semantics>
+</math>
+</td>
+</tr>
+<tr data-sm="./modules/m58328/index.cnxml:97:1">
+<td data-valign="top" data-align="left"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58328/index.cnxml:98:42"><msub data-sm="./modules/m58328/index.cnxml:98:50"><mi data-sm="./modules/m58328/index.cnxml:98:58">ω</mi><mtext data-sm="./modules/m58328/index.cnxml:98:72">f</mtext></msub><mo data-sm="./modules/m58328/index.cnxml:98:101">=</mo><msub data-sm="./modules/m58328/index.cnxml:98:115"><mi data-sm="./modules/m58328/index.cnxml:98:123">ω</mi><mn data-sm="./modules/m58328/index.cnxml:98:137">0</mn></msub><mo data-sm="./modules/m58328/index.cnxml:98:160">+</mo><mi data-sm="./modules/m58328/index.cnxml:98:174">α</mi><mi data-sm="./modules/m58328/index.cnxml:98:188">t</mi></mrow>
+</mrow>
+</semantics>
+</math>
+</td>
+<td data-valign="top" data-align="left"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58328/index.cnxml:99:42"><msub data-sm="./modules/m58328/index.cnxml:99:50"><mi data-sm="./modules/m58328/index.cnxml:99:58">v</mi><mtext data-sm="./modules/m58328/index.cnxml:99:72">f</mtext></msub><mo data-sm="./modules/m58328/index.cnxml:99:101">=</mo><msub data-sm="./modules/m58328/index.cnxml:99:115"><mi data-sm="./modules/m58328/index.cnxml:99:123">v</mi><mn data-sm="./modules/m58328/index.cnxml:99:137">0</mn></msub><mo data-sm="./modules/m58328/index.cnxml:99:160">+</mo><mi data-sm="./modules/m58328/index.cnxml:99:174">a</mi><mi data-sm="./modules/m58328/index.cnxml:99:188">t</mi></mrow>
+</mrow>
+</semantics>
+</math>
+</td>
+</tr>
+<tr data-sm="./modules/m58328/index.cnxml:101:1">
+<td data-valign="top" data-align="left"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58328/index.cnxml:102:42"><msub data-sm="./modules/m58328/index.cnxml:102:50"><mi data-sm="./modules/m58328/index.cnxml:102:58">θ</mi><mtext data-sm="./modules/m58328/index.cnxml:102:72">f</mtext></msub><mo data-sm="./modules/m58328/index.cnxml:102:101">=</mo><msub data-sm="./modules/m58328/index.cnxml:102:115"><mi data-sm="./modules/m58328/index.cnxml:102:123">θ</mi><mn data-sm="./modules/m58328/index.cnxml:102:137">0</mn></msub><mo data-sm="./modules/m58328/index.cnxml:102:160">+</mo><msub data-sm="./modules/m58328/index.cnxml:102:174"><mi data-sm="./modules/m58328/index.cnxml:102:182">ω</mi><mn data-sm="./modules/m58328/index.cnxml:102:196">0</mn></msub><mi data-sm="./modules/m58328/index.cnxml:102:219">t</mi><mo data-sm="./modules/m58328/index.cnxml:102:233">+</mo><mfrac data-sm="./modules/m58328/index.cnxml:102:247"><mn data-sm="./modules/m58328/index.cnxml:102:256">1</mn><mn data-sm="./modules/m58328/index.cnxml:102:270">2</mn></mfrac>
+<mi data-sm="./modules/m58328/index.cnxml:102:294">α</mi><msup data-sm="./modules/m58328/index.cnxml:102:308"><mi data-sm="./modules/m58328/index.cnxml:102:316">t</mi><mn data-sm="./modules/m58328/index.cnxml:102:330">2</mn></msup></mrow>
+</mrow>
+</semantics>
+</math>
+</td>
+<td data-valign="top" data-align="left"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58328/index.cnxml:103:42"><msub data-sm="./modules/m58328/index.cnxml:103:50"><mi data-sm="./modules/m58328/index.cnxml:103:58">x</mi><mtext data-sm="./modules/m58328/index.cnxml:103:72">f</mtext></msub><mo data-sm="./modules/m58328/index.cnxml:103:101">=</mo><msub data-sm="./modules/m58328/index.cnxml:103:115"><mi data-sm="./modules/m58328/index.cnxml:103:123">x</mi><mn data-sm="./modules/m58328/index.cnxml:103:137">0</mn></msub><mo data-sm="./modules/m58328/index.cnxml:103:160">+</mo><msub data-sm="./modules/m58328/index.cnxml:103:174"><mi data-sm="./modules/m58328/index.cnxml:103:182">v</mi><mn data-sm="./modules/m58328/index.cnxml:103:196">0</mn></msub><mi data-sm="./modules/m58328/index.cnxml:103:219">t</mi><mo data-sm="./modules/m58328/index.cnxml:103:233">+</mo><mfrac data-sm="./modules/m58328/index.cnxml:103:247"><mn data-sm="./modules/m58328/index.cnxml:103:256">1</mn><mn data-sm="./modules/m58328/index.cnxml:103:270">2</mn></mfrac>
+<mi data-sm="./modules/m58328/index.cnxml:103:294">a</mi><msup data-sm="./modules/m58328/index.cnxml:103:308"><mi data-sm="./modules/m58328/index.cnxml:103:316">t</mi><mn data-sm="./modules/m58328/index.cnxml:103:330">2</mn></msup></mrow>
+</mrow>
+</semantics>
+</math>
+</td>
+</tr>
+<tr data-sm="./modules/m58328/index.cnxml:105:1">
+<td data-valign="top" data-align="left"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58328/index.cnxml:106:42"><msubsup data-sm="./modules/m58328/index.cnxml:106:50"><mi data-sm="./modules/m58328/index.cnxml:106:61">ω</mi><mtext data-sm="./modules/m58328/index.cnxml:106:75">f</mtext><mn data-sm="./modules/m58328/index.cnxml:106:95">2</mn></msubsup><mo data-sm="./modules/m58328/index.cnxml:106:121">=</mo><msubsup data-sm="./modules/m58328/index.cnxml:106:135"><mi data-sm="./modules/m58328/index.cnxml:106:146">ω</mi><mn data-sm="./modules/m58328/index.cnxml:106:160">0</mn><mn data-sm="./modules/m58328/index.cnxml:106:174">2</mn></msubsup><mo data-sm="./modules/m58328/index.cnxml:106:200">+</mo><mn data-sm="./modules/m58328/index.cnxml:106:214">2</mn><mi data-sm="./modules/m58328/index.cnxml:106:228">α</mi><mo stretchy="false" data-sm="./modules/m58328/index.cnxml:106:242">(</mo><mtext data-sm="./modules/m58328/index.cnxml:106:273">Δ</mtext><mi data-sm="./modules/m58328/index.cnxml:106:293">θ</mi><mo stretchy="false" data-sm="./modules/m58328/index.cnxml:106:307">)</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</td>
+<td data-valign="top" data-align="left"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58328/index.cnxml:107:42"><msubsup data-sm="./modules/m58328/index.cnxml:107:50"><mi data-sm="./modules/m58328/index.cnxml:107:61">v</mi><mtext data-sm="./modules/m58328/index.cnxml:107:75">f</mtext><mn data-sm="./modules/m58328/index.cnxml:107:95">2</mn></msubsup><mo data-sm="./modules/m58328/index.cnxml:107:121">=</mo><msubsup data-sm="./modules/m58328/index.cnxml:107:135"><mi data-sm="./modules/m58328/index.cnxml:107:146">v</mi><mn data-sm="./modules/m58328/index.cnxml:107:160">0</mn><mn data-sm="./modules/m58328/index.cnxml:107:174">2</mn></msubsup><mo data-sm="./modules/m58328/index.cnxml:107:200">+</mo><mn data-sm="./modules/m58328/index.cnxml:107:214">2</mn><mi data-sm="./modules/m58328/index.cnxml:107:228">a</mi><mo stretchy="false" data-sm="./modules/m58328/index.cnxml:107:242">(</mo><mtext data-sm="./modules/m58328/index.cnxml:107:273">Δ</mtext><mi data-sm="./modules/m58328/index.cnxml:107:293">x</mi><mo stretchy="false" data-sm="./modules/m58328/index.cnxml:107:307">)</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="os-caption-container">
+  <span class="os-title-label">Table </span>
+  <span class="os-number">10.2</span>
+  <span class="os-divider"> </span>
+<span class="os-title" data-type="title">Rotational and Translational Kinematic Equations</span>
+
+  <span class="os-divider"> </span>
+</div>
+</div></li>
+<li data-sm="./modules/m58328/index.cnxml:112:1">The second correspondence has to do with relating linear and rotational variables in the special case of circular motion. This is shown in <a href="#fs-id1167134477583" data-sm="./modules/m58328/index.cnxml:112:146" class="autogenerated-content">Table 10.3</a>, where in the third column, we have listed the connecting equation that relates the linear variable to the rotational variable. The rotational variables of angular velocity and acceleration have subscripts that indicate their definition in circular motion.<span data-type="newline" data-sm="./modules/m58328/index.cnxml:112:441"><br/></span>
+<div class="os-table"><table id="fs-id1167134477583" data-sm="./modules/m58328/index.cnxml:113:1"><thead data-sm="./modules/m58328/index.cnxml:119:1">
+<tr data-sm="./modules/m58328/index.cnxml:120:1">
+<th data-valign="top" data-align="left" scope="col">Rotational</th>
+<th data-valign="top" data-align="left" scope="col">Translational</th>
+<th data-valign="top" data-align="left" scope="col">Relationship (<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58328/index.cnxml:123:56"><mi data-sm="./modules/m58328/index.cnxml:123:64">r</mi><mo data-sm="./modules/m58328/index.cnxml:123:78">=</mo><mtext data-sm="./modules/m58328/index.cnxml:123:92">radius</mtext></mrow>
+</mrow>
+</semantics>
+</math>
+)</th>
+</tr>
+</thead>
+<tbody data-sm="./modules/m58328/index.cnxml:126:1">
+<tr data-sm="./modules/m58328/index.cnxml:127:1">
+<td data-valign="top" data-align="left"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mi data-sm="./modules/m58328/index.cnxml:128:42">θ</mi></mrow>
+</semantics>
+</math>
+</td>
+<td data-valign="top" data-align="left"><em data-effect="italics" data-sm="./modules/m58328/index.cnxml:129:34">s</em></td>
+<td data-valign="top" data-align="left"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58328/index.cnxml:130:42"><mi data-sm="./modules/m58328/index.cnxml:130:50">θ</mi><mo data-sm="./modules/m58328/index.cnxml:130:64">=</mo><mfrac data-sm="./modules/m58328/index.cnxml:130:78"><mi data-sm="./modules/m58328/index.cnxml:130:87">s</mi><mi data-sm="./modules/m58328/index.cnxml:130:101">r</mi></mfrac>
+</mrow>
+</mrow>
+</semantics>
+</math>
+</td>
+</tr>
+<tr data-sm="./modules/m58328/index.cnxml:132:1">
+<td data-valign="top" data-align="left"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mi data-sm="./modules/m58328/index.cnxml:133:42">ω</mi></mrow>
+</semantics>
+</math>
+</td>
+<td data-valign="top" data-align="left"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58328/index.cnxml:134:42"><msub data-sm="./modules/m58328/index.cnxml:134:50"><mi data-sm="./modules/m58328/index.cnxml:134:58">v</mi><mtext data-sm="./modules/m58328/index.cnxml:134:72">t</mtext></msub></mrow>
+</mrow>
+</semantics>
+</math>
+</td>
+<td data-valign="top" data-align="left"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58328/index.cnxml:135:42"><mi data-sm="./modules/m58328/index.cnxml:135:50">ω</mi><mo data-sm="./modules/m58328/index.cnxml:135:64">=</mo><mfrac data-sm="./modules/m58328/index.cnxml:135:78"><mrow data-sm="./modules/m58328/index.cnxml:135:87"><msub data-sm="./modules/m58328/index.cnxml:135:95"><mi data-sm="./modules/m58328/index.cnxml:135:103">v</mi><mtext data-sm="./modules/m58328/index.cnxml:135:117">t</mtext></msub></mrow>
+<mi data-sm="./modules/m58328/index.cnxml:135:155">r</mi></mfrac>
+</mrow>
+</mrow>
+</semantics>
+</math>
+</td>
+</tr>
+<tr data-sm="./modules/m58328/index.cnxml:137:1">
+<td data-valign="top" data-align="left"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mi data-sm="./modules/m58328/index.cnxml:138:42">α</mi></mrow>
+</semantics>
+</math>
+</td>
+<td data-valign="top" data-align="left"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58328/index.cnxml:139:42"><msub data-sm="./modules/m58328/index.cnxml:139:50"><mi data-sm="./modules/m58328/index.cnxml:139:58">a</mi><mtext data-sm="./modules/m58328/index.cnxml:139:72">t</mtext></msub></mrow>
+</mrow>
+</semantics>
+</math>
+</td>
+<td data-valign="top" data-align="left"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58328/index.cnxml:140:42"><mi data-sm="./modules/m58328/index.cnxml:140:50">α</mi><mo data-sm="./modules/m58328/index.cnxml:140:64">=</mo><mfrac data-sm="./modules/m58328/index.cnxml:140:78"><mrow data-sm="./modules/m58328/index.cnxml:140:87"><msub data-sm="./modules/m58328/index.cnxml:140:95"><mi data-sm="./modules/m58328/index.cnxml:140:103">a</mi><mtext data-sm="./modules/m58328/index.cnxml:140:117">t</mtext></msub></mrow>
+<mi data-sm="./modules/m58328/index.cnxml:140:155">r</mi></mfrac>
+</mrow>
+</mrow>
+</semantics>
+</math>
+</td>
+</tr>
+<tr data-sm="./modules/m58328/index.cnxml:142:1">
+<td data-valign="top" data-align="left">&#160;</td>
+<td data-valign="top" data-align="left"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58328/index.cnxml:144:42"><msub data-sm="./modules/m58328/index.cnxml:144:50"><mi data-sm="./modules/m58328/index.cnxml:144:58">a</mi><mtext data-sm="./modules/m58328/index.cnxml:144:72">c</mtext></msub></mrow>
+</mrow>
+</semantics>
+</math>
+</td>
+<td data-valign="top" data-align="left"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58328/index.cnxml:145:42"><msub data-sm="./modules/m58328/index.cnxml:145:50"><mi data-sm="./modules/m58328/index.cnxml:145:58">a</mi><mtext data-sm="./modules/m58328/index.cnxml:145:72">c</mtext></msub><mo data-sm="./modules/m58328/index.cnxml:145:101">=</mo><mfrac data-sm="./modules/m58328/index.cnxml:145:115"><mrow data-sm="./modules/m58328/index.cnxml:145:124"><msubsup data-sm="./modules/m58328/index.cnxml:145:132"><mi data-sm="./modules/m58328/index.cnxml:145:143">v</mi><mtext data-sm="./modules/m58328/index.cnxml:145:157">t</mtext><mn data-sm="./modules/m58328/index.cnxml:145:177">2</mn></msubsup></mrow>
+<mi data-sm="./modules/m58328/index.cnxml:145:212">r</mi></mfrac>
+</mrow>
+</mrow>
+</semantics>
+</math>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="os-caption-container">
+  <span class="os-title-label">Table </span>
+  <span class="os-number">10.3</span>
+  <span class="os-divider"> </span>
+<span class="os-title" data-type="title">Rotational and Translational Quantities: Circular Motion</span>
+
+  <span class="os-divider"> </span>
+</div>
+</div></li>
+</ol>
+<div data-type="example" id="fs-id1167134780548" data-sm="./modules/m58328/index.cnxml:151:1"><h3 class="os-title">
+  <span class="os-title-label">Example </span>
+  <span class="os-number">10.7</span>
+  <span class="os-divider"> </span>
+</h3>
+<div class="body">
+<p id="fs-id1167134871885" data-sm="./modules/m58328/index.cnxml:152:1"></p>
+<h4 data-type="title" data-sm="./modules/m58328/index.cnxml:152:31">Linear Acceleration of a Centrifuge</h4>
+A centrifuge has a radius of 20 cm and accelerates from a maximum rotation rate of 10,000 rpm to rest in 30 seconds under a constant angular acceleration. It is rotating counterclockwise. What is the magnitude of the total acceleration of a point at the tip of the centrifuge at <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58328/index.cnxml:153:288"><mi data-sm="./modules/m58328/index.cnxml:153:296">t</mi><mo data-sm="./modules/m58328/index.cnxml:153:310">=</mo><mn data-sm="./modules/m58328/index.cnxml:153:324">29.0</mn><mtext data-sm="./modules/m58328/index.cnxml:153:341">s?</mtext></mrow>
+</mrow>
+</semantics>
+</math></span> What is the direction of the total acceleration vector?
+<p id="fs-id1167134944382" data-sm="./modules/m58328/index.cnxml:154:1"></p>
+<h4 data-type="title" data-sm="./modules/m58328/index.cnxml:154:31">Strategy</h4>
+With the information given, we can calculate the angular acceleration, which then will allow us to find the tangential acceleration. We can find the centripetal acceleration at <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58328/index.cnxml:155:186"><mi data-sm="./modules/m58328/index.cnxml:155:194">t</mi><mo data-sm="./modules/m58328/index.cnxml:155:208">=</mo><mn data-sm="./modules/m58328/index.cnxml:155:222">0</mn></mrow>
+</mrow>
+</semantics>
+</math></span> by calculating the tangential speed at this time. With the magnitudes of the accelerations, we can calculate the total linear acceleration. From the description of the rotation in the problem, we can sketch the direction of the total acceleration vector.
+<p id="fs-id1167134867992" data-sm="./modules/m58328/index.cnxml:156:1"></p>
+<h4 data-type="title" data-sm="./modules/m58328/index.cnxml:156:31">Solution</h4>
+The angular acceleration is
+<div data-type="equation" id="fs-id1167134652348" class="unnumbered" data-sm="./modules/m58328/index.cnxml:158:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58328/index.cnxml:158:70"><mi data-sm="./modules/m58328/index.cnxml:158:78">α</mi><mo data-sm="./modules/m58328/index.cnxml:158:92">=</mo><mfrac data-sm="./modules/m58328/index.cnxml:158:106"><mrow data-sm="./modules/m58328/index.cnxml:158:115"><mi data-sm="./modules/m58328/index.cnxml:158:123">ω</mi><mo data-sm="./modules/m58328/index.cnxml:158:137">−</mo><msub data-sm="./modules/m58328/index.cnxml:158:151"><mi data-sm="./modules/m58328/index.cnxml:158:159">ω</mi><mn data-sm="./modules/m58328/index.cnxml:158:173">0</mn></msub></mrow>
+<mi data-sm="./modules/m58328/index.cnxml:158:205">t</mi></mfrac>
+<mo data-sm="./modules/m58328/index.cnxml:158:229">=</mo><mfrac data-sm="./modules/m58328/index.cnxml:158:243"><mrow data-sm="./modules/m58328/index.cnxml:158:252"><mn data-sm="./modules/m58328/index.cnxml:158:260">0</mn><mo data-sm="./modules/m58328/index.cnxml:158:274">−</mo><mrow data-sm="./modules/m58328/index.cnxml:158:288"><mrow data-sm="./modules/m58328/index.cnxml:158:296"><mo stretchy="false" data-sm="./modules/m58328/index.cnxml:158:304">(</mo><mn data-sm="./modules/m58328/index.cnxml:158:335">1.0</mn><mspace width="0.2em" data-sm="./modules/m58328/index.cnxml:158:351"/><mo data-sm="./modules/m58328/index.cnxml:158:376">×</mo><mspace width="0.2em" data-sm="./modules/m58328/index.cnxml:158:390"/><msup data-sm="./modules/m58328/index.cnxml:158:415"><mrow data-sm="./modules/m58328/index.cnxml:158:423"><mn data-sm="./modules/m58328/index.cnxml:158:431">10</mn></mrow><mn data-sm="./modules/m58328/index.cnxml:158:455">4</mn></msup><mo stretchy="false" data-sm="./modules/m58328/index.cnxml:158:478">)</mo><mn data-sm="./modules/m58328/index.cnxml:158:509">2</mn><mi data-sm="./modules/m58328/index.cnxml:158:523">π</mi></mrow>
+<mtext data-sm="./modules/m58328/index.cnxml:158:546">/</mtext><mrow data-sm="./modules/m58328/index.cnxml:158:566"><mn data-sm="./modules/m58328/index.cnxml:158:574">60.0</mn><mspace width="0.2em" data-sm="./modules/m58328/index.cnxml:158:591"/><mtext data-sm="./modules/m58328/index.cnxml:158:616">s</mtext></mrow>
+</mrow>
+<mrow data-sm="./modules/m58328/index.cnxml:158:654"><mrow data-sm="./modules/m58328/index.cnxml:158:662"><mo stretchy="false" data-sm="./modules/m58328/index.cnxml:158:670">(</mo><mtext data-sm="./modules/m58328/index.cnxml:158:701">rad</mtext></mrow>
+<mtext data-sm="./modules/m58328/index.cnxml:158:732">/</mtext><mtext data-sm="./modules/m58328/index.cnxml:158:752">s</mtext></mrow>
+<mo stretchy="false" data-sm="./modules/m58328/index.cnxml:158:781">)</mo></mrow>
+<mrow data-sm="./modules/m58328/index.cnxml:158:821"><mn data-sm="./modules/m58328/index.cnxml:158:829">30.0</mn><mspace width="0.2em" data-sm="./modules/m58328/index.cnxml:158:846"/><mtext data-sm="./modules/m58328/index.cnxml:158:871">s</mtext></mrow>
+</mfrac>
+<mo data-sm="./modules/m58328/index.cnxml:158:910">=</mo><mn data-sm="./modules/m58328/index.cnxml:158:924">−34.9</mn><mspace width="0.2em" data-sm="./modules/m58328/index.cnxml:158:942"/><mrow data-sm="./modules/m58328/index.cnxml:158:967"><mrow data-sm="./modules/m58328/index.cnxml:158:975"><mtext data-sm="./modules/m58328/index.cnxml:158:983">rad</mtext></mrow>
+<mtext data-sm="./modules/m58328/index.cnxml:158:1014">/</mtext><mrow data-sm="./modules/m58328/index.cnxml:158:1034"><msup data-sm="./modules/m58328/index.cnxml:158:1042"><mtext data-sm="./modules/m58328/index.cnxml:158:1050">s</mtext><mn data-sm="./modules/m58328/index.cnxml:158:1070">2</mn></msup></mrow>
+</mrow>
+<mo data-sm="./modules/m58328/index.cnxml:158:1111">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1167134951015" data-sm="./modules/m58328/index.cnxml:159:1">Therefore, the tangential acceleration is</p>
+<div data-type="equation" id="fs-id1167134627352" class="unnumbered" data-sm="./modules/m58328/index.cnxml:160:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58328/index.cnxml:160:70"><msub data-sm="./modules/m58328/index.cnxml:160:78"><mi data-sm="./modules/m58328/index.cnxml:160:86">a</mi><mtext data-sm="./modules/m58328/index.cnxml:160:100">t</mtext></msub><mo data-sm="./modules/m58328/index.cnxml:160:129">=</mo><mi data-sm="./modules/m58328/index.cnxml:160:143">r</mi><mi data-sm="./modules/m58328/index.cnxml:160:157">α</mi><mo data-sm="./modules/m58328/index.cnxml:160:171">=</mo><mn data-sm="./modules/m58328/index.cnxml:160:185">0.2</mn><mspace width="0.2em" data-sm="./modules/m58328/index.cnxml:160:201"/><mtext data-sm="./modules/m58328/index.cnxml:160:226">m</mtext><mo stretchy="false" data-sm="./modules/m58328/index.cnxml:160:246">(</mo><mn data-sm="./modules/m58328/index.cnxml:160:277">−34.9</mn><mspace width="0.2em" data-sm="./modules/m58328/index.cnxml:160:295"/><mrow data-sm="./modules/m58328/index.cnxml:160:320"><mrow data-sm="./modules/m58328/index.cnxml:160:328"><mtext data-sm="./modules/m58328/index.cnxml:160:336">rad</mtext></mrow>
+<mtext data-sm="./modules/m58328/index.cnxml:160:367">/</mtext><mrow data-sm="./modules/m58328/index.cnxml:160:387"><msup data-sm="./modules/m58328/index.cnxml:160:395"><mtext data-sm="./modules/m58328/index.cnxml:160:403">s</mtext><mn data-sm="./modules/m58328/index.cnxml:160:423">2</mn></msup></mrow>
+</mrow>
+<mo stretchy="false" data-sm="./modules/m58328/index.cnxml:160:464">)</mo><mo data-sm="./modules/m58328/index.cnxml:160:495">=</mo><mn data-sm="./modules/m58328/index.cnxml:160:509">−7.0</mn><mspace width="0.2em" data-sm="./modules/m58328/index.cnxml:160:526"/><msup data-sm="./modules/m58328/index.cnxml:160:551"><mrow data-sm="./modules/m58328/index.cnxml:160:559"><mrow data-sm="./modules/m58328/index.cnxml:160:567"><mtext data-sm="./modules/m58328/index.cnxml:160:575">m</mtext><mtext data-sm="./modules/m58328/index.cnxml:160:595">/</mtext><mtext data-sm="./modules/m58328/index.cnxml:160:615">s</mtext></mrow>
+</mrow><mn data-sm="./modules/m58328/index.cnxml:160:653">2</mn></msup><mo data-sm="./modules/m58328/index.cnxml:160:676">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1167134715038" data-sm="./modules/m58328/index.cnxml:161:1">The angular velocity at <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58328/index.cnxml:161:63"><mi data-sm="./modules/m58328/index.cnxml:161:71">t</mi><mo data-sm="./modules/m58328/index.cnxml:161:85">=</mo><mn data-sm="./modules/m58328/index.cnxml:161:99">29.0</mn><mspace width="0.2em" data-sm="./modules/m58328/index.cnxml:161:116"/><mtext data-sm="./modules/m58328/index.cnxml:161:141">s</mtext></mrow>
+</mrow>
+</semantics>
+</math></span> is</p>
+<div data-type="equation" id="fs-id1167134657371" class="unnumbered" data-sm="./modules/m58328/index.cnxml:162:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtable data-sm="./modules/m58328/index.cnxml:162:70"><mtr data-sm="./modules/m58328/index.cnxml:162:80"><mtd columnalign="right" data-sm="./modules/m58328/index.cnxml:162:87"><mi data-sm="./modules/m58328/index.cnxml:162:114">ω</mi></mtd>
+<mtd columnalign="left" data-sm="./modules/m58328/index.cnxml:162:136"><mo data-sm="./modules/m58328/index.cnxml:162:162">=</mo><msub data-sm="./modules/m58328/index.cnxml:162:176"><mi data-sm="./modules/m58328/index.cnxml:162:184">ω</mi><mn data-sm="./modules/m58328/index.cnxml:162:198">0</mn></msub><mo data-sm="./modules/m58328/index.cnxml:162:221">+</mo><mi data-sm="./modules/m58328/index.cnxml:162:235">α</mi><mi data-sm="./modules/m58328/index.cnxml:162:249">t</mi><mo data-sm="./modules/m58328/index.cnxml:162:263">=</mo><mn data-sm="./modules/m58328/index.cnxml:162:277">1.0</mn><mspace width="0.2em" data-sm="./modules/m58328/index.cnxml:162:293"/><mo data-sm="./modules/m58328/index.cnxml:162:318">×</mo><mspace width="0.2em" data-sm="./modules/m58328/index.cnxml:162:332"/><msup data-sm="./modules/m58328/index.cnxml:162:357"><mn data-sm="./modules/m58328/index.cnxml:162:365">10</mn><mn data-sm="./modules/m58328/index.cnxml:162:380">4</mn></msup><mrow data-sm="./modules/m58328/index.cnxml:162:403"><mo data-sm="./modules/m58328/index.cnxml:162:411">(</mo><mrow data-sm="./modules/m58328/index.cnxml:162:425"><mfrac data-sm="./modules/m58328/index.cnxml:162:433"><mrow data-sm="./modules/m58328/index.cnxml:162:442"><mn data-sm="./modules/m58328/index.cnxml:162:450">2</mn><mi data-sm="./modules/m58328/index.cnxml:162:464">π</mi></mrow>
+<mrow data-sm="./modules/m58328/index.cnxml:162:487"><mn data-sm="./modules/m58328/index.cnxml:162:495">60.0</mn><mspace width="0.2em" data-sm="./modules/m58328/index.cnxml:162:512"/><mtext data-sm="./modules/m58328/index.cnxml:162:537">s</mtext></mrow>
+</mfrac>
+</mrow>
+<mo data-sm="./modules/m58328/index.cnxml:162:585">)</mo></mrow>
+<mo data-sm="./modules/m58328/index.cnxml:162:608">+</mo><mrow data-sm="./modules/m58328/index.cnxml:162:622"><mo data-sm="./modules/m58328/index.cnxml:162:630">(</mo><mrow data-sm="./modules/m58328/index.cnxml:162:644"><mn data-sm="./modules/m58328/index.cnxml:162:652">−34.9</mn><mspace width="0.2em" data-sm="./modules/m58328/index.cnxml:162:670"/><mrow data-sm="./modules/m58328/index.cnxml:162:695"><mrow data-sm="./modules/m58328/index.cnxml:162:703"><mtext data-sm="./modules/m58328/index.cnxml:162:711">rad</mtext></mrow>
+<mtext data-sm="./modules/m58328/index.cnxml:162:742">/</mtext><mrow data-sm="./modules/m58328/index.cnxml:162:762"><msup data-sm="./modules/m58328/index.cnxml:162:770"><mtext data-sm="./modules/m58328/index.cnxml:162:778">s</mtext><mn data-sm="./modules/m58328/index.cnxml:162:798">2</mn></msup></mrow>
+</mrow>
+</mrow>
+<mo data-sm="./modules/m58328/index.cnxml:162:848">)</mo></mrow>
+<mrow data-sm="./modules/m58328/index.cnxml:162:871"><mo data-sm="./modules/m58328/index.cnxml:162:879">(</mo><mrow data-sm="./modules/m58328/index.cnxml:162:893"><mn data-sm="./modules/m58328/index.cnxml:162:901">29.0</mn><mspace width="0.2em" data-sm="./modules/m58328/index.cnxml:162:918"/><mtext data-sm="./modules/m58328/index.cnxml:162:943">s</mtext></mrow>
+<mo data-sm="./modules/m58328/index.cnxml:162:972">)</mo></mrow>
+</mtd>
+</mtr>
+<mtr data-sm="./modules/m58328/index.cnxml:162:1011"><mtd data-sm="./modules/m58328/index.cnxml:162:1018"/>
+<mtd columnalign="left" data-sm="./modules/m58328/index.cnxml:162:1026"><mo data-sm="./modules/m58328/index.cnxml:162:1052">=</mo><mn data-sm="./modules/m58328/index.cnxml:162:1066">1047.2</mn><mspace width="0.2em" data-sm="./modules/m58328/index.cnxml:162:1085"/><mrow data-sm="./modules/m58328/index.cnxml:162:1110"><mrow data-sm="./modules/m58328/index.cnxml:162:1118"><mtext data-sm="./modules/m58328/index.cnxml:162:1126">rad</mtext></mrow>
+<mtext data-sm="./modules/m58328/index.cnxml:162:1157">/</mtext><mtext data-sm="./modules/m58328/index.cnxml:162:1177">s</mtext></mrow>
+<mo data-sm="./modules/m58328/index.cnxml:162:1206">−</mo><mn data-sm="./modules/m58328/index.cnxml:162:1220">1012.71</mn><mo data-sm="./modules/m58328/index.cnxml:162:1240">=</mo><mn data-sm="./modules/m58328/index.cnxml:162:1254">35.1</mn><mspace width="0.2em" data-sm="./modules/m58328/index.cnxml:162:1271"/><mrow data-sm="./modules/m58328/index.cnxml:162:1296"><mrow data-sm="./modules/m58328/index.cnxml:162:1304"><mtext data-sm="./modules/m58328/index.cnxml:162:1312">rad</mtext></mrow>
+<mtext data-sm="./modules/m58328/index.cnxml:162:1343">/</mtext><mtext data-sm="./modules/m58328/index.cnxml:162:1363">s</mtext></mrow>
+<mo data-sm="./modules/m58328/index.cnxml:162:1392">.</mo></mtd>
+</mtr>
+</mtable>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1167134563118" data-sm="./modules/m58328/index.cnxml:163:1">Thus, the tangential speed at <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58328/index.cnxml:163:69"><mi data-sm="./modules/m58328/index.cnxml:163:77">t</mi><mo data-sm="./modules/m58328/index.cnxml:163:91">=</mo><mn data-sm="./modules/m58328/index.cnxml:163:105">29.0</mn><mspace width="0.2em" data-sm="./modules/m58328/index.cnxml:163:122"/><mtext data-sm="./modules/m58328/index.cnxml:163:147">s</mtext></mrow>
+</mrow>
+</semantics>
+</math></span> is</p>
+<div data-type="equation" id="fs-id1167134817881" class="unnumbered" data-sm="./modules/m58328/index.cnxml:164:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58328/index.cnxml:164:70"><msub data-sm="./modules/m58328/index.cnxml:164:78"><mi data-sm="./modules/m58328/index.cnxml:164:86">v</mi><mtext data-sm="./modules/m58328/index.cnxml:164:100">t</mtext></msub><mo data-sm="./modules/m58328/index.cnxml:164:129">=</mo><mi data-sm="./modules/m58328/index.cnxml:164:143">r</mi><mi data-sm="./modules/m58328/index.cnxml:164:157">ω</mi><mo data-sm="./modules/m58328/index.cnxml:164:171">=</mo><mn data-sm="./modules/m58328/index.cnxml:164:185">0.2</mn><mspace width="0.2em" data-sm="./modules/m58328/index.cnxml:164:201"/><mtext data-sm="./modules/m58328/index.cnxml:164:226">m</mtext><mo stretchy="false" data-sm="./modules/m58328/index.cnxml:164:246">(</mo><mn data-sm="./modules/m58328/index.cnxml:164:277">35.1</mn><mspace width="0.2em" data-sm="./modules/m58328/index.cnxml:164:294"/><mrow data-sm="./modules/m58328/index.cnxml:164:319"><mrow data-sm="./modules/m58328/index.cnxml:164:327"><mtext data-sm="./modules/m58328/index.cnxml:164:335">rad</mtext></mrow>
+<mtext data-sm="./modules/m58328/index.cnxml:164:366">/</mtext><mtext data-sm="./modules/m58328/index.cnxml:164:386">s</mtext></mrow>
+<mo stretchy="false" data-sm="./modules/m58328/index.cnxml:164:415">)</mo><mo data-sm="./modules/m58328/index.cnxml:164:446">=</mo><mn data-sm="./modules/m58328/index.cnxml:164:460">7.0</mn><mrow data-sm="./modules/m58328/index.cnxml:164:476"><mspace width="0.2em" data-sm="./modules/m58328/index.cnxml:164:484"/><mrow data-sm="./modules/m58328/index.cnxml:164:509"><mtext data-sm="./modules/m58328/index.cnxml:164:517">m</mtext></mrow>
+<mtext data-sm="./modules/m58328/index.cnxml:164:546">/</mtext><mtext data-sm="./modules/m58328/index.cnxml:164:566">s</mtext></mrow>
+<mo data-sm="./modules/m58328/index.cnxml:164:595">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1167134915809" data-sm="./modules/m58328/index.cnxml:165:1">We can now calculate the centripetal acceleration at <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58328/index.cnxml:165:92"><mi data-sm="./modules/m58328/index.cnxml:165:100">t</mi><mo data-sm="./modules/m58328/index.cnxml:165:114">=</mo><mn data-sm="./modules/m58328/index.cnxml:165:128">29.0</mn><mspace width="0.2em" data-sm="./modules/m58328/index.cnxml:165:145"/><mtext data-sm="./modules/m58328/index.cnxml:165:170">s</mtext></mrow>
+</mrow>
+</semantics>
+</math></span>:</p>
+<div data-type="equation" id="fs-id1167134633121" class="unnumbered" data-sm="./modules/m58328/index.cnxml:166:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58328/index.cnxml:166:70"><msub data-sm="./modules/m58328/index.cnxml:166:78"><mi data-sm="./modules/m58328/index.cnxml:166:86">a</mi><mtext data-sm="./modules/m58328/index.cnxml:166:100">c</mtext></msub><mo data-sm="./modules/m58328/index.cnxml:166:129">=</mo><mfrac data-sm="./modules/m58328/index.cnxml:166:143"><mrow data-sm="./modules/m58328/index.cnxml:166:152"><msup data-sm="./modules/m58328/index.cnxml:166:160"><mi data-sm="./modules/m58328/index.cnxml:166:168">v</mi><mn data-sm="./modules/m58328/index.cnxml:166:182">2</mn></msup></mrow>
+<mi data-sm="./modules/m58328/index.cnxml:166:214">r</mi></mfrac>
+<mo data-sm="./modules/m58328/index.cnxml:166:238">=</mo><mfrac data-sm="./modules/m58328/index.cnxml:166:252"><mrow data-sm="./modules/m58328/index.cnxml:166:261"><msup data-sm="./modules/m58328/index.cnxml:166:269"><mrow data-sm="./modules/m58328/index.cnxml:166:277"><mo stretchy="false" data-sm="./modules/m58328/index.cnxml:166:285">(</mo><mn data-sm="./modules/m58328/index.cnxml:166:316">7.0</mn><mspace width="0.2em" data-sm="./modules/m58328/index.cnxml:166:332"/><mrow data-sm="./modules/m58328/index.cnxml:166:357"><mtext data-sm="./modules/m58328/index.cnxml:166:365">m</mtext><mtext data-sm="./modules/m58328/index.cnxml:166:385">/</mtext><mtext data-sm="./modules/m58328/index.cnxml:166:405">s</mtext></mrow>
+<mo stretchy="false" data-sm="./modules/m58328/index.cnxml:166:434">)</mo></mrow><mn data-sm="./modules/m58328/index.cnxml:166:474">2</mn></msup></mrow>
+<mrow data-sm="./modules/m58328/index.cnxml:166:506"><mn data-sm="./modules/m58328/index.cnxml:166:514">0.2</mn><mspace width="0.2em" data-sm="./modules/m58328/index.cnxml:166:530"/><mtext data-sm="./modules/m58328/index.cnxml:166:555">m</mtext></mrow>
+</mfrac>
+<mo data-sm="./modules/m58328/index.cnxml:166:594">=</mo><mn data-sm="./modules/m58328/index.cnxml:166:608">245.0</mn><mspace width="0.2em" data-sm="./modules/m58328/index.cnxml:166:626"/><mrow data-sm="./modules/m58328/index.cnxml:166:651"><mtext data-sm="./modules/m58328/index.cnxml:166:659">m</mtext><mtext data-sm="./modules/m58328/index.cnxml:166:679">/</mtext><mrow data-sm="./modules/m58328/index.cnxml:166:699"><msup data-sm="./modules/m58328/index.cnxml:166:707"><mtext data-sm="./modules/m58328/index.cnxml:166:715">s</mtext><mn data-sm="./modules/m58328/index.cnxml:166:735">2</mn></msup></mrow>
+</mrow>
+<mo data-sm="./modules/m58328/index.cnxml:166:776">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1167134919602" data-sm="./modules/m58328/index.cnxml:167:1">Since the two acceleration vectors are perpendicular to each other, the magnitude of the total linear acceleration is</p>
+<div data-type="equation" id="fs-id1167134531792" class="unnumbered" data-sm="./modules/m58328/index.cnxml:168:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58328/index.cnxml:168:70"><mrow data-sm="./modules/m58328/index.cnxml:168:78"><mo data-sm="./modules/m58328/index.cnxml:168:86">|</mo><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58328/index.cnxml:168:100"><mover accent="true" data-sm="./modules/m58328/index.cnxml:168:147"><mi data-sm="./modules/m58328/index.cnxml:168:170">a</mi><mo stretchy="false" data-sm="./modules/m58328/index.cnxml:168:184">→</mo></mover>
+</mstyle>
+<mo data-sm="./modules/m58328/index.cnxml:168:236">|</mo></mrow>
+<mo data-sm="./modules/m58328/index.cnxml:168:259">=</mo><msqrt data-sm="./modules/m58328/index.cnxml:168:273"><mrow data-sm="./modules/m58328/index.cnxml:168:282"><msubsup data-sm="./modules/m58328/index.cnxml:168:290"><mi data-sm="./modules/m58328/index.cnxml:168:301">a</mi><mtext data-sm="./modules/m58328/index.cnxml:168:315">c</mtext><mn data-sm="./modules/m58328/index.cnxml:168:335">2</mn></msubsup><mo data-sm="./modules/m58328/index.cnxml:168:361">+</mo><msubsup data-sm="./modules/m58328/index.cnxml:168:375"><mi data-sm="./modules/m58328/index.cnxml:168:386">a</mi><mtext data-sm="./modules/m58328/index.cnxml:168:400">t</mtext><mn data-sm="./modules/m58328/index.cnxml:168:420">2</mn></msubsup></mrow>
+</msqrt>
+<mo data-sm="./modules/m58328/index.cnxml:168:465">=</mo><msqrt data-sm="./modules/m58328/index.cnxml:168:479"><mrow data-sm="./modules/m58328/index.cnxml:168:488"><msup data-sm="./modules/m58328/index.cnxml:168:496"><mrow data-sm="./modules/m58328/index.cnxml:168:504"><mo stretchy="false" data-sm="./modules/m58328/index.cnxml:168:512">(</mo><mn data-sm="./modules/m58328/index.cnxml:168:543">245.0</mn><mo stretchy="false" data-sm="./modules/m58328/index.cnxml:168:561">)</mo></mrow><mn data-sm="./modules/m58328/index.cnxml:168:601">2</mn></msup><mo data-sm="./modules/m58328/index.cnxml:168:624">+</mo><msup data-sm="./modules/m58328/index.cnxml:168:638"><mrow data-sm="./modules/m58328/index.cnxml:168:646"><mo stretchy="false" data-sm="./modules/m58328/index.cnxml:168:654">(</mo><mn data-sm="./modules/m58328/index.cnxml:168:685">−7.0</mn><mo stretchy="false" data-sm="./modules/m58328/index.cnxml:168:702">)</mo></mrow><mn data-sm="./modules/m58328/index.cnxml:168:742">2</mn></msup></mrow>
+</msqrt>
+<mo data-sm="./modules/m58328/index.cnxml:168:784">=</mo><mn data-sm="./modules/m58328/index.cnxml:168:798">245.1</mn><mspace width="0.2em" data-sm="./modules/m58328/index.cnxml:168:816"/><mrow data-sm="./modules/m58328/index.cnxml:168:841"><mtext data-sm="./modules/m58328/index.cnxml:168:849">m</mtext><mtext data-sm="./modules/m58328/index.cnxml:168:869">/</mtext><mrow data-sm="./modules/m58328/index.cnxml:168:889"><msup data-sm="./modules/m58328/index.cnxml:168:897"><mtext data-sm="./modules/m58328/index.cnxml:168:905">s</mtext><mn data-sm="./modules/m58328/index.cnxml:168:925">2</mn></msup></mrow>
+</mrow>
+<mo data-sm="./modules/m58328/index.cnxml:168:966">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1167134913744" data-sm="./modules/m58328/index.cnxml:169:1">Since the centrifuge has a negative angular acceleration, it is slowing down. The total acceleration vector is as shown in <a href="#CNX_UPhysics_10_03_Centrif" data-sm="./modules/m58328/index.cnxml:169:154" class="autogenerated-content">Figure 10.16</a>. The angle with respect to the centripetal acceleration vector is</p>
+<div data-type="equation" id="fs-id1167134940130" class="unnumbered" data-sm="./modules/m58328/index.cnxml:170:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58328/index.cnxml:170:70"><mi data-sm="./modules/m58328/index.cnxml:170:78">θ</mi><mo data-sm="./modules/m58328/index.cnxml:170:92">=</mo><msup data-sm="./modules/m58328/index.cnxml:170:106"><mrow data-sm="./modules/m58328/index.cnxml:170:114"><mtext data-sm="./modules/m58328/index.cnxml:170:122">tan</mtext></mrow><mrow data-sm="./modules/m58328/index.cnxml:170:153"><mn data-sm="./modules/m58328/index.cnxml:170:161">−1</mn></mrow></msup><mfrac data-sm="./modules/m58328/index.cnxml:170:194"><mrow data-sm="./modules/m58328/index.cnxml:170:203"><mn data-sm="./modules/m58328/index.cnxml:170:211">−7.0</mn></mrow>
+<mrow data-sm="./modules/m58328/index.cnxml:170:237"><mn data-sm="./modules/m58328/index.cnxml:170:245">245.0</mn></mrow>
+</mfrac>
+<mo data-sm="./modules/m58328/index.cnxml:170:282">=</mo><mn data-sm="./modules/m58328/index.cnxml:170:296">−1.6</mn><mtext data-sm="./modules/m58328/index.cnxml:170:313">°</mtext><mo data-sm="./modules/m58328/index.cnxml:170:333">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1167134863111" data-sm="./modules/m58328/index.cnxml:171:1">The negative sign means that the total acceleration vector is angled toward the clockwise direction.</p>
+<div class="os-figure"><figure id="CNX_UPhysics_10_03_Centrif" data-sm="./modules/m58328/index.cnxml:172:1">
+<span data-type="media" id="fs-id1167134533459" data-alt="Figure shows a particle executing circular motion in the counterclockwise direction. The vector a t is pointed clockwise. Vectors a and a c point toward the center of the circle, and the label “direction of motion” points in the opposite direction of vector a t." data-sm="./modules/m58328/index.cnxml:173:1">
+<img src="c973f25f857e334bbaee4a252027f6bed3a8ee76.jpeg" data-media-type="image/jpeg" alt="Figure shows a particle executing circular motion in the counterclockwise direction. The vector a t is pointed clockwise. Vectors a and a c point toward the center of the circle, and the label “direction of motion” points in the opposite direction of vector a t." data-sm="./modules/m58328/index.cnxml:174:1"/>
+</span>
+
+</figure>
+<div class="os-caption-container">
+  <span class="os-title-label">Figure </span>
+<span class="os-number">10.16</span>
+
+
+
+  <span class="os-divider"> </span>
+  <span data-sm="./modules/m58328/index.cnxml:176:1" class="os-caption">The centripetal, tangential, and total acceleration vectors. The centrifuge is slowing down, so the tangential acceleration is clockwise, opposite the direction of rotation (counterclockwise).</span>
+</div>
+</div>
+<p id="fs-id1167134860964" data-sm="./modules/m58328/index.cnxml:178:1"></p>
+<h4 data-type="title" data-sm="./modules/m58328/index.cnxml:178:31">Significance</h4>
+From <a href="#CNX_UPhysics_10_03_Centrif" data-sm="./modules/m58328/index.cnxml:179:6" class="autogenerated-content">Figure 10.16</a>, we see that the tangential acceleration vector is opposite the direction of rotation. The magnitude of the tangential acceleration is much smaller than the centripetal acceleration, so the total linear acceleration vector will make a very small angle with respect to the centripetal acceleration vector.
+</div>
+</div>
+<div data-type="note" id="fs-id1167134865401" class="check-understanding" data-sm="./modules/m58328/index.cnxml:181:1"><h3 class="os-title">
+  <span class="os-title-label">Check Your Understanding </span>
+  <span class="os-number">10.3</span>
+  <span class="os-divider"> </span>
+</h3>
+<div class="os-note-body">
+<div data-type="exercise" id="fs-id1167134567679" data-sm="./modules/m58328/index.cnxml:182:1" class="unnumbered os-hasSolution">
+<div data-type="problem" id="fs-id1167134897209" data-sm="./modules/m58328/index.cnxml:183:1"><div class="os-problem-container">
+<p id="fs-id1167134947451" data-sm="./modules/m58328/index.cnxml:184:1"> A boy jumps on a merry-go-round with a radius of 5 m that is at rest. It starts accelerating at a constant rate up to an angular velocity of 5 rad/s in 20 seconds. What is the distance travelled by the boy?</p>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+<div data-type="note" id="fs-id1167134862420" class="media-2" data-sm="./modules/m58328/index.cnxml:194:1"><h3 class="os-title" data-type="title">
+  <span class="os-title-label">Interactive</span>
+</h3>
+<div class="os-note-body">
+<p id="fs-id1167134515616" data-sm="./modules/m58328/index.cnxml:195:1">Check out this <a href="https://openstax.org/l/28ladybugrevolutionrotation" data-sm="./modules/m58328/index.cnxml:195:46" target="_blank" rel="noopener nofollow">PhET simulation</a> to change the parameters of a rotating disk (the initial angle, angular velocity, and angular acceleration), and place bugs at different radial distances from the axis. The simulation then lets you explore how circular motion relates to the bugs’ <em data-effect="italics" data-sm="./modules/m58328/index.cnxml:195:379">xy</em>-position, velocity, and acceleration using vectors or graphs.</p>
+</div>
+</div>
+</section>
+
+
+
+
+
+
+ 
+ 
+  </div>
+</body>
+</html>
+<!-- # sourceMappingURL=d50f6e32-0fda-46ef-a362-9bd36ca7c97d-at-aa8a43e-colon-57b16bf8-010f-48a9-b86d-d8a4bbcff7cc.xhtml.map -->

@@ -1,0 +1,1155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:epub="http://www.idpf.org/2007/ops">
+<head><title>9.3
+ 
+Conservation of Linear Momentum
+</title>
+<link rel="stylesheet" type="text/css" href="the-style-epub.css"/>
+</head>
+<body>
+    <div data-type="page" id="page_1154c646-35ec-4865-ad01-d721cd466126" class="chapter-content-module" data-book-content="true"><h2 data-type="document-title" data-sm="./modules/m58320/index.cnxml:3:1" id="page_1154c646-35ec-4865-ad01-d721cd466126_titlecreatedbycookbook"><span class="os-number">9.3</span>
+<span class="os-divider"> </span>
+<span data-type="" class="os-text">Conservation of Linear Momentum</span>
+</h2>
+<div data-type="abstract" data-sm="./modules/m58320/index.cnxml:7:3"><h3 data-type="title">Learning Objectives</h3>
+<p id="para-00001" data-sm="./modules/m58320/index.cnxml:7:16">By the end of this section, you will be able to:</p>
+<ul id="list-00001" data-sm="./modules/m58320/index.cnxml:8:1">
+<li data-sm="./modules/m58320/index.cnxml:9:1">Explain the meaning of “conservation of momentum”</li>
+<li data-sm="./modules/m58320/index.cnxml:10:1">Correctly identify if a system is, or is not, closed</li>
+<li data-sm="./modules/m58320/index.cnxml:11:1">Define a system whose momentum is conserved</li>
+<li data-sm="./modules/m58320/index.cnxml:12:1">Mathematically express conservation of momentum for a given system</li>
+<li data-sm="./modules/m58320/index.cnxml:13:1">Calculate an unknown quantity using conservation of momentum</li>
+</ul>
+</div>
+
+<p id="fs-id1167131222606" data-sm="./modules/m58320/index.cnxml:19:1">Recall Newton’s third law: When two objects of masses <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:19:93"><msub data-sm="./modules/m58320/index.cnxml:19:101"><mi data-sm="./modules/m58320/index.cnxml:19:109">m</mi><mn data-sm="./modules/m58320/index.cnxml:19:123">1</mn></msub></mrow>
+</mrow>
+</semantics>
+</math></span> and <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:19:177"><msub data-sm="./modules/m58320/index.cnxml:19:185"><mi data-sm="./modules/m58320/index.cnxml:19:193">m</mi><mn data-sm="./modules/m58320/index.cnxml:19:207">2</mn></msub></mrow>
+</mrow>
+</semantics>
+</math></span> interact (meaning that they apply forces on each other), the force that object 2 applies to object 1 is equal in magnitude and opposite in direction to the force that object 1 applies on object 2. Let:</p>
+
+<ul id="fs-id1167134541632" data-bullet-style="bullet" data-sm="./modules/m58320/index.cnxml:20:1">
+<li data-sm="./modules/m58320/index.cnxml:21:1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:21:15"><msub data-sm="./modules/m58320/index.cnxml:21:23"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:21:31"><mover accent="true" data-sm="./modules/m58320/index.cnxml:21:78"><mi data-sm="./modules/m58320/index.cnxml:21:101">F</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:21:115">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58320/index.cnxml:21:167"><mn data-sm="./modules/m58320/index.cnxml:21:175">21</mn></mrow></msub><mo data-sm="./modules/m58320/index.cnxml:21:208">=</mo></mrow>
+</mrow>
+</semantics>
+</math> the force on <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:21:262"><msub data-sm="./modules/m58320/index.cnxml:21:270"><mi data-sm="./modules/m58320/index.cnxml:21:278">m</mi><mn data-sm="./modules/m58320/index.cnxml:21:292">1</mn></msub></mrow>
+</mrow>
+</semantics>
+</math> from <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:21:347"><msub data-sm="./modules/m58320/index.cnxml:21:355"><mi data-sm="./modules/m58320/index.cnxml:21:363">m</mi><mn data-sm="./modules/m58320/index.cnxml:21:377">2</mn></msub></mrow>
+</mrow>
+</semantics>
+</math></li>
+<li data-sm="./modules/m58320/index.cnxml:22:1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:22:15"><msub data-sm="./modules/m58320/index.cnxml:22:23"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:22:31"><mover accent="true" data-sm="./modules/m58320/index.cnxml:22:78"><mi data-sm="./modules/m58320/index.cnxml:22:101">F</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:22:115">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58320/index.cnxml:22:167"><mn data-sm="./modules/m58320/index.cnxml:22:175">12</mn></mrow></msub><mo data-sm="./modules/m58320/index.cnxml:22:208">=</mo></mrow>
+</mrow>
+</semantics>
+</math> the force on <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:22:262"><msub data-sm="./modules/m58320/index.cnxml:22:270"><mi data-sm="./modules/m58320/index.cnxml:22:278">m</mi><mn data-sm="./modules/m58320/index.cnxml:22:292">2</mn></msub></mrow>
+</mrow>
+</semantics>
+</math> from <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:22:347"><msub data-sm="./modules/m58320/index.cnxml:22:355"><mi data-sm="./modules/m58320/index.cnxml:22:363">m</mi><mn data-sm="./modules/m58320/index.cnxml:22:377">1</mn></msub></mrow>
+</mrow>
+</semantics>
+</math></li>
+</ul>
+
+<p id="fs-id1167131201576" data-sm="./modules/m58320/index.cnxml:24:1">Then, in symbols, Newton’s third law says</p>
+
+<div data-type="equation" id="fs-id1167134972186" data-sm="./modules/m58320/index.cnxml:25:1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtable data-sm="./modules/m58320/index.cnxml:25:43"><mtr data-sm="./modules/m58320/index.cnxml:25:53"><mtd columnalign="right" data-sm="./modules/m58320/index.cnxml:25:60"><msub data-sm="./modules/m58320/index.cnxml:25:87"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:25:95"><mover accent="true" data-sm="./modules/m58320/index.cnxml:25:142"><mi data-sm="./modules/m58320/index.cnxml:25:165">F</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:25:179">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58320/index.cnxml:25:231"><mn data-sm="./modules/m58320/index.cnxml:25:239">21</mn></mrow></msub></mtd>
+<mtd columnalign="left" data-sm="./modules/m58320/index.cnxml:25:280"><mo data-sm="./modules/m58320/index.cnxml:25:306">=</mo></mtd>
+<mtd columnalign="left" data-sm="./modules/m58320/index.cnxml:25:328"><mtext data-sm="./modules/m58320/index.cnxml:25:354">−</mtext><msub data-sm="./modules/m58320/index.cnxml:25:374"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:25:382"><mover accent="true" data-sm="./modules/m58320/index.cnxml:25:429"><mi data-sm="./modules/m58320/index.cnxml:25:452">F</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:25:466">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58320/index.cnxml:25:518"><mn data-sm="./modules/m58320/index.cnxml:25:526">12</mn></mrow></msub></mtd>
+</mtr>
+<mtr data-sm="./modules/m58320/index.cnxml:25:575"><mtd columnalign="right" data-sm="./modules/m58320/index.cnxml:25:582"><msub data-sm="./modules/m58320/index.cnxml:25:609"><mi data-sm="./modules/m58320/index.cnxml:25:617">m</mi><mn data-sm="./modules/m58320/index.cnxml:25:631">1</mn></msub><msub data-sm="./modules/m58320/index.cnxml:25:654"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:25:662"><mover accent="true" data-sm="./modules/m58320/index.cnxml:25:709"><mi data-sm="./modules/m58320/index.cnxml:25:732">a</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:25:746">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:25:798"><mn data-sm="./modules/m58320/index.cnxml:25:845">1</mn></mstyle></msub></mtd>
+<mtd columnalign="left" data-sm="./modules/m58320/index.cnxml:25:887"><mo data-sm="./modules/m58320/index.cnxml:25:913">=</mo></mtd>
+<mtd columnalign="left" data-sm="./modules/m58320/index.cnxml:25:935"><mtext data-sm="./modules/m58320/index.cnxml:25:961">−</mtext><msub data-sm="./modules/m58320/index.cnxml:25:981"><mi data-sm="./modules/m58320/index.cnxml:25:989">m</mi><mn data-sm="./modules/m58320/index.cnxml:25:1003">2</mn></msub><msub data-sm="./modules/m58320/index.cnxml:25:1026"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:25:1034"><mover accent="true" data-sm="./modules/m58320/index.cnxml:25:1081"><mi data-sm="./modules/m58320/index.cnxml:25:1104">a</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:25:1118">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:25:1170"><mn data-sm="./modules/m58320/index.cnxml:25:1217">2</mn></mstyle></msub><mo data-sm="./modules/m58320/index.cnxml:25:1251">.</mo></mtd>
+</mtr>
+</mtable>
+</mrow>
+</semantics>
+</math>
+<div class="os-equation-number">
+  <span class="os-number">9.10</span>
+</div>
+</div>
+
+<p id="fs-id1167134651324" data-sm="./modules/m58320/index.cnxml:26:1">(Recall that these two forces do not cancel because they are applied to different objects. <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:26:130"><msub data-sm="./modules/m58320/index.cnxml:26:138"><mi data-sm="./modules/m58320/index.cnxml:26:146">F</mi><mrow data-sm="./modules/m58320/index.cnxml:26:160"><mn data-sm="./modules/m58320/index.cnxml:26:168">21</mn></mrow></msub></mrow>
+</mrow>
+</semantics>
+</math></span> causes <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:26:235"><msub data-sm="./modules/m58320/index.cnxml:26:243"><mi data-sm="./modules/m58320/index.cnxml:26:251">m</mi><mn data-sm="./modules/m58320/index.cnxml:26:265">1</mn></msub></mrow>
+</mrow>
+</semantics>
+</math></span> to accelerate, and <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:26:334"><msub data-sm="./modules/m58320/index.cnxml:26:342"><mi data-sm="./modules/m58320/index.cnxml:26:350">F</mi><mrow data-sm="./modules/m58320/index.cnxml:26:364"><mn data-sm="./modules/m58320/index.cnxml:26:372">12</mn></mrow></msub></mrow>
+</mrow>
+</semantics>
+</math></span> causes <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:26:439"><msub data-sm="./modules/m58320/index.cnxml:26:447"><mi data-sm="./modules/m58320/index.cnxml:26:455">m</mi><mn data-sm="./modules/m58320/index.cnxml:26:469">2</mn></msub></mrow>
+</mrow>
+</semantics>
+</math></span> to accelerate.)</p>
+
+<p id="fs-id1167131103748" data-sm="./modules/m58320/index.cnxml:27:1">Although the magnitudes of the forces on the objects are the same, the accelerations are not, simply because the masses (in general) are different. Therefore, the changes in velocity of each object are different:</p>
+
+<div data-type="equation" id="fs-id1167134506966" class="unnumbered" data-sm="./modules/m58320/index.cnxml:28:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:28:70"><mfrac data-sm="./modules/m58320/index.cnxml:28:78"><mrow data-sm="./modules/m58320/index.cnxml:28:87"><mi data-sm="./modules/m58320/index.cnxml:28:95">d</mi><msub data-sm="./modules/m58320/index.cnxml:28:109"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:28:117"><mover accent="true" data-sm="./modules/m58320/index.cnxml:28:164"><mi data-sm="./modules/m58320/index.cnxml:28:187">v</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:28:201">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:28:253"><mn data-sm="./modules/m58320/index.cnxml:28:300">1</mn></mstyle></msub></mrow>
+<mrow data-sm="./modules/m58320/index.cnxml:28:343"><mi data-sm="./modules/m58320/index.cnxml:28:351">d</mi><mi data-sm="./modules/m58320/index.cnxml:28:365">t</mi></mrow>
+</mfrac>
+<mo data-sm="./modules/m58320/index.cnxml:28:398">≠</mo><mfrac data-sm="./modules/m58320/index.cnxml:28:412"><mrow data-sm="./modules/m58320/index.cnxml:28:421"><mi data-sm="./modules/m58320/index.cnxml:28:429">d</mi><msub data-sm="./modules/m58320/index.cnxml:28:443"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:28:451"><mover accent="true" data-sm="./modules/m58320/index.cnxml:28:498"><mi data-sm="./modules/m58320/index.cnxml:28:521">v</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:28:535">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:28:587"><mn data-sm="./modules/m58320/index.cnxml:28:634">2</mn></mstyle></msub></mrow>
+<mrow data-sm="./modules/m58320/index.cnxml:28:677"><mi data-sm="./modules/m58320/index.cnxml:28:685">d</mi><mi data-sm="./modules/m58320/index.cnxml:28:699">t</mi></mrow>
+</mfrac>
+<mo data-sm="./modules/m58320/index.cnxml:28:732">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+
+<p id="fs-id1167134633211" data-sm="./modules/m58320/index.cnxml:29:1">However, the products of the mass and the change of velocity <em data-effect="italics" data-sm="./modules/m58320/index.cnxml:29:92">are</em> equal (in magnitude):</p>
+
+<div data-type="note" id="fs-id1167134885984" class="equation-callout" data-sm="./modules/m58320/index.cnxml:30:1">
+<div data-type="equation" id="fs-id1167134864254" data-sm="./modules/m58320/index.cnxml:31:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:31:51"><msub data-sm="./modules/m58320/index.cnxml:31:59"><mi data-sm="./modules/m58320/index.cnxml:31:67">m</mi><mn data-sm="./modules/m58320/index.cnxml:31:81">1</mn></msub><mfrac data-sm="./modules/m58320/index.cnxml:31:104"><mrow data-sm="./modules/m58320/index.cnxml:31:113"><mi data-sm="./modules/m58320/index.cnxml:31:121">d</mi><msub data-sm="./modules/m58320/index.cnxml:31:135"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:31:143"><mover accent="true" data-sm="./modules/m58320/index.cnxml:31:190"><mi data-sm="./modules/m58320/index.cnxml:31:213">v</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:31:227">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:31:279"><mn data-sm="./modules/m58320/index.cnxml:31:326">1</mn></mstyle></msub></mrow>
+<mrow data-sm="./modules/m58320/index.cnxml:31:369"><mi data-sm="./modules/m58320/index.cnxml:31:377">d</mi><mi data-sm="./modules/m58320/index.cnxml:31:391">t</mi></mrow>
+</mfrac>
+<mo data-sm="./modules/m58320/index.cnxml:31:424">=</mo><mtext data-sm="./modules/m58320/index.cnxml:31:438">−</mtext><msub data-sm="./modules/m58320/index.cnxml:31:458"><mi data-sm="./modules/m58320/index.cnxml:31:466">m</mi><mn data-sm="./modules/m58320/index.cnxml:31:480">2</mn></msub><mfrac data-sm="./modules/m58320/index.cnxml:31:503"><mrow data-sm="./modules/m58320/index.cnxml:31:512"><mi data-sm="./modules/m58320/index.cnxml:31:520">d</mi><msub data-sm="./modules/m58320/index.cnxml:31:534"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:31:542"><mover accent="true" data-sm="./modules/m58320/index.cnxml:31:589"><mi data-sm="./modules/m58320/index.cnxml:31:612">v</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:31:626">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:31:678"><mn data-sm="./modules/m58320/index.cnxml:31:725">2</mn></mstyle></msub></mrow>
+<mrow data-sm="./modules/m58320/index.cnxml:31:768"><mi data-sm="./modules/m58320/index.cnxml:31:776">d</mi><mi data-sm="./modules/m58320/index.cnxml:31:790">t</mi></mrow>
+</mfrac>
+<mo data-sm="./modules/m58320/index.cnxml:31:823">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+<div class="os-equation-number">
+  <span class="os-number">9.11</span>
+</div>
+</div>
+</div>
+
+<p id="fs-id1167131167400" data-sm="./modules/m58320/index.cnxml:33:1">It’s a good idea, at this point, to make sure you’re clear on the physical meaning of the derivatives in <a href="d50f6e32-0fda-46ef-a362-9bd36ca7c97d-at-aa8a43e-colon-332ce9f8-d9d0-4c9f-9168-b537e1f342ef.xhtml#fs-id1167131333490" data-sm="./modules/m58320/index.cnxml:33:136" class="autogenerated-content" data-page-slug="9-2-impulse-and-collisions" data-page-uuid="332ce9f8-d9d0-4c9f-9168-b537e1f342ef" data-page-fragment="fs-id1167131333490">Equation 9.3</a>. Because of the interaction, each object ends up getting its velocity changed, by an amount <em data-effect="italics" data-sm="./modules/m58320/index.cnxml:33:285">dv</em>. Furthermore, the interaction occurs over a time interval <em data-effect="italics" data-sm="./modules/m58320/index.cnxml:33:384">dt</em>, which means that the change of velocities also occurs over <em data-effect="italics" data-sm="./modules/m58320/index.cnxml:33:485">dt</em>. This time interval is the same for each object.</p>
+
+<p id="fs-id1167134563530" data-sm="./modules/m58320/index.cnxml:34:1">Let‘s assume, for the moment, that the masses of the objects do not change during the interaction. (We’ll relax this restriction later.) In that case, we can pull the masses inside the derivatives:</p>
+
+<div data-type="equation" id="fs-id1167131462135" data-sm="./modules/m58320/index.cnxml:35:1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:35:43"><mfrac data-sm="./modules/m58320/index.cnxml:35:51"><mi data-sm="./modules/m58320/index.cnxml:35:60">d</mi><mrow data-sm="./modules/m58320/index.cnxml:35:74"><mi data-sm="./modules/m58320/index.cnxml:35:82">d</mi><mi data-sm="./modules/m58320/index.cnxml:35:96">t</mi></mrow>
+</mfrac>
+<mrow data-sm="./modules/m58320/index.cnxml:35:129"><mo data-sm="./modules/m58320/index.cnxml:35:137">(</mo><mrow data-sm="./modules/m58320/index.cnxml:35:151"><msub data-sm="./modules/m58320/index.cnxml:35:159"><mi data-sm="./modules/m58320/index.cnxml:35:167">m</mi><mn data-sm="./modules/m58320/index.cnxml:35:181">1</mn></msub><msub data-sm="./modules/m58320/index.cnxml:35:204"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:35:212"><mover accent="true" data-sm="./modules/m58320/index.cnxml:35:259"><mi data-sm="./modules/m58320/index.cnxml:35:282">v</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:35:296">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:35:348"><mn data-sm="./modules/m58320/index.cnxml:35:395">1</mn></mstyle></msub></mrow>
+<mo data-sm="./modules/m58320/index.cnxml:35:438">)</mo></mrow>
+<mo data-sm="./modules/m58320/index.cnxml:35:461">=</mo><mo data-sm="./modules/m58320/index.cnxml:35:475">−</mo><mfrac data-sm="./modules/m58320/index.cnxml:35:489"><mi data-sm="./modules/m58320/index.cnxml:35:498">d</mi><mrow data-sm="./modules/m58320/index.cnxml:35:512"><mi data-sm="./modules/m58320/index.cnxml:35:520">d</mi><mi data-sm="./modules/m58320/index.cnxml:35:534">t</mi></mrow>
+</mfrac>
+<mrow data-sm="./modules/m58320/index.cnxml:35:567"><mo data-sm="./modules/m58320/index.cnxml:35:575">(</mo><mrow data-sm="./modules/m58320/index.cnxml:35:589"><msub data-sm="./modules/m58320/index.cnxml:35:597"><mi data-sm="./modules/m58320/index.cnxml:35:605">m</mi><mn data-sm="./modules/m58320/index.cnxml:35:619">2</mn></msub><msub data-sm="./modules/m58320/index.cnxml:35:642"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:35:650"><mover accent="true" data-sm="./modules/m58320/index.cnxml:35:697"><mi data-sm="./modules/m58320/index.cnxml:35:720">v</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:35:734">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:35:786"><mn data-sm="./modules/m58320/index.cnxml:35:833">2</mn></mstyle></msub></mrow>
+<mo data-sm="./modules/m58320/index.cnxml:35:876">)</mo></mrow>
+</mrow>
+</mrow>
+</semantics>
+</math>
+<div class="os-equation-number">
+  <span class="os-number">9.12</span>
+</div>
+</div>
+
+<p id="fs-id1167134535219" data-sm="./modules/m58320/index.cnxml:36:1">and thus</p>
+
+<div data-type="note" id="fs-id1167134518288" class="equation-callout" data-sm="./modules/m58320/index.cnxml:37:1">
+<div data-type="equation" id="fs-id1167134676064" data-sm="./modules/m58320/index.cnxml:38:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:38:51"><mfrac data-sm="./modules/m58320/index.cnxml:38:59"><mrow data-sm="./modules/m58320/index.cnxml:38:68"><mi data-sm="./modules/m58320/index.cnxml:38:76">d</mi><msub data-sm="./modules/m58320/index.cnxml:38:90"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:38:98"><mover accent="true" data-sm="./modules/m58320/index.cnxml:38:145"><mi data-sm="./modules/m58320/index.cnxml:38:168">p</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:38:182">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:38:234"><mn data-sm="./modules/m58320/index.cnxml:38:281">1</mn></mstyle></msub></mrow>
+<mrow data-sm="./modules/m58320/index.cnxml:38:324"><mi data-sm="./modules/m58320/index.cnxml:38:332">d</mi><mi data-sm="./modules/m58320/index.cnxml:38:346">t</mi></mrow>
+</mfrac>
+<mo data-sm="./modules/m58320/index.cnxml:38:379">=</mo><mo data-sm="./modules/m58320/index.cnxml:38:393">−</mo><mfrac data-sm="./modules/m58320/index.cnxml:38:407"><mrow data-sm="./modules/m58320/index.cnxml:38:416"><mi data-sm="./modules/m58320/index.cnxml:38:424">d</mi><msub data-sm="./modules/m58320/index.cnxml:38:438"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:38:446"><mover accent="true" data-sm="./modules/m58320/index.cnxml:38:493"><mi data-sm="./modules/m58320/index.cnxml:38:516">p</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:38:530">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:38:582"><mn data-sm="./modules/m58320/index.cnxml:38:629">2</mn></mstyle></msub></mrow>
+<mrow data-sm="./modules/m58320/index.cnxml:38:672"><mi data-sm="./modules/m58320/index.cnxml:38:680">d</mi><mi data-sm="./modules/m58320/index.cnxml:38:694">t</mi></mrow>
+</mfrac>
+<mo data-sm="./modules/m58320/index.cnxml:38:727">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+<div class="os-equation-number">
+  <span class="os-number">9.13</span>
+</div>
+</div>
+</div>
+
+<p id="fs-id1167134815925" data-sm="./modules/m58320/index.cnxml:40:1">This says that <em data-effect="italics" data-sm="./modules/m58320/index.cnxml:40:46">the rate at which momentum changes is the same for both objects.</em> The masses are different, and the changes of velocity are different, but the rate of change of the product of <em data-effect="italics" data-sm="./modules/m58320/index.cnxml:40:259">m</em> and <strong data-sm="./modules/m58320/index.cnxml:40:303"><span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:40:335"><mover accent="true" data-sm="./modules/m58320/index.cnxml:40:382"><mi data-sm="./modules/m58320/index.cnxml:40:405">v</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:40:419">→</mo></mover>
+</mstyle>
+</mrow>
+</semantics>
+</math></span></strong> are the same.</p>
+
+<p id="fs-id1167131205450" data-sm="./modules/m58320/index.cnxml:41:1">Physically, this means that during the interaction of the two objects (<span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:41:110"><msub data-sm="./modules/m58320/index.cnxml:41:118"><mi data-sm="./modules/m58320/index.cnxml:41:126">m</mi><mn data-sm="./modules/m58320/index.cnxml:41:140">1</mn></msub><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:41:163"/><mtext data-sm="./modules/m58320/index.cnxml:41:188">and</mtext><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:41:210"/><msub data-sm="./modules/m58320/index.cnxml:41:235"><mi data-sm="./modules/m58320/index.cnxml:41:243">m</mi><mn data-sm="./modules/m58320/index.cnxml:41:257">2</mn></msub></mrow>
+</mrow>
+</semantics>
+</math></span>), both objects have their momentum changed; but those changes are identical in magnitude, though opposite in sign. For example, the momentum of object 1 might increase, which means that the momentum of object 2 decreases by exactly the same amount.</p>
+
+<p id="fs-id1167131085283" data-sm="./modules/m58320/index.cnxml:42:1">In light of this, let’s re-write <a href="#fs-id1167131462135" data-sm="./modules/m58320/index.cnxml:42:64" class="autogenerated-content">Equation 9.12</a> in a more suggestive form:</p>
+
+<div data-type="note" id="fs-id1167134759678" class="equation-callout" data-sm="./modules/m58320/index.cnxml:43:1">
+<div data-type="equation" id="fs-id1167134468338" data-sm="./modules/m58320/index.cnxml:44:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:44:51"><mfrac data-sm="./modules/m58320/index.cnxml:44:59"><mrow data-sm="./modules/m58320/index.cnxml:44:68"><mi data-sm="./modules/m58320/index.cnxml:44:76">d</mi><msub data-sm="./modules/m58320/index.cnxml:44:90"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:44:98"><mover accent="true" data-sm="./modules/m58320/index.cnxml:44:145"><mi data-sm="./modules/m58320/index.cnxml:44:168">p</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:44:182">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:44:234"><mn data-sm="./modules/m58320/index.cnxml:44:281">1</mn></mstyle></msub></mrow>
+<mrow data-sm="./modules/m58320/index.cnxml:44:324"><mi data-sm="./modules/m58320/index.cnxml:44:332">d</mi><mi data-sm="./modules/m58320/index.cnxml:44:346">t</mi></mrow>
+</mfrac>
+<mo data-sm="./modules/m58320/index.cnxml:44:379">+</mo><mfrac data-sm="./modules/m58320/index.cnxml:44:393"><mrow data-sm="./modules/m58320/index.cnxml:44:402"><mi data-sm="./modules/m58320/index.cnxml:44:410">d</mi><msub data-sm="./modules/m58320/index.cnxml:44:424"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:44:432"><mover accent="true" data-sm="./modules/m58320/index.cnxml:44:479"><mi data-sm="./modules/m58320/index.cnxml:44:502">p</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:44:516">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:44:568"><mn data-sm="./modules/m58320/index.cnxml:44:615">2</mn></mstyle></msub></mrow>
+<mrow data-sm="./modules/m58320/index.cnxml:44:658"><mi data-sm="./modules/m58320/index.cnxml:44:666">d</mi><mi data-sm="./modules/m58320/index.cnxml:44:680">t</mi></mrow>
+</mfrac>
+<mo data-sm="./modules/m58320/index.cnxml:44:713">=</mo><mn data-sm="./modules/m58320/index.cnxml:44:727">0</mn><mo data-sm="./modules/m58320/index.cnxml:44:741">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+<div class="os-equation-number">
+  <span class="os-number">9.14</span>
+</div>
+</div>
+</div>
+
+<p id="fs-id1167134896954" data-sm="./modules/m58320/index.cnxml:46:1">This says that during the interaction, although object 1’s momentum changes, and object 2’s momentum also changes, these two changes cancel each other out, so that the total change of momentum of the two objects together is zero.</p>
+
+<p id="fs-id1167134469137" data-sm="./modules/m58320/index.cnxml:47:1">Since the total combined momentum of the two objects together never changes, then we could write</p>
+
+<div data-type="equation" id="fs-id1167134502064" data-sm="./modules/m58320/index.cnxml:48:1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:48:43"><mfrac data-sm="./modules/m58320/index.cnxml:48:51"><mi data-sm="./modules/m58320/index.cnxml:48:60">d</mi><mrow data-sm="./modules/m58320/index.cnxml:48:74"><mi data-sm="./modules/m58320/index.cnxml:48:82">d</mi><mi data-sm="./modules/m58320/index.cnxml:48:96">t</mi></mrow>
+</mfrac>
+<mrow data-sm="./modules/m58320/index.cnxml:48:129"><mo data-sm="./modules/m58320/index.cnxml:48:137">(</mo><mrow data-sm="./modules/m58320/index.cnxml:48:151"><msub data-sm="./modules/m58320/index.cnxml:48:159"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:48:167"><mover accent="true" data-sm="./modules/m58320/index.cnxml:48:214"><mi data-sm="./modules/m58320/index.cnxml:48:237">p</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:48:251">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:48:303"><mn data-sm="./modules/m58320/index.cnxml:48:350">1</mn></mstyle></msub><mo data-sm="./modules/m58320/index.cnxml:48:384">+</mo><msub data-sm="./modules/m58320/index.cnxml:48:398"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:48:406"><mover accent="true" data-sm="./modules/m58320/index.cnxml:48:453"><mi data-sm="./modules/m58320/index.cnxml:48:476">p</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:48:490">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:48:542"><mn data-sm="./modules/m58320/index.cnxml:48:589">2</mn></mstyle></msub></mrow>
+<mo data-sm="./modules/m58320/index.cnxml:48:632">)</mo></mrow>
+<mo data-sm="./modules/m58320/index.cnxml:48:655">=</mo><mn data-sm="./modules/m58320/index.cnxml:48:669">0</mn></mrow>
+</mrow>
+</semantics>
+</math>
+<div class="os-equation-number">
+  <span class="os-number">9.15</span>
+</div>
+</div>
+
+<p id="fs-id1167134438479" data-sm="./modules/m58320/index.cnxml:49:1">from which it follows that</p>
+
+<div data-type="equation" id="fs-id1167134537574" data-sm="./modules/m58320/index.cnxml:50:1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:50:43"><msub data-sm="./modules/m58320/index.cnxml:50:51"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:50:59"><mover accent="true" data-sm="./modules/m58320/index.cnxml:50:106"><mi data-sm="./modules/m58320/index.cnxml:50:129">p</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:50:143">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:50:195"><mn data-sm="./modules/m58320/index.cnxml:50:242">1</mn></mstyle></msub><mo data-sm="./modules/m58320/index.cnxml:50:276">+</mo><msub data-sm="./modules/m58320/index.cnxml:50:290"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:50:298"><mover accent="true" data-sm="./modules/m58320/index.cnxml:50:345"><mi data-sm="./modules/m58320/index.cnxml:50:368">p</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:50:382">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:50:434"><mn data-sm="./modules/m58320/index.cnxml:50:481">2</mn></mstyle></msub><mo data-sm="./modules/m58320/index.cnxml:50:515">=</mo><mtext data-sm="./modules/m58320/index.cnxml:50:529">constant</mtext><mo data-sm="./modules/m58320/index.cnxml:50:556">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+<div class="os-equation-number">
+  <span class="os-number">9.16</span>
+</div>
+</div>
+
+<p id="fs-id1167134567421" data-sm="./modules/m58320/index.cnxml:51:1">As shown in <a href="#CNX_UPhysics_09_03_Balls" data-sm="./modules/m58320/index.cnxml:51:43" class="autogenerated-content">Figure 9.14</a>, the total momentum of the system before and after the collision remains the same.</p>
+
+<div class="os-figure"><figure id="CNX_UPhysics_09_03_Balls" data-sm="./modules/m58320/index.cnxml:52:1"><span data-type="media" id="fs-id1167134873356" data-alt="Before collision yellow ball1 is moving down and to the right, aiming at the center of blue ball 2. Blue ball 2 is moving to the left and slightly down, and more slowly than ball 1. We are told that p total vector equals p 1 vector plus p 2 vector and we are shown the sum as a vector diagram: p 1 and p 2 are placed with the tail of p 2 at the head of p 1. A vector is drawn from the tail of p 1 to the head of p 2. After the collision, the yellow ball is moving slowly to the right and p 2 is moving more rapidly down and to the left. We are told that p prime total vector equals p prime 1 vector plus p prime 2 vector and we are shown the sum as a vector diagram: p prime 1 and p prime 2 are placed with the tail of p prime 2 at the head of p prime 1. A vector is drawn from the tail of p prime 1 to the head of p prime 2 and is the same length and in the same direction as the sum vector before collision." data-sm="./modules/m58320/index.cnxml:52:39">
+<img src="f41fb2a8c123ada04b97c808de2049832f47762e.jpeg" data-media-type="image/jpeg" alt="Before collision yellow ball1 is moving down and to the right, aiming at the center of blue ball 2. Blue ball 2 is moving to the left and slightly down, and more slowly than ball 1. We are told that p total vector equals p 1 vector plus p 2 vector and we are shown the sum as a vector diagram: p 1 and p 2 are placed with the tail of p 2 at the head of p 1. A vector is drawn from the tail of p 1 to the head of p 2. After the collision, the yellow ball is moving slowly to the right and p 2 is moving more rapidly down and to the left. We are told that p prime total vector equals p prime 1 vector plus p prime 2 vector and we are shown the sum as a vector diagram: p prime 1 and p prime 2 are placed with the tail of p prime 2 at the head of p prime 1. A vector is drawn from the tail of p prime 1 to the head of p prime 2 and is the same length and in the same direction as the sum vector before collision." data-sm="./modules/m58320/index.cnxml:53:1"/>
+</span>
+
+</figure>
+<div class="os-caption-container">
+  <span class="os-title-label">Figure </span>
+<span class="os-number">9.14</span>
+
+
+
+  <span class="os-divider"> </span>
+  <span data-sm="./modules/m58320/index.cnxml:56:1" class="os-caption">Before the collision, the two billiard balls travel with momenta <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:56:83"><msub data-sm="./modules/m58320/index.cnxml:56:91"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:56:99"><mover accent="true" data-sm="./modules/m58320/index.cnxml:56:146"><mi data-sm="./modules/m58320/index.cnxml:56:169">p</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:56:183">→</mo></mover>
+</mstyle><mn data-sm="./modules/m58320/index.cnxml:56:235">1</mn></msub></mrow>
+</mrow>
+</semantics>
+</math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:56:289"><msub data-sm="./modules/m58320/index.cnxml:56:297"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:56:305"><mover accent="true" data-sm="./modules/m58320/index.cnxml:56:352"><mi data-sm="./modules/m58320/index.cnxml:56:375">p</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:56:389">→</mo></mover>
+</mstyle><mn data-sm="./modules/m58320/index.cnxml:56:441">2</mn></msub></mrow>
+</mrow>
+</semantics>
+</math>. The total momentum of the system is the sum of these, as shown by the red vector labeled <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:56:581"><msub data-sm="./modules/m58320/index.cnxml:56:589"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:56:597"><mover accent="true" data-sm="./modules/m58320/index.cnxml:56:644"><mi data-sm="./modules/m58320/index.cnxml:56:667">p</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:56:681">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58320/index.cnxml:56:733"><mi mathvariant="normal" data-sm="./modules/m58320/index.cnxml:56:741">total</mi></mrow></msub></mrow>
+</mrow>
+</semantics>
+</math> on the left. After the collision, the two billiard balls travel with different momenta <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:56:912"><msub data-sm="./modules/m58320/index.cnxml:56:920"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:56:928"><msup data-sm="./modules/m58320/index.cnxml:56:975"><mover accent="true" data-sm="./modules/m58320/index.cnxml:56:983"><mi data-sm="./modules/m58320/index.cnxml:56:1006">p</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:56:1020">→</mo></mover><mo data-sm="./modules/m58320/index.cnxml:56:1061">′</mo></msup></mstyle><mn data-sm="./modules/m58320/index.cnxml:56:1095">1</mn></msub></mrow>
+</mrow>
+</semantics>
+</math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:56:1149"><msub data-sm="./modules/m58320/index.cnxml:56:1157"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:56:1165"><msup data-sm="./modules/m58320/index.cnxml:56:1212"><mover accent="true" data-sm="./modules/m58320/index.cnxml:56:1220"><mi data-sm="./modules/m58320/index.cnxml:56:1243">p</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:56:1257">→</mo></mover><mo data-sm="./modules/m58320/index.cnxml:56:1298">′</mo></msup></mstyle><mn data-sm="./modules/m58320/index.cnxml:56:1332">2</mn></msub></mrow>
+</mrow>
+</semantics>
+</math>. The total momentum, however, has not changed, as shown by the red vector arrow <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:56:1462"><msub data-sm="./modules/m58320/index.cnxml:56:1470"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:56:1478"><msup data-sm="./modules/m58320/index.cnxml:56:1525"><mover accent="true" data-sm="./modules/m58320/index.cnxml:56:1533"><mi data-sm="./modules/m58320/index.cnxml:56:1556">p</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:56:1570">→</mo></mover><mo data-sm="./modules/m58320/index.cnxml:56:1611">′</mo></msup></mstyle><mrow data-sm="./modules/m58320/index.cnxml:56:1645"><mi mathvariant="normal" data-sm="./modules/m58320/index.cnxml:56:1653">total</mi></mrow></msub></mrow>
+</mrow>
+</semantics>
+</math> on the right.</span>
+</div>
+</div>
+<p id="fs-id1167134509591" data-sm="./modules/m58320/index.cnxml:56:1761">Generalizing this result to <em data-effect="italics" data-sm="./modules/m58320/index.cnxml:56:1819">N</em> objects, we obtain</p>
+
+<div data-type="note" id="fs-id1167134451314" class="equation-callout" data-sm="./modules/m58320/index.cnxml:57:1">
+<div data-type="equation" id="fs-id1167134762290" data-sm="./modules/m58320/index.cnxml:58:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtable data-sm="./modules/m58320/index.cnxml:58:51"><mtr data-sm="./modules/m58320/index.cnxml:58:61"><mtd columnalign="right" data-sm="./modules/m58320/index.cnxml:58:68"><msub data-sm="./modules/m58320/index.cnxml:58:95"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:58:103"><mover accent="true" data-sm="./modules/m58320/index.cnxml:58:150"><mi data-sm="./modules/m58320/index.cnxml:58:173">p</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:58:187">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:58:239"><mn data-sm="./modules/m58320/index.cnxml:58:286">1</mn></mstyle></msub><mo data-sm="./modules/m58320/index.cnxml:58:320">+</mo><msub data-sm="./modules/m58320/index.cnxml:58:334"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:58:342"><mover accent="true" data-sm="./modules/m58320/index.cnxml:58:389"><mi data-sm="./modules/m58320/index.cnxml:58:412">p</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:58:426">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:58:478"><mn data-sm="./modules/m58320/index.cnxml:58:525">2</mn></mstyle></msub><mo data-sm="./modules/m58320/index.cnxml:58:559">+</mo><msub data-sm="./modules/m58320/index.cnxml:58:573"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:58:581"><mover accent="true" data-sm="./modules/m58320/index.cnxml:58:628"><mi data-sm="./modules/m58320/index.cnxml:58:651">p</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:58:665">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:58:717"><mn data-sm="./modules/m58320/index.cnxml:58:764">3</mn></mstyle></msub><mo data-sm="./modules/m58320/index.cnxml:58:798">+</mo><mo data-sm="./modules/m58320/index.cnxml:58:812">⋯</mo><mo data-sm="./modules/m58320/index.cnxml:58:826">+</mo><msub data-sm="./modules/m58320/index.cnxml:58:840"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:58:848"><mover accent="true" data-sm="./modules/m58320/index.cnxml:58:895"><mi data-sm="./modules/m58320/index.cnxml:58:918">p</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:58:932">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:58:984"><mi data-sm="./modules/m58320/index.cnxml:58:1031">N</mi></mstyle></msub></mtd>
+<mtd columnalign="left" data-sm="./modules/m58320/index.cnxml:58:1073"><mo data-sm="./modules/m58320/index.cnxml:58:1099">=</mo></mtd>
+<mtd columnalign="left" data-sm="./modules/m58320/index.cnxml:58:1121"><mtext data-sm="./modules/m58320/index.cnxml:58:1147">constant</mtext></mtd>
+</mtr>
+<mtr data-sm="./modules/m58320/index.cnxml:58:1190"><mtd columnalign="right" data-sm="./modules/m58320/index.cnxml:58:1197"><mstyle displaystyle="true" data-sm="./modules/m58320/index.cnxml:58:1224"><munderover data-sm="./modules/m58320/index.cnxml:58:1254"><mo data-sm="./modules/m58320/index.cnxml:58:1268">∑</mo><mrow data-sm="./modules/m58320/index.cnxml:58:1282"><mi data-sm="./modules/m58320/index.cnxml:58:1290">j</mi><mo data-sm="./modules/m58320/index.cnxml:58:1304">=</mo><mn data-sm="./modules/m58320/index.cnxml:58:1318">1</mn></mrow>
+<mi data-sm="./modules/m58320/index.cnxml:58:1341">N</mi></munderover>
+<mrow data-sm="./modules/m58320/index.cnxml:58:1370"><msub data-sm="./modules/m58320/index.cnxml:58:1378"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:58:1386"><mover accent="true" data-sm="./modules/m58320/index.cnxml:58:1433"><mi data-sm="./modules/m58320/index.cnxml:58:1456">p</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:58:1470">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:58:1522"><mi data-sm="./modules/m58320/index.cnxml:58:1569">j</mi></mstyle></msub></mrow>
+</mstyle>
+</mtd>
+<mtd columnalign="left" data-sm="./modules/m58320/index.cnxml:58:1631"><mo data-sm="./modules/m58320/index.cnxml:58:1657">=</mo></mtd>
+<mtd columnalign="left" data-sm="./modules/m58320/index.cnxml:58:1679"><mtext data-sm="./modules/m58320/index.cnxml:58:1705">constant.</mtext></mtd>
+</mtr>
+</mtable>
+</mrow>
+</semantics>
+</math>
+<div class="os-equation-number">
+  <span class="os-number">9.17</span>
+</div>
+</div>
+</div>
+
+<p id="fs-id1167131211940" data-sm="./modules/m58320/index.cnxml:60:1"><a href="#fs-id1167134762290" data-sm="./modules/m58320/index.cnxml:60:31" class="autogenerated-content">Equation 9.17</a> is the definition of the total (or net) momentum of a system of <em data-effect="italics" data-sm="./modules/m58320/index.cnxml:60:134">N</em> interacting objects, along with the statement that the total momentum of a system of objects is constant in time—or better, is conserved.</p>
+
+<div data-type="note" id="fs-id1167134664914" data-sm="./modules/m58320/index.cnxml:61:1"><h3 class="os-title" data-type="title">
+  <span class="os-title-label" data-type="">Conservation Laws</span>
+</h3>
+<div class="os-note-body">
+<p id="fs-id1167134812957" data-sm="./modules/m58320/index.cnxml:63:1">If the value of a physical quantity is constant in time, we say that the quantity is conserved.</p>
+</div>
+</div>
+
+<section data-depth="1" id="fs-id1167134469962" data-sm="./modules/m58320/index.cnxml:65:1"><h3 data-type="title" data-sm="./modules/m58320/index.cnxml:66:1">Requirements for Momentum Conservation</h3>
+<p id="fs-id1167131106799" data-sm="./modules/m58320/index.cnxml:67:1">There is a complication, however. A system must meet two requirements for its momentum to be conserved:</p>
+<ol id="fs-id1167134567700" type="1" data-sm="./modules/m58320/index.cnxml:68:1">
+<li data-sm="./modules/m58320/index.cnxml:69:1"><em data-effect="italics" data-sm="./modules/m58320/index.cnxml:69:7">The mass of the system must remain constant during the interaction.</em><span data-type="newline" data-sm="./modules/m58320/index.cnxml:69:112"><br/></span>
+As the objects interact (apply forces on each other), they may <em data-effect="italics" data-sm="./modules/m58320/index.cnxml:70:64">transfer</em> mass from one to another; but any mass one object gains is balanced by the loss of that mass from another. The total mass of the system of objects, therefore, remains unchanged as time passes:
+<div data-type="equation" id="fs-id1167134453649" class="unnumbered" data-sm="./modules/m58320/index.cnxml:71:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:71:70"><msub data-sm="./modules/m58320/index.cnxml:71:78"><mrow data-sm="./modules/m58320/index.cnxml:71:86"><mrow data-sm="./modules/m58320/index.cnxml:71:94"><mo data-sm="./modules/m58320/index.cnxml:71:102">[</mo><mrow data-sm="./modules/m58320/index.cnxml:71:116"><mfrac data-sm="./modules/m58320/index.cnxml:71:124"><mrow data-sm="./modules/m58320/index.cnxml:71:133"><mi data-sm="./modules/m58320/index.cnxml:71:141">d</mi><mi data-sm="./modules/m58320/index.cnxml:71:155">m</mi></mrow>
+<mrow data-sm="./modules/m58320/index.cnxml:71:178"><mi data-sm="./modules/m58320/index.cnxml:71:186">d</mi><mi data-sm="./modules/m58320/index.cnxml:71:200">t</mi></mrow>
+</mfrac>
+</mrow>
+<mo data-sm="./modules/m58320/index.cnxml:71:242">]</mo></mrow>
+</mrow><mrow data-sm="./modules/m58320/index.cnxml:71:274"><mtext data-sm="./modules/m58320/index.cnxml:71:282">system</mtext></mrow></msub><mo data-sm="./modules/m58320/index.cnxml:71:325">=</mo><mn data-sm="./modules/m58320/index.cnxml:71:339">0</mn><mo data-sm="./modules/m58320/index.cnxml:71:353">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div></li>
+<li data-sm="./modules/m58320/index.cnxml:72:1"><em data-effect="italics" data-sm="./modules/m58320/index.cnxml:72:7">The net external force on the system must be zero.</em><span data-type="newline" data-sm="./modules/m58320/index.cnxml:72:95"><br/></span>
+As the objects collide, or explode, and move around, they exert forces on each other. However, all of these forces are internal to the system, and thus each of these internal forces is balanced by another internal force that is equal in magnitude and opposite in sign. As a result, the change in momentum caused by each internal force is cancelled by another momentum change that is equal in magnitude and opposite in direction. Therefore, internal forces cannot change the total momentum of a system because the changes sum to zero. However, if there is some external force that acts on all of the objects (gravity, for example, or friction), then this force changes the momentum of the system as a whole; that is to say, the momentum of the system is changed by the external force. Thus, for the momentum of the system to be conserved, we must have
+<div data-type="equation" id="fs-id1167131432611" class="unnumbered" data-sm="./modules/m58320/index.cnxml:74:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:74:70"><msub data-sm="./modules/m58320/index.cnxml:74:78"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:74:86"><mover accent="true" data-sm="./modules/m58320/index.cnxml:74:133"><mi data-sm="./modules/m58320/index.cnxml:74:156">F</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:74:170">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58320/index.cnxml:74:222"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:74:230"><mi data-sm="./modules/m58320/index.cnxml:74:277">e</mi><mi data-sm="./modules/m58320/index.cnxml:74:291">x</mi><mi data-sm="./modules/m58320/index.cnxml:74:305">t</mi></mstyle>
+</mrow></msub><mo data-sm="./modules/m58320/index.cnxml:74:348">=</mo><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:74:362"><mover accent="true" data-sm="./modules/m58320/index.cnxml:74:409"><mn data-sm="./modules/m58320/index.cnxml:74:432">0</mn><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:74:446">→</mo></mover>
+</mstyle>
+<mo data-sm="./modules/m58320/index.cnxml:74:498">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+</li>
+</ol>
+<p id="fs-id1167131504060" data-sm="./modules/m58320/index.cnxml:77:1">A system of objects that meets these two requirements is said to be a <span data-type="term" id="term-00001" data-sm="./modules/m58320/index.cnxml:77:101">closed system</span> (also called an isolated system). Thus, the more compact way to express this is shown below.</p>
+<div data-type="note" id="fs-id1167131405399" data-sm="./modules/m58320/index.cnxml:78:1"><h3 class="os-title" data-type="title">
+  <span class="os-title-label" data-type="">Law of Conservation of Momentum</span>
+</h3>
+<div class="os-note-body">
+<p id="fs-id1167134757671" data-sm="./modules/m58320/index.cnxml:80:1">The total momentum of a closed system is conserved:</p>
+<div data-type="equation" id="fs-id1167134447033" class="unnumbered" data-sm="./modules/m58320/index.cnxml:81:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:81:70"><mstyle displaystyle="true" data-sm="./modules/m58320/index.cnxml:81:78"><munderover data-sm="./modules/m58320/index.cnxml:81:108"><mo data-sm="./modules/m58320/index.cnxml:81:122">∑</mo><mrow data-sm="./modules/m58320/index.cnxml:81:136"><mi data-sm="./modules/m58320/index.cnxml:81:144">j</mi><mo data-sm="./modules/m58320/index.cnxml:81:158">=</mo><mn data-sm="./modules/m58320/index.cnxml:81:172">1</mn></mrow>
+<mi data-sm="./modules/m58320/index.cnxml:81:195">N</mi></munderover>
+<mrow data-sm="./modules/m58320/index.cnxml:81:224"><msub data-sm="./modules/m58320/index.cnxml:81:232"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:81:240"><mover accent="true" data-sm="./modules/m58320/index.cnxml:81:287"><mi data-sm="./modules/m58320/index.cnxml:81:310">p</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:81:324">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:81:376"><mi data-sm="./modules/m58320/index.cnxml:81:423">j</mi></mstyle></msub></mrow>
+</mstyle>
+<mo data-sm="./modules/m58320/index.cnxml:81:477">=</mo><mtext data-sm="./modules/m58320/index.cnxml:81:491">constant.</mtext></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+</div>
+</div>
+<p id="fs-id1167134822637" data-sm="./modules/m58320/index.cnxml:83:1">This statement is called the <span data-type="term" id="term-00002" data-sm="./modules/m58320/index.cnxml:83:60">Law of Conservation of Momentum</span>. Along with the conservation of energy, it is one of the foundations upon which all of physics stands. All our experimental evidence supports this statement: from the motions of galactic clusters to the quarks that make up the proton and the neutron, and at every scale in between. <em data-effect="italics" data-sm="./modules/m58320/index.cnxml:83:403">In a closed system, the total momentum never changes.</em></p>
+<p id="fs-id1167134507868" data-sm="./modules/m58320/index.cnxml:84:1">Note that there absolutely <em data-effect="italics" data-sm="./modules/m58320/index.cnxml:84:58">can</em> be external forces acting on the system; but for the system’s momentum to remain constant, these external forces have to cancel, so that the <em data-effect="italics" data-sm="./modules/m58320/index.cnxml:84:241">net</em> external force is zero. Billiard balls on a table all have a weight force acting on them, but the weights are balanced (canceled) by the normal forces, so there is no <em data-effect="italics" data-sm="./modules/m58320/index.cnxml:84:450">net</em> force.</p>
+</section>
+
+<section data-depth="1" id="fs-id1167134945095" data-sm="./modules/m58320/index.cnxml:86:1"><h3 data-type="title" data-sm="./modules/m58320/index.cnxml:87:1">The Meaning of ‘System’</h3>
+<p id="fs-id1167134438612" data-sm="./modules/m58320/index.cnxml:88:1">A <span data-type="term" id="term-00003" data-sm="./modules/m58320/index.cnxml:88:33">system</span> (mechanical) is the collection of objects in whose motion (kinematics and dynamics) you are interested. If you are analyzing the bounce of a ball on the ground, you are probably only interested in the motion of the ball, and not of Earth; thus, the ball is your system. If you are analyzing a car crash, the two cars together compose your system (<a href="#CNX_UPhysics_09_03_TwoCars" data-sm="./modules/m58320/index.cnxml:88:416" class="autogenerated-content">Figure 9.15</a>).</p>
+<div class="os-figure"><figure id="CNX_UPhysics_09_03_TwoCars" data-sm="./modules/m58320/index.cnxml:89:1">
+<span data-type="media" id="fs-id1167134567228" data-alt="Illustration of collision of two cars with masses m 1 and m 2. The system of interest is the two cars before and after the collision. Before the collision, car m 2 is in front and moving forward with velocity v 2, and car m 1 is behind it, moving forward with velocity v 1. Net vector F = 0 and vectors p 1 plus p 2 equal p tot. After the collision, car m 2 is in front and moving forward with velocity v 2 prime which is larger than v 2 before the collision, and car m 1 is behind it, moving forward with velocity v 1 prime that is less than v 1 before the collision. Vectors p 1 prime plus p 2 prime equal p tot prime." data-sm="./modules/m58320/index.cnxml:90:1">
+<img src="3f78cc982b1fdffcb8392d4d81313b65dea1dc2a.jpeg" data-media-type="image/jpeg" alt="Illustration of collision of two cars with masses m 1 and m 2. The system of interest is the two cars before and after the collision. Before the collision, car m 2 is in front and moving forward with velocity v 2, and car m 1 is behind it, moving forward with velocity v 1. Net vector F = 0 and vectors p 1 plus p 2 equal p tot. After the collision, car m 2 is in front and moving forward with velocity v 2 prime which is larger than v 2 before the collision, and car m 1 is behind it, moving forward with velocity v 1 prime that is less than v 1 before the collision. Vectors p 1 prime plus p 2 prime equal p tot prime." data-sm="./modules/m58320/index.cnxml:91:1"/>
+</span>
+
+</figure>
+<div class="os-caption-container">
+  <span class="os-title-label">Figure </span>
+<span class="os-number">9.15</span>
+
+
+
+  <span class="os-divider"> </span>
+  <span data-sm="./modules/m58320/index.cnxml:93:1" class="os-caption">The two cars together form the system that is to be analyzed. It is important to remember that the contents (the mass) of the system do not change before, during, or after the objects in the system interact.</span>
+</div>
+</div>
+<div data-type="note" id="fs-id1167134676039" class="problem-solving" data-sm="./modules/m58320/index.cnxml:95:1"><h3 class="os-title" data-type="title">
+  <span class="os-title-label">Problem-Solving Strategy</span>
+</h3>
+<div class="os-note-body"><h4 data-type="title" data-sm="./modules/m58320/index.cnxml:96:1" class="os-subtitle">
+  <span class="os-subtitle-label">Conservation of Momentum</span>
+</h4>
+<p id="fs-id1167134564718" data-sm="./modules/m58320/index.cnxml:97:1">Using conservation of momentum requires four basic steps. The first step is crucial:</p>
+<ol id="fs-id1167131169878" type="1" data-sm="./modules/m58320/index.cnxml:98:1">
+<li data-sm="./modules/m58320/index.cnxml:99:1">Identify a closed system (total mass is constant, no net external force acts on the system).</li>
+<li data-sm="./modules/m58320/index.cnxml:100:1">Write down an expression representing the total momentum of the system before the “event” (explosion or collision).</li>
+<li data-sm="./modules/m58320/index.cnxml:101:1">Write down an expression representing the total momentum of the system after the “event.”</li>
+<li data-sm="./modules/m58320/index.cnxml:102:1">Set these two expressions equal to each other, and solve this equation for the desired quantity.</li>
+</ol>
+</div>
+</div>
+<div data-type="example" id="fs-id1167131502822" data-sm="./modules/m58320/index.cnxml:105:1"><h3 class="os-title">
+  <span class="os-title-label">Example </span>
+  <span class="os-number">9.6</span>
+  <span class="os-divider"> </span>
+</h3>
+<div class="body">
+<p id="fs-id1167134817759" data-sm="./modules/m58320/index.cnxml:106:1"></p>
+<h4 data-type="title" data-sm="./modules/m58320/index.cnxml:106:31">Colliding Carts</h4>
+Two carts in a physics lab roll on a level track, with negligible friction. These carts have small magnets at their ends, so that when they collide, they stick together (<a href="#CNX_UPhysics_09_03_ToyCarts" data-sm="./modules/m58320/index.cnxml:107:171" class="autogenerated-content">Figure 9.16</a>). The first cart has a mass of 675 grams and is rolling at 0.75 m/s to the right; the second has a mass of 500 grams and is rolling at 1.33 m/s, also to the right. After the collision, what is the velocity of the two joined carts?
+<div class="os-figure"><figure id="CNX_UPhysics_09_03_ToyCarts" data-sm="./modules/m58320/index.cnxml:108:1">
+<span data-type="media" id="fs-id1167134682772" data-alt="An illustration of two lab carts on a track, stuck together." data-sm="./modules/m58320/index.cnxml:109:1">
+<img src="40f32530e00fafcf397417d3919525a4138e6038.jpeg" data-media-type="image/jpeg" alt="An illustration of two lab carts on a track, stuck together." data-sm="./modules/m58320/index.cnxml:110:1"/>
+</span>
+
+</figure>
+<div class="os-caption-container">
+  <span class="os-title-label">Figure </span>
+<span class="os-number">9.16</span>
+
+
+
+  <span class="os-divider"> </span>
+  <span data-sm="./modules/m58320/index.cnxml:112:1" class="os-caption">Two lab carts collide and stick together after the collision.</span>
+</div>
+</div>
+<p id="fs-id1167131086982" data-sm="./modules/m58320/index.cnxml:114:1"></p>
+<h4 data-type="title" data-sm="./modules/m58320/index.cnxml:114:31">Strategy</h4>
+We have a collision. We’re given masses and initial velocities; we’re asked for the final velocity. This all suggests using conservation of momentum as a method of solution. However, we can only use it if we have a closed system. So we need to be sure that the system we choose has no net external force on it, and that its mass is not changed by the collision.
+<p id="fs-id1167134539266" data-sm="./modules/m58320/index.cnxml:116:1">Defining the system to be the two carts meets the requirements for a closed system: The combined mass of the two carts certainly doesn’t change, and while the carts definitely exert forces on each other, those forces are internal to the system, so they do not change the momentum of the system as a whole. In the vertical direction, the weights of the carts are canceled by the normal forces on the carts from the track.</p>
+<p id="fs-id1167134687063" data-sm="./modules/m58320/index.cnxml:117:1"></p>
+<h4 data-type="title" data-sm="./modules/m58320/index.cnxml:117:31">Solution</h4>
+Conservation of momentum is
+<div data-type="equation" id="fs-id1167131231790" class="unnumbered" data-sm="./modules/m58320/index.cnxml:119:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:119:70"><msub data-sm="./modules/m58320/index.cnxml:119:78"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:119:86"><mover accent="true" data-sm="./modules/m58320/index.cnxml:119:133"><mi data-sm="./modules/m58320/index.cnxml:119:156">p</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:119:170">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:119:222"><mi data-sm="./modules/m58320/index.cnxml:119:269">f</mi></mstyle></msub><mo data-sm="./modules/m58320/index.cnxml:119:303">=</mo><msub data-sm="./modules/m58320/index.cnxml:119:317"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:119:325"><mover accent="true" data-sm="./modules/m58320/index.cnxml:119:372"><mi data-sm="./modules/m58320/index.cnxml:119:395">p</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:119:409">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:119:461"><mi data-sm="./modules/m58320/index.cnxml:119:508">i</mi></mstyle></msub><mo data-sm="./modules/m58320/index.cnxml:119:542">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1167134509214" data-sm="./modules/m58320/index.cnxml:120:1">Define the direction of their initial velocity vectors to be the +<em data-effect="italics" data-sm="./modules/m58320/index.cnxml:120:97">x</em>-direction. The initial momentum is then</p>
+<div data-type="equation" id="fs-id1167131273517" class="unnumbered" data-sm="./modules/m58320/index.cnxml:121:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:121:70"><msub data-sm="./modules/m58320/index.cnxml:121:78"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:121:86"><mover accent="true" data-sm="./modules/m58320/index.cnxml:121:133"><mi data-sm="./modules/m58320/index.cnxml:121:156">p</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:121:170">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:121:222"><mi data-sm="./modules/m58320/index.cnxml:121:269">i</mi></mstyle></msub><mo data-sm="./modules/m58320/index.cnxml:121:303">=</mo><msub data-sm="./modules/m58320/index.cnxml:121:317"><mi data-sm="./modules/m58320/index.cnxml:121:325">m</mi><mn data-sm="./modules/m58320/index.cnxml:121:339">1</mn></msub><msub data-sm="./modules/m58320/index.cnxml:121:362"><mi data-sm="./modules/m58320/index.cnxml:121:370">v</mi><mn data-sm="./modules/m58320/index.cnxml:121:384">1</mn></msub><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:121:407"><mover accent="true" data-sm="./modules/m58320/index.cnxml:121:454"><mi data-sm="./modules/m58320/index.cnxml:121:477">i</mi><mo data-sm="./modules/m58320/index.cnxml:121:491">^</mo></mover>
+</mstyle>
+<mo data-sm="./modules/m58320/index.cnxml:121:526">+</mo><msub data-sm="./modules/m58320/index.cnxml:121:540"><mi data-sm="./modules/m58320/index.cnxml:121:548">m</mi><mn data-sm="./modules/m58320/index.cnxml:121:562">2</mn></msub><msub data-sm="./modules/m58320/index.cnxml:121:585"><mi data-sm="./modules/m58320/index.cnxml:121:593">v</mi><mn data-sm="./modules/m58320/index.cnxml:121:607">2</mn></msub><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:121:630"><mover accent="true" data-sm="./modules/m58320/index.cnxml:121:677"><mi data-sm="./modules/m58320/index.cnxml:121:700">i</mi><mo data-sm="./modules/m58320/index.cnxml:121:714">^</mo></mover>
+</mstyle>
+<mo data-sm="./modules/m58320/index.cnxml:121:749">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1167131109105" data-sm="./modules/m58320/index.cnxml:122:1">The final momentum of the now-linked carts is</p>
+<div data-type="equation" id="fs-id1167134436226" class="unnumbered" data-sm="./modules/m58320/index.cnxml:123:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:123:70"><msub data-sm="./modules/m58320/index.cnxml:123:78"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:123:86"><mover accent="true" data-sm="./modules/m58320/index.cnxml:123:133"><mi data-sm="./modules/m58320/index.cnxml:123:156">p</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:123:170">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:123:222"><mi data-sm="./modules/m58320/index.cnxml:123:269">f</mi></mstyle></msub><mo data-sm="./modules/m58320/index.cnxml:123:303">=</mo><mrow data-sm="./modules/m58320/index.cnxml:123:317"><mo data-sm="./modules/m58320/index.cnxml:123:325">(</mo><mrow data-sm="./modules/m58320/index.cnxml:123:339"><msub data-sm="./modules/m58320/index.cnxml:123:347"><mi data-sm="./modules/m58320/index.cnxml:123:355">m</mi><mn data-sm="./modules/m58320/index.cnxml:123:369">1</mn></msub><mo data-sm="./modules/m58320/index.cnxml:123:392">+</mo><msub data-sm="./modules/m58320/index.cnxml:123:406"><mi data-sm="./modules/m58320/index.cnxml:123:414">m</mi><mn data-sm="./modules/m58320/index.cnxml:123:428">2</mn></msub></mrow>
+<mo data-sm="./modules/m58320/index.cnxml:123:460">)</mo></mrow>
+<msub data-sm="./modules/m58320/index.cnxml:123:483"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:123:491"><mover accent="true" data-sm="./modules/m58320/index.cnxml:123:538"><mi data-sm="./modules/m58320/index.cnxml:123:561">v</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:123:575">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:123:627"><mi data-sm="./modules/m58320/index.cnxml:123:674">f</mi></mstyle></msub><mo data-sm="./modules/m58320/index.cnxml:123:708">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1167134511338" data-sm="./modules/m58320/index.cnxml:124:1">Equating:</p>
+<div data-type="equation" id="fs-id1167134669649" class="unnumbered" data-sm="./modules/m58320/index.cnxml:125:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtable data-sm="./modules/m58320/index.cnxml:125:70"><mtr data-sm="./modules/m58320/index.cnxml:125:80"><mtd columnalign="right" data-sm="./modules/m58320/index.cnxml:125:87"><mrow data-sm="./modules/m58320/index.cnxml:125:114"><mo data-sm="./modules/m58320/index.cnxml:125:122">(</mo><mrow data-sm="./modules/m58320/index.cnxml:125:136"><msub data-sm="./modules/m58320/index.cnxml:125:144"><mi data-sm="./modules/m58320/index.cnxml:125:152">m</mi><mn data-sm="./modules/m58320/index.cnxml:125:166">1</mn></msub><mo data-sm="./modules/m58320/index.cnxml:125:189">+</mo><msub data-sm="./modules/m58320/index.cnxml:125:203"><mi data-sm="./modules/m58320/index.cnxml:125:211">m</mi><mn data-sm="./modules/m58320/index.cnxml:125:225">2</mn></msub></mrow>
+<mo data-sm="./modules/m58320/index.cnxml:125:257">)</mo></mrow>
+<msub data-sm="./modules/m58320/index.cnxml:125:280"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:125:288"><mover accent="true" data-sm="./modules/m58320/index.cnxml:125:335"><mi data-sm="./modules/m58320/index.cnxml:125:358">v</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:125:372">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:125:424"><mi data-sm="./modules/m58320/index.cnxml:125:471">f</mi></mstyle></msub></mtd>
+<mtd columnalign="left" data-sm="./modules/m58320/index.cnxml:125:513"><mo data-sm="./modules/m58320/index.cnxml:125:539">=</mo></mtd>
+<mtd columnalign="left" data-sm="./modules/m58320/index.cnxml:125:561"><msub data-sm="./modules/m58320/index.cnxml:125:587"><mi data-sm="./modules/m58320/index.cnxml:125:595">m</mi><mn data-sm="./modules/m58320/index.cnxml:125:609">1</mn></msub><msub data-sm="./modules/m58320/index.cnxml:125:632"><mi data-sm="./modules/m58320/index.cnxml:125:640">v</mi><mn data-sm="./modules/m58320/index.cnxml:125:654">1</mn></msub><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:125:677"><mover accent="true" data-sm="./modules/m58320/index.cnxml:125:724"><mi data-sm="./modules/m58320/index.cnxml:125:747">i</mi><mo data-sm="./modules/m58320/index.cnxml:125:761">^</mo></mover>
+</mstyle>
+<mo data-sm="./modules/m58320/index.cnxml:125:796">+</mo><msub data-sm="./modules/m58320/index.cnxml:125:810"><mi data-sm="./modules/m58320/index.cnxml:125:818">m</mi><mn data-sm="./modules/m58320/index.cnxml:125:832">2</mn></msub><msub data-sm="./modules/m58320/index.cnxml:125:855"><mi data-sm="./modules/m58320/index.cnxml:125:863">v</mi><mn data-sm="./modules/m58320/index.cnxml:125:877">2</mn></msub><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:125:900"><mover accent="true" data-sm="./modules/m58320/index.cnxml:125:947"><mi data-sm="./modules/m58320/index.cnxml:125:970">i</mi><mo data-sm="./modules/m58320/index.cnxml:125:984">^</mo></mover>
+</mstyle>
+</mtd>
+</mtr>
+<mtr data-sm="./modules/m58320/index.cnxml:125:1035"><mtd columnalign="right" data-sm="./modules/m58320/index.cnxml:125:1042"><msub data-sm="./modules/m58320/index.cnxml:125:1069"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:125:1077"><mover accent="true" data-sm="./modules/m58320/index.cnxml:125:1124"><mi data-sm="./modules/m58320/index.cnxml:125:1147">v</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:125:1161">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:125:1213"><mi data-sm="./modules/m58320/index.cnxml:125:1260">f</mi></mstyle></msub></mtd>
+<mtd columnalign="left" data-sm="./modules/m58320/index.cnxml:125:1302"><mo data-sm="./modules/m58320/index.cnxml:125:1328">=</mo></mtd>
+<mtd columnalign="left" data-sm="./modules/m58320/index.cnxml:125:1350"><mrow data-sm="./modules/m58320/index.cnxml:125:1376"><mo data-sm="./modules/m58320/index.cnxml:125:1384">(</mo><mrow data-sm="./modules/m58320/index.cnxml:125:1398"><mfrac data-sm="./modules/m58320/index.cnxml:125:1406"><mrow data-sm="./modules/m58320/index.cnxml:125:1415"><msub data-sm="./modules/m58320/index.cnxml:125:1423"><mi data-sm="./modules/m58320/index.cnxml:125:1431">m</mi><mn data-sm="./modules/m58320/index.cnxml:125:1445">1</mn></msub><msub data-sm="./modules/m58320/index.cnxml:125:1468"><mi data-sm="./modules/m58320/index.cnxml:125:1476">v</mi><mn data-sm="./modules/m58320/index.cnxml:125:1490">1</mn></msub><mo data-sm="./modules/m58320/index.cnxml:125:1513">+</mo><msub data-sm="./modules/m58320/index.cnxml:125:1527"><mi data-sm="./modules/m58320/index.cnxml:125:1535">m</mi><mn data-sm="./modules/m58320/index.cnxml:125:1549">2</mn></msub><msub data-sm="./modules/m58320/index.cnxml:125:1572"><mi data-sm="./modules/m58320/index.cnxml:125:1580">v</mi><mn data-sm="./modules/m58320/index.cnxml:125:1594">2</mn></msub></mrow>
+<mrow data-sm="./modules/m58320/index.cnxml:125:1626"><msub data-sm="./modules/m58320/index.cnxml:125:1634"><mi data-sm="./modules/m58320/index.cnxml:125:1642">m</mi><mn data-sm="./modules/m58320/index.cnxml:125:1656">1</mn></msub><mo data-sm="./modules/m58320/index.cnxml:125:1679">+</mo><msub data-sm="./modules/m58320/index.cnxml:125:1693"><mi data-sm="./modules/m58320/index.cnxml:125:1701">m</mi><mn data-sm="./modules/m58320/index.cnxml:125:1715">2</mn></msub></mrow>
+</mfrac>
+</mrow>
+<mo data-sm="./modules/m58320/index.cnxml:125:1766">)</mo></mrow>
+<mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:125:1789"><mover accent="true" data-sm="./modules/m58320/index.cnxml:125:1836"><mi data-sm="./modules/m58320/index.cnxml:125:1859">i</mi><mo data-sm="./modules/m58320/index.cnxml:125:1873">^</mo></mover>
+</mstyle>
+<mo data-sm="./modules/m58320/index.cnxml:125:1908">.</mo></mtd>
+</mtr>
+</mtable>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1167134534283" data-sm="./modules/m58320/index.cnxml:126:1">Substituting the given numbers:</p>
+<div data-type="equation" id="fs-id1167134443550" class="unnumbered" data-sm="./modules/m58320/index.cnxml:127:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtable data-sm="./modules/m58320/index.cnxml:127:70"><mtr data-sm="./modules/m58320/index.cnxml:127:80"><mtd columnalign="right" data-sm="./modules/m58320/index.cnxml:127:87"><msub data-sm="./modules/m58320/index.cnxml:127:114"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:127:122"><mover accent="true" data-sm="./modules/m58320/index.cnxml:127:169"><mi data-sm="./modules/m58320/index.cnxml:127:192">v</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:127:206">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:127:258"><mi data-sm="./modules/m58320/index.cnxml:127:305">f</mi></mstyle></msub></mtd>
+<mtd columnalign="left" data-sm="./modules/m58320/index.cnxml:127:347"><mo data-sm="./modules/m58320/index.cnxml:127:373">=</mo><mrow data-sm="./modules/m58320/index.cnxml:127:387"><mo data-sm="./modules/m58320/index.cnxml:127:395">[</mo><mrow data-sm="./modules/m58320/index.cnxml:127:409"><mfrac data-sm="./modules/m58320/index.cnxml:127:417"><mrow data-sm="./modules/m58320/index.cnxml:127:426"><mrow data-sm="./modules/m58320/index.cnxml:127:434"><mo data-sm="./modules/m58320/index.cnxml:127:442">(</mo><mrow data-sm="./modules/m58320/index.cnxml:127:456"><mn data-sm="./modules/m58320/index.cnxml:127:464">0.675</mn><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:127:482"/><mtext data-sm="./modules/m58320/index.cnxml:127:507">kg</mtext></mrow>
+<mo data-sm="./modules/m58320/index.cnxml:127:537">)</mo></mrow>
+<mrow data-sm="./modules/m58320/index.cnxml:127:560"><mo data-sm="./modules/m58320/index.cnxml:127:568">(</mo><mrow data-sm="./modules/m58320/index.cnxml:127:582"><mn data-sm="./modules/m58320/index.cnxml:127:590">0.75</mn><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:127:607"/><mtext data-sm="./modules/m58320/index.cnxml:127:632">m/s</mtext></mrow>
+<mo data-sm="./modules/m58320/index.cnxml:127:663">)</mo></mrow>
+<mo data-sm="./modules/m58320/index.cnxml:127:686">+</mo><mrow data-sm="./modules/m58320/index.cnxml:127:700"><mo data-sm="./modules/m58320/index.cnxml:127:708">(</mo><mrow data-sm="./modules/m58320/index.cnxml:127:722"><mn data-sm="./modules/m58320/index.cnxml:127:730">0.5</mn><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:127:746"/><mtext data-sm="./modules/m58320/index.cnxml:127:771">kg</mtext></mrow>
+<mo data-sm="./modules/m58320/index.cnxml:127:801">)</mo></mrow>
+<mrow data-sm="./modules/m58320/index.cnxml:127:824"><mo data-sm="./modules/m58320/index.cnxml:127:832">(</mo><mrow data-sm="./modules/m58320/index.cnxml:127:846"><mn data-sm="./modules/m58320/index.cnxml:127:854">1.33</mn><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:127:871"/><mtext data-sm="./modules/m58320/index.cnxml:127:896">m/s</mtext></mrow>
+<mo data-sm="./modules/m58320/index.cnxml:127:927">)</mo></mrow>
+</mrow>
+<mrow data-sm="./modules/m58320/index.cnxml:127:959"><mn data-sm="./modules/m58320/index.cnxml:127:967">1.175</mn><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:127:985"/><mtext data-sm="./modules/m58320/index.cnxml:127:1010">kg</mtext></mrow>
+</mfrac>
+</mrow>
+<mo data-sm="./modules/m58320/index.cnxml:127:1059">]</mo></mrow>
+<mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:127:1082"><mover accent="true" data-sm="./modules/m58320/index.cnxml:127:1129"><mi data-sm="./modules/m58320/index.cnxml:127:1152">i</mi><mo data-sm="./modules/m58320/index.cnxml:127:1166">^</mo></mover>
+</mstyle>
+</mtd>
+</mtr>
+<mtr data-sm="./modules/m58320/index.cnxml:127:1217"><mtd data-sm="./modules/m58320/index.cnxml:127:1224"/>
+<mtd columnalign="left" data-sm="./modules/m58320/index.cnxml:127:1232"><mo data-sm="./modules/m58320/index.cnxml:127:1258">=</mo><mrow data-sm="./modules/m58320/index.cnxml:127:1272"><mo data-sm="./modules/m58320/index.cnxml:127:1280">(</mo><mrow data-sm="./modules/m58320/index.cnxml:127:1294"><mn data-sm="./modules/m58320/index.cnxml:127:1302">0.997</mn><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:127:1320"/><mtext data-sm="./modules/m58320/index.cnxml:127:1345">m/s</mtext></mrow>
+<mo data-sm="./modules/m58320/index.cnxml:127:1376">)</mo></mrow>
+<mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:127:1399"><mover accent="true" data-sm="./modules/m58320/index.cnxml:127:1446"><mi data-sm="./modules/m58320/index.cnxml:127:1469">i</mi><mo data-sm="./modules/m58320/index.cnxml:127:1483">^</mo></mover>
+</mstyle>
+<mo data-sm="./modules/m58320/index.cnxml:127:1518">.</mo></mtd>
+</mtr>
+</mtable>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1167131256975" data-sm="./modules/m58320/index.cnxml:128:1"></p>
+<h4 data-type="title" data-sm="./modules/m58320/index.cnxml:128:31">Significance</h4>
+The principles that apply here to two laboratory carts apply identically to all objects of whatever type or size. Even for photons, the concepts of momentum and conservation of momentum are still crucially important even at that scale. (Since they are massless, the momentum of a photon is defined very differently from the momentum of ordinary objects. You will learn about this when you study quantum physics.)
+</div>
+</div>
+<div data-type="note" id="fs-id1167134645135" class="check-understanding" data-sm="./modules/m58320/index.cnxml:131:1"><h3 class="os-title">
+  <span class="os-title-label">Check Your Understanding </span>
+  <span class="os-number">9.3</span>
+  <span class="os-divider"> </span>
+</h3>
+<div class="os-note-body">
+<div data-type="exercise" id="fs-id1167134815718" data-sm="./modules/m58320/index.cnxml:132:1" class="unnumbered os-hasSolution">
+<div data-type="problem" id="fs-id1167134951305" data-sm="./modules/m58320/index.cnxml:133:1"><div class="os-problem-container">
+<p id="fs-id1167134651995" data-sm="./modules/m58320/index.cnxml:134:1"> Suppose the second, smaller cart had been initially moving to the left. What would the sign of the final velocity have been in this case?</p>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+<div data-type="example" id="fs-id1167131254803" data-sm="./modules/m58320/index.cnxml:143:1"><h3 class="os-title">
+  <span class="os-title-label">Example </span>
+  <span class="os-number">9.7</span>
+  <span class="os-divider"> </span>
+</h3>
+<div class="body">
+<p id="fs-id1167134468780" data-sm="./modules/m58320/index.cnxml:144:1"></p>
+<h4 data-type="title" data-sm="./modules/m58320/index.cnxml:144:31">A Bouncing Superball</h4>
+A superball of mass 0.25 kg is dropped from rest from a height of <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:145:75"><mi data-sm="./modules/m58320/index.cnxml:145:83">h</mi><mo data-sm="./modules/m58320/index.cnxml:145:97">=</mo><mn data-sm="./modules/m58320/index.cnxml:145:111">1.50</mn><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:145:128"/><mtext data-sm="./modules/m58320/index.cnxml:145:153">m</mtext></mrow>
+</mrow>
+</semantics>
+</math></span> above the floor. It bounces with no loss of energy and returns to its initial height (<a href="#CNX_UPhysics_09_03_Superball" data-sm="./modules/m58320/index.cnxml:145:278" class="autogenerated-content">Figure 9.17</a>).
+<ol id="fs-id1167134568621" type="a" data-sm="./modules/m58320/index.cnxml:146:1">
+<li data-sm="./modules/m58320/index.cnxml:147:1">What is the superball’s change of momentum during its bounce on the floor?</li>
+<li data-sm="./modules/m58320/index.cnxml:148:1">What was Earth’s change of momentum due to the ball colliding with the floor?</li>
+<li data-sm="./modules/m58320/index.cnxml:149:1">What was Earth’s change of velocity as a result of this collision?</li>
+</ol>
+<p id="fs-id1167134686626" data-sm="./modules/m58320/index.cnxml:151:1">(This example shows that you have to be careful about defining your system.)</p>
+<div class="os-figure"><figure id="CNX_UPhysics_09_03_Superball" data-sm="./modules/m58320/index.cnxml:152:1">
+<span data-type="media" id="fs-id1167134686664" data-alt="A ball is shown at four different times. At t sub 0 the ball is at a distance h above the floor and has p sub 0 equals 0. At t sub 1 the ball is near the floor. A downward arrow at the ball is labeled minus p sub 1. At t sub 2 the ball is near the floor. An upward arrow at the ball is labeled plus p sub 2. The p sub 1 and p sub 2 arrows are the same length. At t sub 3 the ball at height h again and p sub 3 equals zero." data-sm="./modules/m58320/index.cnxml:153:1">
+<img src="3d9c04813c5109630eb8dd2109955d5185a597ca.jpeg" data-media-type="image/jpeg" alt="A ball is shown at four different times. At t sub 0 the ball is at a distance h above the floor and has p sub 0 equals 0. At t sub 1 the ball is near the floor. A downward arrow at the ball is labeled minus p sub 1. At t sub 2 the ball is near the floor. An upward arrow at the ball is labeled plus p sub 2. The p sub 1 and p sub 2 arrows are the same length. At t sub 3 the ball at height h again and p sub 3 equals zero." data-sm="./modules/m58320/index.cnxml:154:1"/>
+</span>
+
+</figure>
+<div class="os-caption-container">
+  <span class="os-title-label">Figure </span>
+<span class="os-number">9.17</span>
+
+
+
+  <span class="os-divider"> </span>
+  <span data-sm="./modules/m58320/index.cnxml:156:1" class="os-caption">A superball is dropped to the floor (<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:156:55"><msub data-sm="./modules/m58320/index.cnxml:156:63"><mi data-sm="./modules/m58320/index.cnxml:156:71">t</mi><mn data-sm="./modules/m58320/index.cnxml:156:85">0</mn></msub></mrow>
+</mrow>
+</semantics>
+</math>), hits the floor (<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:156:153"><msub data-sm="./modules/m58320/index.cnxml:156:161"><mi data-sm="./modules/m58320/index.cnxml:156:169">t</mi><mn data-sm="./modules/m58320/index.cnxml:156:183">1</mn></msub></mrow>
+</mrow>
+</semantics>
+</math>), bounces (<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:156:244"><msub data-sm="./modules/m58320/index.cnxml:156:252"><mi data-sm="./modules/m58320/index.cnxml:156:260">t</mi><mn data-sm="./modules/m58320/index.cnxml:156:274">2</mn></msub></mrow>
+</mrow>
+</semantics>
+</math>), and returns to its initial height (<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:156:361"><msub data-sm="./modules/m58320/index.cnxml:156:369"><mi data-sm="./modules/m58320/index.cnxml:156:377">t</mi><mn data-sm="./modules/m58320/index.cnxml:156:391">3</mn></msub></mrow>
+</mrow>
+</semantics>
+</math>).</span>
+</div>
+</div>
+<p id="fs-id1167134961422" data-sm="./modules/m58320/index.cnxml:158:1"></p>
+<h4 data-type="title" data-sm="./modules/m58320/index.cnxml:158:31">Strategy</h4>
+Since we are asked only about the ball’s change of momentum, we define our system to be the ball. But this is clearly not a closed system; gravity applies a downward force on the ball while it is falling, and the normal force from the floor applies a force during the bounce. Thus, we cannot use conservation of momentum as a strategy. Instead, we simply determine the ball’s momentum just before it collides with the floor and just after, and calculate the difference. We have the ball’s mass, so we need its velocities.
+<p id="fs-id1167134536629" data-sm="./modules/m58320/index.cnxml:160:1"></p>
+<h4 data-type="title" data-sm="./modules/m58320/index.cnxml:160:31">Solution</h4>
+<ol id="fs-id1167134518620" type="a" data-sm="./modules/m58320/index.cnxml:161:1"><li data-sm="./modules/m58320/index.cnxml:161:81">Since this is a one-dimensional problem, we use the scalar form of the equations. Let:<span data-type="newline" data-sm="./modules/m58320/index.cnxml:161:173"><br/></span>
+<ul id="fs-id1167134897625" data-bullet-style="bullet" data-sm="./modules/m58320/index.cnxml:162:1">
+<li data-sm="./modules/m58320/index.cnxml:163:1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:163:15"><msub data-sm="./modules/m58320/index.cnxml:163:23"><mi data-sm="./modules/m58320/index.cnxml:163:31">p</mi><mn data-sm="./modules/m58320/index.cnxml:163:45">0</mn></msub><mo data-sm="./modules/m58320/index.cnxml:163:68">=</mo></mrow>
+</mrow>
+</semantics>
+</math> the magnitude of the ball’s momentum at time <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:163:154"><msub data-sm="./modules/m58320/index.cnxml:163:162"><mi data-sm="./modules/m58320/index.cnxml:163:170">t</mi><mn data-sm="./modules/m58320/index.cnxml:163:184">0</mn></msub></mrow>
+</mrow>
+</semantics>
+</math>, the moment it was released; since it was dropped from rest, this is zero.</li>
+<li data-sm="./modules/m58320/index.cnxml:164:1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:164:15"><msub data-sm="./modules/m58320/index.cnxml:164:23"><mi data-sm="./modules/m58320/index.cnxml:164:31">p</mi><mn data-sm="./modules/m58320/index.cnxml:164:45">1</mn></msub><mo data-sm="./modules/m58320/index.cnxml:164:68">=</mo></mrow>
+</mrow>
+</semantics>
+</math> the magnitude of the ball’s momentum at time <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:164:154"><msub data-sm="./modules/m58320/index.cnxml:164:162"><mi data-sm="./modules/m58320/index.cnxml:164:170">t</mi><mn data-sm="./modules/m58320/index.cnxml:164:184">1</mn></msub></mrow>
+</mrow>
+</semantics>
+</math>, the instant just before it hits the floor.</li>
+<li data-sm="./modules/m58320/index.cnxml:165:1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:165:15"><msub data-sm="./modules/m58320/index.cnxml:165:23"><mi data-sm="./modules/m58320/index.cnxml:165:31">p</mi><mn data-sm="./modules/m58320/index.cnxml:165:45">2</mn></msub><mo data-sm="./modules/m58320/index.cnxml:165:68">=</mo></mrow>
+</mrow>
+</semantics>
+</math> the magnitude of the ball’s momentum at time <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:165:154"><msub data-sm="./modules/m58320/index.cnxml:165:162"><mi data-sm="./modules/m58320/index.cnxml:165:170">t</mi><mn data-sm="./modules/m58320/index.cnxml:165:184">2</mn></msub></mrow>
+</mrow>
+</semantics>
+</math>, just after it loses contact with the floor after the bounce.</li>
+</ul><span data-type="newline" data-sm="./modules/m58320/index.cnxml:166:8"><br/></span>
+The ball’s change of momentum is
+<div data-type="equation" id="fs-id1167134515114" class="unnumbered" data-sm="./modules/m58320/index.cnxml:168:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtable data-sm="./modules/m58320/index.cnxml:168:70"><mtr data-sm="./modules/m58320/index.cnxml:168:80"><mtd columnalign="right" data-sm="./modules/m58320/index.cnxml:168:87"><mtext data-sm="./modules/m58320/index.cnxml:168:114">Δ</mtext><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:168:134"><mover accent="true" data-sm="./modules/m58320/index.cnxml:168:181"><mi data-sm="./modules/m58320/index.cnxml:168:204">p</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:168:218">→</mo></mover>
+</mstyle>
+</mtd>
+<mtd columnalign="left" data-sm="./modules/m58320/index.cnxml:168:278"><mo data-sm="./modules/m58320/index.cnxml:168:304">=</mo><msub data-sm="./modules/m58320/index.cnxml:168:318"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:168:326"><mover accent="true" data-sm="./modules/m58320/index.cnxml:168:373"><mi data-sm="./modules/m58320/index.cnxml:168:396">p</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:168:410">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:168:462"><mn data-sm="./modules/m58320/index.cnxml:168:509">2</mn></mstyle></msub><mo data-sm="./modules/m58320/index.cnxml:168:543">−</mo><msub data-sm="./modules/m58320/index.cnxml:168:557"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:168:565"><mover accent="true" data-sm="./modules/m58320/index.cnxml:168:612"><mi data-sm="./modules/m58320/index.cnxml:168:635">p</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:168:649">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:168:701"><mn data-sm="./modules/m58320/index.cnxml:168:748">1</mn></mstyle></msub></mtd>
+</mtr>
+<mtr data-sm="./modules/m58320/index.cnxml:168:798"><mtd data-sm="./modules/m58320/index.cnxml:168:805"/>
+<mtd columnalign="left" data-sm="./modules/m58320/index.cnxml:168:813"><mo data-sm="./modules/m58320/index.cnxml:168:839">=</mo><msub data-sm="./modules/m58320/index.cnxml:168:853"><mi data-sm="./modules/m58320/index.cnxml:168:861">p</mi><mn data-sm="./modules/m58320/index.cnxml:168:875">2</mn></msub><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:168:898"><mover accent="true" data-sm="./modules/m58320/index.cnxml:168:945"><mi data-sm="./modules/m58320/index.cnxml:168:968">j</mi><mo data-sm="./modules/m58320/index.cnxml:168:982">^</mo></mover>
+</mstyle>
+<mo data-sm="./modules/m58320/index.cnxml:168:1017">−</mo><mrow data-sm="./modules/m58320/index.cnxml:168:1031"><mo data-sm="./modules/m58320/index.cnxml:168:1039">(</mo><mrow data-sm="./modules/m58320/index.cnxml:168:1053"><mtext data-sm="./modules/m58320/index.cnxml:168:1061">−</mtext><msub data-sm="./modules/m58320/index.cnxml:168:1081"><mi data-sm="./modules/m58320/index.cnxml:168:1089">p</mi><mn data-sm="./modules/m58320/index.cnxml:168:1103">1</mn></msub><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:168:1126"><mover accent="true" data-sm="./modules/m58320/index.cnxml:168:1173"><mi data-sm="./modules/m58320/index.cnxml:168:1196">j</mi><mo data-sm="./modules/m58320/index.cnxml:168:1210">^</mo></mover>
+</mstyle>
+</mrow>
+<mo data-sm="./modules/m58320/index.cnxml:168:1254">)</mo></mrow>
+</mtd>
+</mtr>
+<mtr data-sm="./modules/m58320/index.cnxml:168:1293"><mtd data-sm="./modules/m58320/index.cnxml:168:1300"/>
+<mtd columnalign="left" data-sm="./modules/m58320/index.cnxml:168:1308"><mo data-sm="./modules/m58320/index.cnxml:168:1334">=</mo><mrow data-sm="./modules/m58320/index.cnxml:168:1348"><mo data-sm="./modules/m58320/index.cnxml:168:1356">(</mo><mrow data-sm="./modules/m58320/index.cnxml:168:1370"><msub data-sm="./modules/m58320/index.cnxml:168:1378"><mi data-sm="./modules/m58320/index.cnxml:168:1386">p</mi><mn data-sm="./modules/m58320/index.cnxml:168:1400">2</mn></msub><mo data-sm="./modules/m58320/index.cnxml:168:1423">+</mo><msub data-sm="./modules/m58320/index.cnxml:168:1437"><mi data-sm="./modules/m58320/index.cnxml:168:1445">p</mi><mn data-sm="./modules/m58320/index.cnxml:168:1459">1</mn></msub></mrow>
+<mo data-sm="./modules/m58320/index.cnxml:168:1491">)</mo></mrow>
+<mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:168:1514"><mover accent="true" data-sm="./modules/m58320/index.cnxml:168:1561"><mi data-sm="./modules/m58320/index.cnxml:168:1584">j</mi><mo data-sm="./modules/m58320/index.cnxml:168:1598">^</mo></mover>
+</mstyle>
+<mo data-sm="./modules/m58320/index.cnxml:168:1633">.</mo></mtd>
+</mtr>
+</mtable>
+</mrow>
+</semantics>
+</math>
+</div>
+Its velocity just before it hits the floor can be determined from either conservation of energy or kinematics. We use kinematics here; you should re-solve it using conservation of energy and confirm you get the same result.<span data-type="newline" data-sm="./modules/m58320/index.cnxml:169:224"><br/></span>
+We want the velocity just before it hits the ground (at time <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:170:70"><msub data-sm="./modules/m58320/index.cnxml:170:78"><mi data-sm="./modules/m58320/index.cnxml:170:86">t</mi><mn data-sm="./modules/m58320/index.cnxml:170:100">1</mn></msub></mrow>
+</mrow>
+</semantics>
+</math>). We know its initial velocity <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:170:181"><msub data-sm="./modules/m58320/index.cnxml:170:189"><mi data-sm="./modules/m58320/index.cnxml:170:197">v</mi><mn data-sm="./modules/m58320/index.cnxml:170:211">0</mn></msub><mo data-sm="./modules/m58320/index.cnxml:170:234">=</mo><mn data-sm="./modules/m58320/index.cnxml:170:248">0</mn></mrow>
+</mrow>
+</semantics>
+</math> (at time <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:170:298"><msub data-sm="./modules/m58320/index.cnxml:170:306"><mi data-sm="./modules/m58320/index.cnxml:170:314">t</mi><mn data-sm="./modules/m58320/index.cnxml:170:328">0</mn></msub></mrow>
+</mrow>
+</semantics>
+</math>), the height it falls, and its acceleration; we don’t know the fall time. We could calculate that, but instead we use
+<div data-type="equation" id="fs-id1167131177837" class="unnumbered" data-sm="./modules/m58320/index.cnxml:171:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:171:70"><msub data-sm="./modules/m58320/index.cnxml:171:78"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:171:86"><mover accent="true" data-sm="./modules/m58320/index.cnxml:171:133"><mi data-sm="./modules/m58320/index.cnxml:171:156">v</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:171:170">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:171:222"><mn data-sm="./modules/m58320/index.cnxml:171:269">1</mn></mstyle></msub><mo data-sm="./modules/m58320/index.cnxml:171:303">=</mo><mtext data-sm="./modules/m58320/index.cnxml:171:317">−</mtext><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:171:337"><mover accent="true" data-sm="./modules/m58320/index.cnxml:171:384"><mi data-sm="./modules/m58320/index.cnxml:171:407">j</mi><mo data-sm="./modules/m58320/index.cnxml:171:421">^</mo></mover>
+</mstyle>
+<msqrt data-sm="./modules/m58320/index.cnxml:171:456"><mrow data-sm="./modules/m58320/index.cnxml:171:465"><mn data-sm="./modules/m58320/index.cnxml:171:473">2</mn><mi data-sm="./modules/m58320/index.cnxml:171:487">g</mi><mi data-sm="./modules/m58320/index.cnxml:171:501">y</mi></mrow>
+</msqrt>
+<mo data-sm="./modules/m58320/index.cnxml:171:534">=</mo><mn data-sm="./modules/m58320/index.cnxml:171:548">−5.4</mn><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:171:565"/><mtext data-sm="./modules/m58320/index.cnxml:171:590">m/s</mtext><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:171:612"><mover accent="true" data-sm="./modules/m58320/index.cnxml:171:659"><mi data-sm="./modules/m58320/index.cnxml:171:682">j</mi><mo data-sm="./modules/m58320/index.cnxml:171:696">^</mo></mover>
+</mstyle>
+<mo data-sm="./modules/m58320/index.cnxml:171:731">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+Thus the ball has a momentum of
+<div data-type="equation" id="fs-id1167131272463" class="unnumbered" data-sm="./modules/m58320/index.cnxml:173:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtable data-sm="./modules/m58320/index.cnxml:173:70"><mtr data-sm="./modules/m58320/index.cnxml:173:80"><mtd columnalign="right" data-sm="./modules/m58320/index.cnxml:173:87"><msub data-sm="./modules/m58320/index.cnxml:173:114"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:173:122"><mover accent="true" data-sm="./modules/m58320/index.cnxml:173:169"><mi data-sm="./modules/m58320/index.cnxml:173:192">p</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:173:206">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:173:258"><mn data-sm="./modules/m58320/index.cnxml:173:305">1</mn></mstyle></msub></mtd>
+<mtd columnalign="left" data-sm="./modules/m58320/index.cnxml:173:347"><mo data-sm="./modules/m58320/index.cnxml:173:373">=</mo><mtext data-sm="./modules/m58320/index.cnxml:173:387">−</mtext><mrow data-sm="./modules/m58320/index.cnxml:173:407"><mo data-sm="./modules/m58320/index.cnxml:173:415">(</mo><mrow data-sm="./modules/m58320/index.cnxml:173:429"><mn data-sm="./modules/m58320/index.cnxml:173:437">0.25</mn><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:173:454"/><mtext data-sm="./modules/m58320/index.cnxml:173:479">kg</mtext></mrow>
+<mo data-sm="./modules/m58320/index.cnxml:173:509">)</mo></mrow>
+<mrow data-sm="./modules/m58320/index.cnxml:173:532"><mo data-sm="./modules/m58320/index.cnxml:173:540">(</mo><mrow data-sm="./modules/m58320/index.cnxml:173:554"><mn data-sm="./modules/m58320/index.cnxml:173:562">−5.4</mn><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:173:579"/><mtext data-sm="./modules/m58320/index.cnxml:173:604">m/s</mtext><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:173:626"><mover accent="true" data-sm="./modules/m58320/index.cnxml:173:673"><mi data-sm="./modules/m58320/index.cnxml:173:696">j</mi><mo data-sm="./modules/m58320/index.cnxml:173:710">^</mo></mover>
+</mstyle>
+</mrow>
+<mo data-sm="./modules/m58320/index.cnxml:173:754">)</mo></mrow>
+</mtd>
+</mtr>
+<mtr data-sm="./modules/m58320/index.cnxml:173:793"><mtd data-sm="./modules/m58320/index.cnxml:173:800"/>
+<mtd columnalign="left" data-sm="./modules/m58320/index.cnxml:173:808"><mo data-sm="./modules/m58320/index.cnxml:173:834">=</mo><mtext data-sm="./modules/m58320/index.cnxml:173:848">−</mtext><mrow data-sm="./modules/m58320/index.cnxml:173:868"><mo data-sm="./modules/m58320/index.cnxml:173:876">(</mo><mrow data-sm="./modules/m58320/index.cnxml:173:890"><mn data-sm="./modules/m58320/index.cnxml:173:898">1.4</mn><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:173:914"/><mtext data-sm="./modules/m58320/index.cnxml:173:939">kg</mtext><mo data-sm="./modules/m58320/index.cnxml:173:960">·</mo><mtext data-sm="./modules/m58320/index.cnxml:173:974">m/s</mtext></mrow>
+<mo data-sm="./modules/m58320/index.cnxml:173:1005">)</mo></mrow>
+<mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:173:1028"><mover accent="true" data-sm="./modules/m58320/index.cnxml:173:1075"><mi data-sm="./modules/m58320/index.cnxml:173:1098">j</mi><mo data-sm="./modules/m58320/index.cnxml:173:1112">^</mo></mover>
+</mstyle>
+<mo data-sm="./modules/m58320/index.cnxml:173:1147">.</mo></mtd>
+</mtr>
+</mtable>
+</mrow>
+</semantics>
+</math>
+</div>
+We don’t have an easy way to calculate the momentum after the bounce. Instead, we reason from the symmetry of the situation.<span data-type="newline" data-sm="./modules/m58320/index.cnxml:174:125"><br/></span>
+Before the bounce, the ball starts with zero velocity and falls 1.50 m under the influence of gravity, achieving some amount of momentum just before it hits the ground. On the return trip (after the bounce), it starts with some amount of momentum, rises the same 1.50 m it fell, and ends with zero velocity. Thus, the motion after the bounce was the mirror image of the motion before the bounce. From this symmetry, it must be true that the ball’s momentum after the bounce must be equal and opposite to its momentum before the bounce. (This is a subtle but crucial argument; make sure you understand it before you go on.)<span data-type="newline" data-sm="./modules/m58320/index.cnxml:175:623"><br/></span>
+Therefore,
+<div data-type="equation" id="fs-id1167134536622" class="unnumbered" data-sm="./modules/m58320/index.cnxml:177:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:177:70"><msub data-sm="./modules/m58320/index.cnxml:177:78"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:177:86"><mover accent="true" data-sm="./modules/m58320/index.cnxml:177:133"><mi data-sm="./modules/m58320/index.cnxml:177:156">p</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:177:170">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:177:222"><mn data-sm="./modules/m58320/index.cnxml:177:269">2</mn></mstyle></msub><mo data-sm="./modules/m58320/index.cnxml:177:303">=</mo><mtext data-sm="./modules/m58320/index.cnxml:177:317">−</mtext><msub data-sm="./modules/m58320/index.cnxml:177:337"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:177:345"><mover accent="true" data-sm="./modules/m58320/index.cnxml:177:392"><mi data-sm="./modules/m58320/index.cnxml:177:415">p</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:177:429">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:177:481"><mn data-sm="./modules/m58320/index.cnxml:177:528">1</mn></mstyle></msub><mo data-sm="./modules/m58320/index.cnxml:177:562">=</mo><mo data-sm="./modules/m58320/index.cnxml:177:576">+</mo><mrow data-sm="./modules/m58320/index.cnxml:177:590"><mo data-sm="./modules/m58320/index.cnxml:177:598">(</mo><mrow data-sm="./modules/m58320/index.cnxml:177:612"><mn data-sm="./modules/m58320/index.cnxml:177:620">1.4</mn><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:177:636"/><mtext data-sm="./modules/m58320/index.cnxml:177:661">kg</mtext><mo data-sm="./modules/m58320/index.cnxml:177:682">·</mo><mtext data-sm="./modules/m58320/index.cnxml:177:696">m/s</mtext></mrow>
+<mo data-sm="./modules/m58320/index.cnxml:177:727">)</mo></mrow>
+<mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:177:750"><mover accent="true" data-sm="./modules/m58320/index.cnxml:177:797"><mi data-sm="./modules/m58320/index.cnxml:177:820">j</mi><mo data-sm="./modules/m58320/index.cnxml:177:834">^</mo></mover>
+</mstyle>
+<mo data-sm="./modules/m58320/index.cnxml:177:869">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+Thus, the ball’s change of momentum during the bounce is<span data-type="newline" data-sm="./modules/m58320/index.cnxml:178:57"><br/></span>
+<div data-type="equation" id="fs-id1167134650967" class="unnumbered" data-sm="./modules/m58320/index.cnxml:179:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtable data-sm="./modules/m58320/index.cnxml:179:70"><mtr data-sm="./modules/m58320/index.cnxml:179:80"><mtd columnalign="right" data-sm="./modules/m58320/index.cnxml:179:87"><mtext data-sm="./modules/m58320/index.cnxml:179:114">Δ</mtext><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:179:134"><mover accent="true" data-sm="./modules/m58320/index.cnxml:179:181"><mi data-sm="./modules/m58320/index.cnxml:179:204">p</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:179:218">→</mo></mover>
+</mstyle>
+</mtd>
+<mtd columnalign="left" data-sm="./modules/m58320/index.cnxml:179:278"><mo data-sm="./modules/m58320/index.cnxml:179:304">=</mo><msub data-sm="./modules/m58320/index.cnxml:179:318"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:179:326"><mover accent="true" data-sm="./modules/m58320/index.cnxml:179:373"><mi data-sm="./modules/m58320/index.cnxml:179:396">p</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:179:410">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:179:462"><mn data-sm="./modules/m58320/index.cnxml:179:509">2</mn></mstyle></msub><mo data-sm="./modules/m58320/index.cnxml:179:543">−</mo><msub data-sm="./modules/m58320/index.cnxml:179:557"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:179:565"><mover accent="true" data-sm="./modules/m58320/index.cnxml:179:612"><mi data-sm="./modules/m58320/index.cnxml:179:635">p</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:179:649">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:179:701"><mn data-sm="./modules/m58320/index.cnxml:179:748">1</mn></mstyle></msub></mtd>
+</mtr>
+<mtr data-sm="./modules/m58320/index.cnxml:179:798"><mtd data-sm="./modules/m58320/index.cnxml:179:805"/>
+<mtd columnalign="left" data-sm="./modules/m58320/index.cnxml:179:813"><mo data-sm="./modules/m58320/index.cnxml:179:839">=</mo><mrow data-sm="./modules/m58320/index.cnxml:179:853"><mo data-sm="./modules/m58320/index.cnxml:179:861">(</mo><mrow data-sm="./modules/m58320/index.cnxml:179:875"><mn data-sm="./modules/m58320/index.cnxml:179:883">1.4</mn><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:179:899"/><mtext data-sm="./modules/m58320/index.cnxml:179:924">kg</mtext><mo data-sm="./modules/m58320/index.cnxml:179:945">·</mo><mtext data-sm="./modules/m58320/index.cnxml:179:959">m/s</mtext></mrow>
+<mo data-sm="./modules/m58320/index.cnxml:179:990">)</mo></mrow>
+<mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:179:1013"><mover accent="true" data-sm="./modules/m58320/index.cnxml:179:1060"><mi data-sm="./modules/m58320/index.cnxml:179:1083">j</mi><mo data-sm="./modules/m58320/index.cnxml:179:1097">^</mo></mover>
+</mstyle>
+<mo data-sm="./modules/m58320/index.cnxml:179:1132">−</mo><mrow data-sm="./modules/m58320/index.cnxml:179:1146"><mo data-sm="./modules/m58320/index.cnxml:179:1154">(</mo><mrow data-sm="./modules/m58320/index.cnxml:179:1168"><mn data-sm="./modules/m58320/index.cnxml:179:1176">−1.4</mn><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:179:1193"/><mtext data-sm="./modules/m58320/index.cnxml:179:1218">kg</mtext><mo data-sm="./modules/m58320/index.cnxml:179:1239">·</mo><mtext data-sm="./modules/m58320/index.cnxml:179:1253">m/s</mtext></mrow>
+<mo data-sm="./modules/m58320/index.cnxml:179:1284">)</mo></mrow>
+<mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:179:1307"><mover accent="true" data-sm="./modules/m58320/index.cnxml:179:1354"><mi data-sm="./modules/m58320/index.cnxml:179:1377">j</mi><mo data-sm="./modules/m58320/index.cnxml:179:1391">^</mo></mover>
+</mstyle>
+</mtd>
+</mtr>
+<mtr data-sm="./modules/m58320/index.cnxml:179:1442"><mtd data-sm="./modules/m58320/index.cnxml:179:1449"/>
+<mtd columnalign="left" data-sm="./modules/m58320/index.cnxml:179:1457"><mo data-sm="./modules/m58320/index.cnxml:179:1483">=</mo><mo data-sm="./modules/m58320/index.cnxml:179:1497">+</mo><mrow data-sm="./modules/m58320/index.cnxml:179:1511"><mo data-sm="./modules/m58320/index.cnxml:179:1519">(</mo><mrow data-sm="./modules/m58320/index.cnxml:179:1533"><mn data-sm="./modules/m58320/index.cnxml:179:1541">2.8</mn><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:179:1557"/><mtext data-sm="./modules/m58320/index.cnxml:179:1582">kg</mtext><mo data-sm="./modules/m58320/index.cnxml:179:1603">·</mo><mtext data-sm="./modules/m58320/index.cnxml:179:1617">m/s</mtext></mrow>
+<mo data-sm="./modules/m58320/index.cnxml:179:1648">)</mo></mrow>
+<mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:179:1671"><mover accent="true" data-sm="./modules/m58320/index.cnxml:179:1718"><mi data-sm="./modules/m58320/index.cnxml:179:1741">j</mi><mo data-sm="./modules/m58320/index.cnxml:179:1755">^</mo></mover>
+</mstyle>
+<mo data-sm="./modules/m58320/index.cnxml:179:1790">.</mo></mtd>
+</mtr>
+</mtable>
+</mrow>
+</semantics>
+</math>
+</div></li>
+<li data-sm="./modules/m58320/index.cnxml:180:1">What was Earth’s change of momentum due to the ball colliding with the floor?<span data-type="newline" data-sm="./modules/m58320/index.cnxml:180:84"><br/></span>
+Your instinctive response may well have been either “zero; the Earth is just too massive for that tiny ball to have affected it” or possibly, “more than zero, but utterly negligible.” But no—if we re-define our system to be the Superball + Earth, then this system is closed (neglecting the gravitational pulls of the Sun, the Moon, and the other planets in the solar system), and therefore the total change of momentum of this new system must be zero. Therefore, Earth’s change of momentum is exactly the same magnitude:
+<div data-type="equation" id="fs-id1167131199604" class="unnumbered" data-sm="./modules/m58320/index.cnxml:182:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:182:70"><mtext data-sm="./modules/m58320/index.cnxml:182:78">Δ</mtext><msub data-sm="./modules/m58320/index.cnxml:182:98"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:182:106"><mover accent="true" data-sm="./modules/m58320/index.cnxml:182:153"><mi data-sm="./modules/m58320/index.cnxml:182:176">p</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:182:190">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58320/index.cnxml:182:242"><mtext data-sm="./modules/m58320/index.cnxml:182:250">Earth</mtext></mrow></msub><mo data-sm="./modules/m58320/index.cnxml:182:292">=</mo><mn data-sm="./modules/m58320/index.cnxml:182:306">−2.8</mn><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:182:323"/><mtext data-sm="./modules/m58320/index.cnxml:182:348">kg</mtext><mo data-sm="./modules/m58320/index.cnxml:182:369">·</mo><mtext data-sm="./modules/m58320/index.cnxml:182:383">m/s</mtext><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:182:405"><mover accent="true" data-sm="./modules/m58320/index.cnxml:182:452"><mi data-sm="./modules/m58320/index.cnxml:182:475">j</mi><mo data-sm="./modules/m58320/index.cnxml:182:489">^</mo></mover>
+</mstyle>
+<mo data-sm="./modules/m58320/index.cnxml:182:524">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div></li>
+<li data-sm="./modules/m58320/index.cnxml:183:1">What was Earth’s change of velocity as a result of this collision?<span data-type="newline" data-sm="./modules/m58320/index.cnxml:183:73"><br/></span>
+This is where your instinctive feeling is probably correct: 
+<div data-type="equation" id="fs-id1167134452950" class="unnumbered" data-sm="./modules/m58320/index.cnxml:185:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtable data-sm="./modules/m58320/index.cnxml:185:70"><mtr data-sm="./modules/m58320/index.cnxml:185:80"><mtd columnalign="right" data-sm="./modules/m58320/index.cnxml:185:87"><mtext data-sm="./modules/m58320/index.cnxml:185:114">Δ</mtext><msub data-sm="./modules/m58320/index.cnxml:185:134"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:185:142"><mover accent="true" data-sm="./modules/m58320/index.cnxml:185:189"><mi data-sm="./modules/m58320/index.cnxml:185:212">v</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:185:226">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58320/index.cnxml:185:278"><mtext data-sm="./modules/m58320/index.cnxml:185:286">Earth</mtext></mrow></msub></mtd>
+<mtd columnalign="left" data-sm="./modules/m58320/index.cnxml:185:336"><mo data-sm="./modules/m58320/index.cnxml:185:362">=</mo><mfrac data-sm="./modules/m58320/index.cnxml:185:376"><mrow data-sm="./modules/m58320/index.cnxml:185:385"><mtext data-sm="./modules/m58320/index.cnxml:185:393">Δ</mtext><msub data-sm="./modules/m58320/index.cnxml:185:413"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:185:421"><mover accent="true" data-sm="./modules/m58320/index.cnxml:185:468"><mi data-sm="./modules/m58320/index.cnxml:185:491">p</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:185:505">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58320/index.cnxml:185:557"><mtext data-sm="./modules/m58320/index.cnxml:185:565">Earth</mtext></mrow></msub></mrow>
+<mrow data-sm="./modules/m58320/index.cnxml:185:616"><msub data-sm="./modules/m58320/index.cnxml:185:624"><mi data-sm="./modules/m58320/index.cnxml:185:632">M</mi><mrow data-sm="./modules/m58320/index.cnxml:185:646"><mtext data-sm="./modules/m58320/index.cnxml:185:654">Earth</mtext></mrow></msub></mrow>
+</mfrac>
+</mtd>
+</mtr>
+<mtr data-sm="./modules/m58320/index.cnxml:185:731"><mtd data-sm="./modules/m58320/index.cnxml:185:738"/>
+<mtd columnalign="left" data-sm="./modules/m58320/index.cnxml:185:746"><mo data-sm="./modules/m58320/index.cnxml:185:772">=</mo><mo data-sm="./modules/m58320/index.cnxml:185:786">−</mo><mfrac data-sm="./modules/m58320/index.cnxml:185:800"><mrow data-sm="./modules/m58320/index.cnxml:185:809"><mn data-sm="./modules/m58320/index.cnxml:185:817">2.8</mn><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:185:833"/><mtext data-sm="./modules/m58320/index.cnxml:185:858">kg</mtext><mo data-sm="./modules/m58320/index.cnxml:185:879">·</mo><mtext data-sm="./modules/m58320/index.cnxml:185:893">m/s</mtext></mrow>
+<mrow data-sm="./modules/m58320/index.cnxml:185:924"><mn data-sm="./modules/m58320/index.cnxml:185:932">5</mn><mo data-sm="./modules/m58320/index.cnxml:185:946">.</mo><mn data-sm="./modules/m58320/index.cnxml:185:960">97</mn><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:185:975"/><mo data-sm="./modules/m58320/index.cnxml:185:1000">×</mo><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:185:1014"/><msup data-sm="./modules/m58320/index.cnxml:185:1039"><mrow data-sm="./modules/m58320/index.cnxml:185:1047"><mn data-sm="./modules/m58320/index.cnxml:185:1055">10</mn></mrow><mrow data-sm="./modules/m58320/index.cnxml:185:1079"><mn data-sm="./modules/m58320/index.cnxml:185:1087">24</mn></mrow></msup><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:185:1120"/><mtext data-sm="./modules/m58320/index.cnxml:185:1145">kg</mtext></mrow>
+</mfrac>
+<mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:185:1185"><mover accent="true" data-sm="./modules/m58320/index.cnxml:185:1232"><mi data-sm="./modules/m58320/index.cnxml:185:1255">j</mi><mo data-sm="./modules/m58320/index.cnxml:185:1269">^</mo></mover>
+</mstyle>
+</mtd>
+</mtr>
+<mtr data-sm="./modules/m58320/index.cnxml:185:1320"><mtd data-sm="./modules/m58320/index.cnxml:185:1327"/>
+<mtd columnalign="left" data-sm="./modules/m58320/index.cnxml:185:1335"><mo data-sm="./modules/m58320/index.cnxml:185:1361">=</mo><mtext data-sm="./modules/m58320/index.cnxml:185:1375">−</mtext><mrow data-sm="./modules/m58320/index.cnxml:185:1395"><mo data-sm="./modules/m58320/index.cnxml:185:1403">(</mo><mrow data-sm="./modules/m58320/index.cnxml:185:1417"><mn data-sm="./modules/m58320/index.cnxml:185:1425">4.7</mn><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:185:1441"/><mo data-sm="./modules/m58320/index.cnxml:185:1466">×</mo><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:185:1480"/><msup data-sm="./modules/m58320/index.cnxml:185:1505"><mrow data-sm="./modules/m58320/index.cnxml:185:1513"><mn data-sm="./modules/m58320/index.cnxml:185:1521">10</mn></mrow><mrow data-sm="./modules/m58320/index.cnxml:185:1545"><mn data-sm="./modules/m58320/index.cnxml:185:1553">−25</mn></mrow></msup><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:185:1587"/><mtext data-sm="./modules/m58320/index.cnxml:185:1612">m/s</mtext></mrow>
+<mo data-sm="./modules/m58320/index.cnxml:185:1643">)</mo></mrow>
+<mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:185:1666"><mover accent="true" data-sm="./modules/m58320/index.cnxml:185:1713"><mi data-sm="./modules/m58320/index.cnxml:185:1736">j</mi><mo data-sm="./modules/m58320/index.cnxml:185:1750">^</mo></mover>
+</mstyle>
+<mo data-sm="./modules/m58320/index.cnxml:185:1785">.</mo></mtd>
+</mtr>
+</mtable>
+</mrow>
+</semantics>
+</math>
+</div>
+This change of Earth’s velocity <em data-effect="italics" data-sm="./modules/m58320/index.cnxml:186:33">is</em> utterly negligible.</li>
+</ol>
+<p id="fs-id1167131428987" data-sm="./modules/m58320/index.cnxml:187:8"></p>
+<h4 data-type="title" data-sm="./modules/m58320/index.cnxml:187:38">Significance</h4>
+It is important to realize that the answer to part (c) is not a velocity; it is a change of velocity, which is a very different thing. Nevertheless, to give you a feel for just how small that change of velocity is, suppose you were moving with a velocity of <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:188:267"><mn data-sm="./modules/m58320/index.cnxml:188:275">4.7</mn><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:188:291"/><mo data-sm="./modules/m58320/index.cnxml:188:316">×</mo><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:188:330"/><msup data-sm="./modules/m58320/index.cnxml:188:355"><mrow data-sm="./modules/m58320/index.cnxml:188:363"><mn data-sm="./modules/m58320/index.cnxml:188:371">10</mn></mrow><mrow data-sm="./modules/m58320/index.cnxml:188:395"><mn data-sm="./modules/m58320/index.cnxml:188:403">−25</mn></mrow></msup><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:188:437"/><mtext data-sm="./modules/m58320/index.cnxml:188:462">m/s</mtext></mrow>
+</mrow>
+</semantics>
+</math></span>. At this speed, it would take you about 7 million years to travel a distance equal to the diameter of a hydrogen atom.
+</div>
+</div>
+<div data-type="note" id="fs-id1167134760999" class="check-understanding" data-sm="./modules/m58320/index.cnxml:190:1"><h3 class="os-title">
+  <span class="os-title-label">Check Your Understanding </span>
+  <span class="os-number">9.4</span>
+  <span class="os-divider"> </span>
+</h3>
+<div class="os-note-body">
+<div data-type="exercise" id="fs-id1167131502254" data-sm="./modules/m58320/index.cnxml:191:1" class="unnumbered os-hasSolution">
+<div data-type="problem" id="fs-id1167134714586" data-sm="./modules/m58320/index.cnxml:192:1"><div class="os-problem-container">
+<p id="fs-id1167134951174" data-sm="./modules/m58320/index.cnxml:193:1"> Would the ball’s change of momentum have been larger, smaller, or the same, if it had collided with the floor and stopped (without bouncing)?</p>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+<div data-type="example" id="fs-id1167131215896" data-sm="./modules/m58320/index.cnxml:201:1"><h3 class="os-title">
+  <span class="os-title-label">Example </span>
+  <span class="os-number">9.8</span>
+  <span class="os-divider"> </span>
+</h3>
+<div class="body">
+<p id="fs-id1167134881263" data-sm="./modules/m58320/index.cnxml:202:1"></p>
+<h4 data-type="title" data-sm="./modules/m58320/index.cnxml:202:31">Ice Hockey 1</h4>
+Two hockey pucks of identical mass are on a flat, horizontal ice hockey rink. The red puck is motionless; the blue puck is moving at 2.5 m/s to the left (<a href="#CNX_UPhysics_09_03_HockeyPuck" data-sm="./modules/m58320/index.cnxml:203:155" class="autogenerated-content">Figure 9.18</a>). It collides with the motionless red puck. The pucks have a mass of 15 g. After the collision, the red puck is moving at 2.5 m/s, to the left. What is the final velocity of the blue puck?
+<div class="os-figure"><figure id="CNX_UPhysics_09_03_HockeyPuck" data-sm="./modules/m58320/index.cnxml:204:1">
+<span data-type="media" id="fs-id1167134586187" data-alt="Two hockey pucks are shown. The top diagram shows the puck on the left with 0 meters per second and the puck on the right moving to the left with 2.5 meters per second. The bottom diagram shows the puck on the left moving to the left at 2.5 meters per second and the puck on the right moving with unknown v." data-sm="./modules/m58320/index.cnxml:205:1">
+<img src="0e9f732ee21e0bb674ac721a0852bcdd087aa2e1.jpeg" data-media-type="image/jpeg" alt="Two hockey pucks are shown. The top diagram shows the puck on the left with 0 meters per second and the puck on the right moving to the left with 2.5 meters per second. The bottom diagram shows the puck on the left moving to the left at 2.5 meters per second and the puck on the right moving with unknown v." data-sm="./modules/m58320/index.cnxml:206:1"/>
+</span>
+
+</figure>
+<div class="os-caption-container">
+  <span class="os-title-label">Figure </span>
+<span class="os-number">9.18</span>
+
+
+
+  <span class="os-divider"> </span>
+  <span data-sm="./modules/m58320/index.cnxml:208:1" class="os-caption">Two identical hockey pucks colliding. The top diagram shows the pucks the instant before the collision, and the bottom diagram show the pucks the instant after the collision. The net external force is zero.</span>
+</div>
+</div>
+<p id="fs-id1167131212094" data-sm="./modules/m58320/index.cnxml:210:1"></p>
+<h4 data-type="title" data-sm="./modules/m58320/index.cnxml:210:31">Strategy</h4>
+We’re told that we have two colliding objects, we’re told the masses and initial velocities, and one final velocity; we’re asked for both final velocities. Conservation of momentum seems like a good strategy. Define the system to be the two pucks; there’s no friction, so we have a closed system.
+<p id="fs-id1167134678671" data-sm="./modules/m58320/index.cnxml:212:1">Before you look at the solution, what do you think the answer will be?</p>
+<p id="fs-id1167134948179" data-sm="./modules/m58320/index.cnxml:213:1">The blue puck final velocity will be:</p>
+<ul id="fs-id1167134677895" data-bullet-style="bullet" data-sm="./modules/m58320/index.cnxml:214:1">
+<li data-sm="./modules/m58320/index.cnxml:215:1">zero</li>
+<li data-sm="./modules/m58320/index.cnxml:216:1">2.5 m/s to the left</li>
+<li data-sm="./modules/m58320/index.cnxml:217:1">2.5 m/s to the right</li>
+<li data-sm="./modules/m58320/index.cnxml:218:1">1.25 m/s to the left</li>
+<li data-sm="./modules/m58320/index.cnxml:219:1">1.25 m/s to the right</li>
+<li data-sm="./modules/m58320/index.cnxml:220:1">something else</li>
+</ul>
+<p id="fs-id1167131581659" data-sm="./modules/m58320/index.cnxml:222:1"></p>
+<h4 data-type="title" data-sm="./modules/m58320/index.cnxml:222:31">Solution</h4>
+Define the +<em data-effect="italics" data-sm="./modules/m58320/index.cnxml:223:13">x</em>-direction to point to the right. Conservation of momentum then reads
+<div data-type="equation" id="fs-id1167131199927" class="unnumbered" data-sm="./modules/m58320/index.cnxml:224:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtable data-sm="./modules/m58320/index.cnxml:224:70"><mtr data-sm="./modules/m58320/index.cnxml:224:80"><mtd columnalign="right" data-sm="./modules/m58320/index.cnxml:224:87"><msub data-sm="./modules/m58320/index.cnxml:224:114"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:224:122"><mover accent="true" data-sm="./modules/m58320/index.cnxml:224:169"><mi data-sm="./modules/m58320/index.cnxml:224:192">p</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:224:206">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:224:258"><mi data-sm="./modules/m58320/index.cnxml:224:305">f</mi></mstyle></msub></mtd>
+<mtd columnalign="left" data-sm="./modules/m58320/index.cnxml:224:347"><mo data-sm="./modules/m58320/index.cnxml:224:373">=</mo></mtd>
+<mtd columnalign="left" data-sm="./modules/m58320/index.cnxml:224:395"><msub data-sm="./modules/m58320/index.cnxml:224:421"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:224:429"><mover accent="true" data-sm="./modules/m58320/index.cnxml:224:476"><mi data-sm="./modules/m58320/index.cnxml:224:499">p</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:224:513">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:224:565"><mi data-sm="./modules/m58320/index.cnxml:224:612">i</mi></mstyle></msub></mtd>
+</mtr>
+<mtr data-sm="./modules/m58320/index.cnxml:224:662"><mtd columnalign="right" data-sm="./modules/m58320/index.cnxml:224:669"><mi data-sm="./modules/m58320/index.cnxml:224:696">m</mi><msub data-sm="./modules/m58320/index.cnxml:224:710"><mi data-sm="./modules/m58320/index.cnxml:224:718">v</mi><mrow data-sm="./modules/m58320/index.cnxml:224:732"><msub data-sm="./modules/m58320/index.cnxml:224:740"><mtext data-sm="./modules/m58320/index.cnxml:224:748">r</mtext><mtext data-sm="./modules/m58320/index.cnxml:224:768">f</mtext></msub></mrow></msub><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:224:815"><mover accent="true" data-sm="./modules/m58320/index.cnxml:224:862"><mi data-sm="./modules/m58320/index.cnxml:224:885">i</mi><mo data-sm="./modules/m58320/index.cnxml:224:899">^</mo></mover>
+</mstyle>
+<mo data-sm="./modules/m58320/index.cnxml:224:934">+</mo><mi data-sm="./modules/m58320/index.cnxml:224:948">m</mi><msub data-sm="./modules/m58320/index.cnxml:224:962"><mi data-sm="./modules/m58320/index.cnxml:224:970">v</mi><mrow data-sm="./modules/m58320/index.cnxml:224:984"><msub data-sm="./modules/m58320/index.cnxml:224:992"><mtext data-sm="./modules/m58320/index.cnxml:224:1000">b</mtext><mtext data-sm="./modules/m58320/index.cnxml:224:1020">f</mtext></msub></mrow></msub><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:224:1067"><mover accent="true" data-sm="./modules/m58320/index.cnxml:224:1114"><mi data-sm="./modules/m58320/index.cnxml:224:1137">i</mi><mo data-sm="./modules/m58320/index.cnxml:224:1151">^</mo></mover>
+</mstyle>
+</mtd>
+<mtd columnalign="left" data-sm="./modules/m58320/index.cnxml:224:1194"><mo data-sm="./modules/m58320/index.cnxml:224:1220">=</mo></mtd>
+<mtd columnalign="left" data-sm="./modules/m58320/index.cnxml:224:1242"><mi data-sm="./modules/m58320/index.cnxml:224:1268">m</mi><msub data-sm="./modules/m58320/index.cnxml:224:1282"><mi data-sm="./modules/m58320/index.cnxml:224:1290">v</mi><mrow data-sm="./modules/m58320/index.cnxml:224:1304"><msub data-sm="./modules/m58320/index.cnxml:224:1312"><mtext data-sm="./modules/m58320/index.cnxml:224:1320">r</mtext><mtext data-sm="./modules/m58320/index.cnxml:224:1340">i</mtext></msub></mrow></msub><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:224:1387"><mover accent="true" data-sm="./modules/m58320/index.cnxml:224:1434"><mi data-sm="./modules/m58320/index.cnxml:224:1457">i</mi><mo data-sm="./modules/m58320/index.cnxml:224:1471">^</mo></mover>
+</mstyle>
+<mo data-sm="./modules/m58320/index.cnxml:224:1506">−</mo><mi data-sm="./modules/m58320/index.cnxml:224:1520">m</mi><msub data-sm="./modules/m58320/index.cnxml:224:1534"><mi data-sm="./modules/m58320/index.cnxml:224:1542">v</mi><mrow data-sm="./modules/m58320/index.cnxml:224:1556"><msub data-sm="./modules/m58320/index.cnxml:224:1564"><mtext data-sm="./modules/m58320/index.cnxml:224:1572">b</mtext><mtext data-sm="./modules/m58320/index.cnxml:224:1592">i</mtext></msub></mrow></msub><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:224:1639"><mover accent="true" data-sm="./modules/m58320/index.cnxml:224:1686"><mi data-sm="./modules/m58320/index.cnxml:224:1709">i</mi><mo data-sm="./modules/m58320/index.cnxml:224:1723">^</mo></mover>
+</mstyle>
+<mo data-sm="./modules/m58320/index.cnxml:224:1758">.</mo></mtd>
+</mtr>
+</mtable>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1167134466543" data-sm="./modules/m58320/index.cnxml:225:1">Before the collision, the momentum of the system is entirely and only in the blue puck. Thus,</p>
+<div data-type="equation" id="fs-id1167131232169" class="unnumbered" data-sm="./modules/m58320/index.cnxml:226:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtable data-sm="./modules/m58320/index.cnxml:226:70"><mtr data-sm="./modules/m58320/index.cnxml:226:80"><mtd columnalign="right" data-sm="./modules/m58320/index.cnxml:226:87"><mi data-sm="./modules/m58320/index.cnxml:226:114">m</mi><msub data-sm="./modules/m58320/index.cnxml:226:128"><mi data-sm="./modules/m58320/index.cnxml:226:136">v</mi><mrow data-sm="./modules/m58320/index.cnxml:226:150"><msub data-sm="./modules/m58320/index.cnxml:226:158"><mtext data-sm="./modules/m58320/index.cnxml:226:166">r</mtext><mtext data-sm="./modules/m58320/index.cnxml:226:186">f</mtext></msub></mrow></msub><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:226:233"><mover accent="true" data-sm="./modules/m58320/index.cnxml:226:280"><mi data-sm="./modules/m58320/index.cnxml:226:303">i</mi><mo data-sm="./modules/m58320/index.cnxml:226:317">^</mo></mover>
+</mstyle>
+<mo data-sm="./modules/m58320/index.cnxml:226:352">+</mo><mi data-sm="./modules/m58320/index.cnxml:226:366">m</mi><msub data-sm="./modules/m58320/index.cnxml:226:380"><mi data-sm="./modules/m58320/index.cnxml:226:388">v</mi><mrow data-sm="./modules/m58320/index.cnxml:226:402"><msub data-sm="./modules/m58320/index.cnxml:226:410"><mtext data-sm="./modules/m58320/index.cnxml:226:418">b</mtext><mtext data-sm="./modules/m58320/index.cnxml:226:438">f</mtext></msub></mrow></msub><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:226:485"><mover accent="true" data-sm="./modules/m58320/index.cnxml:226:532"><mi data-sm="./modules/m58320/index.cnxml:226:555">i</mi><mo data-sm="./modules/m58320/index.cnxml:226:569">^</mo></mover>
+</mstyle>
+</mtd>
+<mtd columnalign="left" data-sm="./modules/m58320/index.cnxml:226:612"><mo data-sm="./modules/m58320/index.cnxml:226:638">=</mo></mtd>
+<mtd columnalign="left" data-sm="./modules/m58320/index.cnxml:226:660"><mtext data-sm="./modules/m58320/index.cnxml:226:686">−</mtext><mi data-sm="./modules/m58320/index.cnxml:226:706">m</mi><msub data-sm="./modules/m58320/index.cnxml:226:720"><mi data-sm="./modules/m58320/index.cnxml:226:728">v</mi><mrow data-sm="./modules/m58320/index.cnxml:226:742"><msub data-sm="./modules/m58320/index.cnxml:226:750"><mtext data-sm="./modules/m58320/index.cnxml:226:758">b</mtext><mtext data-sm="./modules/m58320/index.cnxml:226:778">i</mtext></msub></mrow></msub><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:226:825"><mover accent="true" data-sm="./modules/m58320/index.cnxml:226:872"><mi data-sm="./modules/m58320/index.cnxml:226:895">i</mi><mo data-sm="./modules/m58320/index.cnxml:226:909">^</mo></mover>
+</mstyle>
+</mtd>
+</mtr>
+<mtr data-sm="./modules/m58320/index.cnxml:226:960"><mtd columnalign="right" data-sm="./modules/m58320/index.cnxml:226:967"><msub data-sm="./modules/m58320/index.cnxml:226:994"><mi data-sm="./modules/m58320/index.cnxml:226:1002">v</mi><mrow data-sm="./modules/m58320/index.cnxml:226:1016"><msub data-sm="./modules/m58320/index.cnxml:226:1024"><mtext data-sm="./modules/m58320/index.cnxml:226:1032">r</mtext><mtext data-sm="./modules/m58320/index.cnxml:226:1052">f</mtext></msub></mrow></msub><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:226:1099"><mover accent="true" data-sm="./modules/m58320/index.cnxml:226:1146"><mi data-sm="./modules/m58320/index.cnxml:226:1169">i</mi><mo data-sm="./modules/m58320/index.cnxml:226:1183">^</mo></mover>
+</mstyle>
+<mo data-sm="./modules/m58320/index.cnxml:226:1218">+</mo><msub data-sm="./modules/m58320/index.cnxml:226:1232"><mi data-sm="./modules/m58320/index.cnxml:226:1240">v</mi><mrow data-sm="./modules/m58320/index.cnxml:226:1254"><msub data-sm="./modules/m58320/index.cnxml:226:1262"><mtext data-sm="./modules/m58320/index.cnxml:226:1270">b</mtext><mtext data-sm="./modules/m58320/index.cnxml:226:1290">f</mtext></msub></mrow></msub><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:226:1337"><mover accent="true" data-sm="./modules/m58320/index.cnxml:226:1384"><mi data-sm="./modules/m58320/index.cnxml:226:1407">i</mi><mo data-sm="./modules/m58320/index.cnxml:226:1421">^</mo></mover>
+</mstyle>
+</mtd>
+<mtd columnalign="left" data-sm="./modules/m58320/index.cnxml:226:1464"><mo data-sm="./modules/m58320/index.cnxml:226:1490">=</mo></mtd>
+<mtd columnalign="left" data-sm="./modules/m58320/index.cnxml:226:1512"><mtext data-sm="./modules/m58320/index.cnxml:226:1538">−</mtext><msub data-sm="./modules/m58320/index.cnxml:226:1558"><mi data-sm="./modules/m58320/index.cnxml:226:1566">v</mi><mrow data-sm="./modules/m58320/index.cnxml:226:1580"><msub data-sm="./modules/m58320/index.cnxml:226:1588"><mtext data-sm="./modules/m58320/index.cnxml:226:1596">b</mtext><mtext data-sm="./modules/m58320/index.cnxml:226:1616">i</mtext></msub></mrow></msub><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:226:1663"><mover accent="true" data-sm="./modules/m58320/index.cnxml:226:1710"><mi data-sm="./modules/m58320/index.cnxml:226:1733">i</mi><mo data-sm="./modules/m58320/index.cnxml:226:1747">^</mo></mover>
+</mstyle>
+<mo data-sm="./modules/m58320/index.cnxml:226:1782">.</mo></mtd>
+</mtr>
+</mtable>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1167134920860" data-sm="./modules/m58320/index.cnxml:227:1">(Remember that the masses of the pucks are equal.) Substituting numbers:</p>
+<div data-type="equation" id="fs-id1167134920863" class="unnumbered" data-sm="./modules/m58320/index.cnxml:228:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtable data-sm="./modules/m58320/index.cnxml:228:70"><mtr data-sm="./modules/m58320/index.cnxml:228:80"><mtd columnalign="right" data-sm="./modules/m58320/index.cnxml:228:87"><mo data-sm="./modules/m58320/index.cnxml:228:114">−</mo><mrow data-sm="./modules/m58320/index.cnxml:228:128"><mo data-sm="./modules/m58320/index.cnxml:228:136">(</mo><mrow data-sm="./modules/m58320/index.cnxml:228:150"><mn data-sm="./modules/m58320/index.cnxml:228:158">2.5</mn><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:228:174"/><mtext data-sm="./modules/m58320/index.cnxml:228:199">m/s</mtext></mrow>
+<mo data-sm="./modules/m58320/index.cnxml:228:230">)</mo></mrow>
+<mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:228:253"><mover accent="true" data-sm="./modules/m58320/index.cnxml:228:300"><mi data-sm="./modules/m58320/index.cnxml:228:323">i</mi><mo data-sm="./modules/m58320/index.cnxml:228:337">^</mo></mover>
+</mstyle>
+<mo data-sm="./modules/m58320/index.cnxml:228:372">+</mo><msub data-sm="./modules/m58320/index.cnxml:228:386"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:228:394"><mover accent="true" data-sm="./modules/m58320/index.cnxml:228:441"><mi data-sm="./modules/m58320/index.cnxml:228:464">v</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:228:478">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58320/index.cnxml:228:530"><msub data-sm="./modules/m58320/index.cnxml:228:538"><mtext data-sm="./modules/m58320/index.cnxml:228:546">b</mtext><mtext data-sm="./modules/m58320/index.cnxml:228:566">f</mtext></msub></mrow></msub></mtd>
+<mtd columnalign="left" data-sm="./modules/m58320/index.cnxml:228:621"><mo data-sm="./modules/m58320/index.cnxml:228:647">=</mo></mtd>
+<mtd columnalign="left" data-sm="./modules/m58320/index.cnxml:228:669"><mtext data-sm="./modules/m58320/index.cnxml:228:695">−</mtext><mrow data-sm="./modules/m58320/index.cnxml:228:715"><mo data-sm="./modules/m58320/index.cnxml:228:723">(</mo><mrow data-sm="./modules/m58320/index.cnxml:228:737"><mn data-sm="./modules/m58320/index.cnxml:228:745">2.5</mn><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:228:761"/><mtext data-sm="./modules/m58320/index.cnxml:228:786">m/s</mtext></mrow>
+<mo data-sm="./modules/m58320/index.cnxml:228:817">)</mo></mrow>
+<mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:228:840"><mover accent="true" data-sm="./modules/m58320/index.cnxml:228:887"><mi data-sm="./modules/m58320/index.cnxml:228:910">i</mi><mo data-sm="./modules/m58320/index.cnxml:228:924">^</mo></mover>
+</mstyle>
+</mtd>
+</mtr>
+<mtr data-sm="./modules/m58320/index.cnxml:228:975"><mtd columnalign="right" data-sm="./modules/m58320/index.cnxml:228:982"><msub data-sm="./modules/m58320/index.cnxml:228:1009"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:228:1017"><mover accent="true" data-sm="./modules/m58320/index.cnxml:228:1064"><mi data-sm="./modules/m58320/index.cnxml:228:1087">v</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:228:1101">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58320/index.cnxml:228:1153"><msub data-sm="./modules/m58320/index.cnxml:228:1161"><mtext data-sm="./modules/m58320/index.cnxml:228:1169">b</mtext><mtext data-sm="./modules/m58320/index.cnxml:228:1189">f</mtext></msub></mrow></msub></mtd>
+<mtd columnalign="left" data-sm="./modules/m58320/index.cnxml:228:1244"><mo data-sm="./modules/m58320/index.cnxml:228:1270">=</mo></mtd>
+<mtd columnalign="left" data-sm="./modules/m58320/index.cnxml:228:1292"><mn data-sm="./modules/m58320/index.cnxml:228:1318">0</mn><mo data-sm="./modules/m58320/index.cnxml:228:1332">.</mo></mtd>
+</mtr>
+</mtable>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1167131197258" data-sm="./modules/m58320/index.cnxml:229:1"></p>
+<h4 data-type="title" data-sm="./modules/m58320/index.cnxml:229:31">Significance</h4>
+Evidently, the two pucks simply exchanged momentum. The blue puck transferred all of its momentum to the red puck. In fact, this is what happens in similar collision where <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:230:181"><msub data-sm="./modules/m58320/index.cnxml:230:189"><mi data-sm="./modules/m58320/index.cnxml:230:197">m</mi><mn data-sm="./modules/m58320/index.cnxml:230:211">1</mn></msub><mo data-sm="./modules/m58320/index.cnxml:230:234">=</mo><msub data-sm="./modules/m58320/index.cnxml:230:248"><mi data-sm="./modules/m58320/index.cnxml:230:256">m</mi><mn data-sm="./modules/m58320/index.cnxml:230:270">2</mn></msub><mo data-sm="./modules/m58320/index.cnxml:230:293">.</mo></mrow>
+</mrow>
+</semantics>
+</math></span>
+</div>
+</div>
+<div data-type="note" id="fs-id1167131329329" class="check-understanding" data-sm="./modules/m58320/index.cnxml:232:1"><h3 class="os-title">
+  <span class="os-title-label">Check Your Understanding </span>
+  <span class="os-number">9.5</span>
+  <span class="os-divider"> </span>
+</h3>
+<div class="os-note-body">
+<div data-type="exercise" id="fs-id1167134946131" data-sm="./modules/m58320/index.cnxml:233:1" class="unnumbered os-hasSolution">
+<div data-type="problem" id="fs-id1167134946133" data-sm="./modules/m58320/index.cnxml:234:1"><div class="os-problem-container">
+<p id="fs-id1167131226953" data-sm="./modules/m58320/index.cnxml:235:1"> Even if there were some friction on the ice, it is still possible to use conservation of momentum to solve this problem, but you would need to impose an additional condition on the problem. What is that additional condition?</p>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+<div data-type="example" id="fs-id1167134922874" data-sm="./modules/m58320/index.cnxml:244:1"><h3 class="os-title">
+  <span class="os-title-label">Example </span>
+  <span class="os-number">9.9</span>
+  <span class="os-divider"> </span>
+</h3>
+<div class="body">
+<p id="fs-id1167131455992" data-sm="./modules/m58320/index.cnxml:245:1"></p>
+<h4 data-type="title" data-sm="./modules/m58320/index.cnxml:245:31">Landing of <em data-effect="italics" data-sm="./modules/m58320/index.cnxml:245:49">Philae</em></h4>
+On November 12, 2014, the European Space Agency successfully landed a probe named <span data-type="term" class="no-emphasis" id="term-00004" data-sm="./modules/m58320/index.cnxml:246:83"><em data-effect="italics" data-sm="./modules/m58320/index.cnxml:246:125">Philae</em></span> on Comet 67P/Churyumov/Gerasimenko (<a href="#CNX_UPhysics_09_03_Philae" data-sm="./modules/m58320/index.cnxml:246:213" class="autogenerated-content">Figure 9.19</a>). During the landing, however, the probe actually landed three times, because it bounced twice. Let’s calculate how much the comet’s speed changed as a result of the first bounce.
+<div class="os-figure"><figure id="CNX_UPhysics_09_03_Philae" data-sm="./modules/m58320/index.cnxml:247:1">
+<span data-type="media" id="fs-id1167131257174" data-alt="An artist’s rendering of Philae landing on a comet." data-sm="./modules/m58320/index.cnxml:248:1">
+<img src="552c126e19c3c474ed6112a83b1867cf2e75616e.jpeg" data-media-type="image/jpeg" alt="An artist’s rendering of Philae landing on a comet." data-sm="./modules/m58320/index.cnxml:249:1"/>
+</span>
+
+</figure>
+<div class="os-caption-container">
+  <span class="os-title-label">Figure </span>
+<span class="os-number">9.19</span>
+
+
+
+  <span class="os-divider"> </span>
+  <span data-sm="./modules/m58320/index.cnxml:251:1" class="os-caption">An artist’s rendering of <em data-effect="italics" data-sm="./modules/m58320/index.cnxml:251:35">Philae</em> landing on a comet. (credit: modification of work by “DLR German Aerospace Center”/Flickr)</span>
+</div>
+</div>
+<p id="fs-id1167131331606" data-sm="./modules/m58320/index.cnxml:253:1">Let’s define upward to be the +<em data-effect="italics" data-sm="./modules/m58320/index.cnxml:253:62">y</em>-direction, perpendicular to the surface of the comet, and <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:253:168"><mi data-sm="./modules/m58320/index.cnxml:253:176">y</mi><mo data-sm="./modules/m58320/index.cnxml:253:190">=</mo><mn data-sm="./modules/m58320/index.cnxml:253:204">0</mn></mrow>
+</mrow>
+</semantics>
+</math></span> to be at the surface of the comet. Here’s what we know:</p>
+<ul id="fs-id1167131503805" data-bullet-style="bullet" data-sm="./modules/m58320/index.cnxml:254:1">
+<li data-sm="./modules/m58320/index.cnxml:255:1">The mass of Comet 67P: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:255:38"><msub data-sm="./modules/m58320/index.cnxml:255:46"><mi data-sm="./modules/m58320/index.cnxml:255:54">M</mi><mi data-sm="./modules/m58320/index.cnxml:255:68">c</mi></msub><mo data-sm="./modules/m58320/index.cnxml:255:91">=</mo><mn data-sm="./modules/m58320/index.cnxml:255:105">1.0</mn><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:255:121"/><mo data-sm="./modules/m58320/index.cnxml:255:146">×</mo><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:255:160"/><msup data-sm="./modules/m58320/index.cnxml:255:185"><mrow data-sm="./modules/m58320/index.cnxml:255:193"><mn data-sm="./modules/m58320/index.cnxml:255:201">10</mn></mrow><mrow data-sm="./modules/m58320/index.cnxml:255:225"><mn data-sm="./modules/m58320/index.cnxml:255:233">13</mn></mrow></msup><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:255:266"/><mtext data-sm="./modules/m58320/index.cnxml:255:291">kg</mtext></mrow>
+</mrow>
+</semantics>
+</math></li>
+<li data-sm="./modules/m58320/index.cnxml:256:1">The acceleration due to the comet’s gravity: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:256:60"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:256:68"><mover accent="true" data-sm="./modules/m58320/index.cnxml:256:115"><mi data-sm="./modules/m58320/index.cnxml:256:138">a</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:256:152">→</mo></mover>
+</mstyle>
+<mo data-sm="./modules/m58320/index.cnxml:256:204">=</mo><mtext data-sm="./modules/m58320/index.cnxml:256:218">−</mtext><mrow data-sm="./modules/m58320/index.cnxml:256:238"><mo data-sm="./modules/m58320/index.cnxml:256:246">(</mo><mrow data-sm="./modules/m58320/index.cnxml:256:260"><mn data-sm="./modules/m58320/index.cnxml:256:268">5.0</mn><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:256:284"/><mo data-sm="./modules/m58320/index.cnxml:256:309">×</mo><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:256:323"/><msup data-sm="./modules/m58320/index.cnxml:256:348"><mrow data-sm="./modules/m58320/index.cnxml:256:356"><mn data-sm="./modules/m58320/index.cnxml:256:364">10</mn></mrow><mrow data-sm="./modules/m58320/index.cnxml:256:388"><mn data-sm="./modules/m58320/index.cnxml:256:396">−3</mn></mrow></msup><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:256:429"/><msup data-sm="./modules/m58320/index.cnxml:256:454"><mrow data-sm="./modules/m58320/index.cnxml:256:462"><mtext data-sm="./modules/m58320/index.cnxml:256:470">m/s</mtext></mrow><mn data-sm="./modules/m58320/index.cnxml:256:501">2</mn></msup></mrow>
+<mo data-sm="./modules/m58320/index.cnxml:256:533">)</mo></mrow>
+<mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:256:556"><mover accent="true" data-sm="./modules/m58320/index.cnxml:256:603"><mi data-sm="./modules/m58320/index.cnxml:256:626">j</mi><mo data-sm="./modules/m58320/index.cnxml:256:640">^</mo></mover>
+</mstyle>
+</mrow>
+</mrow>
+</semantics>
+</math></li>
+<li data-sm="./modules/m58320/index.cnxml:257:1"><em data-effect="italics" data-sm="./modules/m58320/index.cnxml:257:7">Philae’s</em> mass: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:257:68"><msub data-sm="./modules/m58320/index.cnxml:257:76"><mi data-sm="./modules/m58320/index.cnxml:257:84">M</mi><mi data-sm="./modules/m58320/index.cnxml:257:98">p</mi></msub><mo data-sm="./modules/m58320/index.cnxml:257:121">=</mo><mn data-sm="./modules/m58320/index.cnxml:257:135">96</mn><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:257:150"/><mtext data-sm="./modules/m58320/index.cnxml:257:175">kg</mtext></mrow>
+</mrow>
+</semantics>
+</math></li>
+<li data-sm="./modules/m58320/index.cnxml:258:1">Initial touchdown speed: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:258:40"><msub data-sm="./modules/m58320/index.cnxml:258:48"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:258:56"><mover accent="true" data-sm="./modules/m58320/index.cnxml:258:103"><mi data-sm="./modules/m58320/index.cnxml:258:126">v</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:258:140">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:258:192"><mn data-sm="./modules/m58320/index.cnxml:258:239">1</mn></mstyle></msub><mo data-sm="./modules/m58320/index.cnxml:258:273">=</mo><mtext data-sm="./modules/m58320/index.cnxml:258:287">−</mtext><mrow data-sm="./modules/m58320/index.cnxml:258:307"><mo data-sm="./modules/m58320/index.cnxml:258:315">(</mo><mrow data-sm="./modules/m58320/index.cnxml:258:329"><mn data-sm="./modules/m58320/index.cnxml:258:337">1.0</mn><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:258:353"/><mtext data-sm="./modules/m58320/index.cnxml:258:378">m/s</mtext></mrow>
+<mo data-sm="./modules/m58320/index.cnxml:258:409">)</mo></mrow>
+<mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:258:432"><mover accent="true" data-sm="./modules/m58320/index.cnxml:258:479"><mi data-sm="./modules/m58320/index.cnxml:258:502">j</mi><mo data-sm="./modules/m58320/index.cnxml:258:516">^</mo></mover>
+</mstyle>
+</mrow>
+</mrow>
+</semantics>
+</math></li>
+<li data-sm="./modules/m58320/index.cnxml:259:1">Initial upward speed due to first bounce: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:259:57"><msub data-sm="./modules/m58320/index.cnxml:259:65"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:259:73"><mover accent="true" data-sm="./modules/m58320/index.cnxml:259:120"><mi data-sm="./modules/m58320/index.cnxml:259:143">v</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:259:157">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:259:209"><mn data-sm="./modules/m58320/index.cnxml:259:256">2</mn></mstyle></msub><mo data-sm="./modules/m58320/index.cnxml:259:290">=</mo><mrow data-sm="./modules/m58320/index.cnxml:259:304"><mo data-sm="./modules/m58320/index.cnxml:259:312">(</mo><mrow data-sm="./modules/m58320/index.cnxml:259:326"><mn data-sm="./modules/m58320/index.cnxml:259:334">0.38</mn><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:259:351"/><mtext data-sm="./modules/m58320/index.cnxml:259:376">m/s</mtext></mrow>
+<mo data-sm="./modules/m58320/index.cnxml:259:407">)</mo></mrow>
+<mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:259:430"><mover accent="true" data-sm="./modules/m58320/index.cnxml:259:477"><mi data-sm="./modules/m58320/index.cnxml:259:500">j</mi><mo data-sm="./modules/m58320/index.cnxml:259:514">^</mo></mover>
+</mstyle>
+</mrow>
+</mrow>
+</semantics>
+</math></li>
+<li data-sm="./modules/m58320/index.cnxml:260:1">Landing impact time: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:260:36"><mtext data-sm="./modules/m58320/index.cnxml:260:44">Δ</mtext><mi data-sm="./modules/m58320/index.cnxml:260:64">t</mi><mo data-sm="./modules/m58320/index.cnxml:260:78">=</mo><mn data-sm="./modules/m58320/index.cnxml:260:92">1.3</mn><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:260:108"/><mtext data-sm="./modules/m58320/index.cnxml:260:133">s</mtext></mrow>
+</mrow>
+</semantics>
+</math></li>
+</ul>
+<p id="fs-id1167131583199" data-sm="./modules/m58320/index.cnxml:262:1"></p>
+<h4 data-type="title" data-sm="./modules/m58320/index.cnxml:262:31">Strategy</h4>
+We’re asked for how much the comet’s speed changed, but we don’t know much about the comet, beyond its mass and the acceleration its gravity causes. However, we <em data-effect="italics" data-sm="./modules/m58320/index.cnxml:263:162">are</em> told that the <em data-effect="italics" data-sm="./modules/m58320/index.cnxml:263:218">Philae</em> lander collides with (lands on) the comet, and bounces off of it. A collision suggests momentum as a strategy for solving this problem.
+<p id="fs-id1167134643542" data-sm="./modules/m58320/index.cnxml:264:1">If we define a system that consists of both <em data-effect="italics" data-sm="./modules/m58320/index.cnxml:264:75">Philae</em> and Comet 67/P, then there is no net external force on this system, and thus the momentum of this system is conserved. (We’ll neglect the gravitational force of the sun.) Thus, if we calculate the change of momentum of the lander, we automatically have the change of momentum of the comet. Also, the comet’s change of velocity is directly related to its change of momentum as a result of the lander “colliding” with it.</p>
+<p id="fs-id1167134831814" data-sm="./modules/m58320/index.cnxml:265:1"></p>
+<h4 data-type="title" data-sm="./modules/m58320/index.cnxml:265:31">Solution</h4>
+Let <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:266:13"><msub data-sm="./modules/m58320/index.cnxml:266:21"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:266:29"><mover accent="true" data-sm="./modules/m58320/index.cnxml:266:76"><mi data-sm="./modules/m58320/index.cnxml:266:99">p</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:266:113">→</mo></mover>
+</mstyle><mn data-sm="./modules/m58320/index.cnxml:266:165">1</mn></msub></mrow>
+</mrow>
+</semantics>
+</math></span> be <em data-effect="italics" data-sm="./modules/m58320/index.cnxml:266:210">Philae’s</em> momentum at the moment just before touchdown, and <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:266:315"><msub data-sm="./modules/m58320/index.cnxml:266:323"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:266:331"><mover accent="true" data-sm="./modules/m58320/index.cnxml:266:378"><mi data-sm="./modules/m58320/index.cnxml:266:401">p</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:266:415">→</mo></mover>
+</mstyle><mn data-sm="./modules/m58320/index.cnxml:266:467">2</mn></msub></mrow>
+</mrow>
+</semantics>
+</math></span> be its momentum just after the first bounce. Then its momentum just before landing was
+<div data-type="equation" id="fs-id1167131330569" class="unnumbered" data-sm="./modules/m58320/index.cnxml:267:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:267:70"><msub data-sm="./modules/m58320/index.cnxml:267:78"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:267:86"><mover accent="true" data-sm="./modules/m58320/index.cnxml:267:133"><mi data-sm="./modules/m58320/index.cnxml:267:156">p</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:267:170">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:267:222"><mn data-sm="./modules/m58320/index.cnxml:267:269">1</mn></mstyle></msub><mo data-sm="./modules/m58320/index.cnxml:267:303">=</mo><msub data-sm="./modules/m58320/index.cnxml:267:317"><mi data-sm="./modules/m58320/index.cnxml:267:325">M</mi><mi data-sm="./modules/m58320/index.cnxml:267:339">p</mi></msub><msub data-sm="./modules/m58320/index.cnxml:267:362"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:267:370"><mover accent="true" data-sm="./modules/m58320/index.cnxml:267:417"><mi data-sm="./modules/m58320/index.cnxml:267:440">v</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:267:454">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:267:506"><mn data-sm="./modules/m58320/index.cnxml:267:553">1</mn></mstyle></msub><mo data-sm="./modules/m58320/index.cnxml:267:587">=</mo><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:267:601">(</mo><mn data-sm="./modules/m58320/index.cnxml:267:632">96</mn><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:267:647"/><mtext data-sm="./modules/m58320/index.cnxml:267:672">kg</mtext><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:267:693">)</mo><mrow data-sm="./modules/m58320/index.cnxml:267:724"><mo data-sm="./modules/m58320/index.cnxml:267:732">(</mo><mrow data-sm="./modules/m58320/index.cnxml:267:746"><mtext data-sm="./modules/m58320/index.cnxml:267:754">−</mtext><mn data-sm="./modules/m58320/index.cnxml:267:774">1.0</mn><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:267:790"/><mtext data-sm="./modules/m58320/index.cnxml:267:815">m/s</mtext><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:267:837"><mover accent="true" data-sm="./modules/m58320/index.cnxml:267:884"><mi data-sm="./modules/m58320/index.cnxml:267:907">j</mi><mo data-sm="./modules/m58320/index.cnxml:267:921">^</mo></mover>
+</mstyle>
+</mrow>
+<mo data-sm="./modules/m58320/index.cnxml:267:965">)</mo></mrow>
+<mo data-sm="./modules/m58320/index.cnxml:267:988">=</mo><mtext data-sm="./modules/m58320/index.cnxml:267:1002">−</mtext><mrow data-sm="./modules/m58320/index.cnxml:267:1022"><mo data-sm="./modules/m58320/index.cnxml:267:1030">(</mo><mrow data-sm="./modules/m58320/index.cnxml:267:1044"><mn data-sm="./modules/m58320/index.cnxml:267:1052">96</mn><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:267:1067"/><mtext data-sm="./modules/m58320/index.cnxml:267:1092">kg</mtext><mo data-sm="./modules/m58320/index.cnxml:267:1113">·</mo><mtext data-sm="./modules/m58320/index.cnxml:267:1127">m/s</mtext></mrow>
+<mo data-sm="./modules/m58320/index.cnxml:267:1158">)</mo></mrow>
+<mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:267:1181"><mover accent="true" data-sm="./modules/m58320/index.cnxml:267:1228"><mi data-sm="./modules/m58320/index.cnxml:267:1251">j</mi><mo data-sm="./modules/m58320/index.cnxml:267:1265">^</mo></mover>
+</mstyle>
+</mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1167131082987" data-sm="./modules/m58320/index.cnxml:268:1">and just after was</p>
+<div data-type="equation" id="fs-id1167131082991" class="unnumbered" data-sm="./modules/m58320/index.cnxml:269:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:269:70"><msub data-sm="./modules/m58320/index.cnxml:269:78"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:269:86"><mover accent="true" data-sm="./modules/m58320/index.cnxml:269:133"><mi data-sm="./modules/m58320/index.cnxml:269:156">p</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:269:170">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:269:222"><mn data-sm="./modules/m58320/index.cnxml:269:269">2</mn></mstyle></msub><mo data-sm="./modules/m58320/index.cnxml:269:303">=</mo><msub data-sm="./modules/m58320/index.cnxml:269:317"><mi data-sm="./modules/m58320/index.cnxml:269:325">M</mi><mi data-sm="./modules/m58320/index.cnxml:269:339">p</mi></msub><msub data-sm="./modules/m58320/index.cnxml:269:362"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:269:370"><mover accent="true" data-sm="./modules/m58320/index.cnxml:269:417"><mi data-sm="./modules/m58320/index.cnxml:269:440">v</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:269:454">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:269:506"><mn data-sm="./modules/m58320/index.cnxml:269:553">2</mn></mstyle></msub><mo data-sm="./modules/m58320/index.cnxml:269:587">=</mo><mrow data-sm="./modules/m58320/index.cnxml:269:601"><mo data-sm="./modules/m58320/index.cnxml:269:609">(</mo><mrow data-sm="./modules/m58320/index.cnxml:269:623"><mn data-sm="./modules/m58320/index.cnxml:269:631">96</mn><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:269:646"/><mtext data-sm="./modules/m58320/index.cnxml:269:671">kg</mtext></mrow>
+<mo data-sm="./modules/m58320/index.cnxml:269:701">)</mo></mrow>
+<mrow data-sm="./modules/m58320/index.cnxml:269:724"><mo data-sm="./modules/m58320/index.cnxml:269:732">(</mo><mrow data-sm="./modules/m58320/index.cnxml:269:746"><mo data-sm="./modules/m58320/index.cnxml:269:754">+</mo><mn data-sm="./modules/m58320/index.cnxml:269:768">0.38</mn><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:269:785"/><mtext data-sm="./modules/m58320/index.cnxml:269:810">m/s</mtext><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:269:832"><mover accent="true" data-sm="./modules/m58320/index.cnxml:269:879"><mi data-sm="./modules/m58320/index.cnxml:269:902">j</mi><mo data-sm="./modules/m58320/index.cnxml:269:916">^</mo></mover>
+</mstyle>
+</mrow>
+<mo data-sm="./modules/m58320/index.cnxml:269:960">)</mo></mrow>
+<mo data-sm="./modules/m58320/index.cnxml:269:983">=</mo><mrow data-sm="./modules/m58320/index.cnxml:269:997"><mo data-sm="./modules/m58320/index.cnxml:269:1005">(</mo><mrow data-sm="./modules/m58320/index.cnxml:269:1019"><mn data-sm="./modules/m58320/index.cnxml:269:1027">36.5</mn><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:269:1044"/><mtext data-sm="./modules/m58320/index.cnxml:269:1069">kg</mtext><mo data-sm="./modules/m58320/index.cnxml:269:1090">·</mo><mtext data-sm="./modules/m58320/index.cnxml:269:1104">m/s</mtext></mrow>
+<mo data-sm="./modules/m58320/index.cnxml:269:1135">)</mo></mrow>
+<mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:269:1158"><mover accent="true" data-sm="./modules/m58320/index.cnxml:269:1205"><mi data-sm="./modules/m58320/index.cnxml:269:1228">j</mi><mo data-sm="./modules/m58320/index.cnxml:269:1242">^</mo></mover>
+</mstyle>
+<mo data-sm="./modules/m58320/index.cnxml:269:1277">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1167131582400" data-sm="./modules/m58320/index.cnxml:270:1">Therefore, the lander’s change of momentum during the first bounce is</p>
+<div data-type="equation" id="fs-id1167131582405" class="unnumbered" data-sm="./modules/m58320/index.cnxml:271:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtable data-sm="./modules/m58320/index.cnxml:271:70"><mtr data-sm="./modules/m58320/index.cnxml:271:80"><mtd columnalign="left" data-sm="./modules/m58320/index.cnxml:271:87"><mtext data-sm="./modules/m58320/index.cnxml:271:113">Δ</mtext><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:271:133"><mover accent="true" data-sm="./modules/m58320/index.cnxml:271:180"><mi data-sm="./modules/m58320/index.cnxml:271:203">p</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:271:217">→</mo></mover>
+</mstyle>
+<mo data-sm="./modules/m58320/index.cnxml:271:269">=</mo><msub data-sm="./modules/m58320/index.cnxml:271:283"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:271:291"><mover accent="true" data-sm="./modules/m58320/index.cnxml:271:338"><mi data-sm="./modules/m58320/index.cnxml:271:361">p</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:271:375">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:271:427"><mn data-sm="./modules/m58320/index.cnxml:271:474">2</mn></mstyle></msub><mo data-sm="./modules/m58320/index.cnxml:271:508">−</mo><msub data-sm="./modules/m58320/index.cnxml:271:522"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:271:530"><mover accent="true" data-sm="./modules/m58320/index.cnxml:271:577"><mi data-sm="./modules/m58320/index.cnxml:271:600">p</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:271:614">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:271:666"><mn data-sm="./modules/m58320/index.cnxml:271:713">1</mn></mstyle></msub></mtd>
+</mtr>
+<mtr data-sm="./modules/m58320/index.cnxml:271:763"><mtd data-sm="./modules/m58320/index.cnxml:271:770"/>
+<mtd columnalign="left" data-sm="./modules/m58320/index.cnxml:271:778"><mo data-sm="./modules/m58320/index.cnxml:271:804">=</mo><mrow data-sm="./modules/m58320/index.cnxml:271:818"><mo data-sm="./modules/m58320/index.cnxml:271:826">(</mo><mrow data-sm="./modules/m58320/index.cnxml:271:840"><mn data-sm="./modules/m58320/index.cnxml:271:848">36.5</mn><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:271:865"/><mtext data-sm="./modules/m58320/index.cnxml:271:890">kg</mtext><mo data-sm="./modules/m58320/index.cnxml:271:911">·</mo><mtext data-sm="./modules/m58320/index.cnxml:271:925">m/s</mtext></mrow>
+<mo data-sm="./modules/m58320/index.cnxml:271:956">)</mo></mrow>
+<mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:271:979"><mover accent="true" data-sm="./modules/m58320/index.cnxml:271:1026"><mi data-sm="./modules/m58320/index.cnxml:271:1049">j</mi><mo data-sm="./modules/m58320/index.cnxml:271:1063">^</mo></mover>
+</mstyle>
+<mo data-sm="./modules/m58320/index.cnxml:271:1098">−</mo><mrow data-sm="./modules/m58320/index.cnxml:271:1112"><mo data-sm="./modules/m58320/index.cnxml:271:1120">(</mo><mrow data-sm="./modules/m58320/index.cnxml:271:1134"><mn data-sm="./modules/m58320/index.cnxml:271:1142">−96.0</mn><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:271:1160"/><mtext data-sm="./modules/m58320/index.cnxml:271:1185">kg</mtext><mo data-sm="./modules/m58320/index.cnxml:271:1206">·</mo><mtext data-sm="./modules/m58320/index.cnxml:271:1220">m/s</mtext><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:271:1242"><mover accent="true" data-sm="./modules/m58320/index.cnxml:271:1289"><mi data-sm="./modules/m58320/index.cnxml:271:1312">j</mi><mo data-sm="./modules/m58320/index.cnxml:271:1326">^</mo></mover>
+</mstyle>
+</mrow>
+<mo data-sm="./modules/m58320/index.cnxml:271:1370">)</mo></mrow>
+<mo data-sm="./modules/m58320/index.cnxml:271:1393">=</mo><mrow data-sm="./modules/m58320/index.cnxml:271:1407"><mo data-sm="./modules/m58320/index.cnxml:271:1415">(</mo><mrow data-sm="./modules/m58320/index.cnxml:271:1429"><mn data-sm="./modules/m58320/index.cnxml:271:1437">133</mn><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:271:1453"/><mtext data-sm="./modules/m58320/index.cnxml:271:1478">kg</mtext><mo data-sm="./modules/m58320/index.cnxml:271:1499">·</mo><mtext data-sm="./modules/m58320/index.cnxml:271:1513">m/s</mtext></mrow>
+<mo data-sm="./modules/m58320/index.cnxml:271:1544">)</mo></mrow>
+<mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:271:1567"><mover accent="true" data-sm="./modules/m58320/index.cnxml:271:1614"><mi data-sm="./modules/m58320/index.cnxml:271:1637">j</mi><mo data-sm="./modules/m58320/index.cnxml:271:1651">^</mo></mover>
+</mstyle>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1167131549741" data-sm="./modules/m58320/index.cnxml:272:1">Notice how important it is to include the negative sign of the initial momentum.</p>
+<p id="fs-id1167131337627" data-sm="./modules/m58320/index.cnxml:273:1">Now for the comet. Since momentum of the system must be conserved, the <em data-effect="italics" data-sm="./modules/m58320/index.cnxml:273:102">comet’s</em> momentum changed by exactly the negative of this:</p>
+<div data-type="equation" id="fs-id1167134881853" class="unnumbered" data-sm="./modules/m58320/index.cnxml:274:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:274:70"><mtext data-sm="./modules/m58320/index.cnxml:274:78">Δ</mtext><msub data-sm="./modules/m58320/index.cnxml:274:98"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:274:106"><mover accent="true" data-sm="./modules/m58320/index.cnxml:274:153"><mi data-sm="./modules/m58320/index.cnxml:274:176">p</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:274:190">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:274:242"><mi data-sm="./modules/m58320/index.cnxml:274:289">c</mi></mstyle></msub><mo data-sm="./modules/m58320/index.cnxml:274:323">=</mo><mtext data-sm="./modules/m58320/index.cnxml:274:337">−</mtext><mtext data-sm="./modules/m58320/index.cnxml:274:357">Δ</mtext><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:274:377"><mover accent="true" data-sm="./modules/m58320/index.cnxml:274:424"><mi data-sm="./modules/m58320/index.cnxml:274:447">p</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:274:461">→</mo></mover>
+</mstyle>
+<mo data-sm="./modules/m58320/index.cnxml:274:513">=</mo><mtext data-sm="./modules/m58320/index.cnxml:274:527">−</mtext><mrow data-sm="./modules/m58320/index.cnxml:274:547"><mo data-sm="./modules/m58320/index.cnxml:274:555">(</mo><mrow data-sm="./modules/m58320/index.cnxml:274:569"><mn data-sm="./modules/m58320/index.cnxml:274:577">133</mn><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:274:593"/><mtext data-sm="./modules/m58320/index.cnxml:274:618">kg</mtext><mo data-sm="./modules/m58320/index.cnxml:274:639">·</mo><mtext data-sm="./modules/m58320/index.cnxml:274:653">m/s</mtext></mrow>
+<mo data-sm="./modules/m58320/index.cnxml:274:684">)</mo></mrow>
+<mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:274:707"><mover accent="true" data-sm="./modules/m58320/index.cnxml:274:754"><mi data-sm="./modules/m58320/index.cnxml:274:777">j</mi><mo data-sm="./modules/m58320/index.cnxml:274:791">^</mo></mover>
+</mstyle>
+<mo data-sm="./modules/m58320/index.cnxml:274:826">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1167131404099" data-sm="./modules/m58320/index.cnxml:275:1">Therefore, its change of velocity is</p>
+<div data-type="equation" id="fs-id1167134964997" class="unnumbered" data-sm="./modules/m58320/index.cnxml:276:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58320/index.cnxml:276:70"><mtext data-sm="./modules/m58320/index.cnxml:276:78">Δ</mtext><msub data-sm="./modules/m58320/index.cnxml:276:98"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:276:106"><mover accent="true" data-sm="./modules/m58320/index.cnxml:276:153"><mi data-sm="./modules/m58320/index.cnxml:276:176">v</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:276:190">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:276:242"><mi data-sm="./modules/m58320/index.cnxml:276:289">c</mi></mstyle></msub><mo data-sm="./modules/m58320/index.cnxml:276:323">=</mo><mfrac data-sm="./modules/m58320/index.cnxml:276:337"><mrow data-sm="./modules/m58320/index.cnxml:276:346"><mtext data-sm="./modules/m58320/index.cnxml:276:354">Δ</mtext><msub data-sm="./modules/m58320/index.cnxml:276:374"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:276:382"><mover accent="true" data-sm="./modules/m58320/index.cnxml:276:429"><mi data-sm="./modules/m58320/index.cnxml:276:452">p</mi><mo stretchy="false" data-sm="./modules/m58320/index.cnxml:276:466">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:276:518"><mi data-sm="./modules/m58320/index.cnxml:276:565">c</mi></mstyle></msub></mrow>
+<mrow data-sm="./modules/m58320/index.cnxml:276:608"><msub data-sm="./modules/m58320/index.cnxml:276:616"><mi data-sm="./modules/m58320/index.cnxml:276:624">M</mi><mi data-sm="./modules/m58320/index.cnxml:276:638">c</mi></msub></mrow>
+</mfrac>
+<mo data-sm="./modules/m58320/index.cnxml:276:680">=</mo><mfrac data-sm="./modules/m58320/index.cnxml:276:694"><mrow data-sm="./modules/m58320/index.cnxml:276:703"><mtext data-sm="./modules/m58320/index.cnxml:276:711">−</mtext><mrow data-sm="./modules/m58320/index.cnxml:276:731"><mo data-sm="./modules/m58320/index.cnxml:276:739">(</mo><mrow data-sm="./modules/m58320/index.cnxml:276:753"><mn data-sm="./modules/m58320/index.cnxml:276:761">133</mn><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:276:777"/><mtext data-sm="./modules/m58320/index.cnxml:276:802">kg</mtext><mo data-sm="./modules/m58320/index.cnxml:276:823">·</mo><mtext data-sm="./modules/m58320/index.cnxml:276:837">m/s</mtext></mrow>
+<mo data-sm="./modules/m58320/index.cnxml:276:868">)</mo></mrow>
+<mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:276:891"><mover accent="true" data-sm="./modules/m58320/index.cnxml:276:938"><mi data-sm="./modules/m58320/index.cnxml:276:961">j</mi><mo data-sm="./modules/m58320/index.cnxml:276:975">^</mo></mover>
+</mstyle>
+</mrow>
+<mrow data-sm="./modules/m58320/index.cnxml:276:1019"><mn data-sm="./modules/m58320/index.cnxml:276:1027">1.0</mn><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:276:1043"/><mo data-sm="./modules/m58320/index.cnxml:276:1068">×</mo><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:276:1082"/><msup data-sm="./modules/m58320/index.cnxml:276:1107"><mrow data-sm="./modules/m58320/index.cnxml:276:1115"><mn data-sm="./modules/m58320/index.cnxml:276:1123">10</mn></mrow><mrow data-sm="./modules/m58320/index.cnxml:276:1147"><mn data-sm="./modules/m58320/index.cnxml:276:1155">13</mn></mrow></msup><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:276:1188"/><mtext data-sm="./modules/m58320/index.cnxml:276:1213">kg</mtext></mrow>
+</mfrac>
+<mo data-sm="./modules/m58320/index.cnxml:276:1253">=</mo><mtext data-sm="./modules/m58320/index.cnxml:276:1267">−</mtext><mrow data-sm="./modules/m58320/index.cnxml:276:1287"><mo data-sm="./modules/m58320/index.cnxml:276:1295">(</mo><mrow data-sm="./modules/m58320/index.cnxml:276:1309"><mn data-sm="./modules/m58320/index.cnxml:276:1317">1.33</mn><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:276:1334"/><mo data-sm="./modules/m58320/index.cnxml:276:1359">×</mo><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:276:1373"/><msup data-sm="./modules/m58320/index.cnxml:276:1398"><mrow data-sm="./modules/m58320/index.cnxml:276:1406"><mn data-sm="./modules/m58320/index.cnxml:276:1414">10</mn></mrow><mrow data-sm="./modules/m58320/index.cnxml:276:1438"><mn data-sm="./modules/m58320/index.cnxml:276:1446">−11</mn></mrow></msup><mspace width="0.2em" data-sm="./modules/m58320/index.cnxml:276:1480"/><mtext data-sm="./modules/m58320/index.cnxml:276:1505">m/s</mtext></mrow>
+<mo data-sm="./modules/m58320/index.cnxml:276:1536">)</mo></mrow>
+<mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58320/index.cnxml:276:1559"><mover accent="true" data-sm="./modules/m58320/index.cnxml:276:1606"><mi data-sm="./modules/m58320/index.cnxml:276:1629">j</mi><mo data-sm="./modules/m58320/index.cnxml:276:1643">^</mo></mover>
+</mstyle>
+<mo data-sm="./modules/m58320/index.cnxml:276:1678">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1167131232197" data-sm="./modules/m58320/index.cnxml:277:1"></p>
+<h4 data-type="title" data-sm="./modules/m58320/index.cnxml:277:31">Significance</h4>
+This is a very small change in velocity, about a thousandth of a billionth of a meter per second. Crucially, however, it is <em data-effect="italics" data-sm="./modules/m58320/index.cnxml:278:125">not</em> zero.
+</div>
+</div>
+<div data-type="note" id="fs-id1167131117239" class="check-understanding" data-sm="./modules/m58320/index.cnxml:280:1"><h3 class="os-title">
+  <span class="os-title-label">Check Your Understanding </span>
+  <span class="os-number">9.6</span>
+  <span class="os-divider"> </span>
+</h3>
+<div class="os-note-body">
+<div data-type="exercise" id="fs-id1167134591651" data-sm="./modules/m58320/index.cnxml:281:1" class="unnumbered os-hasSolution">
+<div data-type="problem" id="fs-id1167134591653" data-sm="./modules/m58320/index.cnxml:282:1"><div class="os-problem-container">
+<p id="fs-id1167134591655" data-sm="./modules/m58320/index.cnxml:283:1"> The changes of momentum for <em data-effect="italics" data-sm="./modules/m58320/index.cnxml:283:60">Philae</em> and for Comet 67/P were equal (in magnitude). Were the impulses experienced by <em data-effect="italics" data-sm="./modules/m58320/index.cnxml:283:184">Philae</em> and the comet equal? How about the forces? How about the changes of kinetic energies?</p>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</section>
+
+
+
+
+
+
+ 
+ 
+  </div>
+</body>
+</html>
+<!-- # sourceMappingURL=d50f6e32-0fda-46ef-a362-9bd36ca7c97d-at-aa8a43e-colon-1154c646-35ec-4865-ad01-d721cd466126.xhtml.map -->

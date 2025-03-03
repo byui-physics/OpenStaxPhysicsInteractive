@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:epub="http://www.idpf.org/2007/ops">
+<head><title>4.5
+ 
+Relative Motion in One and Two Dimensions
+</title>
+<link rel="stylesheet" type="text/css" href="the-style-epub.css"/>
+</head>
+<body>
+    <div data-type="page" id="page_5d4652c4-0340-4222-9c10-52e720d49c15" class="chapter-content-module" data-book-content="true"><h2 data-type="document-title" data-sm="./modules/m58293/index.cnxml:3:1" id="page_5d4652c4-0340-4222-9c10-52e720d49c15_titlecreatedbycookbook"><span class="os-number">4.5</span>
+<span class="os-divider"> </span>
+<span data-type="" class="os-text">Relative Motion in One and Two Dimensions</span>
+</h2>
+<div data-type="abstract" data-sm="./modules/m58293/index.cnxml:7:3"><h3 data-type="title">Learning Objectives</h3>
+<p id="para-00001" data-sm="./modules/m58293/index.cnxml:7:16">By the end of this section, you will be able to:</p>
+<ul id="list-00001" data-sm="./modules/m58293/index.cnxml:8:1">
+<li data-sm="./modules/m58293/index.cnxml:9:1">Explain the concept of reference frames.</li>
+<li data-sm="./modules/m58293/index.cnxml:10:1">Write the position and velocity vector equations for relative motion.</li>
+<li data-sm="./modules/m58293/index.cnxml:11:1">Draw the position and velocity vectors for relative motion.</li>
+<li data-sm="./modules/m58293/index.cnxml:12:1">Analyze one-dimensional and two-dimensional relative motion problems using the position and velocity vector equations.</li>
+</ul>
+</div>
+
+<p id="fs-id1165039199361" data-sm="./modules/m58293/index.cnxml:18:1">Motion does not happen in isolation. If you’re riding in a train moving at 10 m/s east, this velocity is measured relative to the ground on which you’re traveling. However, if another train passes you at 15 m/s east, your velocity relative to this other train is different from your velocity relative to the ground. Your velocity relative to the other train is 5 m/s west. To explore this idea further, we first need to establish some terminology.</p>
+
+<section data-depth="1" id="fs-id1165039048753" data-sm="./modules/m58293/index.cnxml:19:1"><h3 data-type="title" data-sm="./modules/m58293/index.cnxml:20:1">Reference Frames</h3>
+<p id="fs-id1165038988838" data-sm="./modules/m58293/index.cnxml:21:1">To discuss relative motion in one or more dimensions, we first introduce the concept of <span data-type="term" id="term-00001" data-sm="./modules/m58293/index.cnxml:21:119">reference frame</span><strong data-sm="./modules/m58293/index.cnxml:21:163">s</strong>. When we say an object has a certain velocity, we must state it has a velocity with respect to a given reference frame. In most examples we have examined so far, this reference frame has been Earth. If you say a person is sitting in a train moving at 10 m/s east, then you imply the person on the train is moving relative to the surface of Earth at this velocity, and Earth is the reference frame. We can expand our view of the motion of the person on the train and say Earth is spinning in its orbit around the Sun, in which case the motion becomes more complicated. In this case, the solar system is the reference frame. In summary, all discussion of relative motion must define the reference frames involved. We now develop a method to refer to reference frames in relative motion. This method makes an approximation that breaks down near the speed of light, where the more accurate methods or special relativity are needed, but is extremely accurate for everyday speeds (<a href="af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-f8a0085a-0147-4fba-b6fa-d2b74a020c0e.xhtml" class="target-chapter" data-sm="./modules/m58293/index.cnxml:21:1175" data-book-uuid="af275420-6050-4707-995c-57b9cc13c358" data-book-slug="university-physics-volume-3" data-page-slug="5-introduction">Relativity</a>).</p>
+</section>
+
+<section data-depth="1" id="fs-id1165039109589" data-sm="./modules/m58293/index.cnxml:23:1"><h3 data-type="title" data-sm="./modules/m58293/index.cnxml:24:1">Relative Motion in One Dimension</h3>
+<p id="fs-id1165039119091" data-sm="./modules/m58293/index.cnxml:25:1">We introduce relative motion in one dimension first, because the velocity vectors simplify to having only two possible directions. Take the example of the person sitting in a train moving east. If we choose east as the positive direction and Earth as the reference frame, then we can write the velocity of the train with respect to the Earth as <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58293/index.cnxml:25:384"><msub data-sm="./modules/m58293/index.cnxml:25:392"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:25:400"><mover accent="true" data-sm="./modules/m58293/index.cnxml:25:447"><mi data-sm="./modules/m58293/index.cnxml:25:470">v</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:25:484">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:25:536"><mtext data-sm="./modules/m58293/index.cnxml:25:544">TE</mtext></mrow></msub><mo data-sm="./modules/m58293/index.cnxml:25:583">=</mo><mn data-sm="./modules/m58293/index.cnxml:25:597">10</mn><mspace width="0.2em" data-sm="./modules/m58293/index.cnxml:25:612"/><mrow data-sm="./modules/m58293/index.cnxml:25:637"><mtext data-sm="./modules/m58293/index.cnxml:25:645">m</mtext><mtext data-sm="./modules/m58293/index.cnxml:25:665">/</mtext><mtext data-sm="./modules/m58293/index.cnxml:25:685">s</mtext></mrow>
+<mspace width="0.2em" data-sm="./modules/m58293/index.cnxml:25:714"/><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:25:739"><mover accent="true" data-sm="./modules/m58293/index.cnxml:25:786"><mi data-sm="./modules/m58293/index.cnxml:25:809">i</mi><mo data-sm="./modules/m58293/index.cnxml:25:823">^</mo></mover>
+</mstyle>
+</mrow>
+</mrow>
+</semantics>
+</math></span> east, where the subscripts TE refer to train and Earth. Let’s now say the person gets up out of her seat and walks toward the back of the train at 2 m/s. This tells us she has a velocity relative to the reference frame of the train. Since the person is walking west, in the negative direction, we write her velocity with respect to the train as <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58293/index.cnxml:25:1230"><msub data-sm="./modules/m58293/index.cnxml:25:1238"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:25:1246"><mover accent="true" data-sm="./modules/m58293/index.cnxml:25:1293"><mi data-sm="./modules/m58293/index.cnxml:25:1316">v</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:25:1330">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:25:1382"><mtext data-sm="./modules/m58293/index.cnxml:25:1390">PT</mtext></mrow></msub><mo data-sm="./modules/m58293/index.cnxml:25:1429">=</mo><mn data-sm="./modules/m58293/index.cnxml:25:1443">−2</mn><mspace width="0.2em" data-sm="./modules/m58293/index.cnxml:25:1458"/><mrow data-sm="./modules/m58293/index.cnxml:25:1483"><mtext data-sm="./modules/m58293/index.cnxml:25:1491">m</mtext><mtext data-sm="./modules/m58293/index.cnxml:25:1511">/</mtext><mtext data-sm="./modules/m58293/index.cnxml:25:1531">s</mtext></mrow>
+<mspace width="0.2em" data-sm="./modules/m58293/index.cnxml:25:1560"/><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:25:1585"><mover accent="true" data-sm="./modules/m58293/index.cnxml:25:1632"><mi data-sm="./modules/m58293/index.cnxml:25:1655">i</mi><mo data-sm="./modules/m58293/index.cnxml:25:1669">^</mo></mover>
+</mstyle>
+<mtext data-sm="./modules/m58293/index.cnxml:25:1704">.</mtext></mrow>
+</mrow>
+</semantics>
+</math></span> We can add the two velocity vectors to find the velocity of the person with respect to Earth. This <span data-type="term" id="term-00002" data-sm="./modules/m58293/index.cnxml:25:1842">relative velocity</span> is written as</p>
+<div data-type="equation" id="fs-id1165038969138" data-sm="./modules/m58293/index.cnxml:25:1909"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58293/index.cnxml:25:1951"><msub data-sm="./modules/m58293/index.cnxml:25:1959"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:25:1967"><mover accent="true" data-sm="./modules/m58293/index.cnxml:25:2014"><mi data-sm="./modules/m58293/index.cnxml:25:2037">v</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:25:2051">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:25:2103"><mtext data-sm="./modules/m58293/index.cnxml:25:2111">PE</mtext></mrow></msub><mo data-sm="./modules/m58293/index.cnxml:25:2150">=</mo><msub data-sm="./modules/m58293/index.cnxml:25:2164"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:25:2172"><mover accent="true" data-sm="./modules/m58293/index.cnxml:25:2219"><mi data-sm="./modules/m58293/index.cnxml:25:2242">v</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:25:2256">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:25:2308"><mtext data-sm="./modules/m58293/index.cnxml:25:2316">PT</mtext></mrow></msub><mo data-sm="./modules/m58293/index.cnxml:25:2355">+</mo><msub data-sm="./modules/m58293/index.cnxml:25:2369"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:25:2377"><mover accent="true" data-sm="./modules/m58293/index.cnxml:25:2424"><mi data-sm="./modules/m58293/index.cnxml:25:2447">v</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:25:2461">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:25:2513"><mtext data-sm="./modules/m58293/index.cnxml:25:2521">TE</mtext></mrow></msub><mo data-sm="./modules/m58293/index.cnxml:25:2560">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+<div class="os-equation-number">
+  <span class="os-number">4.33</span>
+</div>
+</div>
+<p id="fs-id1165038986731" data-sm="./modules/m58293/index.cnxml:26:1">Note the ordering of the subscripts for the various reference frames in <a href="#fs-id1165038969138" data-sm="./modules/m58293/index.cnxml:26:103" class="autogenerated-content">Equation 4.33</a>. The subscripts for the coupling reference frame, which is the train, appear consecutively in the right-hand side of the equation. <a href="#CNX_UPhysics_04_05_VelAdd" data-sm="./modules/m58293/index.cnxml:26:273" class="autogenerated-content">Figure 4.24</a> shows the correct order of subscripts when forming the vector equation.</p>
+<div class="os-figure"><figure id="CNX_UPhysics_04_05_VelAdd" data-sm="./modules/m58293/index.cnxml:27:1">
+<span data-type="media" id="fs-id1165039107337" data-alt="The vector equation vector v sub P E equals vector v sub P T plus vector v sub T E is shown. The subscripts P (in v sub P T) and E (in v sub T E) in the sum are linked. The subscripts T (in v sub P T) and T (in v sub T E) in the sum are linked." data-sm="./modules/m58293/index.cnxml:28:1">
+<img src="cb1cdc96267581bd74992258a009965321217672.jpeg" data-media-type="image/jpeg" alt="The vector equation vector v sub P E equals vector v sub P T plus vector v sub T E is shown. The subscripts P (in v sub P T) and E (in v sub T E) in the sum are linked. The subscripts T (in v sub P T) and T (in v sub T E) in the sum are linked." data-sm="./modules/m58293/index.cnxml:29:1"/>
+</span>
+
+</figure>
+<div class="os-caption-container">
+  <span class="os-title-label">Figure </span>
+<span class="os-number">4.24</span>
+
+
+
+  <span class="os-divider"> </span>
+  <span data-sm="./modules/m58293/index.cnxml:31:1" class="os-caption">When constructing the vector equation, the subscripts for the coupling reference frame appear consecutively on the inside. The subscripts on the left-hand side of the equation are the same as the two outside subscripts on the right-hand side of the equation.</span>
+</div>
+</div>
+<p id="fs-id1165039107041" data-sm="./modules/m58293/index.cnxml:33:1">Adding the vectors, we find <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58293/index.cnxml:33:67"><msub data-sm="./modules/m58293/index.cnxml:33:75"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:33:83"><mover accent="true" data-sm="./modules/m58293/index.cnxml:33:130"><mi data-sm="./modules/m58293/index.cnxml:33:153">v</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:33:167">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:33:219"><mtext data-sm="./modules/m58293/index.cnxml:33:227">PE</mtext></mrow></msub><mo data-sm="./modules/m58293/index.cnxml:33:266">=</mo><mn data-sm="./modules/m58293/index.cnxml:33:280">8</mn><mspace width="0.2em" data-sm="./modules/m58293/index.cnxml:33:294"/><mrow data-sm="./modules/m58293/index.cnxml:33:319"><mtext data-sm="./modules/m58293/index.cnxml:33:327">m</mtext><mtext data-sm="./modules/m58293/index.cnxml:33:347">/</mtext><mtext data-sm="./modules/m58293/index.cnxml:33:367">s</mtext></mrow>
+<mspace width="0.2em" data-sm="./modules/m58293/index.cnxml:33:396"/><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:33:421"><mover accent="true" data-sm="./modules/m58293/index.cnxml:33:468"><mi data-sm="./modules/m58293/index.cnxml:33:491">i</mi><mo data-sm="./modules/m58293/index.cnxml:33:505">^</mo></mover>
+</mstyle>
+<mtext data-sm="./modules/m58293/index.cnxml:33:540">,</mtext></mrow>
+</mrow>
+</semantics>
+</math></span> so the person is moving 8 m/s east with respect to Earth. Graphically, this is shown in <a href="#CNX_UPhysics_04_05_Train" data-sm="./modules/m58293/index.cnxml:33:667" class="autogenerated-content">Figure 4.25</a>.</p>
+<div class="os-figure"><figure id="CNX_UPhysics_04_05_Train" data-sm="./modules/m58293/index.cnxml:34:1"><span data-type="media" id="fs-id1165039210740" data-alt="Velocity vectors of the train with respect to Earth, person with respect to the train, and person with respect to Earth. V sub T E is the velocity vector of the train with respect to Earth. It has value 10 meters per second and is represented as a long green arrow pointing to the right. V sub P T is the velocity vector of the person with respect to the train. It has value -2 meters per second and is represented as a short green arrow pointing to the left. V sub P E is the velocity vector of the person with respect to Earth. It has value 8 meters per second and is represented as a medium length green arrow pointing to the right." data-sm="./modules/m58293/index.cnxml:34:39">
+<img src="a6a0476113b63c981c2cf1b274bc8975113a8ee5.jpeg" data-media-type="image/jpeg" alt="Velocity vectors of the train with respect to Earth, person with respect to the train, and person with respect to Earth. V sub T E is the velocity vector of the train with respect to Earth. It has value 10 meters per second and is represented as a long green arrow pointing to the right. V sub P T is the velocity vector of the person with respect to the train. It has value -2 meters per second and is represented as a short green arrow pointing to the left. V sub P E is the velocity vector of the person with respect to Earth. It has value 8 meters per second and is represented as a medium length green arrow pointing to the right." data-sm="./modules/m58293/index.cnxml:35:1"/>
+</span>
+
+</figure>
+<div class="os-caption-container">
+  <span class="os-title-label">Figure </span>
+<span class="os-number">4.25</span>
+
+
+
+  <span class="os-divider"> </span>
+  <span data-sm="./modules/m58293/index.cnxml:38:1" class="os-caption">Velocity vectors of the train with respect to Earth, person with respect to the train, and person with respect to Earth.</span>
+</div>
+</div>
+</section>
+
+<section data-depth="1" id="fs-id1165039087324" data-sm="./modules/m58293/index.cnxml:39:1"><h3 data-type="title" data-sm="./modules/m58293/index.cnxml:40:1">Relative Velocity in Two Dimensions</h3>
+<p id="fs-id1165038974170" data-sm="./modules/m58293/index.cnxml:41:1">We can now apply these concepts to describing motion in two dimensions. Consider a particle <em data-effect="italics" data-sm="./modules/m58293/index.cnxml:41:123">P</em> and reference frames <em data-effect="italics" data-sm="./modules/m58293/index.cnxml:41:184">S</em> and <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58293/index.cnxml:41:236"><msup data-sm="./modules/m58293/index.cnxml:41:244"><mi data-sm="./modules/m58293/index.cnxml:41:252">S</mi><mo data-sm="./modules/m58293/index.cnxml:41:266">′</mo></msup><mo data-sm="./modules/m58293/index.cnxml:41:289">,</mo></mrow>
+</mrow>
+</semantics>
+</math></span> as shown in <a href="#CNX_UPhysics_04_05_PosVect" data-sm="./modules/m58293/index.cnxml:41:334" class="autogenerated-content">Figure 4.26</a>. The position of the origin of <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><msup data-sm="./modules/m58293/index.cnxml:41:420"><mi data-sm="./modules/m58293/index.cnxml:41:428">S</mi><mo data-sm="./modules/m58293/index.cnxml:41:442">′</mo></msup></mrow>
+</semantics>
+</math></span> as measured in <em data-effect="italics" data-sm="./modules/m58293/index.cnxml:41:490">S</em> is <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58293/index.cnxml:41:541"><msub data-sm="./modules/m58293/index.cnxml:41:549"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:41:557"><mover accent="true" data-sm="./modules/m58293/index.cnxml:41:604"><mi data-sm="./modules/m58293/index.cnxml:41:627">r</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:41:641">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:41:693"><msup data-sm="./modules/m58293/index.cnxml:41:701"><mi data-sm="./modules/m58293/index.cnxml:41:709">S</mi><mo data-sm="./modules/m58293/index.cnxml:41:723">′</mo></msup><mi data-sm="./modules/m58293/index.cnxml:41:746">S</mi></mrow></msub><mo data-sm="./modules/m58293/index.cnxml:41:778">,</mo></mrow>
+</mrow>
+</semantics>
+</math></span> the position of <em data-effect="italics" data-sm="./modules/m58293/index.cnxml:41:827">P</em> as measured in <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><msup data-sm="./modules/m58293/index.cnxml:41:890"><mi data-sm="./modules/m58293/index.cnxml:41:898">S</mi><mo data-sm="./modules/m58293/index.cnxml:41:912">′</mo></msup></mrow>
+</semantics>
+</math></span> is <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58293/index.cnxml:41:956"><msub data-sm="./modules/m58293/index.cnxml:41:964"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:41:972"><mover accent="true" data-sm="./modules/m58293/index.cnxml:41:1019"><mi data-sm="./modules/m58293/index.cnxml:41:1042">r</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:41:1056">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:41:1108"><mi data-sm="./modules/m58293/index.cnxml:41:1116">P</mi><msup data-sm="./modules/m58293/index.cnxml:41:1130"><mi data-sm="./modules/m58293/index.cnxml:41:1138">S</mi><mo data-sm="./modules/m58293/index.cnxml:41:1152">′</mo></msup></mrow></msub><mo data-sm="./modules/m58293/index.cnxml:41:1193">,</mo></mrow>
+</mrow>
+</semantics>
+</math></span> and the position of <em data-effect="italics" data-sm="./modules/m58293/index.cnxml:41:1246">P</em> as measured in <em data-effect="italics" data-sm="./modules/m58293/index.cnxml:41:1301">S</em> is <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58293/index.cnxml:41:1352"><msub data-sm="./modules/m58293/index.cnxml:41:1360"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:41:1368"><mover accent="true" data-sm="./modules/m58293/index.cnxml:41:1415"><mi data-sm="./modules/m58293/index.cnxml:41:1438">r</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:41:1452">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:41:1504"><mi data-sm="./modules/m58293/index.cnxml:41:1512">P</mi><mi data-sm="./modules/m58293/index.cnxml:41:1526">S</mi></mrow></msub><mo data-sm="./modules/m58293/index.cnxml:41:1558">.</mo></mrow>
+</mrow>
+</semantics>
+</math></span></p>
+<div class="os-figure"><figure id="CNX_UPhysics_04_05_PosVect" data-sm="./modules/m58293/index.cnxml:42:1">
+<span data-type="media" id="fs-id1165039291733" data-alt="An x y z coordinate system is shown and labeled as system S. A second coordinate system, S prime with axes x prime, y prime, z prime, is shifted relative to S. The vector r sub S prime S, shown as a purple arrow, extends from the origin of S to the origin of S prime. Vector r sub P S is a vector from the origin of S to a point P. Vector r sub P S prime is a vector from the origin of S prime to the same point P. The vectors r s prime s, r P S prime, and r P S form a triangle, and r P S is the vector sum of r S prime S and r P S prime." data-sm="./modules/m58293/index.cnxml:43:1">
+<img src="81aa2dbc5a409e52739ca3937745a3c097002ff2.jpeg" data-media-type="image/jpeg" alt="An x y z coordinate system is shown and labeled as system S. A second coordinate system, S prime with axes x prime, y prime, z prime, is shifted relative to S. The vector r sub S prime S, shown as a purple arrow, extends from the origin of S to the origin of S prime. Vector r sub P S is a vector from the origin of S to a point P. Vector r sub P S prime is a vector from the origin of S prime to the same point P. The vectors r s prime s, r P S prime, and r P S form a triangle, and r P S is the vector sum of r S prime S and r P S prime." data-sm="./modules/m58293/index.cnxml:44:1"/>
+</span>
+
+</figure>
+<div class="os-caption-container">
+  <span class="os-title-label">Figure </span>
+<span class="os-number">4.26</span>
+
+
+
+  <span class="os-divider"> </span>
+  <span data-sm="./modules/m58293/index.cnxml:46:1" class="os-caption">The positions of particle <em data-effect="italics" data-sm="./modules/m58293/index.cnxml:46:36">P</em> relative to frames <em data-effect="italics" data-sm="./modules/m58293/index.cnxml:46:95">S</em> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><msup data-sm="./modules/m58293/index.cnxml:46:147"><mi data-sm="./modules/m58293/index.cnxml:46:155">S</mi><mo data-sm="./modules/m58293/index.cnxml:46:169">′</mo></msup></mrow>
+</semantics>
+</math> are <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58293/index.cnxml:46:214"><msub data-sm="./modules/m58293/index.cnxml:46:222"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:46:230"><mover accent="true" data-sm="./modules/m58293/index.cnxml:46:277"><mi data-sm="./modules/m58293/index.cnxml:46:300">r</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:46:314">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:46:366"><mi data-sm="./modules/m58293/index.cnxml:46:374">P</mi><mi data-sm="./modules/m58293/index.cnxml:46:388">S</mi></mrow></msub></mrow>
+</mrow>
+</semantics>
+</math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58293/index.cnxml:46:451"><msub data-sm="./modules/m58293/index.cnxml:46:459"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:46:467"><mover accent="true" data-sm="./modules/m58293/index.cnxml:46:514"><mi data-sm="./modules/m58293/index.cnxml:46:537">r</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:46:551">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:46:603"><mi data-sm="./modules/m58293/index.cnxml:46:611">P</mi><msup data-sm="./modules/m58293/index.cnxml:46:625"><mi data-sm="./modules/m58293/index.cnxml:46:633">S</mi><mo data-sm="./modules/m58293/index.cnxml:46:647">′</mo></msup></mrow></msub><mo data-sm="./modules/m58293/index.cnxml:46:688">,</mo></mrow>
+</mrow>
+</semantics>
+</math> respectively.
+</span>
+</div>
+</div>
+<p id="fs-id1165039195216" data-sm="./modules/m58293/index.cnxml:49:1">From <a href="#CNX_UPhysics_04_05_PosVect" data-sm="./modules/m58293/index.cnxml:49:36" class="autogenerated-content">Figure 4.26</a> we see that</p>
+<div data-type="note" id="fs-id1165039110369" class="equation-callout" data-sm="./modules/m58293/index.cnxml:50:1">
+<div data-type="equation" id="fs-id1165038962290" data-sm="./modules/m58293/index.cnxml:51:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58293/index.cnxml:51:51"><msub data-sm="./modules/m58293/index.cnxml:51:59"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:51:67"><mover accent="true" data-sm="./modules/m58293/index.cnxml:51:114"><mi data-sm="./modules/m58293/index.cnxml:51:137">r</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:51:151">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:51:203"><mi data-sm="./modules/m58293/index.cnxml:51:211">P</mi><mi data-sm="./modules/m58293/index.cnxml:51:225">S</mi></mrow></msub><mo data-sm="./modules/m58293/index.cnxml:51:257">=</mo><msub data-sm="./modules/m58293/index.cnxml:51:271"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:51:279"><mover accent="true" data-sm="./modules/m58293/index.cnxml:51:326"><mi data-sm="./modules/m58293/index.cnxml:51:349">r</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:51:363">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:51:415"><mi data-sm="./modules/m58293/index.cnxml:51:423">P</mi><msup data-sm="./modules/m58293/index.cnxml:51:437"><mi data-sm="./modules/m58293/index.cnxml:51:445">S</mi><mo data-sm="./modules/m58293/index.cnxml:51:459">′</mo></msup></mrow></msub><mo data-sm="./modules/m58293/index.cnxml:51:500">+</mo><msub data-sm="./modules/m58293/index.cnxml:51:514"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:51:522"><mover accent="true" data-sm="./modules/m58293/index.cnxml:51:569"><mi data-sm="./modules/m58293/index.cnxml:51:592">r</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:51:606">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:51:658"><msup data-sm="./modules/m58293/index.cnxml:51:666"><mi data-sm="./modules/m58293/index.cnxml:51:674">S</mi><mo data-sm="./modules/m58293/index.cnxml:51:688">′</mo></msup><mi data-sm="./modules/m58293/index.cnxml:51:711">S</mi></mrow></msub><mo data-sm="./modules/m58293/index.cnxml:51:743">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+<div class="os-equation-number">
+  <span class="os-number">4.34</span>
+</div>
+</div>
+</div>
+<p id="fs-id1165039104285" data-sm="./modules/m58293/index.cnxml:53:1">The relative velocities are the time derivatives of the position vectors. Therefore,</p>
+<div data-type="note" id="fs-id1165039073222" class="equation-callout" data-sm="./modules/m58293/index.cnxml:54:1">
+<div data-type="equation" id="fs-id1165038975059" data-sm="./modules/m58293/index.cnxml:55:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58293/index.cnxml:55:51"><msub data-sm="./modules/m58293/index.cnxml:55:59"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:55:67"><mover accent="true" data-sm="./modules/m58293/index.cnxml:55:114"><mi data-sm="./modules/m58293/index.cnxml:55:137">v</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:55:151">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:55:203"><mi data-sm="./modules/m58293/index.cnxml:55:211">P</mi><mi data-sm="./modules/m58293/index.cnxml:55:225">S</mi></mrow></msub><mo data-sm="./modules/m58293/index.cnxml:55:257">=</mo><msub data-sm="./modules/m58293/index.cnxml:55:271"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:55:279"><mover accent="true" data-sm="./modules/m58293/index.cnxml:55:326"><mi data-sm="./modules/m58293/index.cnxml:55:349">v</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:55:363">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:55:415"><mi data-sm="./modules/m58293/index.cnxml:55:423">P</mi><msup data-sm="./modules/m58293/index.cnxml:55:437"><mi data-sm="./modules/m58293/index.cnxml:55:445">S</mi><mo data-sm="./modules/m58293/index.cnxml:55:459">′</mo></msup></mrow></msub><mo data-sm="./modules/m58293/index.cnxml:55:500">+</mo><msub data-sm="./modules/m58293/index.cnxml:55:514"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:55:522"><mover accent="true" data-sm="./modules/m58293/index.cnxml:55:569"><mi data-sm="./modules/m58293/index.cnxml:55:592">v</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:55:606">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:55:658"><msup data-sm="./modules/m58293/index.cnxml:55:666"><mi data-sm="./modules/m58293/index.cnxml:55:674">S</mi><mo data-sm="./modules/m58293/index.cnxml:55:688">′</mo></msup><mi data-sm="./modules/m58293/index.cnxml:55:711">S</mi></mrow></msub><mo data-sm="./modules/m58293/index.cnxml:55:743">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+<div class="os-equation-number">
+  <span class="os-number">4.35</span>
+</div>
+</div>
+</div>
+<p id="fs-id1165039000311" data-sm="./modules/m58293/index.cnxml:57:1"><em data-effect="italics" data-sm="./modules/m58293/index.cnxml:57:31">The velocity of a particle relative to S is equal to its velocity relative to</em> <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><msup data-sm="./modules/m58293/index.cnxml:57:155"><mi data-sm="./modules/m58293/index.cnxml:57:163">S</mi><mo data-sm="./modules/m58293/index.cnxml:57:177">′</mo></msup></mrow>
+</semantics>
+</math></span> <em data-effect="italics" data-sm="./modules/m58293/index.cnxml:57:210">plus the velocity of</em> <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><msup data-sm="./modules/m58293/index.cnxml:57:277"><mi data-sm="./modules/m58293/index.cnxml:57:285">S</mi><mo data-sm="./modules/m58293/index.cnxml:57:299">′</mo></msup></mrow>
+</semantics>
+</math></span> <em data-effect="italics" data-sm="./modules/m58293/index.cnxml:57:332">relative to S</em>.</p>
+<p id="fs-id1165039088381" data-sm="./modules/m58293/index.cnxml:58:1">We can extend <a href="#fs-id1165038975059" data-sm="./modules/m58293/index.cnxml:58:45" class="autogenerated-content">Equation 4.35</a> to any number of reference frames. For particle <em data-effect="italics" data-sm="./modules/m58293/index.cnxml:58:132">P</em> with velocities <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58293/index.cnxml:58:196"><msub data-sm="./modules/m58293/index.cnxml:58:204"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:58:212"><mover accent="true" data-sm="./modules/m58293/index.cnxml:58:259"><mi data-sm="./modules/m58293/index.cnxml:58:282">v</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:58:296">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:58:348"><mi data-sm="./modules/m58293/index.cnxml:58:356">P</mi><mi data-sm="./modules/m58293/index.cnxml:58:370">A</mi></mrow></msub><mo data-sm="./modules/m58293/index.cnxml:58:402">,</mo><msub data-sm="./modules/m58293/index.cnxml:58:416"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:58:424"><mover accent="true" data-sm="./modules/m58293/index.cnxml:58:471"><mi data-sm="./modules/m58293/index.cnxml:58:494">v</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:58:508">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:58:560"><mi data-sm="./modules/m58293/index.cnxml:58:568">P</mi><mi data-sm="./modules/m58293/index.cnxml:58:582">B</mi></mrow></msub><mtext data-sm="./modules/m58293/index.cnxml:58:614">,</mtext><mspace width="0.2em" data-sm="./modules/m58293/index.cnxml:58:634"/><mtext data-sm="./modules/m58293/index.cnxml:58:659">and</mtext><mspace width="0.2em" data-sm="./modules/m58293/index.cnxml:58:681"/><msub data-sm="./modules/m58293/index.cnxml:58:706"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:58:714"><mover accent="true" data-sm="./modules/m58293/index.cnxml:58:761"><mi data-sm="./modules/m58293/index.cnxml:58:784">v</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:58:798">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:58:850"><mi data-sm="./modules/m58293/index.cnxml:58:858">P</mi><mi data-sm="./modules/m58293/index.cnxml:58:872">C</mi></mrow></msub></mrow>
+</mrow>
+</semantics>
+</math></span> in frames <em data-effect="italics" data-sm="./modules/m58293/index.cnxml:58:933">A</em>, <em data-effect="italics" data-sm="./modules/m58293/index.cnxml:58:974">B</em>, and <em data-effect="italics" data-sm="./modules/m58293/index.cnxml:58:1019">C</em>,</p>
+<div data-type="note" id="fs-id1165038989688" class="equation-callout" data-sm="./modules/m58293/index.cnxml:59:1">
+<div data-type="equation" id="fs-id1165039053118" data-sm="./modules/m58293/index.cnxml:60:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58293/index.cnxml:60:51"><msub data-sm="./modules/m58293/index.cnxml:60:59"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:60:67"><mover accent="true" data-sm="./modules/m58293/index.cnxml:60:114"><mi data-sm="./modules/m58293/index.cnxml:60:137">v</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:60:151">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:60:203"><mi data-sm="./modules/m58293/index.cnxml:60:211">P</mi><mi data-sm="./modules/m58293/index.cnxml:60:225">C</mi></mrow></msub><mo data-sm="./modules/m58293/index.cnxml:60:257">=</mo><msub data-sm="./modules/m58293/index.cnxml:60:271"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:60:279"><mover accent="true" data-sm="./modules/m58293/index.cnxml:60:326"><mi data-sm="./modules/m58293/index.cnxml:60:349">v</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:60:363">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:60:415"><mi data-sm="./modules/m58293/index.cnxml:60:423">P</mi><mi data-sm="./modules/m58293/index.cnxml:60:437">A</mi></mrow></msub><mo data-sm="./modules/m58293/index.cnxml:60:469">+</mo><msub data-sm="./modules/m58293/index.cnxml:60:483"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:60:491"><mover accent="true" data-sm="./modules/m58293/index.cnxml:60:538"><mi data-sm="./modules/m58293/index.cnxml:60:561">v</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:60:575">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:60:627"><mi data-sm="./modules/m58293/index.cnxml:60:635">A</mi><mi data-sm="./modules/m58293/index.cnxml:60:649">B</mi></mrow></msub><mo data-sm="./modules/m58293/index.cnxml:60:681">+</mo><msub data-sm="./modules/m58293/index.cnxml:60:695"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:60:703"><mover accent="true" data-sm="./modules/m58293/index.cnxml:60:750"><mi data-sm="./modules/m58293/index.cnxml:60:773">v</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:60:787">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:60:839"><mi data-sm="./modules/m58293/index.cnxml:60:847">B</mi><mi data-sm="./modules/m58293/index.cnxml:60:861">C</mi></mrow></msub><mo data-sm="./modules/m58293/index.cnxml:60:893">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+<div class="os-equation-number">
+  <span class="os-number">4.36</span>
+</div>
+</div>
+</div>
+<p id="fs-id1165039108359" data-sm="./modules/m58293/index.cnxml:62:1">We can also see how the accelerations are related as observed in two reference frames by differentiating <a href="#fs-id1165038975059" data-sm="./modules/m58293/index.cnxml:62:136" class="autogenerated-content">Equation 4.35</a>:</p>
+<div data-type="note" id="fs-id1165039010385" class="equation-callout" data-sm="./modules/m58293/index.cnxml:63:1">
+<div data-type="equation" id="fs-id1165039072517" data-sm="./modules/m58293/index.cnxml:64:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58293/index.cnxml:64:51"><msub data-sm="./modules/m58293/index.cnxml:64:59"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:64:67"><mover accent="true" data-sm="./modules/m58293/index.cnxml:64:114"><mi data-sm="./modules/m58293/index.cnxml:64:137">a</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:64:151">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:64:203"><mi data-sm="./modules/m58293/index.cnxml:64:211">P</mi><mi data-sm="./modules/m58293/index.cnxml:64:225">S</mi></mrow></msub><mo data-sm="./modules/m58293/index.cnxml:64:257">=</mo><msub data-sm="./modules/m58293/index.cnxml:64:271"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:64:279"><mover accent="true" data-sm="./modules/m58293/index.cnxml:64:326"><mi data-sm="./modules/m58293/index.cnxml:64:349">a</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:64:363">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:64:415"><mi data-sm="./modules/m58293/index.cnxml:64:423">P</mi><msup data-sm="./modules/m58293/index.cnxml:64:437"><mi data-sm="./modules/m58293/index.cnxml:64:445">S</mi><mo data-sm="./modules/m58293/index.cnxml:64:459">′</mo></msup></mrow></msub><mo data-sm="./modules/m58293/index.cnxml:64:500">+</mo><msub data-sm="./modules/m58293/index.cnxml:64:514"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:64:522"><mover accent="true" data-sm="./modules/m58293/index.cnxml:64:569"><mi data-sm="./modules/m58293/index.cnxml:64:592">a</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:64:606">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:64:658"><msup data-sm="./modules/m58293/index.cnxml:64:666"><mi data-sm="./modules/m58293/index.cnxml:64:674">S</mi><mo data-sm="./modules/m58293/index.cnxml:64:688">′</mo></msup><mi data-sm="./modules/m58293/index.cnxml:64:711">S</mi></mrow></msub><mo data-sm="./modules/m58293/index.cnxml:64:743">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+<div class="os-equation-number">
+  <span class="os-number">4.37</span>
+</div>
+</div>
+</div>
+<p id="fs-id1165039027569" data-sm="./modules/m58293/index.cnxml:66:1">We see that if the velocity of <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><msup data-sm="./modules/m58293/index.cnxml:66:70"><mi data-sm="./modules/m58293/index.cnxml:66:78">S</mi><mo data-sm="./modules/m58293/index.cnxml:66:92">′</mo></msup></mrow>
+</semantics>
+</math></span> relative to <em data-effect="italics" data-sm="./modules/m58293/index.cnxml:66:137">S</em> is a constant, then <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58293/index.cnxml:66:205"><msub data-sm="./modules/m58293/index.cnxml:66:213"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:66:221"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:66:268"><mover accent="true" data-sm="./modules/m58293/index.cnxml:66:315"><mi data-sm="./modules/m58293/index.cnxml:66:338">a</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:66:352">→</mo></mover>
+</mstyle>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:66:415"><msup data-sm="./modules/m58293/index.cnxml:66:423"><mi data-sm="./modules/m58293/index.cnxml:66:431">S</mi><mo data-sm="./modules/m58293/index.cnxml:66:445">′</mo></msup><mi data-sm="./modules/m58293/index.cnxml:66:468">S</mi></mrow></msub><mo data-sm="./modules/m58293/index.cnxml:66:500">=</mo><mn data-sm="./modules/m58293/index.cnxml:66:514">0</mn></mrow>
+</mrow>
+</semantics>
+</math></span> and</p>
+<div data-type="equation" id="fs-id1165038960977" data-sm="./modules/m58293/index.cnxml:67:1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58293/index.cnxml:67:43"><msub data-sm="./modules/m58293/index.cnxml:67:51"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:67:59"><mover accent="true" data-sm="./modules/m58293/index.cnxml:67:106"><mi data-sm="./modules/m58293/index.cnxml:67:129">a</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:67:143">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:67:195"><mi data-sm="./modules/m58293/index.cnxml:67:203">P</mi><mi data-sm="./modules/m58293/index.cnxml:67:217">S</mi></mrow></msub><mo data-sm="./modules/m58293/index.cnxml:67:249">=</mo><msub data-sm="./modules/m58293/index.cnxml:67:263"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:67:271"><mover accent="true" data-sm="./modules/m58293/index.cnxml:67:318"><mi data-sm="./modules/m58293/index.cnxml:67:341">a</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:67:355">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:67:407"><mi data-sm="./modules/m58293/index.cnxml:67:415">P</mi><msup data-sm="./modules/m58293/index.cnxml:67:429"><mi data-sm="./modules/m58293/index.cnxml:67:437">S</mi><mo data-sm="./modules/m58293/index.cnxml:67:451">′</mo></msup></mrow></msub><mo data-sm="./modules/m58293/index.cnxml:67:492">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+<div class="os-equation-number">
+  <span class="os-number">4.38</span>
+</div>
+</div>
+<p id="fs-id1165039119354" data-sm="./modules/m58293/index.cnxml:68:1">This says the acceleration of a particle is the same as measured by two observers moving at a constant velocity relative to each other.</p>
+<div data-type="example" id="fs-id1165039187863" data-sm="./modules/m58293/index.cnxml:69:1"><h3 class="os-title">
+  <span class="os-title-label">Example </span>
+  <span class="os-number">4.13</span>
+  <span class="os-divider"> </span>
+</h3>
+<div class="body">
+<p id="fs-id1165039000326" data-sm="./modules/m58293/index.cnxml:70:1"></p>
+<h4 data-type="title" data-sm="./modules/m58293/index.cnxml:70:31">Motion of a Car Relative to a Truck</h4>
+A truck is traveling south at a speed of 70 km/h toward an intersection. A car is traveling east toward the intersection at a speed of 80 km/h (<a href="#CNX_UPhysics_04_05_CarTruck" data-sm="./modules/m58293/index.cnxml:71:145" class="autogenerated-content">Figure 4.27</a>). What is the velocity of the car relative to the truck?
+<div class="os-figure"><figure id="CNX_UPhysics_04_05_CarTruck" data-sm="./modules/m58293/index.cnxml:72:1">
+<span data-type="media" id="fs-id1165039096166" data-alt="A truck is shown traveling south at a speed V sub T E of 70 km/h toward an intersection. A car is traveling east toward the intersection at a speed V sub C E of 80 km/h" data-sm="./modules/m58293/index.cnxml:73:1">
+<img src="bceef219f7aa94093a3ca958e8daefef6d941be5.jpeg" data-media-type="image/jpeg" alt="A truck is shown traveling south at a speed V sub T E of 70 km/h toward an intersection. A car is traveling east toward the intersection at a speed V sub C E of 80 km/h" data-sm="./modules/m58293/index.cnxml:74:1"/>
+</span>
+
+</figure>
+<div class="os-caption-container">
+  <span class="os-title-label">Figure </span>
+<span class="os-number">4.27</span>
+
+
+
+  <span class="os-divider"> </span>
+  <span data-sm="./modules/m58293/index.cnxml:76:1" class="os-caption">A car travels east toward an intersection while a truck travels south toward the same intersection.</span>
+</div>
+</div>
+<p id="fs-id1165038971330" data-sm="./modules/m58293/index.cnxml:78:1"></p>
+<h4 data-type="title" data-sm="./modules/m58293/index.cnxml:78:31">Strategy</h4>
+First, we must establish the reference frame common to both vehicles, which is Earth. Then, we write the velocities of each with respect to the reference frame of Earth, which enables us to form a vector equation that links the car, the truck, and Earth to solve for the velocity of the car with respect to the truck.
+<p id="fs-id1165038988261" data-sm="./modules/m58293/index.cnxml:80:1"></p>
+<h4 data-type="title" data-sm="./modules/m58293/index.cnxml:80:31">Solution</h4>
+The velocity of the car with respect to Earth is <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58293/index.cnxml:81:58"><msub data-sm="./modules/m58293/index.cnxml:81:66"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:81:74"><mover accent="true" data-sm="./modules/m58293/index.cnxml:81:121"><mi data-sm="./modules/m58293/index.cnxml:81:144">v</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:81:158">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:81:210"><mtext data-sm="./modules/m58293/index.cnxml:81:218">CE</mtext></mrow></msub><mo data-sm="./modules/m58293/index.cnxml:81:257">=</mo><mn data-sm="./modules/m58293/index.cnxml:81:271">80</mn><mspace width="0.2em" data-sm="./modules/m58293/index.cnxml:81:286"/><mrow data-sm="./modules/m58293/index.cnxml:81:311"><mrow data-sm="./modules/m58293/index.cnxml:81:319"><mtext data-sm="./modules/m58293/index.cnxml:81:327">km</mtext></mrow>
+<mtext data-sm="./modules/m58293/index.cnxml:81:357">/</mtext><mrow data-sm="./modules/m58293/index.cnxml:81:377"><mtext data-sm="./modules/m58293/index.cnxml:81:385">h</mtext><mspace width="0.2em" data-sm="./modules/m58293/index.cnxml:81:405"/><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:81:430"><mover accent="true" data-sm="./modules/m58293/index.cnxml:81:477"><mi data-sm="./modules/m58293/index.cnxml:81:500">i</mi><mo data-sm="./modules/m58293/index.cnxml:81:514">^</mo></mover>
+</mstyle>
+</mrow>
+</mrow>
+<mo data-sm="./modules/m58293/index.cnxml:81:567">.</mo></mrow>
+</mrow>
+</semantics>
+</math></span> The velocity of the truck with respect to Earth is <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58293/index.cnxml:81:659"><msub data-sm="./modules/m58293/index.cnxml:81:667"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:81:675"><mover accent="true" data-sm="./modules/m58293/index.cnxml:81:722"><mi data-sm="./modules/m58293/index.cnxml:81:745">v</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:81:759">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:81:811"><mtext data-sm="./modules/m58293/index.cnxml:81:819">TE</mtext></mrow></msub><mo data-sm="./modules/m58293/index.cnxml:81:858">=</mo><mn data-sm="./modules/m58293/index.cnxml:81:872">−70</mn><mspace width="0.2em" data-sm="./modules/m58293/index.cnxml:81:888"/><mrow data-sm="./modules/m58293/index.cnxml:81:913"><mrow data-sm="./modules/m58293/index.cnxml:81:921"><mtext data-sm="./modules/m58293/index.cnxml:81:929">km</mtext></mrow>
+<mtext data-sm="./modules/m58293/index.cnxml:81:959">/</mtext><mtext data-sm="./modules/m58293/index.cnxml:81:979">h</mtext></mrow>
+<mspace width="0.2em" data-sm="./modules/m58293/index.cnxml:81:1008"/><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:81:1033"><mover accent="true" data-sm="./modules/m58293/index.cnxml:81:1080"><mi data-sm="./modules/m58293/index.cnxml:81:1103">j</mi><mo data-sm="./modules/m58293/index.cnxml:81:1117">^</mo></mover>
+</mstyle>
+<mtext data-sm="./modules/m58293/index.cnxml:81:1152">.</mtext></mrow>
+</mrow>
+</semantics>
+</math></span> Using the velocity addition rule, the relative motion equation we are seeking is
+<div data-type="equation" id="fs-id1165039105889" class="unnumbered" data-sm="./modules/m58293/index.cnxml:82:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58293/index.cnxml:82:70"><msub data-sm="./modules/m58293/index.cnxml:82:78"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:82:86"><mover accent="true" data-sm="./modules/m58293/index.cnxml:82:133"><mi data-sm="./modules/m58293/index.cnxml:82:156">v</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:82:170">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:82:222"><mtext data-sm="./modules/m58293/index.cnxml:82:230">CT</mtext></mrow></msub><mo data-sm="./modules/m58293/index.cnxml:82:269">=</mo><msub data-sm="./modules/m58293/index.cnxml:82:283"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:82:291"><mover accent="true" data-sm="./modules/m58293/index.cnxml:82:338"><mi data-sm="./modules/m58293/index.cnxml:82:361">v</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:82:375">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:82:427"><mtext data-sm="./modules/m58293/index.cnxml:82:435">CE</mtext></mrow></msub><mo data-sm="./modules/m58293/index.cnxml:82:474">+</mo><msub data-sm="./modules/m58293/index.cnxml:82:488"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:82:496"><mover accent="true" data-sm="./modules/m58293/index.cnxml:82:543"><mi data-sm="./modules/m58293/index.cnxml:82:566">v</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:82:580">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:82:632"><mtext data-sm="./modules/m58293/index.cnxml:82:640">ET</mtext></mrow></msub><mo data-sm="./modules/m58293/index.cnxml:82:679">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1165039099029" data-sm="./modules/m58293/index.cnxml:83:1">Here, <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58293/index.cnxml:83:45"><msub data-sm="./modules/m58293/index.cnxml:83:53"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:83:61"><mover accent="true" data-sm="./modules/m58293/index.cnxml:83:108"><mi data-sm="./modules/m58293/index.cnxml:83:131">v</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:83:145">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:83:197"><mtext data-sm="./modules/m58293/index.cnxml:83:205">CT</mtext></mrow></msub></mrow>
+</mrow>
+</semantics>
+</math></span> is the velocity of the car with respect to the truck, and Earth is the connecting reference frame. Since we have the velocity of the truck with respect to Earth, the negative of this vector is the velocity of Earth with respect to the truck: <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58293/index.cnxml:83:513"><msub data-sm="./modules/m58293/index.cnxml:83:521"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:83:529"><mover accent="true" data-sm="./modules/m58293/index.cnxml:83:576"><mi data-sm="./modules/m58293/index.cnxml:83:599">v</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:83:613">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:83:665"><mtext data-sm="./modules/m58293/index.cnxml:83:673">ET</mtext></mrow></msub><mo data-sm="./modules/m58293/index.cnxml:83:712">=</mo><mtext data-sm="./modules/m58293/index.cnxml:83:726">−</mtext><msub data-sm="./modules/m58293/index.cnxml:83:746"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:83:754"><mover accent="true" data-sm="./modules/m58293/index.cnxml:83:801"><mi data-sm="./modules/m58293/index.cnxml:83:824">v</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:83:838">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:83:890"><mtext data-sm="./modules/m58293/index.cnxml:83:898">TE</mtext></mrow></msub><mo data-sm="./modules/m58293/index.cnxml:83:937">.</mo></mrow>
+</mrow>
+</semantics>
+</math></span> The vector diagram of this equation is shown in <a href="#CNX_UPhysics_04_05_CarTrRel" data-sm="./modules/m58293/index.cnxml:83:1018" class="autogenerated-content">Figure 4.28</a>.</p>
+<div class="os-figure"><figure id="CNX_UPhysics_04_05_CarTrRel" data-sm="./modules/m58293/index.cnxml:84:1"><span data-type="media" id="fs-id1165039049000" data-alt="The right triangle formed by the vectors V sub C E to the right, V sub E T down, and V sub C T up and right is shown V sub C T is the hypotenuse and makes an angle of theta with V sub C E. The vector equation vector v sub C T equals vector C E plus vector E T is given. A compass is shown indicating north is up, east to the right, south down, and west to the left." data-sm="./modules/m58293/index.cnxml:84:42">
+<img src="64549a34a53ae34c7203bf883c2edf6547ece95a.jpeg" data-media-type="image/jpeg" alt="The right triangle formed by the vectors V sub C E to the right, V sub E T down, and V sub C T up and right is shown V sub C T is the hypotenuse and makes an angle of theta with V sub C E. The vector equation vector v sub C T equals vector C E plus vector E T is given. A compass is shown indicating north is up, east to the right, south down, and west to the left." data-sm="./modules/m58293/index.cnxml:85:1"/>
+</span>
+
+</figure>
+<div class="os-caption-container">
+  <span class="os-title-label">Figure </span>
+<span class="os-number">4.28</span>
+
+
+
+  <span class="os-divider"> </span>
+  <span data-sm="./modules/m58293/index.cnxml:88:1" class="os-caption">Vector diagram of the vector equation <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58293/index.cnxml:88:56"><msub data-sm="./modules/m58293/index.cnxml:88:64"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:88:72"><mover accent="true" data-sm="./modules/m58293/index.cnxml:88:119"><mi data-sm="./modules/m58293/index.cnxml:88:142">v</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:88:156">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:88:208"><mtext data-sm="./modules/m58293/index.cnxml:88:216">CT</mtext></mrow></msub><mo data-sm="./modules/m58293/index.cnxml:88:255">=</mo><msub data-sm="./modules/m58293/index.cnxml:88:269"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:88:277"><mover accent="true" data-sm="./modules/m58293/index.cnxml:88:324"><mi data-sm="./modules/m58293/index.cnxml:88:347">v</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:88:361">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:88:413"><mtext data-sm="./modules/m58293/index.cnxml:88:421">CE</mtext></mrow></msub><mo data-sm="./modules/m58293/index.cnxml:88:460">+</mo><msub data-sm="./modules/m58293/index.cnxml:88:474"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:88:482"><mover accent="true" data-sm="./modules/m58293/index.cnxml:88:529"><mi data-sm="./modules/m58293/index.cnxml:88:552">v</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:88:566">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:88:618"><mtext data-sm="./modules/m58293/index.cnxml:88:626">ET</mtext></mrow></msub></mrow>
+</mrow>
+</semantics>
+</math>.</span>
+</div>
+</div>
+<p id="fs-id1165039054852" data-sm="./modules/m58293/index.cnxml:88:703">We can now solve for the velocity of the car with respect to the truck:</p>
+<div data-type="equation" id="fs-id1165039111736" class="unnumbered" data-sm="./modules/m58293/index.cnxml:89:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58293/index.cnxml:89:70"><mrow data-sm="./modules/m58293/index.cnxml:89:78"><mo data-sm="./modules/m58293/index.cnxml:89:86">|</mo><mrow data-sm="./modules/m58293/index.cnxml:89:100"><msub data-sm="./modules/m58293/index.cnxml:89:108"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:89:116"><mover accent="true" data-sm="./modules/m58293/index.cnxml:89:163"><mi data-sm="./modules/m58293/index.cnxml:89:186">v</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:89:200">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:89:252"><mtext data-sm="./modules/m58293/index.cnxml:89:260">CT</mtext></mrow></msub></mrow>
+<mo data-sm="./modules/m58293/index.cnxml:89:308">|</mo></mrow>
+<mo data-sm="./modules/m58293/index.cnxml:89:331">=</mo><msqrt data-sm="./modules/m58293/index.cnxml:89:345"><mrow data-sm="./modules/m58293/index.cnxml:89:354"><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:89:362">(</mo><mn data-sm="./modules/m58293/index.cnxml:89:393">80.0</mn><mspace width="0.2em" data-sm="./modules/m58293/index.cnxml:89:410"/><mrow data-sm="./modules/m58293/index.cnxml:89:435"><mrow data-sm="./modules/m58293/index.cnxml:89:443"><mtext data-sm="./modules/m58293/index.cnxml:89:451">km</mtext></mrow>
+<mtext data-sm="./modules/m58293/index.cnxml:89:481">/</mtext><mrow data-sm="./modules/m58293/index.cnxml:89:501"><msup data-sm="./modules/m58293/index.cnxml:89:509"><mrow data-sm="./modules/m58293/index.cnxml:89:517"><mtext data-sm="./modules/m58293/index.cnxml:89:525">h</mtext><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:89:545">)</mo></mrow><mn data-sm="./modules/m58293/index.cnxml:89:585">2</mn></msup><mo data-sm="./modules/m58293/index.cnxml:89:608">+</mo><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:89:622">(</mo></mrow>
+</mrow>
+<mn data-sm="./modules/m58293/index.cnxml:89:671">70.0</mn><mspace width="0.2em" data-sm="./modules/m58293/index.cnxml:89:688"/><mrow data-sm="./modules/m58293/index.cnxml:89:713"><mrow data-sm="./modules/m58293/index.cnxml:89:721"><mtext data-sm="./modules/m58293/index.cnxml:89:729">km</mtext></mrow>
+<mtext data-sm="./modules/m58293/index.cnxml:89:759">/</mtext><mrow data-sm="./modules/m58293/index.cnxml:89:779"><msup data-sm="./modules/m58293/index.cnxml:89:787"><mrow data-sm="./modules/m58293/index.cnxml:89:795"><mtext data-sm="./modules/m58293/index.cnxml:89:803">h</mtext><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:89:823">)</mo></mrow><mn data-sm="./modules/m58293/index.cnxml:89:863">2</mn></msup></mrow>
+</mrow>
+</mrow>
+</msqrt>
+<mo data-sm="./modules/m58293/index.cnxml:89:923">=</mo><mn data-sm="./modules/m58293/index.cnxml:89:937">106.</mn><mspace width="0.2em" data-sm="./modules/m58293/index.cnxml:89:954"/><mrow data-sm="./modules/m58293/index.cnxml:89:979"><mrow data-sm="./modules/m58293/index.cnxml:89:987"><mtext data-sm="./modules/m58293/index.cnxml:89:995">km</mtext></mrow>
+<mtext data-sm="./modules/m58293/index.cnxml:89:1025">/</mtext><mtext data-sm="./modules/m58293/index.cnxml:89:1045">h</mtext></mrow>
+</mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1165039295464" data-sm="./modules/m58293/index.cnxml:90:1">and</p>
+<div data-type="equation" id="fs-id1165039101256" class="unnumbered" data-sm="./modules/m58293/index.cnxml:91:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58293/index.cnxml:91:70"><mi data-sm="./modules/m58293/index.cnxml:91:78">θ</mi><mo data-sm="./modules/m58293/index.cnxml:91:92">=</mo><msup data-sm="./modules/m58293/index.cnxml:91:106"><mrow data-sm="./modules/m58293/index.cnxml:91:114"><mtext data-sm="./modules/m58293/index.cnxml:91:122">tan</mtext></mrow><mrow data-sm="./modules/m58293/index.cnxml:91:153"><mn data-sm="./modules/m58293/index.cnxml:91:161">−1</mn></mrow></msup><mrow data-sm="./modules/m58293/index.cnxml:91:194"><mo data-sm="./modules/m58293/index.cnxml:91:202">(</mo><mrow data-sm="./modules/m58293/index.cnxml:91:216"><mfrac data-sm="./modules/m58293/index.cnxml:91:224"><mrow data-sm="./modules/m58293/index.cnxml:91:233"><mn data-sm="./modules/m58293/index.cnxml:91:241">70.0</mn></mrow>
+<mrow data-sm="./modules/m58293/index.cnxml:91:267"><mn data-sm="./modules/m58293/index.cnxml:91:275">80.0</mn></mrow>
+</mfrac>
+</mrow>
+<mo data-sm="./modules/m58293/index.cnxml:91:320">)</mo></mrow>
+<mo data-sm="./modules/m58293/index.cnxml:91:343">=</mo><mn data-sm="./modules/m58293/index.cnxml:91:357">41.2</mn><mtext data-sm="./modules/m58293/index.cnxml:91:374">°</mtext><mspace width="0.2em" data-sm="./modules/m58293/index.cnxml:91:394"/><mtext data-sm="./modules/m58293/index.cnxml:91:419">north of east.</mtext></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1165039105050" data-sm="./modules/m58293/index.cnxml:92:1"></p>
+<h4 data-type="title" data-sm="./modules/m58293/index.cnxml:92:31">Significance</h4>
+Drawing a vector diagram showing the velocity vectors can help in understanding the relative velocity of the two objects.
+</div>
+</div>
+<div data-type="note" id="fs-id1165039028659" class="check-understanding" data-sm="./modules/m58293/index.cnxml:95:1"><h3 class="os-title">
+  <span class="os-title-label">Check Your Understanding </span>
+  <span class="os-number">4.6</span>
+  <span class="os-divider"> </span>
+</h3>
+<div class="os-note-body">
+<div data-type="exercise" id="fs-id1165039273506" data-sm="./modules/m58293/index.cnxml:96:1" class="unnumbered os-hasSolution">
+<div data-type="problem" id="fs-id1165039312103" data-sm="./modules/m58293/index.cnxml:97:1"><div class="os-problem-container">
+<p id="fs-id1165039096811" data-sm="./modules/m58293/index.cnxml:98:1"> A boat heads due north, moving at 4.5 m/s relative to the water of a river that is running east at 3.0 m/s. What is the velocity of the boat with respect to Earth?</p>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+<div data-type="example" id="fs-id1165039125476" data-sm="./modules/m58293/index.cnxml:110:1"><h3 class="os-title">
+  <span class="os-title-label">Example </span>
+  <span class="os-number">4.14</span>
+  <span class="os-divider"> </span>
+</h3>
+<div class="body">
+<p id="fs-id1165039125478" data-sm="./modules/m58293/index.cnxml:111:1"></p>
+<h4 data-type="title" data-sm="./modules/m58293/index.cnxml:111:31">Flying a Plane in a Wind</h4>
+A pilot must fly a plane due north to reach their destination. The plane can fly at 300 km/h in still air. A wind is blowing out of the northeast at 90 km/h. (a) In what direction must the pilot head the plane to fly due north? (b) What is the speed of the plane relative to the ground?
+<p id="fs-id1165039027142" data-sm="./modules/m58293/index.cnxml:113:1"></p>
+<h4 data-type="title" data-sm="./modules/m58293/index.cnxml:113:31">Strategy</h4>
+The pilot must point the plane somewhat east of north to compensate for the wind velocity. We need to construct a vector equation that contains the velocity of the plane with respect to the ground, the velocity of the plane with respect to the air, and the velocity of the air with respect to the ground. Since these last two quantities are known, we can solve for the velocity of the plane with respect to the ground. We can graph the vectors and use this diagram to evaluate the magnitude of the plane’s velocity with respect to the ground. The diagram will also tell us the angle the plane’s velocity makes with north with respect to the air, which is the direction the pilot must head the plane.
+<p id="fs-id1165039277096" data-sm="./modules/m58293/index.cnxml:115:1"></p>
+<h4 data-type="title" data-sm="./modules/m58293/index.cnxml:115:31">Solution</h4>
+The vector equation is <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58293/index.cnxml:116:32"><msub data-sm="./modules/m58293/index.cnxml:116:40"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:116:48"><mover accent="true" data-sm="./modules/m58293/index.cnxml:116:95"><mi data-sm="./modules/m58293/index.cnxml:116:118">v</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:116:132">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:116:184"><mtext data-sm="./modules/m58293/index.cnxml:116:192">PG</mtext></mrow></msub><mo data-sm="./modules/m58293/index.cnxml:116:231">=</mo><msub data-sm="./modules/m58293/index.cnxml:116:245"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:116:253"><mover accent="true" data-sm="./modules/m58293/index.cnxml:116:300"><mi data-sm="./modules/m58293/index.cnxml:116:323">v</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:116:337">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:116:389"><mtext data-sm="./modules/m58293/index.cnxml:116:397">PA</mtext></mrow></msub><mo data-sm="./modules/m58293/index.cnxml:116:436">+</mo><msub data-sm="./modules/m58293/index.cnxml:116:450"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:116:458"><mover accent="true" data-sm="./modules/m58293/index.cnxml:116:505"><mi data-sm="./modules/m58293/index.cnxml:116:528">v</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:116:542">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:116:594"><mtext data-sm="./modules/m58293/index.cnxml:116:602">AG</mtext></mrow></msub><mo data-sm="./modules/m58293/index.cnxml:116:641">,</mo></mrow>
+</mrow>
+</semantics>
+</math></span> where P = plane, A = air, and G = ground. From the geometry in <a href="#CNX_UPhysics_04_05_PlanHead" data-sm="./modules/m58293/index.cnxml:116:737" class="autogenerated-content">Figure 4.29</a>, we can solve easily for the magnitude of the velocity of the plane with respect to the ground and the angle of the plane’s heading, <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58293/index.cnxml:116:926"><mi data-sm="./modules/m58293/index.cnxml:116:934">θ</mi><mo data-sm="./modules/m58293/index.cnxml:116:948">.</mo></mrow>
+</mrow>
+</semantics>
+</math></span>
+<div class="os-figure"><figure id="CNX_UPhysics_04_05_PlanHead" data-sm="./modules/m58293/index.cnxml:117:1">
+<span data-type="media" id="fs-id1165039277310" data-alt="A compass shows north is up, east to the right, south down, and west to the left. Vectors V sub P G, V sub A G and V sub P A form a triangle. An airplane is shown on vector V sub P G, which points up. V sub P A points up and to the right, at an angle of theta to vector V sub P G. V sub A G points down and left, at an angle of 45 degrees below the horizontal. V sub P G is the vector sum of v sub P A and V sub A G." data-sm="./modules/m58293/index.cnxml:118:1">
+<img src="2fee2eb14b006202d9aabd326f7e3c3a33a03d75.jpeg" data-media-type="image/jpeg" alt="A compass shows north is up, east to the right, south down, and west to the left. Vectors V sub P G, V sub A G and V sub P A form a triangle. An airplane is shown on vector V sub P G, which points up. V sub P A points up and to the right, at an angle of theta to vector V sub P G. V sub A G points down and left, at an angle of 45 degrees below the horizontal. V sub P G is the vector sum of v sub P A and V sub A G." data-sm="./modules/m58293/index.cnxml:119:1"/>
+</span>
+
+</figure>
+<div class="os-caption-container">
+  <span class="os-title-label">Figure </span>
+<span class="os-number">4.29</span>
+
+
+
+  <span class="os-divider"> </span>
+  <span data-sm="./modules/m58293/index.cnxml:121:1" class="os-caption">Vector diagram for <a href="#fs-id1165038962290" data-sm="./modules/m58293/index.cnxml:121:29" class="autogenerated-content">Equation 4.34</a> showing the vectors <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58293/index.cnxml:121:96"><msub data-sm="./modules/m58293/index.cnxml:121:104"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:121:112"><mover accent="true" data-sm="./modules/m58293/index.cnxml:121:159"><mi data-sm="./modules/m58293/index.cnxml:121:182">v</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:121:196">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:121:248"><mtext data-sm="./modules/m58293/index.cnxml:121:256">PA</mtext></mrow></msub><mtext data-sm="./modules/m58293/index.cnxml:121:295">,</mtext><mspace width="0.2em" data-sm="./modules/m58293/index.cnxml:121:315"/><msub data-sm="./modules/m58293/index.cnxml:121:340"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:121:348"><mover accent="true" data-sm="./modules/m58293/index.cnxml:121:395"><mi data-sm="./modules/m58293/index.cnxml:121:418">v</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:121:432">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:121:484"><mtext data-sm="./modules/m58293/index.cnxml:121:492">AG</mtext></mrow></msub><mo data-sm="./modules/m58293/index.cnxml:121:531">,</mo><mspace width="0.2em" data-sm="./modules/m58293/index.cnxml:121:545"/><mtext data-sm="./modules/m58293/index.cnxml:121:570">and</mtext><mspace width="0.2em" data-sm="./modules/m58293/index.cnxml:121:592"/><mspace width="0.2em" data-sm="./modules/m58293/index.cnxml:121:617"/><msub data-sm="./modules/m58293/index.cnxml:121:642"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:121:650"><mover accent="true" data-sm="./modules/m58293/index.cnxml:121:697"><mi data-sm="./modules/m58293/index.cnxml:121:720">v</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:121:734">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:121:786"><mtext data-sm="./modules/m58293/index.cnxml:121:794">PG</mtext></mrow></msub><mo data-sm="./modules/m58293/index.cnxml:121:833">.</mo></mrow>
+</mrow>
+</semantics>
+</math></span>
+</div>
+</div>
+<p id="fs-id1165039015849" data-sm="./modules/m58293/index.cnxml:123:1">Known quantities:</p>
+<div data-type="equation" id="fs-id1165039266645" class="unnumbered" data-sm="./modules/m58293/index.cnxml:124:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58293/index.cnxml:124:70"><mrow data-sm="./modules/m58293/index.cnxml:124:78"><mo data-sm="./modules/m58293/index.cnxml:124:86">|</mo><mrow data-sm="./modules/m58293/index.cnxml:124:100"><msub data-sm="./modules/m58293/index.cnxml:124:108"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:124:116"><mover accent="true" data-sm="./modules/m58293/index.cnxml:124:163"><mi data-sm="./modules/m58293/index.cnxml:124:186">v</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:124:200">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:124:252"><mtext data-sm="./modules/m58293/index.cnxml:124:260">PA</mtext></mrow></msub></mrow>
+<mo data-sm="./modules/m58293/index.cnxml:124:308">|</mo></mrow>
+<mo data-sm="./modules/m58293/index.cnxml:124:331">=</mo><mn data-sm="./modules/m58293/index.cnxml:124:345">300</mn><mspace width="0.2em" data-sm="./modules/m58293/index.cnxml:124:361"/><mrow data-sm="./modules/m58293/index.cnxml:124:386"><mrow data-sm="./modules/m58293/index.cnxml:124:394"><mtext data-sm="./modules/m58293/index.cnxml:124:402">km</mtext></mrow>
+<mtext data-sm="./modules/m58293/index.cnxml:124:432">/</mtext><mtext data-sm="./modules/m58293/index.cnxml:124:452">h</mtext></mrow>
+</mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+<div data-type="equation" id="fs-id1165039027235" class="unnumbered" data-sm="./modules/m58293/index.cnxml:125:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58293/index.cnxml:125:70"><mrow data-sm="./modules/m58293/index.cnxml:125:78"><mo data-sm="./modules/m58293/index.cnxml:125:86">|</mo><mrow data-sm="./modules/m58293/index.cnxml:125:100"><msub data-sm="./modules/m58293/index.cnxml:125:108"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:125:116"><mover accent="true" data-sm="./modules/m58293/index.cnxml:125:163"><mi data-sm="./modules/m58293/index.cnxml:125:186">v</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:125:200">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:125:252"><mtext data-sm="./modules/m58293/index.cnxml:125:260">AG</mtext></mrow></msub></mrow>
+<mo data-sm="./modules/m58293/index.cnxml:125:308">|</mo></mrow>
+<mo data-sm="./modules/m58293/index.cnxml:125:331">=</mo><mn data-sm="./modules/m58293/index.cnxml:125:345">90</mn><mspace width="0.2em" data-sm="./modules/m58293/index.cnxml:125:360"/><mrow data-sm="./modules/m58293/index.cnxml:125:385"><mrow data-sm="./modules/m58293/index.cnxml:125:393"><mtext data-sm="./modules/m58293/index.cnxml:125:401">km</mtext></mrow>
+<mtext data-sm="./modules/m58293/index.cnxml:125:431">/</mtext><mtext data-sm="./modules/m58293/index.cnxml:125:451">h</mtext></mrow>
+</mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+
+<p id="fs-id1165039101375" data-sm="./modules/m58293/index.cnxml:127:1">(a) In the <em data-effect="italics" data-sm="./modules/m58293/index.cnxml:127:42">x</em> direction we have the following:</p>
+<ul id="list-00003" data-sm="./modules/m58293/index.cnxml:127:121">
+
+<li data-sm="./modules/m58293/index.cnxml:129:1"><p id="para-00002" data-sm="./modules/m58293/index.cnxml:129:7"><span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58293/index.cnxml:129:37"><mrow data-sm="./modules/m58293/index.cnxml:129:45"><mo data-sm="./modules/m58293/index.cnxml:129:53">|</mo><mrow data-sm="./modules/m58293/index.cnxml:129:67"><msub data-sm="./modules/m58293/index.cnxml:129:75"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:129:83"><mover accent="true" data-sm="./modules/m58293/index.cnxml:129:130"><mi data-sm="./modules/m58293/index.cnxml:129:153">v</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:129:167">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:129:219"><mtext data-sm="./modules/m58293/index.cnxml:129:227">PA</mtext></mrow></msub></mrow>
+<mo data-sm="./modules/m58293/index.cnxml:129:275">|</mo></mrow>
+<mtext data-sm="./modules/m58293/index.cnxml:129:298">sin</mtext><mspace width="0.1em" data-sm="./modules/m58293/index.cnxml:129:320"/><mi data-sm="./modules/m58293/index.cnxml:129:345">θ</mi><mspace width="0.2em" data-sm="./modules/m58293/index.cnxml:129:359"/><mo data-sm="./modules/m58293/index.cnxml:129:384">–</mo><mrow data-sm="./modules/m58293/index.cnxml:129:398"><mrow data-sm="./modules/m58293/index.cnxml:129:406"><mo data-sm="./modules/m58293/index.cnxml:129:414">|</mo><mrow data-sm="./modules/m58293/index.cnxml:129:428"><msub data-sm="./modules/m58293/index.cnxml:129:436"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:129:444"><mover accent="true" data-sm="./modules/m58293/index.cnxml:129:491"><mi data-sm="./modules/m58293/index.cnxml:129:514">v</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:129:528">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:129:580"><mtext data-sm="./modules/m58293/index.cnxml:129:588">AG</mtext></mrow></msub></mrow>
+<mo data-sm="./modules/m58293/index.cnxml:129:636">|</mo></mrow>
+<mtext data-sm="./modules/m58293/index.cnxml:129:659">sin</mtext><mspace width="0.1em" data-sm="./modules/m58293/index.cnxml:129:681"/><mn data-sm="./modules/m58293/index.cnxml:129:706">45</mn><mtext data-sm="./modules/m58293/index.cnxml:129:721">°</mtext><mo data-sm="./modules/m58293/index.cnxml:129:741">=</mo><mn data-sm="./modules/m58293/index.cnxml:129:755">0</mn></mrow>
+</mrow>
+</mrow>
+</semantics>
+</math></span></p></li>
+
+<li data-sm="./modules/m58293/index.cnxml:131:1"><p id="para-00003" data-sm="./modules/m58293/index.cnxml:131:7"><span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58293/index.cnxml:131:37"><mi data-sm="./modules/m58293/index.cnxml:131:45">θ</mi><mo data-sm="./modules/m58293/index.cnxml:131:59">=</mo><msup data-sm="./modules/m58293/index.cnxml:131:73"><mrow data-sm="./modules/m58293/index.cnxml:131:81"><mtext data-sm="./modules/m58293/index.cnxml:131:89">sin</mtext></mrow><mrow data-sm="./modules/m58293/index.cnxml:131:120"><mn data-sm="./modules/m58293/index.cnxml:131:128">–1</mn></mrow></msup><mo data-sm="./modules/m58293/index.cnxml:131:161">(</mo><mn data-sm="./modules/m58293/index.cnxml:131:175">90</mn><mspace width="0.2em" data-sm="./modules/m58293/index.cnxml:131:190"/><mtext data-sm="./modules/m58293/index.cnxml:131:215">km/h</mtext><mo data-sm="./modules/m58293/index.cnxml:131:238">)</mo><mrow data-sm="./modules/m58293/index.cnxml:131:252"><mo data-sm="./modules/m58293/index.cnxml:131:260">(</mo><mrow data-sm="./modules/m58293/index.cnxml:131:274"><mfrac data-sm="./modules/m58293/index.cnxml:131:282"><mrow data-sm="./modules/m58293/index.cnxml:131:291"><mtext data-sm="./modules/m58293/index.cnxml:131:299">sin</mtext><mspace width="0.1em" data-sm="./modules/m58293/index.cnxml:131:321"/><mn data-sm="./modules/m58293/index.cnxml:131:346">45</mn><mtext data-sm="./modules/m58293/index.cnxml:131:361">°</mtext></mrow>
+<mrow data-sm="./modules/m58293/index.cnxml:131:390"><mn data-sm="./modules/m58293/index.cnxml:131:398">300</mn><mspace width="0.2em" data-sm="./modules/m58293/index.cnxml:131:414"/><mtext data-sm="./modules/m58293/index.cnxml:131:439">km/h</mtext></mrow>
+</mfrac>
+</mrow>
+<mo data-sm="./modules/m58293/index.cnxml:131:490">)</mo></mrow>
+</mrow>
+</mrow>
+</semantics>
+</math></span></p></li>
+
+<li data-sm="./modules/m58293/index.cnxml:133:1"><p id="para-00004" data-sm="./modules/m58293/index.cnxml:133:7"><span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58293/index.cnxml:133:37"><mi data-sm="./modules/m58293/index.cnxml:133:45">θ</mi><mo data-sm="./modules/m58293/index.cnxml:133:59">=</mo><mn data-sm="./modules/m58293/index.cnxml:133:73">12</mn><mtext data-sm="./modules/m58293/index.cnxml:133:88">°</mtext></mrow>
+</mrow>
+</semantics>
+</math></span> east of north</p></li>
+</ul>
+
+<p id="fs-id1165039095662" data-sm="./modules/m58293/index.cnxml:136:1">(b) In the <em data-effect="italics" data-sm="./modules/m58293/index.cnxml:136:42">y</em> direction we have the following:</p>
+<ul id="list-00004" data-sm="./modules/m58293/index.cnxml:136:121">
+
+<li data-sm="./modules/m58293/index.cnxml:138:1"><p id="para-00005" data-sm="./modules/m58293/index.cnxml:138:7"><span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58293/index.cnxml:138:37"><mrow data-sm="./modules/m58293/index.cnxml:138:45"><mo data-sm="./modules/m58293/index.cnxml:138:53">|</mo><mrow data-sm="./modules/m58293/index.cnxml:138:67"><msub data-sm="./modules/m58293/index.cnxml:138:75"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:138:83"><mover accent="true" data-sm="./modules/m58293/index.cnxml:138:130"><mi data-sm="./modules/m58293/index.cnxml:138:153">v</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:138:167">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:138:219"><mtext data-sm="./modules/m58293/index.cnxml:138:227">PG</mtext></mrow></msub></mrow>
+<mo data-sm="./modules/m58293/index.cnxml:138:275">|</mo></mrow>
+</mrow>
+<mo data-sm="./modules/m58293/index.cnxml:138:307">=</mo><mrow data-sm="./modules/m58293/index.cnxml:138:321"><mrow data-sm="./modules/m58293/index.cnxml:138:329"><mo data-sm="./modules/m58293/index.cnxml:138:337">|</mo><mrow data-sm="./modules/m58293/index.cnxml:138:351"><msub data-sm="./modules/m58293/index.cnxml:138:359"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:138:367"><mover accent="true" data-sm="./modules/m58293/index.cnxml:138:414"><mi data-sm="./modules/m58293/index.cnxml:138:437">v</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:138:451">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:138:503"><mtext data-sm="./modules/m58293/index.cnxml:138:511">PA</mtext></mrow></msub></mrow>
+<mo data-sm="./modules/m58293/index.cnxml:138:559">|</mo></mrow>
+</mrow>
+<mtext data-sm="./modules/m58293/index.cnxml:138:591">cos</mtext><mspace width="0.1em" data-sm="./modules/m58293/index.cnxml:138:613"/><mi data-sm="./modules/m58293/index.cnxml:138:638">θ</mi><mspace width="0.2em" data-sm="./modules/m58293/index.cnxml:138:652"/><mo data-sm="./modules/m58293/index.cnxml:138:677">–</mo><mrow data-sm="./modules/m58293/index.cnxml:138:691"><mrow data-sm="./modules/m58293/index.cnxml:138:699"><mo data-sm="./modules/m58293/index.cnxml:138:707">|</mo><mrow data-sm="./modules/m58293/index.cnxml:138:721"><msub data-sm="./modules/m58293/index.cnxml:138:729"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:138:737"><mover accent="true" data-sm="./modules/m58293/index.cnxml:138:784"><mi data-sm="./modules/m58293/index.cnxml:138:807">v</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:138:821">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:138:873"><mtext data-sm="./modules/m58293/index.cnxml:138:881">AG</mtext></mrow></msub></mrow>
+<mo data-sm="./modules/m58293/index.cnxml:138:929">|</mo></mrow>
+</mrow>
+<mtext data-sm="./modules/m58293/index.cnxml:138:961">cos</mtext><mspace width="0.1em" data-sm="./modules/m58293/index.cnxml:138:983"/><mn data-sm="./modules/m58293/index.cnxml:138:1008">45</mn><mtext data-sm="./modules/m58293/index.cnxml:138:1023">°</mtext></mrow>
+</semantics>
+</math></span></p></li>
+
+<li data-sm="./modules/m58293/index.cnxml:140:1"><p id="para-00006" data-sm="./modules/m58293/index.cnxml:140:7"><span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58293/index.cnxml:140:37"><mrow data-sm="./modules/m58293/index.cnxml:140:45"><mo data-sm="./modules/m58293/index.cnxml:140:53">|</mo><mrow data-sm="./modules/m58293/index.cnxml:140:67"><msub data-sm="./modules/m58293/index.cnxml:140:75"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:140:83"><mover accent="true" data-sm="./modules/m58293/index.cnxml:140:130"><mi data-sm="./modules/m58293/index.cnxml:140:153">v</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:140:167">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:140:219"><mtext data-sm="./modules/m58293/index.cnxml:140:227">PG</mtext></mrow></msub></mrow>
+<mo data-sm="./modules/m58293/index.cnxml:140:275">|</mo></mrow>
+</mrow>
+<mo data-sm="./modules/m58293/index.cnxml:140:307">=</mo><mo data-sm="./modules/m58293/index.cnxml:140:321">(</mo><mn data-sm="./modules/m58293/index.cnxml:140:335">300</mn><mspace width="0.2em" data-sm="./modules/m58293/index.cnxml:140:351"/><mtext data-sm="./modules/m58293/index.cnxml:140:376">km/h</mtext><mo data-sm="./modules/m58293/index.cnxml:140:399">)</mo><mo data-sm="./modules/m58293/index.cnxml:140:413">(</mo><mtext data-sm="./modules/m58293/index.cnxml:140:427">cos</mtext><mspace width="0.1em" data-sm="./modules/m58293/index.cnxml:140:449"/><mn data-sm="./modules/m58293/index.cnxml:140:474">12</mn><mtext data-sm="./modules/m58293/index.cnxml:140:489">°</mtext><mo data-sm="./modules/m58293/index.cnxml:140:509">)</mo><mo data-sm="./modules/m58293/index.cnxml:140:523">–</mo><mo data-sm="./modules/m58293/index.cnxml:140:537">(</mo><mn data-sm="./modules/m58293/index.cnxml:140:551">90</mn><mspace width="0.2em" data-sm="./modules/m58293/index.cnxml:140:566"/><mtext data-sm="./modules/m58293/index.cnxml:140:591">km/h</mtext><mo data-sm="./modules/m58293/index.cnxml:140:614">)</mo><mo data-sm="./modules/m58293/index.cnxml:140:628">(</mo><mtext data-sm="./modules/m58293/index.cnxml:140:642">cos</mtext><mspace width="0.1em" data-sm="./modules/m58293/index.cnxml:140:664"/><mn data-sm="./modules/m58293/index.cnxml:140:689">45</mn><mtext data-sm="./modules/m58293/index.cnxml:140:704">°</mtext><mo data-sm="./modules/m58293/index.cnxml:140:724">)</mo></mrow>
+</semantics>
+</math></span></p></li>
+
+<li data-sm="./modules/m58293/index.cnxml:142:1"><p id="para-00007" data-sm="./modules/m58293/index.cnxml:142:7"><span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58293/index.cnxml:142:37"><mrow data-sm="./modules/m58293/index.cnxml:142:45"><mo data-sm="./modules/m58293/index.cnxml:142:53">|</mo><mrow data-sm="./modules/m58293/index.cnxml:142:67"><msub data-sm="./modules/m58293/index.cnxml:142:75"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58293/index.cnxml:142:83"><mover accent="true" data-sm="./modules/m58293/index.cnxml:142:130"><mi data-sm="./modules/m58293/index.cnxml:142:153">v</mi><mo stretchy="false" data-sm="./modules/m58293/index.cnxml:142:167">→</mo></mover>
+</mstyle><mrow data-sm="./modules/m58293/index.cnxml:142:219"><mtext data-sm="./modules/m58293/index.cnxml:142:227">PG</mtext></mrow></msub></mrow>
+<mo data-sm="./modules/m58293/index.cnxml:142:275">|</mo></mrow>
+</mrow>
+<mo data-sm="./modules/m58293/index.cnxml:142:307">=</mo><mn data-sm="./modules/m58293/index.cnxml:142:321">230</mn><mspace width="0.2em" data-sm="./modules/m58293/index.cnxml:142:337"/><mtext data-sm="./modules/m58293/index.cnxml:142:362">km/h</mtext></mrow>
+</semantics>
+</math></span></p></li>
+</ul>
+
+</div>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+  </div>
+</body>
+</html>
+<!-- # sourceMappingURL=d50f6e32-0fda-46ef-a362-9bd36ca7c97d-at-aa8a43e-colon-5d4652c4-0340-4222-9c10-52e720d49c15.xhtml.map -->

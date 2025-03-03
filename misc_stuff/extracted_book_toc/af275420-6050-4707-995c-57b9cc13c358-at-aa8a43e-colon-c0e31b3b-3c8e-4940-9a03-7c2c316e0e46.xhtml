@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:epub="http://www.idpf.org/2007/ops">
+<head><title>7.5
+ 
+The Quantum Harmonic Oscillator
+</title>
+<link rel="stylesheet" type="text/css" href="the-style-epub.css"/>
+</head>
+<body>
+    <div data-type="page" id="page_c0e31b3b-3c8e-4940-9a03-7c2c316e0e46" class="chapter-content-module" data-book-content="true"><h2 data-type="document-title" data-sm="./modules/m58581/index.cnxml:3:1" id="page_c0e31b3b-3c8e-4940-9a03-7c2c316e0e46_titlecreatedbycookbook"><span class="os-number">7.5</span>
+<span class="os-divider"> </span>
+<span data-type="" class="os-text">The Quantum Harmonic Oscillator</span>
+</h2>
+<div data-type="abstract" data-sm="./modules/m58581/index.cnxml:7:3"><h3 data-type="title">Learning Objectives</h3>
+<p id="para-00001" data-sm="./modules/m58581/index.cnxml:7:16">By the end of this section, you will be able to:</p>
+<ul id="list-00001" data-sm="./modules/m58581/index.cnxml:8:1">
+<li data-sm="./modules/m58581/index.cnxml:9:1">Describe the model of the quantum harmonic oscillator</li>
+<li data-sm="./modules/m58581/index.cnxml:10:1">Identify differences between the classical and quantum models of the harmonic oscillator</li>
+<li data-sm="./modules/m58581/index.cnxml:11:1">Explain physical situations where the classical and the quantum models coincide</li>
+</ul>
+</div>
+
+<p id="fs-id1170903056278" data-sm="./modules/m58581/index.cnxml:17:1">Oscillations are found throughout nature, in such things as electromagnetic waves, vibrating molecules, and the gentle back-and-forth sway of a tree branch. In previous chapters, we used Newtonian mechanics to study macroscopic oscillations, such as a block on a spring and a simple pendulum. In this chapter, we begin to study oscillating systems using quantum mechanics. We begin with a review of the classic harmonic oscillator.</p>
+
+<section data-depth="1" id="fs-id1170901584988" data-sm="./modules/m58581/index.cnxml:18:1"><h3 data-type="title" data-sm="./modules/m58581/index.cnxml:19:1">The Classic Harmonic Oscillator</h3>
+<p id="fs-id1170902761842" data-sm="./modules/m58581/index.cnxml:20:1">A simple harmonic oscillator is a particle or system that undergoes harmonic motion about an equilibrium position, such as an object with mass vibrating on a spring. In this section, we consider oscillations in one-dimension only. Suppose a mass moves back-and-forth along the</p>
+<p id="fs-id1170901770257" data-sm="./modules/m58581/index.cnxml:21:1"><em data-effect="italics" data-sm="./modules/m58581/index.cnxml:21:31">x</em>-direction about the equilibrium position, <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58581/index.cnxml:21:121"><mi data-sm="./modules/m58581/index.cnxml:21:129">x</mi><mo data-sm="./modules/m58581/index.cnxml:21:143">=</mo><mn data-sm="./modules/m58581/index.cnxml:21:157">0</mn></mrow>
+</mrow>
+</semantics>
+</math></span>. In classical mechanics, the particle moves in response to a linear restoring force given by <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58581/index.cnxml:21:291"><msub data-sm="./modules/m58581/index.cnxml:21:299"><mi data-sm="./modules/m58581/index.cnxml:21:307">F</mi><mi data-sm="./modules/m58581/index.cnxml:21:321">x</mi></msub><mo data-sm="./modules/m58581/index.cnxml:21:344">=</mo><mtext data-sm="./modules/m58581/index.cnxml:21:358">−</mtext><mi data-sm="./modules/m58581/index.cnxml:21:378">k</mi><mi data-sm="./modules/m58581/index.cnxml:21:392">x</mi><mo data-sm="./modules/m58581/index.cnxml:21:406">,</mo></mrow>
+</mrow>
+</semantics>
+</math></span> where <em data-effect="italics" data-sm="./modules/m58581/index.cnxml:21:445">x</em> is the displacement of the particle from its equilibrium position. The motion takes place between two turning points, <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58581/index.cnxml:21:611"><mi data-sm="./modules/m58581/index.cnxml:21:619">x</mi><mo data-sm="./modules/m58581/index.cnxml:21:633">=</mo><mtext data-sm="./modules/m58581/index.cnxml:21:647">±</mtext><mi data-sm="./modules/m58581/index.cnxml:21:667">A</mi></mrow>
+</mrow>
+</semantics>
+</math></span>, where <em data-effect="italics" data-sm="./modules/m58581/index.cnxml:21:707">A</em> denotes the amplitude of the motion. The position of the object varies periodically in time with angular frequency <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58581/index.cnxml:21:870"><mi data-sm="./modules/m58581/index.cnxml:21:878">ω</mi><mo data-sm="./modules/m58581/index.cnxml:21:892">=</mo><msqrt data-sm="./modules/m58581/index.cnxml:21:906"><mrow data-sm="./modules/m58581/index.cnxml:21:915"><mrow data-sm="./modules/m58581/index.cnxml:21:923"><mi data-sm="./modules/m58581/index.cnxml:21:931">k</mi><mtext data-sm="./modules/m58581/index.cnxml:21:945">/</mtext><mi data-sm="./modules/m58581/index.cnxml:21:965">m</mi></mrow>
+</mrow>
+</msqrt>
+<mo data-sm="./modules/m58581/index.cnxml:21:1007">,</mo></mrow>
+</mrow>
+</semantics>
+</math></span> which depends on the mass <em data-effect="italics" data-sm="./modules/m58581/index.cnxml:21:1066">m</em> of the oscillator and on the force constant <em data-effect="italics" data-sm="./modules/m58581/index.cnxml:21:1150">k</em> of the net force, and can be written as</p>
+<div data-type="equation" id="fs-id1170901866414" data-sm="./modules/m58581/index.cnxml:22:1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58581/index.cnxml:22:43"><mi data-sm="./modules/m58581/index.cnxml:22:51">x</mi><mo stretchy="false" data-sm="./modules/m58581/index.cnxml:22:65">(</mo><mi data-sm="./modules/m58581/index.cnxml:22:96">t</mi><mo stretchy="false" data-sm="./modules/m58581/index.cnxml:22:110">)</mo><mo data-sm="./modules/m58581/index.cnxml:22:141">=</mo><mi data-sm="./modules/m58581/index.cnxml:22:155">A</mi><mspace width="0.2em" data-sm="./modules/m58581/index.cnxml:22:169"/><mtext data-sm="./modules/m58581/index.cnxml:22:194">cos</mtext><mtext data-sm="./modules/m58581/index.cnxml:22:216"> </mtext><mo stretchy="false" data-sm="./modules/m58581/index.cnxml:22:236">(</mo><mi data-sm="./modules/m58581/index.cnxml:22:267">ω</mi><mtext data-sm="./modules/m58581/index.cnxml:22:281"> </mtext><mtext data-sm="./modules/m58581/index.cnxml:22:301"> </mtext><mi data-sm="./modules/m58581/index.cnxml:22:321">t</mi><mo data-sm="./modules/m58581/index.cnxml:22:335">+</mo><mi data-sm="./modules/m58581/index.cnxml:22:349">ϕ</mi><mo stretchy="false" data-sm="./modules/m58581/index.cnxml:22:363">)</mo><mo data-sm="./modules/m58581/index.cnxml:22:394">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+<div class="os-equation-number">
+  <span class="os-number">7.52</span>
+</div>
+</div>
+<p id="fs-id1170901534323" data-sm="./modules/m58581/index.cnxml:23:1">The total energy <em data-effect="italics" data-sm="./modules/m58581/index.cnxml:23:48">E</em> of an oscillator is the sum of its kinetic energy <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58581/index.cnxml:23:146"><mi data-sm="./modules/m58581/index.cnxml:23:154">K</mi><mo data-sm="./modules/m58581/index.cnxml:23:168">=</mo><mrow data-sm="./modules/m58581/index.cnxml:23:182"><mrow data-sm="./modules/m58581/index.cnxml:23:190"><mi data-sm="./modules/m58581/index.cnxml:23:198">m</mi><msup data-sm="./modules/m58581/index.cnxml:23:212"><mi data-sm="./modules/m58581/index.cnxml:23:220">u</mi><mn data-sm="./modules/m58581/index.cnxml:23:234">2</mn></msup></mrow>
+<mtext data-sm="./modules/m58581/index.cnxml:23:266">/</mtext><mn data-sm="./modules/m58581/index.cnxml:23:286">2</mn></mrow>
+</mrow>
+</mrow>
+</semantics>
+</math></span> and the elastic potential energy of the force <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58581/index.cnxml:23:382"><mi data-sm="./modules/m58581/index.cnxml:23:390">U</mi><mo stretchy="false" data-sm="./modules/m58581/index.cnxml:23:404">(</mo><mi data-sm="./modules/m58581/index.cnxml:23:435">x</mi><mo stretchy="false" data-sm="./modules/m58581/index.cnxml:23:449">)</mo><mo data-sm="./modules/m58581/index.cnxml:23:480">=</mo><mrow data-sm="./modules/m58581/index.cnxml:23:494"><mrow data-sm="./modules/m58581/index.cnxml:23:502"><mi data-sm="./modules/m58581/index.cnxml:23:510">k</mi><mtext data-sm="./modules/m58581/index.cnxml:23:524"> </mtext><msup data-sm="./modules/m58581/index.cnxml:23:544"><mi data-sm="./modules/m58581/index.cnxml:23:552">x</mi><mn data-sm="./modules/m58581/index.cnxml:23:566">2</mn></msup></mrow>
+<mtext data-sm="./modules/m58581/index.cnxml:23:598">/</mtext><mn data-sm="./modules/m58581/index.cnxml:23:618">2</mn></mrow>
+<mo data-sm="./modules/m58581/index.cnxml:23:641">,</mo></mrow>
+</mrow>
+</semantics>
+</math></span></p>
+<div data-type="equation" id="fs-id1170901980471" data-sm="./modules/m58581/index.cnxml:24:1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58581/index.cnxml:24:43"><mi data-sm="./modules/m58581/index.cnxml:24:51">E</mi><mo data-sm="./modules/m58581/index.cnxml:24:65">=</mo><mfrac data-sm="./modules/m58581/index.cnxml:24:79"><mn data-sm="./modules/m58581/index.cnxml:24:88">1</mn><mn data-sm="./modules/m58581/index.cnxml:24:102">2</mn></mfrac>
+<mi data-sm="./modules/m58581/index.cnxml:24:126">m</mi><msup data-sm="./modules/m58581/index.cnxml:24:140"><mi data-sm="./modules/m58581/index.cnxml:24:148">u</mi><mn data-sm="./modules/m58581/index.cnxml:24:162">2</mn></msup><mo data-sm="./modules/m58581/index.cnxml:24:185">+</mo><mfrac data-sm="./modules/m58581/index.cnxml:24:199"><mn data-sm="./modules/m58581/index.cnxml:24:208">1</mn><mn data-sm="./modules/m58581/index.cnxml:24:222">2</mn></mfrac>
+<mi data-sm="./modules/m58581/index.cnxml:24:246">k</mi><msup data-sm="./modules/m58581/index.cnxml:24:260"><mi data-sm="./modules/m58581/index.cnxml:24:268">x</mi><mn data-sm="./modules/m58581/index.cnxml:24:282">2</mn></msup><mo data-sm="./modules/m58581/index.cnxml:24:305">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+<div class="os-equation-number">
+  <span class="os-number">7.53</span>
+</div>
+</div>
+<p id="fs-id1170901607656" data-sm="./modules/m58581/index.cnxml:25:1">At turning points <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58581/index.cnxml:25:57"><mi data-sm="./modules/m58581/index.cnxml:25:65">x</mi><mo data-sm="./modules/m58581/index.cnxml:25:79">=</mo><mtext data-sm="./modules/m58581/index.cnxml:25:93">±</mtext><mi data-sm="./modules/m58581/index.cnxml:25:113">A</mi></mrow>
+</mrow>
+</semantics>
+</math></span>, the speed of the oscillator is zero; therefore, at these points, the energy of oscillation is solely in the form of potential energy <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58581/index.cnxml:25:288"><mi data-sm="./modules/m58581/index.cnxml:25:296">E</mi><mo data-sm="./modules/m58581/index.cnxml:25:310">=</mo><mrow data-sm="./modules/m58581/index.cnxml:25:324"><mrow data-sm="./modules/m58581/index.cnxml:25:332"><mi data-sm="./modules/m58581/index.cnxml:25:340">k</mi><mtext data-sm="./modules/m58581/index.cnxml:25:354"> </mtext><msup data-sm="./modules/m58581/index.cnxml:25:374"><mi data-sm="./modules/m58581/index.cnxml:25:382">A</mi><mrow data-sm="./modules/m58581/index.cnxml:25:396"><mtext data-sm="./modules/m58581/index.cnxml:25:404"> </mtext><mn data-sm="./modules/m58581/index.cnxml:25:424">2</mn></mrow></msup></mrow>
+<mtext data-sm="./modules/m58581/index.cnxml:25:465">/</mtext><mn data-sm="./modules/m58581/index.cnxml:25:485">2</mn></mrow>
+</mrow>
+</mrow>
+</semantics>
+</math></span>. The plot of the potential energy <em data-effect="italics" data-sm="./modules/m58581/index.cnxml:25:561">U</em>(<em data-effect="italics" data-sm="./modules/m58581/index.cnxml:25:601">x</em>) of the oscillator versus its position <em data-effect="italics" data-sm="./modules/m58581/index.cnxml:25:680">x</em> is a parabola (<a href="#CNX_UPhysics_40_05_well" data-sm="./modules/m58581/index.cnxml:25:735" class="autogenerated-content">Figure 7.13</a>). The potential-energy function is a quadratic function of <em data-effect="italics" data-sm="./modules/m58581/index.cnxml:25:838">x</em>, measured with respect to the equilibrium position. On the same graph, we also plot the total energy <em data-effect="italics" data-sm="./modules/m58581/index.cnxml:25:979">E</em> of the oscillator, as a horizontal line that intercepts the parabola at <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58581/index.cnxml:25:1099"><mi data-sm="./modules/m58581/index.cnxml:25:1107">x</mi><mo data-sm="./modules/m58581/index.cnxml:25:1121">=</mo><mtext data-sm="./modules/m58581/index.cnxml:25:1135">±</mtext><mi data-sm="./modules/m58581/index.cnxml:25:1155">A</mi></mrow>
+</mrow>
+</semantics>
+</math></span>. Then the kinetic energy <em data-effect="italics" data-sm="./modules/m58581/index.cnxml:25:1213">K</em> is represented as the vertical distance between the line of total energy and the potential energy parabola.</p>
+<div class="os-figure"><figure id="CNX_UPhysics_40_05_well" data-sm="./modules/m58581/index.cnxml:26:1">
+<span data-type="media" id="fs-id1170901509434" data-alt="A graph of the potential U of x and energy E is shown. The vertical axis is energy and the horizontal axis is x. The energy E is positive and constant. The potential U of x is the function one half k times x squared, a concave up parabola whose value is zero at x=0. The region below the U of x curve is shaded. U of x is equal to E at x equal to minus A and x equal to plus A." data-sm="./modules/m58581/index.cnxml:27:1">
+<img src="ec634dd118ef9000dc2ed8b40b9ff377189327df.jpeg" data-media-type="image/jpeg" alt="A graph of the potential U of x and energy E is shown. The vertical axis is energy and the horizontal axis is x. The energy E is positive and constant. The potential U of x is the function one half k times x squared, a concave up parabola whose value is zero at x=0. The region below the U of x curve is shaded. U of x is equal to E at x equal to minus A and x equal to plus A." data-sm="./modules/m58581/index.cnxml:28:1"/>
+</span>
+
+</figure>
+<div class="os-caption-container">
+  <span class="os-title-label">Figure </span>
+<span class="os-number">7.13</span>
+
+
+
+  <span class="os-divider"> </span>
+  <span data-sm="./modules/m58581/index.cnxml:30:1" class="os-caption">The potential energy well of a classical harmonic oscillator: The motion is confined between turning points at <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58581/index.cnxml:30:129"><mi data-sm="./modules/m58581/index.cnxml:30:137">x</mi><mo data-sm="./modules/m58581/index.cnxml:30:151">=</mo><mtext data-sm="./modules/m58581/index.cnxml:30:165">−</mtext><mi data-sm="./modules/m58581/index.cnxml:30:185">A</mi></mrow>
+</mrow>
+</semantics>
+</math> and at <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58581/index.cnxml:30:233"><mi data-sm="./modules/m58581/index.cnxml:30:241">x</mi><mo data-sm="./modules/m58581/index.cnxml:30:255">=</mo><mo data-sm="./modules/m58581/index.cnxml:30:269">+</mo><mi data-sm="./modules/m58581/index.cnxml:30:283">A</mi></mrow>
+</mrow>
+</semantics>
+</math>. The energy of oscillations is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58581/index.cnxml:30:355"><mi data-sm="./modules/m58581/index.cnxml:30:363">E</mi><mo data-sm="./modules/m58581/index.cnxml:30:377">=</mo><mrow data-sm="./modules/m58581/index.cnxml:30:391"><mrow data-sm="./modules/m58581/index.cnxml:30:399"><mi data-sm="./modules/m58581/index.cnxml:30:407">k</mi><msup data-sm="./modules/m58581/index.cnxml:30:421"><mi data-sm="./modules/m58581/index.cnxml:30:429">A</mi><mn data-sm="./modules/m58581/index.cnxml:30:443">2</mn></msup></mrow>
+<mtext data-sm="./modules/m58581/index.cnxml:30:475">/</mtext><mn data-sm="./modules/m58581/index.cnxml:30:495">2</mn></mrow>
+<mo data-sm="./modules/m58581/index.cnxml:30:518">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</span>
+</div>
+</div>
+<p id="fs-id1170901930060" data-sm="./modules/m58581/index.cnxml:33:1">In this plot, the motion of a classical oscillator is confined to the region where its kinetic energy is nonnegative, which is what the energy relation <a href="#fs-id1170901980471" data-sm="./modules/m58581/index.cnxml:33:183" class="autogenerated-content">Equation 7.53</a> says. Physically, it means that a classical oscillator can never be found beyond its turning points, and its energy depends only on how far the turning points are from its equilibrium position. The energy of a classical oscillator changes in a continuous way. The lowest energy that a classical oscillator may have is zero, which corresponds to a situation where an object is at rest at its equilibrium position. The zero-energy state of a classical oscillator simply means no oscillations and no motion at all (a classical particle sitting at the bottom of the potential well in <a href="#CNX_UPhysics_40_05_well" data-sm="./modules/m58581/index.cnxml:33:802" class="autogenerated-content">Figure 7.13</a>). When an object oscillates, no matter how big or small its energy may be, it spends the longest time near the turning points, because this is where it slows down and reverses its direction of motion. Therefore, the probability of finding a classical oscillator between the turning points is highest near the turning points and lowest at the equilibrium position. (Note that this is not a statement of preference of the object to go to lower energy. It is a statement about how quickly the object moves through various regions.)</p>
+</section>
+
+<section data-depth="1" id="fs-id1170901907297" data-sm="./modules/m58581/index.cnxml:35:1"><h3 data-type="title" data-sm="./modules/m58581/index.cnxml:36:1">The Quantum Harmonic Oscillator</h3>
+<p id="fs-id1170901741117" data-sm="./modules/m58581/index.cnxml:37:1">One problem with this classical formulation is that it is not general. We cannot use it, for example, to describe vibrations of diatomic molecules, where quantum effects are important. A first step toward a quantum formulation is to use the classical expression <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58581/index.cnxml:37:301"><mi data-sm="./modules/m58581/index.cnxml:37:309">k</mi><mo data-sm="./modules/m58581/index.cnxml:37:323">=</mo><mi data-sm="./modules/m58581/index.cnxml:37:337">m</mi><mtext data-sm="./modules/m58581/index.cnxml:37:351"> </mtext><msup data-sm="./modules/m58581/index.cnxml:37:371"><mi data-sm="./modules/m58581/index.cnxml:37:379">ω</mi><mrow data-sm="./modules/m58581/index.cnxml:37:393"><mtext data-sm="./modules/m58581/index.cnxml:37:401"> </mtext><mn data-sm="./modules/m58581/index.cnxml:37:421">2</mn></mrow></msup></mrow>
+</mrow>
+</semantics>
+</math></span> to limit mention of a “spring” constant between the atoms. In this way the potential energy function can be written in a more general form,</p>
+<div data-type="note" id="fs-id1170901783501" class="equation-callout" data-sm="./modules/m58581/index.cnxml:38:1">
+<div data-type="equation" id="fs-id1170899246703" data-sm="./modules/m58581/index.cnxml:39:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58581/index.cnxml:39:51"><mi data-sm="./modules/m58581/index.cnxml:39:59">U</mi><mo stretchy="false" data-sm="./modules/m58581/index.cnxml:39:73">(</mo><mi data-sm="./modules/m58581/index.cnxml:39:104">x</mi><mo stretchy="false" data-sm="./modules/m58581/index.cnxml:39:118">)</mo><mo data-sm="./modules/m58581/index.cnxml:39:149">=</mo><mfrac data-sm="./modules/m58581/index.cnxml:39:163"><mn data-sm="./modules/m58581/index.cnxml:39:172">1</mn><mn data-sm="./modules/m58581/index.cnxml:39:186">2</mn></mfrac>
+<mi data-sm="./modules/m58581/index.cnxml:39:210">m</mi><msup data-sm="./modules/m58581/index.cnxml:39:224"><mi data-sm="./modules/m58581/index.cnxml:39:232">ω</mi><mrow data-sm="./modules/m58581/index.cnxml:39:246"><mtext data-sm="./modules/m58581/index.cnxml:39:254"> </mtext><mn data-sm="./modules/m58581/index.cnxml:39:274">2</mn></mrow></msup><msup data-sm="./modules/m58581/index.cnxml:39:306"><mi data-sm="./modules/m58581/index.cnxml:39:314">x</mi><mrow data-sm="./modules/m58581/index.cnxml:39:328"><mtext data-sm="./modules/m58581/index.cnxml:39:336"> </mtext><mn data-sm="./modules/m58581/index.cnxml:39:356">2</mn></mrow></msup><mo data-sm="./modules/m58581/index.cnxml:39:388">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+<div class="os-equation-number">
+  <span class="os-number">7.54</span>
+</div>
+</div>
+</div>
+<p id="fs-id1170902013502" data-sm="./modules/m58581/index.cnxml:41:1">Combining this expression with the time-independent Schrӧdinger equation gives</p>
+<div data-type="note" id="fs-id1170902768609" class="equation-callout" data-sm="./modules/m58581/index.cnxml:42:1">
+<div data-type="equation" id="fs-id1170901952067" data-sm="./modules/m58581/index.cnxml:43:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58581/index.cnxml:43:51"><mo data-sm="./modules/m58581/index.cnxml:43:59">−</mo><mfrac data-sm="./modules/m58581/index.cnxml:43:73"><msup data-sm="./modules/m58581/index.cnxml:43:82"><mi data-sm="./modules/m58581/index.cnxml:43:90">ℏ</mi><mn data-sm="./modules/m58581/index.cnxml:43:104">2</mn></msup><mrow data-sm="./modules/m58581/index.cnxml:43:127"><mn data-sm="./modules/m58581/index.cnxml:43:135">2</mn><mi data-sm="./modules/m58581/index.cnxml:43:149">m</mi></mrow>
+</mfrac>
+<mspace width="0.2em" data-sm="./modules/m58581/index.cnxml:43:182"/><mfrac data-sm="./modules/m58581/index.cnxml:43:207"><mrow data-sm="./modules/m58581/index.cnxml:43:216"><msup data-sm="./modules/m58581/index.cnxml:43:224"><mi data-sm="./modules/m58581/index.cnxml:43:232">d</mi><mrow data-sm="./modules/m58581/index.cnxml:43:246"><mtext data-sm="./modules/m58581/index.cnxml:43:254"> </mtext><mn data-sm="./modules/m58581/index.cnxml:43:274">2</mn></mrow></msup><mi data-sm="./modules/m58581/index.cnxml:43:306">ψ</mi><mo stretchy="false" data-sm="./modules/m58581/index.cnxml:43:320">(</mo><mi data-sm="./modules/m58581/index.cnxml:43:351">x</mi><mo stretchy="false" data-sm="./modules/m58581/index.cnxml:43:365">)</mo></mrow>
+<mrow data-sm="./modules/m58581/index.cnxml:43:405"><mi data-sm="./modules/m58581/index.cnxml:43:413">d</mi><mtext data-sm="./modules/m58581/index.cnxml:43:427"> </mtext><msup data-sm="./modules/m58581/index.cnxml:43:447"><mi data-sm="./modules/m58581/index.cnxml:43:455">x</mi><mn data-sm="./modules/m58581/index.cnxml:43:469">2</mn></msup></mrow>
+</mfrac>
+<mo data-sm="./modules/m58581/index.cnxml:43:511">+</mo><mfrac data-sm="./modules/m58581/index.cnxml:43:525"><mn data-sm="./modules/m58581/index.cnxml:43:534">1</mn><mn data-sm="./modules/m58581/index.cnxml:43:548">2</mn></mfrac>
+<mi data-sm="./modules/m58581/index.cnxml:43:572">m</mi><msup data-sm="./modules/m58581/index.cnxml:43:586"><mi data-sm="./modules/m58581/index.cnxml:43:594">ω</mi><mrow data-sm="./modules/m58581/index.cnxml:43:608"><mtext data-sm="./modules/m58581/index.cnxml:43:616"> </mtext><mn data-sm="./modules/m58581/index.cnxml:43:636">2</mn></mrow></msup><msup data-sm="./modules/m58581/index.cnxml:43:668"><mi data-sm="./modules/m58581/index.cnxml:43:676">x</mi><mrow data-sm="./modules/m58581/index.cnxml:43:690"><mtext data-sm="./modules/m58581/index.cnxml:43:698"> </mtext><mn data-sm="./modules/m58581/index.cnxml:43:718">2</mn></mrow></msup><mi data-sm="./modules/m58581/index.cnxml:43:750">ψ</mi><mo stretchy="false" data-sm="./modules/m58581/index.cnxml:43:764">(</mo><mi data-sm="./modules/m58581/index.cnxml:43:795">x</mi><mo stretchy="false" data-sm="./modules/m58581/index.cnxml:43:809">)</mo><mo data-sm="./modules/m58581/index.cnxml:43:840">=</mo><mi data-sm="./modules/m58581/index.cnxml:43:854">E</mi><mi data-sm="./modules/m58581/index.cnxml:43:868">ψ</mi><mo stretchy="false" data-sm="./modules/m58581/index.cnxml:43:882">(</mo><mi data-sm="./modules/m58581/index.cnxml:43:913">x</mi><mo stretchy="false" data-sm="./modules/m58581/index.cnxml:43:927">)</mo><mo data-sm="./modules/m58581/index.cnxml:43:958">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+<div class="os-equation-number">
+  <span class="os-number">7.55</span>
+</div>
+</div>
+</div>
+<p id="fs-id1170899298470" data-sm="./modules/m58581/index.cnxml:45:1">To solve <a href="#fs-id1170901952067" data-sm="./modules/m58581/index.cnxml:45:40" class="autogenerated-content">Equation 7.55</a>—that is, to find the allowed energies <em data-effect="italics" data-sm="./modules/m58581/index.cnxml:45:117">E</em> and their corresponding wave functions <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58581/index.cnxml:45:204"><mi data-sm="./modules/m58581/index.cnxml:45:212">ψ</mi><mo stretchy="false" data-sm="./modules/m58581/index.cnxml:45:226">(</mo><mi data-sm="./modules/m58581/index.cnxml:45:257">x</mi><mo stretchy="false" data-sm="./modules/m58581/index.cnxml:45:271">)</mo></mrow>
+</mrow>
+</semantics>
+</math></span> —we require the wave functions to be symmetric about <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58581/index.cnxml:45:382"><mi data-sm="./modules/m58581/index.cnxml:45:390">x</mi><mo data-sm="./modules/m58581/index.cnxml:45:404">=</mo><mn data-sm="./modules/m58581/index.cnxml:45:418">0</mn></mrow>
+</mrow>
+</semantics>
+</math></span> (the bottom of the potential well) and to be normalizable. These conditions ensure that the probability density <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58581/index.cnxml:45:571"><mo data-sm="./modules/m58581/index.cnxml:45:579">|</mo><mi data-sm="./modules/m58581/index.cnxml:45:593">ψ</mi><mo stretchy="false" data-sm="./modules/m58581/index.cnxml:45:607">(</mo><mi data-sm="./modules/m58581/index.cnxml:45:638">x</mi><mo stretchy="false" data-sm="./modules/m58581/index.cnxml:45:652">)</mo><msup data-sm="./modules/m58581/index.cnxml:45:683"><mo data-sm="./modules/m58581/index.cnxml:45:691">|</mo><mrow data-sm="./modules/m58581/index.cnxml:45:705"><mtext data-sm="./modules/m58581/index.cnxml:45:713"> </mtext><mn data-sm="./modules/m58581/index.cnxml:45:733">2</mn></mrow></msup></mrow>
+</mrow>
+</semantics>
+</math></span> must be finite when integrated over the entire range of <em data-effect="italics" data-sm="./modules/m58581/index.cnxml:45:840">x</em> from <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58581/index.cnxml:45:893"><mtext data-sm="./modules/m58581/index.cnxml:45:901">−</mtext><mi data-sm="./modules/m58581/index.cnxml:45:921">∞</mi></mrow>
+</mrow>
+</semantics>
+</math></span> to <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58581/index.cnxml:45:965"><mo data-sm="./modules/m58581/index.cnxml:45:973">+</mo><mi data-sm="./modules/m58581/index.cnxml:45:987">∞</mi></mrow>
+</mrow>
+</semantics>
+</math></span>. How to solve <a href="#fs-id1170901952067" data-sm="./modules/m58581/index.cnxml:45:1034" class="autogenerated-content">Equation 7.55</a> is the subject of a more advanced course in quantum mechanics; here, we simply cite the results. The allowed energies are</p>
+<div data-type="note" id="fs-id1170901779350" class="equation-callout" data-sm="./modules/m58581/index.cnxml:46:1">
+<div data-type="equation" id="fs-id1170902648181" data-sm="./modules/m58581/index.cnxml:47:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58581/index.cnxml:47:51"><msub data-sm="./modules/m58581/index.cnxml:47:59"><mi data-sm="./modules/m58581/index.cnxml:47:67">E</mi><mi data-sm="./modules/m58581/index.cnxml:47:81">n</mi></msub><mo data-sm="./modules/m58581/index.cnxml:47:104">=</mo><mrow data-sm="./modules/m58581/index.cnxml:47:118"><mo data-sm="./modules/m58581/index.cnxml:47:126">(</mo><mrow data-sm="./modules/m58581/index.cnxml:47:140"><mi data-sm="./modules/m58581/index.cnxml:47:148">n</mi><mo data-sm="./modules/m58581/index.cnxml:47:162">+</mo><mfrac data-sm="./modules/m58581/index.cnxml:47:176"><mn data-sm="./modules/m58581/index.cnxml:47:185">1</mn><mn data-sm="./modules/m58581/index.cnxml:47:199">2</mn></mfrac>
+</mrow>
+<mo data-sm="./modules/m58581/index.cnxml:47:232">)</mo></mrow>
+<mi data-sm="./modules/m58581/index.cnxml:47:255">ℏ</mi><mi data-sm="./modules/m58581/index.cnxml:47:269">ω</mi><mo data-sm="./modules/m58581/index.cnxml:47:283">=</mo><mfrac data-sm="./modules/m58581/index.cnxml:47:297"><mrow data-sm="./modules/m58581/index.cnxml:47:306"><mn data-sm="./modules/m58581/index.cnxml:47:314">2</mn><mi data-sm="./modules/m58581/index.cnxml:47:328">n</mi><mo data-sm="./modules/m58581/index.cnxml:47:342">+</mo><mn data-sm="./modules/m58581/index.cnxml:47:356">1</mn></mrow>
+<mn data-sm="./modules/m58581/index.cnxml:47:379">2</mn></mfrac>
+<mi data-sm="./modules/m58581/index.cnxml:47:403">ℏ</mi><mi data-sm="./modules/m58581/index.cnxml:47:417">ω</mi><mo data-sm="./modules/m58581/index.cnxml:47:431">,</mo><mspace width="0.5em" data-sm="./modules/m58581/index.cnxml:47:445"/><mi data-sm="./modules/m58581/index.cnxml:47:470">n</mi><mo data-sm="./modules/m58581/index.cnxml:47:484">=</mo><mn data-sm="./modules/m58581/index.cnxml:47:498">0</mn><mo data-sm="./modules/m58581/index.cnxml:47:512">,</mo><mn data-sm="./modules/m58581/index.cnxml:47:526">1</mn><mo data-sm="./modules/m58581/index.cnxml:47:540">,</mo><mn data-sm="./modules/m58581/index.cnxml:47:554">2</mn><mo data-sm="./modules/m58581/index.cnxml:47:568">,</mo><mn data-sm="./modules/m58581/index.cnxml:47:582">3</mn><mo data-sm="./modules/m58581/index.cnxml:47:596">,</mo><mo data-sm="./modules/m58581/index.cnxml:47:610">.</mo><mo data-sm="./modules/m58581/index.cnxml:47:624">.</mo><mo data-sm="./modules/m58581/index.cnxml:47:638">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+<div class="os-equation-number">
+  <span class="os-number">7.56</span>
+</div>
+</div>
+</div>
+<p id="fs-id1170902694388" data-sm="./modules/m58581/index.cnxml:49:1">The wave functions that correspond to these energies (the stationary states or states of definite energy) are</p>
+<div data-type="note" id="fs-id1170901904031" class="equation-callout" data-sm="./modules/m58581/index.cnxml:50:1">
+<div data-type="equation" id="fs-id1170901621555" data-sm="./modules/m58581/index.cnxml:51:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58581/index.cnxml:51:51"><msub data-sm="./modules/m58581/index.cnxml:51:59"><mi data-sm="./modules/m58581/index.cnxml:51:67">ψ</mi><mi data-sm="./modules/m58581/index.cnxml:51:81">n</mi></msub><mo stretchy="false" data-sm="./modules/m58581/index.cnxml:51:104">(</mo><mi data-sm="./modules/m58581/index.cnxml:51:135">x</mi><mo stretchy="false" data-sm="./modules/m58581/index.cnxml:51:149">)</mo><mo data-sm="./modules/m58581/index.cnxml:51:180">=</mo><msub data-sm="./modules/m58581/index.cnxml:51:194"><mi data-sm="./modules/m58581/index.cnxml:51:202">N</mi><mi data-sm="./modules/m58581/index.cnxml:51:216">n</mi></msub><msup data-sm="./modules/m58581/index.cnxml:51:239"><mi data-sm="./modules/m58581/index.cnxml:51:247">e</mi><mrow data-sm="./modules/m58581/index.cnxml:51:261"><mtext data-sm="./modules/m58581/index.cnxml:51:269"> </mtext><mo data-sm="./modules/m58581/index.cnxml:51:289">−</mo><msup data-sm="./modules/m58581/index.cnxml:51:303"><mi data-sm="./modules/m58581/index.cnxml:51:311">β</mi><mrow data-sm="./modules/m58581/index.cnxml:51:325"><mtext data-sm="./modules/m58581/index.cnxml:51:333"> </mtext><mn data-sm="./modules/m58581/index.cnxml:51:353">2</mn></mrow></msup><msup data-sm="./modules/m58581/index.cnxml:51:385"><mi data-sm="./modules/m58581/index.cnxml:51:393">x</mi><mrow data-sm="./modules/m58581/index.cnxml:51:407"><mtext data-sm="./modules/m58581/index.cnxml:51:415"> </mtext><mn data-sm="./modules/m58581/index.cnxml:51:435">2</mn></mrow></msup><mtext data-sm="./modules/m58581/index.cnxml:51:467">/</mtext><mn data-sm="./modules/m58581/index.cnxml:51:487">2</mn></mrow></msup><msub data-sm="./modules/m58581/index.cnxml:51:519"><mi data-sm="./modules/m58581/index.cnxml:51:527">H</mi><mi data-sm="./modules/m58581/index.cnxml:51:541">n</mi></msub><mo stretchy="false" data-sm="./modules/m58581/index.cnxml:51:564">(</mo><mi data-sm="./modules/m58581/index.cnxml:51:595">β</mi><mi data-sm="./modules/m58581/index.cnxml:51:609">x</mi><mo stretchy="false" data-sm="./modules/m58581/index.cnxml:51:623">)</mo><mo data-sm="./modules/m58581/index.cnxml:51:654">,</mo><mspace width="0.5em" data-sm="./modules/m58581/index.cnxml:51:668"/><mi data-sm="./modules/m58581/index.cnxml:51:693">n</mi><mo data-sm="./modules/m58581/index.cnxml:51:707">=</mo><mn data-sm="./modules/m58581/index.cnxml:51:721">0</mn><mo data-sm="./modules/m58581/index.cnxml:51:735">,</mo><mn data-sm="./modules/m58581/index.cnxml:51:749">1</mn><mo data-sm="./modules/m58581/index.cnxml:51:763">,</mo><mn data-sm="./modules/m58581/index.cnxml:51:777">2</mn><mo data-sm="./modules/m58581/index.cnxml:51:791">,</mo><mn data-sm="./modules/m58581/index.cnxml:51:805">3</mn><mo data-sm="./modules/m58581/index.cnxml:51:819">,</mo><mo data-sm="./modules/m58581/index.cnxml:51:833">.</mo><mo data-sm="./modules/m58581/index.cnxml:51:847">.</mo><mo data-sm="./modules/m58581/index.cnxml:51:861">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+<div class="os-equation-number">
+  <span class="os-number">7.57</span>
+</div>
+</div>
+</div>
+<p id="fs-id1170902794644" data-sm="./modules/m58581/index.cnxml:53:1">where <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58581/index.cnxml:53:45"><mi data-sm="./modules/m58581/index.cnxml:53:53">β</mi><mo data-sm="./modules/m58581/index.cnxml:53:67">=</mo><msqrt data-sm="./modules/m58581/index.cnxml:53:81"><mrow data-sm="./modules/m58581/index.cnxml:53:90"><mrow data-sm="./modules/m58581/index.cnxml:53:98"><mrow data-sm="./modules/m58581/index.cnxml:53:106"><mi data-sm="./modules/m58581/index.cnxml:53:114">m</mi><mtext data-sm="./modules/m58581/index.cnxml:53:128"> </mtext><mtext data-sm="./modules/m58581/index.cnxml:53:148"> </mtext><mi data-sm="./modules/m58581/index.cnxml:53:168">ω</mi></mrow>
+<mtext data-sm="./modules/m58581/index.cnxml:53:191">/</mtext><mi data-sm="./modules/m58581/index.cnxml:53:211">ℏ</mi></mrow>
+</mrow>
+</msqrt>
+</mrow>
+</mrow>
+</semantics>
+</math></span>, <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58581/index.cnxml:53:281"><msub data-sm="./modules/m58581/index.cnxml:53:289"><mi data-sm="./modules/m58581/index.cnxml:53:297">N</mi><mi data-sm="./modules/m58581/index.cnxml:53:311">n</mi></msub></mrow>
+</mrow>
+</semantics>
+</math></span> is the normalization constant, and <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58581/index.cnxml:53:396"><msub data-sm="./modules/m58581/index.cnxml:53:404"><mi data-sm="./modules/m58581/index.cnxml:53:412">H</mi><mi data-sm="./modules/m58581/index.cnxml:53:426">n</mi></msub><mo stretchy="false" data-sm="./modules/m58581/index.cnxml:53:449">(</mo><mi data-sm="./modules/m58581/index.cnxml:53:480">y</mi><mo stretchy="false" data-sm="./modules/m58581/index.cnxml:53:494">)</mo></mrow>
+</mrow>
+</semantics>
+</math></span> is a polynomial of degree <em data-effect="italics" data-sm="./modules/m58581/index.cnxml:53:570">n</em> called a <span data-type="term" class="no-emphasis" id="term-00001" data-sm="./modules/m58581/index.cnxml:53:619"><em data-effect="italics" data-sm="./modules/m58581/index.cnxml:53:661">Hermite polynomial</em></span>. The first four Hermite polynomials are</p>
+<div data-type="equation" id="fs-id1172098389767" class="unnumbered" data-sm="./modules/m58581/index.cnxml:54:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtable data-sm="./modules/m58581/index.cnxml:54:70"><mtr data-sm="./modules/m58581/index.cnxml:54:80"><mtd columnalign="left" data-sm="./modules/m58581/index.cnxml:54:87"><msub data-sm="./modules/m58581/index.cnxml:54:113"><mi data-sm="./modules/m58581/index.cnxml:54:121">H</mi><mn data-sm="./modules/m58581/index.cnxml:54:135">0</mn></msub><mrow data-sm="./modules/m58581/index.cnxml:54:158"><mo data-sm="./modules/m58581/index.cnxml:54:166">(</mo><mi data-sm="./modules/m58581/index.cnxml:54:180">y</mi><mo data-sm="./modules/m58581/index.cnxml:54:194">)</mo></mrow>
+<mo data-sm="./modules/m58581/index.cnxml:54:217">=</mo><mn data-sm="./modules/m58581/index.cnxml:54:231">1</mn></mtd>
+</mtr>
+<mtr data-sm="./modules/m58581/index.cnxml:54:261"><mtd columnalign="left" data-sm="./modules/m58581/index.cnxml:54:268"><msub data-sm="./modules/m58581/index.cnxml:54:294"><mi data-sm="./modules/m58581/index.cnxml:54:302">H</mi><mn data-sm="./modules/m58581/index.cnxml:54:316">1</mn></msub><mrow data-sm="./modules/m58581/index.cnxml:54:339"><mo data-sm="./modules/m58581/index.cnxml:54:347">(</mo><mi data-sm="./modules/m58581/index.cnxml:54:361">y</mi><mo data-sm="./modules/m58581/index.cnxml:54:375">)</mo></mrow>
+<mo data-sm="./modules/m58581/index.cnxml:54:398">=</mo><mn data-sm="./modules/m58581/index.cnxml:54:412">2</mn><mi data-sm="./modules/m58581/index.cnxml:54:426">y</mi></mtd>
+</mtr>
+<mtr data-sm="./modules/m58581/index.cnxml:54:456"><mtd columnalign="left" data-sm="./modules/m58581/index.cnxml:54:463"><msub data-sm="./modules/m58581/index.cnxml:54:489"><mi data-sm="./modules/m58581/index.cnxml:54:497">H</mi><mn data-sm="./modules/m58581/index.cnxml:54:511">2</mn></msub><mrow data-sm="./modules/m58581/index.cnxml:54:534"><mo data-sm="./modules/m58581/index.cnxml:54:542">(</mo><mi data-sm="./modules/m58581/index.cnxml:54:556">y</mi><mo data-sm="./modules/m58581/index.cnxml:54:570">)</mo></mrow>
+<mo data-sm="./modules/m58581/index.cnxml:54:593">=</mo><mn data-sm="./modules/m58581/index.cnxml:54:607">4</mn><msup data-sm="./modules/m58581/index.cnxml:54:621"><mi data-sm="./modules/m58581/index.cnxml:54:629">y</mi><mn data-sm="./modules/m58581/index.cnxml:54:643">2</mn></msup><mo data-sm="./modules/m58581/index.cnxml:54:666">−</mo><mn data-sm="./modules/m58581/index.cnxml:54:680">2</mn></mtd>
+</mtr>
+<mtr data-sm="./modules/m58581/index.cnxml:54:710"><mtd columnalign="left" data-sm="./modules/m58581/index.cnxml:54:717"><msub data-sm="./modules/m58581/index.cnxml:54:743"><mi data-sm="./modules/m58581/index.cnxml:54:751">H</mi><mn data-sm="./modules/m58581/index.cnxml:54:765">3</mn></msub><mrow data-sm="./modules/m58581/index.cnxml:54:788"><mo data-sm="./modules/m58581/index.cnxml:54:796">(</mo><mi data-sm="./modules/m58581/index.cnxml:54:810">y</mi><mo data-sm="./modules/m58581/index.cnxml:54:824">)</mo></mrow>
+<mo data-sm="./modules/m58581/index.cnxml:54:847">=</mo><mn data-sm="./modules/m58581/index.cnxml:54:861">8</mn><msup data-sm="./modules/m58581/index.cnxml:54:875"><mi data-sm="./modules/m58581/index.cnxml:54:883">y</mi><mn data-sm="./modules/m58581/index.cnxml:54:897">3</mn></msup><mo data-sm="./modules/m58581/index.cnxml:54:920">−</mo><mn data-sm="./modules/m58581/index.cnxml:54:934">12</mn><mi data-sm="./modules/m58581/index.cnxml:54:949">y</mi><mo data-sm="./modules/m58581/index.cnxml:54:963">.</mo></mtd>
+</mtr>
+</mtable>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1170901706149" data-sm="./modules/m58581/index.cnxml:55:1">A few sample wave functions are given in <a href="#CNX_UPhysics_40_05_states" data-sm="./modules/m58581/index.cnxml:55:72" class="autogenerated-content">Figure 7.14</a>. As the value of the principal number increases, the solutions alternate between even functions and odd functions about <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58581/index.cnxml:55:246"><mi data-sm="./modules/m58581/index.cnxml:55:254">x</mi><mo data-sm="./modules/m58581/index.cnxml:55:268">=</mo><mn data-sm="./modules/m58581/index.cnxml:55:282">0</mn></mrow>
+</mrow>
+</semantics>
+</math></span>.</p>
+<div class="os-figure"><figure id="CNX_UPhysics_40_05_states" data-sm="./modules/m58581/index.cnxml:56:1">
+<span data-type="media" id="fs-id1170902887468" data-alt="The harmonic potential V of x and the wave functions for the n=0 through n=4 quantum states of the potential are shown. Each wave function is displaced vertically by its energy, measured in units of h nu sub zero. The vertical energy scale runs from 0 to 5. The potential V of x is an upward opening parabola, centered and equal to zero at x = 0. The region below the curve, outside the potential, is shaded. The energy levels are indicated by horizontal dashed lines and are regularly spaced at energy of 0.5, 1.2, 2.5, 3.5 and 4.5 h nu sub 0. The n=0 state is even. It is symmetric, positive and peaked at x=0. The n = 1 state is odd. It is negative for x less than zero, positive for x greater than zero, zero at the origin. It has one negative minimum and one positive minimum. The n=2 state is even. It is symmetric, with a negative minimum at x=0 and two positive maxima, one at positive x and the other at negative x. The n = 3 state is odd. It is zero at the origin. It has, from left to right, a negative minimum and positive maximum on the left of the origin, then a positive maximum and negative minimum to the right of the origin. The n=4 state is even. It has a maximum at the origin, a negative minimum on either side, and a positive maximum outside of the minima. All of the states are clearly nonzero in the shaded region and go asymptotically to zero as x goes to plus and minus infinity. The minima and maxima are all inside the potential, in the unshaded region. Vertical dashed lines show the values of x where the potential is equal to the energy of the state, that is, where the horizontal dashed lines cross the V of x curve." data-sm="./modules/m58581/index.cnxml:57:1">
+<img src="da589c2ca5119faabbadedab0abc12cdb56f0166.jpeg" data-media-type="image/jpeg" alt="The harmonic potential V of x and the wave functions for the n=0 through n=4 quantum states of the potential are shown. Each wave function is displaced vertically by its energy, measured in units of h nu sub zero. The vertical energy scale runs from 0 to 5. The potential V of x is an upward opening parabola, centered and equal to zero at x = 0. The region below the curve, outside the potential, is shaded. The energy levels are indicated by horizontal dashed lines and are regularly spaced at energy of 0.5, 1.2, 2.5, 3.5 and 4.5 h nu sub 0. The n=0 state is even. It is symmetric, positive and peaked at x=0. The n = 1 state is odd. It is negative for x less than zero, positive for x greater than zero, zero at the origin. It has one negative minimum and one positive minimum. The n=2 state is even. It is symmetric, with a negative minimum at x=0 and two positive maxima, one at positive x and the other at negative x. The n = 3 state is odd. It is zero at the origin. It has, from left to right, a negative minimum and positive maximum on the left of the origin, then a positive maximum and negative minimum to the right of the origin. The n=4 state is even. It has a maximum at the origin, a negative minimum on either side, and a positive maximum outside of the minima. All of the states are clearly nonzero in the shaded region and go asymptotically to zero as x goes to plus and minus infinity. The minima and maxima are all inside the potential, in the unshaded region. Vertical dashed lines show the values of x where the potential is equal to the energy of the state, that is, where the horizontal dashed lines cross the V of x curve." data-sm="./modules/m58581/index.cnxml:58:1"/>
+</span>
+
+</figure>
+<div class="os-caption-container">
+  <span class="os-title-label">Figure </span>
+<span class="os-number">7.14</span>
+
+
+
+  <span class="os-divider"> </span>
+  <span data-sm="./modules/m58581/index.cnxml:60:1" class="os-caption">The first five wave functions of the quantum harmonic oscillator. The classical limits of the oscillator’s motion are indicated by vertical lines, corresponding to the classical turning points at <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58581/index.cnxml:60:214"><mi data-sm="./modules/m58581/index.cnxml:60:222">x</mi><mo data-sm="./modules/m58581/index.cnxml:60:236">=</mo><mtext data-sm="./modules/m58581/index.cnxml:60:250">±</mtext><mi data-sm="./modules/m58581/index.cnxml:60:270">A</mi></mrow>
+</mrow>
+</semantics>
+</math> of a classical particle with the same energy as the energy of a quantum oscillator in the state indicated in the figure.</span>
+</div>
+</div>
+<div data-type="example" id="fs-id1170902887076" data-sm="./modules/m58581/index.cnxml:62:1"><h3 class="os-title">
+  <span class="os-title-label">Example </span>
+  <span class="os-number">7.10</span>
+  <span class="os-divider"> </span>
+</h3>
+<div class="body">
+<p id="fs-id1170902659505" data-sm="./modules/m58581/index.cnxml:63:1"></p>
+<h4 data-type="title" data-sm="./modules/m58581/index.cnxml:63:31">Classical Region of Harmonic Oscillations</h4>
+Find the amplitude <em data-effect="italics" data-sm="./modules/m58581/index.cnxml:64:20">A</em> of oscillations for a classical oscillator with energy equal to the energy of a quantum oscillator in the quantum state <em data-effect="italics" data-sm="./modules/m58581/index.cnxml:64:180">n</em>.
+<p id="fs-id1170901762598" data-sm="./modules/m58581/index.cnxml:65:1"></p>
+<h4 data-type="title" data-sm="./modules/m58581/index.cnxml:65:31">Strategy</h4>
+To determine the amplitude <em data-effect="italics" data-sm="./modules/m58581/index.cnxml:66:28">A</em>, we set the classical energy <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58581/index.cnxml:66:105"><mi data-sm="./modules/m58581/index.cnxml:66:113">E</mi><mo data-sm="./modules/m58581/index.cnxml:66:127">=</mo><mrow data-sm="./modules/m58581/index.cnxml:66:141"><mrow data-sm="./modules/m58581/index.cnxml:66:149"><mi data-sm="./modules/m58581/index.cnxml:66:157">k</mi><msup data-sm="./modules/m58581/index.cnxml:66:171"><mi data-sm="./modules/m58581/index.cnxml:66:179">x</mi><mn data-sm="./modules/m58581/index.cnxml:66:193">2</mn></msup></mrow>
+<mtext data-sm="./modules/m58581/index.cnxml:66:225">/</mtext><mn data-sm="./modules/m58581/index.cnxml:66:245">2</mn></mrow>
+<mo data-sm="./modules/m58581/index.cnxml:66:268">=</mo><mrow data-sm="./modules/m58581/index.cnxml:66:282"><mrow data-sm="./modules/m58581/index.cnxml:66:290"><mi data-sm="./modules/m58581/index.cnxml:66:298">m</mi><mtext data-sm="./modules/m58581/index.cnxml:66:312"> </mtext><msup data-sm="./modules/m58581/index.cnxml:66:332"><mi data-sm="./modules/m58581/index.cnxml:66:340">ω</mi><mn data-sm="./modules/m58581/index.cnxml:66:354">2</mn></msup><msup data-sm="./modules/m58581/index.cnxml:66:377"><mi data-sm="./modules/m58581/index.cnxml:66:385">A</mi><mn data-sm="./modules/m58581/index.cnxml:66:399">2</mn></msup></mrow>
+<mtext data-sm="./modules/m58581/index.cnxml:66:431">/</mtext><mn data-sm="./modules/m58581/index.cnxml:66:451">2</mn></mrow>
+</mrow>
+</mrow>
+</semantics>
+</math></span> equal to <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58581/index.cnxml:66:510"><msub data-sm="./modules/m58581/index.cnxml:66:518"><mi data-sm="./modules/m58581/index.cnxml:66:526">E</mi><mi data-sm="./modules/m58581/index.cnxml:66:540">n</mi></msub></mrow>
+</mrow>
+</semantics>
+</math></span> given by <a href="#fs-id1170902648181" data-sm="./modules/m58581/index.cnxml:66:591" class="autogenerated-content">Equation 7.56</a>.
+<p id="fs-id1170901808304" data-sm="./modules/m58581/index.cnxml:67:1"></p>
+<h4 data-type="title" data-sm="./modules/m58581/index.cnxml:67:31">Solution</h4>
+We obtain
+<div data-type="equation" id="fs-id1170902651294" class="unnumbered" data-sm="./modules/m58581/index.cnxml:69:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58581/index.cnxml:69:70"><msub data-sm="./modules/m58581/index.cnxml:69:78"><mi data-sm="./modules/m58581/index.cnxml:69:86">E</mi><mi data-sm="./modules/m58581/index.cnxml:69:100">n</mi></msub><mo data-sm="./modules/m58581/index.cnxml:69:123">=</mo><mrow data-sm="./modules/m58581/index.cnxml:69:137"><mrow data-sm="./modules/m58581/index.cnxml:69:145"><mi data-sm="./modules/m58581/index.cnxml:69:153">m</mi><mtext data-sm="./modules/m58581/index.cnxml:69:167"> </mtext><msup data-sm="./modules/m58581/index.cnxml:69:187"><mi data-sm="./modules/m58581/index.cnxml:69:195">ω</mi><mn data-sm="./modules/m58581/index.cnxml:69:209">2</mn></msup><msubsup data-sm="./modules/m58581/index.cnxml:69:232"><mi data-sm="./modules/m58581/index.cnxml:69:243">A</mi><mi data-sm="./modules/m58581/index.cnxml:69:257">n</mi><mrow data-sm="./modules/m58581/index.cnxml:69:271"><mtext data-sm="./modules/m58581/index.cnxml:69:279"> </mtext><mn data-sm="./modules/m58581/index.cnxml:69:299">2</mn></mrow></msubsup></mrow>
+<mtext data-sm="./modules/m58581/index.cnxml:69:343">/</mtext><mn data-sm="./modules/m58581/index.cnxml:69:363">2</mn></mrow>
+<mspace width="0.5em" data-sm="./modules/m58581/index.cnxml:69:386"/><mo stretchy="false" data-sm="./modules/m58581/index.cnxml:69:411">⇒</mo><mspace width="0.5em" data-sm="./modules/m58581/index.cnxml:69:442"/><msub data-sm="./modules/m58581/index.cnxml:69:467"><mi data-sm="./modules/m58581/index.cnxml:69:475">A</mi><mi data-sm="./modules/m58581/index.cnxml:69:489">n</mi></msub><mo data-sm="./modules/m58581/index.cnxml:69:512">=</mo><msqrt data-sm="./modules/m58581/index.cnxml:69:526"><mrow data-sm="./modules/m58581/index.cnxml:69:535"><mfrac data-sm="./modules/m58581/index.cnxml:69:543"><mn data-sm="./modules/m58581/index.cnxml:69:552">2</mn><mrow data-sm="./modules/m58581/index.cnxml:69:566"><mi data-sm="./modules/m58581/index.cnxml:69:574">m</mi><mtext data-sm="./modules/m58581/index.cnxml:69:588"> </mtext><msup data-sm="./modules/m58581/index.cnxml:69:608"><mi data-sm="./modules/m58581/index.cnxml:69:616">ω</mi><mrow data-sm="./modules/m58581/index.cnxml:69:630"><mtext data-sm="./modules/m58581/index.cnxml:69:638"> </mtext><mn data-sm="./modules/m58581/index.cnxml:69:658">2</mn></mrow></msup></mrow>
+</mfrac>
+<msub data-sm="./modules/m58581/index.cnxml:69:709"><mi data-sm="./modules/m58581/index.cnxml:69:717">E</mi><mi data-sm="./modules/m58581/index.cnxml:69:731">n</mi></msub></mrow>
+</msqrt>
+<mo data-sm="./modules/m58581/index.cnxml:69:773">=</mo><msqrt data-sm="./modules/m58581/index.cnxml:69:787"><mrow data-sm="./modules/m58581/index.cnxml:69:796"><mfrac data-sm="./modules/m58581/index.cnxml:69:804"><mn data-sm="./modules/m58581/index.cnxml:69:813">2</mn><mrow data-sm="./modules/m58581/index.cnxml:69:827"><mi data-sm="./modules/m58581/index.cnxml:69:835">m</mi><mtext data-sm="./modules/m58581/index.cnxml:69:849"> </mtext><msup data-sm="./modules/m58581/index.cnxml:69:869"><mi data-sm="./modules/m58581/index.cnxml:69:877">ω</mi><mrow data-sm="./modules/m58581/index.cnxml:69:891"><mtext data-sm="./modules/m58581/index.cnxml:69:899"> </mtext><mn data-sm="./modules/m58581/index.cnxml:69:919">2</mn></mrow></msup></mrow>
+</mfrac>
+<mspace width="0.2em" data-sm="./modules/m58581/index.cnxml:69:970"/><mfrac data-sm="./modules/m58581/index.cnxml:69:995"><mrow data-sm="./modules/m58581/index.cnxml:69:1004"><mn data-sm="./modules/m58581/index.cnxml:69:1012">2</mn><mi data-sm="./modules/m58581/index.cnxml:69:1026">n</mi><mo data-sm="./modules/m58581/index.cnxml:69:1040">+</mo><mn data-sm="./modules/m58581/index.cnxml:69:1054">1</mn></mrow>
+<mn data-sm="./modules/m58581/index.cnxml:69:1077">2</mn></mfrac>
+<mi data-sm="./modules/m58581/index.cnxml:69:1101">ℏ</mi><mi data-sm="./modules/m58581/index.cnxml:69:1115">ω</mi></mrow>
+</msqrt>
+<mo data-sm="./modules/m58581/index.cnxml:69:1148">=</mo><msqrt data-sm="./modules/m58581/index.cnxml:69:1162"><mrow data-sm="./modules/m58581/index.cnxml:69:1171"><mo stretchy="false" data-sm="./modules/m58581/index.cnxml:69:1179">(</mo><mn data-sm="./modules/m58581/index.cnxml:69:1210">2</mn><mi data-sm="./modules/m58581/index.cnxml:69:1224">n</mi><mo data-sm="./modules/m58581/index.cnxml:69:1238">+</mo><mn data-sm="./modules/m58581/index.cnxml:69:1252">1</mn><mo stretchy="false" data-sm="./modules/m58581/index.cnxml:69:1266">)</mo><mfrac data-sm="./modules/m58581/index.cnxml:69:1297"><mi data-sm="./modules/m58581/index.cnxml:69:1306">ℏ</mi><mrow data-sm="./modules/m58581/index.cnxml:69:1320"><mi data-sm="./modules/m58581/index.cnxml:69:1328">m</mi><mtext data-sm="./modules/m58581/index.cnxml:69:1342"> </mtext><mi data-sm="./modules/m58581/index.cnxml:69:1362">ω</mi></mrow>
+</mfrac>
+</mrow>
+</msqrt>
+<mo data-sm="./modules/m58581/index.cnxml:69:1414">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1170902865850" data-sm="./modules/m58581/index.cnxml:70:1"></p>
+<h4 data-type="title" data-sm="./modules/m58581/index.cnxml:70:31">Significance</h4>
+As the quantum number <em data-effect="italics" data-sm="./modules/m58581/index.cnxml:71:23">n</em> increases, the energy of the oscillator and therefore the amplitude of oscillation increases (for a fixed natural angular frequency. For large <em data-effect="italics" data-sm="./modules/m58581/index.cnxml:71:206">n</em>, the amplitude is approximately proportional to the square root of the quantum number.
+</div>
+</div>
+<p id="fs-id1170902781309" data-sm="./modules/m58581/index.cnxml:73:1">Several interesting features appear in this solution. Unlike a classical oscillator, the measured energies of a quantum oscillator can have only energy values given by <a href="#fs-id1170902648181" data-sm="./modules/m58581/index.cnxml:73:199" class="autogenerated-content">Equation 7.56</a>. Moreover, unlike the case for a quantum particle in a box, the allowable energy levels are evenly spaced,</p>
+<div data-type="equation" id="fs-id1170901634861" data-sm="./modules/m58581/index.cnxml:74:1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58581/index.cnxml:74:43"><mtext data-sm="./modules/m58581/index.cnxml:74:51">Δ</mtext><mi data-sm="./modules/m58581/index.cnxml:74:71">E</mi><mo data-sm="./modules/m58581/index.cnxml:74:85">=</mo><msub data-sm="./modules/m58581/index.cnxml:74:99"><mi data-sm="./modules/m58581/index.cnxml:74:107">E</mi><mrow data-sm="./modules/m58581/index.cnxml:74:121"><mi data-sm="./modules/m58581/index.cnxml:74:129">n</mi><mo data-sm="./modules/m58581/index.cnxml:74:143">+</mo><mn data-sm="./modules/m58581/index.cnxml:74:157">1</mn></mrow></msub><mo data-sm="./modules/m58581/index.cnxml:74:189">−</mo><msub data-sm="./modules/m58581/index.cnxml:74:203"><mi data-sm="./modules/m58581/index.cnxml:74:211">E</mi><mi data-sm="./modules/m58581/index.cnxml:74:225">n</mi></msub><mo data-sm="./modules/m58581/index.cnxml:74:248">=</mo><mfrac data-sm="./modules/m58581/index.cnxml:74:262"><mrow data-sm="./modules/m58581/index.cnxml:74:271"><mn data-sm="./modules/m58581/index.cnxml:74:279">2</mn><mo stretchy="false" data-sm="./modules/m58581/index.cnxml:74:293">(</mo><mi data-sm="./modules/m58581/index.cnxml:74:324">n</mi><mo data-sm="./modules/m58581/index.cnxml:74:338">+</mo><mn data-sm="./modules/m58581/index.cnxml:74:352">1</mn><mo stretchy="false" data-sm="./modules/m58581/index.cnxml:74:366">)</mo><mo data-sm="./modules/m58581/index.cnxml:74:397">+</mo><mn data-sm="./modules/m58581/index.cnxml:74:411">1</mn></mrow>
+<mn data-sm="./modules/m58581/index.cnxml:74:434">2</mn></mfrac>
+<mi data-sm="./modules/m58581/index.cnxml:74:458">ℏ</mi><mi data-sm="./modules/m58581/index.cnxml:74:472">ω</mi><mo data-sm="./modules/m58581/index.cnxml:74:486">−</mo><mfrac data-sm="./modules/m58581/index.cnxml:74:500"><mrow data-sm="./modules/m58581/index.cnxml:74:509"><mn data-sm="./modules/m58581/index.cnxml:74:517">2</mn><mi data-sm="./modules/m58581/index.cnxml:74:531">n</mi><mo data-sm="./modules/m58581/index.cnxml:74:545">+</mo><mn data-sm="./modules/m58581/index.cnxml:74:559">1</mn></mrow>
+<mn data-sm="./modules/m58581/index.cnxml:74:582">2</mn></mfrac>
+<mi data-sm="./modules/m58581/index.cnxml:74:606">ℏ</mi><mi data-sm="./modules/m58581/index.cnxml:74:620">ω</mi><mo data-sm="./modules/m58581/index.cnxml:74:634">=</mo><mi data-sm="./modules/m58581/index.cnxml:74:648">ℏ</mi><mi data-sm="./modules/m58581/index.cnxml:74:662">ω</mi><mo data-sm="./modules/m58581/index.cnxml:74:676">=</mo><mi data-sm="./modules/m58581/index.cnxml:74:690">h</mi><mtext data-sm="./modules/m58581/index.cnxml:74:704"> </mtext><mi data-sm="./modules/m58581/index.cnxml:74:724">f</mi><mo data-sm="./modules/m58581/index.cnxml:74:738">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+<div class="os-equation-number">
+  <span class="os-number">7.58</span>
+</div>
+</div>
+<p id="fs-id1170901741659" data-sm="./modules/m58581/index.cnxml:75:1">When a particle bound to such a system makes a transition from a higher-energy state to a lower-energy state, the smallest-energy quantum carried by the emitted photon is necessarily <em data-effect="italics" data-sm="./modules/m58581/index.cnxml:75:214">hf</em>. Similarly, when the particle makes a transition from a lower-energy state to a higher-energy state, the smallest-energy quantum that can be absorbed by the particle is <em data-effect="italics" data-sm="./modules/m58581/index.cnxml:75:424">hf</em>. A quantum oscillator can absorb or emit energy only in multiples of this smallest-energy quantum. This is consistent with Planck’s hypothesis for the energy exchanges between radiation and the cavity walls in the blackbody radiation problem.</p>
+<div data-type="example" id="fs-id1170903077670" data-sm="./modules/m58581/index.cnxml:76:1"><h3 class="os-title">
+  <span class="os-title-label">Example </span>
+  <span class="os-number">7.11</span>
+  <span class="os-divider"> </span>
+</h3>
+<div class="body">
+<p id="fs-id1170902872043" data-sm="./modules/m58581/index.cnxml:77:1"></p>
+<h4 data-type="title" data-sm="./modules/m58581/index.cnxml:77:31">Vibrational Energies of the Hydrogen Chloride Molecule</h4>
+The HCl diatomic molecule consists of one chlorine atom and one hydrogen atom. Because the chlorine atom is 35 times more massive than the hydrogen atom, the vibrations of the HCl molecule can be quite well approximated by assuming that the Cl atom is motionless and the H atom performs harmonic oscillations due to an elastic molecular force modeled by Hooke’s law. The infrared vibrational spectrum measured for hydrogen chloride has the lowest-frequency line centered at <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58581/index.cnxml:77:582"><mi data-sm="./modules/m58581/index.cnxml:77:590">f</mi><mo data-sm="./modules/m58581/index.cnxml:77:604">=</mo><mn data-sm="./modules/m58581/index.cnxml:77:618">8.88</mn><mspace width="0.2em" data-sm="./modules/m58581/index.cnxml:77:635"/><mo data-sm="./modules/m58581/index.cnxml:77:660">×</mo><mspace width="0.2em" data-sm="./modules/m58581/index.cnxml:77:674"/><msup data-sm="./modules/m58581/index.cnxml:77:699"><mrow data-sm="./modules/m58581/index.cnxml:77:707"><mn data-sm="./modules/m58581/index.cnxml:77:715">10</mn></mrow><mrow data-sm="./modules/m58581/index.cnxml:77:739"><mtext data-sm="./modules/m58581/index.cnxml:77:747"> </mtext><mn data-sm="./modules/m58581/index.cnxml:77:767">13</mn></mrow></msup><mspace width="0.2em" data-sm="./modules/m58581/index.cnxml:77:800"/><mtext data-sm="./modules/m58581/index.cnxml:77:825">Hz</mtext></mrow>
+</mrow>
+</semantics>
+</math></span>. What is the spacing between the vibrational energies of this molecule? What is the force constant <em data-effect="italics" data-sm="./modules/m58581/index.cnxml:77:964">k</em> of the atomic bond in the HCl molecule?<p id="fs-id1170902033299" data-sm="./modules/m58581/index.cnxml:77:1050"></p>
+<h4 data-type="title" data-sm="./modules/m58581/index.cnxml:77:1080">Strategy</h4>
+The lowest-frequency line corresponds to the emission of lowest-frequency photons. These photons are emitted when the molecule makes a transition between two adjacent vibrational energy levels. Assuming that energy levels are equally spaced, we use <a href="#fs-id1170901634861" data-sm="./modules/m58581/index.cnxml:78:250" class="autogenerated-content">Equation 7.58</a> to estimate the spacing. The molecule is well approximated by treating the Cl atom as being infinitely heavy and the H atom as the mass <em data-effect="italics" data-sm="./modules/m58581/index.cnxml:78:425">m</em> that performs the oscillations. Treating this molecular system as a classical oscillator, the force constant is found from the classical relation <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58581/index.cnxml:78:619"><mi data-sm="./modules/m58581/index.cnxml:78:627">k</mi><mo data-sm="./modules/m58581/index.cnxml:78:641">=</mo><mi data-sm="./modules/m58581/index.cnxml:78:655">m</mi><mtext data-sm="./modules/m58581/index.cnxml:78:669"> </mtext><msup data-sm="./modules/m58581/index.cnxml:78:689"><mi data-sm="./modules/m58581/index.cnxml:78:697">ω</mi><mrow data-sm="./modules/m58581/index.cnxml:78:711"><mtext data-sm="./modules/m58581/index.cnxml:78:719"> </mtext><mn data-sm="./modules/m58581/index.cnxml:78:739">2</mn></mrow></msup></mrow>
+</mrow>
+</semantics>
+</math></span>.
+<p id="fs-id1170902689148" data-sm="./modules/m58581/index.cnxml:79:1"></p>
+<h4 data-type="title" data-sm="./modules/m58581/index.cnxml:79:31">Solution</h4>
+The energy spacing is
+<div data-type="equation" id="fs-id1170901582615" class="unnumbered" data-sm="./modules/m58581/index.cnxml:81:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58581/index.cnxml:81:70"><mtext data-sm="./modules/m58581/index.cnxml:81:78">Δ</mtext><mi data-sm="./modules/m58581/index.cnxml:81:98">E</mi><mo data-sm="./modules/m58581/index.cnxml:81:112">=</mo><mi data-sm="./modules/m58581/index.cnxml:81:126">h</mi><mtext data-sm="./modules/m58581/index.cnxml:81:140"> </mtext><mi data-sm="./modules/m58581/index.cnxml:81:160">f</mi><mo data-sm="./modules/m58581/index.cnxml:81:174">=</mo><mo stretchy="false" data-sm="./modules/m58581/index.cnxml:81:188">(</mo><mn data-sm="./modules/m58581/index.cnxml:81:219">4.14</mn><mspace width="0.2em" data-sm="./modules/m58581/index.cnxml:81:236"/><mo data-sm="./modules/m58581/index.cnxml:81:261">×</mo><mspace width="0.2em" data-sm="./modules/m58581/index.cnxml:81:275"/><msup data-sm="./modules/m58581/index.cnxml:81:300"><mrow data-sm="./modules/m58581/index.cnxml:81:308"><mn data-sm="./modules/m58581/index.cnxml:81:316">10</mn></mrow><mrow data-sm="./modules/m58581/index.cnxml:81:340"><mtext data-sm="./modules/m58581/index.cnxml:81:348"> </mtext><mo data-sm="./modules/m58581/index.cnxml:81:368">−</mo><mn data-sm="./modules/m58581/index.cnxml:81:382">15</mn></mrow></msup><mtext data-sm="./modules/m58581/index.cnxml:81:415">eV</mtext><mo data-sm="./modules/m58581/index.cnxml:81:436">·</mo><mtext data-sm="./modules/m58581/index.cnxml:81:450">s</mtext><mo stretchy="false" data-sm="./modules/m58581/index.cnxml:81:470">)</mo><mo stretchy="false" data-sm="./modules/m58581/index.cnxml:81:501">(</mo><mn data-sm="./modules/m58581/index.cnxml:81:532">8.88</mn><mspace width="0.2em" data-sm="./modules/m58581/index.cnxml:81:549"/><mo data-sm="./modules/m58581/index.cnxml:81:574">×</mo><mspace width="0.2em" data-sm="./modules/m58581/index.cnxml:81:588"/><msup data-sm="./modules/m58581/index.cnxml:81:613"><mrow data-sm="./modules/m58581/index.cnxml:81:621"><mn data-sm="./modules/m58581/index.cnxml:81:629">10</mn></mrow><mrow data-sm="./modules/m58581/index.cnxml:81:653"><mtext data-sm="./modules/m58581/index.cnxml:81:661"> </mtext><mn data-sm="./modules/m58581/index.cnxml:81:681">13</mn></mrow></msup><mspace width="0.2em" data-sm="./modules/m58581/index.cnxml:81:714"/><mtext data-sm="./modules/m58581/index.cnxml:81:739">Hz</mtext><mo stretchy="false" data-sm="./modules/m58581/index.cnxml:81:760">)</mo><mo data-sm="./modules/m58581/index.cnxml:81:791">=</mo><mn data-sm="./modules/m58581/index.cnxml:81:805">0.368</mn><mspace width="0.2em" data-sm="./modules/m58581/index.cnxml:81:823"/><mtext data-sm="./modules/m58581/index.cnxml:81:848">eV</mtext><mtext data-sm="./modules/m58581/index.cnxml:81:869">.</mtext></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1170899367915" data-sm="./modules/m58581/index.cnxml:82:1">The force constant is</p>
+<div data-type="equation" id="fs-id1170901928550" class="unnumbered" data-sm="./modules/m58581/index.cnxml:83:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58581/index.cnxml:83:70"><mi data-sm="./modules/m58581/index.cnxml:83:78">k</mi><mo data-sm="./modules/m58581/index.cnxml:83:92">=</mo><mi data-sm="./modules/m58581/index.cnxml:83:106">m</mi><mtext data-sm="./modules/m58581/index.cnxml:83:120"> </mtext><msup data-sm="./modules/m58581/index.cnxml:83:140"><mi data-sm="./modules/m58581/index.cnxml:83:148">ω</mi><mrow data-sm="./modules/m58581/index.cnxml:83:162"><mtext data-sm="./modules/m58581/index.cnxml:83:170"> </mtext><mn data-sm="./modules/m58581/index.cnxml:83:190">2</mn></mrow></msup><mo data-sm="./modules/m58581/index.cnxml:83:222">=</mo><mi data-sm="./modules/m58581/index.cnxml:83:236">m</mi><mtext data-sm="./modules/m58581/index.cnxml:83:250"> </mtext><msup data-sm="./modules/m58581/index.cnxml:83:270"><mrow data-sm="./modules/m58581/index.cnxml:83:278"><mo stretchy="false" data-sm="./modules/m58581/index.cnxml:83:286">(</mo><mn data-sm="./modules/m58581/index.cnxml:83:317">2</mn><mi data-sm="./modules/m58581/index.cnxml:83:331">π</mi><mi data-sm="./modules/m58581/index.cnxml:83:345">f</mi><mo stretchy="false" data-sm="./modules/m58581/index.cnxml:83:359">)</mo></mrow><mn data-sm="./modules/m58581/index.cnxml:83:399">2</mn></msup><mo data-sm="./modules/m58581/index.cnxml:83:422">=</mo><mo stretchy="false" data-sm="./modules/m58581/index.cnxml:83:436">(</mo><mn data-sm="./modules/m58581/index.cnxml:83:467">1.67</mn><mspace width="0.2em" data-sm="./modules/m58581/index.cnxml:83:484"/><mo data-sm="./modules/m58581/index.cnxml:83:509">×</mo><mspace width="0.2em" data-sm="./modules/m58581/index.cnxml:83:523"/><msup data-sm="./modules/m58581/index.cnxml:83:548"><mrow data-sm="./modules/m58581/index.cnxml:83:556"><mn data-sm="./modules/m58581/index.cnxml:83:564">10</mn></mrow><mrow data-sm="./modules/m58581/index.cnxml:83:588"><mtext data-sm="./modules/m58581/index.cnxml:83:596"> </mtext><mo data-sm="./modules/m58581/index.cnxml:83:616">−</mo><mn data-sm="./modules/m58581/index.cnxml:83:630">27</mn></mrow></msup><mspace width="0.2em" data-sm="./modules/m58581/index.cnxml:83:663"/><mtext data-sm="./modules/m58581/index.cnxml:83:688">kg</mtext><mo stretchy="false" data-sm="./modules/m58581/index.cnxml:83:709">)</mo><msup data-sm="./modules/m58581/index.cnxml:83:740"><mrow data-sm="./modules/m58581/index.cnxml:83:748"><mo stretchy="false" data-sm="./modules/m58581/index.cnxml:83:756">(</mo><mn data-sm="./modules/m58581/index.cnxml:83:787">2</mn><mi data-sm="./modules/m58581/index.cnxml:83:801">π</mi><mspace width="0.2em" data-sm="./modules/m58581/index.cnxml:83:815"/><mo data-sm="./modules/m58581/index.cnxml:83:840">×</mo><mspace width="0.2em" data-sm="./modules/m58581/index.cnxml:83:854"/><mn data-sm="./modules/m58581/index.cnxml:83:879">8.88</mn><mspace width="0.2em" data-sm="./modules/m58581/index.cnxml:83:896"/><mo data-sm="./modules/m58581/index.cnxml:83:921">×</mo><mspace width="0.2em" data-sm="./modules/m58581/index.cnxml:83:935"/><msup data-sm="./modules/m58581/index.cnxml:83:960"><mrow data-sm="./modules/m58581/index.cnxml:83:968"><mn data-sm="./modules/m58581/index.cnxml:83:976">10</mn></mrow><mrow data-sm="./modules/m58581/index.cnxml:83:1000"><mtext data-sm="./modules/m58581/index.cnxml:83:1008"> </mtext><mn data-sm="./modules/m58581/index.cnxml:83:1028">13</mn></mrow></msup><mspace width="0.2em" data-sm="./modules/m58581/index.cnxml:83:1061"/><mtext data-sm="./modules/m58581/index.cnxml:83:1086">Hz</mtext><mo stretchy="false" data-sm="./modules/m58581/index.cnxml:83:1107">)</mo></mrow><mn data-sm="./modules/m58581/index.cnxml:83:1147">2</mn></msup><mo data-sm="./modules/m58581/index.cnxml:83:1170">=</mo><mn data-sm="./modules/m58581/index.cnxml:83:1184">520</mn><mspace width="0.2em" data-sm="./modules/m58581/index.cnxml:83:1200"/><mrow data-sm="./modules/m58581/index.cnxml:83:1225"><mrow data-sm="./modules/m58581/index.cnxml:83:1233"><mtext data-sm="./modules/m58581/index.cnxml:83:1241">N</mtext></mrow>
+<mtext data-sm="./modules/m58581/index.cnxml:83:1270">/</mtext><mtext data-sm="./modules/m58581/index.cnxml:83:1290">m</mtext></mrow>
+<mo data-sm="./modules/m58581/index.cnxml:83:1319">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1170902924267" data-sm="./modules/m58581/index.cnxml:84:1"></p>
+<h4 data-type="title" data-sm="./modules/m58581/index.cnxml:84:31">Significance</h4>
+The force between atoms in an HCl molecule is surprisingly strong. The typical energy released in energy transitions between vibrational levels is in the infrared range. As we will see later, transitions in between vibrational energy levels of a diatomic molecule often accompany transitions between rotational energy levels.
+</div>
+</div>
+<div data-type="note" id="fs-id1170903035061" class="check-understanding" data-sm="./modules/m58581/index.cnxml:87:1"><h3 class="os-title">
+  <span class="os-title-label">Check Your Understanding </span>
+  <span class="os-number">7.8</span>
+  <span class="os-divider"> </span>
+</h3>
+<div class="os-note-body">
+<div data-type="exercise" id="fs-id1170902659909" data-sm="./modules/m58581/index.cnxml:88:1" class="unnumbered os-hasSolution">
+<div data-type="problem" id="fs-id1170901585139" data-sm="./modules/m58581/index.cnxml:89:1"><div class="os-problem-container">
+<p id="fs-id1170901481467" data-sm="./modules/m58581/index.cnxml:90:1">The vibrational frequency of the hydrogen iodide HI diatomic molecule is <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58581/index.cnxml:90:112"><mn data-sm="./modules/m58581/index.cnxml:90:120">6.69</mn><mspace width="0.2em" data-sm="./modules/m58581/index.cnxml:90:137"/><mo data-sm="./modules/m58581/index.cnxml:90:162">×</mo><mspace width="0.2em" data-sm="./modules/m58581/index.cnxml:90:176"/><msup data-sm="./modules/m58581/index.cnxml:90:201"><mrow data-sm="./modules/m58581/index.cnxml:90:209"><mn data-sm="./modules/m58581/index.cnxml:90:217">10</mn></mrow><mrow data-sm="./modules/m58581/index.cnxml:90:241"><mtext data-sm="./modules/m58581/index.cnxml:90:249"> </mtext><mn data-sm="./modules/m58581/index.cnxml:90:269">13</mn></mrow></msup><mspace width="0.2em" data-sm="./modules/m58581/index.cnxml:90:302"/><mtext data-sm="./modules/m58581/index.cnxml:90:327">Hz</mtext></mrow>
+</mrow>
+</semantics>
+</math></span>. (a) What is the force constant of the molecular bond between the hydrogen and the iodine atoms? (b) What is the energy of the emitted photon when this molecule makes a transition between adjacent vibrational energy levels?</p>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+<p id="fs-id1170899253161" data-sm="./modules/m58581/index.cnxml:97:1">The quantum oscillator differs from the classic oscillator in three ways:</p>
+<p id="fs-id1170903141920" data-sm="./modules/m58581/index.cnxml:98:1">First, the ground state of a quantum oscillator is <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58581/index.cnxml:98:90"><msub data-sm="./modules/m58581/index.cnxml:98:98"><mi data-sm="./modules/m58581/index.cnxml:98:106">E</mi><mn data-sm="./modules/m58581/index.cnxml:98:120">0</mn></msub><mo data-sm="./modules/m58581/index.cnxml:98:143">=</mo><mrow data-sm="./modules/m58581/index.cnxml:98:157"><mrow data-sm="./modules/m58581/index.cnxml:98:165"><mi data-sm="./modules/m58581/index.cnxml:98:173">ℏ</mi><mi data-sm="./modules/m58581/index.cnxml:98:187">ω</mi></mrow>
+<mtext data-sm="./modules/m58581/index.cnxml:98:210">/</mtext><mn data-sm="./modules/m58581/index.cnxml:98:230">2</mn></mrow>
+<mo data-sm="./modules/m58581/index.cnxml:98:253">,</mo></mrow>
+</mrow>
+</semantics>
+</math></span> not zero. In the classical view, the lowest energy is zero. The nonexistence of a zero-energy state is common for all quantum-mechanical systems because of omnipresent fluctuations that are a consequence of the Heisenberg uncertainty principle. If a quantum particle sat motionless at the bottom of the potential well, its momentum as well as its position would have to be simultaneously exact, which would violate the Heisenberg uncertainty principle. Therefore, the lowest-energy state must be characterized by uncertainties in momentum and in position, so the ground state of a quantum particle must lie above the bottom of the potential well.</p>
+<p id="fs-id1170902952467" data-sm="./modules/m58581/index.cnxml:99:1">Second, a particle in a quantum harmonic oscillator potential can be found with nonzero probability outside the interval <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58581/index.cnxml:99:160"><mtext data-sm="./modules/m58581/index.cnxml:99:168">−</mtext><mi data-sm="./modules/m58581/index.cnxml:99:188">A</mi><mo data-sm="./modules/m58581/index.cnxml:99:202">≤</mo><mi data-sm="./modules/m58581/index.cnxml:99:216">x</mi><mo data-sm="./modules/m58581/index.cnxml:99:230">≤</mo><mo data-sm="./modules/m58581/index.cnxml:99:244">+</mo><mi data-sm="./modules/m58581/index.cnxml:99:258">A</mi></mrow>
+</mrow>
+</semantics>
+</math></span>. In a classic formulation of the problem, the particle would not have any energy to be in this region. The probability of finding a ground-state quantum particle in the classically forbidden region is about 16%.</p>
+<p id="fs-id1170901529435" data-sm="./modules/m58581/index.cnxml:100:1">Third, the probability density distributions <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58581/index.cnxml:100:84"><mo data-sm="./modules/m58581/index.cnxml:100:92">|</mo><msub data-sm="./modules/m58581/index.cnxml:100:106"><mi data-sm="./modules/m58581/index.cnxml:100:114">ψ</mi><mi data-sm="./modules/m58581/index.cnxml:100:128">n</mi></msub><mo stretchy="false" data-sm="./modules/m58581/index.cnxml:100:151">(</mo><mi data-sm="./modules/m58581/index.cnxml:100:182">x</mi><mo stretchy="false" data-sm="./modules/m58581/index.cnxml:100:196">)</mo><msup data-sm="./modules/m58581/index.cnxml:100:227"><mo data-sm="./modules/m58581/index.cnxml:100:235">|</mo><mrow data-sm="./modules/m58581/index.cnxml:100:249"><mtext data-sm="./modules/m58581/index.cnxml:100:257"> </mtext><mn data-sm="./modules/m58581/index.cnxml:100:277">2</mn></mrow></msup></mrow>
+</mrow>
+</semantics>
+</math></span> for a quantum oscillator in the ground low-energy state, <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58581/index.cnxml:100:393"><msub data-sm="./modules/m58581/index.cnxml:100:401"><mi data-sm="./modules/m58581/index.cnxml:100:409">ψ</mi><mn data-sm="./modules/m58581/index.cnxml:100:423">0</mn></msub><mo stretchy="false" data-sm="./modules/m58581/index.cnxml:100:446">(</mo><mi data-sm="./modules/m58581/index.cnxml:100:477">x</mi><mo stretchy="false" data-sm="./modules/m58581/index.cnxml:100:491">)</mo></mrow>
+</mrow>
+</semantics>
+</math></span>, is largest at the middle of the well <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58581/index.cnxml:100:587"><mo stretchy="false" data-sm="./modules/m58581/index.cnxml:100:595">(</mo><mi data-sm="./modules/m58581/index.cnxml:100:626">x</mi><mo data-sm="./modules/m58581/index.cnxml:100:640">=</mo><mn data-sm="./modules/m58581/index.cnxml:100:654">0</mn><mo stretchy="false" data-sm="./modules/m58581/index.cnxml:100:668">)</mo></mrow>
+</mrow>
+</semantics>
+</math></span>. For the particle to be found with greatest probability at the center of the well, we expect that the particle spends the most time there as it oscillates. This is opposite to the behavior of a classical oscillator, in which the particle spends most of its time moving with relative small speeds near the turning points.</p>
+<div data-type="note" id="fs-id1170903029268" class="check-understanding" data-sm="./modules/m58581/index.cnxml:101:1"><h3 class="os-title">
+  <span class="os-title-label">Check Your Understanding </span>
+  <span class="os-number">7.9</span>
+  <span class="os-divider"> </span>
+</h3>
+<div class="os-note-body">
+<div data-type="exercise" id="fs-id1170902634008" data-sm="./modules/m58581/index.cnxml:102:1" class="unnumbered os-hasSolution">
+<div data-type="problem" id="fs-id1170901771770" data-sm="./modules/m58581/index.cnxml:103:1"><div class="os-problem-container">
+<p id="fs-id1170901680213" data-sm="./modules/m58581/index.cnxml:104:1">Find the expectation value of the position for a particle in the ground state of a harmonic oscillator using symmetry.</p>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+<p id="fs-id1170901581799" data-sm="./modules/m58581/index.cnxml:111:1">Quantum probability density distributions change in character for excited states, becoming more like the classical distribution when the quantum number gets higher. We observe this change already for the first excited state of a quantum oscillator because the distribution <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58581/index.cnxml:111:312"><mo data-sm="./modules/m58581/index.cnxml:111:320">|</mo><msub data-sm="./modules/m58581/index.cnxml:111:334"><mi data-sm="./modules/m58581/index.cnxml:111:342">ψ</mi><mn data-sm="./modules/m58581/index.cnxml:111:356">1</mn></msub><mo stretchy="false" data-sm="./modules/m58581/index.cnxml:111:379">(</mo><mi data-sm="./modules/m58581/index.cnxml:111:410">x</mi><mo stretchy="false" data-sm="./modules/m58581/index.cnxml:111:424">)</mo><msup data-sm="./modules/m58581/index.cnxml:111:455"><mo data-sm="./modules/m58581/index.cnxml:111:463">|</mo><mrow data-sm="./modules/m58581/index.cnxml:111:477"><mtext data-sm="./modules/m58581/index.cnxml:111:485"> </mtext><mn data-sm="./modules/m58581/index.cnxml:111:505">2</mn></mrow></msup></mrow>
+</mrow>
+</semantics>
+</math></span> peaks up around the turning points and vanishes at the equilibrium position, as seen in <a href="#CNX_UPhysics_40_05_well" data-sm="./modules/m58581/index.cnxml:111:644" class="autogenerated-content">Figure 7.13</a>. In accordance with Bohr’s correspondence principle, in the limit of high quantum numbers, the quantum description of a harmonic oscillator converges to the classical description, which is illustrated in <a href="#CNX_UPhysics_40_05_density" data-sm="./modules/m58581/index.cnxml:111:892" class="autogenerated-content">Figure 7.15</a>. The classical probability density distribution corresponding to the quantum energy of the <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58581/index.cnxml:111:1038"><mi data-sm="./modules/m58581/index.cnxml:111:1046">n</mi><mo data-sm="./modules/m58581/index.cnxml:111:1060">=</mo><mn data-sm="./modules/m58581/index.cnxml:111:1074">12</mn></mrow>
+</mrow>
+</semantics>
+</math></span> state is a reasonably good approximation of the quantum probability distribution for a quantum oscillator in this excited state. This agreement becomes increasingly better for highly excited states.</p>
+<div class="os-figure"><figure id="CNX_UPhysics_40_05_density" data-sm="./modules/m58581/index.cnxml:112:1">
+<span data-type="media" id="fs-id1170901639178" data-alt="The probability density distribution amplitude squared of Psi sub 12 for the quantum harmonic oscillator is plotted as a function of x as a solid curve. The curve has 13 peaks with 12 zeros between them and goes asymptotically to zero at plus and minus infinity. The amplitude of the peaks is lowest at the center and increases wit distance from the origin. All of the peaks are between x=-A and x=+A. The dashed curve which shows the probability density distribution of a classical oscillator with the same energy is a smooth upward opening curve." data-sm="./modules/m58581/index.cnxml:113:1">
+<img src="9ae75a9ab3004de6040ec3b0afca8862fe8a721e.jpeg" data-media-type="image/jpeg" alt="The probability density distribution amplitude squared of Psi sub 12 for the quantum harmonic oscillator is plotted as a function of x as a solid curve. The curve has 13 peaks with 12 zeros between them and goes asymptotically to zero at plus and minus infinity. The amplitude of the peaks is lowest at the center and increases wit distance from the origin. All of the peaks are between x=-A and x=+A. The dashed curve which shows the probability density distribution of a classical oscillator with the same energy is a smooth upward opening curve." data-sm="./modules/m58581/index.cnxml:114:1"/>
+</span>
+
+</figure>
+<div class="os-caption-container">
+  <span class="os-title-label">Figure </span>
+<span class="os-number">7.15</span>
+
+
+
+  <span class="os-divider"> </span>
+  <span data-sm="./modules/m58581/index.cnxml:116:1" class="os-caption">The probability density distribution for finding the quantum harmonic oscillator in its <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58581/index.cnxml:116:106"><mi data-sm="./modules/m58581/index.cnxml:116:114">n</mi><mo data-sm="./modules/m58581/index.cnxml:116:128">=</mo><mn data-sm="./modules/m58581/index.cnxml:116:142">12</mn></mrow>
+</mrow>
+</semantics>
+</math> quantum state. The dashed curve shows the probability density distribution of a classical oscillator with the same energy.</span>
+</div>
+</div>
+</section>
+
+
+
+
+
+
+
+
+  </div>
+</body>
+</html>
+<!-- # sourceMappingURL=af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-c0e31b3b-3c8e-4940-9a03-7c2c316e0e46.xhtml.map -->

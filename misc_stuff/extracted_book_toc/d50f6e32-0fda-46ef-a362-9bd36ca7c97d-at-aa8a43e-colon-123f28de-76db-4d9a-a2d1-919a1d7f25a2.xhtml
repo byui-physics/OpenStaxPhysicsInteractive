@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:epub="http://www.idpf.org/2007/ops">
+<head><title>3.2
+ 
+Instantaneous Velocity and Speed
+</title>
+<link rel="stylesheet" type="text/css" href="the-style-epub.css"/>
+</head>
+<body>
+    <div data-type="page" id="page_123f28de-76db-4d9a-a2d1-919a1d7f25a2" class="chapter-content-module" data-book-content="true"><h2 data-type="document-title" data-sm="./modules/m58283/index.cnxml:3:1" id="page_123f28de-76db-4d9a-a2d1-919a1d7f25a2_titlecreatedbycookbook"><span class="os-number">3.2</span>
+<span class="os-divider"> </span>
+<span data-type="" class="os-text">Instantaneous Velocity and Speed</span>
+</h2>
+<div data-type="abstract" data-sm="./modules/m58283/index.cnxml:7:3"><h3 data-type="title">Learning Objectives</h3>
+<p id="para-00001" data-sm="./modules/m58283/index.cnxml:7:16">By the end of this section, you will be able to:</p>
+<ul id="list-00001" data-sm="./modules/m58283/index.cnxml:8:1">
+<li data-sm="./modules/m58283/index.cnxml:9:1">Explain the difference between average velocity and instantaneous velocity.</li>
+<li data-sm="./modules/m58283/index.cnxml:10:1">Describe the difference between velocity and speed.</li>
+<li data-sm="./modules/m58283/index.cnxml:11:1">Calculate the instantaneous velocity given the mathematical equation for the position.</li>
+<li data-sm="./modules/m58283/index.cnxml:12:1">Calculate the speed given the instantaneous velocity.</li>
+</ul>
+</div>
+
+<p id="fs-id1168326781535" data-sm="./modules/m58283/index.cnxml:18:1">We have now seen how to calculate the average velocity between two positions. However, since objects in the real world move continuously through space and time, we would like to find the velocity of an object at any single point. We can find the velocity of the object anywhere along its path by using some fundamental principles of calculus. This section gives us better insight into the physics of motion and will be useful in later chapters.</p>
+
+<section data-depth="1" id="fs-id1168329168511" data-sm="./modules/m58283/index.cnxml:19:1"><h3 data-type="title" data-sm="./modules/m58283/index.cnxml:20:1">Instantaneous Velocity</h3>
+<p id="fs-id1168329339669" data-sm="./modules/m58283/index.cnxml:21:1">The quantity that tells us how fast an object is moving anywhere along its path is the <span data-type="term" id="term-00001" data-sm="./modules/m58283/index.cnxml:21:118">instantaneous velocity</span>, usually called simply <em data-effect="italics" data-sm="./modules/m58283/index.cnxml:21:193">velocity</em>. It is the average velocity between two points on the path in the limit that the time (and therefore the displacement) between the two events approaches zero. To illustrate this idea mathematically, we need to express position <em data-effect="italics" data-sm="./modules/m58283/index.cnxml:21:467">x</em> as a continuous function of <em data-effect="italics" data-sm="./modules/m58283/index.cnxml:21:535">t</em> denoted by <em data-effect="italics" data-sm="./modules/m58283/index.cnxml:21:586">x</em>(<em data-effect="italics" data-sm="./modules/m58283/index.cnxml:21:626">t</em>). The expression for the average velocity between two points using this notation is <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58283/index.cnxml:21:758"><mover data-sm="./modules/m58283/index.cnxml:21:766"><mi data-sm="./modules/m58283/index.cnxml:21:775">v</mi><mtext data-sm="./modules/m58283/index.cnxml:21:789">–</mtext></mover>
+<mo data-sm="./modules/m58283/index.cnxml:21:819">=</mo><mfrac data-sm="./modules/m58283/index.cnxml:21:833"><mrow data-sm="./modules/m58283/index.cnxml:21:842"><mi data-sm="./modules/m58283/index.cnxml:21:850">x</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:21:864">(</mo><msub data-sm="./modules/m58283/index.cnxml:21:895"><mi data-sm="./modules/m58283/index.cnxml:21:903">t</mi><mn data-sm="./modules/m58283/index.cnxml:21:917">2</mn></msub><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:21:940">)</mo><mo data-sm="./modules/m58283/index.cnxml:21:971">−</mo><mi data-sm="./modules/m58283/index.cnxml:21:985">x</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:21:999">(</mo><msub data-sm="./modules/m58283/index.cnxml:21:1030"><mi data-sm="./modules/m58283/index.cnxml:21:1038">t</mi><mn data-sm="./modules/m58283/index.cnxml:21:1052">1</mn></msub><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:21:1075">)</mo></mrow>
+<mrow data-sm="./modules/m58283/index.cnxml:21:1115"><msub data-sm="./modules/m58283/index.cnxml:21:1123"><mi data-sm="./modules/m58283/index.cnxml:21:1131">t</mi><mn data-sm="./modules/m58283/index.cnxml:21:1145">2</mn></msub><mo data-sm="./modules/m58283/index.cnxml:21:1168">−</mo><msub data-sm="./modules/m58283/index.cnxml:21:1182"><mi data-sm="./modules/m58283/index.cnxml:21:1190">t</mi><mn data-sm="./modules/m58283/index.cnxml:21:1204">1</mn></msub></mrow>
+</mfrac>
+</mrow>
+</mrow>
+</semantics>
+</math></span>. To find the instantaneous velocity at any position, we let <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58283/index.cnxml:21:1333"><msub data-sm="./modules/m58283/index.cnxml:21:1341"><mi data-sm="./modules/m58283/index.cnxml:21:1349">t</mi><mn data-sm="./modules/m58283/index.cnxml:21:1363">1</mn></msub><mo data-sm="./modules/m58283/index.cnxml:21:1386">=</mo><mi data-sm="./modules/m58283/index.cnxml:21:1400">t</mi></mrow>
+</mrow>
+</semantics>
+</math></span> and <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58283/index.cnxml:21:1445"><msub data-sm="./modules/m58283/index.cnxml:21:1453"><mi data-sm="./modules/m58283/index.cnxml:21:1461">t</mi><mn data-sm="./modules/m58283/index.cnxml:21:1475">2</mn></msub><mo data-sm="./modules/m58283/index.cnxml:21:1498">=</mo><mi data-sm="./modules/m58283/index.cnxml:21:1512">t</mi><mo data-sm="./modules/m58283/index.cnxml:21:1526">+</mo><mtext data-sm="./modules/m58283/index.cnxml:21:1540">Δ</mtext><mi data-sm="./modules/m58283/index.cnxml:21:1560">t</mi></mrow>
+</mrow>
+</semantics>
+</math></span>. After inserting these expressions into the equation for the average velocity and taking the limit as <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58283/index.cnxml:21:1703"><mtext data-sm="./modules/m58283/index.cnxml:21:1711">Δ</mtext><mi data-sm="./modules/m58283/index.cnxml:21:1731">t</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:21:1745">→</mo><mn data-sm="./modules/m58283/index.cnxml:21:1776">0</mn></mrow>
+</mrow>
+</semantics>
+</math></span>, we find the expression for the instantaneous velocity:</p>
+<div data-type="equation" id="fs-id1168329127174" class="unnumbered" data-sm="./modules/m58283/index.cnxml:22:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58283/index.cnxml:22:70"><mi data-sm="./modules/m58283/index.cnxml:22:78">v</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:22:92">(</mo><mi data-sm="./modules/m58283/index.cnxml:22:123">t</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:22:137">)</mo><mo data-sm="./modules/m58283/index.cnxml:22:168">=</mo><munder data-sm="./modules/m58283/index.cnxml:22:182"><mrow data-sm="./modules/m58283/index.cnxml:22:192"><mtext data-sm="./modules/m58283/index.cnxml:22:200">lim</mtext></mrow>
+<mrow data-sm="./modules/m58283/index.cnxml:22:231"><mtext data-sm="./modules/m58283/index.cnxml:22:239">Δ</mtext><mi data-sm="./modules/m58283/index.cnxml:22:259">t</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:22:273">→</mo><mn data-sm="./modules/m58283/index.cnxml:22:304">0</mn></mrow>
+</munder>
+<mfrac data-sm="./modules/m58283/index.cnxml:22:338"><mrow data-sm="./modules/m58283/index.cnxml:22:347"><mi data-sm="./modules/m58283/index.cnxml:22:355">x</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:22:369">(</mo><mi data-sm="./modules/m58283/index.cnxml:22:400">t</mi><mo data-sm="./modules/m58283/index.cnxml:22:414">+</mo><mtext data-sm="./modules/m58283/index.cnxml:22:428">Δ</mtext><mi data-sm="./modules/m58283/index.cnxml:22:448">t</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:22:462">)</mo><mo data-sm="./modules/m58283/index.cnxml:22:493">−</mo><mi data-sm="./modules/m58283/index.cnxml:22:507">x</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:22:521">(</mo><mi data-sm="./modules/m58283/index.cnxml:22:552">t</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:22:566">)</mo></mrow>
+<mrow data-sm="./modules/m58283/index.cnxml:22:606"><mtext data-sm="./modules/m58283/index.cnxml:22:614">Δ</mtext><mi data-sm="./modules/m58283/index.cnxml:22:634">t</mi></mrow>
+</mfrac>
+<mo data-sm="./modules/m58283/index.cnxml:22:667">=</mo><mfrac data-sm="./modules/m58283/index.cnxml:22:681"><mrow data-sm="./modules/m58283/index.cnxml:22:690"><mi data-sm="./modules/m58283/index.cnxml:22:698">d</mi><mi data-sm="./modules/m58283/index.cnxml:22:712">x</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:22:726">(</mo><mi data-sm="./modules/m58283/index.cnxml:22:757">t</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:22:771">)</mo></mrow>
+<mrow data-sm="./modules/m58283/index.cnxml:22:811"><mi data-sm="./modules/m58283/index.cnxml:22:819">d</mi><mi data-sm="./modules/m58283/index.cnxml:22:833">t</mi></mrow>
+</mfrac>
+<mo data-sm="./modules/m58283/index.cnxml:22:866">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+<div data-type="note" id="fs-id1168329192792" data-sm="./modules/m58283/index.cnxml:23:1"><h3 class="os-title" data-type="title">
+  <span class="os-title-label" data-type="">Instantaneous Velocity</span>
+</h3>
+<div class="os-note-body">
+<p id="fs-id1168326802131" data-sm="./modules/m58283/index.cnxml:25:1">The instantaneous velocity of an object is the limit of the average velocity as the elapsed time approaches zero, or the derivative of <em data-effect="italics" data-sm="./modules/m58283/index.cnxml:25:166">x</em> with respect to <em data-effect="italics" data-sm="./modules/m58283/index.cnxml:25:222">t</em>:</p>
+<div data-type="equation" id="fs-id1168329153584" data-sm="./modules/m58283/index.cnxml:26:1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58283/index.cnxml:26:43"><mi data-sm="./modules/m58283/index.cnxml:26:51">v</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:26:65">(</mo><mi data-sm="./modules/m58283/index.cnxml:26:96">t</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:26:110">)</mo><mo data-sm="./modules/m58283/index.cnxml:26:141">=</mo><mfrac data-sm="./modules/m58283/index.cnxml:26:155"><mi data-sm="./modules/m58283/index.cnxml:26:164">d</mi><mrow data-sm="./modules/m58283/index.cnxml:26:178"><mi data-sm="./modules/m58283/index.cnxml:26:186">d</mi><mi data-sm="./modules/m58283/index.cnxml:26:200">t</mi></mrow>
+</mfrac>
+<mi data-sm="./modules/m58283/index.cnxml:26:233">x</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:26:247">(</mo><mi data-sm="./modules/m58283/index.cnxml:26:278">t</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:26:292">)</mo><mo data-sm="./modules/m58283/index.cnxml:26:323">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+<div class="os-equation-number">
+  <span class="os-number">3.4</span>
+</div>
+</div>
+</div>
+</div>
+<p id="fs-id1168326795408" data-sm="./modules/m58283/index.cnxml:28:1">Like average velocity, instantaneous velocity is a vector with dimension of length per time. The instantaneous velocity at a specific time point <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58283/index.cnxml:28:184"><msub data-sm="./modules/m58283/index.cnxml:28:192"><mi data-sm="./modules/m58283/index.cnxml:28:200">t</mi><mn data-sm="./modules/m58283/index.cnxml:28:214">0</mn></msub></mrow>
+</mrow>
+</semantics>
+</math></span> is the rate of change of the position function, which is the slope of the position function <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58283/index.cnxml:28:356"><mi data-sm="./modules/m58283/index.cnxml:28:364">x</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:28:378">(</mo><mi data-sm="./modules/m58283/index.cnxml:28:409">t</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:28:423">)</mo></mrow>
+</mrow>
+</semantics>
+</math></span> at <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58283/index.cnxml:28:484"><msub data-sm="./modules/m58283/index.cnxml:28:492"><mi data-sm="./modules/m58283/index.cnxml:28:500">t</mi><mn data-sm="./modules/m58283/index.cnxml:28:514">0</mn></msub></mrow>
+</mrow>
+</semantics>
+</math></span>. <a href="#CNX_UPhysics_03_02_InstVel" data-sm="./modules/m58283/index.cnxml:28:557" class="autogenerated-content">Figure 3.6</a> shows how the average velocity <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58283/index.cnxml:28:643"><mover data-sm="./modules/m58283/index.cnxml:28:651"><mi data-sm="./modules/m58283/index.cnxml:28:660">v</mi><mtext data-sm="./modules/m58283/index.cnxml:28:674">–</mtext></mover>
+<mo data-sm="./modules/m58283/index.cnxml:28:704">=</mo><mfrac data-sm="./modules/m58283/index.cnxml:28:718"><mrow data-sm="./modules/m58283/index.cnxml:28:727"><mtext data-sm="./modules/m58283/index.cnxml:28:735">Δ</mtext><mi data-sm="./modules/m58283/index.cnxml:28:755">x</mi></mrow>
+<mrow data-sm="./modules/m58283/index.cnxml:28:778"><mtext data-sm="./modules/m58283/index.cnxml:28:786">Δ</mtext><mi data-sm="./modules/m58283/index.cnxml:28:806">t</mi></mrow>
+</mfrac>
+</mrow>
+</mrow>
+</semantics>
+</math></span> between two times approaches the instantaneous velocity at <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58283/index.cnxml:28:925"><msub data-sm="./modules/m58283/index.cnxml:28:933"><mi data-sm="./modules/m58283/index.cnxml:28:941">t</mi><mn data-sm="./modules/m58283/index.cnxml:28:955">0</mn></msub><mo data-sm="./modules/m58283/index.cnxml:28:978">.</mo></mrow>
+</mrow>
+</semantics>
+</math></span> The instantaneous velocity is shown at time <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58283/index.cnxml:28:1063"><msub data-sm="./modules/m58283/index.cnxml:28:1071"><mi data-sm="./modules/m58283/index.cnxml:28:1079">t</mi><mn data-sm="./modules/m58283/index.cnxml:28:1093">0</mn></msub></mrow>
+</mrow>
+</semantics>
+</math></span>, which happens to be at the maximum of the position function. The slope of the position graph is zero at this point, and thus the instantaneous velocity is zero. At other times, <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58283/index.cnxml:28:1321"><msub data-sm="./modules/m58283/index.cnxml:28:1329"><mi data-sm="./modules/m58283/index.cnxml:28:1337">t</mi><mn data-sm="./modules/m58283/index.cnxml:28:1351">1</mn></msub><mo data-sm="./modules/m58283/index.cnxml:28:1374">,</mo><msub data-sm="./modules/m58283/index.cnxml:28:1388"><mi data-sm="./modules/m58283/index.cnxml:28:1396">t</mi><mn data-sm="./modules/m58283/index.cnxml:28:1410">2</mn></msub></mrow>
+</mrow>
+</semantics>
+</math></span>, and so on, the instantaneous velocity is not zero because the slope of the position graph would be positive or negative. If the position function had a minimum, the slope of the position graph would also be zero, giving an instantaneous velocity of zero there as well. Thus, the zeros of the velocity function give the minimum and maximum of the position function.</p>
+<div class="os-figure"><figure id="CNX_UPhysics_03_02_InstVel" data-sm="./modules/m58283/index.cnxml:29:1">
+<span data-type="media" id="fs-id1168329052502" data-alt="Graph shows position plotted versus time. Position increases from t1 to t2 and reaches maximum at t0. It decreases to at and continues to decrease at t4. The slope of the tangent line at t0 is indicated as the instantaneous velocity." data-sm="./modules/m58283/index.cnxml:30:1">
+<img src="1c06179ad54fafa86eb40af5095be9ad32f955e4.jpeg" data-media-type="image/jpeg" alt="Graph shows position plotted versus time. Position increases from t1 to t2 and reaches maximum at t0. It decreases to at and continues to decrease at t4. The slope of the tangent line at t0 is indicated as the instantaneous velocity." data-sm="./modules/m58283/index.cnxml:31:1"/>
+</span>
+
+</figure>
+<div class="os-caption-container">
+  <span class="os-title-label">Figure </span>
+<span class="os-number">3.6</span>
+
+
+
+  <span class="os-divider"> </span>
+  <span data-sm="./modules/m58283/index.cnxml:33:1" class="os-caption">In a graph of position versus time, the instantaneous velocity is the slope of the tangent line at a given point. The average velocities <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58283/index.cnxml:33:155"><mover data-sm="./modules/m58283/index.cnxml:33:163"><mi data-sm="./modules/m58283/index.cnxml:33:172">v</mi><mtext data-sm="./modules/m58283/index.cnxml:33:186">–</mtext></mover>
+<mo data-sm="./modules/m58283/index.cnxml:33:216">=</mo><mfrac data-sm="./modules/m58283/index.cnxml:33:230"><mrow data-sm="./modules/m58283/index.cnxml:33:239"><mtext data-sm="./modules/m58283/index.cnxml:33:247">Δ</mtext><mi data-sm="./modules/m58283/index.cnxml:33:267">x</mi></mrow>
+<mrow data-sm="./modules/m58283/index.cnxml:33:290"><mtext data-sm="./modules/m58283/index.cnxml:33:298">Δ</mtext><mi data-sm="./modules/m58283/index.cnxml:33:318">t</mi></mrow>
+</mfrac>
+<mo data-sm="./modules/m58283/index.cnxml:33:351">=</mo><mfrac data-sm="./modules/m58283/index.cnxml:33:365"><mrow data-sm="./modules/m58283/index.cnxml:33:374"><msub data-sm="./modules/m58283/index.cnxml:33:382"><mi data-sm="./modules/m58283/index.cnxml:33:390">x</mi><mtext data-sm="./modules/m58283/index.cnxml:33:404">f</mtext></msub><mo data-sm="./modules/m58283/index.cnxml:33:433">−</mo><msub data-sm="./modules/m58283/index.cnxml:33:447"><mi data-sm="./modules/m58283/index.cnxml:33:455">x</mi><mtext data-sm="./modules/m58283/index.cnxml:33:469">i</mtext></msub></mrow>
+<mrow data-sm="./modules/m58283/index.cnxml:33:507"><msub data-sm="./modules/m58283/index.cnxml:33:515"><mi data-sm="./modules/m58283/index.cnxml:33:523">t</mi><mtext data-sm="./modules/m58283/index.cnxml:33:537">f</mtext></msub><mo data-sm="./modules/m58283/index.cnxml:33:566">−</mo><msub data-sm="./modules/m58283/index.cnxml:33:580"><mi data-sm="./modules/m58283/index.cnxml:33:588">t</mi><mtext data-sm="./modules/m58283/index.cnxml:33:602">i</mtext></msub></mrow>
+</mfrac>
+</mrow>
+</mrow>
+</semantics>
+</math> between times <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58283/index.cnxml:33:691"><mtext data-sm="./modules/m58283/index.cnxml:33:699">Δ</mtext><mi data-sm="./modules/m58283/index.cnxml:33:719">t</mi><mo data-sm="./modules/m58283/index.cnxml:33:733">=</mo><msub data-sm="./modules/m58283/index.cnxml:33:747"><mi data-sm="./modules/m58283/index.cnxml:33:755">t</mi><mn data-sm="./modules/m58283/index.cnxml:33:769">6</mn></msub><mo data-sm="./modules/m58283/index.cnxml:33:792">−</mo><msub data-sm="./modules/m58283/index.cnxml:33:806"><mi data-sm="./modules/m58283/index.cnxml:33:814">t</mi><mn data-sm="./modules/m58283/index.cnxml:33:828">1</mn></msub><mo data-sm="./modules/m58283/index.cnxml:33:851">,</mo><mtext data-sm="./modules/m58283/index.cnxml:33:865">Δ</mtext><mi data-sm="./modules/m58283/index.cnxml:33:885">t</mi><mo data-sm="./modules/m58283/index.cnxml:33:899">=</mo><msub data-sm="./modules/m58283/index.cnxml:33:913"><mi data-sm="./modules/m58283/index.cnxml:33:921">t</mi><mn data-sm="./modules/m58283/index.cnxml:33:935">5</mn></msub><mo data-sm="./modules/m58283/index.cnxml:33:958">−</mo><msub data-sm="./modules/m58283/index.cnxml:33:972"><mi data-sm="./modules/m58283/index.cnxml:33:980">t</mi><mn data-sm="./modules/m58283/index.cnxml:33:994">2</mn></msub><mo data-sm="./modules/m58283/index.cnxml:33:1017">,</mo><mtext data-sm="./modules/m58283/index.cnxml:33:1031">and</mtext><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:33:1053"/><mtext data-sm="./modules/m58283/index.cnxml:33:1078">Δ</mtext><mi data-sm="./modules/m58283/index.cnxml:33:1098">t</mi><mo data-sm="./modules/m58283/index.cnxml:33:1112">=</mo><msub data-sm="./modules/m58283/index.cnxml:33:1126"><mi data-sm="./modules/m58283/index.cnxml:33:1134">t</mi><mn data-sm="./modules/m58283/index.cnxml:33:1148">4</mn></msub><mo data-sm="./modules/m58283/index.cnxml:33:1171">−</mo><msub data-sm="./modules/m58283/index.cnxml:33:1185"><mi data-sm="./modules/m58283/index.cnxml:33:1193">t</mi><mn data-sm="./modules/m58283/index.cnxml:33:1207">3</mn></msub></mrow>
+</mrow>
+</semantics>
+</math> are shown. When <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58283/index.cnxml:33:1273"><mtext data-sm="./modules/m58283/index.cnxml:33:1281">Δ</mtext><mi data-sm="./modules/m58283/index.cnxml:33:1301">t</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:33:1315">→</mo><mn data-sm="./modules/m58283/index.cnxml:33:1346">0</mn></mrow>
+</mrow>
+</semantics>
+</math>, the average velocity approaches the instantaneous velocity at <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58283/index.cnxml:33:1450"><mi data-sm="./modules/m58283/index.cnxml:33:1458">t</mi><mo data-sm="./modules/m58283/index.cnxml:33:1472">=</mo><msub data-sm="./modules/m58283/index.cnxml:33:1486"><mi data-sm="./modules/m58283/index.cnxml:33:1494">t</mi><mn data-sm="./modules/m58283/index.cnxml:33:1508">0</mn></msub></mrow>
+</mrow>
+</semantics>
+</math>.</span>
+</div>
+</div>
+<div data-type="example" id="fs-id1168329165028" data-sm="./modules/m58283/index.cnxml:35:1"><h3 class="os-title">
+  <span class="os-title-label">Example </span>
+  <span class="os-number">3.2</span>
+  <span class="os-divider"> </span>
+</h3>
+<div class="body">
+<p id="fs-id1168326783480" data-sm="./modules/m58283/index.cnxml:36:1"></p>
+<h4 data-type="title" data-sm="./modules/m58283/index.cnxml:36:31">Finding Velocity from a Position-Versus-Time Graph</h4>
+Given the position-versus-time graph of <a href="#CNX_UPhysics_03_02_PosGraph" data-sm="./modules/m58283/index.cnxml:37:41" class="autogenerated-content">Figure 3.7</a>, find the velocity-versus-time graph.
+<div class="os-figure"><figure id="CNX_UPhysics_03_02_PosGraph" data-sm="./modules/m58283/index.cnxml:38:1">
+<span data-type="media" id="fs-id1168329023088" data-alt="Graph shows position in kilometers plotted as a function of time at minutes. It starts at the origin, reaches 0.5 kilometers at 0.5 minutes, remains constant between 0.5 and 0.9 minutes, and decreases to 0 at 2.0 minutes." data-sm="./modules/m58283/index.cnxml:39:1">
+<img src="ed4725e793344d4648a7fc6b79c40f41b170f14a.jpeg" data-media-type="image/jpeg" alt="Graph shows position in kilometers plotted as a function of time at minutes. It starts at the origin, reaches 0.5 kilometers at 0.5 minutes, remains constant between 0.5 and 0.9 minutes, and decreases to 0 at 2.0 minutes." data-sm="./modules/m58283/index.cnxml:40:1"/>
+</span>
+
+</figure>
+<div class="os-caption-container">
+  <span class="os-title-label">Figure </span>
+<span class="os-number">3.7</span>
+
+
+
+  <span class="os-divider"> </span>
+  <span data-sm="./modules/m58283/index.cnxml:42:1" class="os-caption">The object starts out in the positive direction, stops for a short time, and then reverses direction, heading back toward the origin. Notice that the object comes to rest instantaneously, which would require an infinite force. Thus, the graph is an approximation of motion in the real world. (The concept of force is discussed in <a href="d50f6e32-0fda-46ef-a362-9bd36ca7c97d-at-aa8a43e-colon-15ec590a-0f0f-4b6c-ae34-d6f3c1d2a8b5.xhtml" class="target=chapter" data-sm="./modules/m58283/index.cnxml:42:340" data-page-slug="5-introduction" data-page-uuid="15ec590a-0f0f-4b6c-ae34-d6f3c1d2a8b5" data-page-fragment="">Newton’s Laws of Motion</a>.)</span>
+</div>
+</div>
+<p id="fs-id1168326801052" data-sm="./modules/m58283/index.cnxml:44:1"></p>
+<h4 data-type="title" data-sm="./modules/m58283/index.cnxml:44:31">Strategy</h4>
+The graph contains three straight lines during three time intervals. We find the velocity during each time interval by taking the slope of the line using the grid.
+<p id="fs-id1168329296202" data-sm="./modules/m58283/index.cnxml:46:1"></p>
+<h4 data-type="title" data-sm="./modules/m58283/index.cnxml:46:31">Solution</h4>
+Time interval 0 s to 0.5 s: <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58283/index.cnxml:47:37"><mover data-sm="./modules/m58283/index.cnxml:47:45"><mi data-sm="./modules/m58283/index.cnxml:47:54">v</mi><mtext data-sm="./modules/m58283/index.cnxml:47:68">–</mtext></mover>
+<mo data-sm="./modules/m58283/index.cnxml:47:98">=</mo><mfrac data-sm="./modules/m58283/index.cnxml:47:112"><mrow data-sm="./modules/m58283/index.cnxml:47:121"><mtext data-sm="./modules/m58283/index.cnxml:47:129">Δ</mtext><mi data-sm="./modules/m58283/index.cnxml:47:149">x</mi></mrow>
+<mrow data-sm="./modules/m58283/index.cnxml:47:172"><mtext data-sm="./modules/m58283/index.cnxml:47:180">Δ</mtext><mi data-sm="./modules/m58283/index.cnxml:47:200">t</mi></mrow>
+</mfrac>
+<mo data-sm="./modules/m58283/index.cnxml:47:233">=</mo><mfrac data-sm="./modules/m58283/index.cnxml:47:247"><mrow data-sm="./modules/m58283/index.cnxml:47:256"><mn data-sm="./modules/m58283/index.cnxml:47:264">0.5</mn><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:47:280"/><mtext data-sm="./modules/m58283/index.cnxml:47:305">m</mtext><mo data-sm="./modules/m58283/index.cnxml:47:325">−</mo><mn data-sm="./modules/m58283/index.cnxml:47:339">0.0</mn><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:47:355"/><mtext data-sm="./modules/m58283/index.cnxml:47:380">m</mtext></mrow>
+<mrow data-sm="./modules/m58283/index.cnxml:47:409"><mn data-sm="./modules/m58283/index.cnxml:47:417">0.5</mn><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:47:433"/><mtext data-sm="./modules/m58283/index.cnxml:47:458">s</mtext><mo data-sm="./modules/m58283/index.cnxml:47:478">−</mo><mn data-sm="./modules/m58283/index.cnxml:47:492">0.0</mn><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:47:508"/><mtext data-sm="./modules/m58283/index.cnxml:47:533">s</mtext></mrow>
+</mfrac>
+<mo data-sm="./modules/m58283/index.cnxml:47:572">=</mo><mn data-sm="./modules/m58283/index.cnxml:47:586">1.0</mn><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:47:602"/><mtext data-sm="./modules/m58283/index.cnxml:47:627">m/s</mtext></mrow>
+</mrow>
+</semantics>
+</math></span>
+<p id="fs-id1168328997510" data-sm="./modules/m58283/index.cnxml:48:1">Time interval 0.5 s to 1.0 s: <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58283/index.cnxml:48:69"><mover data-sm="./modules/m58283/index.cnxml:48:77"><mi data-sm="./modules/m58283/index.cnxml:48:86">v</mi><mtext data-sm="./modules/m58283/index.cnxml:48:100">–</mtext></mover>
+<mo data-sm="./modules/m58283/index.cnxml:48:130">=</mo><mfrac data-sm="./modules/m58283/index.cnxml:48:144"><mrow data-sm="./modules/m58283/index.cnxml:48:153"><mtext data-sm="./modules/m58283/index.cnxml:48:161">Δ</mtext><mi data-sm="./modules/m58283/index.cnxml:48:181">x</mi></mrow>
+<mrow data-sm="./modules/m58283/index.cnxml:48:204"><mtext data-sm="./modules/m58283/index.cnxml:48:212">Δ</mtext><mi data-sm="./modules/m58283/index.cnxml:48:232">t</mi></mrow>
+</mfrac>
+<mo data-sm="./modules/m58283/index.cnxml:48:265">=</mo><mfrac data-sm="./modules/m58283/index.cnxml:48:279"><mrow data-sm="./modules/m58283/index.cnxml:48:288"><mn data-sm="./modules/m58283/index.cnxml:48:296">0.5</mn><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:48:312"/><mtext data-sm="./modules/m58283/index.cnxml:48:337">m</mtext><mo data-sm="./modules/m58283/index.cnxml:48:357">−</mo><mn data-sm="./modules/m58283/index.cnxml:48:371">0.5</mn><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:48:387"/><mtext data-sm="./modules/m58283/index.cnxml:48:412">m</mtext></mrow>
+<mrow data-sm="./modules/m58283/index.cnxml:48:441"><mn data-sm="./modules/m58283/index.cnxml:48:449">1.0</mn><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:48:465"/><mtext data-sm="./modules/m58283/index.cnxml:48:490">s</mtext><mo data-sm="./modules/m58283/index.cnxml:48:510">−</mo><mn data-sm="./modules/m58283/index.cnxml:48:524">0.5</mn><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:48:540"/><mtext data-sm="./modules/m58283/index.cnxml:48:565">s</mtext></mrow>
+</mfrac>
+<mo data-sm="./modules/m58283/index.cnxml:48:604">=</mo><mn data-sm="./modules/m58283/index.cnxml:48:618">0.0</mn><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:48:634"/><mtext data-sm="./modules/m58283/index.cnxml:48:659">m/s</mtext></mrow>
+</mrow>
+</semantics>
+</math></span></p>
+<p id="fs-id1168326760611" data-sm="./modules/m58283/index.cnxml:48:706">Time interval 1.0 s to 2.0 s: <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58283/index.cnxml:48:774"><mover data-sm="./modules/m58283/index.cnxml:48:782"><mi data-sm="./modules/m58283/index.cnxml:48:791">v</mi><mtext data-sm="./modules/m58283/index.cnxml:48:805">–</mtext></mover>
+<mo data-sm="./modules/m58283/index.cnxml:48:835">=</mo><mfrac data-sm="./modules/m58283/index.cnxml:48:849"><mrow data-sm="./modules/m58283/index.cnxml:48:858"><mtext data-sm="./modules/m58283/index.cnxml:48:866">Δ</mtext><mi data-sm="./modules/m58283/index.cnxml:48:886">x</mi></mrow>
+<mrow data-sm="./modules/m58283/index.cnxml:48:909"><mtext data-sm="./modules/m58283/index.cnxml:48:917">Δ</mtext><mi data-sm="./modules/m58283/index.cnxml:48:937">t</mi></mrow>
+</mfrac>
+<mo data-sm="./modules/m58283/index.cnxml:48:970">=</mo><mfrac data-sm="./modules/m58283/index.cnxml:48:984"><mrow data-sm="./modules/m58283/index.cnxml:48:993"><mn data-sm="./modules/m58283/index.cnxml:48:1001">0.0</mn><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:48:1017"/><mtext data-sm="./modules/m58283/index.cnxml:48:1042">m</mtext><mo data-sm="./modules/m58283/index.cnxml:48:1062">−</mo><mn data-sm="./modules/m58283/index.cnxml:48:1076">0.5</mn><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:48:1092"/><mtext data-sm="./modules/m58283/index.cnxml:48:1117">m</mtext></mrow>
+<mrow data-sm="./modules/m58283/index.cnxml:48:1146"><mn data-sm="./modules/m58283/index.cnxml:48:1154">2.0</mn><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:48:1170"/><mtext data-sm="./modules/m58283/index.cnxml:48:1195">s</mtext><mo data-sm="./modules/m58283/index.cnxml:48:1215">−</mo><mn data-sm="./modules/m58283/index.cnxml:48:1229">1.0</mn><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:48:1245"/><mtext data-sm="./modules/m58283/index.cnxml:48:1270">s</mtext></mrow>
+</mfrac>
+<mo data-sm="./modules/m58283/index.cnxml:48:1309">=</mo><mn data-sm="./modules/m58283/index.cnxml:48:1323">−0.5</mn><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:48:1340"/><mtext data-sm="./modules/m58283/index.cnxml:48:1365">m/s</mtext></mrow>
+</mrow>
+</semantics>
+</math></span></p>
+<p id="fs-id1168329038186" data-sm="./modules/m58283/index.cnxml:49:1">The graph of these values of velocity versus time is shown in <a href="#CNX_UPhysics_03_02_VelGraph" data-sm="./modules/m58283/index.cnxml:49:93" class="autogenerated-content">Figure 3.8</a>.</p>
+<div class="os-figure"><figure id="CNX_UPhysics_03_02_VelGraph" data-sm="./modules/m58283/index.cnxml:50:1">
+<span data-type="media" id="fs-id1168329138862" data-alt="Graph shows velocity in meters per second plotted as a function of time at seconds. The velocity is 1 meter per second between 0 and 0.5 seconds, zero between 0.5 and 1.0 seconds, and -0.5 between 1.0 and 2.0 seconds." data-sm="./modules/m58283/index.cnxml:51:1">
+<img src="ce8ded4f72ca3bef309cc7a3c10eaa0b163fe41d.jpeg" data-media-type="image/jpeg" alt="Graph shows velocity in meters per second plotted as a function of time at seconds. The velocity is 1 meter per second between 0 and 0.5 seconds, zero between 0.5 and 1.0 seconds, and -0.5 between 1.0 and 2.0 seconds." data-sm="./modules/m58283/index.cnxml:52:1"/>
+</span>
+
+</figure>
+<div class="os-caption-container">
+  <span class="os-title-label">Figure </span>
+<span class="os-number">3.8</span>
+
+
+
+  <span class="os-divider"> </span>
+  <span data-sm="./modules/m58283/index.cnxml:54:1" class="os-caption">The velocity is positive for the first part of the trip, zero when the object is stopped, and negative when the object reverses direction.</span>
+</div>
+</div>
+<p id="fs-id1168329443474" data-sm="./modules/m58283/index.cnxml:56:1"></p>
+<h4 data-type="title" data-sm="./modules/m58283/index.cnxml:56:31">Significance</h4>
+During the time interval between 0 s and 0.5 s, the object’s position is moving away from the origin and the position-versus-time curve has a positive slope. At any point along the curve during this time interval, we can find the instantaneous velocity by taking its slope, which is +1 m/s, as shown in <a href="#CNX_UPhysics_03_02_VelGraph" data-sm="./modules/m58283/index.cnxml:57:304" class="autogenerated-content">Figure 3.8</a>. In the subsequent time interval, between 0.5 s and 1.0 s, the position doesn’t change and we see the slope is zero. From 1.0 s to 2.0 s, the object is moving back toward the origin and the slope is −0.5 m/s. The object has reversed direction and has a negative velocity.
+</div>
+</div>
+</section>
+
+<section data-depth="1" id="fs-id1168327049595" data-sm="./modules/m58283/index.cnxml:60:1"><h3 data-type="title" data-sm="./modules/m58283/index.cnxml:61:1">Speed</h3>
+<p id="fs-id1168329146483" data-sm="./modules/m58283/index.cnxml:62:1">In everyday language, most people use the terms <em data-effect="italics" data-sm="./modules/m58283/index.cnxml:62:79">speed</em> and <em data-effect="italics" data-sm="./modules/m58283/index.cnxml:62:127">velocity</em> interchangeably. In physics, however, they do not have the same meaning and are distinct concepts. One major difference is that speed has no direction; that is, speed is a scalar.</p>
+<p id="fs-id1168326794515" data-sm="./modules/m58283/index.cnxml:63:1">We can calculate the <span data-type="term" id="term-00002" data-sm="./modules/m58283/index.cnxml:63:52">average speed</span> by finding the total distance traveled divided by the elapsed time:</p>
+<div data-type="note" id="fs-id1168329177306" class="equation-callout" data-sm="./modules/m58283/index.cnxml:64:1">
+<div data-type="equation" id="fs-id1168329030544" data-sm="./modules/m58283/index.cnxml:65:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58283/index.cnxml:65:51"><mtext data-sm="./modules/m58283/index.cnxml:65:59">Average speed</mtext><mo data-sm="./modules/m58283/index.cnxml:65:91">=</mo><mover accent="true" data-sm="./modules/m58283/index.cnxml:65:105"><mi data-sm="./modules/m58283/index.cnxml:65:128">s</mi><mtext data-sm="./modules/m58283/index.cnxml:65:142">–</mtext></mover>
+<mo data-sm="./modules/m58283/index.cnxml:65:172">=</mo><mfrac data-sm="./modules/m58283/index.cnxml:65:186"><mrow data-sm="./modules/m58283/index.cnxml:65:195"><mtext data-sm="./modules/m58283/index.cnxml:65:203">Total distance</mtext></mrow>
+<mrow data-sm="./modules/m58283/index.cnxml:65:245"><mtext data-sm="./modules/m58283/index.cnxml:65:253">Elapsed time</mtext></mrow>
+</mfrac>
+<mo data-sm="./modules/m58283/index.cnxml:65:303">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+<div class="os-equation-number">
+  <span class="os-number">3.5</span>
+</div>
+</div>
+</div>
+<p id="fs-id1168329155451" data-sm="./modules/m58283/index.cnxml:67:1">Average speed is not necessarily the same as the magnitude of the average velocity, which is found by dividing the magnitude of the total displacement by the elapsed time. For example, if a trip starts and ends at the same location, the total displacement is zero, and therefore the average velocity is zero. The average speed, however, is not zero, because the total distance traveled is greater than zero. If we take a road trip of 300 km and need to be at our destination at a certain time, then we would be interested in our average speed.</p>
+<p id="fs-id1168329265923" data-sm="./modules/m58283/index.cnxml:68:1">However, we can calculate the <span data-type="term" id="term-00003" data-sm="./modules/m58283/index.cnxml:68:61">instantaneous speed</span> from the magnitude of the instantaneous velocity:</p>
+<div data-type="note" id="fs-id1168326820899" class="equation-callout" data-sm="./modules/m58283/index.cnxml:69:1">
+<div data-type="equation" id="fs-id1168329020268" data-sm="./modules/m58283/index.cnxml:70:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58283/index.cnxml:70:51"><mtext data-sm="./modules/m58283/index.cnxml:70:59">Instantaneous speed</mtext><mo data-sm="./modules/m58283/index.cnxml:70:97">=</mo><mrow data-sm="./modules/m58283/index.cnxml:70:111"><mo data-sm="./modules/m58283/index.cnxml:70:119">|</mo><mrow data-sm="./modules/m58283/index.cnxml:70:133"><mi data-sm="./modules/m58283/index.cnxml:70:141">v</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:70:155">(</mo><mi data-sm="./modules/m58283/index.cnxml:70:186">t</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:70:200">)</mo></mrow>
+<mo data-sm="./modules/m58283/index.cnxml:70:240">|</mo></mrow>
+<mo data-sm="./modules/m58283/index.cnxml:70:263">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+<div class="os-equation-number">
+  <span class="os-number">3.6</span>
+</div>
+</div>
+</div>
+<p id="fs-id1168329336688" data-sm="./modules/m58283/index.cnxml:72:1">If a particle is moving along the <em data-effect="italics" data-sm="./modules/m58283/index.cnxml:72:65">x</em>-axis at +7.0 m/s and another particle is moving along the same axis at −7.0 m/s, they have different velocities, but both have the same speed of 7.0 m/s. Some typical speeds are shown in the following table.</p>
+<div class="os-table"><table id="fs-id1168329070697" data-sm="./modules/m58283/index.cnxml:73:1"><thead data-sm="./modules/m58283/index.cnxml:79:1">
+<tr data-sm="./modules/m58283/index.cnxml:80:1">
+<th data-valign="top" data-align="left" scope="col">Speed</th>
+<th data-valign="top" data-align="center" scope="col">m/s</th>
+<th data-valign="top" data-align="center" scope="col">mi/h</th>
+</tr>
+</thead>
+<tbody data-sm="./modules/m58283/index.cnxml:86:1">
+<tr data-sm="./modules/m58283/index.cnxml:87:1">
+<td data-valign="top" data-align="left">Continental drift</td>
+<td data-valign="top" data-align="center"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58283/index.cnxml:89:44"><msup data-sm="./modules/m58283/index.cnxml:89:52"><mrow data-sm="./modules/m58283/index.cnxml:89:60"><mn data-sm="./modules/m58283/index.cnxml:89:68">10</mn></mrow><mrow data-sm="./modules/m58283/index.cnxml:89:92"><mn data-sm="./modules/m58283/index.cnxml:89:100">−7</mn></mrow></msup></mrow>
+</mrow>
+</semantics>
+</math>
+</td>
+<td data-valign="top" data-align="center"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58283/index.cnxml:90:44"><mn data-sm="./modules/m58283/index.cnxml:90:52">2</mn><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:90:66"/><mo data-sm="./modules/m58283/index.cnxml:90:91">×</mo><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:90:105"/><msup data-sm="./modules/m58283/index.cnxml:90:130"><mrow data-sm="./modules/m58283/index.cnxml:90:138"><mn data-sm="./modules/m58283/index.cnxml:90:146">10</mn></mrow><mrow data-sm="./modules/m58283/index.cnxml:90:170"><mn data-sm="./modules/m58283/index.cnxml:90:178">−7</mn></mrow></msup></mrow>
+</mrow>
+</semantics>
+</math>
+</td>
+</tr>
+<tr data-sm="./modules/m58283/index.cnxml:92:1">
+<td data-valign="top" data-align="left">Brisk walk</td>
+<td data-valign="top" data-align="center">1.7</td>
+<td data-valign="top" data-align="center">3.9</td>
+</tr>
+<tr data-sm="./modules/m58283/index.cnxml:97:1">
+<td data-valign="top" data-align="left">Cyclist</td>
+<td data-valign="top" data-align="center">4.4</td>
+<td data-valign="top" data-align="center">10</td>
+</tr>
+<tr data-sm="./modules/m58283/index.cnxml:102:1">
+<td data-valign="top" data-align="left">Sprint runner</td>
+<td data-valign="top" data-align="center">12.2</td>
+<td data-valign="top" data-align="center">27</td>
+</tr>
+<tr data-sm="./modules/m58283/index.cnxml:107:1">
+<td data-valign="top" data-align="left">Rural speed limit</td>
+<td data-valign="top" data-align="center">24.6</td>
+<td data-valign="top" data-align="center">56</td>
+</tr>
+<tr data-sm="./modules/m58283/index.cnxml:112:1">
+<td data-valign="top" data-align="left">Official land speed record</td>
+<td data-valign="top" data-align="center">341.1</td>
+<td data-valign="top" data-align="center">763</td>
+</tr>
+<tr data-sm="./modules/m58283/index.cnxml:117:1">
+<td data-valign="top" data-align="left">Speed of sound at sea level</td>
+<td data-valign="top" data-align="center">343</td>
+<td data-valign="top" data-align="center">768</td>
+</tr>
+<tr data-sm="./modules/m58283/index.cnxml:122:1">
+<td data-valign="top" data-align="left">Space shuttle on reentry</td>
+<td data-valign="top" data-align="center">7800</td>
+<td data-valign="top" data-align="center">17,500</td>
+</tr>
+<tr data-sm="./modules/m58283/index.cnxml:127:1">
+<td data-valign="top" data-align="left">Escape velocity of Earth*</td>
+<td data-valign="top" data-align="center">11,200</td>
+<td data-valign="top" data-align="center">25,000</td>
+</tr>
+<tr data-sm="./modules/m58283/index.cnxml:132:1">
+<td data-valign="top" data-align="left">Orbital speed of Earth around the Sun</td>
+<td data-valign="top" data-align="center">29,783</td>
+<td data-valign="top" data-align="center">66,623</td>
+</tr>
+<tr data-sm="./modules/m58283/index.cnxml:137:1">
+<td data-valign="top" data-align="left">Speed of light in a vacuum</td>
+<td data-valign="top" data-align="center">299,792,458</td>
+<td data-valign="top" data-align="center">670,616,629</td>
+</tr>
+</tbody>
+</table>
+<div class="os-caption-container">
+  <span class="os-title-label">Table </span>
+  <span class="os-number">3.1</span>
+  <span class="os-divider"> </span>
+<span class="os-title" data-type="title">Speeds of Various Objects</span>
+
+  <span class="os-divider"> </span>
+<span class="os-caption">*Escape velocity is the velocity at which an object must be launched so that it overcomes Earth’s gravity and is not pulled back toward Earth.</span>
+
+</div>
+</div>
+</section>
+
+<section data-depth="1" id="fs-id1168329418227" data-sm="./modules/m58283/index.cnxml:147:1"><h3 data-type="title" data-sm="./modules/m58283/index.cnxml:148:1">Calculating Instantaneous Velocity</h3>
+<p id="fs-id1168329137312" data-sm="./modules/m58283/index.cnxml:149:1">When calculating instantaneous velocity, we need to specify the explicit form of the position function <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58283/index.cnxml:149:142"><mi data-sm="./modules/m58283/index.cnxml:149:150">x</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:149:164">(</mo><mi data-sm="./modules/m58283/index.cnxml:149:195">t</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:149:209">)</mo></mrow>
+</mrow>
+</semantics>
+</math></span>. If each term in the <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58283/index.cnxml:149:288"><mi data-sm="./modules/m58283/index.cnxml:149:296">x</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:149:310">(</mo><mi data-sm="./modules/m58283/index.cnxml:149:341">t</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:149:355">)</mo></mrow>
+</mrow>
+</semantics>
+</math></span> equation has the form of <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58283/index.cnxml:149:438"><mi data-sm="./modules/m58283/index.cnxml:149:446">A</mi><msup data-sm="./modules/m58283/index.cnxml:149:460"><mi data-sm="./modules/m58283/index.cnxml:149:468">t</mi><mi data-sm="./modules/m58283/index.cnxml:149:482">n</mi></msup></mrow>
+</mrow>
+</semantics>
+</math></span> where <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mi data-sm="./modules/m58283/index.cnxml:149:538">A</mi></mrow>
+</semantics>
+</math></span> is a constant and <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mi data-sm="./modules/m58283/index.cnxml:149:588">n</mi></mrow>
+</semantics>
+</math></span> is an integer, this can be differentiated using the power rule to be:</p>
+<div data-type="note" id="fs-id1168326841988" class="equation-callout" data-sm="./modules/m58283/index.cnxml:149:688">
+<div data-type="equation" id="fs-id1168329070126" data-sm="./modules/m58283/index.cnxml:150:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58283/index.cnxml:150:51"><mfrac data-sm="./modules/m58283/index.cnxml:150:59"><mrow data-sm="./modules/m58283/index.cnxml:150:68"><mi data-sm="./modules/m58283/index.cnxml:150:76">d</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:150:90">(</mo><mi data-sm="./modules/m58283/index.cnxml:150:121">A</mi><msup data-sm="./modules/m58283/index.cnxml:150:135"><mi data-sm="./modules/m58283/index.cnxml:150:143">t</mi><mi data-sm="./modules/m58283/index.cnxml:150:157">n</mi></msup><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:150:180">)</mo></mrow>
+<mrow data-sm="./modules/m58283/index.cnxml:150:220"><mi data-sm="./modules/m58283/index.cnxml:150:228">d</mi><mi data-sm="./modules/m58283/index.cnxml:150:242">t</mi></mrow>
+</mfrac>
+<mo data-sm="./modules/m58283/index.cnxml:150:275">=</mo><mi data-sm="./modules/m58283/index.cnxml:150:289">A</mi><mi data-sm="./modules/m58283/index.cnxml:150:303">n</mi><msup data-sm="./modules/m58283/index.cnxml:150:317"><mi data-sm="./modules/m58283/index.cnxml:150:325">t</mi><mrow data-sm="./modules/m58283/index.cnxml:150:339"><mi data-sm="./modules/m58283/index.cnxml:150:347">n</mi><mo data-sm="./modules/m58283/index.cnxml:150:361">−</mo><mn data-sm="./modules/m58283/index.cnxml:150:375">1</mn></mrow></msup><mo data-sm="./modules/m58283/index.cnxml:150:407">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+<div class="os-equation-number">
+  <span class="os-number">3.7</span>
+</div>
+</div>
+</div>
+<p id="fs-id1168329319372" data-sm="./modules/m58283/index.cnxml:151:1">Note that if there are additional terms added together, this power rule of differentiation can be done multiple times and the solution is the sum of those terms. The following example illustrates the use of <a href="#fs-id1168329070126" data-sm="./modules/m58283/index.cnxml:151:238" class="autogenerated-content">Equation 3.7</a>.</p>
+<div data-type="example" id="fs-id1168329069804" data-sm="./modules/m58283/index.cnxml:151:284"><h3 class="os-title">
+  <span class="os-title-label">Example </span>
+  <span class="os-number">3.3</span>
+  <span class="os-divider"> </span>
+</h3>
+<div class="body">
+<p id="fs-id1168329439120" data-sm="./modules/m58283/index.cnxml:152:1"></p>
+<h4 data-type="title" data-sm="./modules/m58283/index.cnxml:152:31">Instantaneous Velocity Versus Average Velocity</h4>
+The position of a particle is given by <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58283/index.cnxml:153:48"><mi data-sm="./modules/m58283/index.cnxml:153:56">x</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:153:70">(</mo><mi data-sm="./modules/m58283/index.cnxml:153:101">t</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:153:115">)</mo><mo data-sm="./modules/m58283/index.cnxml:153:146">=</mo><mo data-sm="./modules/m58283/index.cnxml:153:160">(</mo><mn data-sm="./modules/m58283/index.cnxml:153:174">3.0</mn><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:153:190"/><mtext data-sm="./modules/m58283/index.cnxml:153:215">m/s</mtext><mo data-sm="./modules/m58283/index.cnxml:153:237">)</mo><mi data-sm="./modules/m58283/index.cnxml:153:251">t</mi><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:153:265"/><mo data-sm="./modules/m58283/index.cnxml:153:290">+</mo><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:153:304"/><mo data-sm="./modules/m58283/index.cnxml:153:329">(</mo><mn data-sm="./modules/m58283/index.cnxml:153:343">0.5</mn><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:153:359"/><msup data-sm="./modules/m58283/index.cnxml:153:384"><mtext data-sm="./modules/m58283/index.cnxml:153:392">m/s</mtext><mn data-sm="./modules/m58283/index.cnxml:153:414">3</mn></msup><mo data-sm="./modules/m58283/index.cnxml:153:437">)</mo><msup data-sm="./modules/m58283/index.cnxml:153:451"><mi data-sm="./modules/m58283/index.cnxml:153:459">t</mi><mn data-sm="./modules/m58283/index.cnxml:153:473">3</mn></msup></mrow>
+</mrow>
+</semantics>
+</math></span>.
+<ol id="fs-id1168326791675" type="a" data-sm="./modules/m58283/index.cnxml:154:1">
+<li data-sm="./modules/m58283/index.cnxml:155:1">Using <a href="#fs-id1168329153584" data-sm="./modules/m58283/index.cnxml:155:13" class="autogenerated-content">Equation 3.4</a> and <a href="#fs-id1168329070126" data-sm="./modules/m58283/index.cnxml:155:56" class="autogenerated-content">Equation 3.7</a>, find the instantaneous velocity at <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58283/index.cnxml:155:139"><mi data-sm="./modules/m58283/index.cnxml:155:147">t</mi><mo data-sm="./modules/m58283/index.cnxml:155:161">=</mo><mn data-sm="./modules/m58283/index.cnxml:155:175">2.0</mn></mrow>
+</mrow>
+</semantics>
+</math> s.</li>
+<li data-sm="./modules/m58283/index.cnxml:156:1">Calculate the average velocity between 1.0 s and 3.0 s.</li>
+</ol>
+<p id="fs-id1168329150787" data-sm="./modules/m58283/index.cnxml:158:1"></p>
+<h4 data-type="title" data-sm="./modules/m58283/index.cnxml:158:31">Strategy</h4>
+<a href="#fs-id1168329153584" data-sm="./modules/m58283/index.cnxml:158:54" class="autogenerated-content">Equation 3.4</a> gives the instantaneous velocity of the particle as the derivative of the position function. Looking at the form of the position function given, we see that it is a polynomial in <em data-effect="italics" data-sm="./modules/m58283/index.cnxml:158:272">t</em>. Therefore, we can use <a href="#fs-id1168329070126" data-sm="./modules/m58283/index.cnxml:158:335" class="autogenerated-content">Equation 3.7</a>, the power rule from calculus, to find the solution. We use <a href="#fs-id1168329020268" data-sm="./modules/m58283/index.cnxml:158:434" class="autogenerated-content">Equation 3.6</a> to calculate the average velocity of the particle.
+<p id="fs-id1168329466256" data-sm="./modules/m58283/index.cnxml:159:1"></p>
+<h4 data-type="title" data-sm="./modules/m58283/index.cnxml:159:31">Solution</h4>
+<ol id="fs-id1168329140398" type="a" data-sm="./modules/m58283/index.cnxml:160:1">
+<li data-sm="./modules/m58283/index.cnxml:161:1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58283/index.cnxml:161:15"><mi data-sm="./modules/m58283/index.cnxml:161:23">v</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:161:37">(</mo><mi data-sm="./modules/m58283/index.cnxml:161:68">t</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:161:82">)</mo><mo data-sm="./modules/m58283/index.cnxml:161:113">=</mo><mfrac data-sm="./modules/m58283/index.cnxml:161:127"><mrow data-sm="./modules/m58283/index.cnxml:161:136"><mi data-sm="./modules/m58283/index.cnxml:161:144">d</mi><mi data-sm="./modules/m58283/index.cnxml:161:158">x</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:161:172">(</mo><mi data-sm="./modules/m58283/index.cnxml:161:203">t</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:161:217">)</mo></mrow>
+<mrow data-sm="./modules/m58283/index.cnxml:161:257"><mi data-sm="./modules/m58283/index.cnxml:161:265">d</mi><mi data-sm="./modules/m58283/index.cnxml:161:279">t</mi></mrow>
+</mfrac>
+<mo data-sm="./modules/m58283/index.cnxml:161:312">=</mo><mo data-sm="./modules/m58283/index.cnxml:161:326">(</mo><mn data-sm="./modules/m58283/index.cnxml:161:340">3.0</mn><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:161:356"/><mtext data-sm="./modules/m58283/index.cnxml:161:381">m/s</mtext><mo data-sm="./modules/m58283/index.cnxml:161:403">)</mo><mo data-sm="./modules/m58283/index.cnxml:161:417">+</mo><mo data-sm="./modules/m58283/index.cnxml:161:431">(</mo><mn data-sm="./modules/m58283/index.cnxml:161:445">1.5</mn><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:161:461"/><msup data-sm="./modules/m58283/index.cnxml:161:486"><mtext data-sm="./modules/m58283/index.cnxml:161:494">m/s</mtext><mn data-sm="./modules/m58283/index.cnxml:161:516">3</mn></msup><mo data-sm="./modules/m58283/index.cnxml:161:539">)</mo><msup data-sm="./modules/m58283/index.cnxml:161:553"><mi data-sm="./modules/m58283/index.cnxml:161:561">t</mi><mn data-sm="./modules/m58283/index.cnxml:161:575">2</mn></msup></mrow>
+</mrow>
+</semantics>
+</math>.<span data-type="newline" data-sm="./modules/m58283/index.cnxml:161:617"><br/></span>
+Substituting <em data-effect="italics" data-sm="./modules/m58283/index.cnxml:162:14">t</em> = 2.0 s into this equation gives <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58283/index.cnxml:162:95"><mi data-sm="./modules/m58283/index.cnxml:162:103">v</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:162:117">(</mo><mn data-sm="./modules/m58283/index.cnxml:162:148">2.0</mn><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:162:164"/><mtext data-sm="./modules/m58283/index.cnxml:162:189">s</mtext><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:162:209">)</mo><mo data-sm="./modules/m58283/index.cnxml:162:240">=</mo><mo data-sm="./modules/m58283/index.cnxml:162:254">(</mo><mn data-sm="./modules/m58283/index.cnxml:162:268">3.0</mn><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:162:284"/><mtext data-sm="./modules/m58283/index.cnxml:162:309">m/s</mtext><mo data-sm="./modules/m58283/index.cnxml:162:331">)</mo><mo data-sm="./modules/m58283/index.cnxml:162:345">+</mo><mo data-sm="./modules/m58283/index.cnxml:162:359">(</mo><mn data-sm="./modules/m58283/index.cnxml:162:373">1.5</mn><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:162:389"/><msup data-sm="./modules/m58283/index.cnxml:162:414"><mtext data-sm="./modules/m58283/index.cnxml:162:422">m/s</mtext><mn data-sm="./modules/m58283/index.cnxml:162:444">3</mn></msup><mo data-sm="./modules/m58283/index.cnxml:162:467">)</mo><msup data-sm="./modules/m58283/index.cnxml:162:481"><mrow data-sm="./modules/m58283/index.cnxml:162:489"><mo data-sm="./modules/m58283/index.cnxml:162:497">(</mo><mn data-sm="./modules/m58283/index.cnxml:162:511">2.0 s</mn><mo data-sm="./modules/m58283/index.cnxml:162:529">)</mo></mrow><mn data-sm="./modules/m58283/index.cnxml:162:552">2</mn></msup></mrow>
+</mrow>
+</semantics>
+</math>.</li>
+
+<li data-sm="./modules/m58283/index.cnxml:164:1">To determine the average velocity of the particle between 1.0 s and 3.0 s, we calculate the values of <em data-effect="italics" data-sm="./modules/m58283/index.cnxml:164:109">x</em>(1.0 s) and <em data-effect="italics" data-sm="./modules/m58283/index.cnxml:164:160">x</em>(3.0 s):
+<div data-type="equation" id="fs-id1168329503288" class="unnumbered" data-sm="./modules/m58283/index.cnxml:165:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58283/index.cnxml:165:70"><mi data-sm="./modules/m58283/index.cnxml:165:78">x</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:165:92">(</mo><mn data-sm="./modules/m58283/index.cnxml:165:123">1.0</mn><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:165:139"/><mtext data-sm="./modules/m58283/index.cnxml:165:164">s</mtext><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:165:184">)</mo><mo data-sm="./modules/m58283/index.cnxml:165:215">=</mo><mrow data-sm="./modules/m58283/index.cnxml:165:229"><mo data-sm="./modules/m58283/index.cnxml:165:237">[</mo><mrow data-sm="./modules/m58283/index.cnxml:165:251"><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:165:259">(</mo><mn data-sm="./modules/m58283/index.cnxml:165:290">3.0 m/s</mn><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:165:310">)</mo><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:165:341">(</mo><mn data-sm="./modules/m58283/index.cnxml:165:372">1.0 s</mn><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:165:390">)</mo><mo data-sm="./modules/m58283/index.cnxml:165:421">+</mo><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:165:435">(</mo><mn data-sm="./modules/m58283/index.cnxml:165:466">0.5</mn><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:165:482"/><msup data-sm="./modules/m58283/index.cnxml:165:507"><mtext data-sm="./modules/m58283/index.cnxml:165:515">m/s</mtext><mn data-sm="./modules/m58283/index.cnxml:165:537">3</mn></msup><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:165:560">)</mo><msup data-sm="./modules/m58283/index.cnxml:165:591"><mrow data-sm="./modules/m58283/index.cnxml:165:599"><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:165:607">(</mo><mn data-sm="./modules/m58283/index.cnxml:165:638">1.0 s</mn><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:165:656">)</mo></mrow><mn data-sm="./modules/m58283/index.cnxml:165:696">3</mn></msup></mrow>
+</mrow>
+<mo data-sm="./modules/m58283/index.cnxml:165:737">]</mo><mo data-sm="./modules/m58283/index.cnxml:165:751">=</mo><mn data-sm="./modules/m58283/index.cnxml:165:765">3.5</mn><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:165:781"/><mtext data-sm="./modules/m58283/index.cnxml:165:806">m</mtext></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+
+<div data-type="equation" id="fs-id1168329266138" class="unnumbered" data-sm="./modules/m58283/index.cnxml:167:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58283/index.cnxml:167:70"><mi data-sm="./modules/m58283/index.cnxml:167:78">x</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:167:92">(</mo><mn data-sm="./modules/m58283/index.cnxml:167:123">3.0</mn><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:167:139"/><mtext data-sm="./modules/m58283/index.cnxml:167:164">s</mtext><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:167:184">)</mo><mo data-sm="./modules/m58283/index.cnxml:167:215">=</mo><mrow data-sm="./modules/m58283/index.cnxml:167:229"><mo data-sm="./modules/m58283/index.cnxml:167:237">[</mo><mrow data-sm="./modules/m58283/index.cnxml:167:251"><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:167:259">(</mo><mn data-sm="./modules/m58283/index.cnxml:167:290">3.0 m/s</mn><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:167:310">)</mo><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:167:341">(</mo><mn data-sm="./modules/m58283/index.cnxml:167:372">3.0 s</mn><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:167:390">)</mo><mo data-sm="./modules/m58283/index.cnxml:167:421">+</mo><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:167:435">(</mo><mn data-sm="./modules/m58283/index.cnxml:167:466">0.5</mn><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:167:482"/><msup data-sm="./modules/m58283/index.cnxml:167:507"><mtext data-sm="./modules/m58283/index.cnxml:167:515">m/s</mtext><mn data-sm="./modules/m58283/index.cnxml:167:537">3</mn></msup><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:167:560">)</mo><msup data-sm="./modules/m58283/index.cnxml:167:591"><mrow data-sm="./modules/m58283/index.cnxml:167:599"><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:167:607">(</mo><mn data-sm="./modules/m58283/index.cnxml:167:638">3.0 s</mn><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:167:656">)</mo></mrow><mn data-sm="./modules/m58283/index.cnxml:167:696">3</mn></msup></mrow>
+</mrow>
+<mo data-sm="./modules/m58283/index.cnxml:167:737">]</mo><mo data-sm="./modules/m58283/index.cnxml:167:751">=</mo><mn data-sm="./modules/m58283/index.cnxml:167:765">22.5</mn><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:167:782"/><mtext data-sm="./modules/m58283/index.cnxml:167:807">m</mtext></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+
+Then the average velocity is 
+<div data-type="equation" id="fs-id1168329338952" class="unnumbered" data-sm="./modules/m58283/index.cnxml:170:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58283/index.cnxml:170:70"><mover data-sm="./modules/m58283/index.cnxml:170:78"><mi data-sm="./modules/m58283/index.cnxml:170:87">v</mi><mtext data-sm="./modules/m58283/index.cnxml:170:101">–</mtext></mover>
+<mo data-sm="./modules/m58283/index.cnxml:170:131">=</mo><mfrac data-sm="./modules/m58283/index.cnxml:170:145"><mrow data-sm="./modules/m58283/index.cnxml:170:154"><mi data-sm="./modules/m58283/index.cnxml:170:162">x</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:170:176">(</mo><mn data-sm="./modules/m58283/index.cnxml:170:207">3.0</mn><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:170:223"/><mtext data-sm="./modules/m58283/index.cnxml:170:248">s</mtext><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:170:268">)</mo><mo data-sm="./modules/m58283/index.cnxml:170:299">−</mo><mi data-sm="./modules/m58283/index.cnxml:170:313">x</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:170:327">(</mo><mn data-sm="./modules/m58283/index.cnxml:170:358">1.0</mn><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:170:374"/><mtext data-sm="./modules/m58283/index.cnxml:170:399">s</mtext><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:170:419">)</mo></mrow>
+<mrow data-sm="./modules/m58283/index.cnxml:170:459"><mi data-sm="./modules/m58283/index.cnxml:170:467">t</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:170:481">(</mo><mn data-sm="./modules/m58283/index.cnxml:170:512">3.0</mn><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:170:528"/><mtext data-sm="./modules/m58283/index.cnxml:170:553">s</mtext><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:170:573">)</mo><mo data-sm="./modules/m58283/index.cnxml:170:604">−</mo><mi data-sm="./modules/m58283/index.cnxml:170:618">t</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:170:632">(</mo><mn data-sm="./modules/m58283/index.cnxml:170:663">1.0</mn><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:170:679"/><mtext data-sm="./modules/m58283/index.cnxml:170:704">s</mtext><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:170:724">)</mo></mrow>
+</mfrac>
+<mo data-sm="./modules/m58283/index.cnxml:170:774">=</mo><mfrac data-sm="./modules/m58283/index.cnxml:170:788"><mrow data-sm="./modules/m58283/index.cnxml:170:797"><mn data-sm="./modules/m58283/index.cnxml:170:805">(22.5</mn><mo data-sm="./modules/m58283/index.cnxml:170:823">−</mo><mn data-sm="./modules/m58283/index.cnxml:170:837">3.5)</mn><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:170:854"/><mtext data-sm="./modules/m58283/index.cnxml:170:879">m</mtext></mrow>
+<mrow data-sm="./modules/m58283/index.cnxml:170:908"><mn data-sm="./modules/m58283/index.cnxml:170:916">(3.0</mn><mo data-sm="./modules/m58283/index.cnxml:170:933">−</mo><mn data-sm="./modules/m58283/index.cnxml:170:947">1.0)</mn><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:170:964"/><mtext data-sm="./modules/m58283/index.cnxml:170:989">s</mtext></mrow>
+</mfrac>
+<mo data-sm="./modules/m58283/index.cnxml:170:1028">=</mo><mn data-sm="./modules/m58283/index.cnxml:170:1042">9.5</mn><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:170:1058"/><mtext data-sm="./modules/m58283/index.cnxml:170:1083">m/s</mtext><mtext data-sm="./modules/m58283/index.cnxml:170:1105">.</mtext></mrow>
+</mrow>
+</semantics>
+</math>
+</div></li>
+</ol>
+<p id="fs-id1168329191891" data-sm="./modules/m58283/index.cnxml:172:1"></p>
+<h4 data-type="title" data-sm="./modules/m58283/index.cnxml:172:31">Significance</h4>
+In the limit that the time interval used to calculate <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mover data-sm="./modules/m58283/index.cnxml:173:63"><mi data-sm="./modules/m58283/index.cnxml:173:72">v</mi><mtext data-sm="./modules/m58283/index.cnxml:173:86">−</mtext></mover>
+</mrow>
+</semantics>
+</math></span> goes to zero, the value obtained for <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mover data-sm="./modules/m58283/index.cnxml:173:171"><mi data-sm="./modules/m58283/index.cnxml:173:180">v</mi><mtext data-sm="./modules/m58283/index.cnxml:173:194">−</mtext></mover>
+</mrow>
+</semantics>
+</math></span> converges to the value of <em data-effect="italics" data-sm="./modules/m58283/index.cnxml:173:260">v.</em>
+</div>
+</div>
+<div data-type="example" id="fs-id1168329085430" data-sm="./modules/m58283/index.cnxml:175:1"><h3 class="os-title">
+  <span class="os-title-label">Example </span>
+  <span class="os-number">3.4</span>
+  <span class="os-divider"> </span>
+</h3>
+<div class="body">
+<p id="fs-id1168326823363" data-sm="./modules/m58283/index.cnxml:176:1"></p>
+<h4 data-type="title" data-sm="./modules/m58283/index.cnxml:176:31">Instantaneous Velocity Versus Speed</h4>
+Consider the motion of a particle in which the position is <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58283/index.cnxml:177:68"><mi data-sm="./modules/m58283/index.cnxml:177:76">x</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:177:90">(</mo><mi data-sm="./modules/m58283/index.cnxml:177:121">t</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:177:135">)</mo><mo data-sm="./modules/m58283/index.cnxml:177:166">=</mo><mo data-sm="./modules/m58283/index.cnxml:177:180">(</mo><mn data-sm="./modules/m58283/index.cnxml:177:194">3.0</mn><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:177:210"/><mtext data-sm="./modules/m58283/index.cnxml:177:235">m/s</mtext><mo data-sm="./modules/m58283/index.cnxml:177:257">)</mo><mi data-sm="./modules/m58283/index.cnxml:177:271">t</mi><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:177:285"/><mo data-sm="./modules/m58283/index.cnxml:177:310">–</mo><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:177:324"/><mo data-sm="./modules/m58283/index.cnxml:177:349">(</mo><mn data-sm="./modules/m58283/index.cnxml:177:363">3</mn><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:177:377"/><msup data-sm="./modules/m58283/index.cnxml:177:402"><mtext data-sm="./modules/m58283/index.cnxml:177:410">m/s</mtext><mn data-sm="./modules/m58283/index.cnxml:177:432">2</mn></msup><mo data-sm="./modules/m58283/index.cnxml:177:455">)</mo><msup data-sm="./modules/m58283/index.cnxml:177:469"><mi data-sm="./modules/m58283/index.cnxml:177:477">t</mi><mn data-sm="./modules/m58283/index.cnxml:177:491">2</mn></msup></mrow>
+</mrow>
+</semantics>
+</math></span>.
+<ol id="fs-id1168329022158" type="a" data-sm="./modules/m58283/index.cnxml:178:1">
+<li data-sm="./modules/m58283/index.cnxml:179:1">What is the instantaneous velocity at <em data-effect="italics" data-sm="./modules/m58283/index.cnxml:179:45">t</em> = 0.25 s, <em data-effect="italics" data-sm="./modules/m58283/index.cnxml:179:95">t</em> = 0.50 s, and <em data-effect="italics" data-sm="./modules/m58283/index.cnxml:179:149">t</em> = 1.0 s?</li>
+<li data-sm="./modules/m58283/index.cnxml:180:1">What is the speed of the particle at these times?</li>
+</ol>
+<p id="fs-id1168326912979" data-sm="./modules/m58283/index.cnxml:182:1"></p>
+<h4 data-type="title" data-sm="./modules/m58283/index.cnxml:182:31">Strategy</h4>
+The instantaneous velocity is the derivative of the position function and the speed is the magnitude of the instantaneous velocity. We use <a href="#fs-id1168329153584" data-sm="./modules/m58283/index.cnxml:183:140" class="autogenerated-content">Equation 3.4</a> and <a href="#fs-id1168329070126" data-sm="./modules/m58283/index.cnxml:183:183" class="autogenerated-content">Equation 3.7</a> to solve for instantaneous velocity.
+<p id="fs-id1168329013693" data-sm="./modules/m58283/index.cnxml:184:1"></p>
+<h4 data-type="title" data-sm="./modules/m58283/index.cnxml:184:31">Solution</h4>
+<ol id="fs-id1168326763228" type="a" data-sm="./modules/m58283/index.cnxml:185:1">
+  <li data-sm="./modules/m58283/index.cnxml:186:3"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58283/index.cnxml:186:17"><mi data-sm="./modules/m58283/index.cnxml:186:25">v</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:186:39">(</mo><mi data-sm="./modules/m58283/index.cnxml:186:70">t</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:186:84">)</mo><mo data-sm="./modules/m58283/index.cnxml:186:115">=</mo><mfrac data-sm="./modules/m58283/index.cnxml:186:129"><mrow data-sm="./modules/m58283/index.cnxml:186:138"><mi data-sm="./modules/m58283/index.cnxml:186:146">d</mi><mi data-sm="./modules/m58283/index.cnxml:186:160">x</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:186:174">(</mo><mi data-sm="./modules/m58283/index.cnxml:186:205">t</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:186:219">)</mo></mrow>
+<mrow data-sm="./modules/m58283/index.cnxml:186:259"><mi data-sm="./modules/m58283/index.cnxml:186:267">d</mi><mi data-sm="./modules/m58283/index.cnxml:186:281">t</mi></mrow>
+</mfrac>
+<mo data-sm="./modules/m58283/index.cnxml:186:314">=</mo><mo data-sm="./modules/m58283/index.cnxml:186:328">(</mo><mn data-sm="./modules/m58283/index.cnxml:186:342">3.0</mn><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:186:358"/><mtext data-sm="./modules/m58283/index.cnxml:186:383">m/s</mtext><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:186:405"/><mo data-sm="./modules/m58283/index.cnxml:186:430">–</mo><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:186:444"/><mn data-sm="./modules/m58283/index.cnxml:186:469">6.0</mn><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:186:485"/><msup data-sm="./modules/m58283/index.cnxml:186:510"><mtext data-sm="./modules/m58283/index.cnxml:186:518">m/s</mtext><mn data-sm="./modules/m58283/index.cnxml:186:540">2</mn></msup><mi data-sm="./modules/m58283/index.cnxml:186:563">t</mi><mo data-sm="./modules/m58283/index.cnxml:186:577">)</mo><mo data-sm="./modules/m58283/index.cnxml:186:591">,</mo><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:186:605"/><mi data-sm="./modules/m58283/index.cnxml:186:630">v</mi><mo data-sm="./modules/m58283/index.cnxml:186:644">(</mo><mn data-sm="./modules/m58283/index.cnxml:186:658">0.25</mn><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:186:675"/><mtext data-sm="./modules/m58283/index.cnxml:186:700">s</mtext><mo data-sm="./modules/m58283/index.cnxml:186:720">)</mo><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:186:734"/><mo data-sm="./modules/m58283/index.cnxml:186:759">=</mo><mn data-sm="./modules/m58283/index.cnxml:186:773">1.50</mn><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:186:790"/><mtext data-sm="./modules/m58283/index.cnxml:186:815">m/s,</mtext></mrow>
+</mrow>
+</semantics>
+</math><span data-type="newline" data-sm="./modules/m58283/index.cnxml:186:856"><br/></span>
+    <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58283/index.cnxml:187:13"><mi data-sm="./modules/m58283/index.cnxml:187:21">v</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:187:35">(</mo><mn data-sm="./modules/m58283/index.cnxml:187:66">0.5</mn><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:187:82"/><mtext data-sm="./modules/m58283/index.cnxml:187:107">s</mtext><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:187:127">)</mo><mo data-sm="./modules/m58283/index.cnxml:187:158">=</mo><mn data-sm="./modules/m58283/index.cnxml:187:172">0</mn><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:187:186"/><mtext data-sm="./modules/m58283/index.cnxml:187:211">m/s,</mtext><mspace width="0.5em" data-sm="./modules/m58283/index.cnxml:187:234"/><mi data-sm="./modules/m58283/index.cnxml:187:259">v</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:187:273">(</mo><mn data-sm="./modules/m58283/index.cnxml:187:304">1.0</mn><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:187:320"/><mtext data-sm="./modules/m58283/index.cnxml:187:345">s</mtext><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:187:365">)</mo><mo data-sm="./modules/m58283/index.cnxml:187:396">=</mo><mn data-sm="./modules/m58283/index.cnxml:187:410">−3.0</mn><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:187:427"/><mtext data-sm="./modules/m58283/index.cnxml:187:452">m/s</mtext></mrow>
+</mrow>
+</semantics>
+</math></li>
+  <li data-sm="./modules/m58283/index.cnxml:188:3"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58283/index.cnxml:188:17"><mtext data-sm="./modules/m58283/index.cnxml:188:25">Speed</mtext><mo data-sm="./modules/m58283/index.cnxml:188:49">=</mo><mrow data-sm="./modules/m58283/index.cnxml:188:63"><mo data-sm="./modules/m58283/index.cnxml:188:71">|</mo><mrow data-sm="./modules/m58283/index.cnxml:188:85"><mi data-sm="./modules/m58283/index.cnxml:188:93">v</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:188:107">(</mo><mi data-sm="./modules/m58283/index.cnxml:188:138">t</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:188:152">)</mo></mrow>
+<mo data-sm="./modules/m58283/index.cnxml:188:192">|</mo></mrow>
+<mo data-sm="./modules/m58283/index.cnxml:188:215">=</mo><mn data-sm="./modules/m58283/index.cnxml:188:229">1.50</mn><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:188:246"/><mtext data-sm="./modules/m58283/index.cnxml:188:271">m/s</mtext><mo data-sm="./modules/m58283/index.cnxml:188:293">,</mo><mn data-sm="./modules/m58283/index.cnxml:188:307">0.0</mn><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:188:323"/><mtext data-sm="./modules/m58283/index.cnxml:188:348">m/s,</mtext><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:188:371"/><mtext data-sm="./modules/m58283/index.cnxml:188:396">and</mtext><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:188:418"/><mn data-sm="./modules/m58283/index.cnxml:188:443">3.0</mn><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:188:459"/><mtext data-sm="./modules/m58283/index.cnxml:188:484">m/s</mtext></mrow>
+</mrow>
+</semantics>
+</math></li>
+</ol>
+<p id="fs-id1168329151690" data-sm="./modules/m58283/index.cnxml:189:8"></p>
+<h4 data-type="title" data-sm="./modules/m58283/index.cnxml:189:38">Significance</h4>
+The velocity of the particle gives us direction information, indicating the particle is moving to the left (west) or right (east). The speed gives the magnitude of the velocity. By graphing the position, velocity, and speed as functions of time, we can understand these concepts visually <a href="#CNX_UPhysics_03_02_PosVelSp" data-sm="./modules/m58283/index.cnxml:190:289" class="autogenerated-content">Figure 3.9</a>. In (a), the graph shows the particle moving in the positive direction until <em data-effect="italics" data-sm="./modules/m58283/index.cnxml:190:414">t</em> = 0.5 s, when it reverses direction. The reversal of direction can also be seen in (b) at 0.5 s where the velocity is zero and then turns negative. At 1.0 s it is back at the origin where it started. The particle’s velocity at 1.0 s in (b) is negative, because it is traveling in the negative direction. But in (c), however, its speed is positive and remains positive throughout the travel time. We can also interpret velocity as the slope of the position-versus-time graph. The slope of <em data-effect="italics" data-sm="./modules/m58283/index.cnxml:190:942">x</em>(<em data-effect="italics" data-sm="./modules/m58283/index.cnxml:190:982">t</em>) is decreasing toward zero, becoming zero at 0.5 s and increasingly negative thereafter. This analysis of comparing the graphs of position, velocity, and speed helps catch errors in calculations. The graphs must be consistent with each other and help interpret the calculations.
+<div class="os-figure"><figure id="CNX_UPhysics_03_02_PosVelSp" data-sm="./modules/m58283/index.cnxml:191:1">
+<span data-type="media" id="fs-id1168326856378" data-alt="Graph A shows position in meters plotted versus time in seconds. It starts at the origin, reaches maximum at 0.5 seconds, and then start to decrease crossing x axis at 1 second. Graph B shows velocity in meters per second plotted as a function of time at seconds. Velocity linearly decreases from the left to the right. Graph C shows absolute velocity in meters per second plotted as a function of time at seconds. Graph has a V-leeter shape. Velocity decreases till 0.5 seconds; then it starts to increase." data-sm="./modules/m58283/index.cnxml:192:1">
+<img src="7d0221fc43cfc8187d5033c6553b3f3f47ada4fd.jpeg" data-media-type="image/jpeg" alt="Graph A shows position in meters plotted versus time in seconds. It starts at the origin, reaches maximum at 0.5 seconds, and then start to decrease crossing x axis at 1 second. Graph B shows velocity in meters per second plotted as a function of time at seconds. Velocity linearly decreases from the left to the right. Graph C shows absolute velocity in meters per second plotted as a function of time at seconds. Graph has a V-leeter shape. Velocity decreases till 0.5 seconds; then it starts to increase." data-sm="./modules/m58283/index.cnxml:193:1"/>
+</span>
+
+</figure>
+<div class="os-caption-container">
+  <span class="os-title-label">Figure </span>
+<span class="os-number">3.9</span>
+
+
+
+  <span class="os-divider"> </span>
+  <span data-sm="./modules/m58283/index.cnxml:195:1" class="os-caption">(a) Position: <em data-effect="italics" data-sm="./modules/m58283/index.cnxml:195:24">x</em>(<em data-effect="italics" data-sm="./modules/m58283/index.cnxml:195:64">t</em>) versus time. (b) Velocity: <em data-effect="italics" data-sm="./modules/m58283/index.cnxml:195:132">v</em>(<em data-effect="italics" data-sm="./modules/m58283/index.cnxml:195:172">t</em>) versus time. The slope of the position graph is the velocity. A rough comparison of the slopes of the tangent lines in (a) at 0.25 s, 0.5 s, and 1.0 s with the values for velocity at the corresponding times indicates they are the same values. (c) Speed: <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58283/index.cnxml:195:475"><mrow data-sm="./modules/m58283/index.cnxml:195:483"><mo data-sm="./modules/m58283/index.cnxml:195:491">|</mo><mrow data-sm="./modules/m58283/index.cnxml:195:505"><mi data-sm="./modules/m58283/index.cnxml:195:513">v</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:195:527">(</mo><mi data-sm="./modules/m58283/index.cnxml:195:558">t</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:195:572">)</mo></mrow>
+<mo data-sm="./modules/m58283/index.cnxml:195:612">|</mo></mrow>
+</mrow>
+</mrow>
+</semantics>
+</math> versus time. Speed is always a positive number.</span>
+</div>
+</div>
+</div>
+</div>
+<div data-type="note" id="fs-id1168326919242" class="check-understanding" data-sm="./modules/m58283/index.cnxml:198:1"><h3 class="os-title">
+  <span class="os-title-label">Check Your Understanding </span>
+  <span class="os-number">3.2</span>
+  <span class="os-divider"> </span>
+</h3>
+<div class="os-note-body">
+<div data-type="exercise" id="fs-id1168329179170" data-sm="./modules/m58283/index.cnxml:199:1" class="unnumbered os-hasSolution">
+<div data-type="problem" id="fs-id1168326791759" data-sm="./modules/m58283/index.cnxml:200:1"><div class="os-problem-container">
+<p id="fs-id1168329124574" data-sm="./modules/m58283/index.cnxml:201:1"> The position of an object as a function of time is <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58283/index.cnxml:201:91"><mi data-sm="./modules/m58283/index.cnxml:201:99">x</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:201:113">(</mo><mi data-sm="./modules/m58283/index.cnxml:201:144">t</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:201:158">)</mo><mo data-sm="./modules/m58283/index.cnxml:201:189">=</mo><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:201:203"/><mo data-sm="./modules/m58283/index.cnxml:201:228">(</mo><mo data-sm="./modules/m58283/index.cnxml:201:242">–</mo><mn data-sm="./modules/m58283/index.cnxml:201:256">3</mn><mspace width="0.2em" data-sm="./modules/m58283/index.cnxml:201:270"/><msup data-sm="./modules/m58283/index.cnxml:201:295"><mtext data-sm="./modules/m58283/index.cnxml:201:303">m/s</mtext><mn data-sm="./modules/m58283/index.cnxml:201:325">2</mn></msup><mo data-sm="./modules/m58283/index.cnxml:201:348">)</mo><msup data-sm="./modules/m58283/index.cnxml:201:362"><mi data-sm="./modules/m58283/index.cnxml:201:370">t</mi><mn data-sm="./modules/m58283/index.cnxml:201:384">2</mn></msup></mrow>
+</mrow>
+</semantics>
+</math></span>. (a) What is the velocity of the object as a function of time? (b) Is the velocity ever positive? (c) What are the velocity and speed at <em data-effect="italics" data-sm="./modules/m58283/index.cnxml:201:563">t</em> = 1.0 s?</p>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</section>
+
+
+
+
+
+
+ 
+ 
+  </div>
+</body>
+</html>
+<!-- # sourceMappingURL=d50f6e32-0fda-46ef-a362-9bd36ca7c97d-at-aa8a43e-colon-123f28de-76db-4d9a-a2d1-919a1d7f25a2.xhtml.map -->

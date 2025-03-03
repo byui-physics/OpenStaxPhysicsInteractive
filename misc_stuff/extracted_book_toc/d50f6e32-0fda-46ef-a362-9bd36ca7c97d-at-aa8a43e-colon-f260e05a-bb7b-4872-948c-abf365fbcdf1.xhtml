@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:epub="http://www.idpf.org/2007/ops">
+<head><title>10.2
+ 
+Rotation with Constant Angular Acceleration
+</title>
+<link rel="stylesheet" type="text/css" href="the-style-epub.css"/>
+</head>
+<body>
+    <div data-type="page" id="page_f260e05a-bb7b-4872-948c-abf365fbcdf1" class="chapter-content-module" data-book-content="true"><h2 data-type="document-title" data-sm="./modules/m58327/index.cnxml:3:1" id="page_f260e05a-bb7b-4872-948c-abf365fbcdf1_titlecreatedbycookbook"><span class="os-number">10.2</span>
+<span class="os-divider"> </span>
+<span data-type="" class="os-text">Rotation with Constant Angular Acceleration</span>
+</h2>
+<div data-type="abstract" data-sm="./modules/m58327/index.cnxml:7:3"><h3 data-type="title">Learning Objectives</h3>
+<p id="para-00001" data-sm="./modules/m58327/index.cnxml:7:16">By the end of this section, you will be able to:</p>
+<ul id="list-00001" data-sm="./modules/m58327/index.cnxml:8:1">
+<li data-sm="./modules/m58327/index.cnxml:9:1">Derive the kinematic equations for rotational motion with constant angular acceleration</li>
+<li data-sm="./modules/m58327/index.cnxml:10:1">Select from the kinematic equations for rotational motion with constant angular acceleration the appropriate equations to solve for unknowns in the analysis of systems undergoing fixed-axis rotation</li>
+<li data-sm="./modules/m58327/index.cnxml:11:1">Use solutions found with the kinematic equations to verify the graphical analysis of fixed-axis rotation with constant angular acceleration</li>
+</ul>
+</div>
+
+<p id="fs-id1167134562323" data-sm="./modules/m58327/index.cnxml:17:1">In the preceding section, we defined the rotational variables of angular displacement, angular velocity, and angular acceleration. In this section, we work with these definitions to derive relationships among these variables and use these relationships to analyze rotational motion for a rigid body about a fixed axis under a constant angular acceleration. This analysis forms the basis for rotational kinematics. If the angular acceleration is constant, the equations of rotational kinematics simplify, similar to the equations of linear kinematics discussed in <a href="d50f6e32-0fda-46ef-a362-9bd36ca7c97d-at-aa8a43e-colon-0987c7f8-4a2c-42c0-9cd6-ac68721e8e84.xhtml" data-sm="./modules/m58327/index.cnxml:17:594" data-page-slug="3-introduction" data-page-uuid="0987c7f8-4a2c-42c0-9cd6-ac68721e8e84" data-page-fragment="">Motion along a Straight Line</a> and <a href="d50f6e32-0fda-46ef-a362-9bd36ca7c97d-at-aa8a43e-colon-305e881e-18f9-4ccd-b96d-e7a1c4db654d.xhtml" data-sm="./modules/m58327/index.cnxml:17:658" data-page-slug="4-introduction" data-page-uuid="305e881e-18f9-4ccd-b96d-e7a1c4db654d" data-page-fragment="">Motion in Two and Three Dimensions</a>. We can then use this simplified set of equations to describe many applications in physics and engineering where the angular acceleration of the system is constant. Rotational kinematics is also a prerequisite to the discussion of rotational dynamics later in this chapter.</p>
+<section data-depth="1" id="fs-id1167134530949" data-sm="./modules/m58327/index.cnxml:17:1004"><h3 data-type="title" data-sm="./modules/m58327/index.cnxml:18:1">Kinematics of Rotational Motion</h3>
+<p id="fs-id1167134492796" data-sm="./modules/m58327/index.cnxml:19:1">Using our intuition, we can begin to see how the rotational quantities <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:19:110"><mi data-sm="./modules/m58327/index.cnxml:19:118">θ</mi><mo data-sm="./modules/m58327/index.cnxml:19:132">,</mo></mrow>
+</mrow>
+</semantics>
+</math></span> <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:19:173"><mi data-sm="./modules/m58327/index.cnxml:19:181">ω</mi><mo data-sm="./modules/m58327/index.cnxml:19:195">,</mo></mrow>
+</mrow>
+</semantics>
+</math></span> <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:19:236"><mi data-sm="./modules/m58327/index.cnxml:19:244">α</mi></mrow>
+</mrow>
+</semantics>
+</math></span>, and <em data-effect="italics" data-sm="./modules/m58327/index.cnxml:19:282">t</em> are related to one another. For example, we saw in the preceding section that if a flywheel has an angular acceleration in the same direction as its angular velocity vector, its angular velocity increases with time and its angular displacement also increases. On the contrary, if the angular acceleration is opposite to the angular velocity vector, its angular velocity decreases with time. We can describe these physical situations and many others with a consistent set of rotational kinematic equations under a constant angular acceleration. The method to investigate rotational motion in this way is called <span data-type="term" id="term-00001" data-sm="./modules/m58327/index.cnxml:19:932">kinematics of rotational motion</span>.</p>
+<p id="fs-id1167134658198" data-sm="./modules/m58327/index.cnxml:20:1">To begin, we note that if the system is rotating under a constant acceleration, then the average angular velocity follows a simple relation because the angular velocity is increasing linearly with time. The average angular velocity is just half the sum of the initial and final values:</p>
+<div data-type="note" id="fs-id1167134881925" class="equation-callout" data-sm="./modules/m58327/index.cnxml:21:1">
+<div data-type="equation" id="fs-id1167134565315" data-sm="./modules/m58327/index.cnxml:22:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:22:51"><mover accent="true" data-sm="./modules/m58327/index.cnxml:22:59"><mi data-sm="./modules/m58327/index.cnxml:22:82">ω</mi><mo data-sm="./modules/m58327/index.cnxml:22:96">–</mo></mover>
+<mo data-sm="./modules/m58327/index.cnxml:22:120">=</mo><mfrac data-sm="./modules/m58327/index.cnxml:22:134"><mrow data-sm="./modules/m58327/index.cnxml:22:143"><msub data-sm="./modules/m58327/index.cnxml:22:151"><mi data-sm="./modules/m58327/index.cnxml:22:159">ω</mi><mn data-sm="./modules/m58327/index.cnxml:22:173">0</mn></msub><mo data-sm="./modules/m58327/index.cnxml:22:196">+</mo><msub data-sm="./modules/m58327/index.cnxml:22:210"><mi data-sm="./modules/m58327/index.cnxml:22:218">ω</mi><mtext data-sm="./modules/m58327/index.cnxml:22:232">f</mtext></msub></mrow>
+<mn data-sm="./modules/m58327/index.cnxml:22:270">2</mn></mfrac>
+<mo data-sm="./modules/m58327/index.cnxml:22:294">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+<div class="os-equation-number">
+  <span class="os-number">10.9</span>
+</div>
+</div>
+</div>
+<p id="fs-id1167134898606" data-sm="./modules/m58327/index.cnxml:24:1">From the definition of the average angular velocity, we can find an equation that relates the angular position, average angular velocity, and time:</p>
+<div data-type="equation" id="fs-id1167134537814" class="unnumbered" data-sm="./modules/m58327/index.cnxml:25:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:25:70"><mover accent="true" data-sm="./modules/m58327/index.cnxml:25:78"><mi data-sm="./modules/m58327/index.cnxml:25:101">ω</mi><mo data-sm="./modules/m58327/index.cnxml:25:115">–</mo></mover>
+<mo data-sm="./modules/m58327/index.cnxml:25:139">=</mo><mfrac data-sm="./modules/m58327/index.cnxml:25:153"><mrow data-sm="./modules/m58327/index.cnxml:25:162"><mtext data-sm="./modules/m58327/index.cnxml:25:170">Δ</mtext><mi data-sm="./modules/m58327/index.cnxml:25:190">θ</mi></mrow>
+<mrow data-sm="./modules/m58327/index.cnxml:25:213"><mtext data-sm="./modules/m58327/index.cnxml:25:221">Δ</mtext><mi data-sm="./modules/m58327/index.cnxml:25:241">t</mi></mrow>
+</mfrac>
+<mo data-sm="./modules/m58327/index.cnxml:25:274">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1167134671134" data-sm="./modules/m58327/index.cnxml:26:1">Solving for <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:26:51"><mi data-sm="./modules/m58327/index.cnxml:26:59">θ</mi></mrow>
+</mrow>
+</semantics>
+</math></span>, we have</p>
+<div data-type="note" id="fs-id1167131112841" class="equation-callout" data-sm="./modules/m58327/index.cnxml:27:1">
+<div data-type="equation" id="fs-id1167134864500" data-sm="./modules/m58327/index.cnxml:28:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:28:51"><msub data-sm="./modules/m58327/index.cnxml:28:59"><mi data-sm="./modules/m58327/index.cnxml:28:67">θ</mi><mtext data-sm="./modules/m58327/index.cnxml:28:81">f</mtext></msub><mo data-sm="./modules/m58327/index.cnxml:28:110">=</mo><msub data-sm="./modules/m58327/index.cnxml:28:124"><mi data-sm="./modules/m58327/index.cnxml:28:132">θ</mi><mn data-sm="./modules/m58327/index.cnxml:28:146">0</mn></msub><mo data-sm="./modules/m58327/index.cnxml:28:169">+</mo><mover accent="true" data-sm="./modules/m58327/index.cnxml:28:183"><mi data-sm="./modules/m58327/index.cnxml:28:206">ω</mi><mo data-sm="./modules/m58327/index.cnxml:28:220">–</mo></mover>
+<mi data-sm="./modules/m58327/index.cnxml:28:244">t</mi><mo data-sm="./modules/m58327/index.cnxml:28:258">,</mo></mrow>
+</mrow>
+</semantics>
+</math>
+<div class="os-equation-number">
+  <span class="os-number">10.10</span>
+</div>
+</div>
+</div>
+<p id="fs-id1167134886257" data-sm="./modules/m58327/index.cnxml:30:1">where we have set <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:30:57"><msub data-sm="./modules/m58327/index.cnxml:30:65"><mi data-sm="./modules/m58327/index.cnxml:30:73">t</mi><mn data-sm="./modules/m58327/index.cnxml:30:87">0</mn></msub><mo data-sm="./modules/m58327/index.cnxml:30:110">=</mo><mn data-sm="./modules/m58327/index.cnxml:30:124">0</mn></mrow>
+</mrow>
+</semantics>
+</math></span>. This equation can be very useful if we know the average angular velocity of the system. Then we could find the angular displacement over a given time period. Next, we find an equation relating <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mi data-sm="./modules/m58327/index.cnxml:30:359">ω</mi></mrow>
+</semantics>
+</math></span>, <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mi data-sm="./modules/m58327/index.cnxml:30:392">α</mi></mrow>
+</semantics>
+</math></span>, and <em data-effect="italics" data-sm="./modules/m58327/index.cnxml:30:421">t</em>. To determine this equation, we start with the definition of angular acceleration:</p>
+<div data-type="equation" id="fs-id1167134470048" class="unnumbered" data-sm="./modules/m58327/index.cnxml:31:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:31:70"><mi data-sm="./modules/m58327/index.cnxml:31:78">α</mi><mo data-sm="./modules/m58327/index.cnxml:31:92">=</mo><mfrac data-sm="./modules/m58327/index.cnxml:31:106"><mrow data-sm="./modules/m58327/index.cnxml:31:115"><mi data-sm="./modules/m58327/index.cnxml:31:123">d</mi><mi data-sm="./modules/m58327/index.cnxml:31:137">ω</mi></mrow>
+<mrow data-sm="./modules/m58327/index.cnxml:31:160"><mi data-sm="./modules/m58327/index.cnxml:31:168">d</mi><mi data-sm="./modules/m58327/index.cnxml:31:182">t</mi></mrow>
+</mfrac>
+<mo data-sm="./modules/m58327/index.cnxml:31:215">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1167134717368" data-sm="./modules/m58327/index.cnxml:32:1">We rearrange this to get <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:32:64"><mi data-sm="./modules/m58327/index.cnxml:32:72">α</mi><mi data-sm="./modules/m58327/index.cnxml:32:86">d</mi><mi data-sm="./modules/m58327/index.cnxml:32:100">t</mi><mo data-sm="./modules/m58327/index.cnxml:32:114">=</mo><mi data-sm="./modules/m58327/index.cnxml:32:128">d</mi><mi data-sm="./modules/m58327/index.cnxml:32:142">ω</mi></mrow>
+</mrow>
+</semantics>
+</math></span> and then we integrate both sides of this equation from initial values to final values, that is, from <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:32:284"><msub data-sm="./modules/m58327/index.cnxml:32:292"><mi data-sm="./modules/m58327/index.cnxml:32:300">t</mi><mn data-sm="./modules/m58327/index.cnxml:32:314">0</mn></msub></mrow>
+</mrow>
+</semantics>
+</math></span> to <em data-effect="italics" data-sm="./modules/m58327/index.cnxml:32:359">t</em> and <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:32:411"><msub data-sm="./modules/m58327/index.cnxml:32:419"><mi data-sm="./modules/m58327/index.cnxml:32:427">ω</mi><mn data-sm="./modules/m58327/index.cnxml:32:441">0</mn></msub><mspace width="0.2em" data-sm="./modules/m58327/index.cnxml:32:464"/><mtext data-sm="./modules/m58327/index.cnxml:32:489">to</mtext><mspace width="0.2em" data-sm="./modules/m58327/index.cnxml:32:510"/><msub data-sm="./modules/m58327/index.cnxml:32:535"><mi data-sm="./modules/m58327/index.cnxml:32:543">ω</mi><mtext data-sm="./modules/m58327/index.cnxml:32:557">f</mtext></msub></mrow>
+</mrow>
+</semantics>
+</math></span>. In uniform rotational motion, the angular acceleration is constant so it can be pulled out of the integral, yielding two definite integrals:</p>
+<div data-type="equation" id="fs-id1167134812957" class="unnumbered" data-sm="./modules/m58327/index.cnxml:33:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:33:70"><mi data-sm="./modules/m58327/index.cnxml:33:78">α</mi><mstyle displaystyle="true" data-sm="./modules/m58327/index.cnxml:33:92"><mrow data-sm="./modules/m58327/index.cnxml:33:122"><munderover data-sm="./modules/m58327/index.cnxml:33:130"><mo data-sm="./modules/m58327/index.cnxml:33:144">∫</mo><mrow data-sm="./modules/m58327/index.cnxml:33:158"><msub data-sm="./modules/m58327/index.cnxml:33:166"><mi data-sm="./modules/m58327/index.cnxml:33:174">t</mi><mn data-sm="./modules/m58327/index.cnxml:33:188">0</mn></msub></mrow>
+<mi data-sm="./modules/m58327/index.cnxml:33:220">t</mi></munderover>
+<mrow data-sm="./modules/m58327/index.cnxml:33:249"><mi data-sm="./modules/m58327/index.cnxml:33:257">d</mi><msup data-sm="./modules/m58327/index.cnxml:33:271"><mi data-sm="./modules/m58327/index.cnxml:33:279">t</mi><mo data-sm="./modules/m58327/index.cnxml:33:293">′</mo></msup></mrow>
+</mrow>
+</mstyle>
+<mo data-sm="./modules/m58327/index.cnxml:33:345">=</mo><mstyle displaystyle="true" data-sm="./modules/m58327/index.cnxml:33:359"><mrow data-sm="./modules/m58327/index.cnxml:33:389"><munderover data-sm="./modules/m58327/index.cnxml:33:397"><mo data-sm="./modules/m58327/index.cnxml:33:411">∫</mo><mrow data-sm="./modules/m58327/index.cnxml:33:425"><msub data-sm="./modules/m58327/index.cnxml:33:433"><mi data-sm="./modules/m58327/index.cnxml:33:441">ω</mi><mn data-sm="./modules/m58327/index.cnxml:33:455">0</mn></msub></mrow>
+<mrow data-sm="./modules/m58327/index.cnxml:33:487"><msub data-sm="./modules/m58327/index.cnxml:33:495"><mi data-sm="./modules/m58327/index.cnxml:33:503">ω</mi><mtext data-sm="./modules/m58327/index.cnxml:33:517">f</mtext></msub></mrow>
+</munderover>
+<mrow data-sm="./modules/m58327/index.cnxml:33:570"><mi data-sm="./modules/m58327/index.cnxml:33:578">d</mi><mi data-sm="./modules/m58327/index.cnxml:33:592">ω</mi></mrow>
+</mrow>
+</mstyle>
+<mo data-sm="./modules/m58327/index.cnxml:33:635">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1167134452992" data-sm="./modules/m58327/index.cnxml:34:1">Setting <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:34:47"><msub data-sm="./modules/m58327/index.cnxml:34:55"><mi data-sm="./modules/m58327/index.cnxml:34:63">t</mi><mn data-sm="./modules/m58327/index.cnxml:34:77">0</mn></msub><mo data-sm="./modules/m58327/index.cnxml:34:100">=</mo><mn data-sm="./modules/m58327/index.cnxml:34:114">0</mn></mrow>
+</mrow>
+</semantics>
+</math></span>, we have</p>
+<div data-type="equation" id="fs-id1167134563908" class="unnumbered" data-sm="./modules/m58327/index.cnxml:35:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:35:70"><mi data-sm="./modules/m58327/index.cnxml:35:78">α</mi><mi data-sm="./modules/m58327/index.cnxml:35:92">t</mi><mo data-sm="./modules/m58327/index.cnxml:35:106">=</mo><msub data-sm="./modules/m58327/index.cnxml:35:120"><mi data-sm="./modules/m58327/index.cnxml:35:128">ω</mi><mi data-sm="./modules/m58327/index.cnxml:35:142">f</mi></msub><mo data-sm="./modules/m58327/index.cnxml:35:165">−</mo><msub data-sm="./modules/m58327/index.cnxml:35:179"><mi data-sm="./modules/m58327/index.cnxml:35:187">ω</mi><mn data-sm="./modules/m58327/index.cnxml:35:201">0</mn></msub><mo data-sm="./modules/m58327/index.cnxml:35:224">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1167134651272" data-sm="./modules/m58327/index.cnxml:36:1">We rearrange this to obtain</p>
+<div data-type="note" id="fs-id1167134439377" class="equation-callout" data-sm="./modules/m58327/index.cnxml:37:1">
+<div data-type="equation" id="fs-id1167134891857" data-sm="./modules/m58327/index.cnxml:38:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:38:51"><msub data-sm="./modules/m58327/index.cnxml:38:59"><mi data-sm="./modules/m58327/index.cnxml:38:67">ω</mi><mtext data-sm="./modules/m58327/index.cnxml:38:81">f</mtext></msub><mo data-sm="./modules/m58327/index.cnxml:38:110">=</mo><msub data-sm="./modules/m58327/index.cnxml:38:124"><mi data-sm="./modules/m58327/index.cnxml:38:132">ω</mi><mn data-sm="./modules/m58327/index.cnxml:38:146">0</mn></msub><mo data-sm="./modules/m58327/index.cnxml:38:169">+</mo><mi data-sm="./modules/m58327/index.cnxml:38:183">α</mi><mi data-sm="./modules/m58327/index.cnxml:38:197">t</mi><mo data-sm="./modules/m58327/index.cnxml:38:211">,</mo></mrow>
+</mrow>
+</semantics>
+</math>
+<div class="os-equation-number">
+  <span class="os-number">10.11</span>
+</div>
+</div>
+</div>
+<p id="fs-id1167134537750" data-sm="./modules/m58327/index.cnxml:40:1">where <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:40:45"><msub data-sm="./modules/m58327/index.cnxml:40:53"><mi data-sm="./modules/m58327/index.cnxml:40:61">ω</mi><mn data-sm="./modules/m58327/index.cnxml:40:75">0</mn></msub></mrow>
+</mrow>
+</semantics>
+</math></span> is the initial angular velocity. <a href="#fs-id1167134891857" data-sm="./modules/m58327/index.cnxml:40:150" class="autogenerated-content">Equation 10.11</a> is the rotational counterpart to the linear kinematics equation <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:40:261"><msub data-sm="./modules/m58327/index.cnxml:40:269"><mi data-sm="./modules/m58327/index.cnxml:40:277">v</mi><mtext data-sm="./modules/m58327/index.cnxml:40:291">f</mtext></msub><mo data-sm="./modules/m58327/index.cnxml:40:320">=</mo><msub data-sm="./modules/m58327/index.cnxml:40:334"><mi data-sm="./modules/m58327/index.cnxml:40:342">v</mi><mn data-sm="./modules/m58327/index.cnxml:40:356">0</mn></msub><mo data-sm="./modules/m58327/index.cnxml:40:379">+</mo><mi data-sm="./modules/m58327/index.cnxml:40:393">a</mi><mi data-sm="./modules/m58327/index.cnxml:40:407">t</mi></mrow>
+</mrow>
+</semantics>
+</math></span>. With <a href="#fs-id1167134891857" data-sm="./modules/m58327/index.cnxml:40:446" class="autogenerated-content">Equation 10.11</a>, we can find the angular velocity of an object at any specified time <em data-effect="italics" data-sm="./modules/m58327/index.cnxml:40:554">t</em> given the initial angular velocity and the angular acceleration.</p>
+<p id="fs-id1167134563378" data-sm="./modules/m58327/index.cnxml:41:1">Let’s now do a similar treatment starting with the equation <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:41:99"><mi data-sm="./modules/m58327/index.cnxml:41:107">ω</mi><mo data-sm="./modules/m58327/index.cnxml:41:121">=</mo><mfrac data-sm="./modules/m58327/index.cnxml:41:135"><mrow data-sm="./modules/m58327/index.cnxml:41:144"><mi data-sm="./modules/m58327/index.cnxml:41:152">d</mi><mi data-sm="./modules/m58327/index.cnxml:41:166">θ</mi></mrow>
+<mrow data-sm="./modules/m58327/index.cnxml:41:189"><mi data-sm="./modules/m58327/index.cnxml:41:197">d</mi><mi data-sm="./modules/m58327/index.cnxml:41:211">t</mi></mrow>
+</mfrac>
+</mrow>
+</mrow>
+</semantics>
+</math></span>. We rearrange it to obtain <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:41:298"><mi data-sm="./modules/m58327/index.cnxml:41:306">ω</mi><mi data-sm="./modules/m58327/index.cnxml:41:320">d</mi><mi data-sm="./modules/m58327/index.cnxml:41:334">t</mi><mo data-sm="./modules/m58327/index.cnxml:41:348">=</mo><mi data-sm="./modules/m58327/index.cnxml:41:362">d</mi><mi data-sm="./modules/m58327/index.cnxml:41:376">θ</mi></mrow>
+</mrow>
+</semantics>
+</math></span> and integrate both sides from initial to final values again, noting that the angular acceleration is constant and does not have a time dependence. However, this time, the angular velocity is not constant (in general), so we substitute in what we derived above:</p>
+<div data-type="equation" id="fs-id1167134457425" class="unnumbered" data-sm="./modules/m58327/index.cnxml:42:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtable data-sm="./modules/m58327/index.cnxml:42:70"><mtr data-sm="./modules/m58327/index.cnxml:42:80"><mtd columnalign="left" data-sm="./modules/m58327/index.cnxml:42:87">
+<mstyle displaystyle="true" data-sm="./modules/m58327/index.cnxml:43:1"><mrow data-sm="./modules/m58327/index.cnxml:43:31"><munderover data-sm="./modules/m58327/index.cnxml:43:39"><mo data-sm="./modules/m58327/index.cnxml:43:53">∫</mo><mrow data-sm="./modules/m58327/index.cnxml:43:67"><msub data-sm="./modules/m58327/index.cnxml:43:75"><mi data-sm="./modules/m58327/index.cnxml:43:83">t</mi><mn data-sm="./modules/m58327/index.cnxml:43:97">0</mn></msub></mrow>
+<mrow data-sm="./modules/m58327/index.cnxml:43:129"><msub data-sm="./modules/m58327/index.cnxml:43:137"><mi data-sm="./modules/m58327/index.cnxml:43:145">t</mi><mi data-sm="./modules/m58327/index.cnxml:43:159">f</mi></msub></mrow>
+</munderover>
+<mrow data-sm="./modules/m58327/index.cnxml:44:1"><mo stretchy="false" data-sm="./modules/m58327/index.cnxml:44:9">(</mo><msub data-sm="./modules/m58327/index.cnxml:44:40"><mi data-sm="./modules/m58327/index.cnxml:44:48">ω</mi><mn data-sm="./modules/m58327/index.cnxml:44:62">0</mn></msub><mo data-sm="./modules/m58327/index.cnxml:44:85">+</mo>
+<mi data-sm="./modules/m58327/index.cnxml:45:1">α</mi><msup data-sm="./modules/m58327/index.cnxml:45:15"><mi data-sm="./modules/m58327/index.cnxml:45:23">t</mi><mo data-sm="./modules/m58327/index.cnxml:45:37">′</mo></msup><mo stretchy="false" data-sm="./modules/m58327/index.cnxml:45:60">)</mo><mi data-sm="./modules/m58327/index.cnxml:45:91">d</mi><msup data-sm="./modules/m58327/index.cnxml:45:105"><mi data-sm="./modules/m58327/index.cnxml:45:113">t</mi><mo data-sm="./modules/m58327/index.cnxml:45:127">′</mo></msup>
+<mo data-sm="./modules/m58327/index.cnxml:46:1">=</mo><mstyle displaystyle="true" data-sm="./modules/m58327/index.cnxml:46:15"><mrow data-sm="./modules/m58327/index.cnxml:46:45">
+<munderover data-sm="./modules/m58327/index.cnxml:47:1"><mo data-sm="./modules/m58327/index.cnxml:47:15">∫</mo><mrow data-sm="./modules/m58327/index.cnxml:47:29"><msub data-sm="./modules/m58327/index.cnxml:47:37"><mi data-sm="./modules/m58327/index.cnxml:47:45">θ</mi><mn data-sm="./modules/m58327/index.cnxml:47:59">0</mn></msub></mrow>
+<mrow data-sm="./modules/m58327/index.cnxml:47:91"><msub data-sm="./modules/m58327/index.cnxml:47:99"><mi data-sm="./modules/m58327/index.cnxml:47:107">θ</mi><mtext data-sm="./modules/m58327/index.cnxml:47:121">f</mtext></msub></mrow>
+</munderover>
+<mrow data-sm="./modules/m58327/index.cnxml:48:1"><mi data-sm="./modules/m58327/index.cnxml:48:9">d</mi><mi data-sm="./modules/m58327/index.cnxml:48:23">θ</mi></mrow>
+</mrow>
+</mstyle>
+<mo data-sm="./modules/m58327/index.cnxml:48:66">;</mo></mrow>
+</mrow>
+</mstyle>
+</mtd>
+</mtr>
+<mtr data-sm="./modules/m58327/index.cnxml:49:1"><mtd columnalign="left" data-sm="./modules/m58327/index.cnxml:49:8"><mstyle displaystyle="true" data-sm="./modules/m58327/index.cnxml:49:34"><mrow data-sm="./modules/m58327/index.cnxml:49:64"><munderover data-sm="./modules/m58327/index.cnxml:49:72"><mo data-sm="./modules/m58327/index.cnxml:49:86">∫</mo><mrow data-sm="./modules/m58327/index.cnxml:49:100"><msub data-sm="./modules/m58327/index.cnxml:49:108"><mi data-sm="./modules/m58327/index.cnxml:49:116">t</mi><mn data-sm="./modules/m58327/index.cnxml:49:130">0</mn></msub></mrow>
+<mrow data-sm="./modules/m58327/index.cnxml:50:1"><mi data-sm="./modules/m58327/index.cnxml:50:9">t</mi></mrow>
+</munderover>
+<mrow data-sm="./modules/m58327/index.cnxml:50:47"><msub data-sm="./modules/m58327/index.cnxml:50:55"><mi data-sm="./modules/m58327/index.cnxml:50:63">ω</mi><mn data-sm="./modules/m58327/index.cnxml:50:77">0</mn></msub><mi data-sm="./modules/m58327/index.cnxml:50:100">d</mi><mi data-sm="./modules/m58327/index.cnxml:50:114">t</mi><mo data-sm="./modules/m58327/index.cnxml:50:128">+</mo>
+<mstyle displaystyle="true" data-sm="./modules/m58327/index.cnxml:51:1"><mrow data-sm="./modules/m58327/index.cnxml:51:31"><munderover data-sm="./modules/m58327/index.cnxml:51:39"><mo data-sm="./modules/m58327/index.cnxml:51:53">∫</mo><mrow data-sm="./modules/m58327/index.cnxml:51:67"><msub data-sm="./modules/m58327/index.cnxml:51:75"><mi data-sm="./modules/m58327/index.cnxml:51:83">t</mi><mn data-sm="./modules/m58327/index.cnxml:51:97">0</mn></msub></mrow>
+<mi data-sm="./modules/m58327/index.cnxml:51:129">t</mi></munderover>
+<mrow data-sm="./modules/m58327/index.cnxml:52:1"><mi data-sm="./modules/m58327/index.cnxml:52:9">α</mi><msup data-sm="./modules/m58327/index.cnxml:52:23"><mi data-sm="./modules/m58327/index.cnxml:52:31">t</mi><mo data-sm="./modules/m58327/index.cnxml:52:45">′</mo></msup><mi data-sm="./modules/m58327/index.cnxml:52:68">d</mi><msup data-sm="./modules/m58327/index.cnxml:52:82"><mi data-sm="./modules/m58327/index.cnxml:52:90">t</mi><mo data-sm="./modules/m58327/index.cnxml:52:104">′</mo></msup><mo data-sm="./modules/m58327/index.cnxml:52:127">=</mo></mrow>
+</mrow>
+</mstyle>
+<mstyle displaystyle="true" data-sm="./modules/m58327/index.cnxml:52:170"><mrow data-sm="./modules/m58327/index.cnxml:52:200"><munderover data-sm="./modules/m58327/index.cnxml:52:208"><mo data-sm="./modules/m58327/index.cnxml:52:222">∫</mo><mrow data-sm="./modules/m58327/index.cnxml:52:236"><msub data-sm="./modules/m58327/index.cnxml:52:244"><mi data-sm="./modules/m58327/index.cnxml:52:252">θ</mi><mn data-sm="./modules/m58327/index.cnxml:52:266">0</mn></msub></mrow>
+<mrow data-sm="./modules/m58327/index.cnxml:52:298"><msub data-sm="./modules/m58327/index.cnxml:52:306"><mi data-sm="./modules/m58327/index.cnxml:52:314">θ</mi><mtext data-sm="./modules/m58327/index.cnxml:52:328">f</mtext></msub></mrow>
+</munderover>
+<mrow data-sm="./modules/m58327/index.cnxml:52:381"><mi data-sm="./modules/m58327/index.cnxml:52:389">d</mi><mi data-sm="./modules/m58327/index.cnxml:52:403">θ</mi></mrow>
+</mrow>
+</mstyle>
+<mo data-sm="./modules/m58327/index.cnxml:52:446">=</mo><msubsup data-sm="./modules/m58327/index.cnxml:52:460"><mrow data-sm="./modules/m58327/index.cnxml:52:471"><mrow data-sm="./modules/m58327/index.cnxml:52:479"><mo data-sm="./modules/m58327/index.cnxml:52:487">[</mo><mrow data-sm="./modules/m58327/index.cnxml:52:501"><msub data-sm="./modules/m58327/index.cnxml:52:509"><mi data-sm="./modules/m58327/index.cnxml:52:517">ω</mi><mn data-sm="./modules/m58327/index.cnxml:52:531">0</mn></msub><msup data-sm="./modules/m58327/index.cnxml:52:554"><mi data-sm="./modules/m58327/index.cnxml:52:562">t</mi><mo data-sm="./modules/m58327/index.cnxml:52:576">′</mo></msup><mo data-sm="./modules/m58327/index.cnxml:52:599">+</mo><mi data-sm="./modules/m58327/index.cnxml:52:613">α</mi><mrow data-sm="./modules/m58327/index.cnxml:52:627"><mo data-sm="./modules/m58327/index.cnxml:52:635">(</mo><mrow data-sm="./modules/m58327/index.cnxml:52:649"><mfrac data-sm="./modules/m58327/index.cnxml:52:657"><mrow data-sm="./modules/m58327/index.cnxml:52:666"><msup data-sm="./modules/m58327/index.cnxml:52:674"><mrow data-sm="./modules/m58327/index.cnxml:52:682"><mo stretchy="false" data-sm="./modules/m58327/index.cnxml:52:690">(</mo><msup data-sm="./modules/m58327/index.cnxml:52:721"><mi data-sm="./modules/m58327/index.cnxml:52:729">t</mi><mo data-sm="./modules/m58327/index.cnxml:52:743">′</mo></msup><mo stretchy="false" data-sm="./modules/m58327/index.cnxml:52:766">)</mo></mrow><mn data-sm="./modules/m58327/index.cnxml:52:806">2</mn></msup></mrow>
+<mn data-sm="./modules/m58327/index.cnxml:52:838">2</mn></mfrac>
+</mrow>
+<mo data-sm="./modules/m58327/index.cnxml:52:871">)</mo></mrow>
+</mrow>
+<mo data-sm="./modules/m58327/index.cnxml:52:903">]</mo></mrow>
+</mrow><mrow data-sm="./modules/m58327/index.cnxml:52:935"><msub data-sm="./modules/m58327/index.cnxml:52:943"><mi data-sm="./modules/m58327/index.cnxml:52:951">t</mi><mn data-sm="./modules/m58327/index.cnxml:52:965">0</mn></msub></mrow><mi data-sm="./modules/m58327/index.cnxml:52:997">t</mi></msubsup><mo data-sm="./modules/m58327/index.cnxml:52:1023">=</mo><msub data-sm="./modules/m58327/index.cnxml:52:1037"><mi data-sm="./modules/m58327/index.cnxml:52:1045">ω</mi><mn data-sm="./modules/m58327/index.cnxml:52:1059">0</mn></msub><mi data-sm="./modules/m58327/index.cnxml:52:1082">t</mi><mo data-sm="./modules/m58327/index.cnxml:52:1096">+</mo><mi data-sm="./modules/m58327/index.cnxml:52:1110">α</mi><mrow data-sm="./modules/m58327/index.cnxml:52:1124"><mo data-sm="./modules/m58327/index.cnxml:52:1132">(</mo><mrow data-sm="./modules/m58327/index.cnxml:52:1146"><mfrac data-sm="./modules/m58327/index.cnxml:52:1154"><mrow data-sm="./modules/m58327/index.cnxml:52:1163"><msup data-sm="./modules/m58327/index.cnxml:52:1171"><mi data-sm="./modules/m58327/index.cnxml:52:1179">t</mi><mn data-sm="./modules/m58327/index.cnxml:52:1193">2</mn></msup></mrow>
+<mn data-sm="./modules/m58327/index.cnxml:52:1225">2</mn></mfrac>
+</mrow>
+<mo data-sm="./modules/m58327/index.cnxml:52:1258">)</mo></mrow>
+<mo data-sm="./modules/m58327/index.cnxml:52:1281">=</mo><msub data-sm="./modules/m58327/index.cnxml:52:1295"><mi data-sm="./modules/m58327/index.cnxml:52:1303">θ</mi><mtext data-sm="./modules/m58327/index.cnxml:52:1317">f</mtext></msub><mo data-sm="./modules/m58327/index.cnxml:52:1346">−</mo><msub data-sm="./modules/m58327/index.cnxml:52:1360"><mi data-sm="./modules/m58327/index.cnxml:52:1368">θ</mi><mn data-sm="./modules/m58327/index.cnxml:52:1382">0</mn></msub><mo data-sm="./modules/m58327/index.cnxml:52:1405">,</mo></mrow>
+</mrow>
+</mstyle>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1167134477858" data-sm="./modules/m58327/index.cnxml:53:1">where we have set <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:53:57"><msub data-sm="./modules/m58327/index.cnxml:53:65"><mi data-sm="./modules/m58327/index.cnxml:53:73">t</mi><mn data-sm="./modules/m58327/index.cnxml:53:87">0</mn></msub><mo data-sm="./modules/m58327/index.cnxml:53:110">=</mo><mn data-sm="./modules/m58327/index.cnxml:53:124">0</mn></mrow>
+</mrow>
+</semantics>
+</math></span>. Now we rearrange to obtain</p>
+<div data-type="note" id="fs-id1167134652454" class="equation-callout" data-sm="./modules/m58327/index.cnxml:54:1">
+<div data-type="equation" id="fs-id1167134579229" data-sm="./modules/m58327/index.cnxml:55:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:55:51"><msub data-sm="./modules/m58327/index.cnxml:55:59"><mi data-sm="./modules/m58327/index.cnxml:55:67">θ</mi><mtext data-sm="./modules/m58327/index.cnxml:55:81">f</mtext></msub><mo data-sm="./modules/m58327/index.cnxml:55:110">=</mo><msub data-sm="./modules/m58327/index.cnxml:55:124"><mi data-sm="./modules/m58327/index.cnxml:55:132">θ</mi><mn data-sm="./modules/m58327/index.cnxml:55:146">0</mn></msub><mo data-sm="./modules/m58327/index.cnxml:55:169">+</mo><msub data-sm="./modules/m58327/index.cnxml:55:183"><mi data-sm="./modules/m58327/index.cnxml:55:191">ω</mi><mn data-sm="./modules/m58327/index.cnxml:55:205">0</mn></msub><mi data-sm="./modules/m58327/index.cnxml:55:228">t</mi><mo data-sm="./modules/m58327/index.cnxml:55:242">+</mo><mfrac data-sm="./modules/m58327/index.cnxml:55:256"><mn data-sm="./modules/m58327/index.cnxml:55:265">1</mn><mn data-sm="./modules/m58327/index.cnxml:55:279">2</mn></mfrac>
+<mi data-sm="./modules/m58327/index.cnxml:55:303">α</mi><msup data-sm="./modules/m58327/index.cnxml:55:317"><mi data-sm="./modules/m58327/index.cnxml:55:325">t</mi><mn data-sm="./modules/m58327/index.cnxml:55:339">2</mn></msup><mo data-sm="./modules/m58327/index.cnxml:55:362">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+<div class="os-equation-number">
+  <span class="os-number">10.12</span>
+</div>
+</div>
+</div>
+<p id="fs-id1167134642624" data-sm="./modules/m58327/index.cnxml:57:1"><a href="#fs-id1167134579229" data-sm="./modules/m58327/index.cnxml:57:31" class="autogenerated-content">Equation 10.12</a> is the rotational counterpart to the linear kinematics equation found in <a href="d50f6e32-0fda-46ef-a362-9bd36ca7c97d-at-aa8a43e-colon-0987c7f8-4a2c-42c0-9cd6-ac68721e8e84.xhtml" data-sm="./modules/m58327/index.cnxml:57:143" data-page-slug="3-introduction" data-page-uuid="0987c7f8-4a2c-42c0-9cd6-ac68721e8e84" data-page-fragment="">Motion Along a Straight Line</a> for position as a function of time. This equation gives us the angular position of a rotating rigid body at any time <em data-effect="italics" data-sm="./modules/m58327/index.cnxml:57:320">t</em> given the initial conditions (initial angular position and initial angular velocity) and the angular acceleration.</p>
+<p id="fs-id1167134655898" data-sm="./modules/m58327/index.cnxml:58:1">We can find an equation that is independent of time by solving for <em data-effect="italics" data-sm="./modules/m58327/index.cnxml:58:98">t</em> in <a href="#fs-id1167134891857" data-sm="./modules/m58327/index.cnxml:58:141" class="autogenerated-content">Equation 10.11</a> and substituting into <a href="#fs-id1167134579229" data-sm="./modules/m58327/index.cnxml:58:202" class="autogenerated-content">Equation 10.12</a>. <a href="#fs-id1167134579229" data-sm="./modules/m58327/index.cnxml:58:242" class="autogenerated-content">Equation 10.12</a> becomes</p>
+<div data-type="equation" id="fs-id1167134536209" class="unnumbered" data-sm="./modules/m58327/index.cnxml:59:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtable data-sm="./modules/m58327/index.cnxml:59:70"><mtr data-sm="./modules/m58327/index.cnxml:59:80"><mtd columnalign="right" data-sm="./modules/m58327/index.cnxml:59:87"><msub data-sm="./modules/m58327/index.cnxml:59:114"><mi data-sm="./modules/m58327/index.cnxml:59:122">θ</mi><mtext data-sm="./modules/m58327/index.cnxml:59:136">f</mtext></msub></mtd>
+<mtd columnalign="left" data-sm="./modules/m58327/index.cnxml:59:173"><mo data-sm="./modules/m58327/index.cnxml:59:199">=</mo></mtd>
+<mtd columnalign="left" data-sm="./modules/m58327/index.cnxml:59:221"><msub data-sm="./modules/m58327/index.cnxml:59:247"><mi data-sm="./modules/m58327/index.cnxml:59:255">θ</mi><mn data-sm="./modules/m58327/index.cnxml:59:269">0</mn></msub><mo data-sm="./modules/m58327/index.cnxml:59:292">+</mo><msub data-sm="./modules/m58327/index.cnxml:59:306"><mi data-sm="./modules/m58327/index.cnxml:59:314">ω</mi><mn data-sm="./modules/m58327/index.cnxml:59:328">0</mn></msub><mrow data-sm="./modules/m58327/index.cnxml:59:351"><mo data-sm="./modules/m58327/index.cnxml:59:359">(</mo><mrow data-sm="./modules/m58327/index.cnxml:59:373"><mfrac data-sm="./modules/m58327/index.cnxml:59:381"><mrow data-sm="./modules/m58327/index.cnxml:59:390"><msub data-sm="./modules/m58327/index.cnxml:59:398"><mi data-sm="./modules/m58327/index.cnxml:59:406">ω</mi><mtext data-sm="./modules/m58327/index.cnxml:59:420">f</mtext></msub><mo data-sm="./modules/m58327/index.cnxml:59:449">−</mo><msub data-sm="./modules/m58327/index.cnxml:59:463"><mi data-sm="./modules/m58327/index.cnxml:59:471">ω</mi><mn data-sm="./modules/m58327/index.cnxml:59:485">0</mn></msub></mrow>
+<mi data-sm="./modules/m58327/index.cnxml:59:517">α</mi></mfrac>
+</mrow>
+<mo data-sm="./modules/m58327/index.cnxml:59:550">)</mo></mrow>
+<mo data-sm="./modules/m58327/index.cnxml:59:573">+</mo><mfrac data-sm="./modules/m58327/index.cnxml:59:587"><mn data-sm="./modules/m58327/index.cnxml:59:596">1</mn><mn data-sm="./modules/m58327/index.cnxml:59:610">2</mn></mfrac>
+<mi data-sm="./modules/m58327/index.cnxml:59:634">α</mi><msup data-sm="./modules/m58327/index.cnxml:59:648"><mrow data-sm="./modules/m58327/index.cnxml:59:656"><mo data-sm="./modules/m58327/index.cnxml:59:664">(</mo><mrow data-sm="./modules/m58327/index.cnxml:59:678"><mfrac data-sm="./modules/m58327/index.cnxml:59:686"><mrow data-sm="./modules/m58327/index.cnxml:59:695"><msub data-sm="./modules/m58327/index.cnxml:59:703"><mi data-sm="./modules/m58327/index.cnxml:59:711">ω</mi><mtext data-sm="./modules/m58327/index.cnxml:59:725">f</mtext></msub><mo data-sm="./modules/m58327/index.cnxml:59:754">−</mo><msub data-sm="./modules/m58327/index.cnxml:59:768"><mi data-sm="./modules/m58327/index.cnxml:59:776">ω</mi><mn data-sm="./modules/m58327/index.cnxml:59:790">0</mn></msub></mrow>
+<mi data-sm="./modules/m58327/index.cnxml:59:822">α</mi></mfrac>
+</mrow>
+<mo data-sm="./modules/m58327/index.cnxml:59:855">)</mo></mrow><mn data-sm="./modules/m58327/index.cnxml:59:878">2</mn></msup></mtd>
+</mtr>
+<mtr data-sm="./modules/m58327/index.cnxml:59:917"><mtd data-sm="./modules/m58327/index.cnxml:59:924"/>
+<mtd columnalign="left" data-sm="./modules/m58327/index.cnxml:59:932"><mo data-sm="./modules/m58327/index.cnxml:59:958">=</mo></mtd>
+<mtd columnalign="left" data-sm="./modules/m58327/index.cnxml:59:980"><msub data-sm="./modules/m58327/index.cnxml:59:1006"><mi data-sm="./modules/m58327/index.cnxml:59:1014">θ</mi><mn data-sm="./modules/m58327/index.cnxml:59:1028">0</mn></msub><mo data-sm="./modules/m58327/index.cnxml:59:1051">+</mo><mfrac data-sm="./modules/m58327/index.cnxml:59:1065"><mrow data-sm="./modules/m58327/index.cnxml:59:1074"><msub data-sm="./modules/m58327/index.cnxml:59:1082"><mi data-sm="./modules/m58327/index.cnxml:59:1090">ω</mi><mn data-sm="./modules/m58327/index.cnxml:59:1104">0</mn></msub><msub data-sm="./modules/m58327/index.cnxml:59:1127"><mi data-sm="./modules/m58327/index.cnxml:59:1135">ω</mi><mtext data-sm="./modules/m58327/index.cnxml:59:1149">f</mtext></msub></mrow>
+<mi data-sm="./modules/m58327/index.cnxml:59:1187">α</mi></mfrac>
+<mo data-sm="./modules/m58327/index.cnxml:59:1211">−</mo><mfrac data-sm="./modules/m58327/index.cnxml:59:1225"><mrow data-sm="./modules/m58327/index.cnxml:59:1234"><msubsup data-sm="./modules/m58327/index.cnxml:59:1242"><mi data-sm="./modules/m58327/index.cnxml:59:1253">ω</mi><mn data-sm="./modules/m58327/index.cnxml:59:1267">0</mn><mn data-sm="./modules/m58327/index.cnxml:59:1281">2</mn></msubsup></mrow>
+<mi data-sm="./modules/m58327/index.cnxml:59:1316">α</mi></mfrac>
+<mo data-sm="./modules/m58327/index.cnxml:59:1340">+</mo><mfrac data-sm="./modules/m58327/index.cnxml:59:1354"><mn data-sm="./modules/m58327/index.cnxml:59:1363">1</mn><mn data-sm="./modules/m58327/index.cnxml:59:1377">2</mn></mfrac>
+<mspace width="0.2em" data-sm="./modules/m58327/index.cnxml:59:1401"/><mfrac data-sm="./modules/m58327/index.cnxml:59:1426"><mrow data-sm="./modules/m58327/index.cnxml:59:1435"><msubsup data-sm="./modules/m58327/index.cnxml:59:1443"><mi data-sm="./modules/m58327/index.cnxml:59:1454">ω</mi><mtext data-sm="./modules/m58327/index.cnxml:59:1468">f</mtext><mn data-sm="./modules/m58327/index.cnxml:59:1488">2</mn></msubsup></mrow>
+<mi data-sm="./modules/m58327/index.cnxml:59:1523">α</mi></mfrac>
+<mo data-sm="./modules/m58327/index.cnxml:59:1547">−</mo><mfrac data-sm="./modules/m58327/index.cnxml:59:1561"><mrow data-sm="./modules/m58327/index.cnxml:59:1570"><msub data-sm="./modules/m58327/index.cnxml:59:1578"><mi data-sm="./modules/m58327/index.cnxml:59:1586">ω</mi><mn data-sm="./modules/m58327/index.cnxml:59:1600">0</mn></msub><msub data-sm="./modules/m58327/index.cnxml:59:1623"><mi data-sm="./modules/m58327/index.cnxml:59:1631">ω</mi><mtext data-sm="./modules/m58327/index.cnxml:59:1645">f</mtext></msub></mrow>
+<mi data-sm="./modules/m58327/index.cnxml:59:1683">α</mi></mfrac>
+<mo data-sm="./modules/m58327/index.cnxml:59:1707">+</mo><mfrac data-sm="./modules/m58327/index.cnxml:59:1721"><mn data-sm="./modules/m58327/index.cnxml:59:1730">1</mn><mn data-sm="./modules/m58327/index.cnxml:59:1744">2</mn></mfrac>
+<mspace width="0.2em" data-sm="./modules/m58327/index.cnxml:59:1768"/><mfrac data-sm="./modules/m58327/index.cnxml:59:1793"><mrow data-sm="./modules/m58327/index.cnxml:59:1802"><msubsup data-sm="./modules/m58327/index.cnxml:59:1810"><mi data-sm="./modules/m58327/index.cnxml:59:1821">ω</mi><mn data-sm="./modules/m58327/index.cnxml:59:1835">0</mn><mn data-sm="./modules/m58327/index.cnxml:59:1849">2</mn></msubsup></mrow>
+<mi data-sm="./modules/m58327/index.cnxml:59:1884">α</mi></mfrac>
+</mtd>
+</mtr>
+<mtr data-sm="./modules/m58327/index.cnxml:59:1924"><mtd data-sm="./modules/m58327/index.cnxml:59:1931"/>
+<mtd columnalign="left" data-sm="./modules/m58327/index.cnxml:59:1939"><mo data-sm="./modules/m58327/index.cnxml:59:1965">=</mo></mtd>
+<mtd columnalign="left" data-sm="./modules/m58327/index.cnxml:59:1987"><msub data-sm="./modules/m58327/index.cnxml:59:2013"><mi data-sm="./modules/m58327/index.cnxml:59:2021">θ</mi><mn data-sm="./modules/m58327/index.cnxml:59:2035">0</mn></msub><mo data-sm="./modules/m58327/index.cnxml:59:2058">+</mo><mfrac data-sm="./modules/m58327/index.cnxml:59:2072"><mn data-sm="./modules/m58327/index.cnxml:59:2081">1</mn><mn data-sm="./modules/m58327/index.cnxml:59:2095">2</mn></mfrac>
+<mspace width="0.2em" data-sm="./modules/m58327/index.cnxml:59:2119"/><mfrac data-sm="./modules/m58327/index.cnxml:59:2144"><mrow data-sm="./modules/m58327/index.cnxml:59:2153"><msubsup data-sm="./modules/m58327/index.cnxml:59:2161"><mi data-sm="./modules/m58327/index.cnxml:59:2172">ω</mi><mtext data-sm="./modules/m58327/index.cnxml:59:2186">f</mtext><mn data-sm="./modules/m58327/index.cnxml:59:2206">2</mn></msubsup></mrow>
+<mi data-sm="./modules/m58327/index.cnxml:59:2241">α</mi></mfrac>
+<mo data-sm="./modules/m58327/index.cnxml:59:2265">−</mo><mfrac data-sm="./modules/m58327/index.cnxml:59:2279"><mn data-sm="./modules/m58327/index.cnxml:59:2288">1</mn><mn data-sm="./modules/m58327/index.cnxml:59:2302">2</mn></mfrac>
+<mspace width="0.2em" data-sm="./modules/m58327/index.cnxml:59:2326"/><mfrac data-sm="./modules/m58327/index.cnxml:59:2351"><mrow data-sm="./modules/m58327/index.cnxml:59:2360"><msubsup data-sm="./modules/m58327/index.cnxml:59:2368"><mi data-sm="./modules/m58327/index.cnxml:59:2379">ω</mi><mn data-sm="./modules/m58327/index.cnxml:59:2393">0</mn><mn data-sm="./modules/m58327/index.cnxml:59:2407">2</mn></msubsup></mrow>
+<mi data-sm="./modules/m58327/index.cnxml:59:2442">α</mi></mfrac>
+<mo data-sm="./modules/m58327/index.cnxml:59:2466">,</mo></mtd>
+</mtr>
+<mtr data-sm="./modules/m58327/index.cnxml:60:1"><mtd columnalign="left" data-sm="./modules/m58327/index.cnxml:60:8"><msub data-sm="./modules/m58327/index.cnxml:60:34"><mi data-sm="./modules/m58327/index.cnxml:60:42">θ</mi><mtext data-sm="./modules/m58327/index.cnxml:60:56">f</mtext></msub><mo data-sm="./modules/m58327/index.cnxml:60:85">−</mo><msub data-sm="./modules/m58327/index.cnxml:60:99"><mi data-sm="./modules/m58327/index.cnxml:60:107">θ</mi><mn data-sm="./modules/m58327/index.cnxml:60:121">0</mn></msub></mtd>
+<mtd columnalign="left" data-sm="./modules/m58327/index.cnxml:60:152"><mo data-sm="./modules/m58327/index.cnxml:60:178">=</mo></mtd>
+<mtd columnalign="left" data-sm="./modules/m58327/index.cnxml:60:200"><mfrac data-sm="./modules/m58327/index.cnxml:60:226"><mrow data-sm="./modules/m58327/index.cnxml:60:235"><msubsup data-sm="./modules/m58327/index.cnxml:60:243"><mi data-sm="./modules/m58327/index.cnxml:60:254">ω</mi><mtext data-sm="./modules/m58327/index.cnxml:60:268">f</mtext><mn data-sm="./modules/m58327/index.cnxml:60:288">2</mn></msubsup><mo data-sm="./modules/m58327/index.cnxml:60:314">−</mo><msubsup data-sm="./modules/m58327/index.cnxml:60:328"><mi data-sm="./modules/m58327/index.cnxml:60:339">ω</mi><mn data-sm="./modules/m58327/index.cnxml:60:353">0</mn><mn data-sm="./modules/m58327/index.cnxml:60:367">2</mn></msubsup></mrow>
+<mrow data-sm="./modules/m58327/index.cnxml:60:402"><mn data-sm="./modules/m58327/index.cnxml:60:410">2</mn><mi data-sm="./modules/m58327/index.cnxml:60:424">α</mi></mrow>
+</mfrac>
+</mtd>
+</mtr>
+</mtable>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1167134679532" data-sm="./modules/m58327/index.cnxml:61:1">or</p>
+<div data-type="note" id="fs-id1167134945281" class="equation-callout" data-sm="./modules/m58327/index.cnxml:62:1">
+<div data-type="equation" id="fs-id1167134940971" data-sm="./modules/m58327/index.cnxml:63:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:63:51"><msubsup data-sm="./modules/m58327/index.cnxml:63:59"><mi data-sm="./modules/m58327/index.cnxml:63:70">ω</mi><mtext data-sm="./modules/m58327/index.cnxml:63:84">f</mtext><mn data-sm="./modules/m58327/index.cnxml:63:104">2</mn></msubsup><mo data-sm="./modules/m58327/index.cnxml:63:130">=</mo><msubsup data-sm="./modules/m58327/index.cnxml:63:144"><mi data-sm="./modules/m58327/index.cnxml:63:155">ω</mi><mn data-sm="./modules/m58327/index.cnxml:63:169">0</mn><mn data-sm="./modules/m58327/index.cnxml:63:183">2</mn></msubsup><mo data-sm="./modules/m58327/index.cnxml:63:209">+</mo><mn data-sm="./modules/m58327/index.cnxml:63:223">2</mn><mi data-sm="./modules/m58327/index.cnxml:63:237">α</mi><mo stretchy="false" data-sm="./modules/m58327/index.cnxml:63:251">(</mo><mtext data-sm="./modules/m58327/index.cnxml:63:282">Δ</mtext><mi data-sm="./modules/m58327/index.cnxml:63:302">θ</mi><mo stretchy="false" data-sm="./modules/m58327/index.cnxml:63:316">)</mo><mo data-sm="./modules/m58327/index.cnxml:63:347">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+<div class="os-equation-number">
+  <span class="os-number">10.13</span>
+</div>
+</div>
+</div>
+<p id="fs-id1167134483814" data-sm="./modules/m58327/index.cnxml:65:1"><a href="#fs-id1167134864500" data-sm="./modules/m58327/index.cnxml:65:31" class="autogenerated-content">Equation 10.10</a> through <a href="#fs-id1167134940971" data-sm="./modules/m58327/index.cnxml:65:78" class="autogenerated-content">Equation 10.13</a> describe fixed-axis rotation for constant acceleration and are summarized in <a href="#fs-id1167134435354" data-sm="./modules/m58327/index.cnxml:65:194" class="autogenerated-content">Table 10.1</a>.</p>
+<div class="os-table"><table id="fs-id1167134435354" data-sm="./modules/m58327/index.cnxml:66:1"><tbody data-sm="./modules/m58327/index.cnxml:71:1">
+<tr data-sm="./modules/m58327/index.cnxml:72:1">
+<td data-valign="top" data-align="left">Angular displacement from average angular velocity</td>
+<td data-valign="top" data-align="left"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:74:42"><msub data-sm="./modules/m58327/index.cnxml:74:50"><mi data-sm="./modules/m58327/index.cnxml:74:58">θ</mi><mtext data-sm="./modules/m58327/index.cnxml:74:72">f</mtext></msub><mo data-sm="./modules/m58327/index.cnxml:74:101">=</mo><msub data-sm="./modules/m58327/index.cnxml:74:115"><mi data-sm="./modules/m58327/index.cnxml:74:123">θ</mi><mn data-sm="./modules/m58327/index.cnxml:74:137">0</mn></msub><mo data-sm="./modules/m58327/index.cnxml:74:160">+</mo><mover accent="true" data-sm="./modules/m58327/index.cnxml:74:174"><mi data-sm="./modules/m58327/index.cnxml:74:197">ω</mi><mo data-sm="./modules/m58327/index.cnxml:74:211">–</mo></mover>
+<mi data-sm="./modules/m58327/index.cnxml:74:235">t</mi></mrow>
+</mrow>
+</semantics>
+</math>
+</td>
+</tr>
+<tr data-sm="./modules/m58327/index.cnxml:76:1">
+<td data-valign="top" data-align="left">Angular velocity from angular acceleration</td>
+<td data-valign="top" data-align="left"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:78:42"><msub data-sm="./modules/m58327/index.cnxml:78:50"><mi data-sm="./modules/m58327/index.cnxml:78:58">ω</mi><mtext data-sm="./modules/m58327/index.cnxml:78:72">f</mtext></msub><mo data-sm="./modules/m58327/index.cnxml:78:101">=</mo><msub data-sm="./modules/m58327/index.cnxml:78:115"><mi data-sm="./modules/m58327/index.cnxml:78:123">ω</mi><mn data-sm="./modules/m58327/index.cnxml:78:137">0</mn></msub><mo data-sm="./modules/m58327/index.cnxml:78:160">+</mo><mi data-sm="./modules/m58327/index.cnxml:78:174">α</mi><mi data-sm="./modules/m58327/index.cnxml:78:188">t</mi></mrow>
+</mrow>
+</semantics>
+</math>
+</td>
+</tr>
+<tr data-sm="./modules/m58327/index.cnxml:80:1">
+<td data-valign="top" data-align="left">Angular displacement from angular velocity and angular acceleration</td>
+<td data-valign="top" data-align="left"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:82:42"><msub data-sm="./modules/m58327/index.cnxml:82:50"><mi data-sm="./modules/m58327/index.cnxml:82:58">θ</mi><mtext data-sm="./modules/m58327/index.cnxml:82:72">f</mtext></msub><mo data-sm="./modules/m58327/index.cnxml:82:101">=</mo><msub data-sm="./modules/m58327/index.cnxml:82:115"><mi data-sm="./modules/m58327/index.cnxml:82:123">θ</mi><mn data-sm="./modules/m58327/index.cnxml:82:137">0</mn></msub><mo data-sm="./modules/m58327/index.cnxml:82:160">+</mo><msub data-sm="./modules/m58327/index.cnxml:82:174"><mi data-sm="./modules/m58327/index.cnxml:82:182">ω</mi><mn data-sm="./modules/m58327/index.cnxml:82:196">0</mn></msub><mi data-sm="./modules/m58327/index.cnxml:82:219">t</mi><mo data-sm="./modules/m58327/index.cnxml:82:233">+</mo><mfrac data-sm="./modules/m58327/index.cnxml:82:247"><mn data-sm="./modules/m58327/index.cnxml:82:256">1</mn><mn data-sm="./modules/m58327/index.cnxml:82:270">2</mn></mfrac>
+<mi data-sm="./modules/m58327/index.cnxml:82:294">α</mi><msup data-sm="./modules/m58327/index.cnxml:82:308"><mi data-sm="./modules/m58327/index.cnxml:82:316">t</mi><mn data-sm="./modules/m58327/index.cnxml:82:330">2</mn></msup></mrow>
+</mrow>
+</semantics>
+</math>
+</td>
+</tr>
+<tr data-sm="./modules/m58327/index.cnxml:84:1">
+<td data-valign="top" data-align="left">Angular velocity from angular displacement and angular acceleration</td>
+<td data-valign="top" data-align="left"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:86:42"><msubsup data-sm="./modules/m58327/index.cnxml:86:50"><mi data-sm="./modules/m58327/index.cnxml:86:61">ω</mi><mtext data-sm="./modules/m58327/index.cnxml:86:75">f</mtext><mn data-sm="./modules/m58327/index.cnxml:86:95">2</mn></msubsup><mo data-sm="./modules/m58327/index.cnxml:86:121">=</mo><msub data-sm="./modules/m58327/index.cnxml:86:135"><mi data-sm="./modules/m58327/index.cnxml:86:143">ω</mi><mn data-sm="./modules/m58327/index.cnxml:86:157">0</mn></msub><msup data-sm="./modules/m58327/index.cnxml:86:180"><mrow data-sm="./modules/m58327/index.cnxml:86:188"/><mn data-sm="./modules/m58327/index.cnxml:86:197">2</mn></msup><mo data-sm="./modules/m58327/index.cnxml:86:220">+</mo><mn data-sm="./modules/m58327/index.cnxml:86:234">2</mn><mi data-sm="./modules/m58327/index.cnxml:86:248">α</mi><mo stretchy="false" data-sm="./modules/m58327/index.cnxml:86:262">(</mo><mtext data-sm="./modules/m58327/index.cnxml:86:293">Δ</mtext><mi data-sm="./modules/m58327/index.cnxml:86:313">θ</mi><mo stretchy="false" data-sm="./modules/m58327/index.cnxml:86:327">)</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="os-caption-container">
+  <span class="os-title-label">Table </span>
+  <span class="os-number">10.1</span>
+  <span class="os-divider"> </span>
+<span class="os-title" data-type="title">Kinematic Equations</span>
+
+  <span class="os-divider"> </span>
+</div>
+</div>
+</section>
+
+<section data-depth="1" id="fs-id1167134892158" data-sm="./modules/m58327/index.cnxml:92:1"><h3 data-type="title" data-sm="./modules/m58327/index.cnxml:93:1">Applying the Equations for Rotational Motion</h3>
+<p id="fs-id1167134651957" data-sm="./modules/m58327/index.cnxml:94:1">Now we can apply the key kinematic relations for rotational motion to some simple examples to get a feel for how the equations can be applied to everyday situations.</p>
+<div data-type="example" id="fs-id1167134652591" data-sm="./modules/m58327/index.cnxml:95:1"><h3 class="os-title">
+  <span class="os-title-label">Example </span>
+  <span class="os-number">10.4</span>
+  <span class="os-divider"> </span>
+</h3>
+<div class="body">
+<p id="fs-id1167131111562" data-sm="./modules/m58327/index.cnxml:96:1"></p>
+<h4 data-type="title" data-sm="./modules/m58327/index.cnxml:96:31">Calculating the Acceleration of a Fishing Reel</h4>
+A deep-sea fisherman hooks a big fish that swims away from the boat, pulling the fishing line from his fishing reel. The whole system is initially at rest, and the fishing line unwinds from the reel at a radius of 4.50 cm from its axis of rotation. The reel is given an angular acceleration of <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:97:303"><mn data-sm="./modules/m58327/index.cnxml:97:311">110</mn><msup data-sm="./modules/m58327/index.cnxml:97:327"><mrow data-sm="./modules/m58327/index.cnxml:97:335"><mspace width="0.2em" data-sm="./modules/m58327/index.cnxml:97:343"/><mtext data-sm="./modules/m58327/index.cnxml:97:368">rad/s</mtext></mrow><mn data-sm="./modules/m58327/index.cnxml:97:401">2</mn></msup></mrow>
+</mrow>
+</semantics>
+</math></span> for 2.00 s (<a href="#CNX_UPhysics_10_02_Reel" data-sm="./modules/m58327/index.cnxml:97:455" class="autogenerated-content">Figure 10.11</a>).
+<p id="fs-id1167134858537" data-sm="./modules/m58327/index.cnxml:98:1">(a) What is the final angular velocity of the reel after 2 s?</p>
+<p id="fs-id1167134437352" data-sm="./modules/m58327/index.cnxml:99:1">(b) How many revolutions does the reel make?</p>
+<div class="os-figure"><figure id="CNX_UPhysics_10_02_Reel" data-sm="./modules/m58327/index.cnxml:100:1">
+<span data-type="media" id="fs-id1167134817328" data-alt="Figure is a drawing of a fishing line coming off a rotating reel. Rotation radius is 4.5 cm, rotation takes place in the counterclockwise direction." data-sm="./modules/m58327/index.cnxml:101:1">
+<img src="38ee2f682fec3782a9ddd18024dcd36ef150d00d.jpeg" data-media-type="image/jpeg" alt="Figure is a drawing of a fishing line coming off a rotating reel. Rotation radius is 4.5 cm, rotation takes place in the counterclockwise direction." data-sm="./modules/m58327/index.cnxml:102:1"/>
+</span>
+
+</figure>
+<div class="os-caption-container">
+  <span class="os-title-label">Figure </span>
+<span class="os-number">10.11</span>
+
+
+
+  <span class="os-divider"> </span>
+  <span data-sm="./modules/m58327/index.cnxml:104:1" class="os-caption">Fishing line coming off a rotating reel moves linearly.</span>
+</div>
+</div>
+<p id="fs-id1167134898526" data-sm="./modules/m58327/index.cnxml:106:1"></p>
+<h4 data-type="title" data-sm="./modules/m58327/index.cnxml:106:31">Strategy</h4>
+Identify the knowns and compare with the kinematic equations for constant acceleration. Look for the appropriate equation that can be solved for the unknown, using the knowns given in the problem description.
+<p id="fs-id1167134700994" data-sm="./modules/m58327/index.cnxml:108:1"></p>
+<h4 data-type="title" data-sm="./modules/m58327/index.cnxml:108:31">Solution</h4>
+<ol id="fs-id1167134944381" type="a" data-sm="./modules/m58327/index.cnxml:109:1">
+<li data-sm="./modules/m58327/index.cnxml:110:1">We are given <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mi data-sm="./modules/m58327/index.cnxml:110:28">α</mi></mrow>
+</semantics>
+</math> and <em data-effect="italics" data-sm="./modules/m58327/index.cnxml:110:56">t</em> and want to determine <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mi data-sm="./modules/m58327/index.cnxml:110:126">ω</mi></mrow>
+</semantics>
+</math>. The most straightforward equation to use is <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:110:203"><msub data-sm="./modules/m58327/index.cnxml:110:211"><mi data-sm="./modules/m58327/index.cnxml:110:219">ω</mi><mtext data-sm="./modules/m58327/index.cnxml:110:233">f</mtext></msub><mo data-sm="./modules/m58327/index.cnxml:110:262">=</mo><msub data-sm="./modules/m58327/index.cnxml:110:276"><mi data-sm="./modules/m58327/index.cnxml:110:284">ω</mi><mn data-sm="./modules/m58327/index.cnxml:110:298">0</mn></msub><mo data-sm="./modules/m58327/index.cnxml:110:321">+</mo><mi data-sm="./modules/m58327/index.cnxml:110:335">α</mi><mi data-sm="./modules/m58327/index.cnxml:110:349">t</mi></mrow>
+</mrow>
+</semantics>
+</math>, since all terms are known besides the unknown variable we are looking for. We are given that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:110:484"><msub data-sm="./modules/m58327/index.cnxml:110:492"><mi data-sm="./modules/m58327/index.cnxml:110:500">ω</mi><mn data-sm="./modules/m58327/index.cnxml:110:514">0</mn></msub><mo data-sm="./modules/m58327/index.cnxml:110:537">=</mo><mn data-sm="./modules/m58327/index.cnxml:110:551">0</mn></mrow>
+</mrow>
+</semantics>
+</math> (it starts from rest), so
+<div data-type="equation" id="fs-id1167134537543" class="unnumbered" data-sm="./modules/m58327/index.cnxml:111:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:111:70"><msub data-sm="./modules/m58327/index.cnxml:111:78"><mi data-sm="./modules/m58327/index.cnxml:111:86">ω</mi><mtext data-sm="./modules/m58327/index.cnxml:111:100">f</mtext></msub><mo data-sm="./modules/m58327/index.cnxml:111:129">=</mo><mn data-sm="./modules/m58327/index.cnxml:111:143">0</mn><mo data-sm="./modules/m58327/index.cnxml:111:157">+</mo><mo stretchy="false" data-sm="./modules/m58327/index.cnxml:111:171">(</mo><mn data-sm="./modules/m58327/index.cnxml:111:202">110</mn><msup data-sm="./modules/m58327/index.cnxml:111:218"><mrow data-sm="./modules/m58327/index.cnxml:111:226"><mspace width="0.2em" data-sm="./modules/m58327/index.cnxml:111:234"/><mtext data-sm="./modules/m58327/index.cnxml:111:259">rad/s</mtext></mrow><mn data-sm="./modules/m58327/index.cnxml:111:292">2</mn></msup><mo stretchy="false" data-sm="./modules/m58327/index.cnxml:111:315">)</mo><mo stretchy="false" data-sm="./modules/m58327/index.cnxml:111:346">(</mo><mn data-sm="./modules/m58327/index.cnxml:111:377">2.00</mn><mspace width="0.2em" data-sm="./modules/m58327/index.cnxml:111:394"/><mtext data-sm="./modules/m58327/index.cnxml:111:419">s</mtext><mo stretchy="false" data-sm="./modules/m58327/index.cnxml:111:439">)</mo><mo data-sm="./modules/m58327/index.cnxml:111:470">=</mo><mn data-sm="./modules/m58327/index.cnxml:111:484">220</mn><mspace width="0.2em" data-sm="./modules/m58327/index.cnxml:111:500"/><mtext data-sm="./modules/m58327/index.cnxml:111:525">rad/s</mtext><mo data-sm="./modules/m58327/index.cnxml:111:549">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div></li>
+<li data-sm="./modules/m58327/index.cnxml:112:1">We are asked to find the number of revolutions. Because <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:112:71"><mn data-sm="./modules/m58327/index.cnxml:112:79">1</mn><mspace width="0.2em" data-sm="./modules/m58327/index.cnxml:112:93"/><mtext data-sm="./modules/m58327/index.cnxml:112:118">rev</mtext><mo data-sm="./modules/m58327/index.cnxml:112:140">=</mo><mn data-sm="./modules/m58327/index.cnxml:112:154">2</mn><mi data-sm="./modules/m58327/index.cnxml:112:168">π</mi><mspace width="0.2em" data-sm="./modules/m58327/index.cnxml:112:182"/><mtext data-sm="./modules/m58327/index.cnxml:112:207">rad</mtext></mrow>
+</mrow>
+</semantics>
+</math>, we can find the number of revolutions by finding <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mi data-sm="./modules/m58327/index.cnxml:112:306">θ</mi></mrow>
+</semantics>
+</math> in radians. We are given <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mi data-sm="./modules/m58327/index.cnxml:112:363">α</mi></mrow>
+</semantics>
+</math> and <em data-effect="italics" data-sm="./modules/m58327/index.cnxml:112:391">t</em>, and we know <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:112:452"><msub data-sm="./modules/m58327/index.cnxml:112:460"><mi data-sm="./modules/m58327/index.cnxml:112:468">ω</mi><mn data-sm="./modules/m58327/index.cnxml:112:482">0</mn></msub></mrow>
+</mrow>
+</semantics>
+</math> is zero, so we can obtain <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mi data-sm="./modules/m58327/index.cnxml:112:558">θ</mi></mrow>
+</semantics>
+</math> by using
+<div data-type="equation" id="fs-id1167134656731" class="unnumbered" data-sm="./modules/m58327/index.cnxml:113:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtable data-sm="./modules/m58327/index.cnxml:113:70"><mtr data-sm="./modules/m58327/index.cnxml:113:80"><mtd columnalign="right" data-sm="./modules/m58327/index.cnxml:113:87"><msub data-sm="./modules/m58327/index.cnxml:113:114"><mi data-sm="./modules/m58327/index.cnxml:113:122">θ</mi><mtext data-sm="./modules/m58327/index.cnxml:113:136">f</mtext></msub></mtd>
+<mtd columnalign="left" data-sm="./modules/m58327/index.cnxml:113:173"><mo data-sm="./modules/m58327/index.cnxml:113:199">=</mo><msub data-sm="./modules/m58327/index.cnxml:113:213"><mi data-sm="./modules/m58327/index.cnxml:113:221">θ</mi><mtext data-sm="./modules/m58327/index.cnxml:113:235">i</mtext></msub><mo data-sm="./modules/m58327/index.cnxml:113:264">+</mo><msub data-sm="./modules/m58327/index.cnxml:113:278"><mi data-sm="./modules/m58327/index.cnxml:113:286">ω</mi><mtext data-sm="./modules/m58327/index.cnxml:113:300">i</mtext></msub><mi data-sm="./modules/m58327/index.cnxml:113:329">t</mi><mo data-sm="./modules/m58327/index.cnxml:113:343">+</mo><mfrac data-sm="./modules/m58327/index.cnxml:113:357"><mn data-sm="./modules/m58327/index.cnxml:113:366">1</mn><mn data-sm="./modules/m58327/index.cnxml:113:380">2</mn></mfrac>
+<mi data-sm="./modules/m58327/index.cnxml:113:404">α</mi><msup data-sm="./modules/m58327/index.cnxml:113:418"><mi data-sm="./modules/m58327/index.cnxml:113:426">t</mi><mn data-sm="./modules/m58327/index.cnxml:113:440">2</mn></msup></mtd>
+</mtr>
+<mtr data-sm="./modules/m58327/index.cnxml:113:479"><mtd data-sm="./modules/m58327/index.cnxml:113:486"/>
+<mtd columnalign="left" data-sm="./modules/m58327/index.cnxml:113:494"><mo data-sm="./modules/m58327/index.cnxml:113:520">=</mo><mn data-sm="./modules/m58327/index.cnxml:113:534">0</mn><mo data-sm="./modules/m58327/index.cnxml:113:548">+</mo><mn data-sm="./modules/m58327/index.cnxml:113:562">0</mn><mo data-sm="./modules/m58327/index.cnxml:113:576">+</mo><mrow data-sm="./modules/m58327/index.cnxml:113:590"><mo data-sm="./modules/m58327/index.cnxml:113:598">(</mo><mrow data-sm="./modules/m58327/index.cnxml:113:612"><mn data-sm="./modules/m58327/index.cnxml:113:620">0.500</mn></mrow>
+<mo data-sm="./modules/m58327/index.cnxml:113:647">)</mo></mrow>
+<mrow data-sm="./modules/m58327/index.cnxml:113:670"><mo data-sm="./modules/m58327/index.cnxml:113:678">(</mo><mrow data-sm="./modules/m58327/index.cnxml:113:692"><mn data-sm="./modules/m58327/index.cnxml:113:700">110</mn><msup data-sm="./modules/m58327/index.cnxml:113:716"><mrow data-sm="./modules/m58327/index.cnxml:113:724"><mspace width="0.2em" data-sm="./modules/m58327/index.cnxml:113:732"/><mtext data-sm="./modules/m58327/index.cnxml:113:757">rad/s</mtext></mrow><mn data-sm="./modules/m58327/index.cnxml:113:790">2</mn></msup></mrow>
+<mo data-sm="./modules/m58327/index.cnxml:113:822">)</mo></mrow>
+<msup data-sm="./modules/m58327/index.cnxml:113:845"><mrow data-sm="./modules/m58327/index.cnxml:113:853"><mo data-sm="./modules/m58327/index.cnxml:113:861">(</mo><mrow data-sm="./modules/m58327/index.cnxml:113:875"><mn data-sm="./modules/m58327/index.cnxml:113:883">2.00</mn><mspace width="0.2em" data-sm="./modules/m58327/index.cnxml:113:900"/><mtext data-sm="./modules/m58327/index.cnxml:113:925">s</mtext></mrow>
+<mo data-sm="./modules/m58327/index.cnxml:113:954">)</mo></mrow><mn data-sm="./modules/m58327/index.cnxml:113:977">2</mn></msup><mo data-sm="./modules/m58327/index.cnxml:113:1000">=</mo><mn data-sm="./modules/m58327/index.cnxml:113:1014">220</mn><mspace width="0.2em" data-sm="./modules/m58327/index.cnxml:113:1030"/><mtext data-sm="./modules/m58327/index.cnxml:113:1055">rad</mtext><mtext data-sm="./modules/m58327/index.cnxml:113:1077">.</mtext></mtd>
+</mtr>
+</mtable>
+</mrow>
+</semantics>
+</math>
+</div>
+Converting radians to revolutions gives
+<div data-type="equation" id="fs-id1170902930567" class="unnumbered" data-sm="./modules/m58327/index.cnxml:115:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:115:70"><mtext data-sm="./modules/m58327/index.cnxml:115:78">Number of rev</mtext><mspace width="0.2em" data-sm="./modules/m58327/index.cnxml:115:110"/><mo data-sm="./modules/m58327/index.cnxml:115:135">=</mo><mo stretchy="false" data-sm="./modules/m58327/index.cnxml:115:149">(</mo><mn data-sm="./modules/m58327/index.cnxml:115:180">220</mn><mspace width="0.2em" data-sm="./modules/m58327/index.cnxml:115:196"/><mtext data-sm="./modules/m58327/index.cnxml:115:221">rad</mtext><mo stretchy="false" data-sm="./modules/m58327/index.cnxml:115:243">)</mo><mfrac data-sm="./modules/m58327/index.cnxml:115:274"><mrow data-sm="./modules/m58327/index.cnxml:115:283"><mn data-sm="./modules/m58327/index.cnxml:115:291">1</mn><mspace width="0.2em" data-sm="./modules/m58327/index.cnxml:115:305"/><mtext data-sm="./modules/m58327/index.cnxml:115:330">rev</mtext></mrow>
+<mrow data-sm="./modules/m58327/index.cnxml:115:361"><mn data-sm="./modules/m58327/index.cnxml:115:369">2</mn><mi data-sm="./modules/m58327/index.cnxml:115:383">π</mi><mspace width="0.2em" data-sm="./modules/m58327/index.cnxml:115:397"/><mtext data-sm="./modules/m58327/index.cnxml:115:422">rad</mtext></mrow>
+</mfrac>
+<mo data-sm="./modules/m58327/index.cnxml:115:463">=</mo><mn data-sm="./modules/m58327/index.cnxml:115:477">35.0</mn><mspace width="0.2em" data-sm="./modules/m58327/index.cnxml:115:494"/><mtext data-sm="./modules/m58327/index.cnxml:115:519">rev</mtext><mtext data-sm="./modules/m58327/index.cnxml:115:541">.</mtext></mrow>
+</mrow>
+</semantics>
+</math>
+</div></li>
+</ol>
+<p id="fs-id1167134508433" data-sm="./modules/m58327/index.cnxml:117:1"></p>
+<h4 data-type="title" data-sm="./modules/m58327/index.cnxml:117:31">Significance</h4>
+This example illustrates that relationships among rotational quantities are highly analogous to those among linear quantities. The answers to the questions are realistic. After unwinding for two seconds, the reel is found to spin at 220 rad/s, which is 2100 rpm. (No wonder reels sometimes make high-pitched sounds.)
+</div>
+</div>
+<p id="fs-id1167134915778" data-sm="./modules/m58327/index.cnxml:120:1">In the preceding example, we considered a fishing reel with a positive angular acceleration. Now let us consider what happens with a negative angular acceleration.</p>
+<div data-type="example" id="fs-id1167134515175" data-sm="./modules/m58327/index.cnxml:121:1"><h3 class="os-title">
+  <span class="os-title-label">Example </span>
+  <span class="os-number">10.5</span>
+  <span class="os-divider"> </span>
+</h3>
+<div class="body">
+<p id="fs-id1167134712029" data-sm="./modules/m58327/index.cnxml:122:1"></p>
+<h4 data-type="title" data-sm="./modules/m58327/index.cnxml:122:31">Calculating the Duration When the Fishing Reel Slows Down and Stops</h4>
+Now the fisherman applies a brake to the spinning reel, achieving an angular acceleration of <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:123:102"><mn data-sm="./modules/m58327/index.cnxml:123:110">−300</mn><msup data-sm="./modules/m58327/index.cnxml:123:127"><mrow data-sm="./modules/m58327/index.cnxml:123:135"><mspace width="0.2em" data-sm="./modules/m58327/index.cnxml:123:143"/><mtext data-sm="./modules/m58327/index.cnxml:123:168">rad/s</mtext></mrow><mn data-sm="./modules/m58327/index.cnxml:123:201">2</mn></msup></mrow>
+</mrow>
+</semantics>
+</math></span>. How long does it take the reel to come to a stop?
+<p id="fs-id1167134443261" data-sm="./modules/m58327/index.cnxml:124:1"></p>
+<h4 data-type="title" data-sm="./modules/m58327/index.cnxml:124:31">Strategy</h4>
+We are asked to find the time <em data-effect="italics" data-sm="./modules/m58327/index.cnxml:125:31">t</em> for the reel to come to a stop. The initial and final conditions are different from those in the previous problem, which involved the same fishing reel. Now we see that the initial angular velocity is <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:125:280"><msub data-sm="./modules/m58327/index.cnxml:125:288"><mi data-sm="./modules/m58327/index.cnxml:125:296">ω</mi><mn data-sm="./modules/m58327/index.cnxml:125:310">0</mn></msub><mo data-sm="./modules/m58327/index.cnxml:125:333">=</mo><mn data-sm="./modules/m58327/index.cnxml:125:347">220</mn><mspace width="0.2em" data-sm="./modules/m58327/index.cnxml:125:363"/><mrow data-sm="./modules/m58327/index.cnxml:125:388"><mrow data-sm="./modules/m58327/index.cnxml:125:396"><mtext data-sm="./modules/m58327/index.cnxml:125:404">rad</mtext></mrow>
+<mtext data-sm="./modules/m58327/index.cnxml:125:435">/</mtext><mtext data-sm="./modules/m58327/index.cnxml:125:455">s</mtext></mrow>
+</mrow>
+</mrow>
+</semantics>
+</math></span> and the final angular velocity <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:125:542"><mi data-sm="./modules/m58327/index.cnxml:125:550">ω</mi></mrow>
+</mrow>
+</semantics>
+</math></span> is zero. The angular acceleration is given as <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:125:637"><mi data-sm="./modules/m58327/index.cnxml:125:645">α</mi><mo data-sm="./modules/m58327/index.cnxml:125:659">=</mo><mn data-sm="./modules/m58327/index.cnxml:125:673">−300</mn><mspace width="0.2em" data-sm="./modules/m58327/index.cnxml:125:690"/><msup data-sm="./modules/m58327/index.cnxml:125:715"><mrow data-sm="./modules/m58327/index.cnxml:125:723"><mtext data-sm="./modules/m58327/index.cnxml:125:731">rad/s</mtext></mrow><mn data-sm="./modules/m58327/index.cnxml:125:764">2</mn></msup><mo data-sm="./modules/m58327/index.cnxml:125:787">.</mo></mrow>
+</mrow>
+</semantics>
+</math></span> Examining the available equations, we see all quantities but <em data-effect="italics" data-sm="./modules/m58327/index.cnxml:125:881">t</em> are known in <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:125:942"><msub data-sm="./modules/m58327/index.cnxml:125:950"><mi data-sm="./modules/m58327/index.cnxml:125:958">ω</mi><mtext data-sm="./modules/m58327/index.cnxml:125:972">f</mtext></msub><mo data-sm="./modules/m58327/index.cnxml:125:1001">=</mo><msub data-sm="./modules/m58327/index.cnxml:125:1015"><mi data-sm="./modules/m58327/index.cnxml:125:1023">ω</mi><mn data-sm="./modules/m58327/index.cnxml:125:1037">0</mn></msub><mo data-sm="./modules/m58327/index.cnxml:125:1060">+</mo><mi data-sm="./modules/m58327/index.cnxml:125:1074">α</mi><mi data-sm="./modules/m58327/index.cnxml:125:1088">t</mi></mrow>
+</mrow>
+</semantics>
+</math></span>, making it easiest to use this equation.
+<p id="fs-id1167134665952" data-sm="./modules/m58327/index.cnxml:126:1"></p>
+<h4 data-type="title" data-sm="./modules/m58327/index.cnxml:126:31">Solution</h4>
+The equation states
+<div data-type="equation" id="fs-id1167131116661" class="unnumbered" data-sm="./modules/m58327/index.cnxml:128:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:128:70"><msub data-sm="./modules/m58327/index.cnxml:128:78"><mi data-sm="./modules/m58327/index.cnxml:128:86">ω</mi><mtext data-sm="./modules/m58327/index.cnxml:128:100">f</mtext></msub><mo data-sm="./modules/m58327/index.cnxml:128:129">=</mo><msub data-sm="./modules/m58327/index.cnxml:128:143"><mi data-sm="./modules/m58327/index.cnxml:128:151">ω</mi><mn data-sm="./modules/m58327/index.cnxml:128:165">0</mn></msub><mo data-sm="./modules/m58327/index.cnxml:128:188">+</mo><mi data-sm="./modules/m58327/index.cnxml:128:202">α</mi><mi data-sm="./modules/m58327/index.cnxml:128:216">t</mi><mo data-sm="./modules/m58327/index.cnxml:128:230">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1167134540028" data-sm="./modules/m58327/index.cnxml:129:1">We solve the equation algebraically for <em data-effect="italics" data-sm="./modules/m58327/index.cnxml:129:71">t</em> and then substitute the known values as usual, yielding</p>
+<div data-type="equation" id="fs-id1167131117379" class="unnumbered" data-sm="./modules/m58327/index.cnxml:130:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:130:70"><mi data-sm="./modules/m58327/index.cnxml:130:78">t</mi><mo data-sm="./modules/m58327/index.cnxml:130:92">=</mo><mfrac data-sm="./modules/m58327/index.cnxml:130:106"><mrow data-sm="./modules/m58327/index.cnxml:130:115"><msub data-sm="./modules/m58327/index.cnxml:130:123"><mi data-sm="./modules/m58327/index.cnxml:130:131">ω</mi><mtext data-sm="./modules/m58327/index.cnxml:130:145">f</mtext></msub><mo data-sm="./modules/m58327/index.cnxml:130:174">−</mo><msub data-sm="./modules/m58327/index.cnxml:130:188"><mi data-sm="./modules/m58327/index.cnxml:130:196">ω</mi><mn data-sm="./modules/m58327/index.cnxml:130:210">0</mn></msub></mrow>
+<mi data-sm="./modules/m58327/index.cnxml:130:242">α</mi></mfrac>
+<mo data-sm="./modules/m58327/index.cnxml:130:266">=</mo><mfrac data-sm="./modules/m58327/index.cnxml:130:280"><mrow data-sm="./modules/m58327/index.cnxml:130:289"><mn data-sm="./modules/m58327/index.cnxml:130:297">0</mn><mo data-sm="./modules/m58327/index.cnxml:130:311">−</mo><mn data-sm="./modules/m58327/index.cnxml:130:325">220.0</mn><mspace width="0.2em" data-sm="./modules/m58327/index.cnxml:130:343"/><mtext data-sm="./modules/m58327/index.cnxml:130:368">rad/s</mtext></mrow>
+<mrow data-sm="./modules/m58327/index.cnxml:130:401"><mn data-sm="./modules/m58327/index.cnxml:130:409">−300.0</mn><mspace width="0.2em" data-sm="./modules/m58327/index.cnxml:130:428"/><msup data-sm="./modules/m58327/index.cnxml:130:453"><mrow data-sm="./modules/m58327/index.cnxml:130:461"><mtext data-sm="./modules/m58327/index.cnxml:130:469">rad/s</mtext></mrow><mn data-sm="./modules/m58327/index.cnxml:130:502">2</mn></msup></mrow>
+</mfrac>
+<mo data-sm="./modules/m58327/index.cnxml:130:544">=</mo><mn data-sm="./modules/m58327/index.cnxml:130:558">0.733</mn><mspace width="0.2em" data-sm="./modules/m58327/index.cnxml:130:576"/><mtext data-sm="./modules/m58327/index.cnxml:130:601">s</mtext><mo data-sm="./modules/m58327/index.cnxml:130:621">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1167134534920" data-sm="./modules/m58327/index.cnxml:131:1"></p>
+<h4 data-type="title" data-sm="./modules/m58327/index.cnxml:131:31">Significance</h4>
+Note that care must be taken with the signs that indicate the directions of various quantities. Also, note that the time to stop the reel is fairly small because the acceleration is rather large. Fishing lines sometimes snap because of the accelerations involved, and fishermen often let the fish swim for a while before applying brakes on the reel. A tired fish is slower, requiring a smaller acceleration.
+</div>
+</div>
+<div data-type="note" id="fs-id1167131109952" class="check-understanding" data-sm="./modules/m58327/index.cnxml:134:1"><h3 class="os-title">
+  <span class="os-title-label">Check Your Understanding </span>
+  <span class="os-number">10.2</span>
+  <span class="os-divider"> </span>
+</h3>
+<div class="os-note-body">
+<div data-type="exercise" id="fs-id1167131109955" data-sm="./modules/m58327/index.cnxml:135:1" class="unnumbered os-hasSolution">
+<div data-type="problem" id="fs-id1167131109957" data-sm="./modules/m58327/index.cnxml:136:1"><div class="os-problem-container">
+<p id="fs-id1167134581246" data-sm="./modules/m58327/index.cnxml:137:1"> A centrifuge used in DNA extraction spins at a maximum rate of 7000 rpm, producing a “g-force” on the sample that is 6000 times the force of gravity. If the centrifuge takes 10 seconds to come to rest from the maximum spin rate: (a) What is the angular acceleration of the centrifuge? (b) What is the angular displacement of the centrifuge during this time?</p>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+<div data-type="example" id="fs-id1167134816425" data-sm="./modules/m58327/index.cnxml:148:1"><h3 class="os-title">
+  <span class="os-title-label">Example </span>
+  <span class="os-number">10.6</span>
+  <span class="os-divider"> </span>
+</h3>
+<div class="body">
+<p id="fs-id1167134816427" data-sm="./modules/m58327/index.cnxml:149:1"></p>
+<h4 data-type="title" data-sm="./modules/m58327/index.cnxml:149:31">Angular Acceleration of a Propeller</h4>
+<a href="#CNX_UPhysics_10_02_Prop" data-sm="./modules/m58327/index.cnxml:150:1" class="autogenerated-content">Figure 10.12</a> shows a graph of the angular velocity of a propeller on an aircraft as a function of time. Its angular velocity starts at 30 rad/s and drops linearly to 0 rad/s over the course of 5 seconds. (a) Find the angular acceleration of the object and verify the result using the kinematic equations. (b) Find the angle through which the propeller rotates during these 5 seconds and verify your result using the kinematic equations.
+<div class="os-figure"><figure id="CNX_UPhysics_10_02_Prop" data-sm="./modules/m58327/index.cnxml:151:1">
+<span data-type="media" id="fs-id1167134920478" data-alt="Figure is a graph of the angular velocity in rads per second plotted versus time in seconds. Angular velocity decreases linearly with time, from 30 rads per second at zero seconds to zero at 5 seconds." data-sm="./modules/m58327/index.cnxml:152:1">
+<img src="4047feb7075f0cf2f7bcec1220906acab839fcd1.jpeg" data-media-type="image/jpeg" alt="Figure is a graph of the angular velocity in rads per second plotted versus time in seconds. Angular velocity decreases linearly with time, from 30 rads per second at zero seconds to zero at 5 seconds." data-sm="./modules/m58327/index.cnxml:153:1"/>
+</span>
+
+</figure>
+<div class="os-caption-container">
+  <span class="os-title-label">Figure </span>
+<span class="os-number">10.12</span>
+
+
+
+  <span class="os-divider"> </span>
+  <span data-sm="./modules/m58327/index.cnxml:155:1" class="os-caption">A graph of the angular velocity of a propeller versus time.</span>
+</div>
+</div>
+<p id="fs-id1167131107808" data-sm="./modules/m58327/index.cnxml:157:1"></p>
+<h4 data-type="title" data-sm="./modules/m58327/index.cnxml:157:31">Strategy</h4>
+<ol id="fs-id1167131107812" type="a" data-sm="./modules/m58327/index.cnxml:158:1">
+<li data-sm="./modules/m58327/index.cnxml:159:1">Since the angular velocity varies linearly with time, we know that the angular acceleration is constant and does not depend on the time variable. The angular acceleration is the slope of the angular velocity vs. time graph, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:159:239"><mi data-sm="./modules/m58327/index.cnxml:159:247">α</mi><mo data-sm="./modules/m58327/index.cnxml:159:261">=</mo><mfrac data-sm="./modules/m58327/index.cnxml:159:275"><mrow data-sm="./modules/m58327/index.cnxml:159:284"><mi data-sm="./modules/m58327/index.cnxml:159:292">d</mi><mi data-sm="./modules/m58327/index.cnxml:159:306">ω</mi></mrow>
+<mrow data-sm="./modules/m58327/index.cnxml:159:329"><mi data-sm="./modules/m58327/index.cnxml:159:337">d</mi><mi data-sm="./modules/m58327/index.cnxml:159:351">t</mi></mrow>
+</mfrac>
+</mrow>
+</mrow>
+</semantics>
+</math>. To calculate the slope, we read directly from <a href="#CNX_UPhysics_10_02_Prop" data-sm="./modules/m58327/index.cnxml:159:450" class="autogenerated-content">Figure 10.12</a>, and see that <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:159:516"><msub data-sm="./modules/m58327/index.cnxml:159:524"><mi data-sm="./modules/m58327/index.cnxml:159:532">ω</mi><mn data-sm="./modules/m58327/index.cnxml:159:546">0</mn></msub><mo data-sm="./modules/m58327/index.cnxml:159:569">=</mo><mn data-sm="./modules/m58327/index.cnxml:159:583">30</mn><mspace width="0.2em" data-sm="./modules/m58327/index.cnxml:159:598"/><mtext data-sm="./modules/m58327/index.cnxml:159:623">rad/s</mtext></mrow>
+</mrow>
+</semantics>
+</math> at <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:159:677"><mi data-sm="./modules/m58327/index.cnxml:159:685">t</mi><mo data-sm="./modules/m58327/index.cnxml:159:699">=</mo><mn data-sm="./modules/m58327/index.cnxml:159:713">0</mn><mspace width="0.2em" data-sm="./modules/m58327/index.cnxml:159:727"/><mtext data-sm="./modules/m58327/index.cnxml:159:752">s</mtext></mrow>
+</mrow>
+</semantics>
+</math> and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:159:803"><msub data-sm="./modules/m58327/index.cnxml:159:811"><mi data-sm="./modules/m58327/index.cnxml:159:819">ω</mi><mtext data-sm="./modules/m58327/index.cnxml:159:833">f</mtext></msub><mo data-sm="./modules/m58327/index.cnxml:159:862">=</mo><mn data-sm="./modules/m58327/index.cnxml:159:876">0</mn><mspace width="0.2em" data-sm="./modules/m58327/index.cnxml:159:890"/><mtext data-sm="./modules/m58327/index.cnxml:159:915">rad/s</mtext></mrow>
+</mrow>
+</semantics>
+</math> at <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:159:969"><mi data-sm="./modules/m58327/index.cnxml:159:977">t</mi><mo data-sm="./modules/m58327/index.cnxml:159:991">=</mo><mn data-sm="./modules/m58327/index.cnxml:159:1005">5</mn><mspace width="0.2em" data-sm="./modules/m58327/index.cnxml:159:1019"/><mtext data-sm="./modules/m58327/index.cnxml:159:1044">s</mtext></mrow>
+</mrow>
+</semantics>
+</math>. Then, we can verify the result using <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:159:1129"><mi data-sm="./modules/m58327/index.cnxml:159:1137">ω</mi><mo data-sm="./modules/m58327/index.cnxml:159:1151">=</mo><msub data-sm="./modules/m58327/index.cnxml:159:1165"><mi data-sm="./modules/m58327/index.cnxml:159:1173">ω</mi><mn data-sm="./modules/m58327/index.cnxml:159:1187">0</mn></msub><mo data-sm="./modules/m58327/index.cnxml:159:1210">+</mo><mi data-sm="./modules/m58327/index.cnxml:159:1224">α</mi><mi data-sm="./modules/m58327/index.cnxml:159:1238">t</mi></mrow>
+</mrow>
+</semantics>
+</math>.</li>
+<li data-sm="./modules/m58327/index.cnxml:160:1">We use the equation <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:160:35"><mi data-sm="./modules/m58327/index.cnxml:160:43">ω</mi><mo data-sm="./modules/m58327/index.cnxml:160:57">=</mo><mfrac data-sm="./modules/m58327/index.cnxml:160:71"><mrow data-sm="./modules/m58327/index.cnxml:160:80"><mi data-sm="./modules/m58327/index.cnxml:160:88">d</mi><mi data-sm="./modules/m58327/index.cnxml:160:102">θ</mi></mrow>
+<mrow data-sm="./modules/m58327/index.cnxml:160:125"><mi data-sm="./modules/m58327/index.cnxml:160:133">d</mi><mi data-sm="./modules/m58327/index.cnxml:160:147">t</mi></mrow>
+</mfrac>
+<mo data-sm="./modules/m58327/index.cnxml:160:180">;</mo></mrow>
+</mrow>
+</semantics>
+</math> since the time derivative of the angle is the angular velocity, we can find the angular displacement by integrating the angular velocity, which from the figure means taking the area under the angular velocity graph. In other words:
+<div data-type="equation" id="fs-id1167131112676" class="unnumbered" data-sm="./modules/m58327/index.cnxml:161:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:161:70"><mstyle displaystyle="true" data-sm="./modules/m58327/index.cnxml:161:78"><mrow data-sm="./modules/m58327/index.cnxml:161:108"><munderover data-sm="./modules/m58327/index.cnxml:161:116"><mo data-sm="./modules/m58327/index.cnxml:161:130">∫</mo><mrow data-sm="./modules/m58327/index.cnxml:161:144"><msub data-sm="./modules/m58327/index.cnxml:161:152"><mi data-sm="./modules/m58327/index.cnxml:161:160">θ</mi><mn data-sm="./modules/m58327/index.cnxml:161:174">0</mn></msub></mrow>
+<mrow data-sm="./modules/m58327/index.cnxml:161:206"><msub data-sm="./modules/m58327/index.cnxml:161:214"><mi data-sm="./modules/m58327/index.cnxml:161:222">θ</mi><mtext data-sm="./modules/m58327/index.cnxml:161:236">f</mtext></msub></mrow>
+</munderover>
+<mrow data-sm="./modules/m58327/index.cnxml:161:289"><mi data-sm="./modules/m58327/index.cnxml:161:297">d</mi><mi data-sm="./modules/m58327/index.cnxml:161:311">θ</mi><mo data-sm="./modules/m58327/index.cnxml:161:325">=</mo><msub data-sm="./modules/m58327/index.cnxml:161:339"><mi data-sm="./modules/m58327/index.cnxml:161:347">θ</mi><mtext data-sm="./modules/m58327/index.cnxml:161:361">f</mtext></msub><mo data-sm="./modules/m58327/index.cnxml:161:390">−</mo><msub data-sm="./modules/m58327/index.cnxml:161:404"><mi data-sm="./modules/m58327/index.cnxml:161:412">θ</mi><mn data-sm="./modules/m58327/index.cnxml:161:426">0</mn></msub><mo data-sm="./modules/m58327/index.cnxml:161:449">=</mo></mrow>
+</mrow>
+</mstyle>
+<mstyle displaystyle="true" data-sm="./modules/m58327/index.cnxml:161:492"><mrow data-sm="./modules/m58327/index.cnxml:161:522"><munderover data-sm="./modules/m58327/index.cnxml:161:530"><mo data-sm="./modules/m58327/index.cnxml:161:544">∫</mo><mrow data-sm="./modules/m58327/index.cnxml:161:558"><msub data-sm="./modules/m58327/index.cnxml:161:566"><mi data-sm="./modules/m58327/index.cnxml:161:574">t</mi><mn data-sm="./modules/m58327/index.cnxml:161:588">0</mn></msub></mrow>
+<mrow data-sm="./modules/m58327/index.cnxml:161:620"><msub data-sm="./modules/m58327/index.cnxml:161:628"><mi data-sm="./modules/m58327/index.cnxml:161:636">t</mi><mtext data-sm="./modules/m58327/index.cnxml:161:650">f</mtext></msub></mrow>
+</munderover>
+<mrow data-sm="./modules/m58327/index.cnxml:161:703"><mi data-sm="./modules/m58327/index.cnxml:161:711">ω</mi><mo stretchy="false" data-sm="./modules/m58327/index.cnxml:161:725">(</mo><mi data-sm="./modules/m58327/index.cnxml:161:756">t</mi><mo stretchy="false" data-sm="./modules/m58327/index.cnxml:161:770">)</mo><mi data-sm="./modules/m58327/index.cnxml:161:801">d</mi><mi data-sm="./modules/m58327/index.cnxml:161:815">t</mi></mrow>
+</mrow>
+</mstyle>
+<mo data-sm="./modules/m58327/index.cnxml:161:858">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+Then we use the kinematic equations for constant acceleration to verify the result.</li>
+</ol>
+<p id="fs-id1167134896065" data-sm="./modules/m58327/index.cnxml:164:1"></p>
+<h4 data-type="title" data-sm="./modules/m58327/index.cnxml:164:31">Solution</h4>
+<ol id="fs-id1167134913788" type="a" data-sm="./modules/m58327/index.cnxml:165:1">
+<li data-sm="./modules/m58327/index.cnxml:166:1">Calculating the slope, we get
+<div data-type="equation" id="fs-id1167134913796" class="unnumbered" data-sm="./modules/m58327/index.cnxml:167:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:167:70"><mi data-sm="./modules/m58327/index.cnxml:167:78">α</mi><mo data-sm="./modules/m58327/index.cnxml:167:92">=</mo><mfrac data-sm="./modules/m58327/index.cnxml:167:106"><mrow data-sm="./modules/m58327/index.cnxml:167:115"><mi data-sm="./modules/m58327/index.cnxml:167:123">ω</mi><mo data-sm="./modules/m58327/index.cnxml:167:137">−</mo><msub data-sm="./modules/m58327/index.cnxml:167:151"><mi data-sm="./modules/m58327/index.cnxml:167:159">ω</mi><mn data-sm="./modules/m58327/index.cnxml:167:173">0</mn></msub></mrow>
+<mrow data-sm="./modules/m58327/index.cnxml:167:205"><mi data-sm="./modules/m58327/index.cnxml:167:213">t</mi><mo data-sm="./modules/m58327/index.cnxml:167:227">−</mo><msub data-sm="./modules/m58327/index.cnxml:167:241"><mi data-sm="./modules/m58327/index.cnxml:167:249">t</mi><mn data-sm="./modules/m58327/index.cnxml:167:263">0</mn></msub></mrow>
+</mfrac>
+<mo data-sm="./modules/m58327/index.cnxml:167:305">=</mo><mfrac data-sm="./modules/m58327/index.cnxml:167:319"><mrow data-sm="./modules/m58327/index.cnxml:167:328"><mo stretchy="false" data-sm="./modules/m58327/index.cnxml:167:336">(</mo><mn data-sm="./modules/m58327/index.cnxml:167:367">0</mn><mo data-sm="./modules/m58327/index.cnxml:167:381">−</mo><mn data-sm="./modules/m58327/index.cnxml:167:395">30.0</mn><mo stretchy="false" data-sm="./modules/m58327/index.cnxml:167:412">)</mo><mspace width="0.2em" data-sm="./modules/m58327/index.cnxml:167:443"/><mtext data-sm="./modules/m58327/index.cnxml:167:468">rad/s</mtext></mrow>
+<mrow data-sm="./modules/m58327/index.cnxml:167:501"><mo stretchy="false" data-sm="./modules/m58327/index.cnxml:167:509">(</mo><mn data-sm="./modules/m58327/index.cnxml:167:540">5.0</mn><mo data-sm="./modules/m58327/index.cnxml:167:556">−</mo><mn data-sm="./modules/m58327/index.cnxml:167:570">0</mn><mo stretchy="false" data-sm="./modules/m58327/index.cnxml:167:584">)</mo><mspace width="0.2em" data-sm="./modules/m58327/index.cnxml:167:615"/><mtext data-sm="./modules/m58327/index.cnxml:167:640">s</mtext></mrow>
+</mfrac>
+<mo data-sm="./modules/m58327/index.cnxml:167:679">=</mo><mn data-sm="./modules/m58327/index.cnxml:167:693">−6.0</mn><mspace width="0.2em" data-sm="./modules/m58327/index.cnxml:167:710"/><msup data-sm="./modules/m58327/index.cnxml:167:735"><mrow data-sm="./modules/m58327/index.cnxml:167:743"><mtext data-sm="./modules/m58327/index.cnxml:167:751">rad/s</mtext></mrow><mn data-sm="./modules/m58327/index.cnxml:167:784">2</mn></msup><mo data-sm="./modules/m58327/index.cnxml:167:807">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+We see that this is exactly <a href="#fs-id1167134891857" data-sm="./modules/m58327/index.cnxml:168:29" class="autogenerated-content">Equation 10.11</a> with a little rearranging of terms.</li>
+<li data-sm="./modules/m58327/index.cnxml:169:1">We can find the area under the curve by calculating the area of the right triangle, as shown in <a href="#CNX_UPhysics_10_02_PropSol" data-sm="./modules/m58327/index.cnxml:169:103" class="autogenerated-content">Figure 10.13</a>.<span data-type="newline" data-sm="./modules/m58327/index.cnxml:169:150"><br/></span>
+<div class="os-figure"><figure id="CNX_UPhysics_10_02_PropSol" data-sm="./modules/m58327/index.cnxml:170:1">
+<span data-type="media" id="fs-id1167131115678" data-alt="Figure is a graph of the angular velocity in rads per second plotted versus time in seconds. Angular velocity decreases linearly with time, from 30 rads per second at zero seconds to zero at 5 seconds. The area under the curve is filled." data-sm="./modules/m58327/index.cnxml:171:1">
+<img src="31828741f3253f96cbdd304f29f2f7a0151baff2.jpeg" data-media-type="image/jpeg" alt="Figure is a graph of the angular velocity in rads per second plotted versus time in seconds. Angular velocity decreases linearly with time, from 30 rads per second at zero seconds to zero at 5 seconds. The area under the curve is filled." data-sm="./modules/m58327/index.cnxml:172:1"/>
+</span>
+
+</figure>
+<div class="os-caption-container">
+  <span class="os-title-label">Figure </span>
+<span class="os-number">10.13</span>
+
+
+
+  <span class="os-divider"> </span>
+  <span data-sm="./modules/m58327/index.cnxml:174:1" class="os-caption">The area under the curve is the area of the right triangle.</span>
+</div>
+</div>
+<div data-type="equation" id="fs-id1167134913716" class="unnumbered" data-sm="./modules/m58327/index.cnxml:176:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtable data-sm="./modules/m58327/index.cnxml:176:70"><mtr data-sm="./modules/m58327/index.cnxml:176:80"><mtd columnalign="right" data-sm="./modules/m58327/index.cnxml:176:87"><mtext data-sm="./modules/m58327/index.cnxml:176:114">Δ</mtext><mi data-sm="./modules/m58327/index.cnxml:176:134">θ</mi></mtd>
+<mtd columnalign="left" data-sm="./modules/m58327/index.cnxml:176:156"><mo data-sm="./modules/m58327/index.cnxml:176:182">=</mo></mtd>
+<mtd columnalign="left" data-sm="./modules/m58327/index.cnxml:176:204"><mtext data-sm="./modules/m58327/index.cnxml:176:230">area</mtext><mrow data-sm="./modules/m58327/index.cnxml:176:253"><mo data-sm="./modules/m58327/index.cnxml:176:261">(</mo><mrow data-sm="./modules/m58327/index.cnxml:176:275"><mtext data-sm="./modules/m58327/index.cnxml:176:283">triangle</mtext></mrow>
+<mo data-sm="./modules/m58327/index.cnxml:176:319">)</mo></mrow>
+<mo data-sm="./modules/m58327/index.cnxml:176:342">;</mo></mtd>
+</mtr>
+<mtr data-sm="./modules/m58327/index.cnxml:176:372"><mtd columnalign="right" data-sm="./modules/m58327/index.cnxml:176:379"><mtext data-sm="./modules/m58327/index.cnxml:176:406">Δ</mtext><mi data-sm="./modules/m58327/index.cnxml:176:426">θ</mi></mtd>
+<mtd columnalign="left" data-sm="./modules/m58327/index.cnxml:176:448"><mo data-sm="./modules/m58327/index.cnxml:176:474">=</mo></mtd>
+<mtd columnalign="left" data-sm="./modules/m58327/index.cnxml:176:496"><mfrac data-sm="./modules/m58327/index.cnxml:176:522"><mn data-sm="./modules/m58327/index.cnxml:176:531">1</mn><mn data-sm="./modules/m58327/index.cnxml:176:545">2</mn></mfrac>
+<mo stretchy="false" data-sm="./modules/m58327/index.cnxml:176:569">(</mo><mn data-sm="./modules/m58327/index.cnxml:176:600">30</mn><mspace width="0.2em" data-sm="./modules/m58327/index.cnxml:176:615"/><mtext data-sm="./modules/m58327/index.cnxml:176:640">rad/s</mtext><mo stretchy="false" data-sm="./modules/m58327/index.cnxml:176:664">)</mo><mo stretchy="false" data-sm="./modules/m58327/index.cnxml:176:695">(</mo><mn data-sm="./modules/m58327/index.cnxml:176:726">5</mn><mspace width="0.2em" data-sm="./modules/m58327/index.cnxml:176:740"/><mtext data-sm="./modules/m58327/index.cnxml:176:765">s</mtext><mo stretchy="false" data-sm="./modules/m58327/index.cnxml:176:785">)</mo><mo data-sm="./modules/m58327/index.cnxml:176:816">=</mo><mn data-sm="./modules/m58327/index.cnxml:176:830">75</mn><mspace width="0.2em" data-sm="./modules/m58327/index.cnxml:176:845"/><mtext data-sm="./modules/m58327/index.cnxml:176:870">rad</mtext><mtext data-sm="./modules/m58327/index.cnxml:176:892">.</mtext></mtd>
+</mtr>
+</mtable>
+</mrow>
+</semantics>
+</math>
+</div>
+We verify the solution using <a href="#fs-id1167134579229" data-sm="./modules/m58327/index.cnxml:177:30" class="autogenerated-content">Equation 10.12</a>:
+<div data-type="equation" id="fs-id1167131114447" class="unnumbered" data-sm="./modules/m58327/index.cnxml:178:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:178:70"><msub data-sm="./modules/m58327/index.cnxml:178:78"><mi data-sm="./modules/m58327/index.cnxml:178:86">θ</mi><mtext data-sm="./modules/m58327/index.cnxml:178:100">f</mtext></msub><mo data-sm="./modules/m58327/index.cnxml:178:129">=</mo><msub data-sm="./modules/m58327/index.cnxml:178:143"><mi data-sm="./modules/m58327/index.cnxml:178:151">θ</mi><mn data-sm="./modules/m58327/index.cnxml:178:165">0</mn></msub><mo data-sm="./modules/m58327/index.cnxml:178:188">+</mo><msub data-sm="./modules/m58327/index.cnxml:178:202"><mi data-sm="./modules/m58327/index.cnxml:178:210">ω</mi><mn data-sm="./modules/m58327/index.cnxml:178:224">0</mn></msub><mi data-sm="./modules/m58327/index.cnxml:178:247">t</mi><mo data-sm="./modules/m58327/index.cnxml:178:261">+</mo><mfrac data-sm="./modules/m58327/index.cnxml:178:275"><mn data-sm="./modules/m58327/index.cnxml:178:284">1</mn><mn data-sm="./modules/m58327/index.cnxml:178:298">2</mn></mfrac>
+<mi data-sm="./modules/m58327/index.cnxml:178:322">α</mi><msup data-sm="./modules/m58327/index.cnxml:178:336"><mi data-sm="./modules/m58327/index.cnxml:178:344">t</mi><mn data-sm="./modules/m58327/index.cnxml:178:358">2</mn></msup><mo data-sm="./modules/m58327/index.cnxml:178:381">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+Setting <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:179:17"><msub data-sm="./modules/m58327/index.cnxml:179:25"><mi data-sm="./modules/m58327/index.cnxml:179:33">θ</mi><mn data-sm="./modules/m58327/index.cnxml:179:47">0</mn></msub><mo data-sm="./modules/m58327/index.cnxml:179:70">=</mo><mn data-sm="./modules/m58327/index.cnxml:179:84">0</mn></mrow>
+</mrow>
+</semantics>
+</math>, we have
+<div data-type="equation" id="fs-id1167131113836" class="unnumbered" data-sm="./modules/m58327/index.cnxml:180:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:180:70"><msub data-sm="./modules/m58327/index.cnxml:180:78"><mi data-sm="./modules/m58327/index.cnxml:180:86">θ</mi><mi data-sm="./modules/m58327/index.cnxml:180:100">f</mi></msub><mo data-sm="./modules/m58327/index.cnxml:180:123">=</mo><mo stretchy="false" data-sm="./modules/m58327/index.cnxml:180:137">(</mo><mn data-sm="./modules/m58327/index.cnxml:180:168">30.0</mn><mspace width="0.2em" data-sm="./modules/m58327/index.cnxml:180:185"/><mrow data-sm="./modules/m58327/index.cnxml:180:210"><mrow data-sm="./modules/m58327/index.cnxml:180:218"><mtext data-sm="./modules/m58327/index.cnxml:180:226">rad</mtext></mrow>
+<mtext data-sm="./modules/m58327/index.cnxml:180:257">/</mtext><mtext data-sm="./modules/m58327/index.cnxml:180:277">s</mtext></mrow>
+<mo stretchy="false" data-sm="./modules/m58327/index.cnxml:180:306">)</mo><mo stretchy="false" data-sm="./modules/m58327/index.cnxml:180:337">(</mo><mn data-sm="./modules/m58327/index.cnxml:180:368">5.0</mn><mspace width="0.2em" data-sm="./modules/m58327/index.cnxml:180:384"/><mtext data-sm="./modules/m58327/index.cnxml:180:409">s</mtext><mo stretchy="false" data-sm="./modules/m58327/index.cnxml:180:429">)</mo><mo data-sm="./modules/m58327/index.cnxml:180:460">+</mo><mfrac data-sm="./modules/m58327/index.cnxml:180:474"><mn data-sm="./modules/m58327/index.cnxml:180:483">1</mn><mn data-sm="./modules/m58327/index.cnxml:180:497">2</mn></mfrac>
+<msup data-sm="./modules/m58327/index.cnxml:180:521"><mrow data-sm="./modules/m58327/index.cnxml:180:529"><mo stretchy="false" data-sm="./modules/m58327/index.cnxml:180:537">(</mo><mn data-sm="./modules/m58327/index.cnxml:180:568">−6.0</mn><mspace width="0.2em" data-sm="./modules/m58327/index.cnxml:180:585"/><mrow data-sm="./modules/m58327/index.cnxml:180:610"><mrow data-sm="./modules/m58327/index.cnxml:180:618"><mtext data-sm="./modules/m58327/index.cnxml:180:626">rad</mtext></mrow>
+<mtext data-sm="./modules/m58327/index.cnxml:180:657">/</mtext><mrow data-sm="./modules/m58327/index.cnxml:180:677"><msup data-sm="./modules/m58327/index.cnxml:180:685"><mtext data-sm="./modules/m58327/index.cnxml:180:693">s</mtext><mn data-sm="./modules/m58327/index.cnxml:180:713">2</mn></msup><mo stretchy="false" data-sm="./modules/m58327/index.cnxml:180:736">)</mo><mo stretchy="false" data-sm="./modules/m58327/index.cnxml:180:767">(</mo><mn data-sm="./modules/m58327/index.cnxml:180:798">5.0</mn></mrow>
+</mrow>
+<mspace width="0.2em" data-sm="./modules/m58327/index.cnxml:180:832"/><mrow data-sm="./modules/m58327/index.cnxml:180:857"><mrow data-sm="./modules/m58327/index.cnxml:180:865"><mtext data-sm="./modules/m58327/index.cnxml:180:873">rad</mtext></mrow>
+<mtext data-sm="./modules/m58327/index.cnxml:180:904">/</mtext><mtext data-sm="./modules/m58327/index.cnxml:180:924">s</mtext></mrow>
+<mo stretchy="false" data-sm="./modules/m58327/index.cnxml:180:953">)</mo></mrow><mn data-sm="./modules/m58327/index.cnxml:180:993">2</mn></msup><mo data-sm="./modules/m58327/index.cnxml:180:1016">=</mo><mn data-sm="./modules/m58327/index.cnxml:180:1030">150.0</mn><mo data-sm="./modules/m58327/index.cnxml:180:1048">−</mo><mn data-sm="./modules/m58327/index.cnxml:180:1062">75.0</mn><mo data-sm="./modules/m58327/index.cnxml:180:1079">=</mo><mn data-sm="./modules/m58327/index.cnxml:180:1093">75.0</mn><mspace width="0.2em" data-sm="./modules/m58327/index.cnxml:180:1110"/><mtext data-sm="./modules/m58327/index.cnxml:180:1135">rad</mtext><mo data-sm="./modules/m58327/index.cnxml:180:1157">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+This verifies the solution found from finding the area under the curve.</li>
+</ol>
+<p id="fs-id1167131105286" data-sm="./modules/m58327/index.cnxml:182:1"></p>
+<h4 data-type="title" data-sm="./modules/m58327/index.cnxml:182:31">Significance</h4>
+We see from part (b) that there are alternative approaches to analyzing fixed-axis rotation with constant acceleration. We started with a graphical approach and verified the solution using the rotational kinematic equations. Since <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:183:240"><mi data-sm="./modules/m58327/index.cnxml:183:248">α</mi><mo data-sm="./modules/m58327/index.cnxml:183:262">=</mo><mfrac data-sm="./modules/m58327/index.cnxml:183:276"><mrow data-sm="./modules/m58327/index.cnxml:183:285"><mi data-sm="./modules/m58327/index.cnxml:183:293">d</mi><mi data-sm="./modules/m58327/index.cnxml:183:307">ω</mi></mrow>
+<mrow data-sm="./modules/m58327/index.cnxml:183:330"><mi data-sm="./modules/m58327/index.cnxml:183:338">d</mi><mi data-sm="./modules/m58327/index.cnxml:183:352">t</mi></mrow>
+</mfrac>
+</mrow>
+</mrow>
+</semantics>
+</math></span>, we could do the same graphical analysis on an angular acceleration-vs.-time curve. The area under an <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58327/index.cnxml:183:514"><mi data-sm="./modules/m58327/index.cnxml:183:522">α</mi><mtext data-sm="./modules/m58327/index.cnxml:183:536">-vs.-</mtext><mi data-sm="./modules/m58327/index.cnxml:183:560">t</mi></mrow>
+</mrow>
+</semantics>
+</math></span> curve gives us the change in angular velocity. Since the angular acceleration is constant in this section, this is a straightforward exercise.
+</div>
+</div>
+</section>
+
+
+
+
+
+
+ 
+ 
+  </div>
+</body>
+</html>
+<!-- # sourceMappingURL=d50f6e32-0fda-46ef-a362-9bd36ca7c97d-at-aa8a43e-colon-f260e05a-bb7b-4872-948c-abf365fbcdf1.xhtml.map -->
