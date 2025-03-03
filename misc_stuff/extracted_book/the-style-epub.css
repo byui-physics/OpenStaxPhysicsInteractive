@@ -928,7 +928,7 @@ div[data-type=composite-page].os-eob {
 }
 :root {
   font-family: IBM Plex Sans, sans-serif;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.4rem;
   color: #000000;
   prince-image-resolution: auto, 200dpi;
