@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+<head>
+    <title>Cover</title>
+    <style type="text/css">
+        body.fullpage {
+            margin: 0;
+            padding: 0;
+        }
+
+        section.cover {
+            display: block;
+            text-align: center;
+            height: 95%;
+        }
+
+        img#coverimage {
+            height: 95%;
+        }
+
+        img#coverimage:only-of-type {
+            /*overrides the previous setting, but only in newer systems that support CSS3 */
+            height: 95vh;
+        }
+    </style>
+</head>
+<body class="fullpage">
+    <section epub:type="cover" class="cover">
+        <img id="coverimage" src="cover.jpg" alt="cover image"/>
+    </section>
+
+<a href="university-physics-volume-1.toc.html">Back to table of contents</a>
+</body>
+</html>

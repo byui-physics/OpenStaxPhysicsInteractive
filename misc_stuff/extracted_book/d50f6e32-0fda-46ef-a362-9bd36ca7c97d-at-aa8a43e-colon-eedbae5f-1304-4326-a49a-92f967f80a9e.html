@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:epub="http://www.idpf.org/2007/ops">
+<head><title>3.6
+ 
+Finding Velocity and Displacement from Acceleration
+</title>
+<link rel="stylesheet" type="text/css" href="the-style-epub.css"/>
+</head>
+<body>
+    <div data-type="page" id="page_eedbae5f-1304-4326-a49a-92f967f80a9e" class="chapter-content-module" data-book-content="true"><h2 data-type="document-title" data-sm="./modules/m58287/index.cnxml:3:1" id="page_eedbae5f-1304-4326-a49a-92f967f80a9e_titlecreatedbycookbook"><span class="os-number">3.6</span>
+<span class="os-divider"> </span>
+<span data-type="" class="os-text">Finding Velocity and Displacement from Acceleration</span>
+</h2>
+<div data-type="abstract" data-sm="./modules/m58287/index.cnxml:7:3"><h3 data-type="title">Learning Objectives</h3>
+<p id="para-00001" data-sm="./modules/m58287/index.cnxml:7:16">By the end of this section, you will be able to:</p>
+<ul id="list-00001" data-sm="./modules/m58287/index.cnxml:8:1">
+<li data-sm="./modules/m58287/index.cnxml:9:1">Derive the kinematic equations for constant acceleration using integral calculus.</li>
+<li data-sm="./modules/m58287/index.cnxml:10:1">Use the integral formulation of the kinematic equations in analyzing motion.</li>
+<li data-sm="./modules/m58287/index.cnxml:11:1">Find the functional form of velocity versus time given the acceleration function.</li>
+<li data-sm="./modules/m58287/index.cnxml:12:1">Find the functional form of position versus time given the velocity function.</li>
+</ul>
+</div>
+
+<p id="fs-id1168055394881" data-sm="./modules/m58287/index.cnxml:18:1">This section assumes you have enough background in calculus to be familiar with integration. In <a href="d50f6e32-0fda-46ef-a362-9bd36ca7c97d-at-aa8a43e-colon-123f28de-76db-4d9a-a2d1-919a1d7f25a2.xhtml" data-sm="./modules/m58287/index.cnxml:18:127" data-page-slug="3-2-instantaneous-velocity-and-speed" data-page-uuid="123f28de-76db-4d9a-a2d1-919a1d7f25a2" data-page-fragment="">Instantaneous Velocity and Speed</a> and <a href="d50f6e32-0fda-46ef-a362-9bd36ca7c97d-at-aa8a43e-colon-f6c1853f-e5aa-43a9-95a8-ce02e68536a1.xhtml" data-sm="./modules/m58287/index.cnxml:18:195" data-page-slug="3-3-average-and-instantaneous-acceleration" data-page-uuid="f6c1853f-e5aa-43a9-95a8-ce02e68536a1" data-page-fragment="">Average and Instantaneous Acceleration</a> we introduced the kinematic functions of velocity and acceleration using the derivative. By taking the derivative of the position function we found the velocity function, and likewise by taking the derivative of the velocity function we found the acceleration function. Using integral calculus, we can work backward and calculate the velocity function from the acceleration function, and the position function from the velocity function.</p>
+
+<section data-depth="1" id="fs-id1168057186040" data-sm="./modules/m58287/index.cnxml:19:1"><h3 data-type="title" data-sm="./modules/m58287/index.cnxml:20:1">Kinematic Equations from Integral Calculus</h3>
+<p id="fs-id1168057329054" data-sm="./modules/m58287/index.cnxml:21:1">Let’s begin with a particle with an acceleration <em data-effect="italics" data-sm="./modules/m58287/index.cnxml:21:80">a</em>(t) which is a known function of time. Since the time derivative of the velocity function is acceleration,</p>
+<div data-type="equation" id="fs-id1168055470877" class="unnumbered" data-sm="./modules/m58287/index.cnxml:21:232" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58287/index.cnxml:21:301"><mfrac data-sm="./modules/m58287/index.cnxml:21:309"><mi data-sm="./modules/m58287/index.cnxml:21:318">d</mi><mrow data-sm="./modules/m58287/index.cnxml:21:332"><mi data-sm="./modules/m58287/index.cnxml:21:340">d</mi><mi data-sm="./modules/m58287/index.cnxml:21:354">t</mi></mrow>
+</mfrac>
+<mi data-sm="./modules/m58287/index.cnxml:21:387">v</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:21:401">(</mo><mi data-sm="./modules/m58287/index.cnxml:21:432">t</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:21:446">)</mo><mo data-sm="./modules/m58287/index.cnxml:21:477">=</mo><mi data-sm="./modules/m58287/index.cnxml:21:491">a</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:21:505">(</mo><mi data-sm="./modules/m58287/index.cnxml:21:536">t</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:21:550">)</mo><mo data-sm="./modules/m58287/index.cnxml:21:581">,</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1168055388282" data-sm="./modules/m58287/index.cnxml:22:1">we can take the indefinite integral of both sides, finding</p>
+<div data-type="equation" id="fs-id1168055392656" class="unnumbered" data-sm="./modules/m58287/index.cnxml:23:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58287/index.cnxml:23:70"><mstyle displaystyle="true" data-sm="./modules/m58287/index.cnxml:23:78"><mrow data-sm="./modules/m58287/index.cnxml:23:108"><mo data-sm="./modules/m58287/index.cnxml:23:116">∫</mo><mrow data-sm="./modules/m58287/index.cnxml:23:130"><mfrac data-sm="./modules/m58287/index.cnxml:23:138"><mi data-sm="./modules/m58287/index.cnxml:23:147">d</mi><mrow data-sm="./modules/m58287/index.cnxml:23:161"><mi data-sm="./modules/m58287/index.cnxml:23:169">d</mi><mi data-sm="./modules/m58287/index.cnxml:23:183">t</mi></mrow>
+</mfrac>
+<mi data-sm="./modules/m58287/index.cnxml:23:216">v</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:23:230">(</mo><mi data-sm="./modules/m58287/index.cnxml:23:261">t</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:23:275">)</mo><mi data-sm="./modules/m58287/index.cnxml:23:306">d</mi><mi data-sm="./modules/m58287/index.cnxml:23:320">t</mi><mo data-sm="./modules/m58287/index.cnxml:23:334">=</mo><mstyle displaystyle="true" data-sm="./modules/m58287/index.cnxml:23:348"><mrow data-sm="./modules/m58287/index.cnxml:23:378"><mo data-sm="./modules/m58287/index.cnxml:23:386">∫</mo><mrow data-sm="./modules/m58287/index.cnxml:23:400"><mi data-sm="./modules/m58287/index.cnxml:23:408">a</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:23:422">(</mo><mi data-sm="./modules/m58287/index.cnxml:23:453">t</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:23:467">)</mo><mi data-sm="./modules/m58287/index.cnxml:23:498">d</mi><mi data-sm="./modules/m58287/index.cnxml:23:512">t</mi><mo data-sm="./modules/m58287/index.cnxml:23:526">+</mo><msub data-sm="./modules/m58287/index.cnxml:23:540"><mi data-sm="./modules/m58287/index.cnxml:23:548">C</mi><mn data-sm="./modules/m58287/index.cnxml:23:562">1</mn></msub><mo data-sm="./modules/m58287/index.cnxml:23:585">,</mo></mrow>
+</mrow>
+</mstyle>
+</mrow>
+</mrow>
+</mstyle>
+</mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1168057480928" data-sm="./modules/m58287/index.cnxml:24:1">where <em data-effect="italics" data-sm="./modules/m58287/index.cnxml:24:37">C</em><sub data-sm="./modules/m58287/index.cnxml:24:76">1</sub> is a constant of integration. Since <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58287/index.cnxml:24:133"><mstyle displaystyle="true" data-sm="./modules/m58287/index.cnxml:24:141"><mrow data-sm="./modules/m58287/index.cnxml:24:171"><mo data-sm="./modules/m58287/index.cnxml:24:179">∫</mo><mrow data-sm="./modules/m58287/index.cnxml:24:193"><mfrac data-sm="./modules/m58287/index.cnxml:24:201"><mi data-sm="./modules/m58287/index.cnxml:24:210">d</mi><mrow data-sm="./modules/m58287/index.cnxml:24:224"><mi data-sm="./modules/m58287/index.cnxml:24:232">d</mi><mi data-sm="./modules/m58287/index.cnxml:24:246">t</mi></mrow>
+</mfrac>
+<mi data-sm="./modules/m58287/index.cnxml:24:279">v</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:24:293">(</mo><mi data-sm="./modules/m58287/index.cnxml:24:324">t</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:24:338">)</mo><mi data-sm="./modules/m58287/index.cnxml:24:369">d</mi><mi data-sm="./modules/m58287/index.cnxml:24:383">t</mi></mrow>
+</mrow>
+</mstyle>
+<mo data-sm="./modules/m58287/index.cnxml:24:426">=</mo><mi data-sm="./modules/m58287/index.cnxml:24:440">v</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:24:454">(</mo><mi data-sm="./modules/m58287/index.cnxml:24:485">t</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:24:499">)</mo></mrow>
+</mrow>
+</semantics>
+</math></span>, the velocity is given by</p>
+<div data-type="note" id="fs-id1168055147157" class="equation-callout" data-sm="./modules/m58287/index.cnxml:25:1">
+<div data-type="equation" id="fs-id1168055299938" data-sm="./modules/m58287/index.cnxml:26:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58287/index.cnxml:26:51"><mi data-sm="./modules/m58287/index.cnxml:26:59">v</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:26:73">(</mo><mi data-sm="./modules/m58287/index.cnxml:26:104">t</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:26:118">)</mo><mo data-sm="./modules/m58287/index.cnxml:26:149">=</mo><mstyle displaystyle="true" data-sm="./modules/m58287/index.cnxml:26:163"><mrow data-sm="./modules/m58287/index.cnxml:26:193"><mo data-sm="./modules/m58287/index.cnxml:26:201">∫</mo><mrow data-sm="./modules/m58287/index.cnxml:26:215"><mi data-sm="./modules/m58287/index.cnxml:26:223">a</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:26:237">(</mo><mi data-sm="./modules/m58287/index.cnxml:26:268">t</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:26:282">)</mo><mi data-sm="./modules/m58287/index.cnxml:26:313">d</mi><mi data-sm="./modules/m58287/index.cnxml:26:327">t</mi><mo data-sm="./modules/m58287/index.cnxml:26:341">+</mo><msub data-sm="./modules/m58287/index.cnxml:26:355"><mi data-sm="./modules/m58287/index.cnxml:26:363">C</mi><mn data-sm="./modules/m58287/index.cnxml:26:377">1</mn></msub></mrow>
+</mrow>
+</mstyle>
+<mo data-sm="./modules/m58287/index.cnxml:26:429">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+<div class="os-equation-number">
+  <span class="os-number">3.18</span>
+</div>
+</div>
+</div>
+<p id="fs-id1168057482455" data-sm="./modules/m58287/index.cnxml:28:1">Similarly, the time derivative of the position function is the velocity function,</p>
+<div data-type="equation" id="fs-id1168057253562" class="unnumbered" data-sm="./modules/m58287/index.cnxml:29:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58287/index.cnxml:29:70"><mfrac data-sm="./modules/m58287/index.cnxml:29:78"><mi data-sm="./modules/m58287/index.cnxml:29:87">d</mi><mrow data-sm="./modules/m58287/index.cnxml:29:101"><mi data-sm="./modules/m58287/index.cnxml:29:109">d</mi><mi data-sm="./modules/m58287/index.cnxml:29:123">t</mi></mrow>
+</mfrac>
+<mi data-sm="./modules/m58287/index.cnxml:29:156">x</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:29:170">(</mo><mi data-sm="./modules/m58287/index.cnxml:29:201">t</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:29:215">)</mo><mo data-sm="./modules/m58287/index.cnxml:29:246">=</mo><mi data-sm="./modules/m58287/index.cnxml:29:260">v</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:29:274">(</mo><mi data-sm="./modules/m58287/index.cnxml:29:305">t</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:29:319">)</mo><mo data-sm="./modules/m58287/index.cnxml:29:350">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1168057485601" data-sm="./modules/m58287/index.cnxml:30:1">Thus, we can use the same mathematical manipulations we just used and find</p>
+<div data-type="note" id="fs-id1168057485578" class="equation-callout" data-sm="./modules/m58287/index.cnxml:31:1">
+<div data-type="equation" id="fs-id1168057309665" data-sm="./modules/m58287/index.cnxml:32:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58287/index.cnxml:32:51"><mi data-sm="./modules/m58287/index.cnxml:32:59">x</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:32:73">(</mo><mi data-sm="./modules/m58287/index.cnxml:32:104">t</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:32:118">)</mo><mo data-sm="./modules/m58287/index.cnxml:32:149">=</mo><mstyle displaystyle="true" data-sm="./modules/m58287/index.cnxml:32:163"><mrow data-sm="./modules/m58287/index.cnxml:32:193"><mo data-sm="./modules/m58287/index.cnxml:32:201">∫</mo><mrow data-sm="./modules/m58287/index.cnxml:32:215"><mi data-sm="./modules/m58287/index.cnxml:32:223">v</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:32:237">(</mo><mi data-sm="./modules/m58287/index.cnxml:32:268">t</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:32:282">)</mo><mi data-sm="./modules/m58287/index.cnxml:32:313">d</mi><mi data-sm="./modules/m58287/index.cnxml:32:327">t</mi><mo data-sm="./modules/m58287/index.cnxml:32:341">+</mo><msub data-sm="./modules/m58287/index.cnxml:32:355"><mi data-sm="./modules/m58287/index.cnxml:32:363">C</mi><mn data-sm="./modules/m58287/index.cnxml:32:377">2</mn></msub></mrow>
+</mrow>
+</mstyle>
+<mo data-sm="./modules/m58287/index.cnxml:32:429">,</mo></mrow>
+</mrow>
+</semantics>
+</math>
+<div class="os-equation-number">
+  <span class="os-number">3.19</span>
+</div>
+</div>
+</div>
+<p id="fs-id1168057485504" data-sm="./modules/m58287/index.cnxml:34:1">where <em data-effect="italics" data-sm="./modules/m58287/index.cnxml:34:37">C</em><sub data-sm="./modules/m58287/index.cnxml:34:76">2</sub> is a second constant of integration.</p>
+<p id="fs-id1168057485919" data-sm="./modules/m58287/index.cnxml:35:1">We can derive the kinematic equations for a constant acceleration using these integrals. With <em data-effect="italics" data-sm="./modules/m58287/index.cnxml:35:125">a</em>(<em data-effect="italics" data-sm="./modules/m58287/index.cnxml:35:165">t</em>) = <em data-effect="italics" data-sm="./modules/m58287/index.cnxml:35:208">a</em> a constant, and doing the integration in <a href="#fs-id1168055299938" data-sm="./modules/m58287/index.cnxml:35:289" class="autogenerated-content">Equation 3.18</a>, we find</p>
+<div data-type="equation" id="fs-id1168057259118" class="unnumbered" data-sm="./modules/m58287/index.cnxml:36:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58287/index.cnxml:36:70"><mi data-sm="./modules/m58287/index.cnxml:36:78">v</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:36:92">(</mo><mi data-sm="./modules/m58287/index.cnxml:36:123">t</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:36:137">)</mo><mo data-sm="./modules/m58287/index.cnxml:36:168">=</mo><mstyle displaystyle="true" data-sm="./modules/m58287/index.cnxml:36:182"><mrow data-sm="./modules/m58287/index.cnxml:36:212"><mo data-sm="./modules/m58287/index.cnxml:36:220">∫</mo><mrow data-sm="./modules/m58287/index.cnxml:36:234"><mi data-sm="./modules/m58287/index.cnxml:36:242">a</mi><mi data-sm="./modules/m58287/index.cnxml:36:256">d</mi><mi data-sm="./modules/m58287/index.cnxml:36:270">t</mi><mo data-sm="./modules/m58287/index.cnxml:36:284">+</mo><msub data-sm="./modules/m58287/index.cnxml:36:298"><mi data-sm="./modules/m58287/index.cnxml:36:306">C</mi><mn data-sm="./modules/m58287/index.cnxml:36:320">1</mn></msub><mo data-sm="./modules/m58287/index.cnxml:36:343">=</mo><mi data-sm="./modules/m58287/index.cnxml:36:357">a</mi><mi data-sm="./modules/m58287/index.cnxml:36:371">t</mi><mo data-sm="./modules/m58287/index.cnxml:36:385">+</mo><msub data-sm="./modules/m58287/index.cnxml:36:399"><mi data-sm="./modules/m58287/index.cnxml:36:407">C</mi><mn data-sm="./modules/m58287/index.cnxml:36:421">1</mn></msub></mrow>
+</mrow>
+</mstyle>
+<mo data-sm="./modules/m58287/index.cnxml:36:473">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1168057295657" data-sm="./modules/m58287/index.cnxml:37:1">If the initial velocity is <em data-effect="italics" data-sm="./modules/m58287/index.cnxml:37:58">v</em>(0) = <em data-effect="italics" data-sm="./modules/m58287/index.cnxml:37:103">v</em><sub data-sm="./modules/m58287/index.cnxml:37:142">0</sub>, then</p>
+<div data-type="equation" id="fs-id1168057270495" class="unnumbered" data-sm="./modules/m58287/index.cnxml:38:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58287/index.cnxml:38:70"><msub data-sm="./modules/m58287/index.cnxml:38:78"><mi data-sm="./modules/m58287/index.cnxml:38:86">v</mi><mn data-sm="./modules/m58287/index.cnxml:38:100">0</mn></msub><mo data-sm="./modules/m58287/index.cnxml:38:123">=</mo><mn data-sm="./modules/m58287/index.cnxml:38:137">0</mn><mo data-sm="./modules/m58287/index.cnxml:38:151">+</mo><msub data-sm="./modules/m58287/index.cnxml:38:165"><mi data-sm="./modules/m58287/index.cnxml:38:173">C</mi><mn data-sm="./modules/m58287/index.cnxml:38:187">1</mn></msub><mo data-sm="./modules/m58287/index.cnxml:38:210">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1168057460849" data-sm="./modules/m58287/index.cnxml:39:1">Then, <em data-effect="italics" data-sm="./modules/m58287/index.cnxml:39:37">C</em><sub data-sm="./modules/m58287/index.cnxml:39:76">1</sub> = <em data-effect="italics" data-sm="./modules/m58287/index.cnxml:39:91">v</em><sub data-sm="./modules/m58287/index.cnxml:39:130">0</sub> and</p>
+<div data-type="equation" id="fs-id1168057419730" class="unnumbered" data-sm="./modules/m58287/index.cnxml:40:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58287/index.cnxml:40:70"><mi data-sm="./modules/m58287/index.cnxml:40:78">v</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:40:92">(</mo><mi data-sm="./modules/m58287/index.cnxml:40:123">t</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:40:137">)</mo><mo data-sm="./modules/m58287/index.cnxml:40:168">=</mo><msub data-sm="./modules/m58287/index.cnxml:40:182"><mi data-sm="./modules/m58287/index.cnxml:40:190">v</mi><mn data-sm="./modules/m58287/index.cnxml:40:204">0</mn></msub><mo data-sm="./modules/m58287/index.cnxml:40:227">+</mo><mi data-sm="./modules/m58287/index.cnxml:40:241">a</mi><mi data-sm="./modules/m58287/index.cnxml:40:255">t</mi><mo data-sm="./modules/m58287/index.cnxml:40:269">,</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1168055376614" data-sm="./modules/m58287/index.cnxml:41:1">which is <a href="d50f6e32-0fda-46ef-a362-9bd36ca7c97d-at-aa8a43e-colon-d8133443-59e9-41e8-a628-d3fb8cb1f305.xhtml#fs-id1168329196739" data-sm="./modules/m58287/index.cnxml:41:40" class="autogenerated-content" data-page-slug="3-4-motion-with-constant-acceleration" data-page-uuid="d8133443-59e9-41e8-a628-d3fb8cb1f305" data-page-fragment="fs-id1168329196739">Equation 3.12</a>. Substituting this expression into <a href="#fs-id1168057309665" data-sm="./modules/m58287/index.cnxml:41:132" class="autogenerated-content">Equation 3.19</a> gives</p>
+<div data-type="equation" id="fs-id1168055091893" class="unnumbered" data-sm="./modules/m58287/index.cnxml:42:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58287/index.cnxml:42:70"><mi data-sm="./modules/m58287/index.cnxml:42:78">x</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:42:92">(</mo><mi data-sm="./modules/m58287/index.cnxml:42:123">t</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:42:137">)</mo><mo data-sm="./modules/m58287/index.cnxml:42:168">=</mo><mstyle displaystyle="true" data-sm="./modules/m58287/index.cnxml:42:182"><mrow data-sm="./modules/m58287/index.cnxml:42:212"><mo data-sm="./modules/m58287/index.cnxml:42:220">∫</mo><mrow data-sm="./modules/m58287/index.cnxml:42:234"><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:42:242">(</mo><msub data-sm="./modules/m58287/index.cnxml:42:273"><mi data-sm="./modules/m58287/index.cnxml:42:281">v</mi><mn data-sm="./modules/m58287/index.cnxml:42:295">0</mn></msub><mo data-sm="./modules/m58287/index.cnxml:42:318">+</mo><mi data-sm="./modules/m58287/index.cnxml:42:332">a</mi><mi data-sm="./modules/m58287/index.cnxml:42:346">t</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:42:360">)</mo><mi data-sm="./modules/m58287/index.cnxml:42:391">d</mi><mi data-sm="./modules/m58287/index.cnxml:42:405">t</mi><mo data-sm="./modules/m58287/index.cnxml:42:419">+</mo><msub data-sm="./modules/m58287/index.cnxml:42:433"><mi data-sm="./modules/m58287/index.cnxml:42:441">C</mi><mn data-sm="./modules/m58287/index.cnxml:42:455">2</mn></msub></mrow>
+</mrow>
+</mstyle>
+<mo data-sm="./modules/m58287/index.cnxml:42:507">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1168057342016" data-sm="./modules/m58287/index.cnxml:43:1">Doing the integration, we find</p>
+<div data-type="equation" id="fs-id1168057270580" class="unnumbered" data-sm="./modules/m58287/index.cnxml:44:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58287/index.cnxml:44:70"><mi data-sm="./modules/m58287/index.cnxml:44:78">x</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:44:92">(</mo><mi data-sm="./modules/m58287/index.cnxml:44:123">t</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:44:137">)</mo><mo data-sm="./modules/m58287/index.cnxml:44:168">=</mo><msub data-sm="./modules/m58287/index.cnxml:44:182"><mi data-sm="./modules/m58287/index.cnxml:44:190">v</mi><mn data-sm="./modules/m58287/index.cnxml:44:204">0</mn></msub><mi data-sm="./modules/m58287/index.cnxml:44:227">t</mi><mo data-sm="./modules/m58287/index.cnxml:44:241">+</mo><mfrac data-sm="./modules/m58287/index.cnxml:44:255"><mn data-sm="./modules/m58287/index.cnxml:44:264">1</mn><mn data-sm="./modules/m58287/index.cnxml:44:278">2</mn></mfrac>
+<mi data-sm="./modules/m58287/index.cnxml:44:302">a</mi><msup data-sm="./modules/m58287/index.cnxml:44:316"><mi data-sm="./modules/m58287/index.cnxml:44:324">t</mi><mn data-sm="./modules/m58287/index.cnxml:44:338">2</mn></msup><mo data-sm="./modules/m58287/index.cnxml:44:361">+</mo><msub data-sm="./modules/m58287/index.cnxml:44:375"><mi data-sm="./modules/m58287/index.cnxml:44:383">C</mi><mn data-sm="./modules/m58287/index.cnxml:44:397">2</mn></msub><mo data-sm="./modules/m58287/index.cnxml:44:420">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1168057447837" data-sm="./modules/m58287/index.cnxml:45:1">If <em data-effect="italics" data-sm="./modules/m58287/index.cnxml:45:34">x</em>(0) = <em data-effect="italics" data-sm="./modules/m58287/index.cnxml:45:79">x</em><sub data-sm="./modules/m58287/index.cnxml:45:118">0</sub>, we have</p>
+<div data-type="equation" id="fs-id1168057479623" class="unnumbered" data-sm="./modules/m58287/index.cnxml:46:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58287/index.cnxml:46:70"><msub data-sm="./modules/m58287/index.cnxml:46:78"><mi data-sm="./modules/m58287/index.cnxml:46:86">x</mi><mn data-sm="./modules/m58287/index.cnxml:46:100">0</mn></msub><mo data-sm="./modules/m58287/index.cnxml:46:123">=</mo><mn data-sm="./modules/m58287/index.cnxml:46:137">0</mn><mo data-sm="./modules/m58287/index.cnxml:46:151">+</mo><mn data-sm="./modules/m58287/index.cnxml:46:165">0</mn><mo data-sm="./modules/m58287/index.cnxml:46:179">+</mo><msub data-sm="./modules/m58287/index.cnxml:46:193"><mi data-sm="./modules/m58287/index.cnxml:46:201">C</mi><mn data-sm="./modules/m58287/index.cnxml:46:215">2</mn></msub><mo data-sm="./modules/m58287/index.cnxml:46:238">;</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1168057232222" data-sm="./modules/m58287/index.cnxml:47:1">so, <em data-effect="italics" data-sm="./modules/m58287/index.cnxml:47:35">C</em><sub data-sm="./modules/m58287/index.cnxml:47:74">2</sub> = <em data-effect="italics" data-sm="./modules/m58287/index.cnxml:47:89">x</em><sub data-sm="./modules/m58287/index.cnxml:47:128">0</sub>. Substituting back into the equation for <em data-effect="italics" data-sm="./modules/m58287/index.cnxml:47:182">x</em>(<em data-effect="italics" data-sm="./modules/m58287/index.cnxml:47:222">t</em>), we finally have</p>
+<div data-type="equation" id="fs-id1168054944928" class="unnumbered" data-sm="./modules/m58287/index.cnxml:48:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58287/index.cnxml:48:70"><mi data-sm="./modules/m58287/index.cnxml:48:78">x</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:48:92">(</mo><mi data-sm="./modules/m58287/index.cnxml:48:123">t</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:48:137">)</mo><mo data-sm="./modules/m58287/index.cnxml:48:168">=</mo><msub data-sm="./modules/m58287/index.cnxml:48:182"><mi data-sm="./modules/m58287/index.cnxml:48:190">x</mi><mn data-sm="./modules/m58287/index.cnxml:48:204">0</mn></msub><mo data-sm="./modules/m58287/index.cnxml:48:227">+</mo><msub data-sm="./modules/m58287/index.cnxml:48:241"><mi data-sm="./modules/m58287/index.cnxml:48:249">v</mi><mn data-sm="./modules/m58287/index.cnxml:48:263">0</mn></msub><mi data-sm="./modules/m58287/index.cnxml:48:286">t</mi><mo data-sm="./modules/m58287/index.cnxml:48:300">+</mo><mfrac data-sm="./modules/m58287/index.cnxml:48:314"><mn data-sm="./modules/m58287/index.cnxml:48:323">1</mn><mn data-sm="./modules/m58287/index.cnxml:48:337">2</mn></mfrac>
+<mi data-sm="./modules/m58287/index.cnxml:48:361">a</mi><msup data-sm="./modules/m58287/index.cnxml:48:375"><mi data-sm="./modules/m58287/index.cnxml:48:383">t</mi><mn data-sm="./modules/m58287/index.cnxml:48:397">2</mn></msup><mo data-sm="./modules/m58287/index.cnxml:48:420">,</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1168054945679" data-sm="./modules/m58287/index.cnxml:49:1">which is <a href="d50f6e32-0fda-46ef-a362-9bd36ca7c97d-at-aa8a43e-colon-d8133443-59e9-41e8-a628-d3fb8cb1f305.xhtml#fs-id1168326833119" data-sm="./modules/m58287/index.cnxml:49:40" class="autogenerated-content" data-page-slug="3-4-motion-with-constant-acceleration" data-page-uuid="d8133443-59e9-41e8-a628-d3fb8cb1f305" data-page-fragment="fs-id1168326833119">Equation 3.13</a>.</p>
+<div data-type="example" id="fs-id1168057541743" data-sm="./modules/m58287/index.cnxml:50:1"><h3 class="os-title">
+  <span class="os-title-label">Example </span>
+  <span class="os-number">3.17</span>
+  <span class="os-divider"> </span>
+</h3>
+<div class="body">
+<p id="fs-id1168055392642" data-sm="./modules/m58287/index.cnxml:51:1"></p>
+<h4 data-type="title" data-sm="./modules/m58287/index.cnxml:51:31">Motion of a Motorboat</h4>
+A motorboat is traveling at a constant velocity of 5.0 m/s when it starts to accelerate opposite to the motion to arrive at the dock. Its acceleration is <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58287/index.cnxml:51:229"><mi data-sm="./modules/m58287/index.cnxml:51:237">a</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:51:251">(</mo><mi data-sm="./modules/m58287/index.cnxml:51:282">t</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:51:296">)</mo><mo data-sm="./modules/m58287/index.cnxml:51:327">=</mo><mo data-sm="./modules/m58287/index.cnxml:51:341">−</mo><mfrac data-sm="./modules/m58287/index.cnxml:51:355"><mn data-sm="./modules/m58287/index.cnxml:51:364">1</mn><mn data-sm="./modules/m58287/index.cnxml:51:378">4</mn></mfrac>
+<mi data-sm="./modules/m58287/index.cnxml:51:402">t</mi><mspace width="0.2em" data-sm="./modules/m58287/index.cnxml:51:416"/><mrow data-sm="./modules/m58287/index.cnxml:51:441"><mtext data-sm="./modules/m58287/index.cnxml:51:449">m/</mtext><mrow data-sm="./modules/m58287/index.cnxml:51:470"><msup data-sm="./modules/m58287/index.cnxml:51:478"><mtext data-sm="./modules/m58287/index.cnxml:51:486">s</mtext><mn data-sm="./modules/m58287/index.cnxml:51:506">3</mn></msup></mrow>
+</mrow>
+</mrow>
+</mrow>
+</semantics>
+</math></span>. (a) What is the velocity function of the motorboat? (b) At what time does the velocity reach zero? (c) What is the position function of the motorboat? (d) What is the displacement of the motorboat from the time it begins to accelerate opposite to the motion to when the velocity is zero? (e) Graph the velocity and position functions.<p id="fs-id1168055309859" data-sm="./modules/m58287/index.cnxml:51:908"></p>
+<h4 data-type="title" data-sm="./modules/m58287/index.cnxml:51:938">Strategy</h4>
+(a) To get the velocity function we must integrate and use initial conditions to find the constant of integration. (b) We set the velocity function equal to zero and solve for <em data-effect="italics" data-sm="./modules/m58287/index.cnxml:51:1137">t</em>. (c) Similarly, we must integrate to find the position function and use initial conditions to find the constant of integration. (d) Since the initial position is taken to be zero, we only have to evaluate the position function at the time when the velocity is zero.<p id="fs-id1168057384404" data-sm="./modules/m58287/index.cnxml:51:1449"></p>
+<h4 data-type="title" data-sm="./modules/m58287/index.cnxml:51:1479">Solution</h4>
+We take <em data-effect="italics" data-sm="./modules/m58287/index.cnxml:52:9">t</em> = 0 to be the time when the boat starts to accelerate opposite to the motion.
+<ol id="fs-id1168055376582" type="a" data-sm="./modules/m58287/index.cnxml:53:1"><li data-sm="./modules/m58287/index.cnxml:53:81">From the functional form of the acceleration we can solve <a href="#fs-id1168055299938" data-sm="./modules/m58287/index.cnxml:53:145" class="autogenerated-content">Equation 3.18</a> to get <em data-effect="italics" data-sm="./modules/m58287/index.cnxml:53:191">v</em>(<em data-effect="italics" data-sm="./modules/m58287/index.cnxml:53:231">t</em>):
+<div data-type="equation" id="fs-id1168057455742" class="unnumbered" data-sm="./modules/m58287/index.cnxml:54:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58287/index.cnxml:54:70"><mi data-sm="./modules/m58287/index.cnxml:54:78">v</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:54:92">(</mo><mi data-sm="./modules/m58287/index.cnxml:54:123">t</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:54:137">)</mo><mo data-sm="./modules/m58287/index.cnxml:54:168">=</mo><mstyle displaystyle="true" data-sm="./modules/m58287/index.cnxml:54:182"><mrow data-sm="./modules/m58287/index.cnxml:54:212"><mo data-sm="./modules/m58287/index.cnxml:54:220">∫</mo><mrow data-sm="./modules/m58287/index.cnxml:54:234"><mi data-sm="./modules/m58287/index.cnxml:54:242">a</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:54:256">(</mo><mi data-sm="./modules/m58287/index.cnxml:54:287">t</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:54:301">)</mo><mi data-sm="./modules/m58287/index.cnxml:54:332">d</mi><mi data-sm="./modules/m58287/index.cnxml:54:346">t</mi><mo data-sm="./modules/m58287/index.cnxml:54:360">+</mo><msub data-sm="./modules/m58287/index.cnxml:54:374"><mi data-sm="./modules/m58287/index.cnxml:54:382">C</mi><mn data-sm="./modules/m58287/index.cnxml:54:396">1</mn></msub><mo data-sm="./modules/m58287/index.cnxml:54:419">=</mo><mstyle displaystyle="true" data-sm="./modules/m58287/index.cnxml:54:433"><mrow data-sm="./modules/m58287/index.cnxml:54:463"><mo data-sm="./modules/m58287/index.cnxml:54:471">∫</mo><mrow data-sm="./modules/m58287/index.cnxml:54:485"><mo data-sm="./modules/m58287/index.cnxml:54:493">−</mo><mfrac data-sm="./modules/m58287/index.cnxml:54:507"><mn data-sm="./modules/m58287/index.cnxml:54:516">1</mn><mn data-sm="./modules/m58287/index.cnxml:54:530">4</mn></mfrac>
+<mi data-sm="./modules/m58287/index.cnxml:54:554">t</mi><mspace width="0.2em" data-sm="./modules/m58287/index.cnxml:54:568"/><mtext data-sm="./modules/m58287/index.cnxml:54:593">m/</mtext><msup data-sm="./modules/m58287/index.cnxml:54:614"><mtext data-sm="./modules/m58287/index.cnxml:54:622">s</mtext><mn data-sm="./modules/m58287/index.cnxml:54:642">3</mn></msup><mspace width="0.2em" data-sm="./modules/m58287/index.cnxml:54:665"/><mi data-sm="./modules/m58287/index.cnxml:54:690">d</mi><mi data-sm="./modules/m58287/index.cnxml:54:704">t</mi><mo data-sm="./modules/m58287/index.cnxml:54:718">+</mo><msub data-sm="./modules/m58287/index.cnxml:54:732"><mi data-sm="./modules/m58287/index.cnxml:54:740">C</mi><mn data-sm="./modules/m58287/index.cnxml:54:754">1</mn></msub><mo data-sm="./modules/m58287/index.cnxml:54:777">=</mo><mo data-sm="./modules/m58287/index.cnxml:54:791">−</mo><mfrac data-sm="./modules/m58287/index.cnxml:54:805"><mn data-sm="./modules/m58287/index.cnxml:54:814">1</mn><mn data-sm="./modules/m58287/index.cnxml:54:828">8</mn></mfrac>
+<mspace width="0.2em" data-sm="./modules/m58287/index.cnxml:54:852"/><mtext data-sm="./modules/m58287/index.cnxml:54:877">m/</mtext><msup data-sm="./modules/m58287/index.cnxml:54:898"><mtext data-sm="./modules/m58287/index.cnxml:54:906">s</mtext><mn data-sm="./modules/m58287/index.cnxml:54:926">3</mn></msup><mspace width="0.2em" data-sm="./modules/m58287/index.cnxml:54:949"/><msup data-sm="./modules/m58287/index.cnxml:54:974"><mi data-sm="./modules/m58287/index.cnxml:54:982">t</mi><mn data-sm="./modules/m58287/index.cnxml:54:996">2</mn></msup><mo data-sm="./modules/m58287/index.cnxml:54:1019">+</mo><msub data-sm="./modules/m58287/index.cnxml:54:1033"><mi data-sm="./modules/m58287/index.cnxml:54:1041">C</mi><mn data-sm="./modules/m58287/index.cnxml:54:1055">1</mn></msub></mrow>
+</mrow>
+</mstyle>
+</mrow>
+</mrow>
+</mstyle>
+<mo data-sm="./modules/m58287/index.cnxml:54:1136">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+At <em data-effect="italics" data-sm="./modules/m58287/index.cnxml:55:4">t</em> = 0 we have <em data-effect="italics" data-sm="./modules/m58287/index.cnxml:55:56">v</em>(0) = 5.0 m/s = 0 + <em data-effect="italics" data-sm="./modules/m58287/index.cnxml:55:115">C</em><sub data-sm="./modules/m58287/index.cnxml:55:154">1</sub>, so <em data-effect="italics" data-sm="./modules/m58287/index.cnxml:55:171">C</em><sub data-sm="./modules/m58287/index.cnxml:55:210">1</sub> = 5.0 m/s or <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58287/index.cnxml:55:244"><mi data-sm="./modules/m58287/index.cnxml:55:252">v</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:55:266">(</mo><mi data-sm="./modules/m58287/index.cnxml:55:297">t</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:55:311">)</mo><mo data-sm="./modules/m58287/index.cnxml:55:342">=</mo><mn data-sm="./modules/m58287/index.cnxml:55:356">5.0</mn><mspace width="0.2em" data-sm="./modules/m58287/index.cnxml:55:372"/><mrow data-sm="./modules/m58287/index.cnxml:55:397"><mtext data-sm="./modules/m58287/index.cnxml:55:405">m/</mtext><mtext data-sm="./modules/m58287/index.cnxml:55:426">s</mtext></mrow>
+<mo data-sm="./modules/m58287/index.cnxml:55:455">−</mo><mfrac data-sm="./modules/m58287/index.cnxml:55:469"><mn data-sm="./modules/m58287/index.cnxml:55:478">1</mn><mn data-sm="./modules/m58287/index.cnxml:55:492">8</mn></mfrac>
+<mspace width="0.2em" data-sm="./modules/m58287/index.cnxml:55:516"/><mtext data-sm="./modules/m58287/index.cnxml:55:541">m/</mtext><msup data-sm="./modules/m58287/index.cnxml:55:562"><mtext data-sm="./modules/m58287/index.cnxml:55:570">s</mtext><mn data-sm="./modules/m58287/index.cnxml:55:590">3</mn></msup><mspace width="0.2em" data-sm="./modules/m58287/index.cnxml:55:613"/><msup data-sm="./modules/m58287/index.cnxml:55:638"><mi data-sm="./modules/m58287/index.cnxml:55:646">t</mi><mn data-sm="./modules/m58287/index.cnxml:55:660">2</mn></msup></mrow>
+</mrow>
+</semantics>
+</math>.</li>
+<li data-sm="./modules/m58287/index.cnxml:56:1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58287/index.cnxml:56:15"><mi data-sm="./modules/m58287/index.cnxml:56:23">v</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:56:37">(</mo><mi data-sm="./modules/m58287/index.cnxml:56:68">t</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:56:82">)</mo><mo data-sm="./modules/m58287/index.cnxml:56:113">=</mo><mn data-sm="./modules/m58287/index.cnxml:56:127">0</mn><mo data-sm="./modules/m58287/index.cnxml:56:141">=</mo><mn data-sm="./modules/m58287/index.cnxml:56:155">5.0</mn><mspace width="0.2em" data-sm="./modules/m58287/index.cnxml:56:171"/><mrow data-sm="./modules/m58287/index.cnxml:56:196"><mtext data-sm="./modules/m58287/index.cnxml:56:204">m/</mtext><mtext data-sm="./modules/m58287/index.cnxml:56:225">s</mtext></mrow>
+<mo data-sm="./modules/m58287/index.cnxml:56:254">−</mo><mfrac data-sm="./modules/m58287/index.cnxml:56:268"><mn data-sm="./modules/m58287/index.cnxml:56:277">1</mn><mn data-sm="./modules/m58287/index.cnxml:56:291">8</mn></mfrac>
+<msup data-sm="./modules/m58287/index.cnxml:56:315"><mi data-sm="./modules/m58287/index.cnxml:56:323">t</mi><mn data-sm="./modules/m58287/index.cnxml:56:337">2</mn></msup>
+
+<mtext data-sm="./modules/m58287/index.cnxml:58:1">m/</mtext><msup data-sm="./modules/m58287/index.cnxml:58:22"><mtext data-sm="./modules/m58287/index.cnxml:58:30">s</mtext><mn data-sm="./modules/m58287/index.cnxml:58:50">3</mn></msup>
+
+<mo stretchy="false" data-sm="./modules/m58287/index.cnxml:60:1">⇒</mo><mi data-sm="./modules/m58287/index.cnxml:60:32">t</mi><mo data-sm="./modules/m58287/index.cnxml:60:46">=</mo><mn data-sm="./modules/m58287/index.cnxml:60:60">6.3</mn><mspace width="0.2em" data-sm="./modules/m58287/index.cnxml:60:76"/><mtext data-sm="./modules/m58287/index.cnxml:60:101">s</mtext></mrow>
+</mrow>
+</semantics>
+</math></li>
+<li data-sm="./modules/m58287/index.cnxml:61:1">Solve <a href="#fs-id1168057309665" data-sm="./modules/m58287/index.cnxml:61:13" class="autogenerated-content">Equation 3.19</a>:
+<div data-type="equation" id="fs-id1168057200669" class="unnumbered" data-sm="./modules/m58287/index.cnxml:62:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58287/index.cnxml:62:70"><mi data-sm="./modules/m58287/index.cnxml:62:78">x</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:62:92">(</mo><mi data-sm="./modules/m58287/index.cnxml:62:123">t</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:62:137">)</mo><mo data-sm="./modules/m58287/index.cnxml:62:168">=</mo><mstyle displaystyle="true" data-sm="./modules/m58287/index.cnxml:62:182"><mrow data-sm="./modules/m58287/index.cnxml:62:212"><mo data-sm="./modules/m58287/index.cnxml:62:220">∫</mo><mrow data-sm="./modules/m58287/index.cnxml:62:234"><mi data-sm="./modules/m58287/index.cnxml:62:242">v</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:62:256">(</mo><mi data-sm="./modules/m58287/index.cnxml:62:287">t</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:62:301">)</mo><mi data-sm="./modules/m58287/index.cnxml:62:332">d</mi><mi data-sm="./modules/m58287/index.cnxml:62:346">t</mi><mo data-sm="./modules/m58287/index.cnxml:62:360">+</mo><msub data-sm="./modules/m58287/index.cnxml:62:374"><mi data-sm="./modules/m58287/index.cnxml:62:382">C</mi><mn data-sm="./modules/m58287/index.cnxml:62:396">2</mn></msub></mrow>
+</mrow>
+</mstyle>
+<mo data-sm="./modules/m58287/index.cnxml:62:448">=</mo><mstyle displaystyle="true" data-sm="./modules/m58287/index.cnxml:62:462"><mrow data-sm="./modules/m58287/index.cnxml:62:492"><mo data-sm="./modules/m58287/index.cnxml:62:500">∫</mo><mrow data-sm="./modules/m58287/index.cnxml:62:514"><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:62:522">(</mo><mn data-sm="./modules/m58287/index.cnxml:62:553">5.0</mn><mo data-sm="./modules/m58287/index.cnxml:62:569">−</mo><mfrac data-sm="./modules/m58287/index.cnxml:62:583"><mn data-sm="./modules/m58287/index.cnxml:62:592">1</mn><mn data-sm="./modules/m58287/index.cnxml:62:606">8</mn></mfrac>
+<msup data-sm="./modules/m58287/index.cnxml:62:630"><mi data-sm="./modules/m58287/index.cnxml:62:638">t</mi><mn data-sm="./modules/m58287/index.cnxml:62:652">2</mn></msup><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:62:675">)</mo></mrow>
+</mrow>
+</mstyle>
+<mi data-sm="./modules/m58287/index.cnxml:62:735">d</mi><mi data-sm="./modules/m58287/index.cnxml:62:749">t</mi><mo data-sm="./modules/m58287/index.cnxml:62:763">+</mo><msub data-sm="./modules/m58287/index.cnxml:62:777"><mi data-sm="./modules/m58287/index.cnxml:62:785">C</mi><mn data-sm="./modules/m58287/index.cnxml:62:799">2</mn></msub><mo data-sm="./modules/m58287/index.cnxml:62:822">=</mo>
+
+	<mn data-sm="./modules/m58287/index.cnxml:64:2">5.0</mn><mi data-sm="./modules/m58287/index.cnxml:64:18">t</mi><mo data-sm="./modules/m58287/index.cnxml:64:32">m/s</mo><mo data-sm="./modules/m58287/index.cnxml:64:48">−</mo><mfrac data-sm="./modules/m58287/index.cnxml:64:62"><mn data-sm="./modules/m58287/index.cnxml:64:71">1</mn><mrow data-sm="./modules/m58287/index.cnxml:64:85"><mn data-sm="./modules/m58287/index.cnxml:64:93">24</mn></mrow>
+</mfrac>
+<msup data-sm="./modules/m58287/index.cnxml:64:127"><mi data-sm="./modules/m58287/index.cnxml:64:135">t</mi><mn data-sm="./modules/m58287/index.cnxml:64:149">3</mn></msup><mtext data-sm="./modules/m58287/index.cnxml:64:172">m/</mtext><msup data-sm="./modules/m58287/index.cnxml:64:193"><mtext data-sm="./modules/m58287/index.cnxml:64:201">s</mtext><mn data-sm="./modules/m58287/index.cnxml:64:221">3</mn></msup><mo data-sm="./modules/m58287/index.cnxml:64:244">+</mo><msub data-sm="./modules/m58287/index.cnxml:64:258"><mi data-sm="./modules/m58287/index.cnxml:64:266">C</mi><mn data-sm="./modules/m58287/index.cnxml:64:280">2</mn></msub><mo data-sm="./modules/m58287/index.cnxml:64:303">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+
+At <em data-effect="italics" data-sm="./modules/m58287/index.cnxml:66:4">t</em> = 0, we set <em data-effect="italics" data-sm="./modules/m58287/index.cnxml:66:56">x</em>(0) = 0 = <em data-effect="italics" data-sm="./modules/m58287/index.cnxml:66:105">x</em><sub data-sm="./modules/m58287/index.cnxml:66:144">0</sub>, since we are only interested in the displacement from when the boat starts to accelerate opposite to the motion. We have
+<div data-type="equation" id="fs-id1168057733056" class="unnumbered" data-sm="./modules/m58287/index.cnxml:67:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58287/index.cnxml:67:70"><mi data-sm="./modules/m58287/index.cnxml:67:78">x</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:67:92">(</mo><mn data-sm="./modules/m58287/index.cnxml:67:123">0</mn><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:67:137">)</mo><mo data-sm="./modules/m58287/index.cnxml:67:168">=</mo><mn data-sm="./modules/m58287/index.cnxml:67:182">0</mn><mo data-sm="./modules/m58287/index.cnxml:67:196">=</mo><msub data-sm="./modules/m58287/index.cnxml:67:210"><mi data-sm="./modules/m58287/index.cnxml:67:218">C</mi><mn data-sm="./modules/m58287/index.cnxml:67:232">2</mn></msub><mo data-sm="./modules/m58287/index.cnxml:67:255">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+Therefore, the equation for the position is
+<div data-type="equation" id="fs-id1168057234823" class="unnumbered" data-sm="./modules/m58287/index.cnxml:69:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58287/index.cnxml:69:70"><mi data-sm="./modules/m58287/index.cnxml:69:78">x</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:69:92">(</mo><mi data-sm="./modules/m58287/index.cnxml:69:123">t</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:69:137">)</mo><mo data-sm="./modules/m58287/index.cnxml:69:168">=</mo><mn data-sm="./modules/m58287/index.cnxml:69:182">5.0</mn><mi data-sm="./modules/m58287/index.cnxml:69:198">t</mi><mspace width="0.2em" data-sm="./modules/m58287/index.cnxml:69:212"/><mtext data-sm="./modules/m58287/index.cnxml:69:237">m/s</mtext><mspace width="0.2em" data-sm="./modules/m58287/index.cnxml:69:259"/><mo data-sm="./modules/m58287/index.cnxml:69:284">−</mo><mfrac data-sm="./modules/m58287/index.cnxml:69:298"><mn data-sm="./modules/m58287/index.cnxml:69:307">1</mn><mrow data-sm="./modules/m58287/index.cnxml:69:321"><mn data-sm="./modules/m58287/index.cnxml:69:329">24</mn></mrow>
+</mfrac>
+<msup data-sm="./modules/m58287/index.cnxml:69:363"><mi data-sm="./modules/m58287/index.cnxml:69:371">t</mi><mn data-sm="./modules/m58287/index.cnxml:69:385">3</mn></msup><mspace width="0.2em" data-sm="./modules/m58287/index.cnxml:69:408"/><mtext data-sm="./modules/m58287/index.cnxml:69:433">m/</mtext><msup data-sm="./modules/m58287/index.cnxml:69:454"><mtext data-sm="./modules/m58287/index.cnxml:69:462">s</mtext><mn data-sm="./modules/m58287/index.cnxml:69:482">3</mn></msup><mspace width="0.2em" data-sm="./modules/m58287/index.cnxml:69:505"/><mo data-sm="./modules/m58287/index.cnxml:69:530">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div></li>
+<li data-sm="./modules/m58287/index.cnxml:70:1">Since the initial position is taken to be zero, we only have to evaluate the position function at the time when the velocity is zero. This occurs at <em data-effect="italics" data-sm="./modules/m58287/index.cnxml:70:156">t</em> = 6.3 s. Therefore, the displacement is
+<div data-type="equation" id="fs-id1168055146576" class="unnumbered" data-sm="./modules/m58287/index.cnxml:71:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58287/index.cnxml:71:70"><mi data-sm="./modules/m58287/index.cnxml:71:78">x</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:71:92">(</mo><mn data-sm="./modules/m58287/index.cnxml:71:123">6.3</mn><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:71:139">)</mo><mo data-sm="./modules/m58287/index.cnxml:71:170">=</mo><mn data-sm="./modules/m58287/index.cnxml:71:184">5.0</mn><mi data-sm="./modules/m58287/index.cnxml:71:200">t</mi><mspace width="0.2em" data-sm="./modules/m58287/index.cnxml:71:214"/><mtext data-sm="./modules/m58287/index.cnxml:71:239">m/s</mtext><mspace width="0.2em" data-sm="./modules/m58287/index.cnxml:71:261"/><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:71:286">(</mo><mn data-sm="./modules/m58287/index.cnxml:71:317">6.3</mn><mo data-sm="./modules/m58287/index.cnxml:71:333">s</mo><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:71:347">)</mo><mo data-sm="./modules/m58287/index.cnxml:71:378">−</mo><mfrac data-sm="./modules/m58287/index.cnxml:71:392"><mn data-sm="./modules/m58287/index.cnxml:71:401">1</mn><mrow data-sm="./modules/m58287/index.cnxml:71:415"><mn data-sm="./modules/m58287/index.cnxml:71:423">24</mn></mrow>
+</mfrac>
+<msup data-sm="./modules/m58287/index.cnxml:71:457"><mi data-sm="./modules/m58287/index.cnxml:71:465">t</mi><mn data-sm="./modules/m58287/index.cnxml:71:479">3</mn></msup><mspace width="0.2em" data-sm="./modules/m58287/index.cnxml:71:502"/><mtext data-sm="./modules/m58287/index.cnxml:71:527">m/</mtext><msup data-sm="./modules/m58287/index.cnxml:71:548"><mtext data-sm="./modules/m58287/index.cnxml:71:556">s</mtext><mi data-sm="./modules/m58287/index.cnxml:71:576">s</mi></msup><mspace width="0.2em" data-sm="./modules/m58287/index.cnxml:71:599"/><mrow data-sm="./modules/m58287/index.cnxml:71:624"><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:71:632">(</mo><mn data-sm="./modules/m58287/index.cnxml:71:663">6.3</mn><mo data-sm="./modules/m58287/index.cnxml:71:679">s</mo><msup data-sm="./modules/m58287/index.cnxml:71:693"><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:71:701">)</mo><mn data-sm="./modules/m58287/index.cnxml:71:732">3</mn></msup></mrow>
+<mo data-sm="./modules/m58287/index.cnxml:71:764">=</mo><mn data-sm="./modules/m58287/index.cnxml:71:778">21.1</mn><mspace width="0.2em" data-sm="./modules/m58287/index.cnxml:71:795"/><mtext data-sm="./modules/m58287/index.cnxml:71:820">m</mtext><mtext data-sm="./modules/m58287/index.cnxml:71:840">.</mtext></mrow>
+</mrow>
+</semantics>
+</math>
+</div></li>
+</ol>
+
+<div class="os-figure"><figure id="CNX_UPhysics_03_06_Ex1" data-sm="./modules/m58287/index.cnxml:73:1">
+<span data-type="media" id="fs-id1168057460469" data-alt="Graph A is a plot of velocity in meters per second as a function of time in seconds. Velocity is five meters per second at the beginning and decreases to zero. Graph B is a plot of position in meters as a function of time in seconds. Position is zero at the beginning, increases reaching maximum between six and seven seconds, and then starts to decrease." data-sm="./modules/m58287/index.cnxml:74:1">
+<img src="ae5e63e3de6b1ce0574b439fea7fa81ecd2125b1.jpeg" data-media-type="image/jpeg" alt="Graph A is a plot of velocity in meters per second as a function of time in seconds. Velocity is five meters per second at the beginning and decreases to zero. Graph B is a plot of position in meters as a function of time in seconds. Position is zero at the beginning, increases reaching maximum between six and seven seconds, and then starts to decrease." data-sm="./modules/m58287/index.cnxml:75:1"/>
+</span>
+
+</figure>
+<div class="os-caption-container">
+  <span class="os-title-label">Figure </span>
+<span class="os-number">3.30</span>
+
+
+
+  <span class="os-divider"> </span>
+  <span data-sm="./modules/m58287/index.cnxml:77:1" class="os-caption">(a) Velocity of the motorboat as a function of time. The motorboat decreases its velocity to zero in 6.3 s. At times greater than this, velocity becomes negative—meaning, the boat is reversing direction. (b) Position of the motorboat as a function of time. At <em data-effect="italics" data-sm="./modules/m58287/index.cnxml:77:270">t</em> = 6.3 s, the velocity is zero and the boat has stopped. At times greater than this, the velocity becomes negative—meaning, if the boat continues to move with the same acceleration, it reverses direction and heads back toward where it originated.</span>
+</div>
+</div>
+<p id="fs-id1168057469320" data-sm="./modules/m58287/index.cnxml:79:1"></p>
+<h4 data-type="title" data-sm="./modules/m58287/index.cnxml:79:31">Significance</h4>
+The acceleration function is linear in time so the integration involves simple polynomials. In <a href="#CNX_UPhysics_03_06_Ex1" data-sm="./modules/m58287/index.cnxml:80:96" class="autogenerated-content">Figure 3.30</a>, we see that if we extend the solution beyond the point when the velocity is zero, the velocity becomes negative and the boat reverses direction. This tells us that solutions can give us information outside our immediate interest and we should be careful when interpreting them.
+</div>
+</div>
+<div data-type="note" id="fs-id1168057553337" class="check-understanding" data-sm="./modules/m58287/index.cnxml:82:1"><h3 class="os-title">
+  <span class="os-title-label">Check Your Understanding </span>
+  <span class="os-number">3.8</span>
+  <span class="os-divider"> </span>
+</h3>
+<div class="os-note-body">
+<div data-type="exercise" id="fs-id1168057460348" data-sm="./modules/m58287/index.cnxml:83:1" class="unnumbered os-hasSolution">
+<div data-type="problem" id="fs-id1168052793113" data-sm="./modules/m58287/index.cnxml:84:1"><div class="os-problem-container">
+<p id="fs-id1168057347714" data-sm="./modules/m58287/index.cnxml:85:1"> A particle starts from rest and has an acceleration function
+<span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58287/index.cnxml:86:9"><mi data-sm="./modules/m58287/index.cnxml:86:17">a</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:86:31">(</mo><mi data-sm="./modules/m58287/index.cnxml:86:62">t</mi><mo stretchy="false" data-sm="./modules/m58287/index.cnxml:86:76">)</mo><mo data-sm="./modules/m58287/index.cnxml:86:107">=</mo><mo data-sm="./modules/m58287/index.cnxml:86:121">(</mo><mn data-sm="./modules/m58287/index.cnxml:86:135">5</mn><mo data-sm="./modules/m58287/index.cnxml:86:149">–</mo><mo data-sm="./modules/m58287/index.cnxml:86:163">(</mo><mn data-sm="./modules/m58287/index.cnxml:86:177">10</mn><mfrac data-sm="./modules/m58287/index.cnxml:86:192"><mn data-sm="./modules/m58287/index.cnxml:86:201">1</mn><mi data-sm="./modules/m58287/index.cnxml:86:215">s</mi></mfrac>
+<mo data-sm="./modules/m58287/index.cnxml:86:239">)</mo><mi data-sm="./modules/m58287/index.cnxml:86:253">t</mi><mo data-sm="./modules/m58287/index.cnxml:86:267">)</mo><mfrac data-sm="./modules/m58287/index.cnxml:86:281"><mrow data-sm="./modules/m58287/index.cnxml:86:290"><mi data-sm="./modules/m58287/index.cnxml:86:298">m</mi></mrow>
+<mrow data-sm="./modules/m58287/index.cnxml:86:321"><msup data-sm="./modules/m58287/index.cnxml:86:329"><mi data-sm="./modules/m58287/index.cnxml:86:337">s</mi><mn data-sm="./modules/m58287/index.cnxml:86:351">2</mn></msup></mrow>
+</mfrac>
+</mrow>
+</mrow>
+</semantics>
+</math></span>. (a) What is the velocity function? (b) What is the position function? (c) When is the velocity zero?</p>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+  </div>
+
+<a href="university-physics-volume-1.toc.html">Back to table of contents</a>
+</body>
+</html>
+<!-- # sourceMappingURL=d50f6e32-0fda-46ef-a362-9bd36ca7c97d-at-aa8a43e-colon-eedbae5f-1304-4326-a49a-92f967f80a9e.xhtml.map -->
