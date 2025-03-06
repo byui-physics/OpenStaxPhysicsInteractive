@@ -1,27 +1,29 @@
 import zipfile
 import os
 
-epub_file = "misc_stuff/openstax-osbooks-university-physics-bundle-aa8a43ef55af6aa08d279863e32cf0f6177298ca-15104-university-physics-volume-1.epub"   # Your ePub file
-extract_folder = "misc_stuff/extracted_book"  # Where files will be extracted
+## DON'T RUN THIS FILE UNLESS YOU WANT TO OVERWRITE THE WHOLE TEXTBOOK
+
+
+
+epub_file = "misc_stuff/openstax-osbooks-university-physics-bundle-aa8a43ef55af6aa08d279863e32cf0f6177298ca-15104-university-physics-volume-3.epub"   # Your ePub file
+extract_folder = "misc_stuff/extracted_book_v3"  # Where files will be extracted
 
 # Unzip the ePub file
 with zipfile.ZipFile(epub_file, 'r') as epub:
     epub.extractall(extract_folder)
 
-line_to_insert = '<a href="university-physics-volume-1.toc.html">Back to table of contents</a>'
+line_to_insert = '<a href="university-physics-volume-3.toc.html">Back to table of contents</a>'
 
 # Find HTML files
-html_files = []
 for root, _, files in os.walk(extract_folder):
     for file in files:
         if file.endswith(".xhtml"):
             # don't go through html files because otherwise they get double counted when they change to html
-            html_files.append(os.path.join(root, file))
-
-
+            
             ### ADD THE LINK BACK TO TOC
             file_path = os.path.join(root, file)
 
+            # link at end
             with open(file_path, 'r', encoding='utf-8') as f:
                 content = f.read()
 
@@ -31,6 +33,17 @@ for root, _, files in os.walk(extract_folder):
                     content = content[:body_end_index] + "\n" + line_to_insert + "\n" + content[body_end_index:]
                     f.write(content)
 
+            # link at beginning
+            with open(file_path, "r") as f:
+                lines = f.readlines()
+
+            # Insert the new line at position 5 (after line 4)
+            lines.insert(1, line_to_insert)
+
+            # Write back the modified content
+            with open(file_path, "w") as f:
+                f.writelines(lines)
+            
         ## CHANGE FILES FROM XHTML TO HTML
 
         if file.endswith('.xhtml'):
@@ -42,20 +55,17 @@ for root, _, files in os.walk(extract_folder):
             # Rename the file
             os.rename(old_file_path, new_file_path)
 
-### CHANGE ALL TOC LINKS FROM XHTML TO HTML
+            
+            ### CHANGE ALL LINKS FROM XHTML TO HTML
+            # Step 1: Open the file in read mode and read its content
+            with open(new_file_path, 'r', encoding='utf-8') as file:
+                content = file.read()
 
-# Define the path of the file
-file_path = 'misc_stuff/extracted_book/university-physics-volume-1.toc.html'
+            # Step 2: Replace every instance of .xhtml with .html
+            modified_content = content.replace('.xhtml', '.html')
 
-# Step 1: Open the file in read mode and read its content
-with open(file_path, 'r', encoding='utf-8') as file:
-    content = file.read()
-
-# Step 2: Replace every instance of .xhtml with .html
-modified_content = content.replace('.xhtml', '.html')
-
-# Step 3: Open the file in write mode and write the modified content back
-with open(file_path, 'w', encoding='utf-8') as file:
-    file.write(modified_content)
+            # Step 3: Open the file in write mode and write the modified content back
+            with open(new_file_path, 'w', encoding='utf-8') as file:
+                file.write(modified_content)
 
 

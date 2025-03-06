@@ -1,0 +1,1836 @@
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+  <head>
+    <meta name="dtb:uid" content="dummy-openstax.org-id.university-physics-volume-3"/>
+    <meta name="dtb:depth" content="4"/>
+    <meta name="dtb:generator" content="OpenStax EPUB Maker 2022-08"/>
+    <meta name="dtb:pagecount" content="403"/>
+    <meta name="dtb:maxPageNumber" content="403"/>
+  </head>
+  <docTitle>
+    <text>University Physics Volume 3
+    </text>
+  </docTitle>
+  <navMap>
+    <navPoint id="idm1">
+      <navLabel>
+        <text>
+    Preface
+  
+        </text>
+      </navLabel>
+      <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-1a87e4af-d3b2-4c23-981c-d33ca2fed9b2.xhtml"/>
+    </navPoint>
+    <navPoint id="idm2">
+      <navLabel>
+        <text>Unit 1
+     
+    Optics
+        </text>
+      </navLabel>
+      <content src="af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-6eafb0bf-933c-4496-b923-26ec354bb208.xhtml"/>
+      <navPoint id="idm3">
+        <navLabel>
+          <text>Chapter 1
+     
+    The Nature of Light
+          </text>
+        </navLabel>
+        <content src="af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-6eafb0bf-933c-4496-b923-26ec354bb208.xhtml"/>
+        <navPoint id="idm4">
+          <navLabel>
+            <text>
+    Introduction
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-6eafb0bf-933c-4496-b923-26ec354bb208.xhtml"/>
+        </navPoint>
+        <navPoint id="idm5">
+          <navLabel>
+            <text>
+    1.1 The Propagation of Light
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-a8be6cf6-1c2d-44e0-826f-04f22a1a9eda.xhtml"/>
+        </navPoint>
+        <navPoint id="idm6">
+          <navLabel>
+            <text>
+    1.2 The Law of Reflection
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-9cf4005e-3a40-47e2-aafc-03a99a22f905.xhtml"/>
+        </navPoint>
+        <navPoint id="idm7">
+          <navLabel>
+            <text>
+    1.3 Refraction
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-426d336a-9fe9-4395-b5fa-204f0337defe.xhtml"/>
+        </navPoint>
+        <navPoint id="idm8">
+          <navLabel>
+            <text>
+    1.4 Total Internal Reflection
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-9ddbdb8d-9bf9-4b95-a782-578449977e53.xhtml"/>
+        </navPoint>
+        <navPoint id="idm9">
+          <navLabel>
+            <text>
+    1.5 Dispersion
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-d55b34a6-33d4-4226-bd79-b94d12a5db17.xhtml"/>
+        </navPoint>
+        <navPoint id="idm10">
+          <navLabel>
+            <text>
+    1.6 Huygens’s Principle
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-676a4534-fa7f-44b9-bc20-e04e44ccd8ff.xhtml"/>
+        </navPoint>
+        <navPoint id="idm11">
+          <navLabel>
+            <text>
+    1.7 Polarization
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-bddd5452-956b-4e40-8024-1053c5b0988c.xhtml"/>
+        </navPoint>
+        <navPoint id="idm12">
+          <navLabel>
+            <text>Chapter Review
+            </text>
+          </navLabel>
+          <content src="af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-efcb4018-dc04-50a9-90bb-7e5a66d03cdf.xhtml"/>
+          <navPoint id="idm13">
+            <navLabel>
+              <text>
+    Key Terms
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-efcb4018-dc04-50a9-90bb-7e5a66d03cdf.xhtml"/>
+          </navPoint>
+          <navPoint id="idm14">
+            <navLabel>
+              <text>
+    Key Equations
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-42a6ae1c-2768-5af2-9959-8384aba4cb27.xhtml"/>
+          </navPoint>
+          <navPoint id="idm15">
+            <navLabel>
+              <text>
+    Summary
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-268c6684-6e43-5996-9d4a-c88d44f248d6.xhtml"/>
+          </navPoint>
+          <navPoint id="idm16">
+            <navLabel>
+              <text>
+    Conceptual Questions
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-6a5698ae-e5ac-5abe-acd6-96c0ea7ab731.xhtml"/>
+          </navPoint>
+          <navPoint id="idm17">
+            <navLabel>
+              <text>
+    Problems
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-251fef08-f718-5023-8871-2b63f1ae08cd.xhtml"/>
+          </navPoint>
+          <navPoint id="idm18">
+            <navLabel>
+              <text>
+    Additional Problems
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-29227cbb-75a6-50b6-9ba0-6b71562a93da.xhtml"/>
+          </navPoint>
+          <navPoint id="idm19">
+            <navLabel>
+              <text>
+    Challenge Problems
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-f8954eaa-5eec-5ae3-8ca5-1a668787132d.xhtml"/>
+          </navPoint>
+        </navPoint>
+      </navPoint>
+      <navPoint id="idm20">
+        <navLabel>
+          <text>Chapter 2
+     
+    Geometric Optics and Image Formation
+          </text>
+        </navLabel>
+        <content src="af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-f9896b03-435e-4b86-83cb-76ee7d4af769.xhtml"/>
+        <navPoint id="idm21">
+          <navLabel>
+            <text>
+    Introduction
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-f9896b03-435e-4b86-83cb-76ee7d4af769.xhtml"/>
+        </navPoint>
+        <navPoint id="idm22">
+          <navLabel>
+            <text>
+    2.1 Images Formed by Plane Mirrors
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-98092157-d356-4c89-9d17-0cf5298cf327.xhtml"/>
+        </navPoint>
+        <navPoint id="idm23">
+          <navLabel>
+            <text>
+    2.2 Spherical Mirrors
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-5a7e1e39-5107-43cd-a446-23a1ad7ebcc8.xhtml"/>
+        </navPoint>
+        <navPoint id="idm24">
+          <navLabel>
+            <text>
+    2.3 Images Formed by Refraction
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-579977ed-990b-4e1d-9507-971b25710b78.xhtml"/>
+        </navPoint>
+        <navPoint id="idm25">
+          <navLabel>
+            <text>
+    2.4 Thin Lenses
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-03892779-f30f-4e05-ad68-3935c5b4d81e.xhtml"/>
+        </navPoint>
+        <navPoint id="idm26">
+          <navLabel>
+            <text>
+    2.5 The Eye
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-87ea37ee-3600-4a4b-8199-40665277c512.xhtml"/>
+        </navPoint>
+        <navPoint id="idm27">
+          <navLabel>
+            <text>
+    2.6 The Camera
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-b0e332ca-bf6a-4b2c-9542-0f31f6a7c80c.xhtml"/>
+        </navPoint>
+        <navPoint id="idm28">
+          <navLabel>
+            <text>
+    2.7 The Simple Magnifier
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-f9d1edd0-8968-4838-be2f-81d13fce7a44.xhtml"/>
+        </navPoint>
+        <navPoint id="idm29">
+          <navLabel>
+            <text>
+    2.8 Microscopes and Telescopes
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-0c4c06be-01aa-44ba-ba44-6cc21b3d29be.xhtml"/>
+        </navPoint>
+        <navPoint id="idm30">
+          <navLabel>
+            <text>Chapter Review
+            </text>
+          </navLabel>
+          <content src="af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-d4b9d73b-9804-5a10-a94e-80a4613bc528.xhtml"/>
+          <navPoint id="idm31">
+            <navLabel>
+              <text>
+    Key Terms
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-d4b9d73b-9804-5a10-a94e-80a4613bc528.xhtml"/>
+          </navPoint>
+          <navPoint id="idm32">
+            <navLabel>
+              <text>
+    Key Equations
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-283b7a63-10d6-5243-8979-33d85ac1287a.xhtml"/>
+          </navPoint>
+          <navPoint id="idm33">
+            <navLabel>
+              <text>
+    Summary
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-a75659df-34cd-5ffe-949b-8fe2bf415c29.xhtml"/>
+          </navPoint>
+          <navPoint id="idm34">
+            <navLabel>
+              <text>
+    Conceptual Questions
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-bd9efb57-26a4-55c7-89f6-98d8a9cf3c35.xhtml"/>
+          </navPoint>
+          <navPoint id="idm35">
+            <navLabel>
+              <text>
+    Problems
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-79fcd834-dc57-5b68-918f-f16ef9512fe9.xhtml"/>
+          </navPoint>
+          <navPoint id="idm36">
+            <navLabel>
+              <text>
+    Additional Problems
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-ca5a86ef-3070-556a-9dd0-050454677c6b.xhtml"/>
+          </navPoint>
+        </navPoint>
+      </navPoint>
+      <navPoint id="idm37">
+        <navLabel>
+          <text>Chapter 3
+     
+    Interference
+          </text>
+        </navLabel>
+        <content src="af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-96bc01c2-ae55-4563-8976-8d66a089b8d2.xhtml"/>
+        <navPoint id="idm38">
+          <navLabel>
+            <text>
+    Introduction
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-96bc01c2-ae55-4563-8976-8d66a089b8d2.xhtml"/>
+        </navPoint>
+        <navPoint id="idm39">
+          <navLabel>
+            <text>
+    3.1 Young's Double-Slit Interference
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-21095355-0788-4fcb-b28f-a530442d9c1c.xhtml"/>
+        </navPoint>
+        <navPoint id="idm40">
+          <navLabel>
+            <text>
+    3.2 Mathematics of Interference
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-722ba9df-733f-4b8f-b0bf-f72bd9375dc0.xhtml"/>
+        </navPoint>
+        <navPoint id="idm41">
+          <navLabel>
+            <text>
+    3.3 Multiple-Slit Interference
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-7147eb34-1e95-4228-ba4e-e0b991f3ab80.xhtml"/>
+        </navPoint>
+        <navPoint id="idm42">
+          <navLabel>
+            <text>
+    3.4 Interference in Thin Films
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-0afe33cb-102e-4555-a4e9-02d2fcf787ba.xhtml"/>
+        </navPoint>
+        <navPoint id="idm43">
+          <navLabel>
+            <text>
+    3.5 The Michelson Interferometer
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-00f28488-2511-45cc-a6d5-732876073683.xhtml"/>
+        </navPoint>
+        <navPoint id="idm44">
+          <navLabel>
+            <text>Chapter Review
+            </text>
+          </navLabel>
+          <content src="af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-0d45d811-d890-51d3-82b6-7ae78203fc3b.xhtml"/>
+          <navPoint id="idm45">
+            <navLabel>
+              <text>
+    Key Terms
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-0d45d811-d890-51d3-82b6-7ae78203fc3b.xhtml"/>
+          </navPoint>
+          <navPoint id="idm46">
+            <navLabel>
+              <text>
+    Key Equations
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-c288ec6b-4a94-5e35-9747-9ca9d102e325.xhtml"/>
+          </navPoint>
+          <navPoint id="idm47">
+            <navLabel>
+              <text>
+    Summary
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-17a8cebb-4fdb-5302-b18a-7112c62a4ce0.xhtml"/>
+          </navPoint>
+          <navPoint id="idm48">
+            <navLabel>
+              <text>
+    Conceptual Questions
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-28ab22b7-77fa-59fd-bd41-a1f730dd82c6.xhtml"/>
+          </navPoint>
+          <navPoint id="idm49">
+            <navLabel>
+              <text>
+    Problems
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-49012020-ce51-53ff-8dd6-b8c52854ee41.xhtml"/>
+          </navPoint>
+          <navPoint id="idm50">
+            <navLabel>
+              <text>
+    Additional Problems
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-b8645112-bcd7-5efa-9f04-1aea57811b48.xhtml"/>
+          </navPoint>
+          <navPoint id="idm51">
+            <navLabel>
+              <text>
+    Challenge Problems
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-02932642-2032-5894-8bdb-76fb7d4d7a35.xhtml"/>
+          </navPoint>
+        </navPoint>
+      </navPoint>
+      <navPoint id="idm52">
+        <navLabel>
+          <text>Chapter 4
+     
+    Diffraction
+          </text>
+        </navLabel>
+        <content src="af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-530d811a-3df9-4913-9c8b-5844eae74384.xhtml"/>
+        <navPoint id="idm53">
+          <navLabel>
+            <text>
+    Introduction
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-530d811a-3df9-4913-9c8b-5844eae74384.xhtml"/>
+        </navPoint>
+        <navPoint id="idm54">
+          <navLabel>
+            <text>
+    4.1 Single-Slit Diffraction
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-1a55c568-6776-4976-8a4a-77b9e6aa56d6.xhtml"/>
+        </navPoint>
+        <navPoint id="idm55">
+          <navLabel>
+            <text>
+    4.2 Intensity in Single-Slit Diffraction
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-173c9f53-3485-457c-b14d-5f2dfad407da.xhtml"/>
+        </navPoint>
+        <navPoint id="idm56">
+          <navLabel>
+            <text>
+    4.3 Double-Slit Diffraction
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-2a354188-dfdd-4691-ad85-29b458156bef.xhtml"/>
+        </navPoint>
+        <navPoint id="idm57">
+          <navLabel>
+            <text>
+    4.4 Diffraction Gratings
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-937746ab-90fb-44ca-9374-41ea18ac6710.xhtml"/>
+        </navPoint>
+        <navPoint id="idm58">
+          <navLabel>
+            <text>
+    4.5 Circular Apertures and Resolution
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-3fad62df-e1c4-43cb-b42e-7d493922c494.xhtml"/>
+        </navPoint>
+        <navPoint id="idm59">
+          <navLabel>
+            <text>
+    4.6 X-Ray Diffraction
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-eeb3fdf2-e0ca-4c82-92db-fa1a9749f5ad.xhtml"/>
+        </navPoint>
+        <navPoint id="idm60">
+          <navLabel>
+            <text>
+    4.7 Holography
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-f57253bf-586b-4388-af73-53fe45af5f74.xhtml"/>
+        </navPoint>
+        <navPoint id="idm61">
+          <navLabel>
+            <text>Chapter Review
+            </text>
+          </navLabel>
+          <content src="af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-7e8af561-31d1-5eae-87e8-9079e344a1e1.xhtml"/>
+          <navPoint id="idm62">
+            <navLabel>
+              <text>
+    Key Terms
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-7e8af561-31d1-5eae-87e8-9079e344a1e1.xhtml"/>
+          </navPoint>
+          <navPoint id="idm63">
+            <navLabel>
+              <text>
+    Key Equations
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-b367357e-56bc-5037-82e7-59cef412656e.xhtml"/>
+          </navPoint>
+          <navPoint id="idm64">
+            <navLabel>
+              <text>
+    Summary
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-3a946bf8-ef42-56cf-bf58-ac482478a870.xhtml"/>
+          </navPoint>
+          <navPoint id="idm65">
+            <navLabel>
+              <text>
+    Conceptual Questions
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-87de0f46-2baa-50c6-842f-a7598f98b32a.xhtml"/>
+          </navPoint>
+          <navPoint id="idm66">
+            <navLabel>
+              <text>
+    Problems
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-0bd795f1-c914-575f-a5a8-6bd2c7c925e5.xhtml"/>
+          </navPoint>
+          <navPoint id="idm67">
+            <navLabel>
+              <text>
+    Additional Problems
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-3a61c8cd-c80c-5bc2-ad45-8b51397c11c6.xhtml"/>
+          </navPoint>
+          <navPoint id="idm68">
+            <navLabel>
+              <text>
+    Challenge Problems
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-7b1e4785-2bb7-52a6-9a22-9b7d6cc1ded0.xhtml"/>
+          </navPoint>
+        </navPoint>
+      </navPoint>
+    </navPoint>
+    <navPoint id="idm69">
+      <navLabel>
+        <text>Unit 2
+     
+    Modern Physics
+        </text>
+      </navLabel>
+      <content src="af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-f8a0085a-0147-4fba-b6fa-d2b74a020c0e.xhtml"/>
+      <navPoint id="idm70">
+        <navLabel>
+          <text>Chapter 5
+     
+    Relativity
+          </text>
+        </navLabel>
+        <content src="af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-f8a0085a-0147-4fba-b6fa-d2b74a020c0e.xhtml"/>
+        <navPoint id="idm71">
+          <navLabel>
+            <text>
+    Introduction
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-f8a0085a-0147-4fba-b6fa-d2b74a020c0e.xhtml"/>
+        </navPoint>
+        <navPoint id="idm72">
+          <navLabel>
+            <text>
+    5.1 Invariance of Physical Laws
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-8d0b2a9c-9d67-461a-91d6-b7ab310810ce.xhtml"/>
+        </navPoint>
+        <navPoint id="idm73">
+          <navLabel>
+            <text>
+    5.2 Relativity of Simultaneity
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-d0d2baee-be89-4e8a-ab91-4b47f3c0497c.xhtml"/>
+        </navPoint>
+        <navPoint id="idm74">
+          <navLabel>
+            <text>
+    5.3 Time Dilation
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-4a2dbd5f-f080-4a1f-81c5-fe272a0332d2.xhtml"/>
+        </navPoint>
+        <navPoint id="idm75">
+          <navLabel>
+            <text>
+    5.4 Length Contraction
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-f84d5d66-c070-42a6-be41-e5b36c74e250.xhtml"/>
+        </navPoint>
+        <navPoint id="idm76">
+          <navLabel>
+            <text>
+    5.5 The Lorentz Transformation
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-c22f307b-3b4c-43bf-a260-d40227004de4.xhtml"/>
+        </navPoint>
+        <navPoint id="idm77">
+          <navLabel>
+            <text>
+    5.6 Relativistic Velocity Transformation
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-f0364234-0eaf-42c0-8243-8a28c2334296.xhtml"/>
+        </navPoint>
+        <navPoint id="idm78">
+          <navLabel>
+            <text>
+    5.7 Doppler Effect for Light
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-25aab831-7b83-47f9-8c12-27e1715cddf4.xhtml"/>
+        </navPoint>
+        <navPoint id="idm79">
+          <navLabel>
+            <text>
+    5.8 Relativistic Momentum
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-caa0db63-4a8d-49a8-b66b-c9bf8ee1522b.xhtml"/>
+        </navPoint>
+        <navPoint id="idm80">
+          <navLabel>
+            <text>
+    5.9 Relativistic Energy
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-51f661ff-a239-4ad3-befe-26319991f0ad.xhtml"/>
+        </navPoint>
+        <navPoint id="idm81">
+          <navLabel>
+            <text>Chapter Review
+            </text>
+          </navLabel>
+          <content src="af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-d3a6707c-8fc1-5aa6-adfe-6946d1913797.xhtml"/>
+          <navPoint id="idm82">
+            <navLabel>
+              <text>
+    Key Terms
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-d3a6707c-8fc1-5aa6-adfe-6946d1913797.xhtml"/>
+          </navPoint>
+          <navPoint id="idm83">
+            <navLabel>
+              <text>
+    Key Equations
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-3340d5d9-f10b-5914-8b12-3883b3a58193.xhtml"/>
+          </navPoint>
+          <navPoint id="idm84">
+            <navLabel>
+              <text>
+    Summary
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-57e443e8-a8cb-5d2a-af90-809638fcb3c2.xhtml"/>
+          </navPoint>
+          <navPoint id="idm85">
+            <navLabel>
+              <text>
+    Conceptual Questions
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-6acacc81-0b79-5ae8-8fe7-be1515e6bb4e.xhtml"/>
+          </navPoint>
+          <navPoint id="idm86">
+            <navLabel>
+              <text>
+    Problems
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-7a092ea1-d5c0-5eca-b6f9-9793db6de369.xhtml"/>
+          </navPoint>
+          <navPoint id="idm87">
+            <navLabel>
+              <text>
+    Additional Problems
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-691d52e0-6b7a-5d8d-b01f-0f4f715b2c52.xhtml"/>
+          </navPoint>
+        </navPoint>
+      </navPoint>
+      <navPoint id="idm88">
+        <navLabel>
+          <text>Chapter 6
+     
+    Photons and Matter Waves
+          </text>
+        </navLabel>
+        <content src="af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-fdd4b413-6910-44d5-801d-0f4223bc7a31.xhtml"/>
+        <navPoint id="idm89">
+          <navLabel>
+            <text>
+    Introduction
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-fdd4b413-6910-44d5-801d-0f4223bc7a31.xhtml"/>
+        </navPoint>
+        <navPoint id="idm90">
+          <navLabel>
+            <text>
+    6.1 Blackbody Radiation
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-3a3a00d6-8dfb-4b82-b90f-dd2132167310.xhtml"/>
+        </navPoint>
+        <navPoint id="idm91">
+          <navLabel>
+            <text>
+    6.2 Photoelectric Effect
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-116faf54-fbb2-49d1-8a92-6fe58c95d8a3.xhtml"/>
+        </navPoint>
+        <navPoint id="idm92">
+          <navLabel>
+            <text>
+    6.3 The Compton Effect
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-48ed7552-489f-4fa8-b623-3830f1c1ad68.xhtml"/>
+        </navPoint>
+        <navPoint id="idm93">
+          <navLabel>
+            <text>
+    6.4 Bohr’s Model of the Hydrogen Atom
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-e486dd2f-0de5-4de8-a98e-9d0a46bec54e.xhtml"/>
+        </navPoint>
+        <navPoint id="idm94">
+          <navLabel>
+            <text>
+    6.5 De Broglie’s Matter Waves
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-44a5c84c-afdd-4008-9fd5-2d66587c6981.xhtml"/>
+        </navPoint>
+        <navPoint id="idm95">
+          <navLabel>
+            <text>
+    6.6 Wave-Particle Duality
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-187b5628-44e6-44d0-a13c-812f760f406f.xhtml"/>
+        </navPoint>
+        <navPoint id="idm96">
+          <navLabel>
+            <text>Chapter Review
+            </text>
+          </navLabel>
+          <content src="af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-d99d0c76-7541-571a-b078-c2d4b8d24385.xhtml"/>
+          <navPoint id="idm97">
+            <navLabel>
+              <text>
+    Key Terms
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-d99d0c76-7541-571a-b078-c2d4b8d24385.xhtml"/>
+          </navPoint>
+          <navPoint id="idm98">
+            <navLabel>
+              <text>
+    Key Equations
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-7890cb43-4617-567b-837b-256722d55109.xhtml"/>
+          </navPoint>
+          <navPoint id="idm99">
+            <navLabel>
+              <text>
+    Summary
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-3c27bddc-ae01-5ab9-856d-49a6c1b009bf.xhtml"/>
+          </navPoint>
+          <navPoint id="idm100">
+            <navLabel>
+              <text>
+    Conceptual Questions
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-fcf3735e-cd43-5988-a948-734711643e45.xhtml"/>
+          </navPoint>
+          <navPoint id="idm101">
+            <navLabel>
+              <text>
+    Problems
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-3f93376b-c142-5297-a787-06fd837f2f1b.xhtml"/>
+          </navPoint>
+          <navPoint id="idm102">
+            <navLabel>
+              <text>
+    Additional Problems
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-c023abfa-30b9-537b-95a9-eb3a02c2bacb.xhtml"/>
+          </navPoint>
+        </navPoint>
+      </navPoint>
+      <navPoint id="idm103">
+        <navLabel>
+          <text>Chapter 7
+     
+    Quantum Mechanics
+          </text>
+        </navLabel>
+        <content src="af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-018ccaf5-d217-467a-b03a-d2ea9d46f6ee.xhtml"/>
+        <navPoint id="idm104">
+          <navLabel>
+            <text>
+    Introduction
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-018ccaf5-d217-467a-b03a-d2ea9d46f6ee.xhtml"/>
+        </navPoint>
+        <navPoint id="idm105">
+          <navLabel>
+            <text>
+    7.1 Wave Functions
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-21182311-554c-4eac-94a4-62931650e2f8.xhtml"/>
+        </navPoint>
+        <navPoint id="idm106">
+          <navLabel>
+            <text>
+    7.2 The Heisenberg Uncertainty Principle
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-70d7aba6-5e37-4b63-840e-59878c82449b.xhtml"/>
+        </navPoint>
+        <navPoint id="idm107">
+          <navLabel>
+            <text>
+    7.3 The Schrӧdinger Equation
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-e326b80e-eed7-4c8d-977e-2336debc6abe.xhtml"/>
+        </navPoint>
+        <navPoint id="idm108">
+          <navLabel>
+            <text>
+    7.4 The Quantum Particle in a Box
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-124ec565-d477-439d-b48c-2055ba528ad3.xhtml"/>
+        </navPoint>
+        <navPoint id="idm109">
+          <navLabel>
+            <text>
+    7.5 The Quantum Harmonic Oscillator
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-c0e31b3b-3c8e-4940-9a03-7c2c316e0e46.xhtml"/>
+        </navPoint>
+        <navPoint id="idm110">
+          <navLabel>
+            <text>
+    7.6 The Quantum Tunneling of Particles through Potential Barriers
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-d790962d-996f-4e7f-8c76-e5bfc56a3314.xhtml"/>
+        </navPoint>
+        <navPoint id="idm111">
+          <navLabel>
+            <text>Chapter Review
+            </text>
+          </navLabel>
+          <content src="af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-403216b2-b72e-5e5b-93d0-397118af9fc1.xhtml"/>
+          <navPoint id="idm112">
+            <navLabel>
+              <text>
+    Key Terms
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-403216b2-b72e-5e5b-93d0-397118af9fc1.xhtml"/>
+          </navPoint>
+          <navPoint id="idm113">
+            <navLabel>
+              <text>
+    Key Equations
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-005625e6-7bc1-563b-bd2d-83535738c30b.xhtml"/>
+          </navPoint>
+          <navPoint id="idm114">
+            <navLabel>
+              <text>
+    Summary
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-86cf8b65-4bcf-5ad2-99ac-715c59b91f8d.xhtml"/>
+          </navPoint>
+          <navPoint id="idm115">
+            <navLabel>
+              <text>
+    Conceptual Questions
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-a88436f7-5088-5be7-9348-b5575688c6ee.xhtml"/>
+          </navPoint>
+          <navPoint id="idm116">
+            <navLabel>
+              <text>
+    Problems
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-6434ccbc-6280-5d40-9230-58fa5ca3b6a6.xhtml"/>
+          </navPoint>
+          <navPoint id="idm117">
+            <navLabel>
+              <text>
+    Additional Problems
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-fa7a116c-04c0-5c74-943a-fc44dcdffc36.xhtml"/>
+          </navPoint>
+          <navPoint id="idm118">
+            <navLabel>
+              <text>
+    Challenge Problems
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-774ce7aa-b6db-565a-ae0e-aa678b619b7a.xhtml"/>
+          </navPoint>
+        </navPoint>
+      </navPoint>
+      <navPoint id="idm119">
+        <navLabel>
+          <text>Chapter 8
+     
+    Atomic Structure
+          </text>
+        </navLabel>
+        <content src="af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-e48bce97-f4ac-446d-93c0-d53bf03f5658.xhtml"/>
+        <navPoint id="idm120">
+          <navLabel>
+            <text>
+    Introduction
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-e48bce97-f4ac-446d-93c0-d53bf03f5658.xhtml"/>
+        </navPoint>
+        <navPoint id="idm121">
+          <navLabel>
+            <text>
+    8.1 The Hydrogen Atom
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-a518e4e5-10f7-4481-b104-6ff47bc054ff.xhtml"/>
+        </navPoint>
+        <navPoint id="idm122">
+          <navLabel>
+            <text>
+    8.2 Orbital Magnetic Dipole Moment of the Electron
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-8b565d09-cef1-4989-b36c-b1fea468d1b1.xhtml"/>
+        </navPoint>
+        <navPoint id="idm123">
+          <navLabel>
+            <text>
+    8.3 Electron Spin
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-1d97335e-d55e-4385-84c5-6f8c6ba9128a.xhtml"/>
+        </navPoint>
+        <navPoint id="idm124">
+          <navLabel>
+            <text>
+    8.4 The Exclusion Principle and the Periodic Table
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-306fd5bd-db60-4662-a202-825cc23fdd94.xhtml"/>
+        </navPoint>
+        <navPoint id="idm125">
+          <navLabel>
+            <text>
+    8.5 Atomic Spectra and X-rays
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-c3de52f5-df1e-486a-91c6-5754f0fdf7a8.xhtml"/>
+        </navPoint>
+        <navPoint id="idm126">
+          <navLabel>
+            <text>
+    8.6 Lasers
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-54d18b99-b47a-46a6-9b1b-22b269d63071.xhtml"/>
+        </navPoint>
+        <navPoint id="idm127">
+          <navLabel>
+            <text>Chapter Review
+            </text>
+          </navLabel>
+          <content src="af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-d218d8e2-89b7-5f41-9cb3-4ed9545d0eb7.xhtml"/>
+          <navPoint id="idm128">
+            <navLabel>
+              <text>
+    Key Terms
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-d218d8e2-89b7-5f41-9cb3-4ed9545d0eb7.xhtml"/>
+          </navPoint>
+          <navPoint id="idm129">
+            <navLabel>
+              <text>
+    Key Equations
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-eddae747-e0e8-5ee8-9c5d-d93dd3791e0d.xhtml"/>
+          </navPoint>
+          <navPoint id="idm130">
+            <navLabel>
+              <text>
+    Summary
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-648e64b6-1023-5fe5-9d2d-64d743460024.xhtml"/>
+          </navPoint>
+          <navPoint id="idm131">
+            <navLabel>
+              <text>
+    Conceptual Questions
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-136f6ce2-98b4-54da-8ced-7511bb99802c.xhtml"/>
+          </navPoint>
+          <navPoint id="idm132">
+            <navLabel>
+              <text>
+    Problems
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-fcb5ae8c-e4ff-598b-a915-c208955cba01.xhtml"/>
+          </navPoint>
+          <navPoint id="idm133">
+            <navLabel>
+              <text>
+    Additional Problems
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-e768837a-8f27-50a5-a70a-dc911cca7997.xhtml"/>
+          </navPoint>
+        </navPoint>
+      </navPoint>
+      <navPoint id="idm134">
+        <navLabel>
+          <text>Chapter 9
+     
+    Condensed Matter Physics
+          </text>
+        </navLabel>
+        <content src="af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-54c6e1c5-5b90-4bc9-9148-0e6325a00177.xhtml"/>
+        <navPoint id="idm135">
+          <navLabel>
+            <text>
+    Introduction
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-54c6e1c5-5b90-4bc9-9148-0e6325a00177.xhtml"/>
+        </navPoint>
+        <navPoint id="idm136">
+          <navLabel>
+            <text>
+    9.1 Types of Molecular Bonds
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-cf31af33-2821-4ff8-8b4e-be81236d5492.xhtml"/>
+        </navPoint>
+        <navPoint id="idm137">
+          <navLabel>
+            <text>
+    9.2 Molecular Spectra
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-b505a694-b0c5-4ef2-bbe4-3ede86c55f41.xhtml"/>
+        </navPoint>
+        <navPoint id="idm138">
+          <navLabel>
+            <text>
+    9.3 Bonding in Crystalline Solids
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-02a001c8-7995-4c89-b778-917101d37359.xhtml"/>
+        </navPoint>
+        <navPoint id="idm139">
+          <navLabel>
+            <text>
+    9.4 Free Electron Model of Metals
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-82fdf594-f856-4814-9d1f-1d4a857e2255.xhtml"/>
+        </navPoint>
+        <navPoint id="idm140">
+          <navLabel>
+            <text>
+    9.5 Band Theory of Solids
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-eb478b62-7103-4c87-a878-9f4535e88e05.xhtml"/>
+        </navPoint>
+        <navPoint id="idm141">
+          <navLabel>
+            <text>
+    9.6 Semiconductors and Doping
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-dfccac24-aad2-4043-acd9-f6aef3331970.xhtml"/>
+        </navPoint>
+        <navPoint id="idm142">
+          <navLabel>
+            <text>
+    9.7 Semiconductor Devices
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-62a6715c-39f4-44d6-b99d-bb3eed0c22d6.xhtml"/>
+        </navPoint>
+        <navPoint id="idm143">
+          <navLabel>
+            <text>
+    9.8 Superconductivity
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-cd14409c-b0a6-45fc-a433-aa25d9626b89.xhtml"/>
+        </navPoint>
+        <navPoint id="idm144">
+          <navLabel>
+            <text>Chapter Review
+            </text>
+          </navLabel>
+          <content src="af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-c25969eb-fcb6-5776-9ee3-7431091ac0f9.xhtml"/>
+          <navPoint id="idm145">
+            <navLabel>
+              <text>
+    Key Terms
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-c25969eb-fcb6-5776-9ee3-7431091ac0f9.xhtml"/>
+          </navPoint>
+          <navPoint id="idm146">
+            <navLabel>
+              <text>
+    Key Equations
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-d85c2173-b3ea-5845-973d-f87e6ea8a1df.xhtml"/>
+          </navPoint>
+          <navPoint id="idm147">
+            <navLabel>
+              <text>
+    Summary
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-5353ca77-b713-53fe-8c5b-2ce1aa3d5d37.xhtml"/>
+          </navPoint>
+          <navPoint id="idm148">
+            <navLabel>
+              <text>
+    Conceptual Questions
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-219fedcf-97c2-5192-916d-731fc5b2dcbe.xhtml"/>
+          </navPoint>
+          <navPoint id="idm149">
+            <navLabel>
+              <text>
+    Problems
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-abcd7745-383e-511e-aa93-0ae373fea512.xhtml"/>
+          </navPoint>
+          <navPoint id="idm150">
+            <navLabel>
+              <text>
+    Additional Problems
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-f921e8f2-cf07-5cd9-b9ab-0b5d59431e9a.xhtml"/>
+          </navPoint>
+          <navPoint id="idm151">
+            <navLabel>
+              <text>
+    Challenge Problems
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-82e98595-8381-517b-bb36-c6d01a0306c6.xhtml"/>
+          </navPoint>
+        </navPoint>
+      </navPoint>
+      <navPoint id="idm152">
+        <navLabel>
+          <text>Chapter 10
+     
+    Nuclear Physics
+          </text>
+        </navLabel>
+        <content src="af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-21f133a9-ce4f-4861-bde7-aa90346b871c.xhtml"/>
+        <navPoint id="idm153">
+          <navLabel>
+            <text>
+    Introduction
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-21f133a9-ce4f-4861-bde7-aa90346b871c.xhtml"/>
+        </navPoint>
+        <navPoint id="idm154">
+          <navLabel>
+            <text>
+    10.1 Properties of Nuclei
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-aff9fa60-016d-45e3-9311-0643092b97d0.xhtml"/>
+        </navPoint>
+        <navPoint id="idm155">
+          <navLabel>
+            <text>
+    10.2 Nuclear Binding Energy
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-94efefac-6c2f-4754-a330-3292820e2b71.xhtml"/>
+        </navPoint>
+        <navPoint id="idm156">
+          <navLabel>
+            <text>
+    10.3 Radioactive Decay
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-01a68e92-6dff-4825-8959-1f2d46686e1a.xhtml"/>
+        </navPoint>
+        <navPoint id="idm157">
+          <navLabel>
+            <text>
+    10.4 Nuclear Reactions
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-2c788aab-6757-47a1-9210-eea272d9eaa2.xhtml"/>
+        </navPoint>
+        <navPoint id="idm158">
+          <navLabel>
+            <text>
+    10.5 Fission
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-f730b0f1-1b6a-40b6-832c-5eee591100fa.xhtml"/>
+        </navPoint>
+        <navPoint id="idm159">
+          <navLabel>
+            <text>
+    10.6 Nuclear Fusion
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-db60b895-01c9-4522-97fb-42815e564d40.xhtml"/>
+        </navPoint>
+        <navPoint id="idm160">
+          <navLabel>
+            <text>
+    10.7 Medical Applications and Biological Effects of Nuclear Radiation
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-07f8d37b-e1a0-4780-9533-a91be81e97c9.xhtml"/>
+        </navPoint>
+        <navPoint id="idm161">
+          <navLabel>
+            <text>Chapter Review
+            </text>
+          </navLabel>
+          <content src="af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-013303a1-5119-56e7-9b81-896a74a87d40.xhtml"/>
+          <navPoint id="idm162">
+            <navLabel>
+              <text>
+    Key Terms
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-013303a1-5119-56e7-9b81-896a74a87d40.xhtml"/>
+          </navPoint>
+          <navPoint id="idm163">
+            <navLabel>
+              <text>
+    Key Equations
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-3631c5a5-d75d-5657-aeeb-2f2ce4335c3c.xhtml"/>
+          </navPoint>
+          <navPoint id="idm164">
+            <navLabel>
+              <text>
+    Summary
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-d2b6c1a4-bd7a-5e63-a4b2-4248cb2f8b49.xhtml"/>
+          </navPoint>
+          <navPoint id="idm165">
+            <navLabel>
+              <text>
+    Conceptual Questions
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-9e72ffe9-6065-59e4-af79-0bf30c927efd.xhtml"/>
+          </navPoint>
+          <navPoint id="idm166">
+            <navLabel>
+              <text>
+    Problems
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-b4ddf060-2be9-546b-836c-3c83d2858745.xhtml"/>
+          </navPoint>
+          <navPoint id="idm167">
+            <navLabel>
+              <text>
+    Additional Problems
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-3940ff2c-1e6f-520e-8d1d-a539dce54b1b.xhtml"/>
+          </navPoint>
+          <navPoint id="idm168">
+            <navLabel>
+              <text>
+    Challenge Problems
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-fa803907-d030-534a-8094-7abf7cd3cdb9.xhtml"/>
+          </navPoint>
+        </navPoint>
+      </navPoint>
+      <navPoint id="idm169">
+        <navLabel>
+          <text>Chapter 11
+     
+    Particle Physics and Cosmology
+          </text>
+        </navLabel>
+        <content src="af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-31147d4e-5982-48fe-af11-14bee545396d.xhtml"/>
+        <navPoint id="idm170">
+          <navLabel>
+            <text>
+    Introduction
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-31147d4e-5982-48fe-af11-14bee545396d.xhtml"/>
+        </navPoint>
+        <navPoint id="idm171">
+          <navLabel>
+            <text>
+    11.1 Introduction to Particle Physics
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-62390df3-5e84-43e8-8751-d20f70786193.xhtml"/>
+        </navPoint>
+        <navPoint id="idm172">
+          <navLabel>
+            <text>
+    11.2 Particle Conservation Laws
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-c3ce9416-c1c1-4fa8-b6d2-c1890e75c600.xhtml"/>
+        </navPoint>
+        <navPoint id="idm173">
+          <navLabel>
+            <text>
+    11.3 Quarks
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-d8596f45-3081-40ba-a227-ddecb1e969fd.xhtml"/>
+        </navPoint>
+        <navPoint id="idm174">
+          <navLabel>
+            <text>
+    11.4 Particle Accelerators and Detectors
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-a779e2cd-9948-4721-9ceb-3c15f7d28cdd.xhtml"/>
+        </navPoint>
+        <navPoint id="idm175">
+          <navLabel>
+            <text>
+    11.5 The Standard Model
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-bb715aec-1f75-47f6-919b-dcd34c970b9c.xhtml"/>
+        </navPoint>
+        <navPoint id="idm176">
+          <navLabel>
+            <text>
+    11.6 The Big Bang
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-439a3957-f15b-47a0-9701-e3e35ce936c8.xhtml"/>
+        </navPoint>
+        <navPoint id="idm177">
+          <navLabel>
+            <text>
+    11.7 Evolution of the Early Universe
+  
+            </text>
+          </navLabel>
+          <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-6c832d3c-f18b-47a4-ae1a-84b1fd870e5c.xhtml"/>
+        </navPoint>
+        <navPoint id="idm178">
+          <navLabel>
+            <text>Chapter Review
+            </text>
+          </navLabel>
+          <content src="af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-9f866b55-8131-5a27-a773-8dd351b0016b.xhtml"/>
+          <navPoint id="idm179">
+            <navLabel>
+              <text>
+    Key Terms
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-9f866b55-8131-5a27-a773-8dd351b0016b.xhtml"/>
+          </navPoint>
+          <navPoint id="idm180">
+            <navLabel>
+              <text>
+    Key Equations
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-3ab85ccf-ff9e-518e-83c6-370086cf61b6.xhtml"/>
+          </navPoint>
+          <navPoint id="idm181">
+            <navLabel>
+              <text>
+    Summary
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-375843f0-eaf6-59f5-8e14-c4eeb819cbf3.xhtml"/>
+          </navPoint>
+          <navPoint id="idm182">
+            <navLabel>
+              <text>
+    Conceptual Questions
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-39d72a18-8fe3-5c42-b5eb-4089e4974749.xhtml"/>
+          </navPoint>
+          <navPoint id="idm183">
+            <navLabel>
+              <text>
+    Problems
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-dbbd634d-ccff-58e8-b267-9fb47854b6a1.xhtml"/>
+          </navPoint>
+          <navPoint id="idm184">
+            <navLabel>
+              <text>
+    Additional Problems
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-93ed16b5-aaca-57fc-90e7-e40733d6bd82.xhtml"/>
+          </navPoint>
+          <navPoint id="idm185">
+            <navLabel>
+              <text>
+    Challenge Problems
+  
+              </text>
+            </navLabel>
+            <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-2c7582e8-3bf0-5328-b663-cbfff4607515.xhtml"/>
+          </navPoint>
+        </navPoint>
+      </navPoint>
+    </navPoint>
+    <navPoint id="idm186">
+      <navLabel>
+        <text>
+    Appendix A Units
+  
+        </text>
+      </navLabel>
+      <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-2a0960fe-8dfd-4010-bb2f-f14c4d96489f.xhtml"/>
+    </navPoint>
+    <navPoint id="idm187">
+      <navLabel>
+        <text>
+    Appendix B Conversion Factors
+  
+        </text>
+      </navLabel>
+      <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-7398356b-0279-4cc2-bd8d-b60e99eed357.xhtml"/>
+    </navPoint>
+    <navPoint id="idm188">
+      <navLabel>
+        <text>
+    Appendix C Fundamental Constants
+  
+        </text>
+      </navLabel>
+      <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-ecfe5bbe-c968-45c6-a942-4a3237e8c4a8.xhtml"/>
+    </navPoint>
+    <navPoint id="idm189">
+      <navLabel>
+        <text>
+    Appendix D Astronomical Data
+  
+        </text>
+      </navLabel>
+      <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-4af9fe22-71d3-449c-b0a2-b60644650089.xhtml"/>
+    </navPoint>
+    <navPoint id="idm190">
+      <navLabel>
+        <text>
+    Appendix E Mathematical Formulas
+  
+        </text>
+      </navLabel>
+      <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-ad45e174-05de-4f4a-a8b4-6c9126b0f3fb.xhtml"/>
+    </navPoint>
+    <navPoint id="idm191">
+      <navLabel>
+        <text>
+    Appendix F Chemistry
+  
+        </text>
+      </navLabel>
+      <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-a204dc09-9cf2-49a0-8035-5978cc6ddd81.xhtml"/>
+    </navPoint>
+    <navPoint id="idm192">
+      <navLabel>
+        <text>
+    Appendix G The Greek Alphabet
+  
+        </text>
+      </navLabel>
+      <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-6c3696fa-67d5-42be-9541-8b53f33a7084.xhtml"/>
+    </navPoint>
+    <navPoint id="idm193">
+      <navLabel>
+        <text>Answer Key
+        </text>
+      </navLabel>
+      <content src="af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-45566ba1-9e74-5a01-802a-32579f11f99f.xhtml"/>
+      <navPoint id="idm194">
+        <navLabel>
+          <text>
+    Chapter 1
+  
+          </text>
+        </navLabel>
+        <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-45566ba1-9e74-5a01-802a-32579f11f99f.xhtml"/>
+      </navPoint>
+      <navPoint id="idm195">
+        <navLabel>
+          <text>
+    Chapter 2
+  
+          </text>
+        </navLabel>
+        <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-7b08524b-1c52-585e-a5db-e72aab6e25ff.xhtml"/>
+      </navPoint>
+      <navPoint id="idm196">
+        <navLabel>
+          <text>
+    Chapter 3
+  
+          </text>
+        </navLabel>
+        <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-c37fc40e-9097-5b40-acf6-d16cd6927f56.xhtml"/>
+      </navPoint>
+      <navPoint id="idm197">
+        <navLabel>
+          <text>
+    Chapter 4
+  
+          </text>
+        </navLabel>
+        <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-f236ff7f-e0c5-5182-839d-8304cd25ec7d.xhtml"/>
+      </navPoint>
+      <navPoint id="idm198">
+        <navLabel>
+          <text>
+    Chapter 5
+  
+          </text>
+        </navLabel>
+        <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-47d4a164-4227-58d5-a9ad-89d275712f78.xhtml"/>
+      </navPoint>
+      <navPoint id="idm199">
+        <navLabel>
+          <text>
+    Chapter 6
+  
+          </text>
+        </navLabel>
+        <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-93e338d6-df9d-59c0-9a84-1e63c7a8638e.xhtml"/>
+      </navPoint>
+      <navPoint id="idm200">
+        <navLabel>
+          <text>
+    Chapter 7
+  
+          </text>
+        </navLabel>
+        <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-e0fbb6fe-b9f4-5aaf-9967-1717c5299776.xhtml"/>
+      </navPoint>
+      <navPoint id="idm201">
+        <navLabel>
+          <text>
+    Chapter 8
+  
+          </text>
+        </navLabel>
+        <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-1a0040a5-18b2-5bbd-b8fd-5fed2f579b9d.xhtml"/>
+      </navPoint>
+      <navPoint id="idm202">
+        <navLabel>
+          <text>
+    Chapter 9
+  
+          </text>
+        </navLabel>
+        <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-84e8f168-b5b3-5df7-8c4c-6035c0f80087.xhtml"/>
+      </navPoint>
+      <navPoint id="idm203">
+        <navLabel>
+          <text>
+    Chapter 10
+  
+          </text>
+        </navLabel>
+        <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-c60b215f-9655-58e2-b695-2041f8927c14.xhtml"/>
+      </navPoint>
+      <navPoint id="idm204">
+        <navLabel>
+          <text>
+    Chapter 11
+  
+          </text>
+        </navLabel>
+        <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-73e96a19-ea05-5f3a-a8e1-43de753f6ff5.xhtml"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="idm205">
+      <navLabel>
+        <text>
+    Index
+  
+        </text>
+      </navLabel>
+      <content src="./af275420-6050-4707-995c-57b9cc13c358-at-aa8a43e-colon-33f1e6cc-aea5-5610-be0a-a9f21498e979.xhtml"/>
+    </navPoint>
+  </navMap></ncx>
+<!-- # sourceMappingURL=university-physics-volume-3.toc.ncx.map -->

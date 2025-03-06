@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:epub="http://www.idpf.org/2007/ops">
+<a href="university-physics-volume-1.toc.html">Back to table of contents</a><head><title>9.5
+ 
+Collisions in Multiple Dimensions
+</title>
+<link rel="stylesheet" type="text/css" href="the-style-epub.css"/>
+</head>
+<body>
+    <div data-type="page" id="page_f4ea9c20-025c-4d07-b633-c62c6251ee65" class="chapter-content-module" data-book-content="true"><h2 data-type="document-title" data-sm="./modules/m58322/index.cnxml:3:1" id="page_f4ea9c20-025c-4d07-b633-c62c6251ee65_titlecreatedbycookbook"><span class="os-number">9.5</span>
+<span class="os-divider"> </span>
+<span data-type="" class="os-text">Collisions in Multiple Dimensions</span>
+</h2>
+<div data-type="abstract" data-sm="./modules/m58322/index.cnxml:7:3"><h3 data-type="title">Learning Objectives</h3>
+<p id="para-00001" data-sm="./modules/m58322/index.cnxml:7:16">By the end of this section, you will be able to:</p>
+<ul id="list-00001" data-sm="./modules/m58322/index.cnxml:7:93">
+<li data-sm="./modules/m58322/index.cnxml:8:1">Express momentum as a two-dimensional vector</li>
+<li data-sm="./modules/m58322/index.cnxml:9:1">Write equations for momentum conservation in component form</li>
+<li data-sm="./modules/m58322/index.cnxml:10:1">Calculate momentum in two dimensions, as a vector quantity</li>
+</ul>
+</div>
+
+<p id="fs-id1167133703767" data-sm="./modules/m58322/index.cnxml:16:1">It is far more common for collisions to occur in two dimensions; that is, the angle between the initial velocity vectors is neither zero nor <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58322/index.cnxml:16:180"><mn data-sm="./modules/m58322/index.cnxml:16:188">180</mn><mtext data-sm="./modules/m58322/index.cnxml:16:204">°</mtext></mrow>
+</mrow>
+</semantics>
+</math></span>. Let’s see what complications arise from this.</p>
+
+<p id="fs-id1167133655961" data-sm="./modules/m58322/index.cnxml:17:1">The first idea we need is that momentum is a vector; like all vectors, it can be expressed as a sum of perpendicular components (usually, though not always, an <em data-effect="italics" data-sm="./modules/m58322/index.cnxml:17:191">x</em>-component and a <em data-effect="italics" data-sm="./modules/m58322/index.cnxml:17:247">y</em>-component, and a <em data-effect="italics" data-sm="./modules/m58322/index.cnxml:17:304">z</em>-component if necessary). Thus, when we write down the statement of conservation of momentum for a problem, our momentum vectors can be, and usually will be, expressed in component form.</p>
+
+<p id="fs-id1167132332770" data-sm="./modules/m58322/index.cnxml:18:1">The second idea we need comes from the fact that momentum is related to force:</p>
+
+<div data-type="equation" id="fs-id1167133521521" class="unnumbered" data-sm="./modules/m58322/index.cnxml:19:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58322/index.cnxml:19:70"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58322/index.cnxml:19:78"><mover accent="true" data-sm="./modules/m58322/index.cnxml:19:125"><mi data-sm="./modules/m58322/index.cnxml:19:148">F</mi><mo stretchy="false" data-sm="./modules/m58322/index.cnxml:19:162">→</mo></mover>
+</mstyle>
+<mo data-sm="./modules/m58322/index.cnxml:19:214">=</mo><mfrac data-sm="./modules/m58322/index.cnxml:19:228"><mrow data-sm="./modules/m58322/index.cnxml:19:237"><mi data-sm="./modules/m58322/index.cnxml:19:245">d</mi><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58322/index.cnxml:19:259"><mover accent="true" data-sm="./modules/m58322/index.cnxml:19:306"><mi data-sm="./modules/m58322/index.cnxml:19:329">p</mi><mo stretchy="false" data-sm="./modules/m58322/index.cnxml:19:343">→</mo></mover>
+</mstyle>
+</mrow>
+<mrow data-sm="./modules/m58322/index.cnxml:19:404"><mi data-sm="./modules/m58322/index.cnxml:19:412">d</mi><mi data-sm="./modules/m58322/index.cnxml:19:426">t</mi></mrow>
+</mfrac>
+<mo data-sm="./modules/m58322/index.cnxml:19:459">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+
+<p id="fs-id1167133519051" data-sm="./modules/m58322/index.cnxml:20:1">Expressing both the force and the momentum in component form,</p>
+
+<div data-type="equation" id="fs-id1167132518609" class="unnumbered" data-sm="./modules/m58322/index.cnxml:21:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58322/index.cnxml:21:70"><msub data-sm="./modules/m58322/index.cnxml:21:78"><mi data-sm="./modules/m58322/index.cnxml:21:86">F</mi><mi data-sm="./modules/m58322/index.cnxml:21:100">x</mi></msub><mo data-sm="./modules/m58322/index.cnxml:21:123">=</mo><mfrac data-sm="./modules/m58322/index.cnxml:21:137"><mrow data-sm="./modules/m58322/index.cnxml:21:146"><mi data-sm="./modules/m58322/index.cnxml:21:154">d</mi><msub data-sm="./modules/m58322/index.cnxml:21:168"><mi data-sm="./modules/m58322/index.cnxml:21:176">p</mi><mi data-sm="./modules/m58322/index.cnxml:21:190">x</mi></msub></mrow>
+<mrow data-sm="./modules/m58322/index.cnxml:21:222"><mi data-sm="./modules/m58322/index.cnxml:21:230">d</mi><mi data-sm="./modules/m58322/index.cnxml:21:244">t</mi></mrow>
+</mfrac>
+<mo data-sm="./modules/m58322/index.cnxml:21:277">,</mo><mspace width="0.5em" data-sm="./modules/m58322/index.cnxml:21:291"/><msub data-sm="./modules/m58322/index.cnxml:21:316"><mi data-sm="./modules/m58322/index.cnxml:21:324">F</mi><mi data-sm="./modules/m58322/index.cnxml:21:338">y</mi></msub><mo data-sm="./modules/m58322/index.cnxml:21:361">=</mo><mfrac data-sm="./modules/m58322/index.cnxml:21:375"><mrow data-sm="./modules/m58322/index.cnxml:21:384"><mi data-sm="./modules/m58322/index.cnxml:21:392">d</mi><msub data-sm="./modules/m58322/index.cnxml:21:406"><mi data-sm="./modules/m58322/index.cnxml:21:414">p</mi><mi data-sm="./modules/m58322/index.cnxml:21:428">y</mi></msub></mrow>
+<mrow data-sm="./modules/m58322/index.cnxml:21:460"><mi data-sm="./modules/m58322/index.cnxml:21:468">d</mi><mi data-sm="./modules/m58322/index.cnxml:21:482">t</mi></mrow>
+</mfrac>
+<mo data-sm="./modules/m58322/index.cnxml:21:515">,</mo><mspace width="0.5em" data-sm="./modules/m58322/index.cnxml:21:529"/><msub data-sm="./modules/m58322/index.cnxml:21:554"><mi data-sm="./modules/m58322/index.cnxml:21:562">F</mi><mi data-sm="./modules/m58322/index.cnxml:21:576">z</mi></msub><mo data-sm="./modules/m58322/index.cnxml:21:599">=</mo><mfrac data-sm="./modules/m58322/index.cnxml:21:613"><mrow data-sm="./modules/m58322/index.cnxml:21:622"><mi data-sm="./modules/m58322/index.cnxml:21:630">d</mi><msub data-sm="./modules/m58322/index.cnxml:21:644"><mi data-sm="./modules/m58322/index.cnxml:21:652">p</mi><mi data-sm="./modules/m58322/index.cnxml:21:666">z</mi></msub></mrow>
+<mrow data-sm="./modules/m58322/index.cnxml:21:698"><mi data-sm="./modules/m58322/index.cnxml:21:706">d</mi><mi data-sm="./modules/m58322/index.cnxml:21:720">t</mi></mrow>
+</mfrac>
+<mo data-sm="./modules/m58322/index.cnxml:21:753">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+
+<p id="fs-id1167133851717" data-sm="./modules/m58322/index.cnxml:22:1">Remember, these equations are simply Newton’s second law, in vector form and in component form. We know that Newton’s second law is true in each direction, independently of the others. It follows therefore (via Newton’s third law) that conservation of momentum is also true in each direction independently.</p>
+
+<p id="fs-id1167132384423" data-sm="./modules/m58322/index.cnxml:23:1">These two ideas motivate the solution to two-dimensional problems: We write down the expression for conservation of momentum twice: once in the <em data-effect="italics" data-sm="./modules/m58322/index.cnxml:23:175">x</em>-direction and once in the <em data-effect="italics" data-sm="./modules/m58322/index.cnxml:23:241">y</em>-direction.</p>
+
+<div data-type="note" id="fs-id1167132423342" class="equation-callout" data-sm="./modules/m58322/index.cnxml:24:1">
+<div data-type="equation" id="fs-id1167132361143" data-sm="./modules/m58322/index.cnxml:25:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtable data-sm="./modules/m58322/index.cnxml:25:51"><mtr data-sm="./modules/m58322/index.cnxml:25:61"><mtd columnalign="right" data-sm="./modules/m58322/index.cnxml:25:68"><msub data-sm="./modules/m58322/index.cnxml:25:95"><mi data-sm="./modules/m58322/index.cnxml:25:103">p</mi><mrow data-sm="./modules/m58322/index.cnxml:25:117"><mtext data-sm="./modules/m58322/index.cnxml:25:125">f</mtext><mo data-sm="./modules/m58322/index.cnxml:25:145">,</mo><mi data-sm="./modules/m58322/index.cnxml:25:159">x</mi></mrow></msub></mtd>
+<mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:25:199"><mo data-sm="./modules/m58322/index.cnxml:25:225">=</mo></mtd>
+<mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:25:247"><msub data-sm="./modules/m58322/index.cnxml:25:273"><mi data-sm="./modules/m58322/index.cnxml:25:281">p</mi><mrow data-sm="./modules/m58322/index.cnxml:25:295"><mtext data-sm="./modules/m58322/index.cnxml:25:303">1,i</mtext><mo data-sm="./modules/m58322/index.cnxml:25:325">,</mo><mi data-sm="./modules/m58322/index.cnxml:25:339">x</mi></mrow></msub><mo data-sm="./modules/m58322/index.cnxml:25:371">+</mo><msub data-sm="./modules/m58322/index.cnxml:25:385"><mi data-sm="./modules/m58322/index.cnxml:25:393">p</mi><mrow data-sm="./modules/m58322/index.cnxml:25:407"><mtext data-sm="./modules/m58322/index.cnxml:25:415">2,i</mtext><mo data-sm="./modules/m58322/index.cnxml:25:437">,</mo><mi data-sm="./modules/m58322/index.cnxml:25:451">x</mi></mrow></msub></mtd>
+</mtr>
+<mtr data-sm="./modules/m58322/index.cnxml:25:499"><mtd columnalign="right" data-sm="./modules/m58322/index.cnxml:25:506"><msub data-sm="./modules/m58322/index.cnxml:25:533"><mi data-sm="./modules/m58322/index.cnxml:25:541">p</mi><mrow data-sm="./modules/m58322/index.cnxml:25:555"><mtext data-sm="./modules/m58322/index.cnxml:25:563">f</mtext><mo data-sm="./modules/m58322/index.cnxml:25:583">,</mo><mi data-sm="./modules/m58322/index.cnxml:25:597">y</mi></mrow></msub></mtd>
+<mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:25:637"><mo data-sm="./modules/m58322/index.cnxml:25:663">=</mo></mtd>
+<mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:25:685"><msub data-sm="./modules/m58322/index.cnxml:25:711"><mi data-sm="./modules/m58322/index.cnxml:25:719">p</mi><mrow data-sm="./modules/m58322/index.cnxml:25:733"><mtext data-sm="./modules/m58322/index.cnxml:25:741">1,i</mtext><mo data-sm="./modules/m58322/index.cnxml:25:763">,</mo><mi data-sm="./modules/m58322/index.cnxml:25:777">y</mi></mrow></msub><mo data-sm="./modules/m58322/index.cnxml:25:809">+</mo><msub data-sm="./modules/m58322/index.cnxml:25:823"><mi data-sm="./modules/m58322/index.cnxml:25:831">p</mi><mrow data-sm="./modules/m58322/index.cnxml:25:845"><mtext data-sm="./modules/m58322/index.cnxml:25:853">2,i</mtext><mo data-sm="./modules/m58322/index.cnxml:25:875">,</mo><mi data-sm="./modules/m58322/index.cnxml:25:889">y</mi></mrow></msub></mtd>
+</mtr>
+</mtable>
+</mrow>
+</semantics>
+</math>
+<div class="os-equation-number">
+  <span class="os-number">9.18</span>
+</div>
+</div>
+</div>
+
+<p id="fs-id1167132375941" data-sm="./modules/m58322/index.cnxml:27:1">This procedure is shown graphically in <a href="#CNX_UPhysics_09_05_Vector_add" data-sm="./modules/m58322/index.cnxml:27:70" class="autogenerated-content">Figure 9.22</a>.</p>
+
+<div class="os-figure"><figure id="CNX_UPhysics_09_05_Vector_add" data-sm="./modules/m58322/index.cnxml:28:1">
+<span data-type="media" id="fs-id1167132212160" data-alt="Figure a, titled break initial momentum into x and y components shows vector p 1 i as a solid arrow pointing to the right and down. Its components are shown as dashed arrows: p 1 i y points down from the tail of p 1 i and p 1 i x points to the right from the head of p 1 i y to the head of p 1 i. Vector p 2 i is shown as a solid arrow with its tail at the head of vector p 1 i, and is shorter than p 1 i. Vector p 2 i points to the right and up. Its components are shown as dashed arrows: p 2 i x points to the right from the tail of p 2 i and p 2 i y points up from the head of p 2 i x to the head of p 2 i. Vector p f points from the tail of p 1 i to the head of p 2 i, pointing to the right and slightly down. Figure b titled add x and y components to obtain x and y components of final momentum shows the vector sums of the components. P 1 i y is a downward arrow. P 2 i y is a shorter upward arrow, aligned with its tail at the head of P 1 i y. P f y is a short downward arrow that starts at the tail of P 1 i y and ends at the head of P 2 i y. P 1 i x is a rightward arrow. P 2 i x is a shorter rightward arrow, aligned with its tail at the head of P 1 i x. P f x is a long rightward arrow that starts at the tail of P 1 i x and ends at the head of P 2 i x. Figure c, titled add x and y components of final momentum shows the right triangle formed by sides p f x and p f y and hypotenuse p f. Arrows from figure b indicate that p f x and p f y are the same in figures b and c." data-sm="./modules/m58322/index.cnxml:29:1">
+<img src="ae03b9816997cfd45add2a845936f2d81e14b7eb.jpeg" data-media-type="image/jpeg" alt="Figure a, titled break initial momentum into x and y components shows vector p 1 i as a solid arrow pointing to the right and down. Its components are shown as dashed arrows: p 1 i y points down from the tail of p 1 i and p 1 i x points to the right from the head of p 1 i y to the head of p 1 i. Vector p 2 i is shown as a solid arrow with its tail at the head of vector p 1 i, and is shorter than p 1 i. Vector p 2 i points to the right and up. Its components are shown as dashed arrows: p 2 i x points to the right from the tail of p 2 i and p 2 i y points up from the head of p 2 i x to the head of p 2 i. Vector p f points from the tail of p 1 i to the head of p 2 i, pointing to the right and slightly down. Figure b titled add x and y components to obtain x and y components of final momentum shows the vector sums of the components. P 1 i y is a downward arrow. P 2 i y is a shorter upward arrow, aligned with its tail at the head of P 1 i y. P f y is a short downward arrow that starts at the tail of P 1 i y and ends at the head of P 2 i y. P 1 i x is a rightward arrow. P 2 i x is a shorter rightward arrow, aligned with its tail at the head of P 1 i x. P f x is a long rightward arrow that starts at the tail of P 1 i x and ends at the head of P 2 i x. Figure c, titled add x and y components of final momentum shows the right triangle formed by sides p f x and p f y and hypotenuse p f. Arrows from figure b indicate that p f x and p f y are the same in figures b and c." data-sm="./modules/m58322/index.cnxml:30:1"/>
+</span>
+
+</figure>
+<div class="os-caption-container">
+  <span class="os-title-label">Figure </span>
+<span class="os-number">9.22</span>
+
+
+
+  <span class="os-divider"> </span>
+  <span data-sm="./modules/m58322/index.cnxml:32:1" class="os-caption">(a) For two-dimensional momentum problems, break the initial momentum vectors into their <em data-effect="italics" data-sm="./modules/m58322/index.cnxml:32:99">x</em>- and <em data-effect="italics" data-sm="./modules/m58322/index.cnxml:32:144">y</em>-components. (b) Add the <em data-effect="italics" data-sm="./modules/m58322/index.cnxml:32:208">x</em>- and <em data-effect="italics" data-sm="./modules/m58322/index.cnxml:32:253">y</em>-components together separately. This gives you the <em data-effect="italics" data-sm="./modules/m58322/index.cnxml:32:344">x</em>- and <em data-effect="italics" data-sm="./modules/m58322/index.cnxml:32:389">y</em>-components of the final momentum, which are shown as red dashed vectors. (c) Adding these components together gives the final momentum.</span>
+</div>
+</div>
+
+<p id="fs-id1167133464133" data-sm="./modules/m58322/index.cnxml:34:1">We solve each of these two component equations independently to obtain the <em data-effect="italics" data-sm="./modules/m58322/index.cnxml:34:106">x</em>- and <em data-effect="italics" data-sm="./modules/m58322/index.cnxml:34:151">y</em>-components of the desired velocity vector:</p>
+
+<div data-type="equation" id="fs-id1167133826382" class="unnumbered" data-sm="./modules/m58322/index.cnxml:35:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtable data-sm="./modules/m58322/index.cnxml:35:70"><mtr data-sm="./modules/m58322/index.cnxml:35:80"><mtd columnalign="right" data-sm="./modules/m58322/index.cnxml:35:87"><msub data-sm="./modules/m58322/index.cnxml:35:114"><mi data-sm="./modules/m58322/index.cnxml:35:122">v</mi><mrow data-sm="./modules/m58322/index.cnxml:35:136"><mtext data-sm="./modules/m58322/index.cnxml:35:144">f</mtext><mo data-sm="./modules/m58322/index.cnxml:35:164">,</mo><mi data-sm="./modules/m58322/index.cnxml:35:178">x</mi></mrow></msub></mtd>
+<mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:35:218"><mo data-sm="./modules/m58322/index.cnxml:35:244">=</mo></mtd>
+<mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:35:266"><mfrac data-sm="./modules/m58322/index.cnxml:35:292"><mrow data-sm="./modules/m58322/index.cnxml:35:301"><msub data-sm="./modules/m58322/index.cnxml:35:309"><mi data-sm="./modules/m58322/index.cnxml:35:317">m</mi><mn data-sm="./modules/m58322/index.cnxml:35:331">1</mn></msub><msub data-sm="./modules/m58322/index.cnxml:35:354"><mi data-sm="./modules/m58322/index.cnxml:35:362">v</mi><mrow data-sm="./modules/m58322/index.cnxml:35:376"><mtext data-sm="./modules/m58322/index.cnxml:35:384">1,i</mtext><mo data-sm="./modules/m58322/index.cnxml:35:406">,</mo><mi data-sm="./modules/m58322/index.cnxml:35:420">x</mi></mrow></msub><mo data-sm="./modules/m58322/index.cnxml:35:452">+</mo><msub data-sm="./modules/m58322/index.cnxml:35:466"><mi data-sm="./modules/m58322/index.cnxml:35:474">m</mi><mn data-sm="./modules/m58322/index.cnxml:35:488">2</mn></msub><msub data-sm="./modules/m58322/index.cnxml:35:511"><mi data-sm="./modules/m58322/index.cnxml:35:519">v</mi><mrow data-sm="./modules/m58322/index.cnxml:35:533"><mtext data-sm="./modules/m58322/index.cnxml:35:541">2,i</mtext><mo data-sm="./modules/m58322/index.cnxml:35:563">,</mo><mi data-sm="./modules/m58322/index.cnxml:35:577">x</mi></mrow></msub></mrow>
+<mi data-sm="./modules/m58322/index.cnxml:35:618">m</mi></mfrac>
+</mtd>
+</mtr>
+<mtr data-sm="./modules/m58322/index.cnxml:35:658"><mtd columnalign="right" data-sm="./modules/m58322/index.cnxml:35:665"><msub data-sm="./modules/m58322/index.cnxml:35:692"><mi data-sm="./modules/m58322/index.cnxml:35:700">v</mi><mrow data-sm="./modules/m58322/index.cnxml:35:714"><mtext data-sm="./modules/m58322/index.cnxml:35:722">f</mtext><mo data-sm="./modules/m58322/index.cnxml:35:742">,</mo><mi data-sm="./modules/m58322/index.cnxml:35:756">y</mi></mrow></msub></mtd>
+<mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:35:796"><mo data-sm="./modules/m58322/index.cnxml:35:822">=</mo></mtd>
+<mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:35:844"><mfrac data-sm="./modules/m58322/index.cnxml:35:870"><mrow data-sm="./modules/m58322/index.cnxml:35:879"><msub data-sm="./modules/m58322/index.cnxml:35:887"><mi data-sm="./modules/m58322/index.cnxml:35:895">m</mi><mn data-sm="./modules/m58322/index.cnxml:35:909">1</mn></msub><msub data-sm="./modules/m58322/index.cnxml:35:932"><mi data-sm="./modules/m58322/index.cnxml:35:940">v</mi><mrow data-sm="./modules/m58322/index.cnxml:35:954"><mtext data-sm="./modules/m58322/index.cnxml:35:962">1,i</mtext><mo data-sm="./modules/m58322/index.cnxml:35:984">,</mo><mi data-sm="./modules/m58322/index.cnxml:35:998">y</mi></mrow></msub><mo data-sm="./modules/m58322/index.cnxml:35:1030">+</mo><msub data-sm="./modules/m58322/index.cnxml:35:1044"><mi data-sm="./modules/m58322/index.cnxml:35:1052">m</mi><mn data-sm="./modules/m58322/index.cnxml:35:1066">2</mn></msub><msub data-sm="./modules/m58322/index.cnxml:35:1089"><mi data-sm="./modules/m58322/index.cnxml:35:1097">v</mi><mrow data-sm="./modules/m58322/index.cnxml:35:1111"><mtext data-sm="./modules/m58322/index.cnxml:35:1119">2,i</mtext><mo data-sm="./modules/m58322/index.cnxml:35:1141">,</mo><mi data-sm="./modules/m58322/index.cnxml:35:1155">y</mi></mrow></msub></mrow>
+<mi data-sm="./modules/m58322/index.cnxml:35:1196">m</mi></mfrac>
+<mo data-sm="./modules/m58322/index.cnxml:35:1220">.</mo></mtd>
+</mtr>
+</mtable>
+</mrow>
+</semantics>
+</math>
+</div>
+
+<p id="fs-id1167132267537" data-sm="./modules/m58322/index.cnxml:36:1">(Here, <em data-effect="italics" data-sm="./modules/m58322/index.cnxml:36:38">m</em> represents the total mass of the system.) Finally, combine these components using the Pythagorean theorem,</p>
+
+<div data-type="equation" id="fs-id1167132371962" class="unnumbered" data-sm="./modules/m58322/index.cnxml:37:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58322/index.cnxml:37:70"><msub data-sm="./modules/m58322/index.cnxml:37:78"><mi data-sm="./modules/m58322/index.cnxml:37:86">v</mi><mtext data-sm="./modules/m58322/index.cnxml:37:100">f</mtext></msub><mo data-sm="./modules/m58322/index.cnxml:37:129">=</mo><mrow data-sm="./modules/m58322/index.cnxml:37:143"><mo data-sm="./modules/m58322/index.cnxml:37:151">|</mo><mrow data-sm="./modules/m58322/index.cnxml:37:165"><msub data-sm="./modules/m58322/index.cnxml:37:173"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58322/index.cnxml:37:181"><mover accent="true" data-sm="./modules/m58322/index.cnxml:37:228"><mi data-sm="./modules/m58322/index.cnxml:37:251">v</mi><mo stretchy="false" data-sm="./modules/m58322/index.cnxml:37:265">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58322/index.cnxml:37:317"><mi data-sm="./modules/m58322/index.cnxml:37:364">f</mi></mstyle></msub></mrow>
+<mo data-sm="./modules/m58322/index.cnxml:37:407">|</mo></mrow>
+<mo data-sm="./modules/m58322/index.cnxml:37:430">=</mo><msqrt data-sm="./modules/m58322/index.cnxml:37:444"><mrow data-sm="./modules/m58322/index.cnxml:37:453"><msubsup data-sm="./modules/m58322/index.cnxml:37:461"><mi data-sm="./modules/m58322/index.cnxml:37:472">v</mi><mrow data-sm="./modules/m58322/index.cnxml:37:486"><mtext data-sm="./modules/m58322/index.cnxml:37:494">f</mtext><mo data-sm="./modules/m58322/index.cnxml:37:514">,</mo><mi data-sm="./modules/m58322/index.cnxml:37:528">x</mi></mrow><mn data-sm="./modules/m58322/index.cnxml:37:551">2</mn></msubsup><mo data-sm="./modules/m58322/index.cnxml:37:577">+</mo><msubsup data-sm="./modules/m58322/index.cnxml:37:591"><mi data-sm="./modules/m58322/index.cnxml:37:602">v</mi><mrow data-sm="./modules/m58322/index.cnxml:37:616"><mtext data-sm="./modules/m58322/index.cnxml:37:624">f</mtext><mo data-sm="./modules/m58322/index.cnxml:37:644">,</mo><mi data-sm="./modules/m58322/index.cnxml:37:658">y</mi></mrow><mn data-sm="./modules/m58322/index.cnxml:37:681">2</mn></msubsup></mrow>
+</msqrt>
+<mo data-sm="./modules/m58322/index.cnxml:37:726">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+
+<div data-type="note" id="fs-id1167132332826" class="problem-solving" data-sm="./modules/m58322/index.cnxml:38:1"><h3 class="os-title" data-type="title">
+  <span class="os-title-label">Problem-Solving Strategy</span>
+</h3>
+<div class="os-note-body"><h4 data-type="title" data-sm="./modules/m58322/index.cnxml:39:1" class="os-subtitle">
+  <span class="os-subtitle-label">Conservation of Momentum in Two Dimensions</span>
+</h4>
+<p id="fs-id1167133485713" data-sm="./modules/m58322/index.cnxml:40:1">The method for solving a two-dimensional (or even three-dimensional) conservation of momentum problem is generally the same as the method for solving a one-dimensional problem, except that you have to conserve momentum in both (or all three) dimensions simultaneously:</p>
+<ol id="fs-id1167133346621" type="1" data-sm="./modules/m58322/index.cnxml:41:1">
+<li data-sm="./modules/m58322/index.cnxml:42:1">Identify a closed system.</li>
+<li data-sm="./modules/m58322/index.cnxml:43:1">Write down the equation that represents conservation of momentum in the <em data-effect="italics" data-sm="./modules/m58322/index.cnxml:43:79">x</em>-direction, and solve it for the desired quantity. If you are calculating a vector quantity (velocity, usually), this will give you the <em data-effect="italics" data-sm="./modules/m58322/index.cnxml:43:254">x</em>-component of the vector.</li>
+<li data-sm="./modules/m58322/index.cnxml:44:1">Write down the equation that represents conservation of momentum in the <em data-effect="italics" data-sm="./modules/m58322/index.cnxml:44:79">y</em>-direction, and solve. This will give you the <em data-effect="italics" data-sm="./modules/m58322/index.cnxml:44:164">y</em>-component of your vector quantity.</li>
+<li data-sm="./modules/m58322/index.cnxml:45:1">Assuming you are calculating a vector quantity, use the Pythagorean theorem to calculate its magnitude, using the results of steps 3 and 4.</li>
+</ol>
+</div>
+</div>
+
+<div data-type="example" id="fs-id1167132466327" data-sm="./modules/m58322/index.cnxml:48:1"><h3 class="os-title">
+  <span class="os-title-label">Example </span>
+  <span class="os-number">9.14</span>
+  <span class="os-divider"> </span>
+</h3>
+<div class="body">
+<p id="fs-id1167133536659" data-sm="./modules/m58322/index.cnxml:49:1"></p>
+<h4 data-type="title" data-sm="./modules/m58322/index.cnxml:49:31">Traffic Collision</h4>
+A small car of mass 1200 kg traveling east at 60 km/hr collides at an intersection with a truck of mass 3000 kg that is traveling due north at 40 km/hr (<a href="#CNX_UPhysics_09_05_CarTruck" data-sm="./modules/m58322/index.cnxml:50:154" class="autogenerated-content">Figure 9.23</a>). The two vehicles are locked together. What is the velocity of the combined wreckage?
+<div class="os-figure"><figure id="CNX_UPhysics_09_05_CarTruck" data-sm="./modules/m58322/index.cnxml:51:1">
+<span data-type="media" id="fs-id1167133779548" data-alt="An x y coordinate system is shown. A large truck mass m T = 3000 kilograms is moving north toward the origin with velocity v T. A small car mass m c = 1200 kilograms is moving east toward the origin with velocity v c, which is less than v T." data-sm="./modules/m58322/index.cnxml:52:1">
+<img src="a3c7d0e9df0e5bb561d88bfab6a6f01608261213.jpeg" data-media-type="image/jpeg" alt="An x y coordinate system is shown. A large truck mass m T = 3000 kilograms is moving north toward the origin with velocity v T. A small car mass m c = 1200 kilograms is moving east toward the origin with velocity v c, which is less than v T." data-sm="./modules/m58322/index.cnxml:53:1"/>
+</span>
+
+</figure>
+<div class="os-caption-container">
+  <span class="os-title-label">Figure </span>
+<span class="os-number">9.23</span>
+
+
+
+  <span class="os-divider"> </span>
+  <span data-sm="./modules/m58322/index.cnxml:55:1" class="os-caption">A large truck moving north is about to collide with a small car moving east. The final momentum vector has both <em data-effect="italics" data-sm="./modules/m58322/index.cnxml:55:122">x</em>- and <em data-effect="italics" data-sm="./modules/m58322/index.cnxml:55:167">y</em>-components.</span>
+</div>
+</div>
+<p id="fs-id1167132245274" data-sm="./modules/m58322/index.cnxml:57:1"></p>
+<h4 data-type="title" data-sm="./modules/m58322/index.cnxml:57:31">Strategy</h4>
+First off, we need a closed system. The natural system to choose is the (car + truck), but this system is not closed; friction from the road acts on both vehicles. We avoid this problem by restricting the question to finding the velocity at the instant just after the collision, so that friction has not yet had any effect on the system. With that restriction, momentum is conserved for this system.
+<p id="fs-id1167133535267" data-sm="./modules/m58322/index.cnxml:59:1">Since there are two directions involved, we do conservation of momentum twice: once in the <em data-effect="italics" data-sm="./modules/m58322/index.cnxml:59:122">x</em>-direction and once in the <em data-effect="italics" data-sm="./modules/m58322/index.cnxml:59:188">y</em>-direction.</p>
+<p id="fs-id1167132243441" data-sm="./modules/m58322/index.cnxml:60:1"></p>
+<h4 data-type="title" data-sm="./modules/m58322/index.cnxml:60:31">Solution</h4>
+<em data-effect="italics" data-sm="./modules/m58322/index.cnxml:61:1">Before</em> the collision the total momentum is
+<div data-type="equation" id="fs-id1167133536112" class="unnumbered" data-sm="./modules/m58322/index.cnxml:62:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58322/index.cnxml:62:70"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58322/index.cnxml:62:78"><mover accent="true" data-sm="./modules/m58322/index.cnxml:62:125"><mi data-sm="./modules/m58322/index.cnxml:62:148">p</mi><mo stretchy="false" data-sm="./modules/m58322/index.cnxml:62:162">→</mo></mover>
+</mstyle>
+<mo data-sm="./modules/m58322/index.cnxml:62:214">=</mo><msub data-sm="./modules/m58322/index.cnxml:62:228"><mi data-sm="./modules/m58322/index.cnxml:62:236">m</mi><mtext data-sm="./modules/m58322/index.cnxml:62:250">c</mtext></msub><msub data-sm="./modules/m58322/index.cnxml:62:279"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58322/index.cnxml:62:287"><mover accent="true" data-sm="./modules/m58322/index.cnxml:62:334"><mi data-sm="./modules/m58322/index.cnxml:62:357">v</mi><mo stretchy="false" data-sm="./modules/m58322/index.cnxml:62:371">→</mo></mover>
+</mstyle><mtext data-sm="./modules/m58322/index.cnxml:62:423">c</mtext></msub><mo data-sm="./modules/m58322/index.cnxml:62:452">+</mo><msub data-sm="./modules/m58322/index.cnxml:62:466"><mi data-sm="./modules/m58322/index.cnxml:62:474">m</mi><mtext data-sm="./modules/m58322/index.cnxml:62:488">T</mtext></msub><msub data-sm="./modules/m58322/index.cnxml:62:517"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58322/index.cnxml:62:525"><mover accent="true" data-sm="./modules/m58322/index.cnxml:62:572"><mi data-sm="./modules/m58322/index.cnxml:62:595">v</mi><mo stretchy="false" data-sm="./modules/m58322/index.cnxml:62:609">→</mo></mover>
+</mstyle><mtext data-sm="./modules/m58322/index.cnxml:62:661">T</mtext></msub><mo data-sm="./modules/m58322/index.cnxml:62:690">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1167132310091" data-sm="./modules/m58322/index.cnxml:63:1"><em data-effect="italics" data-sm="./modules/m58322/index.cnxml:63:31">After</em> the collision, the wreckage has momentum</p>
+<div data-type="equation" id="fs-id1167133331988" class="unnumbered" data-sm="./modules/m58322/index.cnxml:64:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58322/index.cnxml:64:70"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58322/index.cnxml:64:78"><mover accent="true" data-sm="./modules/m58322/index.cnxml:64:125"><mi data-sm="./modules/m58322/index.cnxml:64:148">p</mi><mo stretchy="false" data-sm="./modules/m58322/index.cnxml:64:162">→</mo></mover>
+</mstyle>
+<mo data-sm="./modules/m58322/index.cnxml:64:214">=</mo><mrow data-sm="./modules/m58322/index.cnxml:64:228"><mo data-sm="./modules/m58322/index.cnxml:64:236">(</mo><mrow data-sm="./modules/m58322/index.cnxml:64:250"><msub data-sm="./modules/m58322/index.cnxml:64:258"><mi data-sm="./modules/m58322/index.cnxml:64:266">m</mi><mtext data-sm="./modules/m58322/index.cnxml:64:280">c</mtext></msub><mo data-sm="./modules/m58322/index.cnxml:64:309">+</mo><msub data-sm="./modules/m58322/index.cnxml:64:323"><mi data-sm="./modules/m58322/index.cnxml:64:331">m</mi><mtext data-sm="./modules/m58322/index.cnxml:64:345">T</mtext></msub></mrow>
+<mo data-sm="./modules/m58322/index.cnxml:64:383">)</mo></mrow>
+<msub data-sm="./modules/m58322/index.cnxml:64:406"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58322/index.cnxml:64:414"><mover accent="true" data-sm="./modules/m58322/index.cnxml:64:461"><mi data-sm="./modules/m58322/index.cnxml:64:484">v</mi><mo stretchy="false" data-sm="./modules/m58322/index.cnxml:64:498">→</mo></mover>
+</mstyle><mi data-sm="./modules/m58322/index.cnxml:64:550">w</mi></msub><mo data-sm="./modules/m58322/index.cnxml:64:573">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1167133677117" data-sm="./modules/m58322/index.cnxml:65:1">Since the system is closed, momentum must be conserved, so we have</p>
+<div data-type="equation" id="fs-id1167132231036" class="unnumbered" data-sm="./modules/m58322/index.cnxml:66:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58322/index.cnxml:66:70"><msub data-sm="./modules/m58322/index.cnxml:66:78"><mi data-sm="./modules/m58322/index.cnxml:66:86">m</mi><mtext data-sm="./modules/m58322/index.cnxml:66:100">c</mtext></msub><msub data-sm="./modules/m58322/index.cnxml:66:129"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58322/index.cnxml:66:137"><mover accent="true" data-sm="./modules/m58322/index.cnxml:66:184"><mi data-sm="./modules/m58322/index.cnxml:66:207">v</mi><mo stretchy="false" data-sm="./modules/m58322/index.cnxml:66:221">→</mo></mover>
+</mstyle><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58322/index.cnxml:66:273"><mi data-sm="./modules/m58322/index.cnxml:66:320">c</mi></mstyle></msub><mo data-sm="./modules/m58322/index.cnxml:66:354">+</mo><msub data-sm="./modules/m58322/index.cnxml:66:368"><mi data-sm="./modules/m58322/index.cnxml:66:376">m</mi><mtext data-sm="./modules/m58322/index.cnxml:66:390">T</mtext></msub><msub data-sm="./modules/m58322/index.cnxml:66:419"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58322/index.cnxml:66:427"><mover accent="true" data-sm="./modules/m58322/index.cnxml:66:474"><mi data-sm="./modules/m58322/index.cnxml:66:497">v</mi><mo stretchy="false" data-sm="./modules/m58322/index.cnxml:66:511">→</mo></mover>
+</mstyle><mtext data-sm="./modules/m58322/index.cnxml:66:563">T</mtext></msub><mo data-sm="./modules/m58322/index.cnxml:66:592">=</mo><mrow data-sm="./modules/m58322/index.cnxml:66:606"><mo data-sm="./modules/m58322/index.cnxml:66:614">(</mo><mrow data-sm="./modules/m58322/index.cnxml:66:628"><msub data-sm="./modules/m58322/index.cnxml:66:636"><mi data-sm="./modules/m58322/index.cnxml:66:644">m</mi><mtext data-sm="./modules/m58322/index.cnxml:66:658">c</mtext></msub><mo data-sm="./modules/m58322/index.cnxml:66:687">+</mo><msub data-sm="./modules/m58322/index.cnxml:66:701"><mi data-sm="./modules/m58322/index.cnxml:66:709">m</mi><mtext data-sm="./modules/m58322/index.cnxml:66:723">T</mtext></msub></mrow>
+<mo data-sm="./modules/m58322/index.cnxml:66:761">)</mo></mrow>
+<msub data-sm="./modules/m58322/index.cnxml:66:784"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58322/index.cnxml:66:792"><mover accent="true" data-sm="./modules/m58322/index.cnxml:66:839"><mi data-sm="./modules/m58322/index.cnxml:66:862">v</mi><mo stretchy="false" data-sm="./modules/m58322/index.cnxml:66:876">→</mo></mover>
+</mstyle><mi data-sm="./modules/m58322/index.cnxml:66:928">w</mi></msub><mo data-sm="./modules/m58322/index.cnxml:66:951">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1167133346883" data-sm="./modules/m58322/index.cnxml:67:1">We have to be careful; the two initial momenta are not parallel. We must add vectorially (<a href="#CNX_UPhysics_09_05_Ex1" data-sm="./modules/m58322/index.cnxml:67:121" class="autogenerated-content">Figure 9.24</a>).</p>
+<div class="os-figure"><figure id="CNX_UPhysics_09_05_Ex1" data-sm="./modules/m58322/index.cnxml:68:1">
+<span data-type="media" id="fs-id1167132289512" data-alt="Arrow p c points horizontally to the right. Arrow p t points vertically upward. The head of p t meets the tail of p c. P t is longer than p t. A dashed line is shown from the tail of p t to the head of p c. The angle between the dashed line and p t, at the tail of p t, is labeled as theta." data-sm="./modules/m58322/index.cnxml:69:1">
+<img src="a15cc839f81bd51fcb96f5616a4e415b1d2cf58b.jpeg" data-media-type="image/jpeg" alt="Arrow p c points horizontally to the right. Arrow p t points vertically upward. The head of p t meets the tail of p c. P t is longer than p t. A dashed line is shown from the tail of p t to the head of p c. The angle between the dashed line and p t, at the tail of p t, is labeled as theta." data-sm="./modules/m58322/index.cnxml:70:1"/>
+</span>
+
+</figure>
+<div class="os-caption-container">
+  <span class="os-title-label">Figure </span>
+<span class="os-number">9.24</span>
+
+
+
+  <span class="os-divider"> </span>
+  <span data-sm="./modules/m58322/index.cnxml:72:1" class="os-caption">Graphical addition of momentum vectors. Notice that, although the car’s velocity is larger than the truck’s, its momentum is smaller.</span>
+</div>
+</div>
+<p id="fs-id1167133358033" data-sm="./modules/m58322/index.cnxml:74:1">If we define the +<em data-effect="italics" data-sm="./modules/m58322/index.cnxml:74:49">x</em>-direction to point east and the +<em data-effect="italics" data-sm="./modules/m58322/index.cnxml:74:122">y</em>-direction to point north, as in the figure, then (conveniently),</p>
+<div data-type="equation" id="fs-id1167133540873" class="unnumbered" data-sm="./modules/m58322/index.cnxml:75:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtable data-sm="./modules/m58322/index.cnxml:75:70"><mtr data-sm="./modules/m58322/index.cnxml:75:80"><mtd columnalign="right" data-sm="./modules/m58322/index.cnxml:75:87"><msub data-sm="./modules/m58322/index.cnxml:75:114"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58322/index.cnxml:75:122"><mover accent="true" data-sm="./modules/m58322/index.cnxml:75:169"><mi data-sm="./modules/m58322/index.cnxml:75:192">p</mi><mo stretchy="false" data-sm="./modules/m58322/index.cnxml:75:206">→</mo></mover>
+</mstyle><mtext data-sm="./modules/m58322/index.cnxml:75:258">c</mtext></msub></mtd>
+<mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:75:295"><mo data-sm="./modules/m58322/index.cnxml:75:321">=</mo></mtd>
+<mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:75:343"><msub data-sm="./modules/m58322/index.cnxml:75:369"><mi data-sm="./modules/m58322/index.cnxml:75:377">p</mi><mtext data-sm="./modules/m58322/index.cnxml:75:391">c</mtext></msub><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58322/index.cnxml:75:420"><mover accent="true" data-sm="./modules/m58322/index.cnxml:75:467"><mi data-sm="./modules/m58322/index.cnxml:75:490">i</mi><mo data-sm="./modules/m58322/index.cnxml:75:504">^</mo></mover>
+</mstyle>
+<mo data-sm="./modules/m58322/index.cnxml:75:539">=</mo><msub data-sm="./modules/m58322/index.cnxml:75:553"><mi data-sm="./modules/m58322/index.cnxml:75:561">m</mi><mtext data-sm="./modules/m58322/index.cnxml:75:575">c</mtext></msub><msub data-sm="./modules/m58322/index.cnxml:75:604"><mi data-sm="./modules/m58322/index.cnxml:75:612">v</mi><mtext data-sm="./modules/m58322/index.cnxml:75:626">c</mtext></msub><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58322/index.cnxml:75:655"><mover accent="true" data-sm="./modules/m58322/index.cnxml:75:702"><mi data-sm="./modules/m58322/index.cnxml:75:725">i</mi><mo data-sm="./modules/m58322/index.cnxml:75:739">^</mo></mover>
+</mstyle>
+</mtd>
+</mtr>
+<mtr data-sm="./modules/m58322/index.cnxml:75:790"><mtd columnalign="right" data-sm="./modules/m58322/index.cnxml:75:797"><msub data-sm="./modules/m58322/index.cnxml:75:824"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58322/index.cnxml:75:832"><mover accent="true" data-sm="./modules/m58322/index.cnxml:75:879"><mi data-sm="./modules/m58322/index.cnxml:75:902">p</mi><mo stretchy="false" data-sm="./modules/m58322/index.cnxml:75:916">→</mo></mover>
+</mstyle><mtext data-sm="./modules/m58322/index.cnxml:75:968">T</mtext></msub></mtd>
+<mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:75:1005"><mo data-sm="./modules/m58322/index.cnxml:75:1031">=</mo></mtd>
+<mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:75:1053"><msub data-sm="./modules/m58322/index.cnxml:75:1079"><mi data-sm="./modules/m58322/index.cnxml:75:1087">p</mi><mtext data-sm="./modules/m58322/index.cnxml:75:1101">T</mtext></msub><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58322/index.cnxml:75:1130"><mover accent="true" data-sm="./modules/m58322/index.cnxml:75:1177"><mi data-sm="./modules/m58322/index.cnxml:75:1200">j</mi><mo data-sm="./modules/m58322/index.cnxml:75:1214">^</mo></mover>
+</mstyle>
+<mo data-sm="./modules/m58322/index.cnxml:75:1249">=</mo><msub data-sm="./modules/m58322/index.cnxml:75:1263"><mi data-sm="./modules/m58322/index.cnxml:75:1271">m</mi><mtext data-sm="./modules/m58322/index.cnxml:75:1285">T</mtext></msub><msub data-sm="./modules/m58322/index.cnxml:75:1314"><mi data-sm="./modules/m58322/index.cnxml:75:1322">v</mi><mtext data-sm="./modules/m58322/index.cnxml:75:1336">T</mtext></msub><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58322/index.cnxml:75:1365"><mover accent="true" data-sm="./modules/m58322/index.cnxml:75:1412"><mi data-sm="./modules/m58322/index.cnxml:75:1435">j</mi><mo data-sm="./modules/m58322/index.cnxml:75:1449">^</mo></mover>
+</mstyle>
+<mo data-sm="./modules/m58322/index.cnxml:75:1484">.</mo></mtd>
+</mtr>
+</mtable>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1167133664933" data-sm="./modules/m58322/index.cnxml:76:1">Therefore, in the <em data-effect="italics" data-sm="./modules/m58322/index.cnxml:76:49">x</em>-direction:</p>
+<div data-type="equation" id="fs-id1167133320173" class="unnumbered" data-sm="./modules/m58322/index.cnxml:77:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtable data-sm="./modules/m58322/index.cnxml:77:70"><mtr data-sm="./modules/m58322/index.cnxml:77:80"><mtd columnalign="right" data-sm="./modules/m58322/index.cnxml:77:87"><msub data-sm="./modules/m58322/index.cnxml:77:114"><mi data-sm="./modules/m58322/index.cnxml:77:122">m</mi><mtext data-sm="./modules/m58322/index.cnxml:77:136">c</mtext></msub><msub data-sm="./modules/m58322/index.cnxml:77:165"><mi data-sm="./modules/m58322/index.cnxml:77:173">v</mi><mtext data-sm="./modules/m58322/index.cnxml:77:187">c</mtext></msub></mtd>
+<mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:77:224"><mo data-sm="./modules/m58322/index.cnxml:77:250">=</mo></mtd>
+<mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:77:272"><mrow data-sm="./modules/m58322/index.cnxml:77:298"><mo data-sm="./modules/m58322/index.cnxml:77:306">(</mo><mrow data-sm="./modules/m58322/index.cnxml:77:320"><msub data-sm="./modules/m58322/index.cnxml:77:328"><mi data-sm="./modules/m58322/index.cnxml:77:336">m</mi><mtext data-sm="./modules/m58322/index.cnxml:77:350">c</mtext></msub><mo data-sm="./modules/m58322/index.cnxml:77:379">+</mo><msub data-sm="./modules/m58322/index.cnxml:77:393"><mi data-sm="./modules/m58322/index.cnxml:77:401">m</mi><mtext data-sm="./modules/m58322/index.cnxml:77:415">T</mtext></msub></mrow>
+<mo data-sm="./modules/m58322/index.cnxml:77:453">)</mo></mrow>
+<msub data-sm="./modules/m58322/index.cnxml:77:476"><mi data-sm="./modules/m58322/index.cnxml:77:484">v</mi><mrow data-sm="./modules/m58322/index.cnxml:77:498"><mtext data-sm="./modules/m58322/index.cnxml:77:506">w</mtext><mo data-sm="./modules/m58322/index.cnxml:77:526">,</mo><mi data-sm="./modules/m58322/index.cnxml:77:540">x</mi></mrow></msub></mtd>
+</mtr>
+<mtr data-sm="./modules/m58322/index.cnxml:77:588"><mtd columnalign="right" data-sm="./modules/m58322/index.cnxml:77:595"><msub data-sm="./modules/m58322/index.cnxml:77:622"><mi data-sm="./modules/m58322/index.cnxml:77:630">v</mi><mrow data-sm="./modules/m58322/index.cnxml:77:644"><mtext data-sm="./modules/m58322/index.cnxml:77:652">w</mtext><mo data-sm="./modules/m58322/index.cnxml:77:672">,</mo><mi data-sm="./modules/m58322/index.cnxml:77:686">x</mi></mrow></msub></mtd>
+<mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:77:726"><mo data-sm="./modules/m58322/index.cnxml:77:752">=</mo></mtd>
+<mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:77:774"><mrow data-sm="./modules/m58322/index.cnxml:77:800"><mo data-sm="./modules/m58322/index.cnxml:77:808">(</mo><mrow data-sm="./modules/m58322/index.cnxml:77:822"><mfrac data-sm="./modules/m58322/index.cnxml:77:830"><mrow data-sm="./modules/m58322/index.cnxml:77:839"><msub data-sm="./modules/m58322/index.cnxml:77:847"><mi data-sm="./modules/m58322/index.cnxml:77:855">m</mi><mtext data-sm="./modules/m58322/index.cnxml:77:869">c</mtext></msub></mrow>
+<mrow data-sm="./modules/m58322/index.cnxml:77:907"><msub data-sm="./modules/m58322/index.cnxml:77:915"><mi data-sm="./modules/m58322/index.cnxml:77:923">m</mi><mtext data-sm="./modules/m58322/index.cnxml:77:937">c</mtext></msub><mo data-sm="./modules/m58322/index.cnxml:77:966">+</mo><msub data-sm="./modules/m58322/index.cnxml:77:980"><mi data-sm="./modules/m58322/index.cnxml:77:988">m</mi><mtext data-sm="./modules/m58322/index.cnxml:77:1002">T</mtext></msub></mrow>
+</mfrac>
+</mrow>
+<mo data-sm="./modules/m58322/index.cnxml:77:1059">)</mo></mrow>
+<msub data-sm="./modules/m58322/index.cnxml:77:1082"><mi data-sm="./modules/m58322/index.cnxml:77:1090">v</mi><mtext data-sm="./modules/m58322/index.cnxml:77:1104">c</mtext></msub></mtd>
+</mtr>
+</mtable>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1167133440663" data-sm="./modules/m58322/index.cnxml:78:1">and in the <em data-effect="italics" data-sm="./modules/m58322/index.cnxml:78:42">y</em>-direction:</p>
+<div data-type="equation" id="fs-id1167133344273" class="unnumbered" data-sm="./modules/m58322/index.cnxml:79:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtable data-sm="./modules/m58322/index.cnxml:79:70"><mtr data-sm="./modules/m58322/index.cnxml:79:80"><mtd columnalign="right" data-sm="./modules/m58322/index.cnxml:79:87"><msub data-sm="./modules/m58322/index.cnxml:79:114"><mi data-sm="./modules/m58322/index.cnxml:79:122">m</mi><mtext data-sm="./modules/m58322/index.cnxml:79:136">T</mtext></msub><msub data-sm="./modules/m58322/index.cnxml:79:165"><mi data-sm="./modules/m58322/index.cnxml:79:173">v</mi><mtext data-sm="./modules/m58322/index.cnxml:79:187">T</mtext></msub></mtd>
+<mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:79:224"><mo data-sm="./modules/m58322/index.cnxml:79:250">=</mo></mtd>
+<mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:79:272"><mrow data-sm="./modules/m58322/index.cnxml:79:298"><mo data-sm="./modules/m58322/index.cnxml:79:306">(</mo><mrow data-sm="./modules/m58322/index.cnxml:79:320"><msub data-sm="./modules/m58322/index.cnxml:79:328"><mi data-sm="./modules/m58322/index.cnxml:79:336">m</mi><mtext data-sm="./modules/m58322/index.cnxml:79:350">c</mtext></msub><mo data-sm="./modules/m58322/index.cnxml:79:379">+</mo><msub data-sm="./modules/m58322/index.cnxml:79:393"><mi data-sm="./modules/m58322/index.cnxml:79:401">m</mi><mtext data-sm="./modules/m58322/index.cnxml:79:415">T</mtext></msub></mrow>
+<mo data-sm="./modules/m58322/index.cnxml:79:453">)</mo></mrow>
+<msub data-sm="./modules/m58322/index.cnxml:79:476"><mi data-sm="./modules/m58322/index.cnxml:79:484">v</mi><mrow data-sm="./modules/m58322/index.cnxml:79:498"><mtext data-sm="./modules/m58322/index.cnxml:79:506">w</mtext><mo data-sm="./modules/m58322/index.cnxml:79:526">,</mo><mi data-sm="./modules/m58322/index.cnxml:79:540">y</mi></mrow></msub></mtd>
+</mtr>
+<mtr data-sm="./modules/m58322/index.cnxml:79:588"><mtd columnalign="right" data-sm="./modules/m58322/index.cnxml:79:595"><msub data-sm="./modules/m58322/index.cnxml:79:622"><mi data-sm="./modules/m58322/index.cnxml:79:630">v</mi><mrow data-sm="./modules/m58322/index.cnxml:79:644"><mtext data-sm="./modules/m58322/index.cnxml:79:652">w</mtext><mo data-sm="./modules/m58322/index.cnxml:79:672">,</mo><mi data-sm="./modules/m58322/index.cnxml:79:686">y</mi></mrow></msub></mtd>
+<mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:79:726"><mo data-sm="./modules/m58322/index.cnxml:79:752">=</mo></mtd>
+<mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:79:774"><mrow data-sm="./modules/m58322/index.cnxml:79:800"><mo data-sm="./modules/m58322/index.cnxml:79:808">(</mo><mrow data-sm="./modules/m58322/index.cnxml:79:822"><mfrac data-sm="./modules/m58322/index.cnxml:79:830"><mrow data-sm="./modules/m58322/index.cnxml:79:839"><msub data-sm="./modules/m58322/index.cnxml:79:847"><mi data-sm="./modules/m58322/index.cnxml:79:855">m</mi><mtext data-sm="./modules/m58322/index.cnxml:79:869">T</mtext></msub></mrow>
+<mrow data-sm="./modules/m58322/index.cnxml:79:907"><msub data-sm="./modules/m58322/index.cnxml:79:915"><mi data-sm="./modules/m58322/index.cnxml:79:923">m</mi><mtext data-sm="./modules/m58322/index.cnxml:79:937">c</mtext></msub><mo data-sm="./modules/m58322/index.cnxml:79:966">+</mo><msub data-sm="./modules/m58322/index.cnxml:79:980"><mi data-sm="./modules/m58322/index.cnxml:79:988">m</mi><mtext data-sm="./modules/m58322/index.cnxml:79:1002">T</mtext></msub></mrow>
+</mfrac>
+</mrow>
+<mo data-sm="./modules/m58322/index.cnxml:79:1059">)</mo></mrow>
+<msub data-sm="./modules/m58322/index.cnxml:79:1082"><mi data-sm="./modules/m58322/index.cnxml:79:1090">v</mi><mtext data-sm="./modules/m58322/index.cnxml:79:1104">T</mtext></msub><mo data-sm="./modules/m58322/index.cnxml:79:1133">.</mo></mtd>
+</mtr>
+</mtable>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1167133685958" data-sm="./modules/m58322/index.cnxml:80:1">Applying the Pythagorean theorem gives</p>
+<div data-type="equation" id="fs-id1167133545800" class="unnumbered" data-sm="./modules/m58322/index.cnxml:81:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtable data-sm="./modules/m58322/index.cnxml:81:70"><mtr data-sm="./modules/m58322/index.cnxml:81:80"><mtd columnalign="right" data-sm="./modules/m58322/index.cnxml:81:87"><mrow data-sm="./modules/m58322/index.cnxml:81:114"><mo data-sm="./modules/m58322/index.cnxml:81:122">|</mo><mrow data-sm="./modules/m58322/index.cnxml:81:136"><msub data-sm="./modules/m58322/index.cnxml:81:144"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58322/index.cnxml:81:152"><mover accent="true" data-sm="./modules/m58322/index.cnxml:81:199"><mi data-sm="./modules/m58322/index.cnxml:81:222">v</mi><mo stretchy="false" data-sm="./modules/m58322/index.cnxml:81:236">→</mo></mover>
+</mstyle><mi data-sm="./modules/m58322/index.cnxml:81:288">w</mi></msub></mrow>
+<mo data-sm="./modules/m58322/index.cnxml:81:320">|</mo></mrow>
+</mtd>
+<mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:81:351"><mo data-sm="./modules/m58322/index.cnxml:81:377">=</mo><msqrt data-sm="./modules/m58322/index.cnxml:81:391"><mrow data-sm="./modules/m58322/index.cnxml:81:400"><msup data-sm="./modules/m58322/index.cnxml:81:408"><mrow data-sm="./modules/m58322/index.cnxml:81:416"><mrow data-sm="./modules/m58322/index.cnxml:81:424"><mo data-sm="./modules/m58322/index.cnxml:81:432">[</mo><mrow data-sm="./modules/m58322/index.cnxml:81:446"><mrow data-sm="./modules/m58322/index.cnxml:81:454"><mo data-sm="./modules/m58322/index.cnxml:81:462">(</mo><mrow data-sm="./modules/m58322/index.cnxml:81:476"><mfrac data-sm="./modules/m58322/index.cnxml:81:484"><mrow data-sm="./modules/m58322/index.cnxml:81:493"><msub data-sm="./modules/m58322/index.cnxml:81:501"><mi data-sm="./modules/m58322/index.cnxml:81:509">m</mi><mtext data-sm="./modules/m58322/index.cnxml:81:523">c</mtext></msub></mrow>
+<mrow data-sm="./modules/m58322/index.cnxml:81:561"><msub data-sm="./modules/m58322/index.cnxml:81:569"><mi data-sm="./modules/m58322/index.cnxml:81:577">m</mi><mtext data-sm="./modules/m58322/index.cnxml:81:591">c</mtext></msub><mo data-sm="./modules/m58322/index.cnxml:81:620">+</mo><msub data-sm="./modules/m58322/index.cnxml:81:634"><mi data-sm="./modules/m58322/index.cnxml:81:642">m</mi><mi data-sm="./modules/m58322/index.cnxml:81:656">t</mi></msub></mrow>
+</mfrac>
+</mrow>
+<mo data-sm="./modules/m58322/index.cnxml:81:707">)</mo></mrow>
+<msub data-sm="./modules/m58322/index.cnxml:81:730"><mi data-sm="./modules/m58322/index.cnxml:81:738">v</mi><mtext data-sm="./modules/m58322/index.cnxml:81:752">c</mtext></msub></mrow>
+<mo data-sm="./modules/m58322/index.cnxml:81:790">]</mo></mrow>
+</mrow><mn data-sm="./modules/m58322/index.cnxml:81:822">2</mn></msup><mo data-sm="./modules/m58322/index.cnxml:81:845">+</mo><msup data-sm="./modules/m58322/index.cnxml:81:859"><mrow data-sm="./modules/m58322/index.cnxml:81:867"><mrow data-sm="./modules/m58322/index.cnxml:81:875"><mo data-sm="./modules/m58322/index.cnxml:81:883">[</mo><mrow data-sm="./modules/m58322/index.cnxml:81:897"><mrow data-sm="./modules/m58322/index.cnxml:81:905"><mo data-sm="./modules/m58322/index.cnxml:81:913">(</mo><mrow data-sm="./modules/m58322/index.cnxml:81:927"><mfrac data-sm="./modules/m58322/index.cnxml:81:935"><mrow data-sm="./modules/m58322/index.cnxml:81:944"><msub data-sm="./modules/m58322/index.cnxml:81:952"><mi data-sm="./modules/m58322/index.cnxml:81:960">m</mi><mi data-sm="./modules/m58322/index.cnxml:81:974">t</mi></msub></mrow>
+<mrow data-sm="./modules/m58322/index.cnxml:81:1006"><msub data-sm="./modules/m58322/index.cnxml:81:1014"><mi data-sm="./modules/m58322/index.cnxml:81:1022">m</mi><mtext data-sm="./modules/m58322/index.cnxml:81:1036">c</mtext></msub><mo data-sm="./modules/m58322/index.cnxml:81:1065">+</mo><msub data-sm="./modules/m58322/index.cnxml:81:1079"><mi data-sm="./modules/m58322/index.cnxml:81:1087">m</mi><mi data-sm="./modules/m58322/index.cnxml:81:1101">t</mi></msub></mrow>
+</mfrac>
+</mrow>
+<mo data-sm="./modules/m58322/index.cnxml:81:1152">)</mo></mrow>
+<msub data-sm="./modules/m58322/index.cnxml:81:1175"><mi data-sm="./modules/m58322/index.cnxml:81:1183">v</mi><mi data-sm="./modules/m58322/index.cnxml:81:1197">t</mi></msub></mrow>
+<mo data-sm="./modules/m58322/index.cnxml:81:1229">]</mo></mrow>
+</mrow><mn data-sm="./modules/m58322/index.cnxml:81:1261">2</mn></msup></mrow>
+</msqrt>
+</mtd>
+</mtr>
+<mtr data-sm="./modules/m58322/index.cnxml:81:1319"><mtd data-sm="./modules/m58322/index.cnxml:81:1326"/>
+<mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:81:1334"><mo data-sm="./modules/m58322/index.cnxml:81:1360">=</mo><msqrt data-sm="./modules/m58322/index.cnxml:81:1374"><mrow data-sm="./modules/m58322/index.cnxml:81:1383"><msup data-sm="./modules/m58322/index.cnxml:81:1391"><mrow data-sm="./modules/m58322/index.cnxml:81:1399"><mrow data-sm="./modules/m58322/index.cnxml:81:1407"><mo data-sm="./modules/m58322/index.cnxml:81:1415">[</mo><mrow data-sm="./modules/m58322/index.cnxml:81:1429"><mrow data-sm="./modules/m58322/index.cnxml:81:1437"><mo data-sm="./modules/m58322/index.cnxml:81:1445">(</mo><mrow data-sm="./modules/m58322/index.cnxml:81:1459"><mfrac data-sm="./modules/m58322/index.cnxml:81:1467"><mrow data-sm="./modules/m58322/index.cnxml:81:1476"><mn data-sm="./modules/m58322/index.cnxml:81:1484">1200</mn><mspace width="0.2em" data-sm="./modules/m58322/index.cnxml:81:1501"/><mtext data-sm="./modules/m58322/index.cnxml:81:1526">kg</mtext></mrow>
+<mrow data-sm="./modules/m58322/index.cnxml:81:1556"><mn data-sm="./modules/m58322/index.cnxml:81:1564">4200</mn><mspace width="0.2em" data-sm="./modules/m58322/index.cnxml:81:1581"/><mtext data-sm="./modules/m58322/index.cnxml:81:1606">kg</mtext></mrow>
+</mfrac>
+</mrow>
+<mo data-sm="./modules/m58322/index.cnxml:81:1655">)</mo></mrow>
+<mrow data-sm="./modules/m58322/index.cnxml:81:1678"><mo data-sm="./modules/m58322/index.cnxml:81:1686">(</mo><mrow data-sm="./modules/m58322/index.cnxml:81:1700"><mn data-sm="./modules/m58322/index.cnxml:81:1708">16.67</mn><mspace width="0.2em" data-sm="./modules/m58322/index.cnxml:81:1726"/><mfrac data-sm="./modules/m58322/index.cnxml:81:1751"><mtext data-sm="./modules/m58322/index.cnxml:81:1760">m</mtext><mtext data-sm="./modules/m58322/index.cnxml:81:1780">s</mtext></mfrac>
+</mrow>
+<mo data-sm="./modules/m58322/index.cnxml:81:1819">)</mo></mrow>
+</mrow>
+<mo data-sm="./modules/m58322/index.cnxml:81:1851">]</mo></mrow>
+</mrow><mn data-sm="./modules/m58322/index.cnxml:81:1883">2</mn></msup><mo data-sm="./modules/m58322/index.cnxml:81:1906">+</mo><msup data-sm="./modules/m58322/index.cnxml:81:1920"><mrow data-sm="./modules/m58322/index.cnxml:81:1928"><mrow data-sm="./modules/m58322/index.cnxml:81:1936"><mo data-sm="./modules/m58322/index.cnxml:81:1944">[</mo><mrow data-sm="./modules/m58322/index.cnxml:81:1958"><mrow data-sm="./modules/m58322/index.cnxml:81:1966"><mo data-sm="./modules/m58322/index.cnxml:81:1974">(</mo><mrow data-sm="./modules/m58322/index.cnxml:81:1988"><mfrac data-sm="./modules/m58322/index.cnxml:81:1996"><mrow data-sm="./modules/m58322/index.cnxml:81:2005"><mn data-sm="./modules/m58322/index.cnxml:81:2013">3000</mn><mspace width="0.2em" data-sm="./modules/m58322/index.cnxml:81:2030"/><mtext data-sm="./modules/m58322/index.cnxml:81:2055">kg</mtext></mrow>
+<mrow data-sm="./modules/m58322/index.cnxml:81:2085"><mn data-sm="./modules/m58322/index.cnxml:81:2093">4200</mn><mspace width="0.2em" data-sm="./modules/m58322/index.cnxml:81:2110"/><mtext data-sm="./modules/m58322/index.cnxml:81:2135">kg</mtext></mrow>
+</mfrac>
+</mrow>
+<mo data-sm="./modules/m58322/index.cnxml:81:2184">)</mo></mrow>
+<mrow data-sm="./modules/m58322/index.cnxml:81:2207"><mo data-sm="./modules/m58322/index.cnxml:81:2215">(</mo><mrow data-sm="./modules/m58322/index.cnxml:81:2229"><mn data-sm="./modules/m58322/index.cnxml:81:2237">11.1</mn><mspace width="0.2em" data-sm="./modules/m58322/index.cnxml:81:2254"/><mfrac data-sm="./modules/m58322/index.cnxml:81:2279"><mtext data-sm="./modules/m58322/index.cnxml:81:2288">m</mtext><mtext data-sm="./modules/m58322/index.cnxml:81:2308">s</mtext></mfrac>
+</mrow>
+<mo data-sm="./modules/m58322/index.cnxml:81:2347">)</mo></mrow>
+</mrow>
+<mo data-sm="./modules/m58322/index.cnxml:81:2379">]</mo></mrow>
+</mrow><mn data-sm="./modules/m58322/index.cnxml:81:2411">2</mn></msup></mrow>
+</msqrt>
+</mtd>
+</mtr>
+<mtr data-sm="./modules/m58322/index.cnxml:81:2469"><mtd data-sm="./modules/m58322/index.cnxml:81:2476"/>
+<mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:81:2484"><mo data-sm="./modules/m58322/index.cnxml:81:2510">=</mo><msqrt data-sm="./modules/m58322/index.cnxml:81:2524"><mrow data-sm="./modules/m58322/index.cnxml:81:2533"><msup data-sm="./modules/m58322/index.cnxml:81:2541"><mrow data-sm="./modules/m58322/index.cnxml:81:2549"><mrow data-sm="./modules/m58322/index.cnxml:81:2557"><mo data-sm="./modules/m58322/index.cnxml:81:2565">(</mo><mrow data-sm="./modules/m58322/index.cnxml:81:2579"><mn data-sm="./modules/m58322/index.cnxml:81:2587">4.76</mn><mspace width="0.2em" data-sm="./modules/m58322/index.cnxml:81:2604"/><mfrac data-sm="./modules/m58322/index.cnxml:81:2629"><mtext data-sm="./modules/m58322/index.cnxml:81:2638">m</mtext><mtext data-sm="./modules/m58322/index.cnxml:81:2658">s</mtext></mfrac>
+</mrow>
+<mo data-sm="./modules/m58322/index.cnxml:81:2697">)</mo></mrow>
+</mrow><mn data-sm="./modules/m58322/index.cnxml:81:2729">2</mn></msup><mo data-sm="./modules/m58322/index.cnxml:81:2752">+</mo><msup data-sm="./modules/m58322/index.cnxml:81:2766"><mrow data-sm="./modules/m58322/index.cnxml:81:2774"><mrow data-sm="./modules/m58322/index.cnxml:81:2782"><mo data-sm="./modules/m58322/index.cnxml:81:2790">(</mo><mrow data-sm="./modules/m58322/index.cnxml:81:2804"><mn data-sm="./modules/m58322/index.cnxml:81:2812">7.93</mn><mspace width="0.2em" data-sm="./modules/m58322/index.cnxml:81:2829"/><mfrac data-sm="./modules/m58322/index.cnxml:81:2854"><mtext data-sm="./modules/m58322/index.cnxml:81:2863">m</mtext><mtext data-sm="./modules/m58322/index.cnxml:81:2883">s</mtext></mfrac>
+</mrow>
+<mo data-sm="./modules/m58322/index.cnxml:81:2922">)</mo></mrow>
+</mrow><mn data-sm="./modules/m58322/index.cnxml:81:2954">2</mn></msup></mrow>
+</msqrt>
+</mtd>
+</mtr>
+<mtr data-sm="./modules/m58322/index.cnxml:81:3012"><mtd data-sm="./modules/m58322/index.cnxml:81:3019"/>
+<mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:81:3027"><mo data-sm="./modules/m58322/index.cnxml:81:3053">=</mo><mn data-sm="./modules/m58322/index.cnxml:81:3067">9.25</mn><mspace width="0.2em" data-sm="./modules/m58322/index.cnxml:81:3084"/><mfrac data-sm="./modules/m58322/index.cnxml:81:3109"><mtext data-sm="./modules/m58322/index.cnxml:81:3118">m</mtext><mtext data-sm="./modules/m58322/index.cnxml:81:3138">s</mtext></mfrac>
+<mo data-sm="./modules/m58322/index.cnxml:81:3168">≈</mo><mn data-sm="./modules/m58322/index.cnxml:81:3182">33.3</mn><mspace width="0.2em" data-sm="./modules/m58322/index.cnxml:81:3199"/><mfrac data-sm="./modules/m58322/index.cnxml:81:3224"><mrow data-sm="./modules/m58322/index.cnxml:81:3233"><mtext data-sm="./modules/m58322/index.cnxml:81:3241">km</mtext></mrow>
+<mrow data-sm="./modules/m58322/index.cnxml:81:3271"><mtext data-sm="./modules/m58322/index.cnxml:81:3279">hr</mtext></mrow>
+</mfrac>
+<mo data-sm="./modules/m58322/index.cnxml:81:3319">.</mo></mtd>
+</mtr>
+</mtable>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1167133343784" data-sm="./modules/m58322/index.cnxml:82:1">As for its direction, using the angle shown in the figure,</p>
+<div data-type="equation" id="fs-id1167133316005" class="unnumbered" data-sm="./modules/m58322/index.cnxml:83:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58322/index.cnxml:83:70"><mi data-sm="./modules/m58322/index.cnxml:83:78">θ</mi><mo data-sm="./modules/m58322/index.cnxml:83:92">=</mo><msup data-sm="./modules/m58322/index.cnxml:83:106"><mrow data-sm="./modules/m58322/index.cnxml:83:114"><mtext data-sm="./modules/m58322/index.cnxml:83:122">tan</mtext></mrow><mrow data-sm="./modules/m58322/index.cnxml:83:153"><mn data-sm="./modules/m58322/index.cnxml:83:161">−1</mn></mrow></msup><mrow data-sm="./modules/m58322/index.cnxml:83:194"><mo data-sm="./modules/m58322/index.cnxml:83:202">(</mo><mrow data-sm="./modules/m58322/index.cnxml:83:216"><mfrac data-sm="./modules/m58322/index.cnxml:83:224"><mrow data-sm="./modules/m58322/index.cnxml:83:233"><msub data-sm="./modules/m58322/index.cnxml:83:241"><mi data-sm="./modules/m58322/index.cnxml:83:249">v</mi><mrow data-sm="./modules/m58322/index.cnxml:83:263"><mtext data-sm="./modules/m58322/index.cnxml:83:271">w</mtext><mo data-sm="./modules/m58322/index.cnxml:83:291">,</mo><mi data-sm="./modules/m58322/index.cnxml:83:305">x</mi></mrow></msub></mrow>
+<mrow data-sm="./modules/m58322/index.cnxml:83:346"><msub data-sm="./modules/m58322/index.cnxml:83:354"><mi data-sm="./modules/m58322/index.cnxml:83:362">v</mi><mrow data-sm="./modules/m58322/index.cnxml:83:376"><mtext data-sm="./modules/m58322/index.cnxml:83:384">w</mtext><mo data-sm="./modules/m58322/index.cnxml:83:404">,</mo><mi data-sm="./modules/m58322/index.cnxml:83:418">y</mi></mrow></msub></mrow>
+</mfrac>
+</mrow>
+<mo data-sm="./modules/m58322/index.cnxml:83:478">)</mo></mrow>
+<mo data-sm="./modules/m58322/index.cnxml:83:501">=</mo><msup data-sm="./modules/m58322/index.cnxml:83:515"><mrow data-sm="./modules/m58322/index.cnxml:83:523"><mtext data-sm="./modules/m58322/index.cnxml:83:531">tan</mtext></mrow><mrow data-sm="./modules/m58322/index.cnxml:83:562"><mn data-sm="./modules/m58322/index.cnxml:83:570">−1</mn></mrow></msup><mrow data-sm="./modules/m58322/index.cnxml:83:603"><mo data-sm="./modules/m58322/index.cnxml:83:611">(</mo><mrow data-sm="./modules/m58322/index.cnxml:83:625"><mfrac data-sm="./modules/m58322/index.cnxml:83:633"><mrow data-sm="./modules/m58322/index.cnxml:83:642"><mn data-sm="./modules/m58322/index.cnxml:83:650">7.93</mn><mspace width="0.2em" data-sm="./modules/m58322/index.cnxml:83:667"/><mtext data-sm="./modules/m58322/index.cnxml:83:692">m/s</mtext></mrow>
+<mrow data-sm="./modules/m58322/index.cnxml:83:723"><mn data-sm="./modules/m58322/index.cnxml:83:731">4.76</mn><mspace width="0.2em" data-sm="./modules/m58322/index.cnxml:83:748"/><mtext data-sm="./modules/m58322/index.cnxml:83:773">m/s</mtext></mrow>
+</mfrac>
+</mrow>
+<mo data-sm="./modules/m58322/index.cnxml:83:823">)</mo></mrow>
+<mo data-sm="./modules/m58322/index.cnxml:83:846">=</mo><mn data-sm="./modules/m58322/index.cnxml:83:860">59</mn><mtext data-sm="./modules/m58322/index.cnxml:83:875">°</mtext><mo data-sm="./modules/m58322/index.cnxml:83:895">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1167133553597" data-sm="./modules/m58322/index.cnxml:84:1">This angle is east of north, or <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58322/index.cnxml:84:71"><mn data-sm="./modules/m58322/index.cnxml:84:79">31</mn><mtext data-sm="./modules/m58322/index.cnxml:84:94">°</mtext></mrow>
+</mrow>
+</semantics>
+</math></span> counterclockwise from the +<em data-effect="italics" data-sm="./modules/m58322/index.cnxml:84:160">x</em>-direction.</p>
+<p id="fs-id1167132586782" data-sm="./modules/m58322/index.cnxml:85:1"></p>
+<h4 data-type="title" data-sm="./modules/m58322/index.cnxml:85:31">Significance</h4>
+As a practical matter, accident investigators usually work in the “opposite direction”; they measure the distance of skid marks on the road (which gives the stopping distance) and use the work-energy theorem along with conservation of momentum to determine the speeds and directions of the cars prior to the collision. We saw that analysis in an earlier section.
+</div>
+</div>
+
+<div data-type="note" id="fs-id1167132362163" class="check-understanding" data-sm="./modules/m58322/index.cnxml:88:1"><h3 class="os-title">
+  <span class="os-title-label">Check Your Understanding </span>
+  <span class="os-number">9.9</span>
+  <span class="os-divider"> </span>
+</h3>
+<div class="os-note-body">
+<div data-type="exercise" id="fs-id1167133324899" data-sm="./modules/m58322/index.cnxml:89:1" class="unnumbered os-hasSolution">
+<div data-type="problem" id="fs-id1167132289477" data-sm="./modules/m58322/index.cnxml:90:1"><div class="os-problem-container">
+<p id="fs-id1167132376642" data-sm="./modules/m58322/index.cnxml:91:1"> Suppose the initial velocities were <em data-effect="italics" data-sm="./modules/m58322/index.cnxml:91:68">not</em> at right angles to each other. How would this change both the physical result and the mathematical analysis of the collision?</p>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div data-type="example" id="fs-id1167133717858" data-sm="./modules/m58322/index.cnxml:98:1"><h3 class="os-title">
+  <span class="os-title-label">Example </span>
+  <span class="os-number">9.15</span>
+  <span class="os-divider"> </span>
+</h3>
+<div class="body">
+<p id="fs-id1167132377210" data-sm="./modules/m58322/index.cnxml:99:1"></p>
+<h4 data-type="title" data-sm="./modules/m58322/index.cnxml:99:31">Exploding Scuba Tank</h4>
+A common scuba tank is an aluminum cylinder that weighs 31.7 pounds empty (<a href="#CNX_UPhysics_09_05_Scubatank" data-sm="./modules/m58322/index.cnxml:100:76" class="autogenerated-content">Figure 9.25</a>). When full of compressed air, the internal pressure is between 2500 and 3000 psi (pounds per square inch). Suppose such a tank, which had been sitting motionless, suddenly explodes into three pieces. The first piece, weighing 10 pounds, shoots off horizontally at 235 miles per hour; the second piece (7 pounds) shoots off at 172 miles per hour, also in the horizontal plane, but at a <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58322/index.cnxml:100:519"><mn data-sm="./modules/m58322/index.cnxml:100:527">19</mn><mtext data-sm="./modules/m58322/index.cnxml:100:542">°</mtext></mrow>
+</mrow>
+</semantics>
+</math></span> angle to the first piece. What is the mass and initial velocity of the third piece? (Do all work, and express your final answer, in SI units.)
+<div class="os-figure"><figure id="CNX_UPhysics_09_05_Scubatank" data-sm="./modules/m58322/index.cnxml:101:1">
+<span data-type="media" id="fs-id1167132411485" data-alt="A drawing of a scuba tank exploding, and the resulting three pieces of different sizes." data-sm="./modules/m58322/index.cnxml:102:1">
+<img src="c59646de41176d149d1ef5e4e508c02ba3a3b6a8.jpeg" data-media-type="image/jpeg" alt="A drawing of a scuba tank exploding, and the resulting three pieces of different sizes." data-sm="./modules/m58322/index.cnxml:103:1"/>
+</span>
+
+</figure>
+<div class="os-caption-container">
+  <span class="os-title-label">Figure </span>
+<span class="os-number">9.25</span>
+
+
+
+  <span class="os-divider"> </span>
+  <span data-sm="./modules/m58322/index.cnxml:105:1" class="os-caption">A scuba tank explodes into three pieces.</span>
+</div>
+</div>
+<p id="fs-id1167133345636" data-sm="./modules/m58322/index.cnxml:107:1"></p>
+<h4 data-type="title" data-sm="./modules/m58322/index.cnxml:107:31">Strategy</h4>
+To use conservation of momentum, we need a closed system. If we define the system to be the scuba tank, this is not a closed system, since gravity is an external force. However, the problem asks for just the initial velocity of the third piece, so we can neglect the effect of gravity and consider the tank by itself as a closed system. Notice that, for this system, the initial momentum vector is zero.<p id="fs-id1167133555347" data-sm="./modules/m58322/index.cnxml:107:464">We choose a coordinate system where all the motion happens in the <em data-effect="italics" data-sm="./modules/m58322/index.cnxml:107:560">xy</em>-plane. We then write down the equations for conservation of momentum in each direction, thus obtaining the <em data-effect="italics" data-sm="./modules/m58322/index.cnxml:107:708">x</em>- and <em data-effect="italics" data-sm="./modules/m58322/index.cnxml:107:753">y</em>-components of the momentum of the third piece, from which we obtain its magnitude (via the Pythagorean theorem) and its direction. Finally, dividing this momentum by the mass of the third piece gives us the velocity.</p>
+<p id="fs-id1167133465356" data-sm="./modules/m58322/index.cnxml:108:1"></p>
+<h4 data-type="title" data-sm="./modules/m58322/index.cnxml:108:31">Solution</h4>
+First, let’s get all the conversions to SI units out of the way:
+<div data-type="equation" id="fs-id1167133415932" class="unnumbered" data-sm="./modules/m58322/index.cnxml:110:1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58322/index.cnxml:110:62"><mtable data-sm="./modules/m58322/index.cnxml:110:70"><mtr data-sm="./modules/m58322/index.cnxml:110:80"/>
+<mtr data-sm="./modules/m58322/index.cnxml:110:88"/>
+<mtr data-sm="./modules/m58322/index.cnxml:110:96"><mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:110:103"><mn data-sm="./modules/m58322/index.cnxml:110:129">31.7</mn><mspace width="0.2em" data-sm="./modules/m58322/index.cnxml:110:146"/><mtext data-sm="./modules/m58322/index.cnxml:110:171">lb</mtext><mspace width="0.2em" data-sm="./modules/m58322/index.cnxml:110:192"/><mo data-sm="./modules/m58322/index.cnxml:110:217">×</mo><mspace width="0.2em" data-sm="./modules/m58322/index.cnxml:110:231"/><mfrac data-sm="./modules/m58322/index.cnxml:110:256"><mrow data-sm="./modules/m58322/index.cnxml:110:265"><mn data-sm="./modules/m58322/index.cnxml:110:273">1</mn><mtext data-sm="./modules/m58322/index.cnxml:110:287"> </mtext><mtext data-sm="./modules/m58322/index.cnxml:110:307">kg</mtext></mrow>
+<mrow data-sm="./modules/m58322/index.cnxml:110:337"><mn data-sm="./modules/m58322/index.cnxml:110:345">2.2</mn><mspace width="0.2em" data-sm="./modules/m58322/index.cnxml:110:361"/><mtext data-sm="./modules/m58322/index.cnxml:110:386">lb</mtext></mrow>
+</mfrac>
+<mo stretchy="false" data-sm="./modules/m58322/index.cnxml:110:426">→</mo><mn data-sm="./modules/m58322/index.cnxml:110:457">14.4</mn><mspace width="0.2em" data-sm="./modules/m58322/index.cnxml:110:474"/><mtext data-sm="./modules/m58322/index.cnxml:110:499">kg</mtext></mtd>
+</mtr>
+<mtr data-sm="./modules/m58322/index.cnxml:111:1"><mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:111:8"><mn data-sm="./modules/m58322/index.cnxml:111:34">10</mn><mspace width="0.2em" data-sm="./modules/m58322/index.cnxml:111:49"/><mtext data-sm="./modules/m58322/index.cnxml:111:74">lb</mtext><mo stretchy="false" data-sm="./modules/m58322/index.cnxml:111:95">→</mo><mn data-sm="./modules/m58322/index.cnxml:111:126">4.5</mn><mspace width="0.2em" data-sm="./modules/m58322/index.cnxml:111:142"/><mtext data-sm="./modules/m58322/index.cnxml:111:167">kg</mtext></mtd>
+</mtr>
+<mtr data-sm="./modules/m58322/index.cnxml:112:1"><mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:112:8"><mn data-sm="./modules/m58322/index.cnxml:112:34">235</mn><mspace width="0.2em" data-sm="./modules/m58322/index.cnxml:112:50"/><mfrac data-sm="./modules/m58322/index.cnxml:112:75"><mrow data-sm="./modules/m58322/index.cnxml:112:84"><mtext data-sm="./modules/m58322/index.cnxml:112:92">miles</mtext></mrow>
+<mrow data-sm="./modules/m58322/index.cnxml:112:125"><mtext data-sm="./modules/m58322/index.cnxml:112:133">hour</mtext></mrow>
+</mfrac>
+<mspace width="0.2em" data-sm="./modules/m58322/index.cnxml:112:175"/><mo data-sm="./modules/m58322/index.cnxml:112:200">×</mo><mspace width="0.2em" data-sm="./modules/m58322/index.cnxml:112:214"/><mfrac data-sm="./modules/m58322/index.cnxml:112:239"><mrow data-sm="./modules/m58322/index.cnxml:112:248"><mn data-sm="./modules/m58322/index.cnxml:112:256">1</mn><mspace width="0.2em" data-sm="./modules/m58322/index.cnxml:112:270"/><mtext data-sm="./modules/m58322/index.cnxml:112:295">hour</mtext></mrow>
+<mrow data-sm="./modules/m58322/index.cnxml:112:327"><mn data-sm="./modules/m58322/index.cnxml:112:335">3600</mn><mspace width="0.2em" data-sm="./modules/m58322/index.cnxml:112:352"/><mtext data-sm="./modules/m58322/index.cnxml:112:377">s</mtext></mrow>
+</mfrac>
+<mspace width="0.2em" data-sm="./modules/m58322/index.cnxml:112:416"/><mo data-sm="./modules/m58322/index.cnxml:112:441">×</mo><mspace width="0.2em" data-sm="./modules/m58322/index.cnxml:112:455"/><mfrac data-sm="./modules/m58322/index.cnxml:112:480"><mrow data-sm="./modules/m58322/index.cnxml:112:489"><mn data-sm="./modules/m58322/index.cnxml:112:497">1609</mn><mspace width="0.2em" data-sm="./modules/m58322/index.cnxml:112:514"/><mtext data-sm="./modules/m58322/index.cnxml:112:539">m</mtext></mrow>
+<mrow data-sm="./modules/m58322/index.cnxml:112:568"><mtext data-sm="./modules/m58322/index.cnxml:112:576">mile</mtext></mrow>
+</mfrac>
+<mo data-sm="./modules/m58322/index.cnxml:112:618">=</mo><mn data-sm="./modules/m58322/index.cnxml:112:632">105</mn><mspace width="0.2em" data-sm="./modules/m58322/index.cnxml:112:648"/><mfrac data-sm="./modules/m58322/index.cnxml:112:673"><mtext data-sm="./modules/m58322/index.cnxml:112:682">m</mtext><mtext data-sm="./modules/m58322/index.cnxml:112:702">s</mtext></mfrac>
+</mtd>
+</mtr>
+<mtr data-sm="./modules/m58322/index.cnxml:113:1"><mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:113:8"><mn data-sm="./modules/m58322/index.cnxml:113:34">7</mn><mspace width="0.2em" data-sm="./modules/m58322/index.cnxml:113:48"/><mtext data-sm="./modules/m58322/index.cnxml:113:73">lb</mtext><mo stretchy="false" data-sm="./modules/m58322/index.cnxml:113:94">→</mo><mn data-sm="./modules/m58322/index.cnxml:113:125">3.2</mn><mspace width="0.2em" data-sm="./modules/m58322/index.cnxml:113:141"/><mtext data-sm="./modules/m58322/index.cnxml:113:166">kg</mtext></mtd>
+</mtr>
+<mtr data-sm="./modules/m58322/index.cnxml:114:1"><mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:114:8"><mn data-sm="./modules/m58322/index.cnxml:114:34">172</mn><mspace width="0.2em" data-sm="./modules/m58322/index.cnxml:114:50"/><mfrac data-sm="./modules/m58322/index.cnxml:114:75"><mrow data-sm="./modules/m58322/index.cnxml:114:84"><mtext data-sm="./modules/m58322/index.cnxml:114:92">mile</mtext></mrow>
+<mrow data-sm="./modules/m58322/index.cnxml:114:124"><mtext data-sm="./modules/m58322/index.cnxml:114:132">hour</mtext></mrow>
+</mfrac>
+<mo data-sm="./modules/m58322/index.cnxml:114:174">=</mo><mn data-sm="./modules/m58322/index.cnxml:114:188">77</mn><mspace width="0.2em" data-sm="./modules/m58322/index.cnxml:114:203"/><mfrac data-sm="./modules/m58322/index.cnxml:114:228"><mtext data-sm="./modules/m58322/index.cnxml:114:237">m</mtext><mtext data-sm="./modules/m58322/index.cnxml:114:257">s</mtext></mfrac>
+</mtd>
+</mtr>
+<mtr data-sm="./modules/m58322/index.cnxml:115:1"><mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:115:8"><msub data-sm="./modules/m58322/index.cnxml:115:34"><mi data-sm="./modules/m58322/index.cnxml:115:42">m</mi><mn data-sm="./modules/m58322/index.cnxml:115:56">3</mn></msub><mo data-sm="./modules/m58322/index.cnxml:115:79">=</mo><mn data-sm="./modules/m58322/index.cnxml:115:93">14.4</mn><mspace width="0.2em" data-sm="./modules/m58322/index.cnxml:115:110"/><mtext data-sm="./modules/m58322/index.cnxml:115:135">kg</mtext><mo data-sm="./modules/m58322/index.cnxml:115:156">−</mo><mrow data-sm="./modules/m58322/index.cnxml:115:170"><mo data-sm="./modules/m58322/index.cnxml:115:178">(</mo><mrow data-sm="./modules/m58322/index.cnxml:115:192"><mn data-sm="./modules/m58322/index.cnxml:115:200">4.5</mn><mspace width="0.2em" data-sm="./modules/m58322/index.cnxml:115:216"/><mtext data-sm="./modules/m58322/index.cnxml:115:241">kg</mtext><mo data-sm="./modules/m58322/index.cnxml:115:262">+</mo><mn data-sm="./modules/m58322/index.cnxml:115:276">3.2</mn><mspace width="0.2em" data-sm="./modules/m58322/index.cnxml:115:292"/><mtext data-sm="./modules/m58322/index.cnxml:115:317">kg</mtext></mrow>
+<mo data-sm="./modules/m58322/index.cnxml:115:347">)</mo></mrow>
+<mo data-sm="./modules/m58322/index.cnxml:115:370">=</mo><mn data-sm="./modules/m58322/index.cnxml:115:384">6.7</mn><mspace width="0.2em" data-sm="./modules/m58322/index.cnxml:115:400"/><mtext data-sm="./modules/m58322/index.cnxml:115:425">kg.</mtext></mtd>
+</mtr>
+</mtable>
+</mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1167132240665" data-sm="./modules/m58322/index.cnxml:116:1">Now apply conservation of momentum in each direction.</p>
+<span data-type="media" id="fs-id1167132583541" data-alt="The three pieces of the scuba tank are shown on an x y coordinate system. The medium size piece is on the positive x axis and has momentum p 1 in the plus x direction. The smallest piece is at an angle theta above the positive x axis and has momentum p 2. The largest piece is at an angle phi below the negative x axis and has momentum p 3." data-sm="./modules/m58322/index.cnxml:117:1">
+<img src="89c019197e973d951a1e5e9f603dddc6fb71c38e.jpeg" data-media-type="image/jpeg" alt="The three pieces of the scuba tank are shown on an x y coordinate system. The medium size piece is on the positive x axis and has momentum p 1 in the plus x direction. The smallest piece is at an angle theta above the positive x axis and has momentum p 2. The largest piece is at an angle phi below the negative x axis and has momentum p 3." data-sm="./modules/m58322/index.cnxml:118:1"/>
+</span>
+<p id="fs-id1167132202841" data-sm="./modules/m58322/index.cnxml:120:1"><em data-effect="italics" data-sm="./modules/m58322/index.cnxml:120:31">x</em>-direction:</p>
+<div data-type="equation" id="fs-id1167133797100" class="unnumbered" data-sm="./modules/m58322/index.cnxml:121:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtable data-sm="./modules/m58322/index.cnxml:121:70"><mtr data-sm="./modules/m58322/index.cnxml:121:80"><mtd columnalign="right" data-sm="./modules/m58322/index.cnxml:121:87"><msub data-sm="./modules/m58322/index.cnxml:121:114"><mi data-sm="./modules/m58322/index.cnxml:121:122">p</mi><mrow data-sm="./modules/m58322/index.cnxml:121:136"><mtext data-sm="./modules/m58322/index.cnxml:121:144">f,</mtext><mi data-sm="./modules/m58322/index.cnxml:121:165">x</mi></mrow></msub></mtd>
+<mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:121:205"><mo data-sm="./modules/m58322/index.cnxml:121:231">=</mo></mtd>
+<mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:121:253"><msub data-sm="./modules/m58322/index.cnxml:121:279"><mi data-sm="./modules/m58322/index.cnxml:121:287">p</mi><mrow data-sm="./modules/m58322/index.cnxml:121:301"><mtext data-sm="./modules/m58322/index.cnxml:121:309">0,</mtext><mi data-sm="./modules/m58322/index.cnxml:121:330">x</mi></mrow></msub></mtd>
+</mtr>
+<mtr data-sm="./modules/m58322/index.cnxml:121:378"><mtd columnalign="right" data-sm="./modules/m58322/index.cnxml:121:385"><msub data-sm="./modules/m58322/index.cnxml:121:412"><mi data-sm="./modules/m58322/index.cnxml:121:420">p</mi><mrow data-sm="./modules/m58322/index.cnxml:121:434"><mtext data-sm="./modules/m58322/index.cnxml:121:442">1,</mtext><mi data-sm="./modules/m58322/index.cnxml:121:463">x</mi></mrow></msub><mo data-sm="./modules/m58322/index.cnxml:121:495">+</mo><msub data-sm="./modules/m58322/index.cnxml:121:509"><mi data-sm="./modules/m58322/index.cnxml:121:517">p</mi><mrow data-sm="./modules/m58322/index.cnxml:121:531"><mtext data-sm="./modules/m58322/index.cnxml:121:539">2,</mtext><mi data-sm="./modules/m58322/index.cnxml:121:560">x</mi></mrow></msub><mo data-sm="./modules/m58322/index.cnxml:121:592">+</mo><msub data-sm="./modules/m58322/index.cnxml:121:606"><mi data-sm="./modules/m58322/index.cnxml:121:614">p</mi><mrow data-sm="./modules/m58322/index.cnxml:121:628"><mtext data-sm="./modules/m58322/index.cnxml:121:636">3,</mtext><mi data-sm="./modules/m58322/index.cnxml:121:657">x</mi></mrow></msub></mtd>
+<mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:121:697"><mo data-sm="./modules/m58322/index.cnxml:121:723">=</mo></mtd>
+<mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:121:745"><mn data-sm="./modules/m58322/index.cnxml:121:771">0</mn></mtd>
+</mtr>
+<mtr data-sm="./modules/m58322/index.cnxml:121:801"><mtd columnalign="right" data-sm="./modules/m58322/index.cnxml:121:808"><msub data-sm="./modules/m58322/index.cnxml:121:835"><mi data-sm="./modules/m58322/index.cnxml:121:843">m</mi><mn data-sm="./modules/m58322/index.cnxml:121:857">1</mn></msub><msub data-sm="./modules/m58322/index.cnxml:121:880"><mi data-sm="./modules/m58322/index.cnxml:121:888">v</mi><mrow data-sm="./modules/m58322/index.cnxml:121:902"><mtext data-sm="./modules/m58322/index.cnxml:121:910">1,</mtext><mi data-sm="./modules/m58322/index.cnxml:121:931">x</mi></mrow></msub><mo data-sm="./modules/m58322/index.cnxml:121:963">+</mo><msub data-sm="./modules/m58322/index.cnxml:121:977"><mi data-sm="./modules/m58322/index.cnxml:121:985">m</mi><mn data-sm="./modules/m58322/index.cnxml:121:999">2</mn></msub><msub data-sm="./modules/m58322/index.cnxml:121:1022"><mi data-sm="./modules/m58322/index.cnxml:121:1030">v</mi><mrow data-sm="./modules/m58322/index.cnxml:121:1044"><mtext data-sm="./modules/m58322/index.cnxml:121:1052">2,</mtext><mi data-sm="./modules/m58322/index.cnxml:121:1073">x</mi></mrow></msub><mo data-sm="./modules/m58322/index.cnxml:121:1105">+</mo><msub data-sm="./modules/m58322/index.cnxml:121:1119"><mi data-sm="./modules/m58322/index.cnxml:121:1127">p</mi><mrow data-sm="./modules/m58322/index.cnxml:121:1141"><mtext data-sm="./modules/m58322/index.cnxml:121:1149">3,</mtext><mi data-sm="./modules/m58322/index.cnxml:121:1170">x</mi></mrow></msub></mtd>
+<mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:121:1210"><mo data-sm="./modules/m58322/index.cnxml:121:1236">=</mo></mtd>
+<mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:121:1258"><mn data-sm="./modules/m58322/index.cnxml:121:1284">0</mn></mtd>
+</mtr>
+<mtr data-sm="./modules/m58322/index.cnxml:121:1314"><mtd columnalign="right" data-sm="./modules/m58322/index.cnxml:121:1321"><msub data-sm="./modules/m58322/index.cnxml:121:1348"><mi data-sm="./modules/m58322/index.cnxml:121:1356">p</mi><mrow data-sm="./modules/m58322/index.cnxml:121:1370"><mtext data-sm="./modules/m58322/index.cnxml:121:1378">3,</mtext><mi data-sm="./modules/m58322/index.cnxml:121:1399">x</mi></mrow></msub></mtd>
+<mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:121:1439"><mo data-sm="./modules/m58322/index.cnxml:121:1465">=</mo></mtd>
+<mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:121:1487"><mtext data-sm="./modules/m58322/index.cnxml:121:1513">−</mtext><msub data-sm="./modules/m58322/index.cnxml:121:1533"><mi data-sm="./modules/m58322/index.cnxml:121:1541">m</mi><mn data-sm="./modules/m58322/index.cnxml:121:1555">1</mn></msub><msub data-sm="./modules/m58322/index.cnxml:121:1578"><mi data-sm="./modules/m58322/index.cnxml:121:1586">v</mi><mrow data-sm="./modules/m58322/index.cnxml:121:1600"><mtext data-sm="./modules/m58322/index.cnxml:121:1608">1,</mtext><mi data-sm="./modules/m58322/index.cnxml:121:1629">x</mi></mrow></msub><mo data-sm="./modules/m58322/index.cnxml:121:1661">−</mo><msub data-sm="./modules/m58322/index.cnxml:121:1675"><mi data-sm="./modules/m58322/index.cnxml:121:1683">m</mi><mn data-sm="./modules/m58322/index.cnxml:121:1697">2</mn></msub><msub data-sm="./modules/m58322/index.cnxml:121:1720"><mi data-sm="./modules/m58322/index.cnxml:121:1728">v</mi><mrow data-sm="./modules/m58322/index.cnxml:121:1742"><mtext data-sm="./modules/m58322/index.cnxml:121:1750">2,</mtext><mi data-sm="./modules/m58322/index.cnxml:121:1771">x</mi></mrow></msub></mtd>
+</mtr>
+</mtable>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1167133775365" data-sm="./modules/m58322/index.cnxml:122:1"><em data-effect="italics" data-sm="./modules/m58322/index.cnxml:122:31">y</em>-direction:</p>
+<div data-type="equation" id="fs-id1167133651369" class="unnumbered" data-sm="./modules/m58322/index.cnxml:123:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtable data-sm="./modules/m58322/index.cnxml:123:70"><mtr data-sm="./modules/m58322/index.cnxml:123:80"><mtd columnalign="right" data-sm="./modules/m58322/index.cnxml:123:87"><msub data-sm="./modules/m58322/index.cnxml:123:114"><mi data-sm="./modules/m58322/index.cnxml:123:122">p</mi><mrow data-sm="./modules/m58322/index.cnxml:123:136"><mtext data-sm="./modules/m58322/index.cnxml:123:144">f,</mtext><mi data-sm="./modules/m58322/index.cnxml:123:165">y</mi></mrow></msub></mtd>
+<mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:123:205"><mo data-sm="./modules/m58322/index.cnxml:123:231">=</mo></mtd>
+<mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:123:253"><msub data-sm="./modules/m58322/index.cnxml:123:279"><mi data-sm="./modules/m58322/index.cnxml:123:287">p</mi><mrow data-sm="./modules/m58322/index.cnxml:123:301"><mtext data-sm="./modules/m58322/index.cnxml:123:309">0,</mtext><mi data-sm="./modules/m58322/index.cnxml:123:330">y</mi></mrow></msub></mtd>
+</mtr>
+<mtr data-sm="./modules/m58322/index.cnxml:123:378"><mtd columnalign="right" data-sm="./modules/m58322/index.cnxml:123:385"><msub data-sm="./modules/m58322/index.cnxml:123:412"><mi data-sm="./modules/m58322/index.cnxml:123:420">p</mi><mrow data-sm="./modules/m58322/index.cnxml:123:434"><mtext data-sm="./modules/m58322/index.cnxml:123:442">1,</mtext><mi data-sm="./modules/m58322/index.cnxml:123:463">y</mi></mrow></msub><mo data-sm="./modules/m58322/index.cnxml:123:495">+</mo><msub data-sm="./modules/m58322/index.cnxml:123:509"><mi data-sm="./modules/m58322/index.cnxml:123:517">p</mi><mrow data-sm="./modules/m58322/index.cnxml:123:531"><mtext data-sm="./modules/m58322/index.cnxml:123:539">2,</mtext><mi data-sm="./modules/m58322/index.cnxml:123:560">y</mi></mrow></msub><mo data-sm="./modules/m58322/index.cnxml:123:592">+</mo><msub data-sm="./modules/m58322/index.cnxml:123:606"><mi data-sm="./modules/m58322/index.cnxml:123:614">p</mi><mrow data-sm="./modules/m58322/index.cnxml:123:628"><mtext data-sm="./modules/m58322/index.cnxml:123:636">3,</mtext><mi data-sm="./modules/m58322/index.cnxml:123:657">y</mi></mrow></msub></mtd>
+<mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:123:697"><mo data-sm="./modules/m58322/index.cnxml:123:723">=</mo></mtd>
+<mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:123:745"><mn data-sm="./modules/m58322/index.cnxml:123:771">0</mn></mtd>
+</mtr>
+<mtr data-sm="./modules/m58322/index.cnxml:123:801"><mtd columnalign="right" data-sm="./modules/m58322/index.cnxml:123:808"><msub data-sm="./modules/m58322/index.cnxml:123:835"><mi data-sm="./modules/m58322/index.cnxml:123:843">m</mi><mn data-sm="./modules/m58322/index.cnxml:123:857">1</mn></msub><msub data-sm="./modules/m58322/index.cnxml:123:880"><mi data-sm="./modules/m58322/index.cnxml:123:888">v</mi><mrow data-sm="./modules/m58322/index.cnxml:123:902"><mtext data-sm="./modules/m58322/index.cnxml:123:910">1,</mtext><mi data-sm="./modules/m58322/index.cnxml:123:931">y</mi></mrow></msub><mo data-sm="./modules/m58322/index.cnxml:123:963">+</mo><msub data-sm="./modules/m58322/index.cnxml:123:977"><mi data-sm="./modules/m58322/index.cnxml:123:985">m</mi><mn data-sm="./modules/m58322/index.cnxml:123:999">2</mn></msub><msub data-sm="./modules/m58322/index.cnxml:123:1022"><mi data-sm="./modules/m58322/index.cnxml:123:1030">v</mi><mrow data-sm="./modules/m58322/index.cnxml:123:1044"><mtext data-sm="./modules/m58322/index.cnxml:123:1052">2,</mtext><mi data-sm="./modules/m58322/index.cnxml:123:1073">y</mi></mrow></msub><mo data-sm="./modules/m58322/index.cnxml:123:1105">+</mo><msub data-sm="./modules/m58322/index.cnxml:123:1119"><mi data-sm="./modules/m58322/index.cnxml:123:1127">p</mi><mrow data-sm="./modules/m58322/index.cnxml:123:1141"><mtext data-sm="./modules/m58322/index.cnxml:123:1149">3,</mtext><mi data-sm="./modules/m58322/index.cnxml:123:1170">y</mi></mrow></msub></mtd>
+<mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:123:1210"><mo data-sm="./modules/m58322/index.cnxml:123:1236">=</mo></mtd>
+<mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:123:1258"><mn data-sm="./modules/m58322/index.cnxml:123:1284">0</mn></mtd>
+</mtr>
+<mtr data-sm="./modules/m58322/index.cnxml:123:1314"><mtd columnalign="right" data-sm="./modules/m58322/index.cnxml:123:1321"><msub data-sm="./modules/m58322/index.cnxml:123:1348"><mi data-sm="./modules/m58322/index.cnxml:123:1356">p</mi><mrow data-sm="./modules/m58322/index.cnxml:123:1370"><mtext data-sm="./modules/m58322/index.cnxml:123:1378">3,</mtext><mi data-sm="./modules/m58322/index.cnxml:123:1399">y</mi></mrow></msub></mtd>
+<mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:123:1439"><mo data-sm="./modules/m58322/index.cnxml:123:1465">=</mo></mtd>
+<mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:123:1487"><mtext data-sm="./modules/m58322/index.cnxml:123:1513">−</mtext><msub data-sm="./modules/m58322/index.cnxml:123:1533"><mi data-sm="./modules/m58322/index.cnxml:123:1541">m</mi><mn data-sm="./modules/m58322/index.cnxml:123:1555">1</mn></msub><msub data-sm="./modules/m58322/index.cnxml:123:1578"><mi data-sm="./modules/m58322/index.cnxml:123:1586">v</mi><mrow data-sm="./modules/m58322/index.cnxml:123:1600"><mtext data-sm="./modules/m58322/index.cnxml:123:1608">1,</mtext><mi data-sm="./modules/m58322/index.cnxml:123:1629">y</mi></mrow></msub><mo data-sm="./modules/m58322/index.cnxml:123:1661">−</mo><msub data-sm="./modules/m58322/index.cnxml:123:1675"><mi data-sm="./modules/m58322/index.cnxml:123:1683">m</mi><mn data-sm="./modules/m58322/index.cnxml:123:1697">2</mn></msub><msub data-sm="./modules/m58322/index.cnxml:123:1720"><mi data-sm="./modules/m58322/index.cnxml:123:1728">v</mi><mrow data-sm="./modules/m58322/index.cnxml:123:1742"><mtext data-sm="./modules/m58322/index.cnxml:123:1750">2,</mtext><mi data-sm="./modules/m58322/index.cnxml:123:1771">y</mi></mrow></msub></mtd>
+</mtr>
+</mtable>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1167133325102" data-sm="./modules/m58322/index.cnxml:124:1">From our chosen coordinate system, we write the <em data-effect="italics" data-sm="./modules/m58322/index.cnxml:124:79">x</em>-components as</p>
+<div data-type="equation" id="fs-id1167132277693" class="unnumbered" data-sm="./modules/m58322/index.cnxml:125:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtable data-sm="./modules/m58322/index.cnxml:125:70"><mtr data-sm="./modules/m58322/index.cnxml:125:80"><mtd columnalign="right" data-sm="./modules/m58322/index.cnxml:125:87"><msub data-sm="./modules/m58322/index.cnxml:125:114"><mi data-sm="./modules/m58322/index.cnxml:125:122">p</mi><mrow data-sm="./modules/m58322/index.cnxml:125:136"><mn data-sm="./modules/m58322/index.cnxml:125:144">3</mn><mo data-sm="./modules/m58322/index.cnxml:125:158">,</mo><mi data-sm="./modules/m58322/index.cnxml:125:172">x</mi></mrow></msub></mtd>
+<mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:125:212"><mo data-sm="./modules/m58322/index.cnxml:125:238">=</mo><mtext data-sm="./modules/m58322/index.cnxml:125:252">−</mtext><msub data-sm="./modules/m58322/index.cnxml:125:272"><mi data-sm="./modules/m58322/index.cnxml:125:280">m</mi><mn data-sm="./modules/m58322/index.cnxml:125:294">1</mn></msub><msub data-sm="./modules/m58322/index.cnxml:125:317"><mi data-sm="./modules/m58322/index.cnxml:125:325">v</mi><mn data-sm="./modules/m58322/index.cnxml:125:339">1</mn></msub><mo data-sm="./modules/m58322/index.cnxml:125:362">−</mo><msub data-sm="./modules/m58322/index.cnxml:125:376"><mi data-sm="./modules/m58322/index.cnxml:125:384">m</mi><mn data-sm="./modules/m58322/index.cnxml:125:398">2</mn></msub><msub data-sm="./modules/m58322/index.cnxml:125:421"><mi data-sm="./modules/m58322/index.cnxml:125:429">v</mi><mn data-sm="./modules/m58322/index.cnxml:125:443">2</mn></msub><mtext data-sm="./modules/m58322/index.cnxml:125:466">cos</mtext><mi data-sm="./modules/m58322/index.cnxml:125:488">θ</mi></mtd>
+</mtr>
+<mtr data-sm="./modules/m58322/index.cnxml:125:518"><mtd data-sm="./modules/m58322/index.cnxml:125:525"/>
+<mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:125:533"><mo data-sm="./modules/m58322/index.cnxml:125:559">=</mo><mtext data-sm="./modules/m58322/index.cnxml:125:573">−</mtext><mrow data-sm="./modules/m58322/index.cnxml:125:593"><mo data-sm="./modules/m58322/index.cnxml:125:601">(</mo><mrow data-sm="./modules/m58322/index.cnxml:125:615"><mn data-sm="./modules/m58322/index.cnxml:125:623">4.5</mn><mspace width="0.2em" data-sm="./modules/m58322/index.cnxml:125:639"/><mtext data-sm="./modules/m58322/index.cnxml:125:664">kg</mtext></mrow>
+<mo data-sm="./modules/m58322/index.cnxml:125:694">)</mo></mrow>
+<mrow data-sm="./modules/m58322/index.cnxml:125:717"><mo data-sm="./modules/m58322/index.cnxml:125:725">(</mo><mrow data-sm="./modules/m58322/index.cnxml:125:739"><mn data-sm="./modules/m58322/index.cnxml:125:747">105</mn><mspace width="0.2em" data-sm="./modules/m58322/index.cnxml:125:763"/><mfrac data-sm="./modules/m58322/index.cnxml:125:788"><mtext data-sm="./modules/m58322/index.cnxml:125:797">m</mtext><mtext data-sm="./modules/m58322/index.cnxml:125:817">s</mtext></mfrac>
+</mrow>
+<mo data-sm="./modules/m58322/index.cnxml:125:856">)</mo></mrow>
+<mo data-sm="./modules/m58322/index.cnxml:125:879">−</mo><mrow data-sm="./modules/m58322/index.cnxml:125:893"><mo data-sm="./modules/m58322/index.cnxml:125:901">(</mo><mrow data-sm="./modules/m58322/index.cnxml:125:915"><mn data-sm="./modules/m58322/index.cnxml:125:923">3.2</mn><mspace width="0.2em" data-sm="./modules/m58322/index.cnxml:125:939"/><mtext data-sm="./modules/m58322/index.cnxml:125:964">kg</mtext></mrow>
+<mo data-sm="./modules/m58322/index.cnxml:125:994">)</mo></mrow>
+<mrow data-sm="./modules/m58322/index.cnxml:125:1017"><mo data-sm="./modules/m58322/index.cnxml:125:1025">(</mo><mrow data-sm="./modules/m58322/index.cnxml:125:1039"><mn data-sm="./modules/m58322/index.cnxml:125:1047">77</mn><mspace width="0.2em" data-sm="./modules/m58322/index.cnxml:125:1062"/><mfrac data-sm="./modules/m58322/index.cnxml:125:1087"><mtext data-sm="./modules/m58322/index.cnxml:125:1096">m</mtext><mtext data-sm="./modules/m58322/index.cnxml:125:1116">s</mtext></mfrac>
+</mrow>
+<mo data-sm="./modules/m58322/index.cnxml:125:1155">)</mo></mrow>
+<mtext data-sm="./modules/m58322/index.cnxml:125:1178">cos</mtext><mrow data-sm="./modules/m58322/index.cnxml:125:1200"><mo data-sm="./modules/m58322/index.cnxml:125:1208">(</mo><mrow data-sm="./modules/m58322/index.cnxml:125:1222"><mn data-sm="./modules/m58322/index.cnxml:125:1230">19</mn><mtext data-sm="./modules/m58322/index.cnxml:125:1245">°</mtext></mrow>
+<mo data-sm="./modules/m58322/index.cnxml:125:1274">)</mo></mrow>
+</mtd>
+</mtr>
+<mtr data-sm="./modules/m58322/index.cnxml:125:1313"><mtd data-sm="./modules/m58322/index.cnxml:125:1320"/>
+<mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:125:1328"><mo data-sm="./modules/m58322/index.cnxml:125:1354">=</mo><mn data-sm="./modules/m58322/index.cnxml:125:1368">−705</mn><mfrac data-sm="./modules/m58322/index.cnxml:125:1385"><mrow data-sm="./modules/m58322/index.cnxml:125:1394"><mtext data-sm="./modules/m58322/index.cnxml:125:1402">kg</mtext><mo data-sm="./modules/m58322/index.cnxml:125:1423">·</mo><mtext data-sm="./modules/m58322/index.cnxml:125:1437">m</mtext></mrow>
+<mtext data-sm="./modules/m58322/index.cnxml:125:1466">s</mtext></mfrac>
+<mo data-sm="./modules/m58322/index.cnxml:125:1496">.</mo></mtd>
+</mtr>
+</mtable>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1167133711894" data-sm="./modules/m58322/index.cnxml:125:1557">For the <em data-effect="italics" data-sm="./modules/m58322/index.cnxml:125:1595">y</em>-direction, we have</p>
+<div data-type="equation" id="fs-id1167133550320" class="unnumbered" data-sm="./modules/m58322/index.cnxml:126:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtable data-sm="./modules/m58322/index.cnxml:126:70"><mtr data-sm="./modules/m58322/index.cnxml:126:80"><mtd columnalign="right" data-sm="./modules/m58322/index.cnxml:126:87"><msub data-sm="./modules/m58322/index.cnxml:126:114"><mi data-sm="./modules/m58322/index.cnxml:126:122">p</mi><mrow data-sm="./modules/m58322/index.cnxml:126:136"><mn data-sm="./modules/m58322/index.cnxml:126:144">3</mn><mi data-sm="./modules/m58322/index.cnxml:126:158">y</mi></mrow></msub></mtd>
+<mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:126:198"><mo data-sm="./modules/m58322/index.cnxml:126:224">=</mo><mn data-sm="./modules/m58322/index.cnxml:126:238">0</mn><mo data-sm="./modules/m58322/index.cnxml:126:252">−</mo><msub data-sm="./modules/m58322/index.cnxml:126:266"><mi data-sm="./modules/m58322/index.cnxml:126:274">m</mi><mn data-sm="./modules/m58322/index.cnxml:126:288">2</mn></msub><msub data-sm="./modules/m58322/index.cnxml:126:311"><mi data-sm="./modules/m58322/index.cnxml:126:319">v</mi><mn data-sm="./modules/m58322/index.cnxml:126:333">2</mn></msub><mtext data-sm="./modules/m58322/index.cnxml:126:356">sin</mtext><mi data-sm="./modules/m58322/index.cnxml:126:378">θ</mi></mtd>
+</mtr>
+<mtr data-sm="./modules/m58322/index.cnxml:126:408"><mtd data-sm="./modules/m58322/index.cnxml:126:415"/>
+<mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:126:423"><mo data-sm="./modules/m58322/index.cnxml:126:449">=</mo><mtext data-sm="./modules/m58322/index.cnxml:126:463">−</mtext><mrow data-sm="./modules/m58322/index.cnxml:126:483"><mo data-sm="./modules/m58322/index.cnxml:126:491">(</mo><mrow data-sm="./modules/m58322/index.cnxml:126:505"><mn data-sm="./modules/m58322/index.cnxml:126:513">3.2</mn><mspace width="0.2em" data-sm="./modules/m58322/index.cnxml:126:529"/><mtext data-sm="./modules/m58322/index.cnxml:126:554">kg</mtext></mrow>
+<mo data-sm="./modules/m58322/index.cnxml:126:584">)</mo></mrow>
+<mrow data-sm="./modules/m58322/index.cnxml:126:607"><mo data-sm="./modules/m58322/index.cnxml:126:615">(</mo><mrow data-sm="./modules/m58322/index.cnxml:126:629"><mn data-sm="./modules/m58322/index.cnxml:126:637">77</mn><mspace width="0.2em" data-sm="./modules/m58322/index.cnxml:126:652"/><mfrac data-sm="./modules/m58322/index.cnxml:126:677"><mtext data-sm="./modules/m58322/index.cnxml:126:686">m</mtext><mtext data-sm="./modules/m58322/index.cnxml:126:706">s</mtext></mfrac>
+</mrow>
+<mo data-sm="./modules/m58322/index.cnxml:126:745">)</mo></mrow>
+<mtext data-sm="./modules/m58322/index.cnxml:126:768">sin</mtext><mrow data-sm="./modules/m58322/index.cnxml:126:790"><mo data-sm="./modules/m58322/index.cnxml:126:798">(</mo><mrow data-sm="./modules/m58322/index.cnxml:126:812"><mn data-sm="./modules/m58322/index.cnxml:126:820">19</mn><mtext data-sm="./modules/m58322/index.cnxml:126:835">°</mtext></mrow>
+<mo data-sm="./modules/m58322/index.cnxml:126:864">)</mo></mrow>
+</mtd>
+</mtr>
+<mtr data-sm="./modules/m58322/index.cnxml:126:903"><mtd data-sm="./modules/m58322/index.cnxml:126:910"/>
+<mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:126:918"><mo data-sm="./modules/m58322/index.cnxml:126:944">=</mo><mn data-sm="./modules/m58322/index.cnxml:126:958">−80.2</mn><mspace width="0.2em" data-sm="./modules/m58322/index.cnxml:126:976"/><mfrac data-sm="./modules/m58322/index.cnxml:126:1001"><mrow data-sm="./modules/m58322/index.cnxml:126:1010"><mtext data-sm="./modules/m58322/index.cnxml:126:1018">kg</mtext><mo data-sm="./modules/m58322/index.cnxml:126:1039">·</mo><mtext data-sm="./modules/m58322/index.cnxml:126:1053">m</mtext></mrow>
+<mtext data-sm="./modules/m58322/index.cnxml:126:1082">s</mtext></mfrac>
+<mo data-sm="./modules/m58322/index.cnxml:126:1112">.</mo></mtd>
+</mtr>
+</mtable>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1167132275472" data-sm="./modules/m58322/index.cnxml:126:1173">This gives the magnitude of <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58322/index.cnxml:126:1239"><msub data-sm="./modules/m58322/index.cnxml:126:1247"><mi data-sm="./modules/m58322/index.cnxml:126:1255">p</mi><mn data-sm="./modules/m58322/index.cnxml:126:1269">3</mn></msub></mrow>
+</mrow>
+</semantics>
+</math></span>:</p>
+<div data-type="equation" id="fs-id1167133334749" class="unnumbered" data-sm="./modules/m58322/index.cnxml:127:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtable data-sm="./modules/m58322/index.cnxml:127:70"><mtr data-sm="./modules/m58322/index.cnxml:127:80"><mtd columnalign="right" data-sm="./modules/m58322/index.cnxml:127:87"><msub data-sm="./modules/m58322/index.cnxml:127:114"><mi data-sm="./modules/m58322/index.cnxml:127:122">p</mi><mn data-sm="./modules/m58322/index.cnxml:127:136">3</mn></msub></mtd>
+<mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:127:167"><mo data-sm="./modules/m58322/index.cnxml:127:193">=</mo><msqrt data-sm="./modules/m58322/index.cnxml:127:207"><mrow data-sm="./modules/m58322/index.cnxml:127:216"><msubsup data-sm="./modules/m58322/index.cnxml:127:224"><mi data-sm="./modules/m58322/index.cnxml:127:235">p</mi><mrow data-sm="./modules/m58322/index.cnxml:127:249"><mtext data-sm="./modules/m58322/index.cnxml:127:257">3,</mtext><mi data-sm="./modules/m58322/index.cnxml:127:278">x</mi></mrow><mn data-sm="./modules/m58322/index.cnxml:127:301">2</mn></msubsup><mo data-sm="./modules/m58322/index.cnxml:127:327">+</mo><msubsup data-sm="./modules/m58322/index.cnxml:127:341"><mi data-sm="./modules/m58322/index.cnxml:127:352">p</mi><mrow data-sm="./modules/m58322/index.cnxml:127:366"><mtext data-sm="./modules/m58322/index.cnxml:127:374">3,</mtext><mi data-sm="./modules/m58322/index.cnxml:127:395">y</mi></mrow><mn data-sm="./modules/m58322/index.cnxml:127:418">2</mn></msubsup></mrow>
+</msqrt>
+</mtd>
+</mtr>
+<mtr data-sm="./modules/m58322/index.cnxml:127:479"><mtd data-sm="./modules/m58322/index.cnxml:127:486"/>
+<mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:127:494"><mo data-sm="./modules/m58322/index.cnxml:127:520">=</mo><msqrt data-sm="./modules/m58322/index.cnxml:127:534"><mrow data-sm="./modules/m58322/index.cnxml:127:543"><msup data-sm="./modules/m58322/index.cnxml:127:551"><mrow data-sm="./modules/m58322/index.cnxml:127:559"><mrow data-sm="./modules/m58322/index.cnxml:127:567"><mo data-sm="./modules/m58322/index.cnxml:127:575">(</mo><mrow data-sm="./modules/m58322/index.cnxml:127:589"><mn data-sm="./modules/m58322/index.cnxml:127:597">−705</mn><mspace width="0.2em" data-sm="./modules/m58322/index.cnxml:127:614"/><mfrac data-sm="./modules/m58322/index.cnxml:127:639"><mrow data-sm="./modules/m58322/index.cnxml:127:648"><mtext data-sm="./modules/m58322/index.cnxml:127:656">kg</mtext><mo data-sm="./modules/m58322/index.cnxml:127:677">·</mo><mtext data-sm="./modules/m58322/index.cnxml:127:691">m</mtext></mrow>
+<mtext data-sm="./modules/m58322/index.cnxml:127:720">s</mtext></mfrac>
+</mrow>
+<mo data-sm="./modules/m58322/index.cnxml:127:759">)</mo></mrow>
+</mrow><mn data-sm="./modules/m58322/index.cnxml:127:791">2</mn></msup><mo data-sm="./modules/m58322/index.cnxml:127:814">+</mo><mrow data-sm="./modules/m58322/index.cnxml:127:828"><mo data-sm="./modules/m58322/index.cnxml:127:836">(</mo><mrow data-sm="./modules/m58322/index.cnxml:127:850"><mn data-sm="./modules/m58322/index.cnxml:127:858">−80.2</mn><mspace width="0.2em" data-sm="./modules/m58322/index.cnxml:127:876"/><mfrac data-sm="./modules/m58322/index.cnxml:127:901"><mrow data-sm="./modules/m58322/index.cnxml:127:910"><mtext data-sm="./modules/m58322/index.cnxml:127:918">kg</mtext><mo data-sm="./modules/m58322/index.cnxml:127:939">·</mo><mtext data-sm="./modules/m58322/index.cnxml:127:953">m</mtext></mrow>
+<mtext data-sm="./modules/m58322/index.cnxml:127:982">s</mtext></mfrac>
+</mrow>
+<mo data-sm="./modules/m58322/index.cnxml:127:1021">)</mo></mrow>
+</mrow>
+</msqrt>
+</mtd>
+</mtr>
+<mtr data-sm="./modules/m58322/index.cnxml:127:1079"><mtd data-sm="./modules/m58322/index.cnxml:127:1086"/>
+<mtd columnalign="left" data-sm="./modules/m58322/index.cnxml:127:1094"><mo data-sm="./modules/m58322/index.cnxml:127:1120">=</mo><mn data-sm="./modules/m58322/index.cnxml:127:1134">710</mn><mspace width="0.2em" data-sm="./modules/m58322/index.cnxml:127:1150"/><mfrac data-sm="./modules/m58322/index.cnxml:127:1175"><mrow data-sm="./modules/m58322/index.cnxml:127:1184"><mtext data-sm="./modules/m58322/index.cnxml:127:1192">kg</mtext><mo data-sm="./modules/m58322/index.cnxml:127:1213">·</mo><mtext data-sm="./modules/m58322/index.cnxml:127:1227">m</mtext></mrow>
+<mtext data-sm="./modules/m58322/index.cnxml:127:1256">s</mtext></mfrac>
+<mo data-sm="./modules/m58322/index.cnxml:127:1286">.</mo></mtd>
+</mtr>
+</mtable>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1167132332288" data-sm="./modules/m58322/index.cnxml:127:1347">The velocity of the third piece is therefore</p>
+<div data-type="equation" id="fs-id1167133871993" class="unnumbered" data-sm="./modules/m58322/index.cnxml:128:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58322/index.cnxml:128:70"><msub data-sm="./modules/m58322/index.cnxml:128:78"><mi data-sm="./modules/m58322/index.cnxml:128:86">v</mi><mn data-sm="./modules/m58322/index.cnxml:128:100">3</mn></msub><mo data-sm="./modules/m58322/index.cnxml:128:123">=</mo><mfrac data-sm="./modules/m58322/index.cnxml:128:137"><mrow data-sm="./modules/m58322/index.cnxml:128:146"><msub data-sm="./modules/m58322/index.cnxml:128:154"><mi data-sm="./modules/m58322/index.cnxml:128:162">p</mi><mn data-sm="./modules/m58322/index.cnxml:128:176">3</mn></msub></mrow>
+<mrow data-sm="./modules/m58322/index.cnxml:128:208"><msub data-sm="./modules/m58322/index.cnxml:128:216"><mi data-sm="./modules/m58322/index.cnxml:128:224">m</mi><mn data-sm="./modules/m58322/index.cnxml:128:238">3</mn></msub></mrow>
+</mfrac>
+<mo data-sm="./modules/m58322/index.cnxml:128:280">=</mo><mfrac data-sm="./modules/m58322/index.cnxml:128:294"><mrow data-sm="./modules/m58322/index.cnxml:128:303"><mn data-sm="./modules/m58322/index.cnxml:128:311">710</mn><mspace width="0.2em" data-sm="./modules/m58322/index.cnxml:128:327"/><mfrac data-sm="./modules/m58322/index.cnxml:128:352"><mrow data-sm="./modules/m58322/index.cnxml:128:361"><mtext data-sm="./modules/m58322/index.cnxml:128:369">kg</mtext><mo data-sm="./modules/m58322/index.cnxml:128:390">·</mo><mtext data-sm="./modules/m58322/index.cnxml:128:404">m</mtext></mrow>
+<mtext data-sm="./modules/m58322/index.cnxml:128:433">s</mtext></mfrac>
+</mrow>
+<mrow data-sm="./modules/m58322/index.cnxml:128:472"><mn data-sm="./modules/m58322/index.cnxml:128:480">6.7</mn><mspace width="0.2em" data-sm="./modules/m58322/index.cnxml:128:496"/><mtext data-sm="./modules/m58322/index.cnxml:128:521">kg</mtext></mrow>
+</mfrac>
+<mo data-sm="./modules/m58322/index.cnxml:128:561">=</mo><mn data-sm="./modules/m58322/index.cnxml:128:575">106</mn><mspace width="0.2em" data-sm="./modules/m58322/index.cnxml:128:591"/><mfrac data-sm="./modules/m58322/index.cnxml:128:616"><mtext data-sm="./modules/m58322/index.cnxml:128:625">m</mtext><mtext data-sm="./modules/m58322/index.cnxml:128:645">s</mtext></mfrac>
+<mo data-sm="./modules/m58322/index.cnxml:128:675">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1167133571752" data-sm="./modules/m58322/index.cnxml:128:718">The direction of its velocity vector is the same as the direction of its momentum vector:</p>
+<div data-type="equation" id="fs-id1167133317808" class="unnumbered" data-sm="./modules/m58322/index.cnxml:129:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58322/index.cnxml:129:70"><mi data-sm="./modules/m58322/index.cnxml:129:78">ϕ</mi><mo data-sm="./modules/m58322/index.cnxml:129:92">=</mo><msup data-sm="./modules/m58322/index.cnxml:129:106"><mrow data-sm="./modules/m58322/index.cnxml:129:114"><mtext data-sm="./modules/m58322/index.cnxml:129:122">tan</mtext></mrow><mrow data-sm="./modules/m58322/index.cnxml:129:153"><mn data-sm="./modules/m58322/index.cnxml:129:161">−1</mn></mrow></msup><mrow data-sm="./modules/m58322/index.cnxml:129:194"><mo data-sm="./modules/m58322/index.cnxml:129:202">(</mo><mrow data-sm="./modules/m58322/index.cnxml:129:216"><mfrac data-sm="./modules/m58322/index.cnxml:129:224"><mrow data-sm="./modules/m58322/index.cnxml:129:233"><msub data-sm="./modules/m58322/index.cnxml:129:241"><mi data-sm="./modules/m58322/index.cnxml:129:249">p</mi><mrow data-sm="./modules/m58322/index.cnxml:129:263"><mtext data-sm="./modules/m58322/index.cnxml:129:271">3,</mtext><mi data-sm="./modules/m58322/index.cnxml:129:292">y</mi></mrow></msub></mrow>
+<mrow data-sm="./modules/m58322/index.cnxml:129:333"><msub data-sm="./modules/m58322/index.cnxml:129:341"><mi data-sm="./modules/m58322/index.cnxml:129:349">p</mi><mrow data-sm="./modules/m58322/index.cnxml:129:363"><mtext data-sm="./modules/m58322/index.cnxml:129:371">3,</mtext><mi data-sm="./modules/m58322/index.cnxml:129:392">x</mi></mrow></msub></mrow>
+</mfrac>
+</mrow>
+<mo data-sm="./modules/m58322/index.cnxml:129:452">)</mo></mrow>
+<mo data-sm="./modules/m58322/index.cnxml:129:475">=</mo><msup data-sm="./modules/m58322/index.cnxml:129:489"><mrow data-sm="./modules/m58322/index.cnxml:129:497"><mtext data-sm="./modules/m58322/index.cnxml:129:505">tan</mtext></mrow><mrow data-sm="./modules/m58322/index.cnxml:129:536"><mn data-sm="./modules/m58322/index.cnxml:129:544">−1</mn></mrow></msup><mrow data-sm="./modules/m58322/index.cnxml:129:577"><mo data-sm="./modules/m58322/index.cnxml:129:585">(</mo><mrow data-sm="./modules/m58322/index.cnxml:129:599"><mfrac data-sm="./modules/m58322/index.cnxml:129:607"><mrow data-sm="./modules/m58322/index.cnxml:129:616"><mn data-sm="./modules/m58322/index.cnxml:129:624">80.2</mn><mspace width="0.2em" data-sm="./modules/m58322/index.cnxml:129:641"/><mfrac data-sm="./modules/m58322/index.cnxml:129:666"><mrow data-sm="./modules/m58322/index.cnxml:129:675"><mtext data-sm="./modules/m58322/index.cnxml:129:683">kg</mtext><mo data-sm="./modules/m58322/index.cnxml:129:704">·</mo><mtext data-sm="./modules/m58322/index.cnxml:129:718">m</mtext></mrow>
+<mtext data-sm="./modules/m58322/index.cnxml:129:747">s</mtext></mfrac>
+</mrow>
+<mrow data-sm="./modules/m58322/index.cnxml:129:786"><mn data-sm="./modules/m58322/index.cnxml:129:794">705</mn><mspace width="0.2em" data-sm="./modules/m58322/index.cnxml:129:810"/><mfrac data-sm="./modules/m58322/index.cnxml:129:835"><mrow data-sm="./modules/m58322/index.cnxml:129:844"><mtext data-sm="./modules/m58322/index.cnxml:129:852">kg</mtext><mo data-sm="./modules/m58322/index.cnxml:129:873">·</mo><mtext data-sm="./modules/m58322/index.cnxml:129:887">m</mtext></mrow>
+<mtext data-sm="./modules/m58322/index.cnxml:129:916">s</mtext></mfrac>
+</mrow>
+</mfrac>
+</mrow>
+<mo data-sm="./modules/m58322/index.cnxml:129:974">)</mo></mrow>
+<mo data-sm="./modules/m58322/index.cnxml:129:997">=</mo><mn data-sm="./modules/m58322/index.cnxml:129:1011">6.49</mn><mtext data-sm="./modules/m58322/index.cnxml:129:1028">°</mtext><mo data-sm="./modules/m58322/index.cnxml:129:1048">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1167132499632" data-sm="./modules/m58322/index.cnxml:129:1091">Because <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mi data-sm="./modules/m58322/index.cnxml:129:1137">ϕ</mi></mrow>
+</semantics>
+</math></span> is below the <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58322/index.cnxml:129:1182"><mtext data-sm="./modules/m58322/index.cnxml:129:1190">−</mtext><mi data-sm="./modules/m58322/index.cnxml:129:1210">x</mi></mrow>
+</mrow>
+</semantics>
+</math></span>-axis, the actual angle is <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58322/index.cnxml:129:1277"><mn data-sm="./modules/m58322/index.cnxml:129:1285">183.5</mn><mtext data-sm="./modules/m58322/index.cnxml:129:1303">°</mtext></mrow>
+</mrow>
+</semantics>
+</math></span> from the +<em data-effect="italics" data-sm="./modules/m58322/index.cnxml:129:1352">x</em>-direction.</p>
+<p id="fs-id1167132423196" data-sm="./modules/m58322/index.cnxml:130:1"></p>
+<h4 data-type="title" data-sm="./modules/m58322/index.cnxml:130:31">Significance</h4>
+The enormous velocities here are typical; an exploding tank of any compressed gas can easily punch through the wall of a house and cause significant injury, or death. Fortunately, such explosions are extremely rare, on a percentage basis.
+</div>
+</div>
+
+<div data-type="note" id="fs-id1167133356778" class="check-understanding" data-sm="./modules/m58322/index.cnxml:133:1"><h3 class="os-title">
+  <span class="os-title-label">Check Your Understanding </span>
+  <span class="os-number">9.10</span>
+  <span class="os-divider"> </span>
+</h3>
+<div class="os-note-body">
+<div data-type="exercise" id="fs-id1167132239513" data-sm="./modules/m58322/index.cnxml:134:1" class="unnumbered os-hasSolution">
+<div data-type="problem" id="fs-id1167133781303" data-sm="./modules/m58322/index.cnxml:135:1"><div class="os-problem-container">
+<p id="fs-id1167133794935" data-sm="./modules/m58322/index.cnxml:136:1"> Notice that the mass of the air in the tank was neglected in the analysis and solution. How would the solution method changed if the air was included? How large a difference do you think it would make in the final answer?</p>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+ 
+ 
+  </div>
+
+<a href="university-physics-volume-1.toc.html">Back to table of contents</a>
+</body>
+</html>
+<!-- # sourceMappingURL=d50f6e32-0fda-46ef-a362-9bd36ca7c97d-at-aa8a43e-colon-f4ea9c20-025c-4d07-b633-c62c6251ee65.html.map -->

@@ -1,0 +1,2519 @@
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+  <head>
+    <meta name="dtb:uid" content="dummy-openstax.org-id.university-physics-volume-2"/>
+    <meta name="dtb:depth" content="4"/>
+    <meta name="dtb:generator" content="OpenStax EPUB Maker 2022-08"/>
+    <meta name="dtb:pagecount" content="467"/>
+    <meta name="dtb:maxPageNumber" content="467"/>
+  </head>
+  <docTitle>
+    <text>University Physics Volume 2
+    </text>
+  </docTitle>
+  <navMap>
+    <navPoint id="idm1">
+      <navLabel>
+        <text>
+    Preface
+  
+        </text>
+      </navLabel>
+      <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-1a87e4af-d3b2-4c23-981c-d33ca2fed9b2.xhtml"/>
+    </navPoint>
+    <navPoint id="idm2">
+      <navLabel>
+        <text>Unit 1
+     
+    Thermodynamics
+        </text>
+      </navLabel>
+      <content src="7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-0d2ac2b4-a592-4948-a787-06f448b38c35.xhtml"/>
+      <navPoint id="idm3">
+        <navLabel>
+          <text>Chapter 1
+     
+    Temperature and Heat
+          </text>
+        </navLabel>
+        <content src="7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-0d2ac2b4-a592-4948-a787-06f448b38c35.xhtml"/>
+        <navPoint id="idm4">
+          <navLabel>
+            <text>
+    Introduction
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-0d2ac2b4-a592-4948-a787-06f448b38c35.xhtml"/>
+        </navPoint>
+        <navPoint id="idm5">
+          <navLabel>
+            <text>
+    1.1 Temperature and Thermal Equilibrium
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-8396da15-5fa4-4d0d-8d7f-4fc029531a7d.xhtml"/>
+        </navPoint>
+        <navPoint id="idm6">
+          <navLabel>
+            <text>
+    1.2 Thermometers and Temperature Scales
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-1625a375-3f7c-4f9d-8ec1-766638e976bc.xhtml"/>
+        </navPoint>
+        <navPoint id="idm7">
+          <navLabel>
+            <text>
+    1.3 Thermal Expansion
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-7ac4a4e2-6b21-4528-af4f-875cae3378c9.xhtml"/>
+        </navPoint>
+        <navPoint id="idm8">
+          <navLabel>
+            <text>
+    1.4 Heat Transfer, Specific Heat, and Calorimetry
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-1256af4f-33ff-4695-b36f-9624b2fd7247.xhtml"/>
+        </navPoint>
+        <navPoint id="idm9">
+          <navLabel>
+            <text>
+    1.5 Phase Changes
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-8217d6c4-5133-480f-9463-5591d82cb0a5.xhtml"/>
+        </navPoint>
+        <navPoint id="idm10">
+          <navLabel>
+            <text>
+    1.6 Mechanisms of Heat Transfer
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-e848904f-17a1-4772-b780-97dcdb2799e4.xhtml"/>
+        </navPoint>
+        <navPoint id="idm11">
+          <navLabel>
+            <text>Chapter Review
+            </text>
+          </navLabel>
+          <content src="7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-d07b317f-337e-5c40-9dcd-36041a6ba021.xhtml"/>
+          <navPoint id="idm12">
+            <navLabel>
+              <text>
+    Key Terms
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-d07b317f-337e-5c40-9dcd-36041a6ba021.xhtml"/>
+          </navPoint>
+          <navPoint id="idm13">
+            <navLabel>
+              <text>
+    Key Equations
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-b4c8275b-0fd3-5e3b-9885-ac3ddaf8f243.xhtml"/>
+          </navPoint>
+          <navPoint id="idm14">
+            <navLabel>
+              <text>
+    Summary
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-9b9bafe8-9d4f-5e25-a581-6718a2e5938a.xhtml"/>
+          </navPoint>
+          <navPoint id="idm15">
+            <navLabel>
+              <text>
+    Conceptual Questions
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-f3a2bcdf-f5db-525d-aa95-375d63c21b1e.xhtml"/>
+          </navPoint>
+          <navPoint id="idm16">
+            <navLabel>
+              <text>
+    Problems
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-7d6559a3-d0c8-5ccf-af3c-d04a36b15790.xhtml"/>
+          </navPoint>
+          <navPoint id="idm17">
+            <navLabel>
+              <text>
+    Additional Problems
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-2621589d-8e8c-5a5d-b4bc-5a7fa57f7f2d.xhtml"/>
+          </navPoint>
+          <navPoint id="idm18">
+            <navLabel>
+              <text>
+    Challenge Problems
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-3cd093e5-4074-5d85-b439-bd21e25d36de.xhtml"/>
+          </navPoint>
+        </navPoint>
+      </navPoint>
+      <navPoint id="idm19">
+        <navLabel>
+          <text>Chapter 2
+     
+    The Kinetic Theory of Gases
+          </text>
+        </navLabel>
+        <content src="7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-1cc70732-87ee-4be8-a5a0-4e939e1d1b22.xhtml"/>
+        <navPoint id="idm20">
+          <navLabel>
+            <text>
+    Introduction
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-1cc70732-87ee-4be8-a5a0-4e939e1d1b22.xhtml"/>
+        </navPoint>
+        <navPoint id="idm21">
+          <navLabel>
+            <text>
+    2.1 Molecular Model of an Ideal Gas
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-7cce1697-6a75-4b06-ba15-90790862746a.xhtml"/>
+        </navPoint>
+        <navPoint id="idm22">
+          <navLabel>
+            <text>
+    2.2 Pressure, Temperature, and RMS Speed
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-3ecde2c2-4426-4fac-b2bf-f66d3492246c.xhtml"/>
+        </navPoint>
+        <navPoint id="idm23">
+          <navLabel>
+            <text>
+    2.3 Heat Capacity and Equipartition of Energy
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-98bcf6e9-6dbf-4011-aac1-129bb34b5278.xhtml"/>
+        </navPoint>
+        <navPoint id="idm24">
+          <navLabel>
+            <text>
+    2.4 Distribution of Molecular Speeds
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-382befe7-229c-446b-b048-2f3949d5b086.xhtml"/>
+        </navPoint>
+        <navPoint id="idm25">
+          <navLabel>
+            <text>Chapter Review
+            </text>
+          </navLabel>
+          <content src="7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-7eb39557-e003-5f10-9c9b-dc60c8201e01.xhtml"/>
+          <navPoint id="idm26">
+            <navLabel>
+              <text>
+    Key Terms
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-7eb39557-e003-5f10-9c9b-dc60c8201e01.xhtml"/>
+          </navPoint>
+          <navPoint id="idm27">
+            <navLabel>
+              <text>
+    Key Equations
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-0f0c1eb9-a4ed-51a8-9093-1d5316c87cd9.xhtml"/>
+          </navPoint>
+          <navPoint id="idm28">
+            <navLabel>
+              <text>
+    Summary
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-4b019fbd-75c2-5cc2-b845-5a95f5654e4b.xhtml"/>
+          </navPoint>
+          <navPoint id="idm29">
+            <navLabel>
+              <text>
+    Conceptual Questions
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-dfcb82d8-4060-5303-8265-7fa4efd851cb.xhtml"/>
+          </navPoint>
+          <navPoint id="idm30">
+            <navLabel>
+              <text>
+    Problems
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-eb5b474c-9bb5-5054-8ac5-9605df40b58f.xhtml"/>
+          </navPoint>
+          <navPoint id="idm31">
+            <navLabel>
+              <text>
+    Additional Problems
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-a53b05c5-f085-5a98-8fbd-3ca0679293fe.xhtml"/>
+          </navPoint>
+          <navPoint id="idm32">
+            <navLabel>
+              <text>
+    Challenge Problems
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-13d46b36-ad1b-5a24-86e5-e809ae85ad0c.xhtml"/>
+          </navPoint>
+        </navPoint>
+      </navPoint>
+      <navPoint id="idm33">
+        <navLabel>
+          <text>Chapter 3
+     
+    The First Law of Thermodynamics
+          </text>
+        </navLabel>
+        <content src="7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-e0cbb55b-7c56-4703-9038-7a3a397f9ff0.xhtml"/>
+        <navPoint id="idm34">
+          <navLabel>
+            <text>
+    Introduction
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-e0cbb55b-7c56-4703-9038-7a3a397f9ff0.xhtml"/>
+        </navPoint>
+        <navPoint id="idm35">
+          <navLabel>
+            <text>
+    3.1 Thermodynamic Systems
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-d9f6e13e-61ca-4948-b567-f76fb5b64f78.xhtml"/>
+        </navPoint>
+        <navPoint id="idm36">
+          <navLabel>
+            <text>
+    3.2 Work, Heat, and Internal Energy
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-859c5475-0b08-4dd6-b696-e5655e1d7818.xhtml"/>
+        </navPoint>
+        <navPoint id="idm37">
+          <navLabel>
+            <text>
+    3.3 First Law of Thermodynamics
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-5ddd5fa8-2ee5-4a18-b4c8-e56d9c3a0cba.xhtml"/>
+        </navPoint>
+        <navPoint id="idm38">
+          <navLabel>
+            <text>
+    3.4 Thermodynamic Processes
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-14a81439-92d6-4c18-b517-51bdc37d65dc.xhtml"/>
+        </navPoint>
+        <navPoint id="idm39">
+          <navLabel>
+            <text>
+    3.5 Heat Capacities of an Ideal Gas
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-a6b46764-7ec3-48a4-ac87-1361295c95cb.xhtml"/>
+        </navPoint>
+        <navPoint id="idm40">
+          <navLabel>
+            <text>
+    3.6 Adiabatic Processes for an Ideal Gas
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-385c09c9-56af-469b-890a-6483ea8868b6.xhtml"/>
+        </navPoint>
+        <navPoint id="idm41">
+          <navLabel>
+            <text>Chapter Review
+            </text>
+          </navLabel>
+          <content src="7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-71bbc96b-de9d-52a5-9b11-3c7dc773acc0.xhtml"/>
+          <navPoint id="idm42">
+            <navLabel>
+              <text>
+    Key Terms
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-71bbc96b-de9d-52a5-9b11-3c7dc773acc0.xhtml"/>
+          </navPoint>
+          <navPoint id="idm43">
+            <navLabel>
+              <text>
+    Key Equations
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-1abc5986-5d60-553c-820b-851b8f14163e.xhtml"/>
+          </navPoint>
+          <navPoint id="idm44">
+            <navLabel>
+              <text>
+    Summary
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-92d3fdb5-307c-5eab-a646-44100f21b4cd.xhtml"/>
+          </navPoint>
+          <navPoint id="idm45">
+            <navLabel>
+              <text>
+    Conceptual Questions
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-9d45bdad-3f58-52fc-b0fa-e699c662d99b.xhtml"/>
+          </navPoint>
+          <navPoint id="idm46">
+            <navLabel>
+              <text>
+    Problems
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-bf66d2f1-1246-56a4-b18d-6a8ecc75828c.xhtml"/>
+          </navPoint>
+          <navPoint id="idm47">
+            <navLabel>
+              <text>
+    Additional Problems
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-61120b5a-a6a7-5f3d-9c29-bf0f3daf9cff.xhtml"/>
+          </navPoint>
+          <navPoint id="idm48">
+            <navLabel>
+              <text>
+    Challenge Problems
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-9760790e-1b4b-5b80-b3eb-089a05757ff8.xhtml"/>
+          </navPoint>
+        </navPoint>
+      </navPoint>
+      <navPoint id="idm49">
+        <navLabel>
+          <text>Chapter 4
+     
+    The Second Law of Thermodynamics
+          </text>
+        </navLabel>
+        <content src="7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-59744ff0-0cf3-4c40-b84b-95e7cda6f317.xhtml"/>
+        <navPoint id="idm50">
+          <navLabel>
+            <text>
+    Introduction
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-59744ff0-0cf3-4c40-b84b-95e7cda6f317.xhtml"/>
+        </navPoint>
+        <navPoint id="idm51">
+          <navLabel>
+            <text>
+    4.1 Reversible and Irreversible Processes
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-2ae259c8-4249-4bb2-9f2b-868a8e859133.xhtml"/>
+        </navPoint>
+        <navPoint id="idm52">
+          <navLabel>
+            <text>
+    4.2 Heat Engines
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-4af73b8d-8143-4a95-af69-cfc077e093de.xhtml"/>
+        </navPoint>
+        <navPoint id="idm53">
+          <navLabel>
+            <text>
+    4.3 Refrigerators and Heat Pumps
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-95f89bee-9d25-40db-87de-728c493cb54b.xhtml"/>
+        </navPoint>
+        <navPoint id="idm54">
+          <navLabel>
+            <text>
+    4.4 Statements of the Second Law of Thermodynamics
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-88f5b48e-f493-4068-b6f6-740cbfe13c69.xhtml"/>
+        </navPoint>
+        <navPoint id="idm55">
+          <navLabel>
+            <text>
+    4.5 The Carnot Cycle
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-c5a4d472-ef3a-440d-b611-62161bb20af2.xhtml"/>
+        </navPoint>
+        <navPoint id="idm56">
+          <navLabel>
+            <text>
+    4.6 Entropy
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-24cd6be5-92e5-4ad8-bc8c-a02118d435e2.xhtml"/>
+        </navPoint>
+        <navPoint id="idm57">
+          <navLabel>
+            <text>
+    4.7 Entropy on a Microscopic Scale
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-1e0e38f6-8bfa-49f7-925c-4ce6b1406305.xhtml"/>
+        </navPoint>
+        <navPoint id="idm58">
+          <navLabel>
+            <text>Chapter Review
+            </text>
+          </navLabel>
+          <content src="7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-4e1c33e5-80b3-5b62-879c-10f1a36b5368.xhtml"/>
+          <navPoint id="idm59">
+            <navLabel>
+              <text>
+    Key Terms
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-4e1c33e5-80b3-5b62-879c-10f1a36b5368.xhtml"/>
+          </navPoint>
+          <navPoint id="idm60">
+            <navLabel>
+              <text>
+    Key Equations
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-9a25f4a6-4b57-501d-b1ae-eccb7bb20ef4.xhtml"/>
+          </navPoint>
+          <navPoint id="idm61">
+            <navLabel>
+              <text>
+    Summary
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-260fbd23-1b0c-5fd6-b66e-ecd8c77a548a.xhtml"/>
+          </navPoint>
+          <navPoint id="idm62">
+            <navLabel>
+              <text>
+    Conceptual Questions
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-f5b72fb3-ccda-5e6b-a879-bb87561428d0.xhtml"/>
+          </navPoint>
+          <navPoint id="idm63">
+            <navLabel>
+              <text>
+    Problems
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-3a09dfb5-1bdd-5041-9a0e-9e4a01bf2c50.xhtml"/>
+          </navPoint>
+          <navPoint id="idm64">
+            <navLabel>
+              <text>
+    Additional Problems
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-09ba088c-b8fc-541b-86fa-729ed6346cc2.xhtml"/>
+          </navPoint>
+          <navPoint id="idm65">
+            <navLabel>
+              <text>
+    Challenge Problems
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-217ad77e-f0f2-5137-ae36-c047908eab57.xhtml"/>
+          </navPoint>
+        </navPoint>
+      </navPoint>
+    </navPoint>
+    <navPoint id="idm66">
+      <navLabel>
+        <text>Unit 2
+     
+    Electricity and Magnetism
+        </text>
+      </navLabel>
+      <content src="7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-022ec458-0ada-477e-8aa5-9b4e1bd524f8.xhtml"/>
+      <navPoint id="idm67">
+        <navLabel>
+          <text>Chapter 5
+     
+    Electric Charges and Fields
+          </text>
+        </navLabel>
+        <content src="7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-022ec458-0ada-477e-8aa5-9b4e1bd524f8.xhtml"/>
+        <navPoint id="idm68">
+          <navLabel>
+            <text>
+    Introduction
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-022ec458-0ada-477e-8aa5-9b4e1bd524f8.xhtml"/>
+        </navPoint>
+        <navPoint id="idm69">
+          <navLabel>
+            <text>
+    5.1 Electric Charge
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-09467e98-8b04-4af0-99aa-67439b42fe54.xhtml"/>
+        </navPoint>
+        <navPoint id="idm70">
+          <navLabel>
+            <text>
+    5.2 Conductors, Insulators, and Charging by Induction
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-ea2edba2-cfd5-420c-b7fe-d2141680b993.xhtml"/>
+        </navPoint>
+        <navPoint id="idm71">
+          <navLabel>
+            <text>
+    5.3 Coulomb's Law
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-52d546ba-2f67-4a92-95fb-22616f0db40e.xhtml"/>
+        </navPoint>
+        <navPoint id="idm72">
+          <navLabel>
+            <text>
+    5.4 Electric Field
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-71db9566-910d-4b6e-a561-462cba78879f.xhtml"/>
+        </navPoint>
+        <navPoint id="idm73">
+          <navLabel>
+            <text>
+    5.5 Calculating Electric Fields of Charge Distributions
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-061ab383-429a-49f0-8036-85e01648da76.xhtml"/>
+        </navPoint>
+        <navPoint id="idm74">
+          <navLabel>
+            <text>
+    5.6 Electric Field Lines
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-b76bee34-5936-405e-8043-c7ac343e8ca7.xhtml"/>
+        </navPoint>
+        <navPoint id="idm75">
+          <navLabel>
+            <text>
+    5.7 Electric Dipoles
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-6384423f-82db-434c-a3ac-9bd495217d7a.xhtml"/>
+        </navPoint>
+        <navPoint id="idm76">
+          <navLabel>
+            <text>Chapter Review
+            </text>
+          </navLabel>
+          <content src="7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-941c6139-5d01-50ca-803d-30ec764c3639.xhtml"/>
+          <navPoint id="idm77">
+            <navLabel>
+              <text>
+    Key Terms
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-941c6139-5d01-50ca-803d-30ec764c3639.xhtml"/>
+          </navPoint>
+          <navPoint id="idm78">
+            <navLabel>
+              <text>
+    Key Equations
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-f19dc3d4-8acd-59f2-881d-755166c9e5df.xhtml"/>
+          </navPoint>
+          <navPoint id="idm79">
+            <navLabel>
+              <text>
+    Summary
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-704acad0-85ae-5959-8d63-a984e8d436c7.xhtml"/>
+          </navPoint>
+          <navPoint id="idm80">
+            <navLabel>
+              <text>
+    Conceptual Questions
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-19193fe5-1342-561e-ba53-3359002e5877.xhtml"/>
+          </navPoint>
+          <navPoint id="idm81">
+            <navLabel>
+              <text>
+    Problems
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-021c4b3b-778f-5ddd-8278-7a2d779e6169.xhtml"/>
+          </navPoint>
+          <navPoint id="idm82">
+            <navLabel>
+              <text>
+    Additional Problems
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-e115293b-5da4-5c53-af5d-0d92ca04ae17.xhtml"/>
+          </navPoint>
+        </navPoint>
+      </navPoint>
+      <navPoint id="idm83">
+        <navLabel>
+          <text>Chapter 6
+     
+    Gauss's Law
+          </text>
+        </navLabel>
+        <content src="7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-c5a91797-d81b-45da-99e3-37820077aa24.xhtml"/>
+        <navPoint id="idm84">
+          <navLabel>
+            <text>
+    Introduction
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-c5a91797-d81b-45da-99e3-37820077aa24.xhtml"/>
+        </navPoint>
+        <navPoint id="idm85">
+          <navLabel>
+            <text>
+    6.1 Electric Flux
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-ed1c7a4a-fbf2-449e-8402-9008dd427749.xhtml"/>
+        </navPoint>
+        <navPoint id="idm86">
+          <navLabel>
+            <text>
+    6.2 Explaining Gauss’s Law
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-bf4d4fc5-eda2-4c38-bc8e-c87be535a008.xhtml"/>
+        </navPoint>
+        <navPoint id="idm87">
+          <navLabel>
+            <text>
+    6.3 Applying Gauss’s Law
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-ecd1291a-d92d-495d-9f03-1afb30d91d63.xhtml"/>
+        </navPoint>
+        <navPoint id="idm88">
+          <navLabel>
+            <text>
+    6.4 Conductors in Electrostatic Equilibrium
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-1d0ed2df-6f68-4481-889e-6fe583792c2c.xhtml"/>
+        </navPoint>
+        <navPoint id="idm89">
+          <navLabel>
+            <text>Chapter Review
+            </text>
+          </navLabel>
+          <content src="7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-127a10ed-e95c-5ad0-b376-f448347f2089.xhtml"/>
+          <navPoint id="idm90">
+            <navLabel>
+              <text>
+    Key Terms
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-127a10ed-e95c-5ad0-b376-f448347f2089.xhtml"/>
+          </navPoint>
+          <navPoint id="idm91">
+            <navLabel>
+              <text>
+    Key Equations
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-afc4d290-044a-5174-9d74-f50adbf8c4b1.xhtml"/>
+          </navPoint>
+          <navPoint id="idm92">
+            <navLabel>
+              <text>
+    Summary
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-e03e69de-977a-5120-9b8e-dce6e2d62330.xhtml"/>
+          </navPoint>
+          <navPoint id="idm93">
+            <navLabel>
+              <text>
+    Conceptual Questions
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-5b671038-91c5-5bc4-8c46-bdee853e0c7c.xhtml"/>
+          </navPoint>
+          <navPoint id="idm94">
+            <navLabel>
+              <text>
+    Problems
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-1e0a81cd-d4b3-5b3e-bf75-a615ff779d8e.xhtml"/>
+          </navPoint>
+          <navPoint id="idm95">
+            <navLabel>
+              <text>
+    Additional Problems
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-6921b539-6f49-5ec9-a612-651df3fa63f6.xhtml"/>
+          </navPoint>
+          <navPoint id="idm96">
+            <navLabel>
+              <text>
+    Challenge Problems
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-8d51f225-d10a-563c-8725-a77b41bd52c1.xhtml"/>
+          </navPoint>
+        </navPoint>
+      </navPoint>
+      <navPoint id="idm97">
+        <navLabel>
+          <text>Chapter 7
+     
+    Electric Potential
+          </text>
+        </navLabel>
+        <content src="7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-6ccc674d-e339-46b9-b131-76c08ac532ce.xhtml"/>
+        <navPoint id="idm98">
+          <navLabel>
+            <text>
+    Introduction
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-6ccc674d-e339-46b9-b131-76c08ac532ce.xhtml"/>
+        </navPoint>
+        <navPoint id="idm99">
+          <navLabel>
+            <text>
+    7.1 Electric Potential Energy
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-22c49b82-f686-49bf-87c1-e3ed5f3189e2.xhtml"/>
+        </navPoint>
+        <navPoint id="idm100">
+          <navLabel>
+            <text>
+    7.2 Electric Potential and Potential Difference
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-d333ecf4-aa53-43d4-bcc1-04e6388a3268.xhtml"/>
+        </navPoint>
+        <navPoint id="idm101">
+          <navLabel>
+            <text>
+    7.3 Calculations of Electric Potential
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-fcfcd791-2356-4eb8-bf78-71790f08dd61.xhtml"/>
+        </navPoint>
+        <navPoint id="idm102">
+          <navLabel>
+            <text>
+    7.4 Determining Field from Potential
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-9c1510c4-41ef-4402-a0e8-4fd70ea9c807.xhtml"/>
+        </navPoint>
+        <navPoint id="idm103">
+          <navLabel>
+            <text>
+    7.5 Equipotential Surfaces and Conductors
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-19802801-5205-40c0-8d6f-e043d8b60d32.xhtml"/>
+        </navPoint>
+        <navPoint id="idm104">
+          <navLabel>
+            <text>
+    7.6 Applications of Electrostatics
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-0103fca9-0900-4188-a297-e118d00d7e4b.xhtml"/>
+        </navPoint>
+        <navPoint id="idm105">
+          <navLabel>
+            <text>Chapter Review
+            </text>
+          </navLabel>
+          <content src="7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-546c908f-bea6-5810-ab91-d5a23af4a431.xhtml"/>
+          <navPoint id="idm106">
+            <navLabel>
+              <text>
+    Key Terms
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-546c908f-bea6-5810-ab91-d5a23af4a431.xhtml"/>
+          </navPoint>
+          <navPoint id="idm107">
+            <navLabel>
+              <text>
+    Key Equations
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-41056668-83f1-5f1f-bc94-81888cec6bc5.xhtml"/>
+          </navPoint>
+          <navPoint id="idm108">
+            <navLabel>
+              <text>
+    Summary
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-30b99fc6-1e55-5d7c-93fa-7de54f6763a4.xhtml"/>
+          </navPoint>
+          <navPoint id="idm109">
+            <navLabel>
+              <text>
+    Conceptual Questions
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-faf9ee98-d14c-561e-9c62-d004aadcc2a7.xhtml"/>
+          </navPoint>
+          <navPoint id="idm110">
+            <navLabel>
+              <text>
+    Problems
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-52a78507-2026-5f7b-a07f-06c033c33d58.xhtml"/>
+          </navPoint>
+          <navPoint id="idm111">
+            <navLabel>
+              <text>
+    Additional Problems
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-ecd59cdc-7030-577f-8f9d-e7ce2215d8a9.xhtml"/>
+          </navPoint>
+          <navPoint id="idm112">
+            <navLabel>
+              <text>
+    Challenge Problems
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-43d6dd14-c6fd-536a-aa68-4fa4daa31fa8.xhtml"/>
+          </navPoint>
+        </navPoint>
+      </navPoint>
+      <navPoint id="idm113">
+        <navLabel>
+          <text>Chapter 8
+     
+    Capacitance
+          </text>
+        </navLabel>
+        <content src="7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-e55a79d3-55b7-4557-9270-3a7e7a86dc26.xhtml"/>
+        <navPoint id="idm114">
+          <navLabel>
+            <text>
+    Introduction
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-e55a79d3-55b7-4557-9270-3a7e7a86dc26.xhtml"/>
+        </navPoint>
+        <navPoint id="idm115">
+          <navLabel>
+            <text>
+    8.1 Capacitors and Capacitance
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-15827158-50bf-4edf-b5d1-c03db1d97e21.xhtml"/>
+        </navPoint>
+        <navPoint id="idm116">
+          <navLabel>
+            <text>
+    8.2 Capacitors in Series and in Parallel
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-be1fe18e-9e90-4604-9fbf-e1045057e4a1.xhtml"/>
+        </navPoint>
+        <navPoint id="idm117">
+          <navLabel>
+            <text>
+    8.3 Energy Stored in a Capacitor
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-8f769bf9-7e6b-4f2e-9c10-7f0773e48feb.xhtml"/>
+        </navPoint>
+        <navPoint id="idm118">
+          <navLabel>
+            <text>
+    8.4 Capacitor with a Dielectric
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-6680e3a1-08b1-4f99-9df8-8fec6e406e29.xhtml"/>
+        </navPoint>
+        <navPoint id="idm119">
+          <navLabel>
+            <text>
+    8.5 Molecular Model of a Dielectric
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-f1c7da4e-d87a-4d49-9408-c82c305b068d.xhtml"/>
+        </navPoint>
+        <navPoint id="idm120">
+          <navLabel>
+            <text>Chapter Review
+            </text>
+          </navLabel>
+          <content src="7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-a4ab46fc-4fa9-5510-ac3d-a29d338f1cd0.xhtml"/>
+          <navPoint id="idm121">
+            <navLabel>
+              <text>
+    Key Terms
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-a4ab46fc-4fa9-5510-ac3d-a29d338f1cd0.xhtml"/>
+          </navPoint>
+          <navPoint id="idm122">
+            <navLabel>
+              <text>
+    Key Equations
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-7428ab66-df90-54af-9e00-1618c97f7e1c.xhtml"/>
+          </navPoint>
+          <navPoint id="idm123">
+            <navLabel>
+              <text>
+    Summary
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-6188ef3e-0e1e-51c7-84a6-b3ecfccc4e95.xhtml"/>
+          </navPoint>
+          <navPoint id="idm124">
+            <navLabel>
+              <text>
+    Conceptual Questions
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-303aee0f-164d-5ee3-b00c-8a20ea8f44a5.xhtml"/>
+          </navPoint>
+          <navPoint id="idm125">
+            <navLabel>
+              <text>
+    Problems
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-15a31435-198a-57de-b756-2fad3afbfe24.xhtml"/>
+          </navPoint>
+          <navPoint id="idm126">
+            <navLabel>
+              <text>
+    Additional Problems
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-a54b4e82-7e3e-553c-8b34-3f308041c4dd.xhtml"/>
+          </navPoint>
+          <navPoint id="idm127">
+            <navLabel>
+              <text>
+    Challenge Problems
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-d725853d-9e37-5cd4-9caa-c07ab591ebd3.xhtml"/>
+          </navPoint>
+        </navPoint>
+      </navPoint>
+      <navPoint id="idm128">
+        <navLabel>
+          <text>Chapter 9
+     
+    Current and Resistance
+          </text>
+        </navLabel>
+        <content src="7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-592ddad5-86c1-4479-8af1-6dcfe75cb021.xhtml"/>
+        <navPoint id="idm129">
+          <navLabel>
+            <text>
+    Introduction
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-592ddad5-86c1-4479-8af1-6dcfe75cb021.xhtml"/>
+        </navPoint>
+        <navPoint id="idm130">
+          <navLabel>
+            <text>
+    9.1 Electrical Current
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-34bb3ddd-a4b7-48e5-a251-d1c5d3732124.xhtml"/>
+        </navPoint>
+        <navPoint id="idm131">
+          <navLabel>
+            <text>
+    9.2 Model of Conduction in Metals
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-6ec2eeb0-9630-4866-90f0-e7c84a64ceac.xhtml"/>
+        </navPoint>
+        <navPoint id="idm132">
+          <navLabel>
+            <text>
+    9.3 Resistivity and Resistance
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-02850854-071f-4033-b059-24aa8a5f8f97.xhtml"/>
+        </navPoint>
+        <navPoint id="idm133">
+          <navLabel>
+            <text>
+    9.4 Ohm's Law
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-a7dfdf47-5742-4be9-a6ae-4398ce8f93d7.xhtml"/>
+        </navPoint>
+        <navPoint id="idm134">
+          <navLabel>
+            <text>
+    9.5 Electrical Energy and Power
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-92415cc1-e255-48f7-8267-ffe40f43452a.xhtml"/>
+        </navPoint>
+        <navPoint id="idm135">
+          <navLabel>
+            <text>
+    9.6 Superconductors
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-f15da70e-6a52-4835-b999-7833596fef81.xhtml"/>
+        </navPoint>
+        <navPoint id="idm136">
+          <navLabel>
+            <text>Chapter Review
+            </text>
+          </navLabel>
+          <content src="7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-70b88982-5e18-5b76-9470-57d37d59049f.xhtml"/>
+          <navPoint id="idm137">
+            <navLabel>
+              <text>
+    Key Terms
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-70b88982-5e18-5b76-9470-57d37d59049f.xhtml"/>
+          </navPoint>
+          <navPoint id="idm138">
+            <navLabel>
+              <text>
+    Key Equations
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-d591a7fc-28bd-5366-be78-12b0634a737a.xhtml"/>
+          </navPoint>
+          <navPoint id="idm139">
+            <navLabel>
+              <text>
+    Summary
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-c1d91240-d8f4-5f28-b806-b5b67b2b8f0d.xhtml"/>
+          </navPoint>
+          <navPoint id="idm140">
+            <navLabel>
+              <text>
+    Conceptual Questions
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-2bda9d2d-b804-51d9-822c-28295dd7a1dd.xhtml"/>
+          </navPoint>
+          <navPoint id="idm141">
+            <navLabel>
+              <text>
+    Problems
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-95e70678-9562-5a42-ad82-971ee2227b3e.xhtml"/>
+          </navPoint>
+          <navPoint id="idm142">
+            <navLabel>
+              <text>
+    Additional Problems
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-0a04d633-beb9-5395-b684-d6c83e1e8115.xhtml"/>
+          </navPoint>
+          <navPoint id="idm143">
+            <navLabel>
+              <text>
+    Challenge Problems
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-011d0abd-34d3-5d4c-b4bd-1a2ec24f5d85.xhtml"/>
+          </navPoint>
+        </navPoint>
+      </navPoint>
+      <navPoint id="idm144">
+        <navLabel>
+          <text>Chapter 10
+     
+    Direct-Current Circuits
+          </text>
+        </navLabel>
+        <content src="7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-0512c7a5-9e5e-42b8-b7ba-8c48bdf27efc.xhtml"/>
+        <navPoint id="idm145">
+          <navLabel>
+            <text>
+    Introduction
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-0512c7a5-9e5e-42b8-b7ba-8c48bdf27efc.xhtml"/>
+        </navPoint>
+        <navPoint id="idm146">
+          <navLabel>
+            <text>
+    10.1 Electromotive Force
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-485139ef-e0f6-44b7-b389-2d1912f46252.xhtml"/>
+        </navPoint>
+        <navPoint id="idm147">
+          <navLabel>
+            <text>
+    10.2 Resistors in Series and Parallel
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-02086272-97dd-4c61-a42c-331148cf2fd7.xhtml"/>
+        </navPoint>
+        <navPoint id="idm148">
+          <navLabel>
+            <text>
+    10.3 Kirchhoff's Rules
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-ec3aa41e-d28c-4d76-b6ec-a3fab9fb8bfd.xhtml"/>
+        </navPoint>
+        <navPoint id="idm149">
+          <navLabel>
+            <text>
+    10.4 Electrical Measuring Instruments
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-8bdf32b5-84b0-443b-9112-c741709b9008.xhtml"/>
+        </navPoint>
+        <navPoint id="idm150">
+          <navLabel>
+            <text>
+    10.5 RC Circuits
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-8769028f-354b-4fd8-94ec-15f105feae24.xhtml"/>
+        </navPoint>
+        <navPoint id="idm151">
+          <navLabel>
+            <text>
+    10.6 Household Wiring and Electrical Safety
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-4ee97034-d94c-4bfd-bf35-fb3ad75b5c7b.xhtml"/>
+        </navPoint>
+        <navPoint id="idm152">
+          <navLabel>
+            <text>Chapter Review
+            </text>
+          </navLabel>
+          <content src="7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-7b2da692-9452-5e85-bbec-233f7a15eca0.xhtml"/>
+          <navPoint id="idm153">
+            <navLabel>
+              <text>
+    Key Terms
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-7b2da692-9452-5e85-bbec-233f7a15eca0.xhtml"/>
+          </navPoint>
+          <navPoint id="idm154">
+            <navLabel>
+              <text>
+    Key Equations
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-9b82f181-8961-57b9-ba8e-4a6386318397.xhtml"/>
+          </navPoint>
+          <navPoint id="idm155">
+            <navLabel>
+              <text>
+    Summary
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-ef4f045b-3d93-569c-a5ef-8574304bc19d.xhtml"/>
+          </navPoint>
+          <navPoint id="idm156">
+            <navLabel>
+              <text>
+    Conceptual Questions
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-406a5e60-4170-59dc-b139-bd84bf1fb936.xhtml"/>
+          </navPoint>
+          <navPoint id="idm157">
+            <navLabel>
+              <text>
+    Problems
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-9069faa1-ca24-5706-8d49-ce5f2acf5ec5.xhtml"/>
+          </navPoint>
+          <navPoint id="idm158">
+            <navLabel>
+              <text>
+    Additional Problems
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-a55603fc-8250-5b96-92cf-949bfffff575.xhtml"/>
+          </navPoint>
+          <navPoint id="idm159">
+            <navLabel>
+              <text>
+    Challenge Problems
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-84c75a9b-77cd-56d2-b25e-69a1d6d276f3.xhtml"/>
+          </navPoint>
+        </navPoint>
+      </navPoint>
+      <navPoint id="idm160">
+        <navLabel>
+          <text>Chapter 11
+     
+    Magnetic Forces and Fields
+          </text>
+        </navLabel>
+        <content src="7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-f9c7fd3a-092d-4a29-9e77-14c2e5f202a4.xhtml"/>
+        <navPoint id="idm161">
+          <navLabel>
+            <text>
+    Introduction
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-f9c7fd3a-092d-4a29-9e77-14c2e5f202a4.xhtml"/>
+        </navPoint>
+        <navPoint id="idm162">
+          <navLabel>
+            <text>
+    11.1 Magnetism and Its Historical Discoveries
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-1e86f813-88fe-449d-900b-52dc92d1a3e1.xhtml"/>
+        </navPoint>
+        <navPoint id="idm163">
+          <navLabel>
+            <text>
+    11.2 Magnetic Fields and Lines
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-2a2053cb-37ea-44d7-bb87-0207ba19354d.xhtml"/>
+        </navPoint>
+        <navPoint id="idm164">
+          <navLabel>
+            <text>
+    11.3 Motion of a Charged Particle in a Magnetic Field
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-6d944fc9-534f-434e-b0bf-60c36e59cc9c.xhtml"/>
+        </navPoint>
+        <navPoint id="idm165">
+          <navLabel>
+            <text>
+    11.4 Magnetic Force on a Current-Carrying Conductor
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-04b3eab2-f0d2-4937-8f56-182da1be5f1a.xhtml"/>
+        </navPoint>
+        <navPoint id="idm166">
+          <navLabel>
+            <text>
+    11.5 Force and Torque on a Current Loop
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-31277ded-aa04-406e-a929-b692e0b8bf2b.xhtml"/>
+        </navPoint>
+        <navPoint id="idm167">
+          <navLabel>
+            <text>
+    11.6 The Hall Effect
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-921eb5fa-3dff-47a6-9aec-8360641c55ba.xhtml"/>
+        </navPoint>
+        <navPoint id="idm168">
+          <navLabel>
+            <text>
+    11.7 Applications of Magnetic Forces and Fields
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-00c31c97-7fea-47b5-b0ac-e1354ce02bbd.xhtml"/>
+        </navPoint>
+        <navPoint id="idm169">
+          <navLabel>
+            <text>Chapter Review
+            </text>
+          </navLabel>
+          <content src="7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-7ec97c83-ca09-5b00-839d-0f721a5c9da3.xhtml"/>
+          <navPoint id="idm170">
+            <navLabel>
+              <text>
+    Key Terms
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-7ec97c83-ca09-5b00-839d-0f721a5c9da3.xhtml"/>
+          </navPoint>
+          <navPoint id="idm171">
+            <navLabel>
+              <text>
+    Key Equations
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-15928d62-3832-578f-af53-c2baff97dc8f.xhtml"/>
+          </navPoint>
+          <navPoint id="idm172">
+            <navLabel>
+              <text>
+    Summary
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-62ee74ce-a606-5165-930f-5f524ca4fafa.xhtml"/>
+          </navPoint>
+          <navPoint id="idm173">
+            <navLabel>
+              <text>
+    Conceptual Questions
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-52aebaed-7244-5eab-a024-b0584171cdef.xhtml"/>
+          </navPoint>
+          <navPoint id="idm174">
+            <navLabel>
+              <text>
+    Problems
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-31d149dd-cadb-5f10-9357-1f2f1e023678.xhtml"/>
+          </navPoint>
+          <navPoint id="idm175">
+            <navLabel>
+              <text>
+    Additional Problems
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-ccc2691c-3a10-5f86-bccc-a375a3503d5a.xhtml"/>
+          </navPoint>
+          <navPoint id="idm176">
+            <navLabel>
+              <text>
+    Challenge Problems
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-c395eeb0-54bd-5afa-ba8f-43869a65378c.xhtml"/>
+          </navPoint>
+        </navPoint>
+      </navPoint>
+      <navPoint id="idm177">
+        <navLabel>
+          <text>Chapter 12
+     
+    Sources of Magnetic Fields
+          </text>
+        </navLabel>
+        <content src="7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-043bcf74-3a69-4c81-9a7d-c0b2fa9072c2.xhtml"/>
+        <navPoint id="idm178">
+          <navLabel>
+            <text>
+    Introduction
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-043bcf74-3a69-4c81-9a7d-c0b2fa9072c2.xhtml"/>
+        </navPoint>
+        <navPoint id="idm179">
+          <navLabel>
+            <text>
+    12.1 The Biot-Savart Law
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-761d068c-111d-4d4b-810e-a8bc315446c4.xhtml"/>
+        </navPoint>
+        <navPoint id="idm180">
+          <navLabel>
+            <text>
+    12.2 Magnetic Field Due to a Thin Straight Wire
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-96d184da-45c6-4833-862e-f7c4256e40d4.xhtml"/>
+        </navPoint>
+        <navPoint id="idm181">
+          <navLabel>
+            <text>
+    12.3 Magnetic Force between Two Parallel Currents
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-558f1af6-8b89-4bb0-b39f-4aa74a88b588.xhtml"/>
+        </navPoint>
+        <navPoint id="idm182">
+          <navLabel>
+            <text>
+    12.4 Magnetic Field of a Current Loop
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-03a02a18-018d-43e7-934e-12d01292ae6d.xhtml"/>
+        </navPoint>
+        <navPoint id="idm183">
+          <navLabel>
+            <text>
+    12.5 Ampère’s Law
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-cc30d0fc-3dfa-411b-aa04-2b98c0ef20cf.xhtml"/>
+        </navPoint>
+        <navPoint id="idm184">
+          <navLabel>
+            <text>
+    12.6 Solenoids and Toroids
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-5f1fe50e-d50b-444c-9bbd-48a543af0861.xhtml"/>
+        </navPoint>
+        <navPoint id="idm185">
+          <navLabel>
+            <text>
+    12.7 Magnetism in Matter
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-fc5b9e52-f3ca-4bcb-a99a-57c2143395b7.xhtml"/>
+        </navPoint>
+        <navPoint id="idm186">
+          <navLabel>
+            <text>Chapter Review
+            </text>
+          </navLabel>
+          <content src="7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-fffa3941-db8b-5c4f-b9b2-6944a7e5b814.xhtml"/>
+          <navPoint id="idm187">
+            <navLabel>
+              <text>
+    Key Terms
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-fffa3941-db8b-5c4f-b9b2-6944a7e5b814.xhtml"/>
+          </navPoint>
+          <navPoint id="idm188">
+            <navLabel>
+              <text>
+    Key Equations
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-099b53e0-e836-50f7-af0b-d0fb7ecef770.xhtml"/>
+          </navPoint>
+          <navPoint id="idm189">
+            <navLabel>
+              <text>
+    Summary
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-a2ba5dee-f992-522f-a09c-80cc819a43f8.xhtml"/>
+          </navPoint>
+          <navPoint id="idm190">
+            <navLabel>
+              <text>
+    Conceptual Questions
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-5ba6712e-d123-5cd8-b246-528e4ba1ea33.xhtml"/>
+          </navPoint>
+          <navPoint id="idm191">
+            <navLabel>
+              <text>
+    Problems
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-aa543308-95ef-5068-90f3-e1a955ab259d.xhtml"/>
+          </navPoint>
+          <navPoint id="idm192">
+            <navLabel>
+              <text>
+    Additional Problems
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-d063f8b0-4a48-5eaa-ab47-2170e2c41840.xhtml"/>
+          </navPoint>
+          <navPoint id="idm193">
+            <navLabel>
+              <text>
+    Challenge Problems
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-75cc73f3-2d12-580c-b1b8-b4d126ad7a35.xhtml"/>
+          </navPoint>
+        </navPoint>
+      </navPoint>
+      <navPoint id="idm194">
+        <navLabel>
+          <text>Chapter 13
+     
+    Electromagnetic Induction
+          </text>
+        </navLabel>
+        <content src="7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-6b3e1424-bea5-49e1-adaa-2833f2284188.xhtml"/>
+        <navPoint id="idm195">
+          <navLabel>
+            <text>
+    Introduction
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-6b3e1424-bea5-49e1-adaa-2833f2284188.xhtml"/>
+        </navPoint>
+        <navPoint id="idm196">
+          <navLabel>
+            <text>
+    13.1 Faraday’s Law
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-053645ea-f5f8-4208-9f36-1abc34ff85ee.xhtml"/>
+        </navPoint>
+        <navPoint id="idm197">
+          <navLabel>
+            <text>
+    13.2 Lenz's Law
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-64d72376-ecca-4e42-b51e-07c2757ed8dc.xhtml"/>
+        </navPoint>
+        <navPoint id="idm198">
+          <navLabel>
+            <text>
+    13.3 Motional Emf
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-51b2b283-23f8-40ad-9ade-e30da2a78fa7.xhtml"/>
+        </navPoint>
+        <navPoint id="idm199">
+          <navLabel>
+            <text>
+    13.4 Induced Electric Fields
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-17e524bd-f433-4fd0-ae98-b39cce095009.xhtml"/>
+        </navPoint>
+        <navPoint id="idm200">
+          <navLabel>
+            <text>
+    13.5 Eddy Currents
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-556a6f87-b8b8-4065-b8c6-8630b1a375e4.xhtml"/>
+        </navPoint>
+        <navPoint id="idm201">
+          <navLabel>
+            <text>
+    13.6 Electric Generators and Back Emf
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-88de98b6-87e3-4a8c-bd76-02ab23defc45.xhtml"/>
+        </navPoint>
+        <navPoint id="idm202">
+          <navLabel>
+            <text>
+    13.7 Applications of Electromagnetic Induction
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-57511f99-0629-41b3-9f09-aecd1051b0c3.xhtml"/>
+        </navPoint>
+        <navPoint id="idm203">
+          <navLabel>
+            <text>Chapter Review
+            </text>
+          </navLabel>
+          <content src="7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-7aa2ceec-5507-5ee0-bdbd-8f99bf574890.xhtml"/>
+          <navPoint id="idm204">
+            <navLabel>
+              <text>
+    Key Terms
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-7aa2ceec-5507-5ee0-bdbd-8f99bf574890.xhtml"/>
+          </navPoint>
+          <navPoint id="idm205">
+            <navLabel>
+              <text>
+    Key Equations
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-833c62f0-3ca3-59df-b108-94dd2af3f03a.xhtml"/>
+          </navPoint>
+          <navPoint id="idm206">
+            <navLabel>
+              <text>
+    Summary
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-e2874faa-8ac2-5e88-8cea-c2a467d1a8f5.xhtml"/>
+          </navPoint>
+          <navPoint id="idm207">
+            <navLabel>
+              <text>
+    Conceptual Questions
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-09bf7306-96a9-591c-8b92-188fa53959b5.xhtml"/>
+          </navPoint>
+          <navPoint id="idm208">
+            <navLabel>
+              <text>
+    Problems
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-267a7097-0f72-51e7-abe0-a6dfc987433e.xhtml"/>
+          </navPoint>
+          <navPoint id="idm209">
+            <navLabel>
+              <text>
+    Additional Problems
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-3072bea5-6dac-58a3-a19c-653a0fed9bd6.xhtml"/>
+          </navPoint>
+          <navPoint id="idm210">
+            <navLabel>
+              <text>
+    Challenge Problems
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-db4cc361-af7a-5d2b-b6df-623245178810.xhtml"/>
+          </navPoint>
+        </navPoint>
+      </navPoint>
+      <navPoint id="idm211">
+        <navLabel>
+          <text>Chapter 14
+     
+    Inductance
+          </text>
+        </navLabel>
+        <content src="7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-801c406f-fea1-4e64-8040-45b77e0bd82a.xhtml"/>
+        <navPoint id="idm212">
+          <navLabel>
+            <text>
+    Introduction
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-801c406f-fea1-4e64-8040-45b77e0bd82a.xhtml"/>
+        </navPoint>
+        <navPoint id="idm213">
+          <navLabel>
+            <text>
+    14.1 Mutual Inductance
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-1fc4ba74-d518-4c78-a98b-61dfe442867b.xhtml"/>
+        </navPoint>
+        <navPoint id="idm214">
+          <navLabel>
+            <text>
+    14.2 Self-Inductance and Inductors
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-f483c3c8-6057-4e26-9715-c83b4f1afb0f.xhtml"/>
+        </navPoint>
+        <navPoint id="idm215">
+          <navLabel>
+            <text>
+    14.3 Energy in a Magnetic Field
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-80f57dc6-5f6e-4de8-85e8-1faea71dc250.xhtml"/>
+        </navPoint>
+        <navPoint id="idm216">
+          <navLabel>
+            <text>
+    14.4 RL Circuits
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-bec6f5b3-8d51-4da2-9b66-665910614921.xhtml"/>
+        </navPoint>
+        <navPoint id="idm217">
+          <navLabel>
+            <text>
+    14.5 Oscillations in an LC Circuit
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-b489589c-ae70-46ab-803e-bddae783ef69.xhtml"/>
+        </navPoint>
+        <navPoint id="idm218">
+          <navLabel>
+            <text>
+    14.6 RLC Series Circuits
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-33937d19-5b28-4df3-84d5-4b254c62e65a.xhtml"/>
+        </navPoint>
+        <navPoint id="idm219">
+          <navLabel>
+            <text>Chapter Review
+            </text>
+          </navLabel>
+          <content src="7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-602cd75a-2a9c-5958-976c-3d4df5165928.xhtml"/>
+          <navPoint id="idm220">
+            <navLabel>
+              <text>
+    Key Terms
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-602cd75a-2a9c-5958-976c-3d4df5165928.xhtml"/>
+          </navPoint>
+          <navPoint id="idm221">
+            <navLabel>
+              <text>
+    Key Equations
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-935ca1fc-2d79-5452-9eba-f44961b3fd09.xhtml"/>
+          </navPoint>
+          <navPoint id="idm222">
+            <navLabel>
+              <text>
+    Summary
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-b49280c6-84f3-52e0-a3a6-4cc2d36c6140.xhtml"/>
+          </navPoint>
+          <navPoint id="idm223">
+            <navLabel>
+              <text>
+    Conceptual Questions
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-d9e0e7af-7aeb-5c2c-a219-c480e7553b14.xhtml"/>
+          </navPoint>
+          <navPoint id="idm224">
+            <navLabel>
+              <text>
+    Problems
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-f2d8d72d-39e9-5c9d-a7f9-40d67198df51.xhtml"/>
+          </navPoint>
+          <navPoint id="idm225">
+            <navLabel>
+              <text>
+    Additional Problems
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-1445285a-3f5c-5418-84c8-eb10ed35cf90.xhtml"/>
+          </navPoint>
+          <navPoint id="idm226">
+            <navLabel>
+              <text>
+    Challenge Problems
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-aad2ad84-a512-5a53-96f0-a3f9c5038651.xhtml"/>
+          </navPoint>
+        </navPoint>
+      </navPoint>
+      <navPoint id="idm227">
+        <navLabel>
+          <text>Chapter 15
+     
+    Alternating-Current Circuits
+          </text>
+        </navLabel>
+        <content src="7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-eae3078c-588e-43d7-937e-a6148a533eb8.xhtml"/>
+        <navPoint id="idm228">
+          <navLabel>
+            <text>
+    Introduction
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-eae3078c-588e-43d7-937e-a6148a533eb8.xhtml"/>
+        </navPoint>
+        <navPoint id="idm229">
+          <navLabel>
+            <text>
+    15.1 AC Sources
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-6907b470-a301-4b23-9d15-9e58cb799e8a.xhtml"/>
+        </navPoint>
+        <navPoint id="idm230">
+          <navLabel>
+            <text>
+    15.2 Simple AC Circuits
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-b00da6b7-de8e-4aa0-adde-74d5fa64536a.xhtml"/>
+        </navPoint>
+        <navPoint id="idm231">
+          <navLabel>
+            <text>
+    15.3 RLC Series Circuits with AC
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-24eb3aad-a730-43af-a6f4-c64e2e1f7fbc.xhtml"/>
+        </navPoint>
+        <navPoint id="idm232">
+          <navLabel>
+            <text>
+    15.4 Power in an AC Circuit
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-c47bf2b0-2118-4a1d-bc94-3b0296f0828e.xhtml"/>
+        </navPoint>
+        <navPoint id="idm233">
+          <navLabel>
+            <text>
+    15.5 Resonance in an AC Circuit
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-d7989e35-9741-4433-9c8e-0bd2906b6ab8.xhtml"/>
+        </navPoint>
+        <navPoint id="idm234">
+          <navLabel>
+            <text>
+    15.6 Transformers
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-cfbd18c1-599a-4186-b44b-ab3abf973de2.xhtml"/>
+        </navPoint>
+        <navPoint id="idm235">
+          <navLabel>
+            <text>Chapter Review
+            </text>
+          </navLabel>
+          <content src="7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-740e4c88-dd83-5275-9ae2-3d2565c3268c.xhtml"/>
+          <navPoint id="idm236">
+            <navLabel>
+              <text>
+    Key Terms
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-740e4c88-dd83-5275-9ae2-3d2565c3268c.xhtml"/>
+          </navPoint>
+          <navPoint id="idm237">
+            <navLabel>
+              <text>
+    Key Equations
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-30997462-74ce-56d1-8801-c84c29015df2.xhtml"/>
+          </navPoint>
+          <navPoint id="idm238">
+            <navLabel>
+              <text>
+    Summary
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-73975c3c-bc2a-5436-89a9-d7e21533a36a.xhtml"/>
+          </navPoint>
+          <navPoint id="idm239">
+            <navLabel>
+              <text>
+    Conceptual Questions
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-24502b43-5265-50e3-bf3e-b41472855c01.xhtml"/>
+          </navPoint>
+          <navPoint id="idm240">
+            <navLabel>
+              <text>
+    Problems
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-55ca540c-ca0a-597b-82b6-4b903225765c.xhtml"/>
+          </navPoint>
+          <navPoint id="idm241">
+            <navLabel>
+              <text>
+    Additional Problems
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-f2611320-ed9b-51f2-85b6-02718998df8a.xhtml"/>
+          </navPoint>
+          <navPoint id="idm242">
+            <navLabel>
+              <text>
+    Challenge Problems
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-3ba82e7e-4917-56dd-8290-147b90407e0c.xhtml"/>
+          </navPoint>
+        </navPoint>
+      </navPoint>
+      <navPoint id="idm243">
+        <navLabel>
+          <text>Chapter 16
+     
+    Electromagnetic Waves
+          </text>
+        </navLabel>
+        <content src="7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-dd738e1e-40be-4540-b114-e1a24eee0ca6.xhtml"/>
+        <navPoint id="idm244">
+          <navLabel>
+            <text>
+    Introduction
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-dd738e1e-40be-4540-b114-e1a24eee0ca6.xhtml"/>
+        </navPoint>
+        <navPoint id="idm245">
+          <navLabel>
+            <text>
+    16.1 Maxwell’s Equations and Electromagnetic Waves
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-f8b409c1-250e-4a74-b922-a6961c2bcc21.xhtml"/>
+        </navPoint>
+        <navPoint id="idm246">
+          <navLabel>
+            <text>
+    16.2 Plane Electromagnetic Waves
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-873f4d78-a034-47d8-885e-46f335d365d0.xhtml"/>
+        </navPoint>
+        <navPoint id="idm247">
+          <navLabel>
+            <text>
+    16.3 Energy Carried by Electromagnetic Waves
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-58fc11a7-141e-4c1a-ab91-dd5c39d0d514.xhtml"/>
+        </navPoint>
+        <navPoint id="idm248">
+          <navLabel>
+            <text>
+    16.4 Momentum and Radiation Pressure
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-2a71d367-08da-45ba-bf36-8c6279c8b0b6.xhtml"/>
+        </navPoint>
+        <navPoint id="idm249">
+          <navLabel>
+            <text>
+    16.5 The Electromagnetic Spectrum
+  
+            </text>
+          </navLabel>
+          <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-8ebf088d-234e-495b-9a28-bfd2e58cd839.xhtml"/>
+        </navPoint>
+        <navPoint id="idm250">
+          <navLabel>
+            <text>Chapter Review
+            </text>
+          </navLabel>
+          <content src="7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-cefe4c33-c13a-5f2f-ba45-beffcd537fd6.xhtml"/>
+          <navPoint id="idm251">
+            <navLabel>
+              <text>
+    Key Terms
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-cefe4c33-c13a-5f2f-ba45-beffcd537fd6.xhtml"/>
+          </navPoint>
+          <navPoint id="idm252">
+            <navLabel>
+              <text>
+    Key Equations
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-9d14076a-8409-54ce-bfc6-ce996caa3be1.xhtml"/>
+          </navPoint>
+          <navPoint id="idm253">
+            <navLabel>
+              <text>
+    Summary
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-68b490e4-e017-5e3f-a53e-c48703770626.xhtml"/>
+          </navPoint>
+          <navPoint id="idm254">
+            <navLabel>
+              <text>
+    Conceptual Questions
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-923a230f-b54e-5547-aa06-a1a3217d46ba.xhtml"/>
+          </navPoint>
+          <navPoint id="idm255">
+            <navLabel>
+              <text>
+    Problems
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-127c7844-0b75-50ec-b714-ac821c2153e9.xhtml"/>
+          </navPoint>
+          <navPoint id="idm256">
+            <navLabel>
+              <text>
+    Additional Problems
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-23edf19b-8d60-52bf-a05a-c1eedae837ff.xhtml"/>
+          </navPoint>
+          <navPoint id="idm257">
+            <navLabel>
+              <text>
+    Challenge Problems
+  
+              </text>
+            </navLabel>
+            <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-e78317a8-60b0-552f-ac7d-458371932e4d.xhtml"/>
+          </navPoint>
+        </navPoint>
+      </navPoint>
+    </navPoint>
+    <navPoint id="idm258">
+      <navLabel>
+        <text>
+    Appendix A Units
+  
+        </text>
+      </navLabel>
+      <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-2a0960fe-8dfd-4010-bb2f-f14c4d96489f.xhtml"/>
+    </navPoint>
+    <navPoint id="idm259">
+      <navLabel>
+        <text>
+    Appendix B Conversion Factors
+  
+        </text>
+      </navLabel>
+      <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-7398356b-0279-4cc2-bd8d-b60e99eed357.xhtml"/>
+    </navPoint>
+    <navPoint id="idm260">
+      <navLabel>
+        <text>
+    Appendix C Fundamental Constants
+  
+        </text>
+      </navLabel>
+      <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-ecfe5bbe-c968-45c6-a942-4a3237e8c4a8.xhtml"/>
+    </navPoint>
+    <navPoint id="idm261">
+      <navLabel>
+        <text>
+    Appendix D Astronomical Data
+  
+        </text>
+      </navLabel>
+      <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-4af9fe22-71d3-449c-b0a2-b60644650089.xhtml"/>
+    </navPoint>
+    <navPoint id="idm262">
+      <navLabel>
+        <text>
+    Appendix E Mathematical Formulas
+  
+        </text>
+      </navLabel>
+      <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-ad45e174-05de-4f4a-a8b4-6c9126b0f3fb.xhtml"/>
+    </navPoint>
+    <navPoint id="idm263">
+      <navLabel>
+        <text>
+    Appendix F Chemistry
+  
+        </text>
+      </navLabel>
+      <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-a204dc09-9cf2-49a0-8035-5978cc6ddd81.xhtml"/>
+    </navPoint>
+    <navPoint id="idm264">
+      <navLabel>
+        <text>
+    Appendix G The Greek Alphabet
+  
+        </text>
+      </navLabel>
+      <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-6c3696fa-67d5-42be-9541-8b53f33a7084.xhtml"/>
+    </navPoint>
+    <navPoint id="idm265">
+      <navLabel>
+        <text>Answer Key
+        </text>
+      </navLabel>
+      <content src="7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-34c28a4b-9561-54d2-9978-df900655fa68.xhtml"/>
+      <navPoint id="idm266">
+        <navLabel>
+          <text>
+    Chapter 1
+  
+          </text>
+        </navLabel>
+        <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-34c28a4b-9561-54d2-9978-df900655fa68.xhtml"/>
+      </navPoint>
+      <navPoint id="idm267">
+        <navLabel>
+          <text>
+    Chapter 2
+  
+          </text>
+        </navLabel>
+        <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-53c345fe-adcb-5181-a953-363b48ca8e80.xhtml"/>
+      </navPoint>
+      <navPoint id="idm268">
+        <navLabel>
+          <text>
+    Chapter 3
+  
+          </text>
+        </navLabel>
+        <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-4a87ca7a-ff3e-5121-ad7e-0063a86eefeb.xhtml"/>
+      </navPoint>
+      <navPoint id="idm269">
+        <navLabel>
+          <text>
+    Chapter 4
+  
+          </text>
+        </navLabel>
+        <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-51cc742f-3bbe-504f-85db-82a77d76fd54.xhtml"/>
+      </navPoint>
+      <navPoint id="idm270">
+        <navLabel>
+          <text>
+    Chapter 5
+  
+          </text>
+        </navLabel>
+        <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-634dfeb4-9636-5130-91cf-090b1c7a0131.xhtml"/>
+      </navPoint>
+      <navPoint id="idm271">
+        <navLabel>
+          <text>
+    Chapter 6
+  
+          </text>
+        </navLabel>
+        <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-bc55d795-4fe6-5b27-8597-7032b3e02e41.xhtml"/>
+      </navPoint>
+      <navPoint id="idm272">
+        <navLabel>
+          <text>
+    Chapter 7
+  
+          </text>
+        </navLabel>
+        <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-1b04fea8-ab4a-5e32-90aa-307576b8f4e5.xhtml"/>
+      </navPoint>
+      <navPoint id="idm273">
+        <navLabel>
+          <text>
+    Chapter 8
+  
+          </text>
+        </navLabel>
+        <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-8430f44d-aa8e-5ca5-89bd-12f86d084b8c.xhtml"/>
+      </navPoint>
+      <navPoint id="idm274">
+        <navLabel>
+          <text>
+    Chapter 9
+  
+          </text>
+        </navLabel>
+        <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-6a1e4074-3882-5141-872e-272200e66fad.xhtml"/>
+      </navPoint>
+      <navPoint id="idm275">
+        <navLabel>
+          <text>
+    Chapter 10
+  
+          </text>
+        </navLabel>
+        <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-499fa375-134f-5e99-9d34-0825a5375452.xhtml"/>
+      </navPoint>
+      <navPoint id="idm276">
+        <navLabel>
+          <text>
+    Chapter 11
+  
+          </text>
+        </navLabel>
+        <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-b38fdc38-063a-5ad0-9aa0-a3731bbee57d.xhtml"/>
+      </navPoint>
+      <navPoint id="idm277">
+        <navLabel>
+          <text>
+    Chapter 12
+  
+          </text>
+        </navLabel>
+        <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-cb956414-3766-5c3e-a51d-982a7872b053.xhtml"/>
+      </navPoint>
+      <navPoint id="idm278">
+        <navLabel>
+          <text>
+    Chapter 13
+  
+          </text>
+        </navLabel>
+        <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-5c00aabe-269f-5b21-9dcd-36851e65857d.xhtml"/>
+      </navPoint>
+      <navPoint id="idm279">
+        <navLabel>
+          <text>
+    Chapter 14
+  
+          </text>
+        </navLabel>
+        <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-eb06b2cd-23ed-59b6-b04d-a699f4f583ca.xhtml"/>
+      </navPoint>
+      <navPoint id="idm280">
+        <navLabel>
+          <text>
+    Chapter 15
+  
+          </text>
+        </navLabel>
+        <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-683d5e62-68d0-5521-ad00-e8bc5e51bc1b.xhtml"/>
+      </navPoint>
+      <navPoint id="idm281">
+        <navLabel>
+          <text>
+    Chapter 16
+  
+          </text>
+        </navLabel>
+        <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-f41df795-86ad-54e3-8ce6-303d21987d7c.xhtml"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="idm282">
+      <navLabel>
+        <text>
+    Index
+  
+        </text>
+      </navLabel>
+      <content src="./7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-96f7288a-5619-5039-9d0f-8f7039aebd61.xhtml"/>
+    </navPoint>
+  </navMap></ncx>
+<!-- # sourceMappingURL=university-physics-volume-2.toc.ncx.map -->

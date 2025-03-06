@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:epub="http://www.idpf.org/2007/ops">
+<a href="university-physics-volume-1.toc.html">Back to table of contents</a><head><title>7.4
+ 
+Determining Field from Potential
+</title>
+<link rel="stylesheet" type="text/css" href="the-style-epub.css"/>
+</head>
+<body>
+    <div data-type="page" id="page_9c1510c4-41ef-4402-a0e8-4fd70ea9c807" class="chapter-content-module" data-book-content="true"><h2 data-type="document-title" data-sm="./modules/m58433/index.cnxml:3:1" id="page_9c1510c4-41ef-4402-a0e8-4fd70ea9c807_titlecreatedbycookbook"><span class="os-number">7.4</span>
+<span class="os-divider"> </span>
+<span data-type="" class="os-text">Determining Field from Potential</span>
+</h2>
+<div data-type="abstract" data-sm="./modules/m58433/index.cnxml:7:3"><h3 data-type="title">Learning Objectives</h3>
+<p id="para-00001" data-sm="./modules/m58433/index.cnxml:7:16">By the end of this section, you will be able to:</p>
+<ul id="list-00001" data-sm="./modules/m58433/index.cnxml:7:93">
+<li data-sm="./modules/m58433/index.cnxml:8:1">Explain how to calculate the electric field in a system from the given potential</li>
+<li data-sm="./modules/m58433/index.cnxml:9:1">Calculate the electric field in a given direction from a given potential</li>
+<li data-sm="./modules/m58433/index.cnxml:10:1">Calculate the electric field throughout space from a given potential</li>
+</ul>
+</div>
+
+<p id="fs-id1167585079315" data-sm="./modules/m58433/index.cnxml:15:1">Recall that we were able, in certain systems, to calculate the potential by integrating over the electric field. As you may already suspect, this means that we may calculate the electric field by taking derivatives of the potential, although going from a scalar to a vector quantity introduces some interesting wrinkles. We frequently need <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58433/index.cnxml:15:379"><mover accent="true" data-sm="./modules/m58433/index.cnxml:15:387"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58433/index.cnxml:15:410"><mtext data-sm="./modules/m58433/index.cnxml:15:457">E</mtext></mstyle>
+<mo stretchy="true" data-sm="./modules/m58433/index.cnxml:15:488">→</mo></mover>
+</mrow>
+</mrow>
+</semantics>
+</math></span> to calculate the force in a system; since it is often simpler to calculate the potential directly, there are systems in which it is useful to calculate <em data-effect="italics" data-sm="./modules/m58433/index.cnxml:15:699">V</em> and then derive <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58433/index.cnxml:15:763"><mover accent="true" data-sm="./modules/m58433/index.cnxml:15:771"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58433/index.cnxml:15:794"><mtext data-sm="./modules/m58433/index.cnxml:15:841">E</mtext></mstyle>
+<mo stretchy="true" data-sm="./modules/m58433/index.cnxml:15:872">→</mo></mover>
+</mrow>
+</mrow>
+</semantics>
+</math></span> from it.</p>
+
+<p id="fs-id1167585117799" data-sm="./modules/m58433/index.cnxml:16:1">In general, regardless of whether the electric field is uniform, it points in the direction of decreasing potential, because the force on a positive charge is in the direction of <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58433/index.cnxml:16:218"><mover accent="true" data-sm="./modules/m58433/index.cnxml:16:226"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58433/index.cnxml:16:249"><mtext data-sm="./modules/m58433/index.cnxml:16:296">E</mtext></mstyle>
+<mo stretchy="true" data-sm="./modules/m58433/index.cnxml:16:327">→</mo></mover>
+</mrow>
+</mrow>
+</semantics>
+</math></span> and also in the direction of lower potential <em data-effect="italics" data-sm="./modules/m58433/index.cnxml:16:431">V</em>. Furthermore, the magnitude of <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58433/index.cnxml:16:510"><mover accent="true" data-sm="./modules/m58433/index.cnxml:16:518"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58433/index.cnxml:16:541"><mtext data-sm="./modules/m58433/index.cnxml:16:588">E</mtext></mstyle>
+<mo stretchy="true" data-sm="./modules/m58433/index.cnxml:16:619">→</mo></mover>
+</mrow>
+</mrow>
+</semantics>
+</math></span> equals the rate of decrease of <em data-effect="italics" data-sm="./modules/m58433/index.cnxml:16:709">V</em> with distance. The faster <em data-effect="italics" data-sm="./modules/m58433/index.cnxml:16:775">V</em> decreases over distance, the greater the electric field. This gives us the following result.</p>
+
+<div data-type="note" id="fs-id1167585024334" data-sm="./modules/m58433/index.cnxml:17:1"><h3 class="os-title" data-type="title">
+  <span class="os-title-label" data-type="">Relationship between Voltage and Uniform Electric Field</span>
+</h3>
+<div class="os-note-body">
+<p id="fs-id1167585171099" data-sm="./modules/m58433/index.cnxml:19:1">In equation form, the relationship between voltage and uniform electric field is</p>
+<div data-type="equation" id="fs-id1167584746933" class="unnumbered" data-sm="./modules/m58433/index.cnxml:20:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58433/index.cnxml:20:70"><mi data-sm="./modules/m58433/index.cnxml:20:78">E</mi><mo data-sm="./modules/m58433/index.cnxml:20:92">=</mo><mo data-sm="./modules/m58433/index.cnxml:20:106">−</mo><mfrac data-sm="./modules/m58433/index.cnxml:20:120"><mrow data-sm="./modules/m58433/index.cnxml:20:129"><mtext data-sm="./modules/m58433/index.cnxml:20:137">Δ</mtext><mi data-sm="./modules/m58433/index.cnxml:20:157">V</mi></mrow>
+<mrow data-sm="./modules/m58433/index.cnxml:20:180"><mtext data-sm="./modules/m58433/index.cnxml:20:188">Δ</mtext><mi data-sm="./modules/m58433/index.cnxml:20:208">s</mi></mrow>
+</mfrac>
+</mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1167585121263" data-sm="./modules/m58433/index.cnxml:21:1">where <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58433/index.cnxml:21:45"><mtext data-sm="./modules/m58433/index.cnxml:21:53">Δ</mtext><mi data-sm="./modules/m58433/index.cnxml:21:73">s</mi></mrow>
+</mrow>
+</semantics>
+</math></span> is the distance over which the change in potential <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58433/index.cnxml:21:165"><mtext data-sm="./modules/m58433/index.cnxml:21:173">Δ</mtext><mi data-sm="./modules/m58433/index.cnxml:21:193">V</mi></mrow>
+</mrow>
+</semantics>
+</math></span> takes place. The minus sign tells us that <em data-effect="italics" data-sm="./modules/m58433/index.cnxml:21:268">E</em> points in the direction of decreasing potential. The electric field is said to be the gradient (as in grade or slope) of the electric potential.</p>
+</div>
+</div>
+
+<p id="fs-id1167585168351" data-sm="./modules/m58433/index.cnxml:23:1">For continually changing potentials, <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58433/index.cnxml:23:76"><mtext data-sm="./modules/m58433/index.cnxml:23:84">Δ</mtext><mi data-sm="./modules/m58433/index.cnxml:23:104">V</mi></mrow>
+</mrow>
+</semantics>
+</math></span> and <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58433/index.cnxml:23:149"><mtext data-sm="./modules/m58433/index.cnxml:23:157">Δ</mtext><mi data-sm="./modules/m58433/index.cnxml:23:177">s</mi></mrow>
+</mrow>
+</semantics>
+</math></span> become infinitesimals, and we need differential calculus to determine the electric field. As shown in <a href="#CNX_UPhysics_24_04_Derive" data-sm="./modules/m58433/index.cnxml:23:312" class="autogenerated-content">Figure 7.27</a>, if we treat the distance <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58433/index.cnxml:23:392"><mtext data-sm="./modules/m58433/index.cnxml:23:400">Δ</mtext><mi data-sm="./modules/m58433/index.cnxml:23:420">s</mi></mrow>
+</mrow>
+</semantics>
+</math></span> as very small so that the electric field is essentially constant over it, we find that</p>
+
+<div data-type="equation" id="fs-id1167584971212" class="unnumbered" data-sm="./modules/m58433/index.cnxml:24:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58433/index.cnxml:24:70"><msub data-sm="./modules/m58433/index.cnxml:24:78"><mi data-sm="./modules/m58433/index.cnxml:24:86">E</mi><mi data-sm="./modules/m58433/index.cnxml:24:100">s</mi></msub><mo data-sm="./modules/m58433/index.cnxml:24:123">=</mo><mo data-sm="./modules/m58433/index.cnxml:24:137">−</mo><mfrac data-sm="./modules/m58433/index.cnxml:24:151"><mrow data-sm="./modules/m58433/index.cnxml:24:160"><mi data-sm="./modules/m58433/index.cnxml:24:168">d</mi><mi data-sm="./modules/m58433/index.cnxml:24:182">V</mi></mrow>
+<mrow data-sm="./modules/m58433/index.cnxml:24:205"><mi data-sm="./modules/m58433/index.cnxml:24:213">d</mi><mi data-sm="./modules/m58433/index.cnxml:24:227">s</mi></mrow>
+</mfrac>
+<mo data-sm="./modules/m58433/index.cnxml:24:260">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+
+<div class="os-figure"><figure id="CNX_UPhysics_24_04_Derive" data-sm="./modules/m58433/index.cnxml:25:1"><span data-type="media" id="fs-id1167584917175" data-alt="The figure shows the electric field component of two points A and B separated by distance delta s and having a potential difference of delta V." data-sm="./modules/m58433/index.cnxml:25:40">
+<img src="ecc0192bf971ef3f4a20591d58fab2a4cd9e1673.jpeg" data-media-type="image/jpeg" alt="The figure shows the electric field component of two points A and B separated by distance delta s and having a potential difference of delta V." data-sm="./modules/m58433/index.cnxml:26:1"/>
+</span>
+
+</figure>
+<div class="os-caption-container">
+  <span class="os-title-label">Figure </span>
+<span class="os-number">7.27</span>
+
+
+
+  <span class="os-divider"> </span>
+  <span data-sm="./modules/m58433/index.cnxml:29:1" class="os-caption">The electric field component, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58433/index.cnxml:29:48"><msub data-sm="./modules/m58433/index.cnxml:29:56"><mi data-sm="./modules/m58433/index.cnxml:29:64">E</mi><mn data-sm="./modules/m58433/index.cnxml:29:78">1</mn></msub></mrow>
+</mrow>
+</semantics>
+</math>, along the displacement <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58433/index.cnxml:29:152"><mtext data-sm="./modules/m58433/index.cnxml:29:160">Δ</mtext><mi data-sm="./modules/m58433/index.cnxml:29:180">s</mi></mrow>
+</mrow>
+</semantics>
+</math> is given by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58433/index.cnxml:29:233"><mi data-sm="./modules/m58433/index.cnxml:29:241">E</mi><mo data-sm="./modules/m58433/index.cnxml:29:255">=</mo><mo data-sm="./modules/m58433/index.cnxml:29:269">−</mo><mfrac data-sm="./modules/m58433/index.cnxml:29:283"><mrow data-sm="./modules/m58433/index.cnxml:29:292"><mtext data-sm="./modules/m58433/index.cnxml:29:300">Δ</mtext><mi data-sm="./modules/m58433/index.cnxml:29:320">V</mi></mrow>
+<mrow data-sm="./modules/m58433/index.cnxml:29:343"><mtext data-sm="./modules/m58433/index.cnxml:29:351">Δ</mtext><mi data-sm="./modules/m58433/index.cnxml:29:371">s</mi></mrow>
+</mfrac>
+</mrow>
+</mrow>
+</semantics>
+</math>. Note that <em data-effect="italics" data-sm="./modules/m58433/index.cnxml:29:434">A</em> and <em data-effect="italics" data-sm="./modules/m58433/index.cnxml:29:478">B</em> are assumed to be so close together that the field is constant along <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58433/index.cnxml:29:595"><mtext data-sm="./modules/m58433/index.cnxml:29:603">Δ</mtext><mi data-sm="./modules/m58433/index.cnxml:29:623">s</mi></mrow>
+</mrow>
+</semantics>
+</math>.</span>
+</div>
+</div>
+<p id="fs-id1167584702763" data-sm="./modules/m58433/index.cnxml:29:675">Therefore, the electric field components in the Cartesian directions are given by</p>
+
+<div data-type="note" id="fs-id1167584955917" class="equation-callout" data-sm="./modules/m58433/index.cnxml:30:1">
+<div data-type="equation" id="fs-id1167585012696" data-sm="./modules/m58433/index.cnxml:31:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58433/index.cnxml:31:51"><msub data-sm="./modules/m58433/index.cnxml:31:59"><mi data-sm="./modules/m58433/index.cnxml:31:67">E</mi><mi data-sm="./modules/m58433/index.cnxml:31:81">x</mi></msub><mo data-sm="./modules/m58433/index.cnxml:31:104">=</mo><mo data-sm="./modules/m58433/index.cnxml:31:118">−</mo><mfrac data-sm="./modules/m58433/index.cnxml:31:132"><mrow data-sm="./modules/m58433/index.cnxml:31:141"><mo data-sm="./modules/m58433/index.cnxml:31:149">∂</mo><mi data-sm="./modules/m58433/index.cnxml:31:163">V</mi></mrow>
+<mrow data-sm="./modules/m58433/index.cnxml:31:186"><mo data-sm="./modules/m58433/index.cnxml:31:194">∂</mo><mi data-sm="./modules/m58433/index.cnxml:31:208">x</mi></mrow>
+</mfrac>
+<mo data-sm="./modules/m58433/index.cnxml:31:241">,</mo><mspace width="0.2em" data-sm="./modules/m58433/index.cnxml:31:255"/><msub data-sm="./modules/m58433/index.cnxml:31:280"><mi data-sm="./modules/m58433/index.cnxml:31:288">E</mi><mi data-sm="./modules/m58433/index.cnxml:31:302">y</mi></msub><mo data-sm="./modules/m58433/index.cnxml:31:325">=</mo><mo data-sm="./modules/m58433/index.cnxml:31:339">−</mo><mfrac data-sm="./modules/m58433/index.cnxml:31:353"><mrow data-sm="./modules/m58433/index.cnxml:31:362"><mo data-sm="./modules/m58433/index.cnxml:31:370">∂</mo><mi data-sm="./modules/m58433/index.cnxml:31:384">V</mi></mrow>
+<mrow data-sm="./modules/m58433/index.cnxml:31:407"><mo data-sm="./modules/m58433/index.cnxml:31:415">∂</mo><mi data-sm="./modules/m58433/index.cnxml:31:429">y</mi></mrow>
+</mfrac>
+<mo data-sm="./modules/m58433/index.cnxml:31:462">,</mo><mspace width="0.2em" data-sm="./modules/m58433/index.cnxml:31:476"/><msub data-sm="./modules/m58433/index.cnxml:31:501"><mi data-sm="./modules/m58433/index.cnxml:31:509">E</mi><mi data-sm="./modules/m58433/index.cnxml:31:523">z</mi></msub><mo data-sm="./modules/m58433/index.cnxml:31:546">=</mo><mo data-sm="./modules/m58433/index.cnxml:31:560">−</mo><mfrac data-sm="./modules/m58433/index.cnxml:31:574"><mrow data-sm="./modules/m58433/index.cnxml:31:583"><mo data-sm="./modules/m58433/index.cnxml:31:591">∂</mo><mi data-sm="./modules/m58433/index.cnxml:31:605">V</mi></mrow>
+<mrow data-sm="./modules/m58433/index.cnxml:31:628"><mo data-sm="./modules/m58433/index.cnxml:31:636">∂</mo><mi data-sm="./modules/m58433/index.cnxml:31:650">z</mi></mrow>
+</mfrac>
+<mo data-sm="./modules/m58433/index.cnxml:31:683">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+<div class="os-equation-number">
+  <span class="os-number">7.13</span>
+</div>
+</div>
+</div>
+
+<p id="fs-id1167585148078" data-sm="./modules/m58433/index.cnxml:33:1">This allows us to define the “grad” or “del” vector operator, which allows us to compute the gradient in one step. In Cartesian coordinates, it takes the form</p>
+
+<div data-type="note" id="fs-id1167584896800" class="equation-callout" data-sm="./modules/m58433/index.cnxml:34:1">
+<div data-type="equation" id="fs-id1167584748277" data-sm="./modules/m58433/index.cnxml:35:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58433/index.cnxml:35:51"><mover accent="true" data-sm="./modules/m58433/index.cnxml:35:59"><mo data-sm="./modules/m58433/index.cnxml:35:82">∇</mo><mo stretchy="false" data-sm="./modules/m58433/index.cnxml:35:96">→</mo></mover>
+<mo data-sm="./modules/m58433/index.cnxml:35:137">=</mo><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58433/index.cnxml:35:151"><mover accent="true" data-sm="./modules/m58433/index.cnxml:35:198"><mtext data-sm="./modules/m58433/index.cnxml:35:221">i</mtext><mo data-sm="./modules/m58433/index.cnxml:35:241">^</mo></mover>
+</mstyle>
+<mfrac data-sm="./modules/m58433/index.cnxml:35:276"><mo data-sm="./modules/m58433/index.cnxml:35:285">∂</mo><mrow data-sm="./modules/m58433/index.cnxml:35:299"><mo data-sm="./modules/m58433/index.cnxml:35:307">∂</mo><mi data-sm="./modules/m58433/index.cnxml:35:321">x</mi></mrow>
+</mfrac>
+<mo data-sm="./modules/m58433/index.cnxml:35:354">+</mo><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58433/index.cnxml:35:368"><mover accent="true" data-sm="./modules/m58433/index.cnxml:35:415"><mtext data-sm="./modules/m58433/index.cnxml:35:438">j</mtext><mo data-sm="./modules/m58433/index.cnxml:35:458">^</mo></mover>
+</mstyle>
+<mfrac data-sm="./modules/m58433/index.cnxml:35:493"><mo data-sm="./modules/m58433/index.cnxml:35:502">∂</mo><mrow data-sm="./modules/m58433/index.cnxml:35:516"><mo data-sm="./modules/m58433/index.cnxml:35:524">∂</mo><mi data-sm="./modules/m58433/index.cnxml:35:538">y</mi></mrow>
+</mfrac>
+<mo data-sm="./modules/m58433/index.cnxml:35:571">+</mo><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58433/index.cnxml:35:585"><mover accent="true" data-sm="./modules/m58433/index.cnxml:35:632"><mtext data-sm="./modules/m58433/index.cnxml:35:655">k</mtext><mo data-sm="./modules/m58433/index.cnxml:35:675">^</mo></mover>
+</mstyle>
+<mfrac data-sm="./modules/m58433/index.cnxml:35:710"><mo data-sm="./modules/m58433/index.cnxml:35:719">∂</mo><mrow data-sm="./modules/m58433/index.cnxml:35:733"><mo data-sm="./modules/m58433/index.cnxml:35:741">∂</mo><mi data-sm="./modules/m58433/index.cnxml:35:755">z</mi></mrow>
+</mfrac>
+<mo data-sm="./modules/m58433/index.cnxml:35:788">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+<div class="os-equation-number">
+  <span class="os-number">7.14</span>
+</div>
+</div>
+</div>
+
+<p id="fs-id1167584764801" data-sm="./modules/m58433/index.cnxml:37:1">With this notation, we can calculate the electric field from the potential with</p>
+
+<div data-type="note" id="fs-id1167584700679" class="equation-callout" data-sm="./modules/m58433/index.cnxml:38:1">
+<div data-type="equation" id="fs-id1167584716432" data-sm="./modules/m58433/index.cnxml:39:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58433/index.cnxml:39:51"><mover accent="true" data-sm="./modules/m58433/index.cnxml:39:59"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58433/index.cnxml:39:82"><mtext data-sm="./modules/m58433/index.cnxml:39:129">E</mtext></mstyle>
+<mo stretchy="true" data-sm="./modules/m58433/index.cnxml:39:160">→</mo></mover>
+<mo data-sm="./modules/m58433/index.cnxml:39:200">=</mo><mtext data-sm="./modules/m58433/index.cnxml:39:214">−</mtext><mover accent="true" data-sm="./modules/m58433/index.cnxml:39:234"><mo data-sm="./modules/m58433/index.cnxml:39:257">∇</mo><mo stretchy="false" data-sm="./modules/m58433/index.cnxml:39:271">→</mo></mover>
+<mi data-sm="./modules/m58433/index.cnxml:39:312">V</mi><mo data-sm="./modules/m58433/index.cnxml:39:326">,</mo></mrow>
+</mrow>
+</semantics>
+</math>
+<div class="os-equation-number">
+  <span class="os-number">7.15</span>
+</div>
+</div>
+</div>
+
+<p id="fs-id1167585168235" data-sm="./modules/m58433/index.cnxml:41:1">a process we call calculating the <span data-type="term" class="no-emphasis" id="term-00001" data-sm="./modules/m58433/index.cnxml:41:65">gradient</span> of the potential.</p>
+
+<p id="fs-id1167584685236" data-sm="./modules/m58433/index.cnxml:42:1">If we have a system with either cylindrical or spherical symmetry, we only need to use the del operator in the appropriate coordinates:</p>
+
+<div data-type="note" id="fs-id1167584756954" class="equation-callout" data-sm="./modules/m58433/index.cnxml:43:1">
+<div data-type="equation" id="fs-id1167584748584" data-sm="./modules/m58433/index.cnxml:44:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58433/index.cnxml:44:51"><mtext data-sm="./modules/m58433/index.cnxml:44:59">Cylindrical:</mtext><mspace width="0.2em" data-sm="./modules/m58433/index.cnxml:44:90"/><mover accent="true" data-sm="./modules/m58433/index.cnxml:44:115"><mo data-sm="./modules/m58433/index.cnxml:44:138">∇</mo><mo stretchy="false" data-sm="./modules/m58433/index.cnxml:44:152">→</mo></mover>
+<mo data-sm="./modules/m58433/index.cnxml:44:193">=</mo><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58433/index.cnxml:44:207"><mover accent="true" data-sm="./modules/m58433/index.cnxml:44:254"><mtext data-sm="./modules/m58433/index.cnxml:44:277">r</mtext><mo data-sm="./modules/m58433/index.cnxml:44:297">^</mo></mover>
+</mstyle>
+<mfrac data-sm="./modules/m58433/index.cnxml:44:332"><mo data-sm="./modules/m58433/index.cnxml:44:341">∂</mo><mrow data-sm="./modules/m58433/index.cnxml:44:355"><mo data-sm="./modules/m58433/index.cnxml:44:363">∂</mo><mi data-sm="./modules/m58433/index.cnxml:44:377">r</mi></mrow>
+</mfrac>
+<mo data-sm="./modules/m58433/index.cnxml:44:410">+</mo><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58433/index.cnxml:44:424"><mover accent="true" data-sm="./modules/m58433/index.cnxml:44:471"><mtext mathvariant="italic" data-sm="./modules/m58433/index.cnxml:44:494">φ</mtext><mo data-sm="./modules/m58433/index.cnxml:44:535">^</mo></mover>
+</mstyle>
+<mfrac data-sm="./modules/m58433/index.cnxml:44:570"><mn data-sm="./modules/m58433/index.cnxml:44:579">1</mn><mi data-sm="./modules/m58433/index.cnxml:44:593">r</mi></mfrac>
+<mspace width="0.2em" data-sm="./modules/m58433/index.cnxml:44:617"/><mfrac data-sm="./modules/m58433/index.cnxml:44:642"><mo data-sm="./modules/m58433/index.cnxml:44:651">∂</mo><mrow data-sm="./modules/m58433/index.cnxml:44:665"><mo data-sm="./modules/m58433/index.cnxml:44:673">∂</mo><mi data-sm="./modules/m58433/index.cnxml:44:687">φ</mi></mrow>
+</mfrac>
+<mo data-sm="./modules/m58433/index.cnxml:44:720">+</mo><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58433/index.cnxml:44:734"><mover accent="true" data-sm="./modules/m58433/index.cnxml:44:781"><mtext data-sm="./modules/m58433/index.cnxml:44:804">z</mtext><mo data-sm="./modules/m58433/index.cnxml:44:824">^</mo></mover>
+</mstyle>
+<mfrac data-sm="./modules/m58433/index.cnxml:44:859"><mo data-sm="./modules/m58433/index.cnxml:44:868">∂</mo><mrow data-sm="./modules/m58433/index.cnxml:44:882"><mo data-sm="./modules/m58433/index.cnxml:44:890">∂</mo><mi data-sm="./modules/m58433/index.cnxml:44:904">z</mi></mrow>
+</mfrac>
+</mrow>
+</mrow>
+</semantics>
+</math>
+<div class="os-equation-number">
+  <span class="os-number">7.16</span>
+</div>
+</div>
+</div>
+
+<div data-type="note" id="fs-id1167584742528" class="equation-callout" data-sm="./modules/m58433/index.cnxml:46:1">
+<div data-type="equation" id="fs-id1167584721578" data-sm="./modules/m58433/index.cnxml:47:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58433/index.cnxml:47:51"><mtext data-sm="./modules/m58433/index.cnxml:47:59">Spherical:</mtext><mspace width="0.2em" data-sm="./modules/m58433/index.cnxml:47:88"/><mover accent="true" data-sm="./modules/m58433/index.cnxml:47:113"><mo data-sm="./modules/m58433/index.cnxml:47:136">∇</mo><mo stretchy="false" data-sm="./modules/m58433/index.cnxml:47:150">→</mo></mover>
+<mo data-sm="./modules/m58433/index.cnxml:47:191">=</mo><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58433/index.cnxml:47:205"><mover accent="true" data-sm="./modules/m58433/index.cnxml:47:252"><mtext data-sm="./modules/m58433/index.cnxml:47:275">r</mtext><mo data-sm="./modules/m58433/index.cnxml:47:295">^</mo></mover>
+</mstyle>
+<mfrac data-sm="./modules/m58433/index.cnxml:47:330"><mo data-sm="./modules/m58433/index.cnxml:47:339">∂</mo><mrow data-sm="./modules/m58433/index.cnxml:47:353"><mo data-sm="./modules/m58433/index.cnxml:47:361">∂</mo><mi data-sm="./modules/m58433/index.cnxml:47:375">r</mi></mrow>
+</mfrac>
+<mo data-sm="./modules/m58433/index.cnxml:47:408">+</mo><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58433/index.cnxml:47:422"><mover accent="true" data-sm="./modules/m58433/index.cnxml:47:469"><mtext mathvariant="italic" data-sm="./modules/m58433/index.cnxml:47:492">θ</mtext><mo data-sm="./modules/m58433/index.cnxml:47:533">^</mo></mover>
+</mstyle>
+<mfrac data-sm="./modules/m58433/index.cnxml:47:568"><mn data-sm="./modules/m58433/index.cnxml:47:577">1</mn><mi data-sm="./modules/m58433/index.cnxml:47:591">r</mi></mfrac>
+<mspace width="0.2em" data-sm="./modules/m58433/index.cnxml:47:615"/><mfrac data-sm="./modules/m58433/index.cnxml:47:640"><mo data-sm="./modules/m58433/index.cnxml:47:649">∂</mo><mrow data-sm="./modules/m58433/index.cnxml:47:663"><mo data-sm="./modules/m58433/index.cnxml:47:671">∂</mo><mi data-sm="./modules/m58433/index.cnxml:47:685">θ</mi></mrow>
+</mfrac>
+<mo data-sm="./modules/m58433/index.cnxml:47:718">+</mo><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58433/index.cnxml:47:732"><mover accent="true" data-sm="./modules/m58433/index.cnxml:47:779"><mtext mathvariant="italic" data-sm="./modules/m58433/index.cnxml:47:802">φ</mtext><mo data-sm="./modules/m58433/index.cnxml:47:843">^</mo></mover>
+</mstyle>
+<mfrac data-sm="./modules/m58433/index.cnxml:47:878"><mn data-sm="./modules/m58433/index.cnxml:47:887">1</mn><mrow data-sm="./modules/m58433/index.cnxml:47:901"><mi data-sm="./modules/m58433/index.cnxml:47:909">r</mi><mspace width="0.2em" data-sm="./modules/m58433/index.cnxml:47:923"/><mtext data-sm="./modules/m58433/index.cnxml:47:948">sin</mtext><mspace width="0.2em" data-sm="./modules/m58433/index.cnxml:47:970"/><mi data-sm="./modules/m58433/index.cnxml:47:995">θ</mi></mrow>
+</mfrac>
+<mspace width="0.2em" data-sm="./modules/m58433/index.cnxml:47:1028"/><mfrac data-sm="./modules/m58433/index.cnxml:47:1053"><mo data-sm="./modules/m58433/index.cnxml:47:1062">∂</mo><mrow data-sm="./modules/m58433/index.cnxml:47:1076"><mo data-sm="./modules/m58433/index.cnxml:47:1084">∂</mo><mi data-sm="./modules/m58433/index.cnxml:47:1098">φ</mi></mrow>
+</mfrac>
+</mrow>
+</mrow>
+</semantics>
+</math>
+<div class="os-equation-number">
+  <span class="os-number">7.17</span>
+</div>
+</div>
+</div>
+
+<div data-type="example" id="fs-id1167584762942" data-sm="./modules/m58433/index.cnxml:49:1"><h3 class="os-title">
+  <span class="os-title-label">Example </span>
+  <span class="os-number">7.17</span>
+  <span class="os-divider"> </span>
+</h3>
+<div class="body">
+<p id="fs-id1167584909938" data-sm="./modules/m58433/index.cnxml:50:1"></p>
+<h4 data-type="title" data-sm="./modules/m58433/index.cnxml:50:31">Electric Field of a Point Charge</h4>
+Calculate the electric field of a point charge from the potential.
+<p id="fs-id1167584667320" data-sm="./modules/m58433/index.cnxml:52:1"></p>
+<h4 data-type="title" data-sm="./modules/m58433/index.cnxml:52:31">Strategy</h4>
+The potential is known to be <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58433/index.cnxml:53:38"><mi data-sm="./modules/m58433/index.cnxml:53:46">V</mi><mo data-sm="./modules/m58433/index.cnxml:53:60">=</mo><mi data-sm="./modules/m58433/index.cnxml:53:74">k</mi><mfrac data-sm="./modules/m58433/index.cnxml:53:88"><mi data-sm="./modules/m58433/index.cnxml:53:97">q</mi><mi data-sm="./modules/m58433/index.cnxml:53:111">r</mi></mfrac>
+</mrow>
+</mrow>
+</semantics>
+</math></span>, which has a spherical symmetry. Therefore, we use the spherical del operator in the formula <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58433/index.cnxml:53:255"><mover accent="true" data-sm="./modules/m58433/index.cnxml:53:263"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58433/index.cnxml:53:286"><mtext data-sm="./modules/m58433/index.cnxml:53:333">E</mtext></mstyle>
+<mo stretchy="true" data-sm="./modules/m58433/index.cnxml:53:364">→</mo></mover>
+<mo data-sm="./modules/m58433/index.cnxml:53:404">=</mo><mtext data-sm="./modules/m58433/index.cnxml:53:418">−</mtext><mover accent="true" data-sm="./modules/m58433/index.cnxml:53:438"><mo data-sm="./modules/m58433/index.cnxml:53:461">∇</mo><mo stretchy="false" data-sm="./modules/m58433/index.cnxml:53:475">→</mo></mover>
+<mi data-sm="./modules/m58433/index.cnxml:53:516">V</mi></mrow>
+</mrow>
+</semantics>
+</math></span>.
+<p id="fs-id1167584742162" data-sm="./modules/m58433/index.cnxml:54:1"></p>
+<h4 data-type="title" data-sm="./modules/m58433/index.cnxml:54:31">Solution</h4>
+Performing this calculation gives us
+<div data-type="equation" id="fs-id1167584770796" class="unnumbered" data-sm="./modules/m58433/index.cnxml:56:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58433/index.cnxml:56:70"><mover accent="true" data-sm="./modules/m58433/index.cnxml:56:78"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58433/index.cnxml:56:101"><mtext data-sm="./modules/m58433/index.cnxml:56:148">E</mtext></mstyle>
+<mo stretchy="true" data-sm="./modules/m58433/index.cnxml:56:179">→</mo></mover>
+<mo data-sm="./modules/m58433/index.cnxml:56:219">=</mo><mtext data-sm="./modules/m58433/index.cnxml:56:233">−</mtext><mrow data-sm="./modules/m58433/index.cnxml:56:253"><mo data-sm="./modules/m58433/index.cnxml:56:261">(</mo><mrow data-sm="./modules/m58433/index.cnxml:56:275"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58433/index.cnxml:56:283"><mover accent="true" data-sm="./modules/m58433/index.cnxml:56:330"><mtext data-sm="./modules/m58433/index.cnxml:56:353">r</mtext><mo data-sm="./modules/m58433/index.cnxml:56:373">^</mo></mover>
+</mstyle>
+<mfrac data-sm="./modules/m58433/index.cnxml:56:408"><mo data-sm="./modules/m58433/index.cnxml:56:417">∂</mo><mrow data-sm="./modules/m58433/index.cnxml:56:431"><mo data-sm="./modules/m58433/index.cnxml:56:439">∂</mo><mi data-sm="./modules/m58433/index.cnxml:56:453">r</mi></mrow>
+</mfrac>
+<mo data-sm="./modules/m58433/index.cnxml:56:486">+</mo><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58433/index.cnxml:56:500"><mover accent="true" data-sm="./modules/m58433/index.cnxml:56:547"><mtext mathvariant="italic" data-sm="./modules/m58433/index.cnxml:56:570">θ</mtext><mo data-sm="./modules/m58433/index.cnxml:56:611">^</mo></mover>
+</mstyle>
+<mfrac data-sm="./modules/m58433/index.cnxml:56:646"><mn data-sm="./modules/m58433/index.cnxml:56:655">1</mn><mi data-sm="./modules/m58433/index.cnxml:56:669">r</mi></mfrac>
+<mspace width="0.2em" data-sm="./modules/m58433/index.cnxml:56:693"/><mfrac data-sm="./modules/m58433/index.cnxml:56:718"><mo data-sm="./modules/m58433/index.cnxml:56:727">∂</mo><mrow data-sm="./modules/m58433/index.cnxml:56:741"><mo data-sm="./modules/m58433/index.cnxml:56:749">∂</mo><mi data-sm="./modules/m58433/index.cnxml:56:763">θ</mi></mrow>
+</mfrac>
+<mo data-sm="./modules/m58433/index.cnxml:56:796">+</mo><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58433/index.cnxml:56:810"><mover accent="true" data-sm="./modules/m58433/index.cnxml:56:857"><mtext mathvariant="italic" data-sm="./modules/m58433/index.cnxml:56:880">φ</mtext><mo data-sm="./modules/m58433/index.cnxml:56:921">^</mo></mover>
+</mstyle>
+<mfrac data-sm="./modules/m58433/index.cnxml:56:956"><mn data-sm="./modules/m58433/index.cnxml:56:965">1</mn><mrow data-sm="./modules/m58433/index.cnxml:56:979"><mi data-sm="./modules/m58433/index.cnxml:56:987">r</mi><mspace width="0.2em" data-sm="./modules/m58433/index.cnxml:56:1001"/><mtext data-sm="./modules/m58433/index.cnxml:56:1026">sin</mtext><mspace width="0.2em" data-sm="./modules/m58433/index.cnxml:56:1048"/><mi data-sm="./modules/m58433/index.cnxml:56:1073">θ</mi></mrow>
+</mfrac>
+<mspace width="0.2em" data-sm="./modules/m58433/index.cnxml:56:1106"/><mfrac data-sm="./modules/m58433/index.cnxml:56:1131"><mo data-sm="./modules/m58433/index.cnxml:56:1140">∂</mo><mrow data-sm="./modules/m58433/index.cnxml:56:1154"><mo data-sm="./modules/m58433/index.cnxml:56:1162">∂</mo><mi data-sm="./modules/m58433/index.cnxml:56:1176">φ</mi></mrow>
+</mfrac>
+</mrow>
+<mo data-sm="./modules/m58433/index.cnxml:56:1218">)</mo></mrow>
+<mi data-sm="./modules/m58433/index.cnxml:56:1241">k</mi><mfrac data-sm="./modules/m58433/index.cnxml:56:1255"><mi data-sm="./modules/m58433/index.cnxml:56:1264">q</mi><mi data-sm="./modules/m58433/index.cnxml:56:1278">r</mi></mfrac>
+<mo data-sm="./modules/m58433/index.cnxml:56:1302">=</mo><mtext data-sm="./modules/m58433/index.cnxml:56:1316">−</mtext><mi data-sm="./modules/m58433/index.cnxml:56:1336">k</mi><mi data-sm="./modules/m58433/index.cnxml:56:1350">q</mi><mrow data-sm="./modules/m58433/index.cnxml:56:1364"><mo data-sm="./modules/m58433/index.cnxml:56:1372">(</mo><mrow data-sm="./modules/m58433/index.cnxml:56:1386"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58433/index.cnxml:56:1394"><mover accent="true" data-sm="./modules/m58433/index.cnxml:56:1441"><mtext data-sm="./modules/m58433/index.cnxml:56:1464">r</mtext><mo data-sm="./modules/m58433/index.cnxml:56:1484">^</mo></mover>
+</mstyle>
+<mfrac data-sm="./modules/m58433/index.cnxml:56:1519"><mo data-sm="./modules/m58433/index.cnxml:56:1528">∂</mo><mrow data-sm="./modules/m58433/index.cnxml:56:1542"><mo data-sm="./modules/m58433/index.cnxml:56:1550">∂</mo><mi data-sm="./modules/m58433/index.cnxml:56:1564">r</mi></mrow>
+</mfrac>
+<mspace width="0.2em" data-sm="./modules/m58433/index.cnxml:56:1597"/><mfrac data-sm="./modules/m58433/index.cnxml:56:1622"><mn data-sm="./modules/m58433/index.cnxml:56:1631">1</mn><mi data-sm="./modules/m58433/index.cnxml:56:1645">r</mi></mfrac>
+<mo data-sm="./modules/m58433/index.cnxml:56:1669">+</mo><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58433/index.cnxml:56:1683"><mover accent="true" data-sm="./modules/m58433/index.cnxml:56:1730"><mtext mathvariant="italic" data-sm="./modules/m58433/index.cnxml:56:1753">θ</mtext><mo data-sm="./modules/m58433/index.cnxml:56:1794">^</mo></mover>
+</mstyle>
+<mfrac data-sm="./modules/m58433/index.cnxml:56:1829"><mn data-sm="./modules/m58433/index.cnxml:56:1838">1</mn><mi data-sm="./modules/m58433/index.cnxml:56:1852">r</mi></mfrac>
+<mspace width="0.2em" data-sm="./modules/m58433/index.cnxml:56:1876"/><mfrac data-sm="./modules/m58433/index.cnxml:56:1901"><mo data-sm="./modules/m58433/index.cnxml:56:1910">∂</mo><mrow data-sm="./modules/m58433/index.cnxml:56:1924"><mo data-sm="./modules/m58433/index.cnxml:56:1932">∂</mo><mi data-sm="./modules/m58433/index.cnxml:56:1946">θ</mi></mrow>
+</mfrac>
+<mspace width="0.2em" data-sm="./modules/m58433/index.cnxml:56:1979"/><mfrac data-sm="./modules/m58433/index.cnxml:56:2004"><mn data-sm="./modules/m58433/index.cnxml:56:2013">1</mn><mi data-sm="./modules/m58433/index.cnxml:56:2027">r</mi></mfrac>
+<mo data-sm="./modules/m58433/index.cnxml:56:2051">+</mo><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58433/index.cnxml:56:2065"><mover accent="true" data-sm="./modules/m58433/index.cnxml:56:2112"><mtext mathvariant="italic" data-sm="./modules/m58433/index.cnxml:56:2135">φ</mtext><mo data-sm="./modules/m58433/index.cnxml:56:2176">^</mo></mover>
+</mstyle>
+<mfrac data-sm="./modules/m58433/index.cnxml:56:2211"><mn data-sm="./modules/m58433/index.cnxml:56:2220">1</mn><mrow data-sm="./modules/m58433/index.cnxml:56:2234"><mi data-sm="./modules/m58433/index.cnxml:56:2242">r</mi><mspace width="0.2em" data-sm="./modules/m58433/index.cnxml:56:2256"/><mtext data-sm="./modules/m58433/index.cnxml:56:2281">sin</mtext><mspace width="0.2em" data-sm="./modules/m58433/index.cnxml:56:2303"/><mi data-sm="./modules/m58433/index.cnxml:56:2328">θ</mi></mrow>
+</mfrac>
+<mspace width="0.2em" data-sm="./modules/m58433/index.cnxml:56:2361"/><mfrac data-sm="./modules/m58433/index.cnxml:56:2386"><mo data-sm="./modules/m58433/index.cnxml:56:2395">∂</mo><mrow data-sm="./modules/m58433/index.cnxml:56:2409"><mo data-sm="./modules/m58433/index.cnxml:56:2417">∂</mo><mi data-sm="./modules/m58433/index.cnxml:56:2431">φ</mi></mrow>
+</mfrac>
+<mspace width="0.2em" data-sm="./modules/m58433/index.cnxml:56:2464"/><mfrac data-sm="./modules/m58433/index.cnxml:56:2489"><mn data-sm="./modules/m58433/index.cnxml:56:2498">1</mn><mi data-sm="./modules/m58433/index.cnxml:56:2512">r</mi></mfrac>
+</mrow>
+<mo data-sm="./modules/m58433/index.cnxml:56:2545">)</mo></mrow>
+<mo data-sm="./modules/m58433/index.cnxml:56:2568">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1167584743652" data-sm="./modules/m58433/index.cnxml:57:1">This equation simplifies to</p>
+<div data-type="equation" id="fs-id1167585036926" class="unnumbered" data-sm="./modules/m58433/index.cnxml:58:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58433/index.cnxml:58:70"><mover accent="true" data-sm="./modules/m58433/index.cnxml:58:78"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58433/index.cnxml:58:101"><mtext data-sm="./modules/m58433/index.cnxml:58:148">E</mtext></mstyle>
+<mo stretchy="true" data-sm="./modules/m58433/index.cnxml:58:179">→</mo></mover>
+<mo data-sm="./modules/m58433/index.cnxml:58:219">=</mo><mtext data-sm="./modules/m58433/index.cnxml:58:233">−</mtext><mi data-sm="./modules/m58433/index.cnxml:58:253">k</mi><mi data-sm="./modules/m58433/index.cnxml:58:267">q</mi><mrow data-sm="./modules/m58433/index.cnxml:58:281"><mo data-sm="./modules/m58433/index.cnxml:58:289">(</mo><mrow data-sm="./modules/m58433/index.cnxml:58:303"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58433/index.cnxml:58:311"><mover accent="true" data-sm="./modules/m58433/index.cnxml:58:358"><mtext data-sm="./modules/m58433/index.cnxml:58:381">r</mtext><mo data-sm="./modules/m58433/index.cnxml:58:401">^</mo></mover>
+</mstyle>
+<mfrac data-sm="./modules/m58433/index.cnxml:58:436"><mrow data-sm="./modules/m58433/index.cnxml:58:445"><mn data-sm="./modules/m58433/index.cnxml:58:453">−1</mn></mrow>
+<mrow data-sm="./modules/m58433/index.cnxml:58:477"><msup data-sm="./modules/m58433/index.cnxml:58:485"><mi data-sm="./modules/m58433/index.cnxml:58:493">r</mi><mn data-sm="./modules/m58433/index.cnxml:58:507">2</mn></msup></mrow>
+</mfrac>
+<mo data-sm="./modules/m58433/index.cnxml:58:549">+</mo><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58433/index.cnxml:58:563"><mover accent="true" data-sm="./modules/m58433/index.cnxml:58:610"><mtext mathvariant="italic" data-sm="./modules/m58433/index.cnxml:58:633">θ</mtext><mo data-sm="./modules/m58433/index.cnxml:58:674">^</mo></mover>
+</mstyle>
+<mn data-sm="./modules/m58433/index.cnxml:58:709">0</mn><mo data-sm="./modules/m58433/index.cnxml:58:723">+</mo><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58433/index.cnxml:58:737"><mover accent="true" data-sm="./modules/m58433/index.cnxml:58:784"><mtext mathvariant="italic" data-sm="./modules/m58433/index.cnxml:58:807">φ</mtext><mo data-sm="./modules/m58433/index.cnxml:58:848">^</mo></mover>
+</mstyle>
+<mn data-sm="./modules/m58433/index.cnxml:58:883">0</mn></mrow>
+<mo data-sm="./modules/m58433/index.cnxml:58:906">)</mo></mrow>
+<mo data-sm="./modules/m58433/index.cnxml:58:929">=</mo><mi data-sm="./modules/m58433/index.cnxml:58:943">k</mi><mfrac data-sm="./modules/m58433/index.cnxml:58:957"><mi data-sm="./modules/m58433/index.cnxml:58:966">q</mi><mrow data-sm="./modules/m58433/index.cnxml:58:980"><msup data-sm="./modules/m58433/index.cnxml:58:988"><mi data-sm="./modules/m58433/index.cnxml:58:996">r</mi><mn data-sm="./modules/m58433/index.cnxml:58:1010">2</mn></msup></mrow>
+</mfrac>
+<mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58433/index.cnxml:58:1052"><mover accent="true" data-sm="./modules/m58433/index.cnxml:58:1099"><mtext data-sm="./modules/m58433/index.cnxml:58:1122">r</mtext><mo data-sm="./modules/m58433/index.cnxml:58:1142">^</mo></mover>
+</mstyle>
+</mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1167584942855" data-sm="./modules/m58433/index.cnxml:59:1">as expected.</p>
+<p id="fs-id1167584980158" data-sm="./modules/m58433/index.cnxml:60:1"></p>
+<h4 data-type="title" data-sm="./modules/m58433/index.cnxml:60:31">Significance</h4>
+We not only obtained the equation for the electric field of a point particle that we’ve seen before, we also have a demonstration that <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58433/index.cnxml:61:144"><mover accent="true" data-sm="./modules/m58433/index.cnxml:61:152"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58433/index.cnxml:61:175"><mtext data-sm="./modules/m58433/index.cnxml:61:222">E</mtext></mstyle>
+<mo stretchy="true" data-sm="./modules/m58433/index.cnxml:61:253">→</mo></mover>
+</mrow>
+</mrow>
+</semantics>
+</math></span> points in the direction of decreasing potential, as shown in <a href="#CNX_UPhysics_24_04_PtChg" data-sm="./modules/m58433/index.cnxml:61:373" class="autogenerated-content">Figure 7.28</a>.
+<div class="os-figure"><figure id="CNX_UPhysics_24_04_PtChg" data-sm="./modules/m58433/index.cnxml:62:1">
+<span data-type="media" id="fs-id1167584700180" data-alt="The figure shows a charge Q and radially outward electric field vectors from Q." data-sm="./modules/m58433/index.cnxml:63:1">
+<img src="1d1367fd6a510a8e2379748c07ad2ae93b86149b.jpeg" data-media-type="image/jpeg" alt="The figure shows a charge Q and radially outward electric field vectors from Q." data-sm="./modules/m58433/index.cnxml:64:1"/>
+</span>
+
+</figure>
+<div class="os-caption-container">
+  <span class="os-title-label">Figure </span>
+<span class="os-number">7.28</span>
+
+
+
+  <span class="os-divider"> </span>
+  <span data-sm="./modules/m58433/index.cnxml:66:1" class="os-caption">Electric field vectors inside and outside a uniformly charged sphere.</span>
+</div>
+</div>
+</div>
+</div>
+
+<div data-type="example" id="fs-id1167584939454" data-sm="./modules/m58433/index.cnxml:69:1"><h3 class="os-title">
+  <span class="os-title-label">Example </span>
+  <span class="os-number">7.18</span>
+  <span class="os-divider"> </span>
+</h3>
+<div class="body">
+<p id="fs-id1167585020817" data-sm="./modules/m58433/index.cnxml:70:1"></p>
+<h4 data-type="title" data-sm="./modules/m58433/index.cnxml:70:31">Electric Field of a Ring of Charge</h4>
+Use the potential found in <a href="7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-fcfcd791-2356-4eb8-bf78-71790f08dd61.html#fs-id1167585156448" data-sm="./modules/m58433/index.cnxml:71:28" class="autogenerated-content" data-page-slug="7-3-calculations-of-electric-potential" data-page-uuid="fcfcd791-2356-4eb8-bf78-71790f08dd61" data-page-fragment="fs-id1167585156448">Example 7.14</a> to calculate the electric field along the axis of a ring of charge (<a href="#CNX_UPhysics_24_04_RingChg" data-sm="./modules/m58433/index.cnxml:71:153" class="autogenerated-content">Figure 7.29</a>).
+<div class="os-figure"><figure id="CNX_UPhysics_24_04_RingChg" data-sm="./modules/m58433/index.cnxml:72:1">
+<span data-type="media" id="fs-id1167584943704" data-alt="The figure shows a ring of charge located on the xy-plane with its center at the origin. Point P is located on the z-axis at distance z away from the origin." data-sm="./modules/m58433/index.cnxml:73:1">
+<img src="d033ba3f8d810210ea0cb55832cec369035de8e8.jpeg" data-media-type="image/jpeg" alt="The figure shows a ring of charge located on the xy-plane with its center at the origin. Point P is located on the z-axis at distance z away from the origin." data-sm="./modules/m58433/index.cnxml:74:1"/>
+</span>
+
+</figure>
+<div class="os-caption-container">
+  <span class="os-title-label">Figure </span>
+<span class="os-number">7.29</span>
+
+
+
+  <span class="os-divider"> </span>
+  <span data-sm="./modules/m58433/index.cnxml:76:1" class="os-caption">We want to calculate the electric field from the electric potential due to a ring charge.</span>
+</div>
+</div>
+<p id="fs-id1167584729490" data-sm="./modules/m58433/index.cnxml:78:1"></p>
+<h4 data-type="title" data-sm="./modules/m58433/index.cnxml:78:31">Strategy</h4>
+In this case, we are only interested in one dimension, the <em data-effect="italics" data-sm="./modules/m58433/index.cnxml:79:60">z</em>-axis. Therefore, we use <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58433/index.cnxml:79:132"><msub data-sm="./modules/m58433/index.cnxml:79:140"><mi data-sm="./modules/m58433/index.cnxml:79:148">E</mi><mi data-sm="./modules/m58433/index.cnxml:79:162">z</mi></msub><mo data-sm="./modules/m58433/index.cnxml:79:185">=</mo><mo data-sm="./modules/m58433/index.cnxml:79:199">−</mo><mfrac data-sm="./modules/m58433/index.cnxml:79:213"><mrow data-sm="./modules/m58433/index.cnxml:79:222"><mo data-sm="./modules/m58433/index.cnxml:79:230">∂</mo><mi data-sm="./modules/m58433/index.cnxml:79:244">V</mi></mrow>
+<mrow data-sm="./modules/m58433/index.cnxml:79:267"><mo data-sm="./modules/m58433/index.cnxml:79:275">∂</mo><mi data-sm="./modules/m58433/index.cnxml:79:289">z</mi></mrow>
+</mfrac>
+</mrow>
+</mrow>
+</semantics>
+</math></span>
+<p id="fs-id1167584739742" data-sm="./modules/m58433/index.cnxml:80:1">with the potential <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58433/index.cnxml:80:58"><mi data-sm="./modules/m58433/index.cnxml:80:66">V</mi><mo data-sm="./modules/m58433/index.cnxml:80:80">=</mo><msub data-sm="./modules/m58433/index.cnxml:80:94"><mi data-sm="./modules/m58433/index.cnxml:80:102">k</mi><mi data-sm="./modules/m58433/index.cnxml:80:116">e</mi></msub><mfrac data-sm="./modules/m58433/index.cnxml:80:139"><mrow data-sm="./modules/m58433/index.cnxml:80:148"><msub data-sm="./modules/m58433/index.cnxml:80:156"><mi data-sm="./modules/m58433/index.cnxml:80:164">q</mi><mrow data-sm="./modules/m58433/index.cnxml:80:178"><mtext data-sm="./modules/m58433/index.cnxml:80:186">tot</mtext></mrow></msub></mrow>
+<mrow data-sm="./modules/m58433/index.cnxml:80:235"><msqrt data-sm="./modules/m58433/index.cnxml:80:243"><mrow data-sm="./modules/m58433/index.cnxml:80:252"><msup data-sm="./modules/m58433/index.cnxml:80:260"><mi data-sm="./modules/m58433/index.cnxml:80:268">z</mi><mn data-sm="./modules/m58433/index.cnxml:80:282">2</mn></msup><mo data-sm="./modules/m58433/index.cnxml:80:305">+</mo><msup data-sm="./modules/m58433/index.cnxml:80:319"><mi data-sm="./modules/m58433/index.cnxml:80:327">R</mi><mn data-sm="./modules/m58433/index.cnxml:80:341">2</mn></msup></mrow>
+</msqrt>
+</mrow>
+</mfrac>
+</mrow>
+</mrow>
+</semantics>
+</math></span> found previously.</p>
+<p id="fs-id1167584774598" data-sm="./modules/m58433/index.cnxml:81:1"></p>
+<h4 data-type="title" data-sm="./modules/m58433/index.cnxml:81:31">Solution</h4>
+Taking the derivative of the potential yields
+<div data-type="equation" id="fs-id1167584910628" class="unnumbered" data-sm="./modules/m58433/index.cnxml:83:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58433/index.cnxml:83:70"><msub data-sm="./modules/m58433/index.cnxml:83:78"><mi data-sm="./modules/m58433/index.cnxml:83:86">E</mi><mi data-sm="./modules/m58433/index.cnxml:83:100">z</mi></msub><mo data-sm="./modules/m58433/index.cnxml:83:123">=</mo><mo data-sm="./modules/m58433/index.cnxml:83:137">−</mo><mfrac data-sm="./modules/m58433/index.cnxml:83:151"><mo data-sm="./modules/m58433/index.cnxml:83:160">∂</mo><mrow data-sm="./modules/m58433/index.cnxml:83:174"><mo data-sm="./modules/m58433/index.cnxml:83:182">∂</mo><mi data-sm="./modules/m58433/index.cnxml:83:196">z</mi></mrow>
+</mfrac>
+<mspace width="0.2em" data-sm="./modules/m58433/index.cnxml:83:229"/><mfrac data-sm="./modules/m58433/index.cnxml:83:254"><mrow data-sm="./modules/m58433/index.cnxml:83:263"><msub data-sm="./modules/m58433/index.cnxml:83:271"><mi data-sm="./modules/m58433/index.cnxml:83:279">k</mi><mi data-sm="./modules/m58433/index.cnxml:83:293">e</mi></msub><msub data-sm="./modules/m58433/index.cnxml:83:316"><mi data-sm="./modules/m58433/index.cnxml:83:324">q</mi><mrow data-sm="./modules/m58433/index.cnxml:83:338"><mtext data-sm="./modules/m58433/index.cnxml:83:346">tot</mtext></mrow></msub></mrow>
+<mrow data-sm="./modules/m58433/index.cnxml:83:395"><msqrt data-sm="./modules/m58433/index.cnxml:83:403"><mrow data-sm="./modules/m58433/index.cnxml:83:412"><msup data-sm="./modules/m58433/index.cnxml:83:420"><mi data-sm="./modules/m58433/index.cnxml:83:428">z</mi><mn data-sm="./modules/m58433/index.cnxml:83:442">2</mn></msup><mo data-sm="./modules/m58433/index.cnxml:83:465">+</mo><msup data-sm="./modules/m58433/index.cnxml:83:479"><mi data-sm="./modules/m58433/index.cnxml:83:487">R</mi><mn data-sm="./modules/m58433/index.cnxml:83:501">2</mn></msup></mrow>
+</msqrt>
+</mrow>
+</mfrac>
+<mo data-sm="./modules/m58433/index.cnxml:83:562">=</mo><msub data-sm="./modules/m58433/index.cnxml:83:576"><mi data-sm="./modules/m58433/index.cnxml:83:584">k</mi><mi data-sm="./modules/m58433/index.cnxml:83:598">e</mi></msub><mfrac data-sm="./modules/m58433/index.cnxml:83:621"><mrow data-sm="./modules/m58433/index.cnxml:83:630"><msub data-sm="./modules/m58433/index.cnxml:83:638"><mi data-sm="./modules/m58433/index.cnxml:83:646">q</mi><mrow data-sm="./modules/m58433/index.cnxml:83:660"><mtext data-sm="./modules/m58433/index.cnxml:83:668">tot</mtext></mrow></msub><mi data-sm="./modules/m58433/index.cnxml:83:708">z</mi></mrow>
+<mrow data-sm="./modules/m58433/index.cnxml:83:731"><msup data-sm="./modules/m58433/index.cnxml:83:739"><mrow data-sm="./modules/m58433/index.cnxml:83:747"><mrow data-sm="./modules/m58433/index.cnxml:83:755"><mo data-sm="./modules/m58433/index.cnxml:83:763">(</mo><mrow data-sm="./modules/m58433/index.cnxml:83:777"><msup data-sm="./modules/m58433/index.cnxml:83:785"><mi data-sm="./modules/m58433/index.cnxml:83:793">z</mi><mn data-sm="./modules/m58433/index.cnxml:83:807">2</mn></msup><mo data-sm="./modules/m58433/index.cnxml:83:830">+</mo><msup data-sm="./modules/m58433/index.cnxml:83:844"><mi data-sm="./modules/m58433/index.cnxml:83:852">R</mi><mn data-sm="./modules/m58433/index.cnxml:83:866">2</mn></msup></mrow>
+<mo data-sm="./modules/m58433/index.cnxml:83:898">)</mo></mrow>
+</mrow><mrow data-sm="./modules/m58433/index.cnxml:83:930"><mn data-sm="./modules/m58433/index.cnxml:83:938">3</mn><mtext data-sm="./modules/m58433/index.cnxml:83:952">/</mtext><mn data-sm="./modules/m58433/index.cnxml:83:972">2</mn></mrow></msup></mrow>
+</mfrac>
+<mo data-sm="./modules/m58433/index.cnxml:83:1023">.</mo></mrow>
+</mrow>
+</semantics>
+</math>
+</div>
+<p id="fs-id1167584649147" data-sm="./modules/m58433/index.cnxml:84:1"></p>
+<h4 data-type="title" data-sm="./modules/m58433/index.cnxml:84:31">Significance</h4>
+Again, this matches the equation for the electric field found previously. It also demonstrates a system in which using the full del operator is not necessary.
+</div>
+</div>
+
+<div data-type="note" id="fs-id1167584649922" class="check-understanding" data-sm="./modules/m58433/index.cnxml:87:1"><h3 class="os-title">
+  <span class="os-title-label">Check Your Understanding </span>
+  <span class="os-number">7.11</span>
+  <span class="os-divider"> </span>
+</h3>
+<div class="os-note-body">
+<div data-type="exercise" id="fs-id1167584765071" data-sm="./modules/m58433/index.cnxml:88:1" class="unnumbered os-hasSolution">
+<div data-type="problem" id="fs-id1167584717199" data-sm="./modules/m58433/index.cnxml:89:1"><div class="os-problem-container">
+<p id="fs-id1167584756055" data-sm="./modules/m58433/index.cnxml:90:1">Which coordinate system would you use to calculate the electric field of a dipole?</p>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+ 
+ 
+  </div>
+
+<a href="university-physics-volume-1.toc.html">Back to table of contents</a>
+</body>
+</html>
+<!-- # sourceMappingURL=7a0f9770-1c44-4acd-9920-1cd9a99f2a1e-at-aa8a43e-colon-9c1510c4-41ef-4402-a0e8-4fd70ea9c807.html.map -->
