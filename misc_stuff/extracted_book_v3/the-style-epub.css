@@ -928,8 +928,10 @@ div[data-type=composite-page].os-eob {
 }
 :root {
   font-family: IBM Plex Sans, sans-serif;
-  font-size: 12px;
-  line-height: 1.4rem;
+  font-size: 20px;
+  line-height: 2rem;
+  margin-inline-start: 100px;
+  margin-inline-end: 100px;
   color: #000000;
   prince-image-resolution: auto, 200dpi;
   prince-background-image-resolution: 200dpi;
@@ -1246,10 +1248,10 @@ nav#toc > ol > .os-toc-index > a::after {
 [data-type=page] > [data-type=abstract] > ul:not([data-labeled-item=true]) {
   margin-left: 32px;
 }
-
+/* 
 [data-type=page] > [data-type=abstract] > ul:not([data-labeled-item=true]) > li {
   max-width: 5.9in;
-}
+} */
 
 [data-type=page] > [data-type=abstract] > ul:not([data-labeled-item=true]) > li::marker {
   color: #00819A;
