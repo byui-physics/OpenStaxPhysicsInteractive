@@ -1,0 +1,4 @@
+To add a code chunk, you have to insert
+<script src="https://cdn.jsdelivr.net/pyodide/v0.27.2/full/pyodide.js"></script>
+in the header of the html file. 
+

@@ -937,6 +937,14 @@ div[data-type=composite-page].os-eob {
   prince-background-image-resolution: 200dpi;
 }
 
+textarea {
+  font-family: Courier, monospace;
+  font-size: 16px; 
+  line-height: 1.1;
+  color: #311b1d;
+  background-color: #dbe4de5c;
+}
+
 aside[role=doc-footnote] {
   float: footnote;
   -prince-float-reference: page;

@@ -9,6 +9,14 @@ I had to do this in all three folders because I didn't want to go change the fil
   margin-inline-start: 100px;
   margin-inline-end: 100px;
  - I commented out the section on line 1252 to 1254 that affects max width
+ - I added the styling for the textarea just under the root stuff. It was:
+textarea {
+  font-family: Courier, monospace;
+  font-size: 16px; 
+  line-height: 1.1;
+  color: #311b1d;
+  background-color: #dbe4de5c;
+}
 
 I also added the style sheet link to each of the table of contents files. 
 I added it just under the title in the head section of the file. 
