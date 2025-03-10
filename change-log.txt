@@ -17,6 +17,11 @@ textarea {
   color: #311b1d;
   background-color: #dbe4de5c;
 }
+ - I commented out the line around 1134 on the style sheet that has
+ nav#toc > ol > .os-toc-unit > ol > .os-toc-chapter > ol > .os-toc-composite-chapter > ol {
+  display: none;
+}
+This was causing the problems and equations and other chapter summary items to be hidden from the toc
 
 I also added the style sheet link to each of the table of contents files. 
 I added it just under the title in the head section of the file. 

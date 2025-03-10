@@ -8,14 +8,11 @@
 
 Instantaneous Velocity and Speed
 </title>
-<link rel="stylesheet" type="text/css" href="the-style-epub.css"/>
-
-<!-- These two links and the script are used for adding python code with code highlight. -->
+<link rel="stylesheet" type="text/css" href="extracted_book_v1/the-style-epub.css"/>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/codemirror.min.css" /> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/codemirror.min.css" /> 
 <script src="https://cdn.jsdelivr.net/pyodide/v0.27.2/full/pyodide.js"></script>
-<!-- End of code imports -->
 </head>
 <body>
     <div data-type="page" id="page_123f28de-76db-4d9a-a2d1-919a1d7f25a2" class="chapter-content-module" data-book-content="true"><h2 data-type="document-title" data-sm="./modules/m58283/index.cnxml:3:1" id="page_123f28de-76db-4d9a-a2d1-919a1d7f25a2_titlecreatedbycookbook"><span class="os-number">3.2</span>
@@ -479,7 +476,7 @@ Consider the particle whose position is given by
 <p>Below is a python code that creates a graph of the position vs time function for the first 8 seconds. 
 </p>
 
-<textarea id="code.3.C1.1" style="width: 100%;"></textarea>
+<textarea id="code.3.C1.1" style="width: 100%;" rows = "16", autocorrect = "off", maxlength="500"></textarea>
 <button onclick="evaluatePython('.3.C1.1')">Run</button><button onclick="resetCode('.3.C1.1')">Reset Code</button>
 <textarea id="output.3.C1.1" style="width: 100%;" disabled></textarea>
 <div id="plot.3.C1.1"></div>
@@ -504,20 +501,20 @@ Consider the particle whose position is given by
 <p>On a computer, we can't take the limit as <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x00394;</mi><mi>t</mi></mrow></math></math></span> goes to zero, 
 but we can choose <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x00394;</mi><mi>t</mi></mrow></math></math></span> to be very small. Below is a python code that calculates the instantaneous velocity at a specific time.</p>
 
-<textarea id="code.3.C1.2" style="width: 100%;"></textarea>
+<textarea id="code.3.C1.2" style="width: 100%;" rows = 7", autocorrect = "off", maxlength="500"></textarea>
 <button onclick="evaluatePython('.3.C1.2')">Run</button><button onclick="resetCode('.3.C1.2')">Reset Code</button>
 <textarea id="output.3.C1.2" style="width: 100%;" disabled></textarea>
 <div id="plot.3.C1.2"></div>
 
 <p>Why don't we use this code to make a plot of the instantaneous velocity versus time. Below is a code that uses the new function to create a plot of the instantaneous velocity. Try experimenting with the value of deltat and see how it changes the quality accuracy of the instantaneous velocity. Remember that the instantaneous velocity is the slope of the position vs time graph. </p>
 
-<textarea id="code.3.C1.3" style="width: 100%;"></textarea>
+<textarea id="code.3.C1.3" style="width: 100%;" rows = 12", autocorrect = "off", maxlength="500"></textarea>
 <button onclick="evaluatePython('.3.C1.3')">Run</button><button onclick="resetCode('.3.C1.3')">Reset Code</button>
 <textarea id="output.3.C1.3" style="width: 100%;" disabled></textarea>
 <div id="plot.3.C1.3"></div>
 
 
-<p>In conclusion, when we have a function for position that is too difficult to differentiate by hand, a computer can allow us to still make useful predictions and analysis. </p>
+<p>In conclusion, when we have a function for position that is too difficult to differentiate by hand, a computer can allow us to still make useful predictions and analysis. Feel free to modify the code above to try different interesting position functions. Just change the x(t) function and run the code again. </p>
 
 
 <!-- This thing is a cap before the red line.-->
@@ -527,6 +524,9 @@ but we can choose <span class="os-math-in-para"><math xmlns="http://www.w3.org/1
 </div>
  </div>
 
+ <!-- A code example that I inserted:
+ Inserted Mar 6, 2025 by Addison Ballif -->
+
  <div data-type="example" id="fs-id1168329069804" data-sm="./modules/m58283/index.cnxml:151:284"><h3 class="os-title">
   <span class="os-title-label">Code Example </span>
   <span class="os-number">3.C2</span>
@@ -535,11 +535,13 @@ but we can choose <span class="os-math-in-para"><math xmlns="http://www.w3.org/1
 <div class="body">
 
 <p id="fs-id1168329439120" data-sm="./modules/m58283/index.cnxml:152:1"></p>
-<h4 data-type="title" data-sm="./modules/m58283/index.cnxml:152:31">Differentiating with Sympy</h4>
+<h4 data-type="title" data-sm="./modules/m58283/index.cnxml:152:31">Differentiating With Sympy</h4>
 
-<p>I thought it might be interesting here to demonstrate how we an use sympy to help us compute the derivatives of our functions, but then I realized that I may want to think more about 
-  providing such a useful tool to students who do not know yet how to understand the problem without useing the tool. 
-</p>
+<p>I thought here might be interesting to do a code example using sympy to solve the problem we did in the previous example. However, I worry a little bit about introducing such a useful tool to students who have yet to learn how to live without the tool. </p>
+
+<!-- This thing is a cap before the red line.-->
+<p id="fs-id1168329150787" data-sm="./modules/m58283/index.cnxml:158:1"></p>
+
 
 </div>
  </div>
@@ -643,7 +645,7 @@ The velocity of the particle gives us direction information, indicating the part
 
 <a href="university-physics-volume-1.toc.html">Back to table of contents</a>
 
-<!-- These two source codes are used for code highlighting. -->
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/codemirror.min.js"
 		integrity="sha512-XMlgZzPyVXf1I/wbGnofk1Hfdx+zAWyZjh6c21yGo/k1zNC4Ve6xcQnTDTCHrjFGsOrVicJsBURLYktVEu/8vQ=="
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
@@ -678,7 +680,12 @@ def v_instantaneous(t):
     
 # Use the function to calculate the intantaneous velocity
 print(f'The instantaneous velocity at 2 seconds is {v_instantaneous(2):.3g} m/s.')`,
-`# Plot the velocity vs time graph
+`# define the function for the derivative
+def v_instantaneous(t):
+    deltat = 0.0001
+    return (x(t + deltat) - x(t))/(deltat)
+
+# Plot the velocity vs time graph
 plt.clf()
 plt.plot(tpoints, v_instantaneous(tpoints))
 plt.xlabel('time')

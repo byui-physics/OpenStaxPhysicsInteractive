@@ -1120,9 +1120,9 @@ nav#toc > ol > .os-toc-unit > ol > .os-toc-chapter > ol > .os-toc-chapter-compos
   line-height: 1.5rem;
 }
 
-nav#toc > ol > .os-toc-unit > ol > .os-toc-chapter > ol > .os-toc-composite-chapter > ol {
+/* nav#toc > ol > .os-toc-unit > ol > .os-toc-chapter > ol > .os-toc-composite-chapter > ol {
   display: none;
-}
+} */
 
 nav#toc > ol > .os-toc-unit > ol > .os-toc-chapter > ol > .os-toc-composite-chapter > a {
   font-family: IBM Plex Sans, sans-serif;
