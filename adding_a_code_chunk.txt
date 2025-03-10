@@ -151,7 +151,7 @@ Here is a template you can paste in for adding a code example
 
 
 <div data-type="example" id="fs-id1167133605840" data-sm="./modules/m58279/index.cnxml:158:1"><h3 class="os-title">
-  <span class="os-title-label">Example </span>
+  <span class="os-title-label">Code Example </span>
   <span class="os-number">#.C#</span>
   <span class="os-divider"> </span>
 </h3>
