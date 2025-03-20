@@ -1415,19 +1415,19 @@ nav#toc > ol > .os-toc-index > a::after {
 }
 
 .os-review-problems-container {
-  column-count: 2;
+  column-count: 1;
   column-gap: 2.4rem;
   column-width: auto;
 }
 
 .os-review-additional-problems-container {
-  column-count: 2;
+  column-count: 1;
   column-gap: 2.4rem;
   column-width: auto;
 }
 
 .os-review-challenge-container {
-  column-count: 2;
+  column-count: 1;
   column-gap: 2.4rem;
   column-width: auto;
 }

@@ -28,3 +28,7 @@ I added it just under the title in the head section of the file.
 
 The convert-to-html.py added a link to table of contents at the top of the table of contents page, so I
 replaced it with a back to index link. 
+
+Mar 19, 2025
+There is a column count in the style-epub on line 1430 after adding stuff. I wanted this to be 1 because it
+messing up the codemirror stuff to have two columns. 
