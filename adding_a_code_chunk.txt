@@ -142,7 +142,7 @@ that the built in examples us, but with a C before the example number.
 Everywhere where you want a code chunk, you need to add
 
 <textarea id="code.#.C#.#" style="width: 100%;"></textarea>
-<button onclick="evaluatePython('.#.C#.#')">Run</button><button onclick="resetCode('.#.C#.#')">Reset Code</button>
+<button onclick="evaluatePython('.#.C#.#')">Run</button><button onclick="resetCode('.#.C#.#')">Reset Code</button><button onclick="copycode('.#.C#.#')">Copy Code</button>
 <textarea id="output.#.C#.#" style="width: 100%;" disabled></textarea>
 <div id="plot.#.C#.#"></div>
 

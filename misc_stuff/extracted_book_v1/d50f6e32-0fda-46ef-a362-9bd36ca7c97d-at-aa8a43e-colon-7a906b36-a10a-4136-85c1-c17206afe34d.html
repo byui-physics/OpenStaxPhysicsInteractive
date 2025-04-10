@@ -1808,6 +1808,7 @@ Below is an example of how this would work for the vectors from Example 2.10.
 
 <textarea id="code.2.C1.1" style="width: 100%;"></textarea>
 <button onclick="evaluatePython('.2.C1.1')">Run</button><button onclick="resetCode('.2.C1.1')">Reset Code</button>
+<button onclick="copycode('.2.C1.1')">Copy Code</button>
 <textarea id="output.2.C1.1" style="width: 100%;" disabled></textarea>
 <div id="plot.2.C1.1"></div>
 
@@ -2026,6 +2027,19 @@ def print(*args):
         output.value = err;
       }
     }
+
+    // This function copies the code to the clipboard
+    function copycode(cellSuffix) {
+      const idx = page_cell_ids.indexOf(cellSuffix);
+      navigator.clipboard.writeText(page_code_cm_editors[idx].getValue())
+        .then(() => {
+          alert("Code copied to clipboard!");
+        })
+        .catch(err => {
+          console.error("Failed to copy: ", err);
+        });
+    }
+
   </script>
 
 <a href="university-physics-volume-1.toc.html">Back to table of contents</a>
