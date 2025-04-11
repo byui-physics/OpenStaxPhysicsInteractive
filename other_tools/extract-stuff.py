@@ -3,6 +3,8 @@ import os
 
 ## DON'T RUN THIS FILE UNLESS YOU WANT TO OVERWRITE THE WHOLE TEXTBOOK
 
+# also I moved this file to a new location so it won't work correctly file-path wise. 
+# I'm just keeping it so I can see what I did.
 
 
 epub_file = "misc_stuff/openstax-osbooks-university-physics-bundle-aa8a43ef55af6aa08d279863e32cf0f6177298ca-15104-university-physics-volume-3.epub"   # Your ePub file
