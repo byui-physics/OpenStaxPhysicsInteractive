@@ -111,7 +111,7 @@ class PythonCodeCell extends HTMLElement {
         }
 
         // change the id of the object
-        element.id = "plotobject" + cellSuffix
+        element.id = "plotobject"
       });
 
 

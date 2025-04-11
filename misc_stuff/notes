@@ -1,6 +1,0 @@
-Having all the code (atleast the normal stuff) I think is something worth having. 
-Being able to edit any if it is good if we can make a way to show the errors. I think that part is working. 
-
-Plotly might be a good way to animate waves. 
-If plotly doesn't work then maybe we just have to define the function in python and then
-animate the function with javascript. 
