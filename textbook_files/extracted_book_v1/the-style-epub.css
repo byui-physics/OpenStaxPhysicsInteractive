@@ -1391,7 +1391,7 @@ nav#toc > ol > .os-toc-index > a::after {
 }
 
 .preface {
-  column-count: 2;
+  column-count: 1;
   column-gap: 2.4rem;
   column-width: auto;
 }

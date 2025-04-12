@@ -1,0 +1,2 @@
+Make a python reference page so students can go back and check stuff, but we don't have to 
+introduce it all at once. 

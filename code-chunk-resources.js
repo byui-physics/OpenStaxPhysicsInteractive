@@ -57,9 +57,16 @@ class PythonCodeCell extends HTMLElement {
       lineWrapping: true,
       indentUnit: 4, 
       tabSize: 4,
+      viewportMargin: 1,
       matchBrackets: true
     });
     this.codeEditor.setValue(this.innerHTML.trim());
+    this.codeEditor.on("change", () => {
+      // This function resizes the editor
+      this.codeEditor.setSize(null, (this.codeEditor.lineCount() * parseInt(getComputedStyle(this.codeEditor.getWrapperElement()).lineHeight, 10) + 30) + "px"); // uses padding of 30
+    });
+    // This resizes the editor
+    this.codeEditor.setSize(null, (this.codeEditor.lineCount() * parseInt(getComputedStyle(this.codeEditor.getWrapperElement()).lineHeight, 10) + 30) + "px"); // uses padding of 30
 
     // pyodide gets assigned to this cell by the main page
 
@@ -68,6 +75,7 @@ class PythonCodeCell extends HTMLElement {
     this.shadowRoot.querySelector('#resetButton').addEventListener('click', this.resetCode.bind(this));
     this.shadowRoot.querySelector('#copyButton').addEventListener('click', this.copycode.bind(this));
   }
+  
   
 
   // Run Python code using Pyodide
@@ -91,27 +99,29 @@ class PythonCodeCell extends HTMLElement {
       
       // If it says undefined, then just make it blank because just saying undefined is weird. 
       if (this.shadowRoot.querySelector('#output').value == 'undefined') {
-        this.shadowRoot.querySelector('#output').value = ""
+        this.shadowRoot.querySelector('#output').value = `Python executed successfully at ${(new Date()).toLocaleTimeString()}`
       }
 
       // MOVE THE PLOTS TO WHERE THEY SHOULD BE
       const newMplObjects = document.querySelectorAll(`[id*="matplotlib_"]`)
-      const Mplids = Array.from(newMplObjects).map(el => el.id);
-      // I'm going to rename the new stuff so that these won't show up in the 
-      // query in the future. This also means that this query includes only the stuff from this run. 
-      
-      // The parent's id is a substring of all the others, so find that one. 
-      const parentid = Mplids.find(candidate =>
-        Mplids.every(other => 
-          candidate === other || other.includes(candidate)
-        )
-      );
-      plotparent.appendChild(document.querySelector('#'+parentid)) // add the mpl parent to the plotparent object
+      if (newMplObjects.length > 0) {
+        const Mplids = Array.from(newMplObjects).map(el => el.id);
+        // I'm going to rename the new stuff so that these won't show up in the 
+        // query in the future. This also means that this query includes only the stuff from this run. 
+        
+        // The parent's id is a substring of all the others, so find that one. 
+        const parentid = Mplids.find(candidate =>
+          Mplids.every(other => 
+            candidate === other || other.includes(candidate)
+          )
+        );
+        plotparent.appendChild(document.querySelector('#'+parentid)) // add the mpl parent to the plotparent object
 
-      // Now rename all the mpl objects
-      newMplObjects.forEach(function(element) {
-        element.id = "plotobject"
-      });
+        // Now rename all the mpl objects
+        newMplObjects.forEach(function(element) {
+          element.id = "plotobject"
+        });
+      }
 
 
     } catch (error) {
