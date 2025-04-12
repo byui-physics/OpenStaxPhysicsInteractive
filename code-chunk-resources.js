@@ -96,21 +96,20 @@ class PythonCodeCell extends HTMLElement {
 
       // MOVE THE PLOTS TO WHERE THEY SHOULD BE
       const newMplObjects = document.querySelectorAll(`[id*="matplotlib_"]`)
+      const Mplids = Array.from(newMplObjects).map(el => el.id);
       // I'm going to rename the new stuff so that these won't show up in the 
       // query in the future. This also means that this query includes only the stuff from this run. 
       
-      newMplObjects.forEach(function(element) {
-        var highestObject = element;
-        while (highestObject.parentElement.id.startsWith("matplotlib_")) {
-          highestObject = highestObject.parentElement;
-        }
-        // now we know we have the parent
-        if (!plotparent.querySelector(highestObject.id)) {
-          // If the parent isn't already in the plotparent object
-          plotparent.appendChild(highestObject);
-        }
+      // The parent's id is a substring of all the others, so find that one. 
+      const parentid = Mplids.find(candidate =>
+        Mplids.every(other => 
+          candidate === other || other.includes(candidate)
+        )
+      );
+      plotparent.appendChild(document.querySelector('#'+parentid)) // add the mpl parent to the plotparent object
 
-        // change the id of the object
+      // Now rename all the mpl objects
+      newMplObjects.forEach(function(element) {
         element.id = "plotobject"
       });
 
