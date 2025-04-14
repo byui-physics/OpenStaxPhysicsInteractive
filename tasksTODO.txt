@@ -1,4 +1,7 @@
 Make a python reference page so students can go back and check stuff, but we don't have to 
 introduce it all at once. 
 
-fix the auto resizing of code cells. It works local but not online. 
+
+mention installing
+
+maybe talk about printing with significant figures
