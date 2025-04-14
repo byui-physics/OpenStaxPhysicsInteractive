@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpenStax Interactive Demo</title>
+    <title>OpenStax Physics</title>
     <link rel="stylesheet" type="text/css" href="textbook_files/extracted_book_v1/the-style-epub.css"/>
 
     <!-- Add these three lines to add code chunk availability -->
@@ -15,11 +15,9 @@
 
 </head>
 <body>
-    <h1>OpenStax with Embedded Python Demo</h1>
+    <h1>OpenStax Physics (with Python)</h1>
 
-    <p> Welcome to the interactive version of the OpenStax textbook, created by Addison Ballif. This is a copy of the OpenStax University Physics volumes 1-3 that has python exercises and examples 
-        embedded into the text. Below are links to each of the three volumes. 
-    </p>
+    <p><i>University Physics</i> is a three-volume collection that meets the scope and sequence requirements for two- and three-semester calculus-based physics courses. <a href="textbook_files/extracted_book_v1/university-physics-volume-1.toc.html">Volume 1</i> covers mechanics, sound, oscillations, and waves. <a href="textbook_files/extracted_book_v2/university-physics-volume-2.toc.html"><i>Volume 2</i></a> covers thermodynamics, electricity and magnetism, and <a href="textbook_files/extracted_book_v3/university-physics-volume-3.toc.html"><i>Volume 3</i></a> covers optics and modern physics. This textbook emphasizes connections between theory and application, making physics concepts interesting and accessible to students while maintaining the mathematical rigor inherent in the subject. Frequent, strong examples focus on how to approach a problem, how to work with the equations, and how to check and generalize the result.<br></p>
 
     <ul>
         <li><a href="textbook_files/extracted_book_v1/university-physics-volume-1.toc.html">Volume 1 Table of Contents</a></li>
@@ -27,11 +25,16 @@
         <li><a href="textbook_files/extracted_book_v3/university-physics-volume-3.toc.html">Volume 3 Table of Contents</a></li>
     </ul>
 
+    <p> This version of OpenStax is a custom version hosted by BYU-Idaho Physics Department. It has been modified to include computational methods exercises. 
+        The text features imbedded python code cells that run in-browser so students have no need to install python on their computers. This version of OpenStax University Physics
+        was copied March 2025. Any changes made to the University Physics textbooks since then may not be reflected in this version of the text. The live OpenStax text can be found <a href="https://openstax.org/details/books/university-physics-volume-1">here (for volume 1).</a>
+    </p>
 
-    <p>The live OpenStax text can be found <a href="https://openstax.org/details/books/university-physics-volume-1">here (for volume 1).</a> The version of University physics was copied 
-    March 2025 and does not reflect changes made to the textbook since then. </p>
+<h3>Python Cell Demonstration</h3>
 
-    <p>This text uses piodide, and code-mirror to make python runnable from the browser. Below is an example of the code cells that can be embedded throughout the text. </p>
+<p>Throughout the text are python cells similar to that shown below. </p>
+
+    <p>This text uses piodide and code-mirror to make python runnable from the browser. Below is an example of the code cells that can be embedded throughout the text. </p>
 
     <python-code-cell>
 # import the array from numpy
@@ -44,7 +47,7 @@ C = array([-114.7, 80.3])
 
 print(A, B, C)</python-code-cell>
 
-<p>Here is another code cell:</p>
+<p>Here is another code cell that features matplotlib support.</p>
 
 <python-code-cell>
 from matplotlib import pyplot as plt
@@ -65,6 +68,13 @@ plt.show()
   Hopefully that is useful. 
 
 </p>
+
+<div><h3 class="author-heading">Contributing Authors</h3><div class="loc-nonsenior-author">Stephen D. Druger, Northwestern University</div><div class="loc-nonsenior-author">David Anderson, Albion College</div><div class="loc-nonsenior-author">Daniel Bowman, Ferrum College</div><div class="loc-nonsenior-author">Gerald Friedman, Santa Fe Community College</div><div class="loc-nonsenior-author">Edw. S. Ginsberg, University of Massachusetts</div><div class="loc-nonsenior-author">Kenneth Podolak, Plattsburgh State University</div><div class="loc-nonsenior-author">Takashi Sato, Kwantlen Polytechnic University</div><div class="loc-nonsenior-author">David Smith, University of the Virgin Islands</div><div class="loc-nonsenior-author">Joseph Trout, Richard Stockton College</div><div class="loc-nonsenior-author">Kevin Wheelock, Bellevue College</div><div class="loc-nonsenior-author">Dedra Demaree, Georgetown University</div><div class="loc-nonsenior-author">Richard Ludlow, Daniel Webster College</div><div class="loc-nonsenior-author">Patrick Motl, Indiana University Kokomo</div><div class="loc-nonsenior-author">Lev Gasparov, University of North Florida</div><div class="loc-nonsenior-author">Lee LaRue, Paris Junior College</div><div class="loc-nonsenior-author">Mark Lattery, University of Wisconsin</div><div class="loc-nonsenior-author">Tao Pang, University of Nevada, Las Vegas</div><div class="loc-nonsenior-author">Alice Kolakowska, University of Memphis</div></div>
+    <div><h3 class="author-heading">Senior Contributing Authors</h3><div class="loc-senior-author">William Moebs, Formerly of Loyola Marymount University</div><div class="loc-senior-author">Samuel J. Ling, Truman State University</div><div class="loc-senior-author">Jeff Sanny, Loyola Marymount University</div></div>
+
+
+    <br>
+    <p>Code support written by Addison Ballif.</p>
 
 
 <!-- These scripts run at the end of the file to make code cells work -->
