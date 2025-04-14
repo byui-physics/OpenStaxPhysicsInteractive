@@ -39,7 +39,7 @@ class PythonCodeCell extends HTMLElement {
       </style>
       <textarea id="codeInput" style="width: 100%;"></textarea>
       <button id="runButton">Run</button><button id="resetButton">Reset Code</button><button id="copyButton">Copy Code</button>
-      <textarea id="output" style="width: 100%;" disabled></textarea>
+      <textarea id="output" style="width: 100%;" disabled rows='5'></textarea>
       <div id="plot"></div>    
     `;
   }
@@ -82,7 +82,7 @@ class PythonCodeCell extends HTMLElement {
   async runCode() {
     
     if (!this.pyodide) {
-      this.shadowRoot.querySelector('#output').value = 'Python is not available.';
+      this.shadowRoot.querySelector('#output').value = 'Python Initializing. Try again in a moment. ';
       return;
     }
 
