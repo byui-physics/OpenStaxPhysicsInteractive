@@ -1397,19 +1397,19 @@ nav#toc > ol > .os-toc-index > a::after {
 }
 
 .os-glossary-container {
-  column-count: 2;
+  column-count: 1;
   column-gap: 2.4rem;
   column-width: auto;
 }
 
 .os-key-concepts-container {
-  column-count: 2;
+  column-count: 1;
   column-gap: 2.4rem;
   column-width: auto;
 }
 
 .os-review-conceptual-questions-container {
-  column-count: 2;
+  column-count: 1;
   column-gap: 2.4rem;
   column-width: auto;
 }

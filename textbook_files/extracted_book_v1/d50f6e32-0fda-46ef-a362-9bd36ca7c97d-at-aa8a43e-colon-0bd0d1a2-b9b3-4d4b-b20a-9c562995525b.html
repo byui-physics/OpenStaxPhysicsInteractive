@@ -7,6 +7,13 @@
 Significant Figures
 </title>
 <link rel="stylesheet" type="text/css" href="the-style-epub.css"/>
+
+<!-- Add these three lines to add code chunk availability -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
+<script src="https://cdn.jsdelivr.net/pyodide/v0.27.2/full/pyodide.js"></script>
+<script type="module" src="../../code-chunk-resources.js"></script>
+
 </head>
 <body>
     <div data-type="page" id="page_0bd0d1a2-b9b3-4d4b-b20a-9c562995525b" class="chapter-content-module" data-book-content="true"><h2 data-type="document-title" data-sm="./modules/m58274/index.cnxml:3:1" id="page_0bd0d1a2-b9b3-4d4b-b20a-9c562995525b_titlecreatedbycookbook"><span class="os-number">1.6</span>
@@ -198,6 +205,28 @@ We can conclude the average weight of a bag of apples from this store is 5.1 lb 
    Next, we identify the least-precise measurement: 13.7 kg. This measurement is expressed to the 0.1 decimal place, so our final answer must also be expressed to the 0.1 decimal place. Thus, the answer is rounded to the tenths place, giving us 15.2 kg.</li>
 </ol>
 </section>
+<section data-depth="2"><h4 data-type="title">Significant figures in Python</h4>
+  <p>When we performing intermediate calculations, we want to include as many significant figures as we can to prevent rounding errors. However, when we have our final answer we only want to display as many significant figures as appropriate.
+    Python will keep as many significant digits as it can during the intermediate calculations. To specify the precision of the final answer, we can use a print statement as shown below. 
+  </p>
+
+  <python-code-cell># printing only 4 significant figures of pi. 
+
+pi = 3.14159265358979
+
+# print only 4 significant figures
+print(f'First four significant figures of pi: {pi:.4g}')
+  </python-code-cell>
+
+  <p>The syntax for that can be a little dense. The print function is what returns the answer to the console. 
+    The part in curly braces <code>{pi:.4g}</code> is a special formatting code that controls how the number pi appears. It tells the computer to show four significant figures. If we wanted to display only three
+    significant figures, we could change it to <code>{pi:.3g}</code>. Try changing the code and running it again. 
+  </p>
+  
+
+
+
+</section>
 <section data-depth="2" id="fs-id1168328059075" data-sm="./modules/m58274/index.cnxml:102:1"><h4 data-type="title" data-sm="./modules/m58274/index.cnxml:103:1">Significant figures in this text</h4>
 <p id="fs-id1168328071559" data-sm="./modules/m58274/index.cnxml:104:1">In this text, most numbers are assumed to have three significant figures. Furthermore, consistent numbers of significant figures are used in all worked examples. An answer given to three digits is based on input good to at least three digits, for example. If the input has fewer significant figures, the answer will also have fewer significant figures. Care is also taken that the number of significant figures is reasonable for the situation posed. In some topics, particularly in optics, more accurate numbers are needed and we use more than three significant figures. Finally, if a number is <em data-effect="italics" data-sm="./modules/m58274/index.cnxml:104:626">exact</em>, such as the two in the formula for the circumference of a circle, <em data-effect="italics" data-sm="./modules/m58274/index.cnxml:104:737">C</em> = 2π<em data-effect="italics" data-sm="./modules/m58274/index.cnxml:104:781">r</em>, it does not affect the number of significant figures in a calculation. Likewise, conversion factors such as 100 cm/1 m are considered exact and do not affect the number of significant figures in a calculation.</p>
 </section>
@@ -215,6 +244,17 @@ We can conclude the average weight of a bag of apples from this store is 5.1 lb 
   </div>
 
 <a href="university-physics-volume-1.toc.html">Back to table of contents</a>
+
+<!-- These scripts run at the end of the file to make code cells work -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/codemirror.min.js"
+		integrity="sha512-XMlgZzPyVXf1I/wbGnofk1Hfdx+zAWyZjh6c21yGo/k1zNC4Ve6xcQnTDTCHrjFGsOrVicJsBURLYktVEu/8vQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/mode/python/python.min.js"
+		integrity="sha512-/mavDpedrvPG/0Grj2Ughxte/fsm42ZmZWWpHz1jCbzd5ECv8CB7PomGtw0NAnhHmE/lkDFkRMupjoohbKNA1Q=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="module" src="../../initialize-pyodide-chunks.js"></script>
+
+
 </body>
 </html>
 <!-- # sourceMappingURL=d50f6e32-0fda-46ef-a362-9bd36ca7c97d-at-aa8a43e-colon-0bd0d1a2-b9b3-4d4b-b20a-9c562995525b.html.map -->
