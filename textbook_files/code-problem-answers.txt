@@ -1,6 +1,5 @@
 Answer to problem C1. 
-CODE:
-
+INPUT:
 c = 3e8 # m/s
 me = 9.1e-31 # kg
 
@@ -12,11 +11,14 @@ gamma = (1 - (v/c)**2)**(-0.5)
 # compute kinetic energy 
 K = (gamma - 1)*me*c**2
 
+print(f'{K:.3g} J')
+
 eV = K/1.602e-19
 
-print(f'{K:.3g}', f'{eV:.3g}')
+print(f'{eV:.3g} eV')
 
-OUTPUT: 
-1.75e-12 1.09e+07
 
-The first number should be the answer in Joules, and the second is in eV. 
+OUTPUT:
+1.75e-12 J, 1.09e+07 eV
+
+

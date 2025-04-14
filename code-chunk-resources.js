@@ -95,7 +95,11 @@ class PythonCodeCell extends HTMLElement {
       }
 
       // Run the python
-      this.shadowRoot.querySelector('#output').value = await this.pyodide.runPython(this.codeEditor.getValue());
+      let outputLines = []; // saves the printed lines as we go
+      this.pyodide.setStdout({ batched: (msg) => outputLines.push(msg) });
+      await this.pyodide.runPython(this.codeEditor.getValue());
+      const result = outputLines.join("\n");
+      this.shadowRoot.querySelector('#output').value = result;
       
       // If it says undefined, then just make it blank because just saying undefined is weird. 
       if (this.shadowRoot.querySelector('#output').value == 'undefined') {
