@@ -3,5 +3,3 @@ introduce it all at once.
 
 
 mention installing
-
-maybe talk about printing with significant figures
