@@ -1,7 +1,6 @@
-# PhysicsTextInteractiveDemo
-A demonstration of an interactive version of openstax in html form.
-This textbook includes runnable python chunks to allow students to learn how
-to use python to do physics as they learn the principles. 
+# OpenStax Physics Interactive
+This is a version of OpenStax that includes imbedded Python Code chunks that are runnable in the browser. 
+We are working on adding simple computational material.
 
 Here is the link. 
-https://ahballif.github.io/PhysicsTextInteractiveDemo/ 
+https://byui-physics.github.io/OpenStaxPhysicsInteractive/ 
