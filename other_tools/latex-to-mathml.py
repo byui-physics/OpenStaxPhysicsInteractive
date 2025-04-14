@@ -1,7 +1,7 @@
 from latex2mathml import converter
 
 ''' INPUT PARAMETERS '''
-latex_eq = r"x_0"
+latex_eq = r"1 \, \text{eV} = 1.602 \times 10^{-19} \, \text{J}"
 inline = True # change this depending on what you want
 
 

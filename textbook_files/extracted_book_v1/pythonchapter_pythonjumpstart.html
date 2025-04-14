@@ -16,7 +16,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
 <body>
     <div data-type="page" class="chapter-content-module" data-book-content="true"><h2 data-type="document-title">
 <span class="os-divider"> </span>
-<span data-type="" class="os-text">Computing Solutions Numerically</span>
+<span data-type="" class="os-text">Using Computing Tools</span>
 </h2>
 <div data-type="abstract"><h3 data-type="title">Learning Objectives</h3>
 <p>By the end of this section, you will be able to:</p>
@@ -115,6 +115,27 @@ print(xf)
 <p>Also notice in the code that once we have the equation that gives our answer, all we need to do is type it in. Typing equations into python is 
     very straight forward and looks much like the way we write them when we are coming up with the equations. 
 </p>
+
+<p>Let's go over how to use the most common arithmetic operations: addition, subtraction, multiplication, division, and exponentiation. 
+    The first four are as you might expect. To raise a variable to a power in python, you use a double asterisk. Python follows the order of operations,
+    and you can insert parenthesis to help you keep the order straight. Below is an example.  
+</p>
+
+<python-code-cell># some example variables
+a = 3.2
+b = 0.97
+
+# simple arithmetic
+c = a + b 
+c = b - a 
+c = a * b 
+c = b / a 
+c = a**b # raise a to the b power
+c = a**0.5 # the square root of a 
+
+# order of operations
+c = (a*b+0.5*a)/4
+</python-code-cell>
 
 <p>For now, this is a good start. We will learn more tricks throughout our physics journey that will allow us to break difficult problems into simpler ones.
     As you move forward, we will provide python cells in the text for you to use like this to compute answers to the problems you are working on. As the problems

@@ -1,0 +1,22 @@
+Answer to problem C1. 
+CODE:
+
+c = 3e8 # m/s
+me = 9.1e-31 # kg
+
+v = 0.999*c
+
+# compute gamma
+gamma = (1 - (v/c)**2)**(-0.5)
+
+# compute kinetic energy 
+K = (gamma - 1)*me*c**2
+
+eV = K/1.602e-19
+
+print(f'{K:.3g}', f'{eV:.3g}')
+
+OUTPUT: 
+1.75e-12 1.09e+07
+
+The first number should be the answer in Joules, and the second is in eV. 

@@ -6,12 +6,22 @@
     Problems
   </title>
 <link rel="stylesheet" type="text/css" href="the-style-epub.css"/>
+
+<!-- Add these three lines to add code chunk availability -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
+<script src="https://cdn.jsdelivr.net/pyodide/v0.27.2/full/pyodide.js"></script>
+<script type="module" src="../../code-chunk-resources.js"></script>
+
 </head>
 <body>
 <div class="os-eoc os-review-problems-container" data-type="composite-page" data-uuid-key=".review-problems" id="composite-page-5" data-book-content="true">
   <h3 data-type="title">
     <span class="os-text">Problems</span>
   </h3>
+
+  <python-code-cell># Feel free to use this code cell as a calculator. </python-code-cell>
+
   <div class="os-review-problems">
   <div class="os-section-area">
   <section data-depth="1" id="fs-id1168329003240" class="review-problems" data-sm="./modules/m58269/index.cnxml:138:1"><a href="d50f6e32-0fda-46ef-a362-9bd36ca7c97d-at-aa8a43e-colon-2e2ae034-543a-4c1c-a6df-cf674017325f.html" data-page-slug="1-1-the-scope-and-scale-of-physics" data-page-uuid="2e2ae034-543a-4c1c-a6df-cf674017325f" data-page-fragment="">
@@ -712,24 +722,72 @@
 
 </div>
 <div data-type="exercise" id="fs-id11683291554120" data-sm="./modules/m58273/index.cnxml:129:1">
-<div data-type="problem" id="fs-id11683294640060" data-sm="./modules/m58273/index.cnxml:130:1">
-<span class="os-number">64</span><span class="os-divider">. </span>
-<div class="os-problem-container">
-<p id="fs-id1168329050600" data-sm="./modules/m58273/index.cnxml:131:1">Estimate the mass of a virus.</p>
+  <div data-type="problem" id="fs-id11683294640060" data-sm="./modules/m58273/index.cnxml:130:1">
+    <span class="os-number">64</span><span class="os-divider">. </span>
+    <div class="os-problem-container">
+      <p id="fs-id1168329050600" data-sm="./modules/m58273/index.cnxml:131:1">Estimate the mass of a virus.</p>
+    </div>
+  </div>
 </div>
-</div>
-</div>
-<div data-type="exercise" id="fs-id1168326791766" data-sm="./modules/m58273/index.cnxml:134:1" class="os-hasSolution">
-<div data-type="problem" id="fs-id1168329511752" data-sm="./modules/m58273/index.cnxml:135:1">
-<a class="os-number" href="d50f6e32-0fda-46ef-a362-9bd36ca7c97d-at-aa8a43e-colon-db988b89-3717-5053-bffe-d26b023624a8.html#fs-id1168326791766-solution" data-page-slug="chapter-1" data-page-uuid="db988b89-3717-5053-bffe-d26b023624a8" data-page-fragment="fs-id1168326791766-solution">65</a><span class="os-divider">. </span>
-<div class="os-problem-container">
-<p id="fs-id1168329138592" data-sm="./modules/m58273/index.cnxml:136:1">A floating-point operation is a single arithmetic operation such as addition, subtraction, multiplication, or division. (a) Estimate the maximum number of floating-point operations a human being could possibly perform in a lifetime. (b) How long would it take a supercomputer to perform that many floating-point operations?</p>
-</div>
-</div>
+  <div data-type="exercise" id="fs-id1168326791766" data-sm="./modules/m58273/index.cnxml:134:1" class="os-hasSolution">
+    <div data-type="problem" id="fs-id1168329511752" data-sm="./modules/m58273/index.cnxml:135:1">
+      <a class="os-number" href="d50f6e32-0fda-46ef-a362-9bd36ca7c97d-at-aa8a43e-colon-db988b89-3717-5053-bffe-d26b023624a8.html#fs-id1168326791766-solution" data-page-slug="chapter-1" data-page-uuid="db988b89-3717-5053-bffe-d26b023624a8" data-page-fragment="fs-id1168326791766-solution">65</a><span class="os-divider">. </span>
+      <div class="os-problem-container">
+        <p id="fs-id1168329138592" data-sm="./modules/m58273/index.cnxml:136:1">A floating-point operation is a single arithmetic operation such as addition, subtraction, multiplication, or division. (a) Estimate the maximum number of floating-point operations a human being could possibly perform in a lifetime. (b) How long would it take a supercomputer to perform that many floating-point operations?</p>
+      </div>
+    </div>
 
-</div>
+  </div>
 </section>
 </div>
+
+<div class="os-section-area">
+  <section data-depth="1" class="review-problems"><a href="pythonchapter_pythonjumpstart.html">
+  <h3 data-type="document-title">
+  <span class="os-text" data-type="">Using Computing Tools</span>
+</h3>
+
+</a>
+
+<div data-type="exercise" id="fs-id11683291554120" data-sm="./modules/m58273/index.cnxml:129:1">
+  <div data-type="problem" id="fs-id11683294640060" data-sm="./modules/m58273/index.cnxml:130:1">
+    <span class="os-number">C1</span><span class="os-divider">. </span>
+    <div class="os-problem-container">
+      <p id="fs-id1168329050600" data-sm="./modules/m58273/index.cnxml:131:1">The relativistic kinetic energy of a moving particle is given by 
+        <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>K</mi><mo>&#x0003D;</mo><mo stretchy="false">&#x00028;</mo><mi>&#x003B3;</mi><mo>&#x02212;</mo><mn>1</mn><mo stretchy="false">&#x00029;</mo><mi>m</mi><msup><mi>c</mi><mn>2</mn></msup></mrow></math></span>
+        where <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x003B3;</mi></mrow></math></span> can be calculated using the formula
+        <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x003B3;</mi><mo>&#x0003D;</mo><mo stretchy="false">&#x00028;</mo><mn>1</mn><mo>&#x02212;</mo><mo stretchy="false">&#x00028;</mo><mi>v</mi><mo>&#x0002F;</mo><mi>c</mi><msup><mo stretchy="false">&#x00029;</mo><mn>2</mn></msup><msup><mo stretchy="false">&#x00029;</mo><mrow><mo>&#x02212;</mo><mn>1</mn><mo>&#x0002F;</mo><mn>2</mn></mrow></msup></mrow></math></span>.
+        By first computing <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x003B3;</mi></mrow></math></span>, calculate the kinetic energy of an electron with mass 
+        <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>m</mi><mi>e</mi></msub><mo>&#x0003D;</mo></mrow></math></span> 9.1e-31 kg moving with speed <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>v</mi></mrow></math></span> equal to 
+        99.9 percent of the speed of light. The speed of light is <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>c</mi><mo>&#x0003D;</mo></mrow></math></span> 3e8 m/s. The code has been started for you below. The number you get should be very small. Using these numbers, your answer will be in
+        Joules. Convert your answer to electron volts using the fact that 
+        <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn><mspace width="0.167em" /><mtext>eV</mtext><mo>&#x0003D;</mo><mn>1.602</mn><mi>&#x000D7;</mi><msup><mn>10</mn><mrow><mo>&#x02212;</mo><mn>19</mn></mrow></msup><mspace width="0.167em" /><mtext>J</mtext></mrow></math></span>. 
+
+      </p>
+
+      <python-code-cell>
+c = 3e8 # m/s
+me = 9.1e-31 # kg
+
+v = 
+
+# compute gamma
+gamma = 
+
+# compute kinetic energy 
+K = 
+
+print(K)
+</python-code-cell>
+
+    </div>
+  </div>
+</div>
+
+
+<div>
+
+
 <div class="os-section-area">
   <section data-depth="1" id="fs-id1168325631295" class="review-problems" data-sm="./modules/m58274/index.cnxml:143:1"><a href="d50f6e32-0fda-46ef-a362-9bd36ca7c97d-at-aa8a43e-colon-0bd0d1a2-b9b3-4d4b-b20a-9c562995525b.html" data-page-slug="1-6-significant-figures" data-page-uuid="0bd0d1a2-b9b3-4d4b-b20a-9c562995525b" data-page-fragment="">
   <h3 data-type="document-title">
@@ -893,6 +951,16 @@
 </div>
 
 <a href="university-physics-volume-1.toc.html">Back to table of contents</a>
+
+<!-- These scripts run at the end of the file to make code cells work -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/codemirror.min.js"
+		integrity="sha512-XMlgZzPyVXf1I/wbGnofk1Hfdx+zAWyZjh6c21yGo/k1zNC4Ve6xcQnTDTCHrjFGsOrVicJsBURLYktVEu/8vQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/mode/python/python.min.js"
+		integrity="sha512-/mavDpedrvPG/0Grj2Ughxte/fsm42ZmZWWpHz1jCbzd5ECv8CB7PomGtw0NAnhHmE/lkDFkRMupjoohbKNA1Q=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="module" src="../../initialize-pyodide-chunks.js"></script>
+
 </body>
 </html>
 <!-- # sourceMappingURL=d50f6e32-0fda-46ef-a362-9bd36ca7c97d-at-aa8a43e-colon-b5d92958-5463-562f-a947-1c1d92b7485d.html.map -->
