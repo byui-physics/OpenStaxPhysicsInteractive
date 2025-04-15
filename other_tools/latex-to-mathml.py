@@ -1,7 +1,7 @@
 from latex2mathml import converter
 
 ''' INPUT PARAMETERS '''
-latex_eq = r"1 \, \text{eV} = 1.602 \times 10^{-19} \, \text{J}"
+latex_eq = r"\theta = \cos^{-1} \left( \frac{\vec{\mathbf A} \vec{\mathbf B}}{AB} \right)"
 inline = True # change this depending on what you want
 
 

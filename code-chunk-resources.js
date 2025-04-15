@@ -38,10 +38,20 @@ class PythonCodeCell extends HTMLElement {
         }
       </style>
       <textarea id="codeInput" style="width: 100%;"></textarea>
-      <button id="runButton">Run</button><button id="resetButton">Reset Code</button><button id="copyButton">Copy Code</button>
-      <textarea id="output" style="width: 100%;" disabled rows='5'></textarea>
+      <button id="runButton">Run</button><button id="resetButton">Reset Code</button><button id="copyButton">Copy Code</button>`;
+
+    const allCells = document.querySelectorAll('python-code-cell');
+    this.isFirst = allCells[0] === this;
+    if (!this.isFirst) {
+      // if it's not the first one, add a run previous button
+      this.shadowRoot.innerHTML += `<button id="runPrevious">Run Previous</button>
+      `;
+    }
+
+    this.shadowRoot.innerHTML += `<textarea id="output" style="width: 100%;" disabled rows='5'></textarea>
       <div id="plot"></div>    
     `;
+
   }
 
   async connectedCallback() {
@@ -74,6 +84,9 @@ class PythonCodeCell extends HTMLElement {
     this.shadowRoot.querySelector('#runButton').addEventListener('click', this.runCode.bind(this));
     this.shadowRoot.querySelector('#resetButton').addEventListener('click', this.resetCode.bind(this));
     this.shadowRoot.querySelector('#copyButton').addEventListener('click', this.copycode.bind(this));
+    if (!this.isFirst) {
+      this.shadowRoot.querySelector('#runPrevious').addEventListener('click', this.runPrevious.bind(this));
+    }
   }
   
   
@@ -149,6 +162,20 @@ class PythonCodeCell extends HTMLElement {
       .catch(err => {
         console.error("Failed to copy: ", err);
       });
+  }
+
+  // This function runs all previous cells
+  async runPrevious() {
+    const allCells = Array.from(document.querySelectorAll('python-code-cell'));
+    const index = allCells.indexOf(this);
+    const previousCells = allCells.slice(0, index);
+
+    for (const cell of previousCells) {
+      // Wait for each cell to finish before moving on
+      if (typeof cell.runCode === 'function') {
+        await cell.runCode();
+      }
+    }
   }
 
 }
