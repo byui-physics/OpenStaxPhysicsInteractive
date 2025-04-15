@@ -1,7 +1,7 @@
 from latex2mathml import converter
 
 ''' INPUT PARAMETERS '''
-latex_eq = r"\theta = \cos^{-1} \left( \frac{\vec{\mathbf A} \vec{\mathbf B}}{AB} \right)"
+latex_eq = r"\mathbf {\hat j} = (0.0, 1.0)"
 inline = True # change this depending on what you want
 
 

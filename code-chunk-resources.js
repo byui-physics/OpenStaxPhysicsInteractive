@@ -115,7 +115,7 @@ class PythonCodeCell extends HTMLElement {
       this.shadowRoot.querySelector('#output').value = result;
       
       // If it says undefined, then just make it blank because just saying undefined is weird. 
-      if (this.shadowRoot.querySelector('#output').value == 'undefined') {
+      if (this.shadowRoot.querySelector('#output').value == '') {
         this.shadowRoot.querySelector('#output').value = `Python executed successfully at ${(new Date()).toLocaleTimeString()}`
       }
 

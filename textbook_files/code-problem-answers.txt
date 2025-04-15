@@ -21,4 +21,54 @@ print(f'{eV:.3g} eV')
 OUTPUT:
 1.75e-12 J, 1.09e+07 eV
 
+Answer to problem C2.
+INPUT:
+from numpy import array, pi, sin, cos
 
+A = 10.0 * array([ cos(30 * pi/180), sin(30 * pi/180) ])
+B = 5.0 * array([ cos(53 * pi/180), sin(52 * pi/180) ])
+C = 12.0 * array([ cos(-60 * pi/180), sin(-60 * pi/180) ])
+D = 20.0 * array([ cos((180-37) * pi/180), sin((180-37) * pi/180) ])
+F = 20.0 * array([ cos(210 * pi/180), sin(210 * pi/180) ])
+
+ihat = array([1, 0])
+jhat = array([0, 1])
+
+# calculating Bhat
+Bmag = (B[0]**2 + B[1]**2)**0.5
+Bhat = B/Bmag
+
+# computing vector sums
+print(D + F) # part (c) done for you
+print(D - F)
+print(A + 2*F)
+print(C - 2*D + 3*F)
+print(A - 4*D + 2*F)
+
+
+# computing scalar products
+print() # add a blank line
+print( A @ C ) # part (a) of 62 done for you
+print( A @ F )
+print( D @ C )
+print( A @ (F + 2*C))
+print( ihat @ B )
+print( jhat @ B )
+print( (3*ihat - jhat) @ B )
+print( Bhat @ B )
+
+OUTPUT: 
+[-33.29321828   2.03630046]
+[ 1.34779787 22.03630046]
+[-25.98076211 -15.        ]
+[-14.01610383 -64.46490577]
+[ 37.91007869 -63.14520185]
+
+2.842170943040401e-14
+-200.0
+-220.9211648285857
+-199.99999999999994
+3.0090751157602416
+3.94005376803361
+5.087171579247115
+4.95767654726318
