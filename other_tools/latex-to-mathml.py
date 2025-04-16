@@ -1,7 +1,7 @@
 from latex2mathml import converter
 
 ''' INPUT PARAMETERS '''
-latex_eq = r"\mathbf {\hat j} = (0.0, 1.0)"
+latex_eq = r"v(t)"
 inline = True # change this depending on what you want
 
 

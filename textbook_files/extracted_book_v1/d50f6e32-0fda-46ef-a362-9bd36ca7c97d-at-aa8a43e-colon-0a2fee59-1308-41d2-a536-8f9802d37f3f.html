@@ -7,6 +7,13 @@
 Position, Displacement, and Average Velocity
 </title>
 <link rel="stylesheet" type="text/css" href="the-style-epub.css"/>
+
+<!-- Add these three lines to add code chunk availability -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
+<script src="https://cdn.jsdelivr.net/pyodide/v0.27.2/full/pyodide.js"></script>
+<script type="module" src="../../code-chunk-resources.js"></script>
+
 </head>
 <body>
     <div data-type="page" id="page_0a2fee59-1308-41d2-a536-8f9802d37f3f" class="chapter-content-module" data-book-content="true"><h2 data-type="document-title" data-sm="./modules/m58282/index.cnxml:3:1" id="page_0a2fee59-1308-41d2-a536-8f9802d37f3f_titlecreatedbycookbook"><span class="os-number">3.1</span>
@@ -226,7 +233,8 @@ Position, Displacement, and Average Velocity
 </mrow>
 </semantics>
 </math></span>.</p>
-<div data-type="example" id="fs-id1168329011730" data-sm="./modules/m58282/index.cnxml:67:1"><h3 class="os-title">
+<div data-type="example" id="fs-id1168329011730" data-sm="./modules/m58282/index.cnxml:67:1">
+  <h3 class="os-title">
   <span class="os-title-label">Example </span>
   <span class="os-number">3.1</span>
   <span class="os-divider"> </span>
@@ -445,7 +453,70 @@ Jill’s total displacement is −0.75 km, which means at the end of her trip sh
 </semantics>
 </math></span> km/min starting at the same time Jill left her home, they both would arrive at the final stopping point at the same time. Note that if Jill were to end her trip at her house, her total displacement would be zero, as well as her average velocity. The total distance traveled during the 58 minutes of elapsed time for her trip is 3.75 km.
 </div>
+
 </div>
+
+<div data-type="example" id="fs-id1168329011730" data-sm="./modules/m58282/index.cnxml:67:1"><h3 class="os-title">
+  <span class="os-title-label">Code Example </span>
+  <span class="os-number">3.1</span>
+  <span class="os-divider"> </span>
+</h3>
+<div class="body">
+
+<p>Python can be a great tool for plotting displacement vs time for more complicated functions. 
+  Suppose the position of an object is given by 
+  <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo stretchy="false">&#x00028;</mo><mi>t</mi><mo stretchy="false">&#x00029;</mo><mo>&#x0003D;</mo><mi>sin</mi><mo stretchy="false">&#x00028;</mo><mn>2</mn><mi>t</mi><mo stretchy="false">&#x00029;</mo><mo>&#x0002B;</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>2</mn></mrow></mfrac><mi>t</mi></mrow></math></span>.
+  In python we can define a function that describes this relationship. 
+</p>
+
+<python-code-cell>from numpy import sin
+  
+#defining a function
+def x(t):
+    return sin(2*t) + (1/2)*t
+
+# try using the function 
+tvalue = 3 # seconds 
+print(f'The position at {tvalue} seconds is {x(tvalue):.3g} m.')
+</python-code-cell>
+
+<p>Now python can calculate 
+  <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi></mrow></math></span>
+  for various values of 
+  <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>t</mi></mrow></math></span>. 
+  However, for plotting python doesn't plot functions. Instead it needs a collection of x points and a collection of y points. For this we will use arrays. 
+  There is a function in numpy that will create a sequence of evenly spaced x points (or <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>t</mi></mrow></math></span> points in our case).
+  Then we can pass our t points into our function to create our x points. The plotting functions come from a library called matplotlib. Below is an example. Try running the code 
+  to see the plot it creates. 
+</p>
+
+<python-code-cell>from matplotlib import pyplot as plt # import plotting function 
+
+#defining a function
+def x(t):
+    return sin(2*t) + (1/2)*t
+
+from numpy import linspace # this function creates equally spaced t points
+
+tpoints = linspace(0, 10, 100) # create 100 points from 0 to 10 seconds. 
+xpoints = x(tpoints) # pass tpoints into our function. 
+
+# plot the results 
+plt.clf()
+plt.plot(tpoints, xpoints)
+plt.xlabel('Time (s)')
+plt.ylabel('Position (m)')
+plt.title('Position vs Time Graph')
+plt.show()
+</python-code-cell>
+
+<p>Try changing the function in the code above to plot a different position vs time graph. Try changing the number of tpoints from 100 points to 10 points. Notice how the curve becomes less smooth. 
+  This demonstrates how the code is plotting a collection of points rather than the function itself. 
+</p>
+
+  </div>
+  </div>
+
 <div data-type="note" id="fs-id1168326766711" class="check-understanding" data-sm="./modules/m58282/index.cnxml:146:1"><h3 class="os-title">
   <span class="os-title-label">Check Your Understanding </span>
   <span class="os-number">3.1</span>
@@ -474,6 +545,15 @@ Jill’s total displacement is −0.75 km, which means at the end of her trip sh
  
  
   </div>
+
+  <!-- These scripts run at the end of the file to make code cells work -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/codemirror.min.js"
+integrity="sha512-XMlgZzPyVXf1I/wbGnofk1Hfdx+zAWyZjh6c21yGo/k1zNC4Ve6xcQnTDTCHrjFGsOrVicJsBURLYktVEu/8vQ=="
+crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/mode/python/python.min.js"
+integrity="sha512-/mavDpedrvPG/0Grj2Ughxte/fsm42ZmZWWpHz1jCbzd5ECv8CB7PomGtw0NAnhHmE/lkDFkRMupjoohbKNA1Q=="
+crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="module" src="../../initialize-pyodide-chunks.js"></script>
 
 <a href="university-physics-volume-1.toc.html">Back to table of contents</a>
 </body>

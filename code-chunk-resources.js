@@ -77,6 +77,7 @@ class PythonCodeCell extends HTMLElement {
     });
     // This resizes the editor
     this.codeEditor.setSize(null, (this.codeEditor.lineCount() * parseInt(getComputedStyle(this.codeEditor.getWrapperElement()).lineHeight, 10) + 30) + "px"); // uses padding of 30
+    
 
     // pyodide gets assigned to this cell by the main page
 
@@ -176,6 +177,8 @@ class PythonCodeCell extends HTMLElement {
         await cell.runCode();
       }
     }
+
+    this.shadowRoot.querySelector('#output').value = `Previous cells executed at ${(new Date()).toLocaleTimeString()}`
   }
 
 }
