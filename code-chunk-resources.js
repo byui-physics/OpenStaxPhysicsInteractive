@@ -55,7 +55,24 @@ class PythonCodeCell extends HTMLElement {
   }
 
   async connectedCallback() {
-    // Load the default text
+    
+    requestAnimationFrame(() => {
+      setTimeout(() => {
+        this.initializeCodeMirror();
+      }, 0);
+    });
+
+    // Attach event listener to button
+    this.shadowRoot.querySelector('#runButton').addEventListener('click', this.runCode.bind(this));
+    this.shadowRoot.querySelector('#resetButton').addEventListener('click', this.resetCode.bind(this));
+    this.shadowRoot.querySelector('#copyButton').addEventListener('click', this.copycode.bind(this));
+    if (!this.isFirst) {
+      this.shadowRoot.querySelector('#runPrevious').addEventListener('click', this.runPrevious.bind(this));
+    }
+
+  }
+
+  initializeCodeMirror() {
     this.codeEditor = CodeMirror.fromTextArea(this.shadowRoot.querySelector('#codeInput'), {
       mode: { 
         name: "python", 
@@ -70,25 +87,16 @@ class PythonCodeCell extends HTMLElement {
       viewportMargin: 1,
       matchBrackets: true
     });
+  
     this.codeEditor.setValue(this.innerHTML.trim());
+  
     this.codeEditor.on("change", () => {
-      // This function resizes the editor
-      this.codeEditor.setSize(null, (this.codeEditor.lineCount() * parseInt(getComputedStyle(this.codeEditor.getWrapperElement()).lineHeight, 10) + 30) + "px"); // uses padding of 30
+      this.codeEditor.setSize(null, (this.codeEditor.lineCount() * parseInt(getComputedStyle(this.codeEditor.getWrapperElement()).lineHeight, 10) + 30) + "px");
     });
-    // This resizes the editor
-    this.codeEditor.setSize(null, (this.codeEditor.lineCount() * parseInt(getComputedStyle(this.codeEditor.getWrapperElement()).lineHeight, 10) + 30) + "px"); // uses padding of 30
-    
-
-    // pyodide gets assigned to this cell by the main page
-
-    // Attach event listener to button
-    this.shadowRoot.querySelector('#runButton').addEventListener('click', this.runCode.bind(this));
-    this.shadowRoot.querySelector('#resetButton').addEventListener('click', this.resetCode.bind(this));
-    this.shadowRoot.querySelector('#copyButton').addEventListener('click', this.copycode.bind(this));
-    if (!this.isFirst) {
-      this.shadowRoot.querySelector('#runPrevious').addEventListener('click', this.runPrevious.bind(this));
-    }
+  
+    this.codeEditor.setSize(null, (this.codeEditor.lineCount() * parseInt(getComputedStyle(this.codeEditor.getWrapperElement()).lineHeight, 10) + 30) + "px");
   }
+  
   
   
 
