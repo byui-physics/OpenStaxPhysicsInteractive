@@ -12,9 +12,7 @@ mention installing
 
 
 add Euler's method 1D
-
-add more chapter 1 problems
-    - Using plots to solve systems
+is there an example that we can put in 3.4 that will set up euler's method?
 
 fix chapter 2
 fix chapter 3
