@@ -165,7 +165,31 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
   <div data-type="problem">
     <span class="os-number">C1.1</span><span class="os-divider">. </span>
     <div class="os-problem-container">
-      <p>The relativistic kinetic energy of a moving particle is given by 
+
+      <p>The classical kinetic energy of a moving object is given by <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>K</mi><mo>&#x0003D;</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>2</mn></mrow></mfrac><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup></mrow></math></span>. 
+      A 1500 kg car is traveling at a speed of 19.3 m/s. Use python to calculate the car's kinetic energy. </p>
+
+      <python-code-cell hideable># define variables here 
+m = 
+v = 
+
+# calculate K here 
+K = 
+
+# print the results 
+print(f'The kinetic energy of the car is {K:.6g} J.') # is the is the right number of 'sig-figs?'
+      </python-code-cell>
+
+    </div>
+  </div>
+</div>
+
+
+<div data-type="exercise">
+  <div data-type="problem">
+    <span class="os-number">C1.2</span><span class="os-divider">. </span>
+    <div class="os-problem-container">
+      <p>In Einstein’s special theory of relativity, the relativistic kinetic energy of a moving object is given by 
         <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>K</mi><mo>&#x0003D;</mo><mo stretchy="false">&#x00028;</mo><mi>&#x003B3;</mi><mo>&#x02212;</mo><mn>1</mn><mo stretchy="false">&#x00029;</mo><mi>m</mi><msup><mi>c</mi><mn>2</mn></msup></mrow></math></span>
         where <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x003B3;</mi></mrow></math></span> can be calculated using the formula
         <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x003B3;</mi><mo>&#x0003D;</mo><mo stretchy="false">&#x00028;</mo><mn>1</mn><mo>&#x02212;</mo><mo stretchy="false">&#x00028;</mo><mi>v</mi><mo>&#x0002F;</mo><mi>c</mi><msup><mo stretchy="false">&#x00029;</mo><mn>2</mn></msup><msup><mo stretchy="false">&#x00029;</mo><mrow><mo>&#x02212;</mo><mn>1</mn><mo>&#x0002F;</mo><mn>2</mn></mrow></msup></mrow></math></span>.
@@ -174,6 +198,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
         99.9 percent of the speed of light. The speed of light is <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>c</mi><mo>&#x0003D;</mo></mrow></math></span> 3e8 m/s. The code has been started for you below. The number you get should be very small. Using these numbers, your answer will be in
         Joules. Convert your answer to electron volts using the fact that 
         <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn><mspace width="0.167em" /><mtext>eV</mtext><mo>&#x0003D;</mo><mn>1.602</mn><mi>&#x000D7;</mi><msup><mn>10</mn><mrow><mo>&#x02212;</mo><mn>19</mn></mrow></msup><mspace width="0.167em" /><mtext>J</mtext></mrow></math></span>. 
+        Give your answer with three significant figures. 
 
       </p>
 
@@ -196,10 +221,40 @@ print(K)
   </div>
 </div>
 
+<div data-type="exercise">
+  <div data-type="problem">
+    <span class="os-number">C1.3</span><span class="os-divider">. </span>
+    <div class="os-problem-container">
+
+<p>The range of a projectile is given by the equation 
+  <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>d</mi><mo>&#x0003D;</mo><mrow><mfrac><mrow><mn>2</mn><msup><mi>v</mi><mn>2</mn></msup><mi>cos</mi><mi>&#x003B8;</mi><mi>sin</mi><mi>&#x003B8;</mi></mrow><mi>g</mi></mfrac></mrow></mrow></math></span>
+  where <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>g</mi><mo>&#x0003D;</mo><mn>9.8</mn><msup><mtext>m/s</mtext><mn>2</mn></msup></mrow></math></span>, and <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x003B8;</mi></mrow></math></span> is the launch angle, 
+  and <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>v</mi></mrow></math></span> is the launch speed. If <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>v</mi></mrow></math></span> is 40 m/s
+  and <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x003B8;</mi><mo>&#x0003D;</mo><msup><mn>50</mn><mo>&#x02218;</mo></msup></mrow></math></span>, write a python 
+  code that calculates the range. Then using trial and error, change the angle until you find the angle that gives the greatest range. 
+</p>
+
+<python-code-cell hideable>from numpy import sin, cos, pi
+
+# define variables 
+v = 
+theta = 
+g = 
+
+# calculate range 
+d = 
+
+print(f'The range is {d:.4g} m.')
+</python-code-cell>
+
+
+    </div>
+  </div>
+</div>
 
 <div data-type="exercise">
   <div data-type="problem">
-    <span class="os-number">C1.2</span><span class="os-divider">. </span>
+    <span class="os-number">C1.4</span><span class="os-divider">. </span>
     <div class="os-problem-container">
 
       <p>
@@ -229,7 +284,7 @@ from numpy import linspace
 
 <div data-type="exercise">
   <div data-type="problem">
-    <span class="os-number">C1.3</span><span class="os-divider">. </span>
+    <span class="os-number">C1.5</span><span class="os-divider">. </span>
     <div class="os-problem-container">
 
       <p>
@@ -253,6 +308,28 @@ from numpy import linspace
 # insert plotting code here 
 
       </python-code-cell>
+
+    </div>
+  </div>
+</div>
+
+<div data-type="exercise">
+  <div data-type="problem">
+    <span class="os-number">C1.6</span><span class="os-divider">. </span>
+    <div class="os-problem-container">
+
+<p>Find the solution to the system of equations <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>&#x0003D;</mo><mo>&#x02212;</mo><msup><mi>x</mi><mn>2</mn></msup><mo>&#x0002B;</mo><mn>4</mn><mi>x</mi><mo>&#x0002B;</mo><mn>1</mn></mrow></math></span> and 
+  <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>&#x0003D;</mo><mfrac><mrow><mo>&#x02212;</mo><mn>1</mn></mrow><mrow><mn>3</mn></mrow></mfrac><mi>x</mi><mo>&#x0002B;</mo><mn>4</mn></mrow></math></span> by plotting both with matplotlib and looking for the place where the two lines intersect. </p>
+
+<python-code-cell hideable>from matplotlib import pyplot as plt
+from numpy import linspace 
+
+# create xpoints and ypoints1 and ypoints2
+
+# plot both curves
+
+</python-code-cell>
+
 
     </div>
   </div>

@@ -53,10 +53,7 @@ class PythonCodeCell extends HTMLElement {
 
       <div id="editorContainer" class="${isHidden}">
         <textarea id="codeInput" style="width: 100%;"></textarea>
-        <button id="runButton">Run</button>
-        <button id="resetButton">Reset Code</button>
-        <button id="copyButton">Copy Code</button>
-        ${!this.isFirst ? '<button id="runPrevious">Run Previous</button>' : ''}
+        <button id="runButton">Run</button><button id="resetButton">Reset Code</button><button id="copyButton">Copy Code</button>${!this.isFirst ? '<button id="runPrevious">Run Previous</button>' : ''}
         <textarea id="output" style="width: 100%;" disabled rows='5'></textarea>
         <div id="plot"></div>
       </div>

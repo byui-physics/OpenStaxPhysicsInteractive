@@ -1,7 +1,7 @@
 from latex2mathml import converter
 
 ''' INPUT PARAMETERS '''
-latex_eq = r"a = -3 \text{ m/s}^2"
+latex_eq = r"y = \frac{-1}{3}x + 4"
 inline = True # change this depending on what you want
 
 
