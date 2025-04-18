@@ -1,6 +1,20 @@
 Make a python reference page so students can go back and check stuff, but we don't have to 
 introduce it all at once. 
+    - A page with tools that you can copy from
+        - plotting
+        - Euler 1D
+        - Euler 3D
+        - System Solver
+
 
 
 mention installing
 
+
+add Euler's method 1D
+
+add more chapter 1 problems
+    - Using plots to solve systems
+
+fix chapter 2
+fix chapter 3

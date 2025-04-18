@@ -1,7 +1,7 @@
 from latex2mathml import converter
 
 ''' INPUT PARAMETERS '''
-latex_eq = r"M = \rho V"
+latex_eq = r"a = -3 \text{ m/s}^2"
 inline = True # change this depending on what you want
 
 
