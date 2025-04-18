@@ -7,6 +7,13 @@
 Estimates and Fermi Calculations
 </title>
 <link rel="stylesheet" type="text/css" href="the-style-epub.css"/>
+
+<!-- Add these three lines to add code chunk availability -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
+<script src="https://cdn.jsdelivr.net/pyodide/v0.27.2/full/pyodide.js"></script>
+<script type="module" src="../../code-chunk-resources.js"></script>
+
 </head>
 <body>
     <div data-type="page" id="page_76d56392-65be-4090-8b96-10b3b4057815" class="chapter-content-module" data-book-content="true"><h2 data-type="document-title" data-sm="./modules/m58273/index.cnxml:3:1" id="page_76d56392-65be-4090-8b96-10b3b4057815_titlecreatedbycookbook"><span class="os-number">1.5</span>
@@ -61,27 +68,37 @@ We know the density of water is about 10<sup data-sm="./modules/m58273/index.cnx
 </math></span> Now we just need to put it all together, heeding the advice that “one ‘sig. fig.’ is fine.”
 <p id="fs-id1168329155017" data-sm="./modules/m58273/index.cnxml:33:1"></p>
 <h4 data-type="title" data-sm="./modules/m58273/index.cnxml:34:1">Solution</h4>
-We estimate the surface area of Earth (and hence the surface area of Earth’s oceans) to be roughly
-<div data-type="equation" id="fs-id1168329418990" class="unnumbered" data-sm="./modules/m58273/index.cnxml:36:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58273/index.cnxml:36:70"><mi data-sm="./modules/m58273/index.cnxml:36:78">A</mi><mo data-sm="./modules/m58273/index.cnxml:36:92">=</mo><mi data-sm="./modules/m58273/index.cnxml:36:106">π</mi><msup data-sm="./modules/m58273/index.cnxml:36:120"><mi data-sm="./modules/m58273/index.cnxml:36:128">d</mi><mn data-sm="./modules/m58273/index.cnxml:36:142">2</mn></msup><mo data-sm="./modules/m58273/index.cnxml:36:165">=</mo><mi data-sm="./modules/m58273/index.cnxml:36:179">π</mi><msup data-sm="./modules/m58273/index.cnxml:36:193"><mrow data-sm="./modules/m58273/index.cnxml:36:201"><mo stretchy="false" data-sm="./modules/m58273/index.cnxml:36:209">(</mo><msup data-sm="./modules/m58273/index.cnxml:36:240"><mrow data-sm="./modules/m58273/index.cnxml:36:248"><mn data-sm="./modules/m58273/index.cnxml:36:256">10</mn></mrow><mn data-sm="./modules/m58273/index.cnxml:36:280">7</mn></msup><mtext data-sm="./modules/m58273/index.cnxml:36:303">m</mtext><mo stretchy="false" data-sm="./modules/m58273/index.cnxml:36:323">)</mo></mrow><mn data-sm="./modules/m58273/index.cnxml:36:363">2</mn></msup><mo data-sm="./modules/m58273/index.cnxml:36:386">≈</mo><mn data-sm="./modules/m58273/index.cnxml:36:400">3</mn><mspace width="0.2em" data-sm="./modules/m58273/index.cnxml:36:414"/><mo data-sm="./modules/m58273/index.cnxml:36:439">×</mo><mspace width="0.2em" data-sm="./modules/m58273/index.cnxml:36:453"/><msup data-sm="./modules/m58273/index.cnxml:36:478"><mrow data-sm="./modules/m58273/index.cnxml:36:486"><mn data-sm="./modules/m58273/index.cnxml:36:494">10</mn></mrow><mrow data-sm="./modules/m58273/index.cnxml:36:518"><mn data-sm="./modules/m58273/index.cnxml:36:526">14</mn></mrow></msup><msup data-sm="./modules/m58273/index.cnxml:36:559"><mtext data-sm="./modules/m58273/index.cnxml:36:567">m</mtext><mn data-sm="./modules/m58273/index.cnxml:36:587">2</mn></msup><mo data-sm="./modules/m58273/index.cnxml:36:610">.</mo></mrow>
-</mrow>
-</semantics>
-</math>
-</div>
+If the diameter of the earth is about <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>d</mi><mo>&#x0003D;</mo><msup><mn>10</mn><mn>7</mn></msup><mtext>&#x000A0;m</mtext></mrow></math></span>
+and the surface area of a sphere is given by <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>&#x0003D;</mo><mi>&#x003C0;</mi><msup><mi>d</mi><mn>2</mn></msup></mrow></math></span>
+we estimate the surface area of Earth (and hence the surface area of Earth’s oceans) to be roughly
+
+<python-code-cell>from numpy import pi
+d = 1e7 # m
+A = pi * d**2
+print(f'{A:.0e}') # print using scientific notation
+</python-code-cell>
+
 <p id="fs-id1168329387106" data-sm="./modules/m58273/index.cnxml:37:1">Next, using our average depth estimate of <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58273/index.cnxml:37:81"><mi data-sm="./modules/m58273/index.cnxml:37:89">D</mi><mo data-sm="./modules/m58273/index.cnxml:37:103">=</mo><mn data-sm="./modules/m58273/index.cnxml:37:117">3</mn><mspace width="0.2em" data-sm="./modules/m58273/index.cnxml:37:131"/><mo data-sm="./modules/m58273/index.cnxml:37:156">×</mo><mspace width="0.2em" data-sm="./modules/m58273/index.cnxml:37:170"/><msup data-sm="./modules/m58273/index.cnxml:37:195"><mrow data-sm="./modules/m58273/index.cnxml:37:203"><mn data-sm="./modules/m58273/index.cnxml:37:211">10</mn></mrow><mn data-sm="./modules/m58273/index.cnxml:37:235">3</mn></msup><mtext data-sm="./modules/m58273/index.cnxml:37:258">m,</mtext></mrow>
 </mrow>
 </semantics>
-</math></span> which was obtained by bounding, we estimate the volume of Earth’s oceans to be</p>
-<div data-type="equation" id="fs-id1168326838054" class="unnumbered" data-sm="./modules/m58273/index.cnxml:38:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58273/index.cnxml:38:70"><mi data-sm="./modules/m58273/index.cnxml:38:78">V</mi><mo data-sm="./modules/m58273/index.cnxml:38:92">=</mo><mi data-sm="./modules/m58273/index.cnxml:38:106">A</mi><mi data-sm="./modules/m58273/index.cnxml:38:120">D</mi><mo data-sm="./modules/m58273/index.cnxml:38:134">=</mo><mo stretchy="false" data-sm="./modules/m58273/index.cnxml:38:148">(</mo><mn data-sm="./modules/m58273/index.cnxml:38:179">3</mn><mspace width="0.2em" data-sm="./modules/m58273/index.cnxml:38:193"/><mo data-sm="./modules/m58273/index.cnxml:38:218">×</mo><mspace width="0.2em" data-sm="./modules/m58273/index.cnxml:38:232"/><msup data-sm="./modules/m58273/index.cnxml:38:257"><mrow data-sm="./modules/m58273/index.cnxml:38:265"><mn data-sm="./modules/m58273/index.cnxml:38:273">10</mn></mrow><mrow data-sm="./modules/m58273/index.cnxml:38:297"><mn data-sm="./modules/m58273/index.cnxml:38:305">14</mn></mrow></msup><msup data-sm="./modules/m58273/index.cnxml:38:338"><mtext data-sm="./modules/m58273/index.cnxml:38:346">m</mtext><mn data-sm="./modules/m58273/index.cnxml:38:366">2</mn></msup><mo stretchy="false" data-sm="./modules/m58273/index.cnxml:38:389">)</mo><mo stretchy="false" data-sm="./modules/m58273/index.cnxml:38:420">(</mo><mn data-sm="./modules/m58273/index.cnxml:38:451">3</mn><mspace width="0.2em" data-sm="./modules/m58273/index.cnxml:38:465"/><mo data-sm="./modules/m58273/index.cnxml:38:490">×</mo><mspace width="0.2em" data-sm="./modules/m58273/index.cnxml:38:504"/><msup data-sm="./modules/m58273/index.cnxml:38:529"><mrow data-sm="./modules/m58273/index.cnxml:38:537"><mn data-sm="./modules/m58273/index.cnxml:38:545">10</mn></mrow><mn data-sm="./modules/m58273/index.cnxml:38:569">3</mn></msup><mtext data-sm="./modules/m58273/index.cnxml:38:592">m</mtext><mo stretchy="false" data-sm="./modules/m58273/index.cnxml:38:612">)</mo><mo data-sm="./modules/m58273/index.cnxml:38:643">=</mo><mn data-sm="./modules/m58273/index.cnxml:38:657">9</mn><mspace width="0.2em" data-sm="./modules/m58273/index.cnxml:38:671"/><mo data-sm="./modules/m58273/index.cnxml:38:696">×</mo><mspace width="0.2em" data-sm="./modules/m58273/index.cnxml:38:710"/><msup data-sm="./modules/m58273/index.cnxml:38:735"><mrow data-sm="./modules/m58273/index.cnxml:38:743"><mn data-sm="./modules/m58273/index.cnxml:38:751">10</mn></mrow><mrow data-sm="./modules/m58273/index.cnxml:38:775"><mn data-sm="./modules/m58273/index.cnxml:38:783">17</mn></mrow></msup><msup data-sm="./modules/m58273/index.cnxml:38:816"><mtext data-sm="./modules/m58273/index.cnxml:38:824">m</mtext><mn data-sm="./modules/m58273/index.cnxml:38:844">3</mn></msup><mo data-sm="./modules/m58273/index.cnxml:38:867">.</mo></mrow>
-</mrow>
-</semantics>
-</math>
-</div>
-<p id="fs-id1168329335642" data-sm="./modules/m58273/index.cnxml:39:1">Last, we estimate the mass of the world’s oceans to be</p>
-<div data-type="equation" id="fs-id1168326823679" class="unnumbered" data-sm="./modules/m58273/index.cnxml:40:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58273/index.cnxml:40:70"><mi data-sm="./modules/m58273/index.cnxml:40:78">M</mi><mo data-sm="./modules/m58273/index.cnxml:40:92">=</mo><mi data-sm="./modules/m58273/index.cnxml:40:106">ρ</mi><mi data-sm="./modules/m58273/index.cnxml:40:120">V</mi><mo data-sm="./modules/m58273/index.cnxml:40:134">=</mo><mo stretchy="false" data-sm="./modules/m58273/index.cnxml:40:148">(</mo><msup data-sm="./modules/m58273/index.cnxml:40:179"><mrow data-sm="./modules/m58273/index.cnxml:40:187"><mn data-sm="./modules/m58273/index.cnxml:40:195">10</mn></mrow><mn data-sm="./modules/m58273/index.cnxml:40:219">3</mn></msup><msup data-sm="./modules/m58273/index.cnxml:40:242"><mrow data-sm="./modules/m58273/index.cnxml:40:250"><mspace width="0.2em" data-sm="./modules/m58273/index.cnxml:40:258"/><mtext data-sm="./modules/m58273/index.cnxml:40:283">kg/m</mtext></mrow><mn data-sm="./modules/m58273/index.cnxml:40:315">3</mn></msup><mo stretchy="false" data-sm="./modules/m58273/index.cnxml:40:338">)</mo><mo stretchy="false" data-sm="./modules/m58273/index.cnxml:40:369">(</mo><mn data-sm="./modules/m58273/index.cnxml:40:400">9</mn><mspace width="0.2em" data-sm="./modules/m58273/index.cnxml:40:414"/><mo data-sm="./modules/m58273/index.cnxml:40:439">×</mo><mspace width="0.2em" data-sm="./modules/m58273/index.cnxml:40:453"/><msup data-sm="./modules/m58273/index.cnxml:40:478"><mrow data-sm="./modules/m58273/index.cnxml:40:486"><mn data-sm="./modules/m58273/index.cnxml:40:494">10</mn></mrow><mrow data-sm="./modules/m58273/index.cnxml:40:518"><mn data-sm="./modules/m58273/index.cnxml:40:526">17</mn></mrow></msup><msup data-sm="./modules/m58273/index.cnxml:40:559"><mtext data-sm="./modules/m58273/index.cnxml:40:567">m</mtext><mn data-sm="./modules/m58273/index.cnxml:40:587">3</mn></msup><mo stretchy="false" data-sm="./modules/m58273/index.cnxml:40:610">)</mo><mo data-sm="./modules/m58273/index.cnxml:40:641">=</mo><mn data-sm="./modules/m58273/index.cnxml:40:655">9</mn><mspace width="0.2em" data-sm="./modules/m58273/index.cnxml:40:669"/><mo data-sm="./modules/m58273/index.cnxml:40:694">×</mo><mspace width="0.2em" data-sm="./modules/m58273/index.cnxml:40:708"/><msup data-sm="./modules/m58273/index.cnxml:40:733"><mrow data-sm="./modules/m58273/index.cnxml:40:741"><mn data-sm="./modules/m58273/index.cnxml:40:749">10</mn></mrow><mrow data-sm="./modules/m58273/index.cnxml:40:773"><mn data-sm="./modules/m58273/index.cnxml:40:781">20</mn></mrow></msup><mtext data-sm="./modules/m58273/index.cnxml:40:814">kg</mtext><mo data-sm="./modules/m58273/index.cnxml:40:835">.</mo></mrow>
-</mrow>
-</semantics>
-</math>
- </div>
+</math></span> which was obtained by bounding, we estimate the volume of Earth’s oceans 
+using <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>V</mi><mo>&#x0003D;</mo><mi>A</mi><mi>D</mi></mrow></math></span>
+to be</p>
+
+<python-code-cell>D = 3e3 # m
+V = A*D
+print(f'{V:.0e}') # print using scientific notation
+</python-code-cell>
+
+<p id="fs-id1168329335642" data-sm="./modules/m58273/index.cnxml:39:1">Last, we estimate the mass of the world’s oceans using 
+  <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>M</mi><mo>&#x0003D;</mo><mi>&#x003C1;</mi><mi>V</mi></mrow></math></span>
+to be</p>
+
+<python-code-cell>rho = 1e3 # kg/m^3 density of water 
+M = rho*V
+print(f'{M:.0e}') # print using scientific notation
+</python-code-cell>
+
 <p id="fs-id1168329146055" data-sm="./modules/m58273/index.cnxml:41:1">Thus, we estimate that the order of magnitude of the mass of the planet’s oceans is 10<sup data-sm="./modules/m58273/index.cnxml:41:117">21</sup> kg.</p>
 <p id="fs-id1168326835535" data-sm="./modules/m58273/index.cnxml:42:1"></p>
 <h4 data-type="title" data-sm="./modules/m58273/index.cnxml:43:1">Significance</h4>
@@ -126,6 +143,16 @@ To verify our answer to the best of our ability, we first need to answer the que
   </div>
 
 <a href="university-physics-volume-1.toc.html">Back to table of contents</a>
+
+<!-- These scripts run at the end of the file to make code cells work -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/codemirror.min.js"
+		integrity="sha512-XMlgZzPyVXf1I/wbGnofk1Hfdx+zAWyZjh6c21yGo/k1zNC4Ve6xcQnTDTCHrjFGsOrVicJsBURLYktVEu/8vQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/mode/python/python.min.js"
+		integrity="sha512-/mavDpedrvPG/0Grj2Ughxte/fsm42ZmZWWpHz1jCbzd5ECv8CB7PomGtw0NAnhHmE/lkDFkRMupjoohbKNA1Q=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="module" src="../../initialize-pyodide-chunks.js"></script>
+
 </body>
 </html>
 <!-- # sourceMappingURL=d50f6e32-0fda-46ef-a362-9bd36ca7c97d-at-aa8a43e-colon-76d56392-65be-4090-8b96-10b3b4057815.html.map -->

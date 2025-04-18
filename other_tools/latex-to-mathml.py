@@ -1,7 +1,7 @@
 from latex2mathml import converter
 
 ''' INPUT PARAMETERS '''
-latex_eq = r"v(t)"
+latex_eq = r"M = \rho V"
 inline = True # change this depending on what you want
 
 

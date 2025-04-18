@@ -219,8 +219,13 @@ print(f'First four significant figures of pi: {pi:.4g}')
   </python-code-cell>
 
   <p>The syntax for that can be a little dense. The print function is what returns the answer to the console. 
-    The part in curly braces <code>{pi:.4g}</code> is a special formatting code that controls how the number pi appears. It tells the computer to show four significant figures. If we wanted to display only three
-    significant figures, we could change it to <code>{pi:.3g}</code>. Try changing the code and running it again. 
+    Text surrounded in quotes (single or double) in python creates what is called a string. It is how we store text in python. The f in front of the string 
+    stands for format. It allows us to insert our calculated numbers into the string before printing it to the console. Inside the string, 
+    the part in curly braces <code>{pi:.4g}</code> is where we put the number we want to output. Without the f in front of the string, python would just print {pi:.4g} rather than replacing it with the value we calculated. 
+    The <code>:.4g</code> is a special formatting code that controls how the number pi appears. It tells the computer to show four significant figures. 
+    If we wanted to display only three
+    significant figures, we could change it to <code>:.3g</code>. 
+    Try changing the code and running it again. 
   </p>
   
 

@@ -7,6 +7,13 @@
 Unit Conversion
 </title>
 <link rel="stylesheet" type="text/css" href="the-style-epub.css"/>
+
+<!-- Add these three lines to add code chunk availability -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
+<script src="https://cdn.jsdelivr.net/pyodide/v0.27.2/full/pyodide.js"></script>
+<script type="module" src="../../code-chunk-resources.js"></script>
+
 </head>
 <body>
     <div data-type="page" id="page_6bbcd937-08f6-45c4-b450-191c47a56297" class="chapter-content-module" data-book-content="true"><h2 data-type="document-title" data-sm="./modules/m58271/index.cnxml:3:1" id="page_6bbcd937-08f6-45c4-b450-191c47a56297_titlecreatedbycookbook"><span class="os-number">1.3</span>
@@ -192,6 +199,67 @@ Remember, it’s always important to check the answer.
 </div>
 </div>
 
+
+<div data-type="example" id="fs-id1168329400973" data-sm="./modules/m58270/index.cnxml:224:1"><h3 class="os-title">
+  <span class="os-title-label">Code Example </span>
+  <span class="os-number">1.2</span>
+  <span class="os-divider"> </span>
+</h3>
+<div class="body">
+<h4 data-type="title">Determing the weight of olive oil.</h4>
+  <p>Suppose you have 3 gallons of olive oil. You are tasked to determine how much it weighs, but you don't have a scale. What you do know is that the density of olive oil is about 0.92 g/ml. Find the weight of the olive oil in pounds. </p>
+  <h4 data-type="title">Strategy</h4>
+
+  <p>The equation that relates mass to volume and density is <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>m</mi><mo>&#x0003D;</mo><mi>&#x003C1;</mi><mi>V</mi></mrow></math></span>, where <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x003C1;</mi></mrow></math></span> is the density. 
+    We can calculate the mass of the oil since we know the density and the volume. Since the formula requires that each variable have compatible units, we will 
+    first convert all of our values to SI units. Once we have SI units, we can find the mass, and convert that back to pound-mass. </p>
+
+<h4 data-type="title">Solution</h4>
+
+  <p>We know there are 3.79 liters in a gallon, and 1000 liters in a cubic meter. We will use python to calculate what the volume is in cubic meters. 
+  </p>
+
+  <python-code-cell># convert volume to m^3
+V = 3 # gallons 
+V = V * 3.79 # convert to liters
+V = V / 1000 # convert to m^3
+print(V)
+</python-code-cell>
+
+<p>The same can be done for the density. We need to convert grams per milliliter to kiligrams per cubic meter. We can replace grams with kiligrams by adding a factor of <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mn>10</mn><mrow><mo>&#x02212;</mo><mn>3</mn></mrow></msup></mrow></math></span>. 
+Similarly, we can replace milliliters with liters by adding a factor of <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mn>10</mn><mrow><mo>&#x02212;</mo><mn>3</mn></mrow></msup></mrow></math></span>. 
+But, since milliliters is on the bottom, and grams is on the top, these two added factors will cancel. We find that 1 kg/l = 1 g/ml. Now we just need to convert liters to cubic meters.
+We know that there are 1000 liters in a cubic meter. This means we can replace liters with cubic meters by adding a factor of <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mn>10</mn><mrow><mo>&#x02212;</mo><mn>3</mn></mrow></msup></mrow></math></span>, but since 
+liters is on the bottom we need to divide by <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mn>10</mn><mrow><mo>&#x02212;</mo><mn>3</mn></mrow></msup></mrow></math></span>, making it 
+<span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msup><mn>10</mn><mrow><mn>3</mn></mrow></msup></mrow></math></span>. 
+Remember that this can easily be done with scientific notation. 
+</p>
+
+<python-code-cell>
+rho = 0.92e3 # now in kg/m^3
+print(rho)
+</python-code-cell>
+
+<p>Now that we have volume and density in SI units, we can calculate the mass. </p>
+
+<python-code-cell>m = V*rho
+print(m)
+print(m*2.2) # mass in pounds
+</python-code-cell>
+we find that we have about 10.46 kg of oil. Since there are 2.2 pounds of mass for one kilogram, we can replace kg with lb by multiplying by 2.2. This gives us a weight of 23 lb. 
+<p></p>
+
+<h4 data-type="title">Significance
+</h4>
+
+<p>A good practice is to put everything in SI units (or a consistent unit system) before plugging them into the equations. In python we can easily do this by 
+  converting our values from the start; multiplying variables by the appropriate values before using the variables to make calculations. 
+  </p>
+
+  </div>
+  </div>
+
+
 <div data-type="note" id="fs-id1168327874671" class="check-understanding" data-sm="./modules/m58271/index.cnxml:72:1"><h3 class="os-title">
   <span class="os-title-label">Check Your Understanding </span>
   <span class="os-number">1.3</span>
@@ -234,6 +302,18 @@ Remember, it’s always important to check the answer.
   </div>
 
 <a href="university-physics-volume-1.toc.html">Back to table of contents</a>
+
+
+<!-- These scripts run at the end of the file to make code cells work -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/codemirror.min.js"
+		integrity="sha512-XMlgZzPyVXf1I/wbGnofk1Hfdx+zAWyZjh6c21yGo/k1zNC4Ve6xcQnTDTCHrjFGsOrVicJsBURLYktVEu/8vQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/mode/python/python.min.js"
+		integrity="sha512-/mavDpedrvPG/0Grj2Ughxte/fsm42ZmZWWpHz1jCbzd5ECv8CB7PomGtw0NAnhHmE/lkDFkRMupjoohbKNA1Q=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="module" src="../../initialize-pyodide-chunks.js"></script>
+
+
 </body>
 </html>
 <!-- # sourceMappingURL=d50f6e32-0fda-46ef-a362-9bd36ca7c97d-at-aa8a43e-colon-6bbcd937-08f6-45c4-b450-191c47a56297.html.map -->

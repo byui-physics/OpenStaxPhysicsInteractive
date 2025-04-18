@@ -22,8 +22,8 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
 <p>By the end of this section, you will be able to:</p>
 <ul>
 <li>Understand how numerical tools can be used to solve problems.</li>
-<li>Recognize that numerical methods can scale to larger problems.</li>
 <li>Use Python to calculate solutions to simple problems.</li>
+<li>Use Python to make plots.</li>
 </ul>
 </div>
 
@@ -45,18 +45,20 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
     until we have a solution for the larger more difficult problem. Many numerical methods are built on the principle of breaking a difficult problem into a smaller easier problem that can be repeated over and over. 
 </p>
 
-</section>
-
-<section data-depth="1"><h3 data-type="title">Python: A Powerful Computing Tool</h3>
-
 <p>
-    One example of a computing tool that is commonly used in Physics is Python. Python is a programming language that is fairly easy to learn. In this text, we will use Python to do numerical calculations as part
+    One example of a computing tool that is commonly used in Physics is Python. Python is a programming language that is fairly easy to learn. Python is just a calculator, though an extremely powerful one. 
+    In this text, we will use Python to do numerical calculations as part
     of our physics experience. There is much one can learn with python, but to get started we only need a few basics. 
 </p>
 
+</section>
+
+<section data-depth="1"><h3 data-type="title">Variables And Arithmetic In Python</h3>
+
+
 <p>The first thing we need to learn about is variables. When we are doing physics, we will want to assign labels for certain quantities. For example, we often use the letter 
     <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>v</mi></mrow></math></span>
-    to represent the speed of an object. An object may have a specific number for its velocity (such as 3 m/s), but to help us remember what the number means, and to keep our focus on the principles,
+    to represent the speed of an object. An object may have a specific number for its speed (such as 3 m/s), but to help us remember what the number means, and to keep our focus on the principles,
     we write <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>v</mi></mrow></math></span>. 
     In python we can set that letter to hold the value of 3 m/s for us so we can just remember the <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>v</mi></mrow></math></span>. 
     Below is a python code that sets <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>v</mi></mrow></math></span> to the number 
@@ -121,14 +123,34 @@ c = a**0.5 # the square root of a
 c = (a*b+0.5*a)/4
 </python-code-cell>
 
+<p>Python also has access to functions that perform other mathematical operations we are used to. Many of these come from a library called numpy. 
+    From numpy we can find logarithm functions, trigonometry functions, square root functions, and others. Below is an example. 
+</p>
+
+<python-code-cell>from numpy import sin, cos, tan, arctan, pi, sqrt, log, log10
+
+# trig functions are in radians. 
+theta = 30 # degrees 
+theta = 30 * 180/pi # use pi to convert to radians (rewriting over theta)
+c = sin(theta)
+c = cos(theta)
+c = tan(theta)
+c = arctan(b/a) # inverse tangent function
+
+c = log(a) # natural log (ln)
+c = log10(b) # common log (base 10)
+
+c = sqrt(a) # another way to do square root
+</python-code-cell>
+
 <p>For now, this is a good start. We will learn more tricks throughout our physics journey that will allow us to break difficult problems into simpler ones.
-    As you move forward, we will provide python cells in the text for you to use like this to compute answers to the problems you are working on. As the problems
+    As you move forward, we will provide python cells in the text for you to use like this for you to compute answers to the problems you are working on. As the problems
     get harder, we will introduce more things you can do in python to make the tool more useful. We invite you to practice with it now, even when the problems are simple. 
 </p>
 
 </section>
 
-<div data-type="note" class="check-understanding">
+<!-- <div data-type="note" class="check-understanding">
     <h3 class="os-title">
         <span class="os-title-label"> Check Your Understanding </span>
         <span class="os-divider"></span>
@@ -147,13 +169,88 @@ c = (a*b+0.5*a)/4
 
         </div>
     </div>
-</div>
+</div> -->
 
 
- <p>For more details on how to use variables in Python, see <a href="https://lancejnelson.github.io/PH135/chapters/variables.html" target="_blank">Scientific Computing, Chapter 2, by Lance J. Nelson. </a></p>
+ <p>For more details on how to use variables in Python, see <a href="https://lancejnelson.github.io/PH135/chapters/variables.html" target="_blank">Scientific Computing, Chapter 2, by Lance Nelson. </a></p>
 
+
+ <section data-depth="1"><h3 data-type="title">Making Plots</h3>
+
+    <p>In python it is relatively simple to make plots. To do this, we will use the pyplot function from the matplotlib library. Pyplot doesn't plot functions, instead it plots points;
+        it requires a collection of x values and y values. In order to give pyplot the x and y values we need to know how to use a python list. A list in python is an object that can contain 
+        several values. Lists in python are surrounded by square brackets, and the values are seperated by a comma. Below is an example of how we might use lists to store our x and y values. 
+    </p>
+
+    <python-code-cell>xpoints = [0, 1, 2, 3, 4, 5]
+ypoints = [9, 4, 1, 4, 9, 16]
+    </python-code-cell>
+
+    <p>Now that we have lists for our x and y points, we can make a plot. Below shows an example of a simple plot using our lists.</p>
+
+    <python-code-cell>from matplotlib import pyplot as plt 
+# the 'as' tells python to rename pyplot to plt for easier typing
+
+plt.clf() # clear any previous drawings
+plt.plot(xpoints, ypoints)
+plt.show() # show the results
+    </python-code-cell>
+
+    <p>By default pyplot will connect the dots. If you don't want the dots connected, you can add <code>'.'</code> as a third argument in the plot command, giving us
+        <code>plt.plot(xpoints, ypoints, '.')</code>.</p>
+
+    <p>Letting pyplot connect the dots can be useful for plotting functions. However, with only 5 points, the curve is not very smooth. 
+        Additionally, it can be pretty tedious to type out every point that we want to plot. Luckily for us, there is a function in numpy that will give us a list 
+        of points. The function is called linspace. It takes in a starting point, an ending point, and how many points we want to create in that range. 
+        Actually, the linspace function 
+        gives us a special kind of list called an array. Arrays are a little different than lists, but they can still be used to plot a collection of points. 
+        One advantage of using an array is that we can put the array into our equation for the function we are tying to plot, and it will return an array of the y values. 
+        Below demonstrates using arrays to plot the function <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>f</mi><mo stretchy="false">&#x00028;</mo><mi>x</mi><mo stretchy="false">&#x00029;</mo><mo>&#x0003D;</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>&#x02212;</mo><mn>12</mn><mi>x</mi><mo>&#x0002B;</mo><mn>13</mn></mrow></math></span>. 
+    </p>
+
+    <python-code-cell>from numpy import linspace
+
+# use linspace to make a list of 100 x points
+xpoints = linspace(0, 5, 100)
+
+# put xpoints array into our equation to make y points
+ypoints = 3*xpoints**2 - 12*xpoints + 13
+
+# plot the points 
+plt.clf()
+plt.plot(xpoints, ypoints)
+plt.show()
+    </python-code-cell>
+
+<p>Notice how by using arrays, we were able to make our curve much smoother. While arrays are quite useful, 
+    there are other methods we can use to systematically create a list of x points and y points. We will explore more later on. </p>
+
+</section>
 
  
+<div data-type="note" class="check-understanding">
+    <h3 class="os-title">
+        <span class="os-title-label"> Check Your Understanding </span>
+        <span class="os-divider"></span>
+    </h3>
+    <div class="os-note-body">
+        <div data-type="exercise" class="unnumbered os-hasSolution">
+            <div data-type="problem">
+                <div class="os-problem-container">
+                    <p>
+                        If you want to add a second line to the plot, all you need to do is insert a new <code>plt.plot()</code> function after the first one, using 
+                        a new set of x and y lists. Modify the code above to add a second line representing the function <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>g</mi><mo stretchy="false">&#x00028;</mo><mi>x</mi><mo stretchy="false">&#x00029;</mo><mo>&#x0003D;</mo><mn>3</mn><mi>x</mi><mo>&#x0002B;</mo><mn>1</mn></mrow></math></span>. 
+                        You will need to create a second list of y points (call it <code>ypoints2</code>), but you can reuse the same x points list if you would like. 
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<p>For more details on making plots in Python, see <a href="https://lancejnelson.github.io/PH135/chapters/basicPlotting.html" target="_blank">Chapter 11 of Scientific Computing, by Lance Nelson.</a></p>
+
   </div>
 
 <a href="university-physics-volume-1.toc.html">Back to table of contents</a>

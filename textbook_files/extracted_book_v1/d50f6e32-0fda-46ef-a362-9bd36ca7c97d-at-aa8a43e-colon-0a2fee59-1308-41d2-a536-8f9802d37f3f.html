@@ -463,6 +463,52 @@ Jill’s total displacement is −0.75 km, which means at the end of her trip sh
 </h3>
 <div class="body">
 
+  <p>Suppose we have a particle whose position is given as a function of time 
+    <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo stretchy="false">&#x00028;</mo><mi>t</mi><mo stretchy="false">&#x00029;</mo><mo>&#x0003D;</mo><mi>sin</mi><mo stretchy="false">&#x00028;</mo><mn>2</mn><mi>t</mi><mo stretchy="false">&#x00029;</mo><mo>&#x0002B;</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>2</mn></mrow></mfrac><mi>t</mi></mrow></math></span>.
+    We can use python to visualize how the particle will move throughout time. 
+  </p>
+
+  <python-code-cell>from matplotlib import pyplot as plt # import plotting function 
+from numpy import linspace, sin # this function creates equally spaced t points
+    
+tpoints = linspace(0, 8, 100) # create 100 points from 0 to 8 seconds. 
+xpoints = sin(2*tpoints) + (1/2)*tpoints  # put tpoints array into equation
+
+# plot the results 
+plt.clf()
+plt.plot(tpoints, xpoints)
+plt.xlabel('Time (s)')
+plt.ylabel('Position (m)')
+plt.title('Position vs Time Graph')
+plt.show()
+    </python-code-cell>
+
+<p>Now suppose we have a second particle whose position is given 
+  with the new function <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo stretchy="false">&#x00028;</mo><mi>t</mi><mo stretchy="false">&#x00029;</mo><mo>&#x0003D;</mo><mfrac><mrow><msup><mi>t</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn></mrow></mfrac><mo>&#x02212;</mo><mn>3</mn><mi>t</mi><mo>&#x0002B;</mo><mn>2</mn></mrow></math></span>. 
+  We want to find the time(s) where these two particles are at the same place. We can add this new function to our plot as shown. 
+</p>
+
+<python-code-cell>from matplotlib import pyplot as plt # import plotting function 
+from numpy import linspace, sin # this function creates equally spaced t points
+
+tpoints = linspace(0, 8, 100) # create 100 points from 0 to 8 seconds. 
+xpoints = sin(2*tpoints) + (1/2)*tpoints  # put tpoints array into equation
+xpoints2 = (1/2)*tpoints**2 - 3*tpoints + 2
+
+# plot the results 
+plt.clf()
+plt.plot(tpoints, xpoints, label='1st Particle')
+plt.plot(tpoints, xpoints2, label='2nd Particle')
+plt.legend() # add a legend
+plt.xlabel('Time (s)')
+plt.ylabel('Position (m)')
+plt.title('Position vs Time Graph')
+plt.show()
+      </python-code-cell>
+
+<p>By plotting both of the position vs time graphs for each particle, we can see that the two particles will be at the same place at about 0.5 seconds, and at about 6.5 seconds. </p>
+
+<!-- 
 <p>Python can be a great tool for plotting displacement vs time for more complicated functions. 
   Suppose the position of an object is given by 
   <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo stretchy="false">&#x00028;</mo><mi>t</mi><mo stretchy="false">&#x00029;</mo><mo>&#x0003D;</mo><mi>sin</mi><mo stretchy="false">&#x00028;</mo><mn>2</mn><mi>t</mi><mo stretchy="false">&#x00029;</mo><mo>&#x0002B;</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>2</mn></mrow></mfrac><mi>t</mi></mrow></math></span>.
@@ -512,7 +558,7 @@ plt.show()
 
 <p>Try changing the function in the code above to plot a different position vs time graph. Try changing the number of tpoints from 100 points to 10 points. Notice how the curve becomes less smooth. 
   This demonstrates how the code is plotting a collection of points rather than the function itself. 
-</p>
+</p> -->
 
   </div>
   </div>
