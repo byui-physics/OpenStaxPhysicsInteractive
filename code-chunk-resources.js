@@ -4,14 +4,22 @@ Written by Addison Ballif
 April 2025
 
 This file contains all the tools you need to add code chunks to the OpenStax textbook. 
-
-
 */
 
 class PythonCodeCell extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: 'open' });
+
+    // Check if this is the first cell (for runPrevious logic)
+    const allCells = document.querySelectorAll('python-code-cell');
+    this.isFirst = allCells[0] === this;
+
+    // Determine whether this cell is hideable
+    this.isHideable = this.hasAttribute('hideable'); 
+
+    // Hide the editor by default if hideable
+    const isHidden = this.isHideable ? 'hidden' : '';
 
     // Set the shadow DOM content, including the button
     this.shadowRoot.innerHTML = `
@@ -36,26 +44,26 @@ class PythonCodeCell extends HTMLElement {
           font-size: inherit;
           line-height: inherit;
         }
+        .hidden {
+          display: none;
+        }
       </style>
-      <textarea id="codeInput" style="width: 100%;"></textarea>
-      <button id="runButton">Run</button><button id="resetButton">Reset Code</button><button id="copyButton">Copy Code</button>`;
 
-    const allCells = document.querySelectorAll('python-code-cell');
-    this.isFirst = allCells[0] === this;
-    if (!this.isFirst) {
-      // if it's not the first one, add a run previous button
-      this.shadowRoot.innerHTML += `<button id="runPrevious">Run Previous</button>
-      `;
-    }
+      ${this.isHideable ? `<button id="toggleEditorButton" class="btn btn-secondary btn-sm mb-2">Show Python Editor</button>` : ''}
 
-    this.shadowRoot.innerHTML += `<textarea id="output" style="width: 100%;" disabled rows='5'></textarea>
-      <div id="plot"></div>    
+      <div id="editorContainer" class="${isHidden}">
+        <textarea id="codeInput" style="width: 100%;"></textarea>
+        <button id="runButton">Run</button>
+        <button id="resetButton">Reset Code</button>
+        <button id="copyButton">Copy Code</button>
+        ${!this.isFirst ? '<button id="runPrevious">Run Previous</button>' : ''}
+        <textarea id="output" style="width: 100%;" disabled rows='5'></textarea>
+        <div id="plot"></div>
+      </div>
     `;
-
   }
 
   async connectedCallback() {
-    
     requestAnimationFrame(() => {
       setTimeout(() => {
         this.initializeCodeMirror();
@@ -70,6 +78,18 @@ class PythonCodeCell extends HTMLElement {
       this.shadowRoot.querySelector('#runPrevious').addEventListener('click', this.runPrevious.bind(this));
     }
 
+    // Hook up toggle button if hideable
+    if (this.isHideable) {
+      const toggleButton = this.shadowRoot.querySelector('#toggleEditorButton');
+      const editorContainer = this.shadowRoot.querySelector('#editorContainer');
+      toggleButton.addEventListener('click', () => {
+        editorContainer.classList.toggle('hidden');
+        toggleButton.textContent = editorContainer.classList.contains('hidden') ? 'Show Python Editor' : 'Hide Python Editor';
+        if (!editorContainer.classList.contains('hidden')) {
+          this.codeEditor.refresh();
+        }
+      });
+    }
   }
 
   initializeCodeMirror() {
@@ -96,20 +116,16 @@ class PythonCodeCell extends HTMLElement {
   
     this.codeEditor.setSize(null, (this.codeEditor.lineCount() * parseInt(getComputedStyle(this.codeEditor.getWrapperElement()).lineHeight, 10) + 30) + "px");
   }
-  
-  
-  
 
   // Run Python code using Pyodide
   async runCode() {
     
     if (!this.pyodide) {
-      this.shadowRoot.querySelector('#output').value = 'Python Initializing. Try again in a moment. ';
+      this.shadowRoot.querySelector('#output').value = 'Python Initializing. Try again in a moment.';
       return;
     }
 
     try {
-
       // Clear the old graphing stuff
       const plotparent = this.shadowRoot.querySelector('#plot')
       while (plotparent.lastElementChild) {
@@ -125,13 +141,14 @@ class PythonCodeCell extends HTMLElement {
       
       // If it says undefined, then just make it blank because just saying undefined is weird. 
       if (this.shadowRoot.querySelector('#output').value == '') {
-        this.shadowRoot.querySelector('#output').value = `Python executed successfully at ${(new Date()).toLocaleTimeString()}`
+        this.shadowRoot.querySelector('#output').value = `Python executed successfully at ${(new Date()).toLocaleTimeString()}`;
       }
 
       // MOVE THE PLOTS TO WHERE THEY SHOULD BE
       const newMplObjects = document.querySelectorAll(`[id*="matplotlib_"]`)
       if (newMplObjects.length > 0) {
         const Mplids = Array.from(newMplObjects).map(el => el.id);
+        
         // I'm going to rename the new stuff so that these won't show up in the 
         // query in the future. This also means that this query includes only the stuff from this run. 
         
@@ -141,14 +158,13 @@ class PythonCodeCell extends HTMLElement {
             candidate === other || other.includes(candidate)
           )
         );
-        plotparent.appendChild(document.querySelector('#'+parentid)) // add the mpl parent to the plotparent object
+        plotparent.appendChild(document.querySelector('#' + parentid)) // add the mpl parent to the plotparent object
 
         // Now rename all the mpl objects
         newMplObjects.forEach(function(element) {
-          element.id = "plotobject"
+          element.id = "plotobject";
         });
       }
-
 
     } catch (error) {
       // Show errors in the output textarea
@@ -186,8 +202,8 @@ class PythonCodeCell extends HTMLElement {
       }
     }
 
-    this.shadowRoot.querySelector('#output').value = `Previous cells executed at ${(new Date()).toLocaleTimeString()}`
+    this.shadowRoot.querySelector('#output').value = `Previous cells executed at ${(new Date()).toLocaleTimeString()}`;
   }
-
 }
+
 customElements.define('python-code-cell', PythonCodeCell);
