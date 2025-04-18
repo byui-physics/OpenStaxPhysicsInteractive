@@ -152,6 +152,117 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
 </div>
 </section>
 </div>
+
+<div class="os-section-area">
+  <section data-depth="1" class="review-problems"><a href="pythonchapter_pythonjumpstart.html">
+  <h3 data-type="document-title">
+  <span class="os-text" data-type="">Using Computing Tools</span>
+</h3>
+
+</a>
+
+<div data-type="exercise">
+  <div data-type="problem">
+    <span class="os-number">C1.1</span><span class="os-divider">. </span>
+    <div class="os-problem-container">
+      <p>The relativistic kinetic energy of a moving particle is given by 
+        <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>K</mi><mo>&#x0003D;</mo><mo stretchy="false">&#x00028;</mo><mi>&#x003B3;</mi><mo>&#x02212;</mo><mn>1</mn><mo stretchy="false">&#x00029;</mo><mi>m</mi><msup><mi>c</mi><mn>2</mn></msup></mrow></math></span>
+        where <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x003B3;</mi></mrow></math></span> can be calculated using the formula
+        <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x003B3;</mi><mo>&#x0003D;</mo><mo stretchy="false">&#x00028;</mo><mn>1</mn><mo>&#x02212;</mo><mo stretchy="false">&#x00028;</mo><mi>v</mi><mo>&#x0002F;</mo><mi>c</mi><msup><mo stretchy="false">&#x00029;</mo><mn>2</mn></msup><msup><mo stretchy="false">&#x00029;</mo><mrow><mo>&#x02212;</mo><mn>1</mn><mo>&#x0002F;</mo><mn>2</mn></mrow></msup></mrow></math></span>.
+        By first computing <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x003B3;</mi></mrow></math></span>, calculate the kinetic energy of an electron with mass 
+        <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>m</mi><mi>e</mi></msub><mo>&#x0003D;</mo></mrow></math></span> 9.1e-31 kg moving with speed <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>v</mi></mrow></math></span> equal to 
+        99.9 percent of the speed of light. The speed of light is <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>c</mi><mo>&#x0003D;</mo></mrow></math></span> 3e8 m/s. The code has been started for you below. The number you get should be very small. Using these numbers, your answer will be in
+        Joules. Convert your answer to electron volts using the fact that 
+        <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn><mspace width="0.167em" /><mtext>eV</mtext><mo>&#x0003D;</mo><mn>1.602</mn><mi>&#x000D7;</mi><msup><mn>10</mn><mrow><mo>&#x02212;</mo><mn>19</mn></mrow></msup><mspace width="0.167em" /><mtext>J</mtext></mrow></math></span>. 
+
+      </p>
+
+      <python-code-cell hideable>
+c = 3e8 # m/s
+me = 9.1e-31 # kg
+
+v = 
+
+# compute gamma
+gamma = 
+
+# compute kinetic energy 
+K = 
+
+print(K)
+</python-code-cell>
+
+    </div>
+  </div>
+</div>
+
+
+<div data-type="exercise">
+  <div data-type="problem">
+    <span class="os-number">C1.2</span><span class="os-divider">. </span>
+    <div class="os-problem-container">
+
+      <p>
+        Using python, plot 
+        <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>&#x0003D;</mo><msub><mi>x</mi><mn>0</mn></msub><mo>&#x0002B;</mo><mi>v</mi><mi>t</mi></mrow></math></span>
+        where <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>x</mi><mn>0</mn></msub><mo>&#x0003D;</mo></mrow></math></span> 3 meters and 
+        <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>v</mi><mo>&#x0003D;</mo></mrow></math></span> -0.5 m/s. Plot from 0 to 10 seconds. 
+        What happens if we change <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>v</mi></mrow></math></span>? What happens if we change 
+        <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>x</mi><mn>0</mn></msub></mrow></math></span>?
+      </p>
+
+      <python-code-cell hideable>from matplotlib import pyplot as plt
+from numpy import linspace 
+
+# define x0 and v here
+
+# make list of tpoints and xpoints here 
+
+# insert plotting code here 
+
+      </python-code-cell>
+
+    </div>
+  </div>
+</div>
+
+
+<div data-type="exercise">
+  <div data-type="problem">
+    <span class="os-number">C1.3</span><span class="os-divider">. </span>
+    <div class="os-problem-container">
+
+      <p>
+        Using python, plot 
+        <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>v</mi><mo>&#x0003D;</mo><msqrt><mrow><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup><mo>&#x0002B;</mo><mn>2</mn><mi>a</mi><mi>&#x00394;</mi><mi>x</mi></mrow></msqrt></mrow></math></span>
+        against <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>a</mi></mrow></math></span>
+        where <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>v</mi><mn>0</mn></msub><mo>&#x0003D;</mo></mrow></math></span> 5 m/s and 
+        <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x00394;</mi><mi>x</mi><mo>&#x0003D;</mo></mrow></math></span> 5 meters. Plot from <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>a</mi><mo>&#x0003D;</mo><mo>&#x02212;</mo><mn>3</mn><msup><mtext>&#x000A0;m/s</mtext><mn>2</mn></msup></mrow></math></span>
+        to <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>a</mi><mo>&#x0003D;</mo><mn>3</mn><msup><mtext>&#x000A0;m/s</mtext><mn>2</mn></msup></mrow></math></span>. 
+        What happens if we change <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>v</mi><mn>0</mn></msub></mrow></math></span>? What happens if we change 
+        <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x00394;</mi><mi>x</mi></mrow></math></span>?
+      </p>
+
+      <python-code-cell hideable>from matplotlib import pyplot as plt
+from numpy import linspace 
+
+# define deltax and v0 here
+
+# make list of apoints and vpoints here 
+
+# insert plotting code here 
+
+      </python-code-cell>
+
+    </div>
+  </div>
+</div>
+
+
+
+<!-- End of code problems -->
+<div>
+
 <div class="os-section-area">
   <section data-depth="1" id="fs-id1168326831470" class="review-problems" data-sm="./modules/m58270/index.cnxml:290:1"><a href="d50f6e32-0fda-46ef-a362-9bd36ca7c97d-at-aa8a43e-colon-78458ad4-769a-45d1-a981-1abe1b108fd9.html" data-page-slug="1-2-units-and-standards" data-page-uuid="78458ad4-769a-45d1-a981-1abe1b108fd9" data-page-fragment="">
   <h3 data-type="document-title">
@@ -741,51 +852,6 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
 </section>
 </div>
 
-<div class="os-section-area">
-  <section data-depth="1" class="review-problems"><a href="pythonchapter_pythonjumpstart.html">
-  <h3 data-type="document-title">
-  <span class="os-text" data-type="">Using Computing Tools</span>
-</h3>
-
-</a>
-
-<div data-type="exercise" id="fs-id11683291554120" data-sm="./modules/m58273/index.cnxml:129:1">
-  <div data-type="problem" id="fs-id11683294640060" data-sm="./modules/m58273/index.cnxml:130:1">
-    <span class="os-number">C1</span><span class="os-divider">. </span>
-    <div class="os-problem-container">
-      <p id="fs-id1168329050600" data-sm="./modules/m58273/index.cnxml:131:1">The relativistic kinetic energy of a moving particle is given by 
-        <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>K</mi><mo>&#x0003D;</mo><mo stretchy="false">&#x00028;</mo><mi>&#x003B3;</mi><mo>&#x02212;</mo><mn>1</mn><mo stretchy="false">&#x00029;</mo><mi>m</mi><msup><mi>c</mi><mn>2</mn></msup></mrow></math></span>
-        where <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x003B3;</mi></mrow></math></span> can be calculated using the formula
-        <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x003B3;</mi><mo>&#x0003D;</mo><mo stretchy="false">&#x00028;</mo><mn>1</mn><mo>&#x02212;</mo><mo stretchy="false">&#x00028;</mo><mi>v</mi><mo>&#x0002F;</mo><mi>c</mi><msup><mo stretchy="false">&#x00029;</mo><mn>2</mn></msup><msup><mo stretchy="false">&#x00029;</mo><mrow><mo>&#x02212;</mo><mn>1</mn><mo>&#x0002F;</mo><mn>2</mn></mrow></msup></mrow></math></span>.
-        By first computing <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x003B3;</mi></mrow></math></span>, calculate the kinetic energy of an electron with mass 
-        <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>m</mi><mi>e</mi></msub><mo>&#x0003D;</mo></mrow></math></span> 9.1e-31 kg moving with speed <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>v</mi></mrow></math></span> equal to 
-        99.9 percent of the speed of light. The speed of light is <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>c</mi><mo>&#x0003D;</mo></mrow></math></span> 3e8 m/s. The code has been started for you below. The number you get should be very small. Using these numbers, your answer will be in
-        Joules. Convert your answer to electron volts using the fact that 
-        <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn><mspace width="0.167em" /><mtext>eV</mtext><mo>&#x0003D;</mo><mn>1.602</mn><mi>&#x000D7;</mi><msup><mn>10</mn><mrow><mo>&#x02212;</mo><mn>19</mn></mrow></msup><mspace width="0.167em" /><mtext>J</mtext></mrow></math></span>. 
-
-      </p>
-
-      <python-code-cell>
-c = 3e8 # m/s
-me = 9.1e-31 # kg
-
-v = 
-
-# compute gamma
-gamma = 
-
-# compute kinetic energy 
-K = 
-
-print(K)
-</python-code-cell>
-
-    </div>
-  </div>
-</div>
-
-
-<div>
 
 
 <div class="os-section-area">
