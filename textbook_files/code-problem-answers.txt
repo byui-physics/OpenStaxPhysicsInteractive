@@ -1,4 +1,4 @@
-Answer to problem C1. 
+Answer to problem C1.1 
 INPUT:
 c = 3e8 # m/s
 me = 9.1e-31 # kg
@@ -21,7 +21,56 @@ print(f'{eV:.3g} eV')
 OUTPUT:
 1.75e-12 J, 1.09e+07 eV
 
-Answer to problem C2.
+Answer to problem C1.2
+
+INPUT:
+from matplotlib import pyplot as plt
+from numpy import linspace 
+
+# define x0 and v here
+x0 = 3 # m
+v = -0.5 # m/s
+
+# make list of tpoints and xpoints here 
+tpoints = linspace(0, 10, 100) # 100 points between 0 and 10 seconds
+xpoints = x0 + v*tpoints
+
+# insert plotting code here
+plt.clf()
+plt.plot(tpoints, xpoints)
+plt.xlabel('Time (s)')
+plt.ylabel('Position (m)')
+plt.show()
+
+OUTPUT:
+See plot. Student should comment that changing v changes the slope and 
+changes x0 changes the intercept (or starting point). 
+
+Answer to problem C1.3
+INPUT:
+from matplotlib import pyplot as plt
+from numpy import linspace, sqrt
+
+# define deltax and v0 here
+deltax = 5 # m
+v0 = 5 # m/s
+
+# make list of apoints and vpoints here 
+apoints = linspace(-3, 3, 1000)
+vpoints = sqrt(v0**2 + 2*apoints*deltax)
+
+# insert plotting code here
+plt.clf()
+plt.plot(apoints, vpoints)
+plt.xlabel('a (m/s^2)')
+plt.ylabel('v (m/s)')
+plt.show()
+
+OUTPUT:
+See plot. 
+
+
+Answer to problem C2.1
 INPUT:
 from numpy import array, pi, sin, cos
 
