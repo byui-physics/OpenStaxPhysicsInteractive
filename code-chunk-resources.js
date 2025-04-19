@@ -161,7 +161,20 @@ class PythonCodeCell extends HTMLElement {
         newMplObjects.forEach(function(element) {
           element.id = "plotobject";
         });
+
       }
+
+      //check for manipulate objects
+      document.querySelectorAll('#newest-manipulate').forEach(el => {
+        el.id = 'old-manipulate';
+        plotparent.appendChild(el);
+        // Reattach the event listener to the button
+        const playBtn = el.shadowRoot.querySelector('.controls button'); // Make sure it's targeting the correct button
+        playBtn.addEventListener('click', () => {
+          el.togglePlay();
+        });
+        el.animate();
+      });
 
     } catch (error) {
       // Show errors in the output textarea
@@ -204,3 +217,212 @@ class PythonCodeCell extends HTMLElement {
 }
 
 customElements.define('python-code-cell', PythonCodeCell);
+
+
+/* ----------- MANIPULATE PLOT ITEM -------------- */
+/*
+  This is meant to imitate the maniplate function in mathematica. 
+  When Pyodide is initialized, a python function is written that creates one of these and takes in a python function. 
+  That python function is plotted here (without need of lists of points)
+
+  This can only plot one function at a time. 
+*/
+
+class ManipulatePlot extends HTMLElement {
+  constructor() {
+    super();
+    this.attachShadow({ mode: 'open' });
+
+    // Container setup
+    const container = document.createElement('div');
+    const canvas = document.createElement('canvas');
+    canvas.width = 600;
+    canvas.height = 300;
+    this.canvas = canvas;
+    this.ctx = canvas.getContext('2d');
+
+    // Controls setup
+    const controls = document.createElement('div');
+    controls.classList.add('controls');
+
+    this.playBtn = document.createElement('button');
+    this.playBtn.textContent = '▶️';
+
+    this.slider = document.createElement('input');
+    this.slider.type = 'range';
+    this.slider.min = '-10';
+    this.slider.max = '10';
+    this.slider.step = '0.01';
+    this.slider.value = '0';
+
+    controls.append(this.playBtn, this.slider);
+    container.append(canvas, controls);
+    this.shadowRoot.appendChild(container);
+
+    this.t = 0;
+    this.xlim = [-10, 10];
+    this.step = 0.05;
+    this.running = false;
+    this.ylim = [-2, 2];
+    this.tlim = [0, 10];
+  }
+
+  connectedCallback() {
+    // Handle attributes
+    if (this.hasAttribute('xlim')) {
+      this.xlim = this.getAttribute('xlim').split(',').map(Number);
+    }
+
+    if (this.hasAttribute('ylim')) {
+      this.ylim = this.getAttribute('ylim').split(',').map(Number);
+    }
+
+    if (this.hasAttribute('tlim')) {
+      this.tlim = this.getAttribute('tlim').split(',').map(Number);
+    }
+    this.slider.min = this.tlim[0]
+    this.slider.max = this.tlim[1]
+
+    this.funcStr = this.getAttribute('function') || 'Math.sin(x - t)';
+    if (!func) {
+      // incase the function didn't work. 
+      this.func = new Function('x', 't', `return ${this.funcStr};`);
+    }
+
+    // Event listeners
+    this.playBtn.addEventListener('click', () => this.togglePlay());
+    this.slider.addEventListener('input', () => {
+      this.t = parseFloat(this.slider.value);
+      this.draw();
+    });
+
+    this.animate();
+  }
+
+  // Drawing the axes
+  drawAxes() {
+    const ctx = this.ctx;
+    const w = this.canvas.width;
+    const h = this.canvas.height;
+    const padding = 20;
+    const graphHeight = h - 2 * padding;
+    const [xmin, xmax] = this.xlim;
+    const xRange = xmax - xmin;
+    const [ymin, ymax] = this.ylim;
+    const yRange = ymax - ymin;
+    const yScale = graphHeight / yRange;
+
+    ctx.strokeStyle = '#aaa';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+
+    const zeroX = (0 - xmin) / xRange * w;
+    const zeroY = padding + graphHeight / 2;
+
+    if (xmin < 0 && xmax > 0) {
+      ctx.moveTo(zeroX, 0);
+      ctx.lineTo(zeroX, h);
+    }
+
+    ctx.moveTo(0, zeroY);
+    ctx.lineTo(w, zeroY);
+    ctx.stroke();
+
+    ctx.fillStyle = '#444';
+    ctx.font = '10px sans-serif';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'top';
+
+    const tickSpacingX = 1;
+    for (let x = Math.ceil(xmin); x <= xmax; x += tickSpacingX) {
+      const px = (x - xmin) / xRange * w;
+      if (Math.abs(px - zeroX) < 5) continue;
+      ctx.beginPath();
+      ctx.moveTo(px, zeroY - 5);
+      ctx.lineTo(px, zeroY + 5);
+      ctx.stroke();
+      ctx.fillText(x.toFixed(0), px, zeroY + 6);
+    }
+
+    const tickSpacingY = yRange / 10;
+    ctx.textAlign = 'right';
+    ctx.textBaseline = 'middle';
+    for (let y = -yRange / 2; y <= yRange / 2; y += tickSpacingY) {
+      const py = zeroY - y * yScale;
+      if (Math.abs(y) < 0.01) continue;
+      ctx.beginPath();
+      ctx.moveTo(zeroX - 5, py);
+      ctx.lineTo(zeroX + 5, py);
+      ctx.stroke();
+      ctx.fillText(y.toFixed(1), zeroX - 6, py);
+    }
+  }
+
+  // Drawing the function curve
+  draw() {
+    const ctx = this.ctx;
+    const w = this.canvas.width;
+    const h = this.canvas.height;
+    const padding = 20;
+    const graphHeight = h - 2 * padding;
+    const [xmin, xmax] = this.xlim;
+    const xRange = xmax - xmin;
+    const [ymin, ymax] = this.ylim;
+    const yRange = ymax - ymin;
+    const yScale = graphHeight / yRange;
+    const zeroY = padding + graphHeight / 2;
+
+    ctx.clearRect(0, 0, w, h);
+    this.drawAxes();
+
+    ctx.beginPath();
+    let first = true;
+
+    for (let px = 0; px < w; px++) {
+      const x = xmin + (px / w) * xRange;
+      let y;
+      try {
+        y = this.func(x, this.t);
+      } catch {
+        y = 0;
+      }
+      const py = zeroY - y * yScale;
+
+      if (first) {
+        ctx.moveTo(px, py);
+        first = false;
+      } else {
+        ctx.lineTo(px, py);
+      }
+    }
+
+    ctx.strokeStyle = 'blue';
+    ctx.lineWidth = 2;
+    ctx.stroke();
+  }
+
+  
+  animate() {
+    if (this.running) {
+      this.t += this.step;
+      const tMin = parseFloat(this.slider.min);
+      const tMax = parseFloat(this.slider.max);
+      if (this.t > tMax) this.t = tMin;
+      this.slider.value = this.t;
+    } else {
+      // When not running, use the slider value as the source of truth
+      this.t = parseFloat(this.slider.value);
+    }
+  
+    this.draw();
+    requestAnimationFrame(() => this.animate());
+  }
+
+  // Toggle play/pause button
+  togglePlay() {
+    this.running = !this.running;
+    this.playBtn.textContent = this.running ? '⏸️' : '▶️';
+  }
+}
+
+customElements.define('manipulate-plot', ManipulatePlot);

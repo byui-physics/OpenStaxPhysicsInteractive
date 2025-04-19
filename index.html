@@ -69,6 +69,24 @@ plt.show()
 
 </p>
 
+<p>We can also have animated "manipulate" style plots. </p>
+
+<python-code-cell>from numpy import sin
+    
+# define a (wave) function to animate
+omega = 1
+k = 1
+phi0 = 0
+A = 2
+
+def f(x, t):
+    return A*sin(k*x - omega*t + phi0)
+
+# plot it with the Manipulate function
+Manipulate(f, xlim=(-10, 10), ylim=(-3, 3), tlim=(0, 10))
+</python-code-cell>
+
+
 <div><h3 class="author-heading">Contributing Authors</h3><div class="loc-nonsenior-author">Stephen D. Druger, Northwestern University</div><div class="loc-nonsenior-author">David Anderson, Albion College</div><div class="loc-nonsenior-author">Daniel Bowman, Ferrum College</div><div class="loc-nonsenior-author">Gerald Friedman, Santa Fe Community College</div><div class="loc-nonsenior-author">Edw. S. Ginsberg, University of Massachusetts</div><div class="loc-nonsenior-author">Kenneth Podolak, Plattsburgh State University</div><div class="loc-nonsenior-author">Takashi Sato, Kwantlen Polytechnic University</div><div class="loc-nonsenior-author">David Smith, University of the Virgin Islands</div><div class="loc-nonsenior-author">Joseph Trout, Richard Stockton College</div><div class="loc-nonsenior-author">Kevin Wheelock, Bellevue College</div><div class="loc-nonsenior-author">Dedra Demaree, Georgetown University</div><div class="loc-nonsenior-author">Richard Ludlow, Daniel Webster College</div><div class="loc-nonsenior-author">Patrick Motl, Indiana University Kokomo</div><div class="loc-nonsenior-author">Lev Gasparov, University of North Florida</div><div class="loc-nonsenior-author">Lee LaRue, Paris Junior College</div><div class="loc-nonsenior-author">Mark Lattery, University of Wisconsin</div><div class="loc-nonsenior-author">Tao Pang, University of Nevada, Las Vegas</div><div class="loc-nonsenior-author">Alice Kolakowska, University of Memphis</div></div>
     <div><h3 class="author-heading">Senior Contributing Authors</h3><div class="loc-senior-author">William Moebs, Formerly of Loyola Marymount University</div><div class="loc-senior-author">Samuel J. Ling, Truman State University</div><div class="loc-senior-author">Jeff Sanny, Loyola Marymount University</div></div>
 
