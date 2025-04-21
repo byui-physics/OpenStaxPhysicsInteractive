@@ -8,6 +8,11 @@ Algebra of Vectors
 </title>
 <link rel="stylesheet" type="text/css" href="the-style-epub.css"/>
 
+<!-- Add these three lines to add code chunk availability -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
+<script src="https://cdn.jsdelivr.net/pyodide/v0.27.2/full/pyodide.js"></script>
+<script type="module" src="../../code-chunk-resources.js"></script>
 
 </head>
 <body>
@@ -840,6 +845,54 @@ Having found the vector components, we can illustrate the vectors by graphing or
 </div>
 </div>
 
+<p>As we hinted at in Example 2.7, storing our vectors as arrays can often make computing large vector sums easy. Unlike lists, we can do math with arrays. 
+  When you do math with an array, it does the math seperately on each entry of the array. If two arrays have the same number of entries, you can perform operations on 
+  them together (for example vector addition or subtraction). The next example performs the same computations from Example 2.9. 
+</p>
+
+<div data-type="example" id="fs-id1167133638055" data-sm="./modules/m58279/index.cnxml:88:1"><h3 class="os-title">
+  <span class="os-title-label">Code Example </span>
+  <span class="os-number">2.2</span>
+  <span class="os-divider"> </span>
+</h3>
+  <div class="body">
+
+    <p>In this example we will perform the computations from Example 2.9 using python. 
+      We will begin by entering the three vectors in as arrays, using the sine and cosine functions to compute each component.</p>
+
+<python-code-cell>from numpy import array, sin, cos, pi
+
+# define the three angles 
+alpha = 35 *pi/180 # degrees converted to radians 
+beta = -110 *pi/180 
+gamma = 30 *pi/180
+
+# define the three vectors 
+A = 10.0e-2 * array([cos(alpha), sin(alpha)]) # with arrays we can put the magnitude out front
+B = 7.0e-2 * array([cos(beta), sin(beta)])
+C = 8.0e-2 * array([cos(gamma), sin(gamma)])
+</python-code-cell>
+
+<p>Notice that since we are using arrays, we can type out the array with just the sin and cosine pieces, and then multiply the entire vector by the magnitude. 
+  Now that our vectors are defined as arrays, we can compute the vector sums as instructed. </p>
+
+  <python-code-cell># adding up the vectors
+R = A + B + C 
+D = A - B 
+S = A - 3*B + C
+
+# print the results
+print(R, D, S)
+</python-code-cell>
+
+<p>We see that we get the same results as in the previous example. Unfortunately printing the results with the f-strings isn't so easy with arrays. If you wanted 
+  to print the results nicely, you could pull the individual numbers out of the arrays. 
+</p>
+
+  </div>
+</div>
+
+
 <div data-type="example" id="fs-id1167133638055" data-sm="./modules/m58279/index.cnxml:88:1"><h3 class="os-title">
   <span class="os-title-label">Example </span>
   <span class="os-number">2.10</span>
@@ -1033,7 +1086,7 @@ The direction angles are <span class="os-math-in-para"><math xmlns="http://www.w
 </msqrt>
 <mo data-sm="./modules/m58279/index.cnxml:100:362">=</mo><msqrt data-sm="./modules/m58279/index.cnxml:100:376"><mrow data-sm="./modules/m58279/index.cnxml:100:385"><msup data-sm="./modules/m58279/index.cnxml:100:393"><mrow data-sm="./modules/m58279/index.cnxml:100:401"><mo stretchy="false" data-sm="./modules/m58279/index.cnxml:100:409">(</mo><mn data-sm="./modules/m58279/index.cnxml:100:440">−150.3</mn><mo stretchy="false" data-sm="./modules/m58279/index.cnxml:100:459">)</mo></mrow><mn data-sm="./modules/m58279/index.cnxml:100:499">2</mn></msup><mo data-sm="./modules/m58279/index.cnxml:100:522">+</mo><msup data-sm="./modules/m58279/index.cnxml:100:536"><mrow data-sm="./modules/m58279/index.cnxml:100:544"><mo stretchy="false" data-sm="./modules/m58279/index.cnxml:100:552">(</mo><mn data-sm="./modules/m58279/index.cnxml:100:583">−49.2</mn><mo stretchy="false" data-sm="./modules/m58279/index.cnxml:100:601">)</mo></mrow><mn data-sm="./modules/m58279/index.cnxml:100:641">2</mn></msup></mrow>
 </msqrt>
-<mspace width="0.2em" data-sm="./modules/m58279/index.cnxml:100:683"/><mtext data-sm="./modules/m58279/index.cnxml:100:708">N</mtext><mo data-sm="./modules/m58279/index.cnxml:100:728">=</mo><mn data-sm="./modules/m58279/index.cnxml:100:742">158.1</mn><mspace width="0.2em" data-sm="./modules/m58279/index.cnxml:100:760"/><mtext data-sm="./modules/m58279/index.cnxml:100:785">N</mtext><mo data-sm="./modules/m58279/index.cnxml:100:805">.</mo></mrow>
+<mspace width="0.2em" data-sm="./modules/m58279/index.cnxml:100:683"/><mtext data-sm="./modules/m58279/index.cnxml:100:708">N</mtext><mo data-sm="./modules/m58279/index.cnxml:100:728">=</mo><mn data-sm="./modules/m58279/index.cnxml:100:742">158.2</mn><mspace width="0.2em" data-sm="./modules/m58279/index.cnxml:100:760"/><mtext data-sm="./modules/m58279/index.cnxml:100:785">N</mtext><mo data-sm="./modules/m58279/index.cnxml:100:805">.</mo></mrow>
 </mrow>
 </semantics>
 </math>
@@ -1059,6 +1112,31 @@ The direction angles are <span class="os-math-in-para"><math xmlns="http://www.w
 </semantics>
 </math>
 </div>
+
+<python-code-cell hideable>from numpy import array, sin, cos, pi, sqrt, arctan
+
+# Define angles
+thetaA = -55 * pi/180 # degrees converted to radians 
+thetaB = 30 * pi/180 
+thetaC = 145 * pi/180 
+
+# Define vectors 
+A = 160.0 * array([cos(thetaA), sin(thetaA)])
+B = 200.0 * array([cos(thetaB), sin(thetaB)])
+C = 140.0 * array([cos(thetaC), sin(thetaC)])
+
+# Calculate R and D 
+R = A + B + C 
+D = -R 
+
+# calculate magnitude and angle 
+Dmag = sqrt( D[0]**2 + D[1]**2 )
+Dangle = arctan(D[1]/D[0])
+Dangle = Dangle * 180/pi # convert to degrees
+
+print(f'Doug pulls {Dmag:.4} N at an angle of {Dangle:.3g} degrees south of west. ')
+</python-code-cell>
+
 <p id="fs-id1167132322975" data-sm="./modules/m58279/index.cnxml:102:1">Dug pulls in the direction <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58279/index.cnxml:102:66"><mn data-sm="./modules/m58279/index.cnxml:102:74">18.1</mn><mtext data-sm="./modules/m58279/index.cnxml:102:91">°</mtext></mrow>
 </mrow>
 </semantics>
@@ -1304,6 +1382,27 @@ We first solve the given equation for the unknown vector <span class="os-math-in
 </semantics>
 </math>
 </div>
+
+<python-code-cell hideable>from numpy import array 
+
+# define unit vectors (optional)
+ihat = array([1, 0, 0])
+jhat = array([0, 1, 0])
+khat = array([0, 0, 1])
+
+# define vectors 
+A = ihat - 2*khat 
+B = -jhat + khat/2
+
+C = 2/3 * jhat - 2/3 * A + 2 * B
+
+print(C)
+
+# calculate Cmag
+Cmag = ( C[0]**2 + C[1]**2 + C[2]**2 )**0.5
+print(f'The magnitude of C is {Cmag:.4g}.')
+</python-code-cell>
+
 </div>
 </div>
 
@@ -1473,6 +1572,32 @@ Scalar components of the displacement vectors are
 </mrow>
 </semantics>
 </math></span> south of east.</p>
+
+<python-code-cell hideable>from numpy import array, sin, cos, pi, arctan, sqrt
+
+# define angles 
+theta1 = 90 *pi/180 # converted to radians
+theta2 = 180 *pi/180 
+theta3 = 225 *pi/180
+
+# define vectors 
+D1 = 5.0e3 * array([cos(theta1), sin(theta1)]) # m 
+D2 = 3.0e3 * array([cos(theta2), sin(theta2)]) # m 
+D3 = 4.0e3 * array([cos(theta3), sin(theta3)]) # m
+
+# calculate total path and B
+D = D1 + D2 + D3
+B = -D 
+
+# calculate mag and angle 
+Bmag = sqrt(B[0]**2 + B[1]**2) # pythagorean theorem 
+Btheta = arctan(B[1]/B[0])
+Btheta = Btheta * 180/pi # convert to degrees
+
+print(f'B = {Bmag:.2} m with angle {Btheta:.3g} degrees.')
+
+</python-code-cell>
+
 <p id="fs-id1167132708034" data-sm="./modules/m58279/index.cnxml:131:1"></p>
 <h4 data-type="title" data-sm="./modules/m58279/index.cnxml:131:31">Significance</h4>
 Notice that no figure is needed to solve this problem by the analytical method. Figures are required when using a graphical method; however, we can check if our solution makes sense by sketching it, which is a useful final step in solving any vector problem.
@@ -1606,6 +1731,30 @@ In the coordinate system indicated in <a href="#CNX_UPhysics_02_03_jogger" data-
 </semantics>
 </math>
 </div>
+
+<python-code-cell hideable>from numpy import array, sqrt
+
+# define vectors
+D_TB = array([-50.0, 0])
+D_AB = array([-90.0, 30.0])
+
+# calculate new vector
+D_AT = D_AB - D_TB
+
+DATx = D_AT[0]
+DATy = D_AT[1]
+
+# figure out stair height and width 
+w = abs(DATx/200) # take absolute value since its negative
+h = DATy/200
+
+print(f'The stair width is {w:.3g} m and the stair height is {h:.3g} m. ')
+
+DATmag = sqrt( DATx**2 + DATy**2 )
+print(f'The magnitude of D_AT is {DATmag:.3g} m.')
+
+</python-code-cell>
+
 <p id="fs-id1167132436988" data-sm="./modules/m58279/index.cnxml:151:1">Thus, the actual distance he runs is <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58279/index.cnxml:151:76"><msub data-sm="./modules/m58279/index.cnxml:151:84"><mi data-sm="./modules/m58279/index.cnxml:151:92">D</mi><mrow data-sm="./modules/m58279/index.cnxml:151:106"><mi data-sm="./modules/m58279/index.cnxml:151:114">A</mi><mi data-sm="./modules/m58279/index.cnxml:151:128">T</mi></mrow></msub><mo data-sm="./modules/m58279/index.cnxml:151:160">+</mo><msub data-sm="./modules/m58279/index.cnxml:151:174"><mi data-sm="./modules/m58279/index.cnxml:151:182">D</mi><mrow data-sm="./modules/m58279/index.cnxml:151:196"><mi data-sm="./modules/m58279/index.cnxml:151:204">T</mi><mi data-sm="./modules/m58279/index.cnxml:151:218">B</mi></mrow></msub><mo data-sm="./modules/m58279/index.cnxml:151:250">=</mo><mn data-sm="./modules/m58279/index.cnxml:151:264">50.0</mn><mspace width="0.2em" data-sm="./modules/m58279/index.cnxml:151:281"/><mtext data-sm="./modules/m58279/index.cnxml:151:306">m</mtext><mo data-sm="./modules/m58279/index.cnxml:151:326">+</mo><mn data-sm="./modules/m58279/index.cnxml:151:340">50.0</mn><mspace width="0.2em" data-sm="./modules/m58279/index.cnxml:151:357"/><mtext data-sm="./modules/m58279/index.cnxml:151:382">m</mtext><mo data-sm="./modules/m58279/index.cnxml:151:402">=</mo><mn data-sm="./modules/m58279/index.cnxml:151:416">100.0</mn><mspace width="0.2em" data-sm="./modules/m58279/index.cnxml:151:434"/><mtext data-sm="./modules/m58279/index.cnxml:151:459">m</mtext></mrow>
 </mrow>
 </semantics>
@@ -1780,8 +1929,21 @@ The magnitude of the vector <span class="os-math-in-para"><math xmlns="http://ww
 </math>
 </div>
 <p id="fs-id1167133615061" data-sm="./modules/m58279/index.cnxml:168:1"></p>
+
+<python-code-cell hideable>from numpy import array
+
+V = array([4.000, 3.000, 0.100]) # km/h
+
+# calculating Vhat
+Vmag = ( V[0]**2 + V[1]**2 + V[2]**2 )**0.5
+Vhat = V/Vmag 
+
+print(Vhat)
+</python-code-cell>
+
 <h4 data-type="title" data-sm="./modules/m58279/index.cnxml:168:31">Significance</h4>
 Note that when using the analytical method with a calculator, it is advisable to carry out your calculations to at least three decimal places and then round off the final answer to the required number of significant figures, which is the way we performed calculations in this example. If you round off your partial answer too early, you risk your final answer having a huge numerical error, and it may be far off from the exact answer or from a value measured in an experiment.
+Even better is to let python do the calculations for you so you don't round at all (at least as far as machine precision) during the intermediate calculations. 
 </div>
 </div>
 
@@ -1810,6 +1972,17 @@ Note that when using the analytical method with a calculator, it is advisable to
 </div>
 
 <a href="university-physics-volume-1.toc.html">Back to table of contents</a>
+
+<!-- These scripts run at the end of the file to make code cells work -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/codemirror.min.js"
+		integrity="sha512-XMlgZzPyVXf1I/wbGnofk1Hfdx+zAWyZjh6c21yGo/k1zNC4Ve6xcQnTDTCHrjFGsOrVicJsBURLYktVEu/8vQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/mode/python/python.min.js"
+		integrity="sha512-/mavDpedrvPG/0Grj2Ughxte/fsm42ZmZWWpHz1jCbzd5ECv8CB7PomGtw0NAnhHmE/lkDFkRMupjoohbKNA1Q=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="module" src="../../initialize-pyodide-chunks.js"></script>
+
+
 </body>
 </html>
 <!-- # sourceMappingURL=d50f6e32-0fda-46ef-a362-9bd36ca7c97d-at-aa8a43e-colon-7a906b36-a10a-4136-85c1-c17206afe34d.html.map -->

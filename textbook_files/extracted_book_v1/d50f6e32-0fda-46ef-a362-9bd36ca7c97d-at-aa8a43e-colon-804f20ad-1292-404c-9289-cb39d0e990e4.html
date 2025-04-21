@@ -635,6 +635,24 @@ The magnitude of vector <span class="os-math-in-para"><math xmlns="http://www.w3
 </semantics>
 </math>
 </div>
+
+<python-code-cell hideable>Dx = -4e-2 # m
+Dy = 2.9e-2 # m 
+
+# calculate magnitude
+Dmag = ( Dx**2 + Dy**2 )**0.5
+
+print(f'The magnitude of D is {Dmag:.2g} m.')
+
+# calculate angle
+from numpy import arctan, pi 
+
+theta = arctan(Dy/Dx)
+theta = theta + pi # add 180 degrees to get it in the right quadrant 
+theta = theta * 180/pi # converting to degrees
+print(f'The angle is {theta:.4g} degrees.')
+</python-code-cell>
+
 </div>
 </div>
 
@@ -1143,11 +1161,21 @@ together as one object. In cases like these, we can use a tool from the numpy li
 
 <python-code-cell>from numpy import array
 Avec = array([3.0, 4.0])
+print(Avec)
 </python-code-cell>
 
 <p>This code achieves the same result as the code above, but it contains the vector as a single object. We will see the benefits of this later when we perform operations on our vectors. 
   For now, however, we will just take it as a nice way to store numbers. 
 </p>
+
+<p>If we want to get the first entry in this vector (the x component), we use the square brackets and specify the entry we want. Python starts counting from 0, so <code>Avec[0]</code>
+would give us the x component of our vector.</p>
+
+<python-code-cell>Ax = Avec[0]
+Ay = Avec[1]
+
+print(Ax, Ay)
+</python-code-cell>
 
 <p>Suppose we have a vector of magnitude 7 and it has an angle of 38 degrees from the horizontal. How might we create this vector in python? We can follow an approach similar to that used in the last example using trigonometry functions.
  Below is an example using arrays. Remember that the trigonometry functions in python use radians, so we will need to convert our angle first. 
@@ -1427,6 +1455,26 @@ We identify <em data-effect="italics" data-sm="./modules/m58278/index.cnxml:205:
 </semantics>
 </math>
 </div>
+
+
+<p><strong>Python note: </strong>When using arrays to represent vectors, we can easily perform vector addition (or subtraction). Subtracting two arrays in Python performs 
+  subtraction element-wise, or by component. This makes computation for this problem quick. </p>
+
+<python-code-cell>from numpy import array 
+
+# create initial and final positions as vectors
+initialpos = array([300.0, 200.0, 100.0]) # m 
+finalpos = array([1200, 2100, 250]) # m 
+
+# use arrays to subtract all at once 
+Dvec = finalpos - initialpos 
+
+# Now compute magnitude
+Dmag = ( Dvec[0]**2 + Dvec[1]**2 + Dvec[2]**2 )**0.5 
+print(f'The magnitude of D is {Dmag:.3g} m.')
+  </python-code-cell>
+
+
 </div>
 </div>
 <div data-type="note" id="fs-id1167132218339" class="check-understanding" data-sm="./modules/m58278/index.cnxml:209:1"><h3 class="os-title">

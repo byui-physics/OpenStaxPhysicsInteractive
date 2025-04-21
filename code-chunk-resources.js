@@ -55,7 +55,7 @@ class PythonCodeCell extends HTMLElement {
         }
       </style>
 
-      ${this.isHideable ? `<button id="toggleEditorButton" class="btn btn-secondary btn-sm mb-2">Show Python Editor</button>` : ''}
+      ${this.isHideable ? `<button id="toggleEditorButton" class="btn btn-secondary btn-sm mb-2">Show Python Code</button>` : ''}
 
       <div id="editorContainer" class="${isHidden}">
         <textarea id="codeInput" style="width: 100%;"></textarea>
@@ -87,7 +87,7 @@ class PythonCodeCell extends HTMLElement {
       const editorContainer = this.shadowRoot.querySelector('#editorContainer');
       toggleButton.addEventListener('click', () => {
         editorContainer.classList.toggle('hidden');
-        toggleButton.textContent = editorContainer.classList.contains('hidden') ? 'Show Python Editor' : 'Hide Python Editor';
+        toggleButton.textContent = editorContainer.classList.contains('hidden') ? 'Show Python Code' : 'Hide Python Code';
         if (!editorContainer.classList.contains('hidden')) {
           this.codeEditor.refresh();
         }
