@@ -47,6 +47,12 @@ class PythonCodeCell extends HTMLElement {
         .hidden {
           display: none;
         }
+        .code-editor-container, pre, code {
+          max-width: 100%;
+          overflow-x: auto;
+          white-space: pre-wrap; /* or pre-line if you want more wrapping */
+          box-sizing: border-box;
+        }
       </style>
 
       ${this.isHideable ? `<button id="toggleEditorButton" class="btn btn-secondary btn-sm mb-2">Show Python Editor</button>` : ''}
@@ -255,7 +261,9 @@ class ManipulatePlot extends HTMLElement {
     this.slider.step = '0.01';
     this.slider.value = '0';
 
-    controls.append(this.playBtn, this.slider);
+    this.tvaluedisp = document.createElement('div')
+
+    controls.append(this.playBtn, this.slider, this.tvaluedisp);
     container.append(canvas, controls);
     this.shadowRoot.appendChild(container);
 
@@ -265,6 +273,10 @@ class ManipulatePlot extends HTMLElement {
     this.running = false;
     this.ylim = [-2, 2];
     this.tlim = [0, 10];
+
+    this.xcoord = "x"
+    this.tcoord = "t"
+    this.ycoord = "y"
   }
 
   connectedCallback() {
@@ -283,6 +295,15 @@ class ManipulatePlot extends HTMLElement {
     this.slider.min = this.tlim[0]
     this.slider.max = this.tlim[1]
 
+    if (this.hasAttribute('xcoord')) {
+      this.xcoord = this.getAttribute('xcoord')
+    }
+    if (this.hasAttribute('ycoord')) {
+      this.ycoord = this.getAttribute('ycoord')
+    }
+    if (this.hasAttribute('tcoord')) {
+      this.tcoord = this.getAttribute('tcoord')
+    }
     this.funcStr = this.getAttribute('function') || 'Math.sin(x - t)';
     if (!func) {
       // incase the function didn't work. 
@@ -356,6 +377,24 @@ class ManipulatePlot extends HTMLElement {
       ctx.stroke();
       ctx.fillText(y.toFixed(1), zeroX - 6, py);
     }
+
+    // Add axis labels
+    ctx.save();
+    ctx.font = '14px sans-serif';
+    ctx.fillStyle = 'black';
+
+    // X axis label (far right end of x-axis)
+    ctx.textAlign = 'right';
+    ctx.textBaseline = 'bottom';
+    ctx.fillText(this.xcoord, this.canvas.width - 5, this.canvas.height / 2);
+
+    // Y axis label (top of y-axis)
+    ctx.textAlign = 'left';
+    ctx.textBaseline = 'top';
+    ctx.fillText(this.ycoord, this.canvas.width / 2 + 5, 5);
+
+    ctx.restore();
+
   }
 
   // Drawing the function curve
@@ -413,7 +452,7 @@ class ManipulatePlot extends HTMLElement {
       // When not running, use the slider value as the source of truth
       this.t = parseFloat(this.slider.value);
     }
-  
+    this.tvaluedisp.textContent = this.tcoord + " = " + this.t.toPrecision(3);
     this.draw();
     requestAnimationFrame(() => this.animate());
   }

@@ -16,6 +16,7 @@
     try {
     await pyodide.runPython(`from pyodide.ffi import create_proxy
 from js import document
+import inspect
 
 def Manipulate(func, xlim=(-10, 10), ylim=(-5, 5), tlim=(0, 10)):
     import js
@@ -28,6 +29,12 @@ def Manipulate(func, xlim=(-10, 10), ylim=(-5, 5), tlim=(0, 10)):
     
     # Assign function directly
     plot.func = create_proxy(func)
+
+    # get parameter names
+    args = list(inspect.signature(func).parameters.keys())
+    plot.setAttribute("xcoord", args[0])
+    plot.setAttribute("ycoord", func.__name__)
+    plot.setAttribute("tcoord", args[1])
 
     # Append to the page
     plot.id = "newest-manipulate"
