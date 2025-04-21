@@ -16,3 +16,6 @@ is there an example that we can put in 3.4 that will set up euler's method?
 
 fix chapter 2
 fix chapter 3
+
+
+manipulate allow variable to use

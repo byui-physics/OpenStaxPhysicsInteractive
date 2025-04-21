@@ -938,17 +938,25 @@ div[data-type=composite-page].os-eob {
 }
 
 /* This was added by me */
-textarea {
+/* textarea {
   font-family: Courier, monospace;
   font-size: 16px; 
   line-height: 1.1;
   color: #311b1d;
   background-color: #dbe4de5c;
-}
+} */
 /* This was added by me also */
-.CodeMirror {
+/* .CodeMirror {
   font-size: 14px; 
+} */
+
+/* Prevent horizontal overflow from pushing content off-screen */
+python-code-cell {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
 }
+
 
 aside[role=doc-footnote] {
   float: footnote;
