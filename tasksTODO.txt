@@ -1,15 +1,3 @@
-Make a python reference page so students can go back and check stuff, but we don't have to 
-introduce it all at once. 
-    - A page with tools that you can copy from
-        - plotting
-        - Euler 1D
-        - Euler 3D
-        - System Solver
-
-
-
-mention installing
-
 
 add Euler's method 1D
 is there an example that we can put in 3.4 that will set up euler's method?
@@ -18,4 +6,8 @@ fix chapter 2
 fix chapter 3
 
 
-manipulate allow variable to use
+Be very careful about what we throw out. The more we can throw out the better. 
+highligh key stuff
+introduce things more (not introduction page but introduce each presentation of python)
+
+Figure out how to do a details menu with a code cell in it. 
