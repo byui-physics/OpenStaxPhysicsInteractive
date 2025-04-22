@@ -51,6 +51,18 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
     of our physics experience. There is much one can learn with Python, but to get started we only need a few basics. 
 </p>
 
+<h3 data-type="title">Python In This Text</h3>
+
+<p>Several pages in this textbook have Python code cells. You are able to run the code, and change it, and run it again. If you wish to reset the code to its default value, 
+    there is a button that will do so. There is also a button that copies the current code in the cell incase you wish to paste it in your own python installation or somewhere else. </p>
+
+<p>
+    Some code cells in the text rely on previous cells. When a Python cell is ran, anything that gets defined or stored will be kept in memory until
+    you reload the page. If a code cell depends on a cell before it, you must run the previous cell first. Because of this, the Python cells in this text have a "run previous cells" button that you can use 
+    to make sure any previous code was completed. This style of programming is typical behavior for notebook style code documents, which are frequently used in physics. A popular example is called Jupyter notebook. 
+    If you are interested in installing Jupyter on your own device you can find more from <a href="https://lancejnelson.github.io/PH135/" target="_blank">page written by Lance Nelson,</a>  or from the <a href="https://jupyter.org" target="_blank">Jupyter homepage. </a>
+</p>
+
 </section>
 
 <section data-depth="1"><h3 data-type="title">Variables And Arithmetic In Python</h3>
@@ -196,6 +208,8 @@ plt.plot(xpoints, ypoints)
 plt.show() # show the results
     </python-code-cell>
 
+    <p>Notice that cell was is one that relies on the cell previous having already been run. Otherwise, you may get the error that xpoints and ypoints have not yet been defined. </p>
+    
     <p>By default pyplot will connect the dots. If you don't want the dots connected, you can add <code>'.'</code> as a third argument in the plot command, giving us
         <code>plt.plot(xpoints, ypoints, '.')</code>.</p>
 
@@ -222,8 +236,8 @@ plt.plot(xpoints, ypoints)
 plt.show()
     </python-code-cell>
 
-<p>Notice how by using arrays, we were able to make our curve much smoother. While arrays are quite useful, 
-    there are other methods we can use to systematically create a list of x points and y points. We will explore more later on. </p>
+<p>Notice how by using arrays, we were able to make our curve much smoother. We will discuss more specifically how arrays work later on in Chapter 2, but for now you can use it as an 
+    easy way to plot a function for which you have an equation. For more details also see <a href="https://lancejnelson.github.io/PH135/chapters/numpy.html" target="_blank">here.</a>  </p>
 
 </section>
 
