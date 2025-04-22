@@ -235,7 +235,7 @@ blockquote {
 
 /* stylelint-disable-next-line meowtec/no-px */
 a[href^=http]::after {
-  content: " (" attr(href) ")";
+  content: none !important;
   overflow-wrap: break-word;
 }
 
