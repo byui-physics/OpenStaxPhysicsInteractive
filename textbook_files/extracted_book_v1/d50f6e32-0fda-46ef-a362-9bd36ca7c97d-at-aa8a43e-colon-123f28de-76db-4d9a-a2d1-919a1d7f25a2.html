@@ -560,10 +560,29 @@ The velocity of the particle gives us direction information, indicating the part
 <p id="fs-id1168329439120" data-sm="./modules/m58283/index.cnxml:152:1"></p>
 <h4 data-type="title" data-sm="./modules/m58283/index.cnxml:152:31">Instantaneous Velocity For Any Function</h4>
 <p>
-Sometimes the function that models the position of a particle is difficult to compute by hand. 
-Consider the particle from the previous code example whose position is given by 
+  In this example we will introduce another tool in Python that is powerful, but that you shouldn't feel like you need to master right away. In Python we can define functions similar to 
+  how we would define a function in math (like a position vs time function). Once we have a function, we can plug in numbers and it will output the function value. The code below demonstrates the syntax. 
+</p>
+
+<python-code-cell># first define a position vs time function
+def x(t):
+    return 3*t - 3*t**2
+
+# use the function to calculate position at a certain time 
+xf = x(0.5) # calculate the position at 0.5 seconds 
+print(f'The position at 0.5 seconds is {xf:.3g} m.')
+</python-code-cell>
+
+<p>The <code>def</code> defines the function. Here <code>x</code> is the name of the function. The letter inside the parenthesis is the input variable. This is the letter that should 
+  show up in the formula in the next line. The <code>return</code> marks the output. Note that the return must be indented (with 4 spaces). This is where we put the formula for the math function we are trying to code. 
+  When you want to use the function later, all you do is type the name of the function, and put in the input inside the parenthesis. This is the same as we would do with a math function. 
+  Typing in functions like this can make it easy when we need to calculate the position at many different values of time. </p>
+
+<p>Now let's use functions to explore instantaneous velocity. 
+Sometimes the function that models the position of a particle is difficult to differentiate by hand. 
+Consider the particle whose position is given by 
 <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo stretchy="false">&#x00028;</mo><mi>t</mi><mo stretchy="false">&#x00029;</mo><mo>&#x0003D;</mo><mi>sin</mi><mo stretchy="false">&#x00028;</mo><mn>2</mn><mi>t</mi><mo stretchy="false">&#x00029;</mo><mo>&#x0002B;</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>2</mn></mrow></mfrac><mi>t</mi></mrow></math></span>. 
-We saw in the last section how to plot the position versus time graph. Let's see how we could use python to compute the derivative. 
+We might not know how to do the derivative by hand yet, but we can use Python to make a plot of the derivative. 
 </p>
 
 <p>Recall the definition of the derivative given by <math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58283/index.cnxml:22:70"><mi data-sm="./modules/m58283/index.cnxml:22:78">v</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:22:92">(</mo><mi data-sm="./modules/m58283/index.cnxml:22:123">t</mi><mo stretchy="false" data-sm="./modules/m58283/index.cnxml:22:137">)</mo><mo data-sm="./modules/m58283/index.cnxml:22:168">=</mo><munder data-sm="./modules/m58283/index.cnxml:22:182"><mrow data-sm="./modules/m58283/index.cnxml:22:192"><mtext data-sm="./modules/m58283/index.cnxml:22:200">lim</mtext></mrow>
@@ -578,9 +597,10 @@ We saw in the last section how to plot the position versus time graph. Let's see
   <mo data-sm="./modules/m58283/index.cnxml:22:866">.</mo></mrow>
   </mrow>
   </semantics>
-  </math>. 
-On python we can't take the limit as <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x00394;</mi><mi>t</mi></mrow></math></span> goes to zero, but we can 
+  </math>
+In Python we can't take the limit as <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x00394;</mi><mi>t</mi></mrow></math></span> goes to zero, but we can 
 make <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x00394;</mi><mi>t</mi></mrow></math></span> very small. Notice how in the code below we use a very small <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x00394;</mi><mi>t</mi></mrow></math></span> to define the function for velocity. 
+Defining a function for position earlier makes the code look just like the definition of the derivative. In the code below, the definition of the derivative used to find velocity calls the position function that we define earlier. 
 </p>
 
 <python-code-cell>from numpy import sin
@@ -631,6 +651,10 @@ plt.show()
 
 <p>Trying using this code to answer the question in Example 3.4. </p>
 
+<p><strong>Conclusion: </strong>In this example we used functions to make calculating the derivative easier in Python. This allowed us to quickly make plots of any function and its derivative. 
+This can be a powerful tool as we expore different position and velocity functions through this course. Again, don't try memorizing the code, but rather think of it as a tool you can come reference (and copy)
+later to help you learn physics. 
+</p>
 
 
 <!-- This thing is a cap before the red line.-->

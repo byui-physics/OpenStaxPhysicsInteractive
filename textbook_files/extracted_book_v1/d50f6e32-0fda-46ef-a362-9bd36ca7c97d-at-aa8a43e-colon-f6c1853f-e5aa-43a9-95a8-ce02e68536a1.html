@@ -412,10 +412,11 @@ By doing both a numerical and graphical analysis of velocity and acceleration of
 <python-code-cell>from numpy import linspace, sin
 from matplotlib import pyplot as plt
 
-# define the functions
-def x(t):
+# define the main position vs time function
+def x(t): 
     return sin(2*t) + (1/2)*t
 
+# calculate the other two using the definition of the derivative
 dt = 0.00001
 def v(t):
     return (x(t + dt) - x(t))/dt 
@@ -447,7 +448,7 @@ plt.show()
   </python-code-cell>
 
   <p>Similar to how the velocity crosses zero when the position is at a maximum or minimum, we can see that the acceleration crosses zero when the velocity is at a maximum or minimum. 
-    This simple example of plotting with python demonstrates how we can use python as a tool for visualization. As problems become mroe complicated, being able to visualize what is going on 
+    This simple example of plotting with Python demonstrates how we can use Python as a tool for visualization. As problems become more complicated, being able to visualize what is going on 
     is critical to understanding the problem. 
   </p>
 
