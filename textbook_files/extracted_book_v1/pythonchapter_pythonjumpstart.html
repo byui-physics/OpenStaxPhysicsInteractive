@@ -135,8 +135,8 @@ c = a**0.5 # the square root of a
 c = (a*b+0.5*a)/4
 </python-code-cell>
 
-<p>Python also has access to functions that perform other mathematical operations we are used to. Many of these come from a library called numpy. 
-    From numpy we can find logarithm functions, trigonometry functions, square root functions, and others. Below is an example. 
+<p>Python also has access to functions that perform other mathematical operations we are used to. Many of these come from a library called NumPy. 
+    From NumPy we can find logarithm functions, trigonometry functions, square root functions, and others. Below is an example. 
 </p>
 
 <python-code-cell>from numpy import sin, cos, tan, arctan, pi, sqrt, log, log10
@@ -214,7 +214,7 @@ plt.show() # show the results
         <code>plt.plot(xpoints, ypoints, '.')</code>.</p>
 
     <p>Letting pyplot connect the dots can be useful for plotting functions. However, with only 5 points, the curve is not very smooth. 
-        Additionally, it can be pretty tedious to type out every point that we want to plot. Luckily for us, there is a function in numpy that will give us a list 
+        Additionally, it can be pretty tedious to type out every point that we want to plot. Luckily for us, there is a function in NumPy that will give us a list 
         of points. The function is called linspace. It takes in a starting point, an ending point, and how many points we want to create in that range. 
         Actually, the linspace function 
         gives us a special kind of list called an array. Arrays are a little different from lists, but they can still be used to plot a collection of points. 
