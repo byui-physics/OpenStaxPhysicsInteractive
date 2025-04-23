@@ -7,6 +7,13 @@
 Free Fall
 </title>
 <link rel="stylesheet" type="text/css" href="the-style-epub.css"/>
+
+<!-- Add these three lines to add code chunk availability -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
+<script src="https://cdn.jsdelivr.net/pyodide/v0.27.2/full/pyodide.js"></script>
+<script type="module" src="../../code-chunk-resources.js"></script>
+
 </head>
 <body>
     <div data-type="page" id="page_989bba62-fc07-470d-b705-9559ebc5f558" class="chapter-content-module" data-book-content="true"><h2 data-type="document-title" data-sm="./modules/m58286/index.cnxml:3:1" id="page_989bba62-fc07-470d-b705-9559ebc5f558_titlecreatedbycookbook"><span class="os-number">3.5</span>
@@ -161,6 +168,26 @@ This simplifies to
 </semantics>
 </math>
 </div>
+
+<python-code-cell hideable># define knowns 
+g = 9.8 # g is just a positive number
+y0 = 0 
+v0 = -4.9 # m/s 
+a = -g # using g in the negative direction
+y = -98 # m 
+
+# define quadratic terms 
+A = 0.5*a 
+B = v0 
+C = y0 - y 
+
+# quadratic equation 
+t1 = (-B - ( B**2 - 4*A*C )**0.5)/2/A
+t2 = (-B + ( B**2 - 4*A*C )**0.5)/2/A
+
+print(f'The two solutions for time are {t1:.3g} s and {t2:.3g} s. ')
+</python-code-cell>
+
 This is a quadratic equation with roots <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58286/index.cnxml:66:49"><mi data-sm="./modules/m58286/index.cnxml:66:57">t</mi><mo data-sm="./modules/m58286/index.cnxml:66:71">=</mo><mn data-sm="./modules/m58286/index.cnxml:66:85">−5.0</mn><mspace width="0.2em" data-sm="./modules/m58286/index.cnxml:66:102"/><mi mathvariant="normal" data-sm="./modules/m58286/index.cnxml:66:127">s</mi><mspace width="0.2em" data-sm="./modules/m58286/index.cnxml:66:162"/><mtext data-sm="./modules/m58286/index.cnxml:66:187">and</mtext><mspace width="0.2em" data-sm="./modules/m58286/index.cnxml:66:209"/><mi data-sm="./modules/m58286/index.cnxml:66:234">t</mi><mo data-sm="./modules/m58286/index.cnxml:66:248">=</mo><mn data-sm="./modules/m58286/index.cnxml:66:262">4.0</mn><mspace width="0.2em" data-sm="./modules/m58286/index.cnxml:66:278"/><mi mathvariant="normal" data-sm="./modules/m58286/index.cnxml:66:303">s</mi></mrow>
 </mrow>
 </semantics>
@@ -176,7 +203,14 @@ This is a quadratic equation with roots <math xmlns="http://www.w3.org/1998/Math
 </mrow>
 </semantics>
 </math>
-</div></li>
+</div>
+
+<python-code-cell hideable># this code relies on the previous having been ran
+v = v0 - g*t1 # using positive solution. 
+print(f'The final velocity is {v:.3g} m/s.')
+</python-code-cell>
+
+</li>
 </ol>
 <p id="fs-id1168327872094" data-sm="./modules/m58286/index.cnxml:69:8"></p>
 <h4 data-type="title" data-sm="./modules/m58286/index.cnxml:69:38">Significance</h4>
@@ -236,7 +270,15 @@ Choose a coordinate system with a positive <em data-effect="italics" data-sm="./
 which gives <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58286/index.cnxml:87:21"><msub data-sm="./modules/m58286/index.cnxml:87:29"><mi data-sm="./modules/m58286/index.cnxml:87:37">v</mi><mn data-sm="./modules/m58286/index.cnxml:87:51">0</mn></msub><mo data-sm="./modules/m58286/index.cnxml:87:74">=</mo><mn data-sm="./modules/m58286/index.cnxml:87:88">24.5</mn><mspace width="0.2em" data-sm="./modules/m58286/index.cnxml:87:105"/><mtext data-sm="./modules/m58286/index.cnxml:87:130">m/s</mtext></mrow>
 </mrow>
 </semantics>
-</math>.</li>
+</math>.
+
+<python-code-cell hideable>t = 5.0 # s 
+g = 9.8 # g is a positive number 
+v0 = g*t/2 # we did the algebra by hand 
+print(f'The initial velocity is v0 = {v0:.3g} m/s. ')
+</python-code-cell>
+
+</li>
 <li data-sm="./modules/m58286/index.cnxml:88:1">At the maximum height, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58286/index.cnxml:88:38"><mi data-sm="./modules/m58286/index.cnxml:88:46">v</mi><mo data-sm="./modules/m58286/index.cnxml:88:60">=</mo><mn data-sm="./modules/m58286/index.cnxml:88:74">0</mn></mrow>
 </mrow>
 </semantics>
@@ -259,7 +301,18 @@ or
 </mrow>
 </semantics>
 </math>
-</div></li>
+</div>
+
+<python-code-cell hideable>v = 0
+# using v0 and g from last code cell. 
+y0 = 0
+
+# solving for y gives us 
+y = (v0**2 - v**2)/2/g + y0
+print(f'The maximum height is y = {y:.3g} m.')
+</python-code-cell>
+
+</li>
 <li data-sm="./modules/m58286/index.cnxml:93:1">To find the time when <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58286/index.cnxml:93:37"><mi data-sm="./modules/m58286/index.cnxml:93:45">v</mi><mo data-sm="./modules/m58286/index.cnxml:93:59">=</mo><mn data-sm="./modules/m58286/index.cnxml:93:73">0</mn></mrow>
 </mrow>
 </semantics>
@@ -277,7 +330,15 @@ or
 This gives <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58286/index.cnxml:96:20"><mi data-sm="./modules/m58286/index.cnxml:96:28">t</mi><mo data-sm="./modules/m58286/index.cnxml:96:42">=</mo><mn data-sm="./modules/m58286/index.cnxml:96:56">2.5</mn><mspace width="0.2em" data-sm="./modules/m58286/index.cnxml:96:72"/><mtext data-sm="./modules/m58286/index.cnxml:96:97">s</mtext></mrow>
 </mrow>
 </semantics>
-</math>. Since the ball rises for 2.5 s, the time to fall is 2.5 s.</li>
+</math>. Since the ball rises for 2.5 s, the time to fall is 2.5 s.
+
+<python-code-cell hideable># using g and v0 from previous cell. 
+# solving for t gives us 
+t = (v0 - v)/g
+print(f'The time it takes the ball to get to the top of the peak is {t:.3g} s.')
+</python-code-cell>
+
+</li>
 <li data-sm="./modules/m58286/index.cnxml:97:1">The acceleration is 9.8 m/s<sup data-sm="./modules/m58286/index.cnxml:97:34">2</sup> everywhere, even when the velocity is zero at the top of the path. Although the velocity is zero at the top, it is changing at the rate of 9.8 m/s<sup data-sm="./modules/m58286/index.cnxml:97:193">2</sup> downward.</li>
 <li data-sm="./modules/m58286/index.cnxml:98:1">The velocity at <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58286/index.cnxml:98:31"><mi data-sm="./modules/m58286/index.cnxml:98:39">t</mi><mo data-sm="./modules/m58286/index.cnxml:98:53">=</mo><mn data-sm="./modules/m58286/index.cnxml:98:67">5.0</mn><mi mathvariant="normal" data-sm="./modules/m58286/index.cnxml:98:83">s</mi></mrow>
 </mrow>
@@ -296,7 +357,18 @@ This gives <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><se
 </mrow>
 </semantics>
 </math>
-</div></li>
+</div>
+
+<python-code-cell hideable> # using a function to calculate v at a certain t
+def v(t):
+    return v0 - g*t # this is just equation 3.15
+# this function uses the v0 and g that were defined in the previous cells. 
+
+# call the function inside the print statement
+print(f'The velocity at t = 5.0 is {v(5.0):.3g} m/s. ')
+</python-code-cell>
+
+</li>
 </ol>
 <p id="fs-id1168328319759" data-sm="./modules/m58286/index.cnxml:100:8"></p>
 <h4 data-type="title" data-sm="./modules/m58286/index.cnxml:100:38">Significance</h4>
@@ -373,6 +445,14 @@ We need to select the coordinate system for the acceleration of gravity, which w
 </semantics>
 </math>
 </div>
+
+<python-code-cell hideable>v0 = 2.0e2 # m/s
+g = 9.8 # g is a positive number 
+
+y = v0**2/2/g
+print(f'y = {y:.5g} m.')
+</python-code-cell>
+
 This solution gives the maximum height of the booster in our coordinate system, which has its origin at the point of release, so the maximum height of the booster is roughly 7.0 km.</li>
 <li data-sm="./modules/m58286/index.cnxml:127:1">An altitude of 6.0 km corresponds to<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58286/index.cnxml:127:51"><mi data-sm="./modules/m58286/index.cnxml:127:59">y</mi><mo data-sm="./modules/m58286/index.cnxml:127:73">=</mo><mn data-sm="./modules/m58286/index.cnxml:127:87">1.0</mn><mspace width="0.2em" data-sm="./modules/m58286/index.cnxml:127:103"/><mo data-sm="./modules/m58286/index.cnxml:127:128">×</mo><mspace width="0.2em" data-sm="./modules/m58286/index.cnxml:127:142"/><msup data-sm="./modules/m58286/index.cnxml:127:167"><mrow data-sm="./modules/m58286/index.cnxml:127:175"><mn data-sm="./modules/m58286/index.cnxml:127:183">10</mn></mrow><mn data-sm="./modules/m58286/index.cnxml:127:207">3</mn></msup><mspace width="0.2em" data-sm="./modules/m58286/index.cnxml:127:230"/><mtext data-sm="./modules/m58286/index.cnxml:127:255">m</mtext></mrow>
 </mrow>
@@ -389,7 +469,14 @@ We have, from <a href="#fs-id1168328282779" data-sm="./modules/m58286/index.cnxm
 </mrow>
 </semantics>
 </math>
-</div></li>
+</div>
+
+<python-code-cell hideable>new_y = 1.0e3 # m
+
+v = ( v0**2 - 2*g*new_y )**0.5
+print(f'The velocity of the booster at a height of {new_y:.2g} m above its release point is v = +/- {v:.4g} m/s.')</python-code-cell>
+
+</li>
 </ol>
 <p id="fs-id1168328051167" data-sm="./modules/m58286/index.cnxml:131:1"></p>
 <h4 data-type="title" data-sm="./modules/m58286/index.cnxml:131:31">Significance</h4>
@@ -426,6 +513,16 @@ We have both a positive and negative solution in (b). Since our coordinate syste
   </div>
 
 <a href="university-physics-volume-1.toc.html">Back to table of contents</a>
+
+<!-- These scripts run at the end of the file to make code cells work -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/codemirror.min.js"
+		integrity="sha512-XMlgZzPyVXf1I/wbGnofk1Hfdx+zAWyZjh6c21yGo/k1zNC4Ve6xcQnTDTCHrjFGsOrVicJsBURLYktVEu/8vQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/mode/python/python.min.js"
+		integrity="sha512-/mavDpedrvPG/0Grj2Ughxte/fsm42ZmZWWpHz1jCbzd5ECv8CB7PomGtw0NAnhHmE/lkDFkRMupjoohbKNA1Q=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="module" src="../../initialize-pyodide-chunks.js"></script>
+
 </body>
 </html>
 <!-- # sourceMappingURL=d50f6e32-0fda-46ef-a362-9bd36ca7c97d-at-aa8a43e-colon-989bba62-fc07-470d-b705-9559ebc5f558.html.map -->
