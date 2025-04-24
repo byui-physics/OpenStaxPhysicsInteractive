@@ -111,7 +111,7 @@ class PythonCodeCell extends HTMLElement {
       matchBrackets: true
     });
   
-    this.codeEditor.setValue(this.innerHTML.trim());
+    this.codeEditor.setValue(this.textContent.trim());
   
     this.codeEditor.on("change", () => {
       this.codeEditor.setSize(null, (this.codeEditor.lineCount() * parseInt(getComputedStyle(this.codeEditor.getWrapperElement()).lineHeight, 10) + 30) + "px");
@@ -191,7 +191,7 @@ class PythonCodeCell extends HTMLElement {
   // This function resets the code
   async resetCode() {
     // set the editor back to the default value
-    this.codeEditor.setValue(this.innerHTML.trim());
+    this.codeEditor.setValue(this.textContent.trim());
   }
 
   // This function copies the code to the clipboard

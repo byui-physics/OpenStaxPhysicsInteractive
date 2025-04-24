@@ -1,7 +1,7 @@
 from latex2mathml import converter
 
 ''' INPUT PARAMETERS '''
-latex_eq = r"y = \frac{-1}{3}x + 4"
+latex_eq = r"t = t_0 + \Delta t"
 inline = True # change this depending on what you want
 
 
