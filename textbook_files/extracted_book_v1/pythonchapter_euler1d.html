@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+
+<a href="university-physics-volume-1.toc.html">Back to table of contents</a><head><title> 
+   Using Computing Tools
+</title>
+<link rel="stylesheet" type="text/css" href="the-style-epub.css"/>
+
+<!-- Add these three lines to add code chunk availability -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
+<script src="https://cdn.jsdelivr.net/pyodide/v0.27.2/full/pyodide.js"></script>
+<script type="module" src="../../code-chunk-resources.js"></script>
+
+</head>
+<body>
+    <div data-type="page" class="chapter-content-module" data-book-content="true"><h2 data-type="document-title">
+<span class="os-divider"> </span>
+<span data-type="" class="os-text">Using Computing Tools</span>
+</h2>
+<div data-type="abstract"><h3 data-type="title">Learning Objectives</h3>
+<p>By the end of this section, you will be able to:</p>
+<ul>
+<li>Understand how to use Euler's method in 1 dimension.</li>
+<li>Apply Euler's method to a non-constant acceleration problem.</li>
+<li>Use Euler's method to create a position vs time graph.</li>
+</ul>
+</div>
+
+
+<!-- Put a picture here maybe -->
+
+
+<!-- <section data-depth="1" id="fs-id1168329158777" data-sm="./modules/m58275/index.cnxml:34:1"><h3 data-type="title" data-sm="./modules/m58275/index.cnxml:35:1">Solution</h3> -->
+
+<section data-depth="1"><h2 data-type="title">Euler's Method in 1-Dimension</h2>
+
+    <p>
+        Euler's method is a powerful tool for applying physics to real world problems. Often times we know how a system changes, and we want to figure out what the final state of the system will be. 
+        For example, often we know the acceleration of an object (that may not be constant) and we want to determine how the object will move through time. Maybe we have a system that has a large number 
+        of objects in it and we need to be able to keep track of how they interact with each other. Euler's method is a way that we can break down a hard problem into smaller easier problems. By doing so, 
+        we can apply the principles of physics to more realistic situations. In this section, we will explore Euler's method in 1 dimension. 
+    </p>
+
+    <p>In essence, Euler's method is about breaking a non-constant acceleration problem into many small constant-acceleration problems. Suppose we have an object and we know it's acceleration (that may not be constant).
+        We want to determine the final position of that object after a certain amount of time. With Euler's method, we break our time interval into many smaller time intervals. We choose these intervals to be small enough that 
+        we can consider the acceleration to be <em>approximately</em> constant, for a small change in time (or position). In fact, this small time interval is so small that velocity is approximately constant as well. 
+        By breaking down the problem into many small intervals, we can use the simple equations <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>v</mi><mo>&#x0003D;</mo><msub><mi>v</mi><mn>0</mn></msub><mo>&#x0002B;</mo><mi>a</mi><mi>t</mi></mrow></math></span> 
+        and <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>&#x0003D;</mo><msub><mi>x</mi><mn>0</mn></msub><mo>&#x0002B;</mo><mi>v</mi><mi>t</mi></mrow></math></span> to figure out the new velocity and position.
+        We then move to the next small interval, using the answer from the previous as the initial conditions for the next. 
+      </p>
+      
+
+
+     
+
+
+</section>
+
+<section data-depth="1"><h3 data-type="title">While Loops</h3>
+
+    <p>There's one more tool we need to introduce in Python before we can write an Euler's method code. Here we introduce loops. Specifically, we will use a while loop. A while loop is a command we use in Python to run a certain piece of code over and over until a certain 
+        criteria has been met. For example, we might repeat a certain code until the object we are considering has reached a certain point, or until the time has reached a certain value. Below is an example of a while loop that keeps adding 0.1 to a number until that number is greater than 5. 
+      </p>
+
+<python-code-cell>t = 0 # initial value for the number 
+
+while t <= 5:
+    # as long as t is less than 5, make it bigger 
+    t = t + 0.1 # write over t with a number 0.1 bigger than t 
+
+print(t)
+</python-code-cell>
+
+<p>Notice that we can write over a variable that we have already set. (We have often done this when doing unit conversions.) The code inside the loop is the code that is indented with 4 spaces. 
+    Here the code inside the while loop runs multiple times, until <code>t</code>
+has been written over enough so that it is greater than 5. As you might expect, unindented code after the while loop runs after the while-condition becomes no longer true. 
+</p>
+
+<p>Be careful that when you make a while loop that it will eventually end. For example, if you were to call <code>while 1 < 2:</code> the code inside the while loop would run forever. In this textbook, 
+if you ever encounter an infinite loop, you can reset it by reloading the page. Running an infinite loop might slow down your browser though so it's best to avoid it. </p>
+
+
+</section>
+
+<section data-depth="1"><h3 data-type="title">Coding Euler's Method (Without Graphing)</h3>
+
+    <p>We are now ready to write a code for Euler's method. We will start by defining a function that determines the acceleration. As an example we will consider a ball thrown upward with acceleration <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>a</mi><mo>&#x0003D;</mo><mo>&#x02212;</mo><mi>g</mi></mrow></math></span>. 
+    After defining the acceleration, we need to give the starting values for time, position, and initial velocity. Suppose the ball starts with a height of 1 meter and an initial velocity of 3 m/s. 
+    We want to determine the time it takes for the ball to hit the ground, so for our while loop condition, we will run as long as <code>y > 0</code>.
+    </p>
+
+    <p>Inside the while loop we are solving a small constant acceleration problem. This small constant acceleration problem is calculating how the values will change over a small time interval, which we will call <code>dt</code>, also known as the step size. 
+        The quality of our answer will be better if <code>dt</code> is sufficiently small. This is an unusual constant acceleration problem where velocity is also costant. 
+        We will use the current velocity to calculate the new position of the ball (after that small interval) using the equation <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>&#x0003D;</mo><msub><mi>x</mi><mn>0</mn></msub><mo>&#x0002B;</mo><mi>v</mi><mi>t</mi></mrow></math></span>. 
+        Then in a similar manner, we will use the acceleration function to calculate the new velocity of the ball using the equation  <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>v</mi><mo>&#x0003D;</mo><msub><mi>v</mi><mn>0</mn></msub><mo>&#x0002B;</mo><mi>a</mi><mi>t</mi></mrow></math></span>. 
+        The new velocity will then be used the next time the loop is run. We also need to update time as we go with <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>t</mi><mo>&#x0003D;</mo><msub><mi>t</mi><mn>0</mn></msub><mo>&#x0002B;</mo><mi>&#x00394;</mi><mi>t</mi></mrow></math></span>.
+        Let's see how that works. 
+    </p>
+
+    <python-code-cell>g = 9.8 # g is a positive number
+# first define acceleration
+def a(t):
+    return -g # acceleration is -g since the ball is in free fall 
+
+# define initial conditions 
+y = 1 # just call it y (not y0) since we'll update it later
+t = 0
+v = 3 # m/s
+
+# now loop through 
+dt = 0.00001 # define step size
+while y > 0:
+    # write new y over the old y value
+    y = y + v*dt # constant velocity equation 
+
+    # write new v over the old v value 
+    v = v + a(t)*dt # we need parentheses since a is a function. Use current time for input. 
+
+    # update time 
+    t = t + dt 
+
+# while loop is over. 
+print(f'It took t = {t:.3g} seconds for the ball to hit the ground.')
+    </python-code-cell>
+
+<p>To summarize, we started by defining the acceleration function (the way the system changes). Then we defined our initial conditions. While we might have labeled initial values with <code>y0</code> and 
+<code>v0</code> earlier in the chapter, here we just called them <code>y</code> and <code>v</code> since we are going to write over those values later on. 
+After defining the initial conditions, we looped for over several small constant acceleration problems, using velocity to update position, and acceleration to update time. Notice how in the code, we 
+need the parenthesis and the function input (when we write <code>v + a(t)*dt</code>) since acceleration is a function. Doing it this way makes it easier when we want to start doing more complicated accelerations. 
+Velocity did not need parenthesis (we wrote <code>x + v*dt</code>) because velocity is just a number (not a function). 
+</p>
+
+<p>Try changing the acceleration and the initial conditions. Try solving a constant acceleration problem you have done earlier using the code above. </p>
+
+    </section>
+
+<section data-depth="1"><h3 data-type="title">Coding Euler's Method (With Graphing)</h3>
+
+<p>Now that we've used Euler's method to solve a problem, let's see how we can modify our code to create a plot of position vs time. Recall that to make a plot,
+    all we need is a list of x points and y points. We will do this using lists (not arrays). In python, you can add a point to a list by calling <code>mylist.append(newitem)</code>. 
+    The thing you put inside the parenthesis will be added to the list. Since we have a loop in our Euler's method code, all we need to do is add a point each time we run through the loop. 
+</p>
+
+<p>We will modify the previous code by creating two empty lists at the beginning. Then inside the loop we will add the current values to our lists. To make things interesting,
+    we will create lists for time and position, but you could make a list for velocity and acceleration too if you wanted. Try the code below. 
+</p>
+
+
+<python-code-cell>g = 9.8 # g is a positive number
+# first define acceleration
+def a(t):
+    return -g # acceleration is -g since the ball is in free fall 
+
+# define initial conditions 
+y = 1 # just call it y (not y0) since we'll update it later
+t = 0
+v = 3 # m/s
+
+# define empty lists (not arrays) for plotting
+tpoints = []
+ypoints = []
+
+# now loop through 
+dt = 0.00001 # define step size
+while y > 0:
+    # add the current values to the list (before we change them)
+    tpoints.append(t)
+    ypoints.append(y)
+
+    # write new y over the old y value
+    y = y + v*dt # constant velocity equation 
+
+    # write new v over the old v value 
+    v = v + a(t)*dt # we need parentheses since a is a function. Use current time for input. 
+
+    # update time 
+    t = t + dt 
+
+# while loop is over. 
+print(f'It took t = {t:.3g} seconds for the ball to hit the ground.')
+
+# plot the results
+from matplotlib import pyplot as plt 
+plt.clf()
+plt.xlabel('Time (s)')
+plt.ylabel('Height (m)')
+plt.title("Euler's Method Solution")
+plt.plot(tpoints, ypoints)
+plt.show()
+    </python-code-cell>
+
+    <p>Using some of the fancy plotting code we used in <a href="d50f6e32-0fda-46ef-a362-9bd36ca7c97d-at-aa8a43e-colon-f6c1853f-e5aa-43a9-95a8-ce02e68536a1.html">Code Example 3.2</a>
+        , you could make a plot of position, velocity, and acceleration all next to each other. 
+        All you would need to change in the Euler's method code is to add lists for velocity and acceleration as well. 
+    </p>
+
+</section>
+
+
+<div data-type="example" id="fs-id1168328222026" data-sm="./modules/m58284/index.cnxml:100:1"><h3 class="os-title">
+    <span class="os-title-label">Example </span>
+    <span class="os-number"></span>
+    <span class="os-divider"> </span>
+  </h3>
+  <div class="body">
+
+    <h4>A Non-constant Acceleration Problem</h4>
+
+    <p>Suppose we have a rocket whose acceleration is given by</p>
+  
+
+</div>
+  </div>
+
+  <section data-depth="1"><h3 data-type="title">Conclusion</h3>
+
+<p>We have seen that Euler's method allows us to computationally simulate a real world scenario. The is really no limit to how much detail we can put into our model 
+    once we have it written as code. We can make acceleration change depend on time, position, or anything else. 
+</p>
+
+<p>Remember that we simplified the problem by picking a time interval that was very small, and assuming acceleration and velocity were constant. 
+    You should recognize that this can't actually be true. Velocity cannot be constant unless acceleration is zero. While this tool will never give us the exact answer,
+    it can still be very powerful. In physics our job is often not to get the right answer, but to get the one that is close enough to be useful. 
+</p>
+
+<p>Hopefully you can now see how being able to do physics in python expands our ability to tackle difficult problems. As we move through the rest of the book, we will learn more principles of physics. Each of these principles are relativiely simple on their own,
+    but being able to put them together to solve a difficult problem is what makes them useful, and frequency code is the tool that we use to do so. 
+</p>
+
+    </section>
+
+
+<a href="university-physics-volume-1.toc.html">Back to table of contents</a>
+
+<!-- These scripts run at the end of the file to make code cells work -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/codemirror.min.js"
+		integrity="sha512-XMlgZzPyVXf1I/wbGnofk1Hfdx+zAWyZjh6c21yGo/k1zNC4Ve6xcQnTDTCHrjFGsOrVicJsBURLYktVEu/8vQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/mode/python/python.min.js"
+		integrity="sha512-/mavDpedrvPG/0Grj2Ughxte/fsm42ZmZWWpHz1jCbzd5ECv8CB7PomGtw0NAnhHmE/lkDFkRMupjoohbKNA1Q=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="module" src="../../initialize-pyodide-chunks.js"></script>
+
+</body>
+</html>
