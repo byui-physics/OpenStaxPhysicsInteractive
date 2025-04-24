@@ -6,12 +6,22 @@
     Problems
   </title>
 <link rel="stylesheet" type="text/css" href="the-style-epub.css"/>
+
+<!-- Add these three lines to add code chunk availability -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
+<script src="https://cdn.jsdelivr.net/pyodide/v0.27.2/full/pyodide.js"></script>
+<script type="module" src="../../code-chunk-resources.js"></script>
+
 </head>
 <body>
 <div class="os-eoc os-review-problems-container" data-type="composite-page" data-uuid-key=".review-problems" id="composite-page-19" data-book-content="true">
   <h3 data-type="title">
     <span class="os-text">Problems</span>
   </h3>
+  
+  <python-code-cell># Feel free to use this code cell as a calculator. </python-code-cell>
+
   <div class="os-review-problems">
   <div class="os-section-area">
   <section data-depth="1" id="fs-id1168329282324" class="review-problems" data-sm="./modules/m58282/index.cnxml:210:1"><a href="d50f6e32-0fda-46ef-a362-9bd36ca7c97d-at-aa8a43e-colon-0a2fee59-1308-41d2-a536-8f9802d37f3f.html" data-page-slug="3-1-position-displacement-and-average-velocity" data-page-uuid="0a2fee59-1308-41d2-a536-8f9802d37f3f" data-page-fragment="">
@@ -666,11 +676,70 @@
 </div>
 </section>
 </div>
+
+
+<div class="os-section-area">
+  <section data-depth="1" id="fs-id1168055470292" class="review-problems" data-sm="./modules/m58287/index.cnxml:182:1"><a href="d50f6e32-0fda-46ef-a362-9bd36ca7c97d-at-aa8a43e-colon-eedbae5f-1304-4326-a49a-92f967f80a9e.html" data-page-slug="3-6-finding-velocity-and-displacement-from-acceleration" data-page-uuid="eedbae5f-1304-4326-a49a-92f967f80a9e" data-page-fragment="">
+  <h3 data-type="document-title">
+
+  <span class="os-text" data-type="">Euler's Method in 1 Dimension</span>
+</h3>
+
+</a>
+
+<!-- Euler's method problems:
+ constant acceleration problem 
+
+Non constant acceleration like rocket problem 
+
+for a given amount of time instead of hitting the ground 
+
+for something that isn't acceleration, velocity, and position 
+
+one where we modify the euler's method to use the non-constant velocity equation. Does it allow us to make dt bigger (and thus run faster)
+
+one where you copy the code from the example that plots all three things and apply it to euler's method
+
+-->
+
+<div data-type="exercise">
+  <div data-type="problem">
+  <span class="os-number">C3.1</span><span class="os-divider">. </span>
+  <div class="os-problem-container">
+  
+    <p>Modify the Euler's method code to simulate the situation in Problem 68 for a given velocity. Then using your code, guess a variety of initial jump velocities 
+      until you get the desired result. Does this match your theoretical answer? 
+    </p>
+
+    <python-code-cell hideable># choose one of the Euler's method codes from the textbook section, 
+# then paste it here
+    </python-code-cell>
+
+  </div>
+  </div>
+  </div>
+
+
+
+
+</section>
+</div>
+
 </div>
 
 </div>
 
 <a href="university-physics-volume-1.toc.html">Back to table of contents</a>
+
+<!-- These scripts run at the end of the file to make code cells work -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/codemirror.min.js"
+		integrity="sha512-XMlgZzPyVXf1I/wbGnofk1Hfdx+zAWyZjh6c21yGo/k1zNC4Ve6xcQnTDTCHrjFGsOrVicJsBURLYktVEu/8vQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/mode/python/python.min.js"
+		integrity="sha512-/mavDpedrvPG/0Grj2Ughxte/fsm42ZmZWWpHz1jCbzd5ECv8CB7PomGtw0NAnhHmE/lkDFkRMupjoohbKNA1Q=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="module" src="../../initialize-pyodide-chunks.js"></script>
+
 </body>
 </html>
 <!-- # sourceMappingURL=d50f6e32-0fda-46ef-a362-9bd36ca7c97d-at-aa8a43e-colon-912ea1ba-e7fe-5b26-8dbd-963cd5068a53.html.map -->

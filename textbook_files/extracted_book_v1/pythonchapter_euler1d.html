@@ -195,7 +195,7 @@ plt.show()
         All you would need to change in the Euler's method code is to add lists for velocity and acceleration as well. 
     </p>
 
-</section>
+    
 
 
 <div data-type="example" id="fs-id1168328222026" data-sm="./modules/m58284/index.cnxml:100:1"><h3 class="os-title">
@@ -207,7 +207,68 @@ plt.show()
 
     <h4>A Non-constant Acceleration Problem</h4>
 
-    <p>Suppose we have a rocket whose acceleration is given by</p>
+    <p>Suppose we have a rocket whose acceleration is given by <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>a</mi><mo stretchy="false">&#x00028;</mo><mi>t</mi><mo stretchy="false">&#x00029;</mo><mo>&#x0003D;</mo><mo stretchy="false">&#x00028;</mo><mn>35</mn><msup><mtext>&#x000A0;m/s</mtext><mn>2</mn></msup><mo stretchy="false">&#x00029;</mo><msup><mi>e</mi><mrow><mo>&#x02212;</mo><mi>t</mi><mo>&#x0002F;</mo><mo stretchy="false">&#x00028;</mo><mn>11.5</mn><mtext>&#x000A0;s</mtext><mo stretchy="false">&#x00029;</mo></mrow></msup><mo>&#x02212;</mo><mo stretchy="false">&#x00028;</mo><mn>9.8</mn><msup><mtext>&#x000A0;m/s</mtext><mn>2</mn></msup><mo stretchy="false">&#x00029;</mo></mrow></math></span>. 
+    The rocket is launched from the ground and starts at rest. 
+    Our task is to determine how high it travels, and how long it will take to return to the ground. </p>
+    
+    
+    <p>We can modify the Euler's method code above to find the time it takes the rocket to hit the ground again, and to plot it's height vs time graph. We will have to change the acceleration at the top of the code. 
+    Also since the rocket is starting at <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>&#x0003D;</mo><mn>0</mn></mrow></math></span>, we need to modify
+    the condition on the while loop so it still runs if <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>&#x0003D;</mo><mn>0</mn></mrow></math></span>, but not when <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>y</mi><mo>&#x0003C;</mo><mn>0</mn></mrow></math></span>. 
+    The time step is also plenty small and can probably be made larger. That way the code doesn't take quite so long to run because it won't have as many constant acceleration problems to solve. 
+</p>
+
+    <python-code-cell>from numpy import exp
+# first define acceleration
+def a(t):
+    return 35*exp(-t/11.5) - 9.8 # m/s^2
+
+# define initial conditions 
+y = 0 # just call it y (not y0) since we'll update it later
+t = 0
+v = 0 # m/s
+
+# define empty lists (not arrays) for plotting
+tpoints = []
+ypoints = []
+
+# now loop through 
+dt = 0.0001 # define step size
+while y >= 0:
+    # add the current values to the list (before we change them)
+    tpoints.append(t)
+    ypoints.append(y)
+
+    # write new y over the old y value
+    y = y + v*dt # constant velocity equation 
+
+    # write new v over the old v value 
+    v = v + a(t)*dt # we need parentheses since a is a function. Use current time for input. 
+
+    # update time 
+    t = t + dt 
+
+# while loop is over. 
+print(f'It took t = {t:.3g} seconds for the rocket to return to the ground.')
+
+# plot the results
+from matplotlib import pyplot as plt 
+plt.clf()
+plt.xlabel('Time (s)')
+plt.ylabel('Height (m)')
+plt.title("Euler's Method Solution")
+plt.plot(tpoints, ypoints)
+plt.show()
+    </python-code-cell>
+
+<p>By reading the graph, we can see that the rocket traveled about 3.7 km before returning back to earth, and it reached the ground after about 70 seconds. </p>
+
+    <p>We saw that with relative ease, we could modify an existing code to apply to a new problem. This time we had a problem where the acceleration 
+        was not constant (a little more realistic). We could continue to add details to the acceleration to make it even more realistic. Later in 
+        this course we will learn what kinds of things cause different accelerations, and that will help us in improving our model. 
+    </p>
+
+</section>
   
 
 </div>
