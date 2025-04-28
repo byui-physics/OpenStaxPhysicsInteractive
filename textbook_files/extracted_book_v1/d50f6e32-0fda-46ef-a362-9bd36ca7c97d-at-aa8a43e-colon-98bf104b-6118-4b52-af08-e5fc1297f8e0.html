@@ -7,6 +7,13 @@
 Acceleration Vector
 </title>
 <link rel="stylesheet" type="text/css" href="the-style-epub.css"/>
+
+<!-- Add these three lines to add code chunk availability -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
+<script src="https://cdn.jsdelivr.net/pyodide/v0.27.2/full/pyodide.js"></script>
+<script type="module" src="../../code-chunk-resources.js"></script>
+
 </head>
 <body>
     <div data-type="page" id="page_98bf104b-6118-4b52-af08-e5fc1297f8e0" class="chapter-content-module" data-book-content="true"><h2 data-type="document-title" data-sm="./modules/m58290/index.cnxml:3:1" id="page_98bf104b-6118-4b52-af08-e5fc1297f8e0_titlecreatedbycookbook"><span class="os-number">4.2</span>
@@ -261,6 +268,17 @@ We can gain some insight into the problem by looking at the position function. I
 By graphing the trajectory of the particle, we can better understand its motion, given by the numerical results of the kinematic equations.
 </div>
 </div>
+
+<h3 data-type="title">Differentiation with Python</h3>
+
+<p>You may recall from Sections 3.2 and 3.3 the code examples where we used Python to compute the derivative of position and velocity. Perhaps you are wondering if we can do the same with vector position and vector velocity. 
+  The answer is yes, we can! Instead of using scalar functions (one dimensional functions) for position and velocity, all we would need to change is to have our 
+  position or velocity function return vectors (as arrays) instead. This is because the definition of the derivative looks practically the same for vectors and for scalars. 
+  However, notice that the Python derivatives we calculated in those previous sections were not symbolic expressions for velocity and acceleration. Instead all we could produce was a graph, 
+  or a number at a specific time. If we want a symbolic expression for the velocity or acceleration, our best choice right now is to compute them by hand and then enter our symbolic expression into Python, 
+  as we did in Example 4.3. There are Python libraries that can do symbolic derivatives, but their benefit may not be worth it for us at this point, so we will save that discussion for later on. 
+</p>
+
 <div data-type="note" id="fs-id1165038201672" class="check-understanding" data-sm="./modules/m58290/index.cnxml:64:1"><h3 class="os-title">
   <span class="os-title-label">Check Your Understanding </span>
   <span class="os-number">4.2</span>
@@ -585,6 +603,32 @@ Since we are evaluating the components of the motion equations in the <em data-e
 </math>
 </div>
 <p id="fs-id1165038298334" data-sm="./modules/m58290/index.cnxml:124:1">The magnitude of the velocity of the skier at 10.0 s is 25 m/s, which is 60 mi/h.</p>
+
+<p>When we use Python to keep track of our vectors, the equations become much more succinct and familiar. </p>
+
+<python-code-cell hideable>from numpy import array, sin, cos, pi
+
+# define acceleration and initial conditions
+a = 2.1 * array([ cos(pi/12), -sin(pi/12) ]) # m/s^2
+r0 = array([75.0, -50.0]) # m
+v0 = array([4.1, -1.1]) # m/s
+
+# use kinematic equation (constant acceleration) in vector form 
+def r(t):
+    return r0 + v0*t + a/2*t**2
+
+def v(t):
+    return v0 + a*t
+
+# calculate at t = 10.0
+rf = r(10.0)
+print(rf)
+
+vf = v(10.0)
+print(vf)
+</python-code-cell>
+
+
 <p id="fs-id1165038298337" data-sm="./modules/m58290/index.cnxml:125:1"></p>
 <h4 data-type="title" data-sm="./modules/m58290/index.cnxml:125:31">Significance</h4>
 It is useful to know that, given the initial conditions of position, velocity, and acceleration of an object, we can find the position, velocity, and acceleration at any later time.
@@ -598,6 +642,13 @@ It is useful to know that, given the initial conditions of position, velocity, a
 </h3>
 <div class="os-note-body">
 <p id="fs-id1165038298375" data-sm="./modules/m58290/index.cnxml:130:1">At this <a href="https://openstax.org/l/21phetmotladyb" data-sm="./modules/m58290/index.cnxml:130:39" target="_blank" rel="noopener nofollow">University of Colorado Boulder website</a>, you can explore the position velocity and acceleration of a ladybug with an interactive simulation that allows you to change these parameters.</p>
+
+<iframe src="https://phet.colorado.edu/sims/cheerpj/ladybug-motion-2d/latest/ladybug-motion-2d.html?simulation=ladybug-motion-2d"
+        width="800"
+        height="600"
+        allowfullscreen>
+</iframe>
+
 </div>
 </div>
 
@@ -611,6 +662,16 @@ It is useful to know that, given the initial conditions of position, velocity, a
   </div>
 
 <a href="university-physics-volume-1.toc.html">Back to table of contents</a>
+
+<!-- These scripts run at the end of the file to make code cells work -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/codemirror.min.js"
+		integrity="sha512-XMlgZzPyVXf1I/wbGnofk1Hfdx+zAWyZjh6c21yGo/k1zNC4Ve6xcQnTDTCHrjFGsOrVicJsBURLYktVEu/8vQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/mode/python/python.min.js"
+		integrity="sha512-/mavDpedrvPG/0Grj2Ughxte/fsm42ZmZWWpHz1jCbzd5ECv8CB7PomGtw0NAnhHmE/lkDFkRMupjoohbKNA1Q=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="module" src="../../initialize-pyodide-chunks.js"></script>
+
 </body>
 </html>
 <!-- # sourceMappingURL=d50f6e32-0fda-46ef-a362-9bd36ca7c97d-at-aa8a43e-colon-98bf104b-6118-4b52-af08-e5fc1297f8e0.html.map -->

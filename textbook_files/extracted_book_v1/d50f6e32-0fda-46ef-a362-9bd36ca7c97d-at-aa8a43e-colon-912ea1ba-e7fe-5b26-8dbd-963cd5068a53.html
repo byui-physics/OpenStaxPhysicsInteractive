@@ -679,7 +679,7 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
 
 
 <div class="os-section-area">
-  <section data-depth="1" id="fs-id1168055470292" class="review-problems" data-sm="./modules/m58287/index.cnxml:182:1"><a href="d50f6e32-0fda-46ef-a362-9bd36ca7c97d-at-aa8a43e-colon-eedbae5f-1304-4326-a49a-92f967f80a9e.html" data-page-slug="3-6-finding-velocity-and-displacement-from-acceleration" data-page-uuid="eedbae5f-1304-4326-a49a-92f967f80a9e" data-page-fragment="">
+  <section data-depth="1" id="fs-id1168055470292" class="review-problems" data-sm="./modules/m58287/index.cnxml:182:1"><a href="pythonchapter_euler1d.html" data-page-slug="3-6-finding-velocity-and-displacement-from-acceleration" data-page-uuid="eedbae5f-1304-4326-a49a-92f967f80a9e" data-page-fragment="">
   <h3 data-type="document-title">
 
   <span class="os-text" data-type="">Euler's Method in 1 Dimension</span>
@@ -687,18 +687,10 @@ integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jI
 
 </a>
 
-<!-- Euler's method problems:
- constant acceleration problem 
-
-Non constant acceleration like rocket problem 
-
-for a given amount of time instead of hitting the ground 
-
-for something that isn't acceleration, velocity, and position 
+<!-- Ideas for more Euler's method problems:
 
 one where we modify the euler's method to use the non-constant velocity equation. Does it allow us to make dt bigger (and thus run faster)
 
-one where you copy the code from the example that plots all three things and apply it to euler's method
 
 -->
 
@@ -719,6 +711,100 @@ one where you copy the code from the example that plots all three things and app
   </div>
   </div>
 
+  <div data-type="exercise">
+    <div data-type="problem">
+    <span class="os-number">C3.2</span><span class="os-divider">. </span>
+    <div class="os-problem-container">
+    
+      <p>An object has an oscillatory acceleration given by <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>a</mi><mo stretchy="false">&#x00028;</mo><mi>t</mi><mo stretchy="false">&#x00029;</mo><mo>&#x0003D;</mo><mn>3</mn><mi>sin</mi><mo stretchy="false">&#x00028;</mo><mn>1.05</mn><mi>t</mi><mo stretchy="false">&#x00029;</mo></mrow></math></span>. 
+        Using Euler's method, create a graph of the position vs time function for 15 seconds. Assume it starts at rest at the origin. Use your graph to determine how many oscillations the 
+        object will make in that amount of time.
+      </p>
+  
+      <python-code-cell hideable># choose one of the Euler's method codes from the textbook section, 
+# then paste it here
+      </python-code-cell>
+  
+    </div>
+    </div>
+    </div>
+
+    <div data-type="exercise">
+      <div data-type="problem">
+      <span class="os-number">C3.3</span><span class="os-divider">. </span>
+      <div class="os-problem-container">
+      
+        <p>A company's worth is given by <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>W</mi></mrow></math></span>. 
+          Suppose the change in the company's worth is give by <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mtext>d</mtext><mi>W</mi></mrow><mrow><mtext>d</mtext><mi>t</mi></mrow></mfrac><mo>&#x0003D;</mo><mo stretchy="false">&#x00028;</mo><mn>1000</mn><mi>&#x00024;</mi><mo stretchy="false">&#x00029;</mo><msup><mi>e</mi><mrow><mi>t</mi><mo>&#x0002F;</mo><mo stretchy="false">&#x00028;</mo><mn>5</mn><mtext>&#x000A0;years</mtext><mo stretchy="false">&#x00029;</mo></mrow></msup></mrow></math></span>. 
+          How much will the company be worth after 30 years? Assume the company's initial worth is 1000 dollars. Use Euler's method to integrate <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mfrac><mrow><mtext>d</mtext><mi>W</mi></mrow><mrow><mtext>d</mtext><mi>t</mi></mrow></mfrac></mrow></math></span>. 
+        </p>
+    
+        <python-code-cell hideable># choose one of the Euler's method codes from the textbook section, 
+# then paste it here
+        </python-code-cell>
+    
+      </div>
+      </div>
+      </div>
+
+
+      <div data-type="exercise">
+        <div data-type="problem">
+        <span class="os-number">C3.3</span><span class="os-divider">. </span>
+        <div class="os-problem-container">
+        
+          <p>In <a href="d50f6e32-0fda-46ef-a362-9bd36ca7c97d-at-aa8a43e-colon-f6c1853f-e5aa-43a9-95a8-ce02e68536a1.html">Code Example 3.2</a>, 
+            we used code to plot acceleration, velocity, and position vs time all next to each other. 
+            Modify the code from the <a href="pythonchapter_euler1d.html">non-constant acceleration rocket example</a> in the last section so that it plots all three of the 
+            dynamic variables as in Code Example 3.2. Comment on the results.  
+          </p>
+      
+          <python-code-cell hideable>from numpy import exp
+# first define acceleration
+def a(t):
+    return 35*exp(-t/11.5) - 9.8 # m/s^2
+
+# define initial conditions 
+y = 0 # just call it y (not y0) since we'll update it later
+t = 0
+v = 0 # m/s
+
+# define empty lists (not arrays) for plotting
+tpoints = []
+ypoints = []
+
+# now loop through 
+dt = 0.0001 # define step size
+while y >= 0:
+    # add the current values to the list (before we change them)
+    tpoints.append(t)
+    ypoints.append(y)
+
+    # write new y over the old y value
+    y = y + v*dt # constant velocity equation 
+
+    # write new v over the old v value 
+    v = v + a(t)*dt # we need parentheses since a is a function. Use current time for input. 
+
+    # update time 
+    t = t + dt 
+
+# while loop is over. 
+print(f'It took t = {t:.3g} seconds for the rocket to return to the ground.')
+
+# plot the results
+from matplotlib import pyplot as plt 
+plt.clf()
+plt.xlabel('Time (s)')
+plt.ylabel('Height (m)')
+plt.title("Euler's Method Solution")
+plt.plot(tpoints, ypoints)
+plt.show()
+          </python-code-cell>
+      
+        </div>
+        </div>
+        </div>
 
 
 

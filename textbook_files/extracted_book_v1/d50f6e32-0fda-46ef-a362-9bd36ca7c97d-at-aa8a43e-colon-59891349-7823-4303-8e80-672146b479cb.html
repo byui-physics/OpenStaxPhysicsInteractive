@@ -7,6 +7,13 @@
 Projectile Motion
 </title>
 <link rel="stylesheet" type="text/css" href="the-style-epub.css"/>
+
+<!-- Add these three lines to add code chunk availability -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
+<script src="https://cdn.jsdelivr.net/pyodide/v0.27.2/full/pyodide.js"></script>
+<script type="module" src="../../code-chunk-resources.js"></script>
+
 </head>
 <body>
     <div data-type="page" id="page_59891349-7823-4303-8e80-672146b479cb" class="chapter-content-module" data-book-content="true"><h2 data-type="document-title" data-sm="./modules/m58291/index.cnxml:3:1" id="page_59891349-7823-4303-8e80-672146b479cb_titlecreatedbycookbook"><span class="os-number">4.3</span>
@@ -331,6 +338,22 @@ The motion can be broken into horizontal and vertical motions in which <span cla
 </semantics>
 </math>
 </div>
+
+<python-code-cell hideable>from numpy import cos, sin, pi 
+
+v0 = 70.0 # m/s
+theta = 75 * pi/180 # converted to radians
+g = 9.8 # g is a positive number
+
+# calculate v0y
+v0y = v0 * sin(theta)
+
+# calculate y using symbolic answer 
+y = v0y**2 / 2 / 9.8
+
+print(f'y = {y:.3g} m')
+</python-code-cell>
+
 <p id="fs-id1165167908566" data-sm="./modules/m58291/index.cnxml:74:1">Note that because up is positive, the initial vertical velocity is positive, as is the maximum height, but the acceleration resulting from gravity is negative. Note also that the maximum height depends only on the vertical component of the initial velocity, so that any projectile with a 67.6-m/s initial vertical component of velocity reaches a maximum height of 233 m (neglecting air resistance). The numbers in this example are reasonable for large fireworks displays, the shells of which do reach such heights before exploding. In practice, air resistance is not completely negligible, so the initial velocity would have to be somewhat larger than that given to reach the same height.</p>
 <p id="fs-id1165167823335" data-sm="./modules/m58291/index.cnxml:75:1">(b) As in many physics problems, there is more than one way to solve for the time the projectile reaches its highest point. In this case, the easiest method is to use <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58291/index.cnxml:75:206"><msub data-sm="./modules/m58291/index.cnxml:75:214"><mi data-sm="./modules/m58291/index.cnxml:75:222">v</mi><mi data-sm="./modules/m58291/index.cnxml:75:236">y</mi></msub><mo data-sm="./modules/m58291/index.cnxml:75:259">=</mo><msub data-sm="./modules/m58291/index.cnxml:75:273"><mi data-sm="./modules/m58291/index.cnxml:75:281">v</mi><mrow data-sm="./modules/m58291/index.cnxml:75:295"><mn data-sm="./modules/m58291/index.cnxml:75:303">0</mn><mi data-sm="./modules/m58291/index.cnxml:75:317">y</mi></mrow></msub><mo data-sm="./modules/m58291/index.cnxml:75:349">−</mo><mi data-sm="./modules/m58291/index.cnxml:75:363">g</mi><mi data-sm="./modules/m58291/index.cnxml:75:377">t</mi><mo data-sm="./modules/m58291/index.cnxml:75:391">.</mo></mrow>
 </mrow>
@@ -397,6 +420,19 @@ The motion can be broken into horizontal and vertical motions in which <span cla
 </math>
 </div>
 <p id="fs-id1165166565123" data-sm="./modules/m58291/index.cnxml:86:1">Horizontal motion is a constant velocity in the absence of air resistance. The horizontal displacement found here could be useful in keeping the fireworks fragments from falling on spectators. When the shell explodes, air resistance has a major effect, and many fragments land directly below.</p>
+
+<python-code-cell hideable> # this cell uses variables defined in the previous cell 
+
+# calculate t 
+t = v0y/g 
+print(f't = {t:.3g} s.')
+
+# calculate x 
+v0x = v0 * cos(theta)
+x = v0x*t 
+print(f'x = {x:.3g} m.')
+</python-code-cell>
+
 <p id="fs-id1165167704598" data-sm="./modules/m58291/index.cnxml:87:1">(d) The horizontal and vertical components of the displacement were just calculated, so all that is needed here is to find the magnitude and direction of the displacement at the highest point:</p>
 <div data-type="equation" id="fs-id1165167653769" class="unnumbered" data-sm="./modules/m58291/index.cnxml:88:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58291/index.cnxml:88:70"><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58291/index.cnxml:88:78"><mover accent="true" data-sm="./modules/m58291/index.cnxml:88:125"><mi data-sm="./modules/m58291/index.cnxml:88:148">s</mi><mo stretchy="false" data-sm="./modules/m58291/index.cnxml:88:162">→</mo></mover>
 </mstyle>
@@ -429,6 +465,17 @@ The motion can be broken into horizontal and vertical motions in which <span cla
 </semantics>
 </math>
 </div>
+
+<python-code-cell hideable>from numpy import array, atan, sqrt
+
+s = array([x, y])
+
+smag = sqrt( s[0]**2 + s[1]**2 )
+Phi = atan(s[1] / s[0]) * 180/pi # converted to degrees 
+
+print(f'Magnitude: {smag:.3g} m, Phi: {Phi:.3g} degrees.')
+</python-code-cell>
+
 <p id="fs-id1165166485879" data-sm="./modules/m58291/index.cnxml:90:435">Note that the angle for the displacement vector is less than the initial angle of launch. To see why this is, review <a href="#CNX_UPhysics_04_03_Soccer" data-sm="./modules/m58291/index.cnxml:90:582" class="autogenerated-content">Figure 4.11</a>, which shows the curvature of the trajectory toward the ground level.</p>
 </div>
 </div>
@@ -531,6 +578,29 @@ Again, resolving this two-dimensional motion into two independent one-dimensiona
 </semantics>
 </math>
 </div>
+
+<python-code-cell hideable>from numpy import sin, cos, pi, sqrt
+
+# define knowns 
+x0 = 0 
+y0 = 0
+v0 = 30.0 # m/s
+theta0 = pi/4 # radians
+g = 9.8 # g is a positive number 
+yf = 10.0 # m
+
+# calculate quadratic coefficients (from rearranged expression above)
+A = g/2 
+B = - v0*sin(theta0) # or v0y 
+C = yf - y0
+
+# use quadratic formula 
+t1 = (-B - sqrt(B**2 - 4*A*C))/(2*A)
+t2 = (-B + sqrt(B**2 - 4*A*C))/(2*A)
+
+print(f't1 = {t1:.3g} s, t2 = {t2:.3g} s.')
+</python-code-cell>
+
 <p id="fs-id1165167972049" data-sm="./modules/m58291/index.cnxml:125:1">Use of the quadratic formula yields <em data-effect="italics" data-sm="./modules/m58291/index.cnxml:125:67">t</em> = 3.79 s and <em data-effect="italics" data-sm="./modules/m58291/index.cnxml:125:120">t</em> = 0.54 s. Since the ball is at a height of 10 m at two times during its trajectory—once on the way up and once on the way down—we take the longer solution for the time it takes the ball to reach the spectator:</p>
 <div data-type="equation" id="fs-id1165166602370" class="unnumbered" data-sm="./modules/m58291/index.cnxml:126:1" data-label=""><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow data-sm="./modules/m58291/index.cnxml:126:70"><mi data-sm="./modules/m58291/index.cnxml:126:78">t</mi><mo data-sm="./modules/m58291/index.cnxml:126:92">=</mo><mn data-sm="./modules/m58291/index.cnxml:126:106">3.79</mn><mspace width="0.2em" data-sm="./modules/m58291/index.cnxml:126:123"/><mtext data-sm="./modules/m58291/index.cnxml:126:148">s</mtext><mtext data-sm="./modules/m58291/index.cnxml:126:168">.</mtext></mrow>
 </mrow>
@@ -616,6 +686,24 @@ Again, resolving this two-dimensional motion into two independent one-dimensiona
 </math>
 </div>
 <p id="fs-id1165167906703" data-sm="./modules/m58291/index.cnxml:137:759"></p>
+
+<python-code-cell hideable> # this cell uses code from previous cell 
+vx = v0*cos(theta0)
+
+# calculate final y velocity 
+v0y = v0 * sin(theta0)
+vfy = v0y - g*t2 
+
+# calculate magnitude 
+vmag = sqrt( vx**2 + vfy**2 )
+
+# calculate angle 
+from numpy import atan
+thetaf = atan( vfy/vx ) *180/pi # converted to degrees
+
+print(f'Magnitude: {vmag:.3g} m/s, Theta: {thetaf:.3g} degrees')
+</python-code-cell>
+
 <h4 data-type="title" data-sm="./modules/m58291/index.cnxml:137:789">Significance</h4>
 (a) As mentioned earlier, the time for projectile motion is determined completely by the vertical motion. Thus, any projectile that has an initial vertical velocity of 21.2 m/s and lands 10.0 m above its starting altitude spends 3.79 s in the air. (b) The negative angle means the velocity is <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58291/index.cnxml:137:1117"><mn data-sm="./modules/m58291/index.cnxml:137:1125">36.9</mn><mtext data-sm="./modules/m58291/index.cnxml:137:1142">°</mtext></mrow>
 </mrow>
@@ -905,8 +993,8 @@ We see that the range equation has the initial speed and angle, so we can solve 
 </mrow>
 </semantics>
 </math></span></p>
-<p id="fs-id1165168106423" data-sm="./modules/m58291/index.cnxml:202:1104">(d) Using a graphing utility, we can compare the two trajectories, which are shown in <a href="#CNX_UPhysics_04_03_GolfShot" data-sm="./modules/m58291/index.cnxml:202:1220" class="autogenerated-content">Figure 4.16</a>.</p>
-<div class="os-figure"><figure id="CNX_UPhysics_04_03_GolfShot" data-sm="./modules/m58291/index.cnxml:203:1">
+<p id="fs-id1165168106423" data-sm="./modules/m58291/index.cnxml:202:1104">(d) Using a graphing utility, we can compare the two trajectories, which can be seen below by running the code. <!-- original text: in <a href="#CNX_UPhysics_04_03_GolfShot" data-sm="./modules/m58291/index.cnxml:202:1220" class="autogenerated-content">Figure 4.16</a>--></p>
+<!-- <div class="os-figure"><figure id="CNX_UPhysics_04_03_GolfShot" data-sm="./modules/m58291/index.cnxml:203:1">
 <span data-type="media" id="fs-id1165167694633" data-alt="Two parabolic functions are shown. The range for both trajectories is 90 meters. One shot travels much higher than the other. The higher shot has an initial velocity of 37 meters per second and an angle of 70 degrees. The lower shot has an initial velocity of 31.9 meters per second and an angle of 30 degrees." data-sm="./modules/m58291/index.cnxml:204:1">
 <img src="c4be70e5eb02901fe21cf35043b704f31f45f751.jpeg" data-media-type="image/jpeg" alt="Two parabolic functions are shown. The range for both trajectories is 90 meters. One shot travels much higher than the other. The higher shot has an initial velocity of 37 meters per second and an angle of 70 degrees. The lower shot has an initial velocity of 31.9 meters per second and an angle of 30 degrees." data-sm="./modules/m58291/index.cnxml:205:1"/>
 </span>
@@ -921,7 +1009,35 @@ We see that the range equation has the initial speed and angle, so we can solve 
   <span class="os-divider"> </span>
   <span data-sm="./modules/m58291/index.cnxml:207:1" class="os-caption">Two trajectories of a golf ball with a range of 90 m. The impact points of both are at the same level as the launch point.</span>
 </div>
-</div>
+</div> -->
+
+<python-code-cell>from matplotlib import pyplot as plt
+from numpy import sin, cos, tan, pi, linspace
+
+# define knowns 
+R = 90 # m 
+g = 9.8 # g is a positive number 
+v1 = 31.9 # m/s
+theta1 = pi/6 # radians 
+v2 = 37 # m/s 
+theta2 = 70 *pi/180 # converted to radians 
+
+# create x and y lists 
+xpoints = linspace(0, R, 30) # create 30 points from 0 to R (range)
+ypoints1 = xpoints*tan(theta1) - g/(2*(v1*cos(theta1))**2)*xpoints**2 # using trajectory equation with xpoints as x
+ypoints2 = xpoints*tan(theta2) - g/(2*(v2*cos(theta2))**2)*xpoints**2
+
+# plot the two trajectories 
+plt.clf() 
+plt.plot(xpoints, ypoints1, label=f'v = {v1} m/s, theta = {theta1*180/pi:.3g} degrees')
+plt.plot(xpoints, ypoints2, label=f'v = {v2} m/s, theta = {theta2*180/pi:.3g} degrees')
+plt.legend()
+plt.xlabel('x (m)')
+plt.ylabel('y (m)')
+plt.title('Two Trajectories')
+plt.show()
+</python-code-cell>
+
 <p id="fs-id1165166546828" data-sm="./modules/m58291/index.cnxml:209:1"></p>
 <h4 data-type="title" data-sm="./modules/m58291/index.cnxml:209:31">Significance</h4>
 The initial speed for the shot at <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58291/index.cnxml:210:43"><mn data-sm="./modules/m58291/index.cnxml:210:51">70</mn><mtext data-sm="./modules/m58291/index.cnxml:210:66">°</mtext></mrow>
@@ -979,6 +1095,17 @@ The initial speed for the shot at <span class="os-math-in-para"><math xmlns="htt
 </h3>
 <div class="os-note-body">
 <p id="fs-id1165168095976" data-sm="./modules/m58291/index.cnxml:228:1">At <a href="https://openstax.org/l/21phetpromot" data-sm="./modules/m58291/index.cnxml:228:34" target="_blank" rel="noopener nofollow">PhET Explorations: Projectile Motion</a>, learn about projectile motion in terms of the launch angle and initial velocity.</p>
+
+<iframe src="https://phet.colorado.edu/sims/html/projectile-motion/latest/projectile-motion_en.html"
+        width="800"
+        height="600"
+        allowfullscreen>
+</iframe>
+
+
+<!-- It ought to ask questions here for you to think about while you are playing with the thing. 
+ A good question would maybe be "when does 45 degrees not give you the farthest range?"-->
+
 </div>
 </div>
 </section>
@@ -994,6 +1121,16 @@ The initial speed for the shot at <span class="os-math-in-para"><math xmlns="htt
   </div>
 
 <a href="university-physics-volume-1.toc.html">Back to table of contents</a>
+
+<!-- These scripts run at the end of the file to make code cells work -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/codemirror.min.js"
+		integrity="sha512-XMlgZzPyVXf1I/wbGnofk1Hfdx+zAWyZjh6c21yGo/k1zNC4Ve6xcQnTDTCHrjFGsOrVicJsBURLYktVEu/8vQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/mode/python/python.min.js"
+		integrity="sha512-/mavDpedrvPG/0Grj2Ughxte/fsm42ZmZWWpHz1jCbzd5ECv8CB7PomGtw0NAnhHmE/lkDFkRMupjoohbKNA1Q=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="module" src="../../initialize-pyodide-chunks.js"></script>
+
 </body>
 </html>
 <!-- # sourceMappingURL=d50f6e32-0fda-46ef-a362-9bd36ca7c97d-at-aa8a43e-colon-59891349-7823-4303-8e80-672146b479cb.html.map -->
