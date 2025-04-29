@@ -7,12 +7,11 @@
   </title>
 <link rel="stylesheet" type="text/css" href="the-style-epub.css"/>
 
-<!-- These two links and the script are used for adding python code with code highlight. -->
+<!-- Add these three lines to add code chunk availability -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/codemirror.min.css" /> 
+integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
 <script src="https://cdn.jsdelivr.net/pyodide/v0.27.2/full/pyodide.js"></script>
-<!-- End of code imports -->
+<script type="module" src="../../code-chunk-resources.js"></script>
 
 </head>
 <body>
@@ -20,6 +19,9 @@
   <h3 data-type="title">
     <span class="os-text">Challenge Problems</span>
   </h3>
+
+  <python-code-cell># Feel free to use this code cell as a calculator. </python-code-cell>
+
   <section data-depth="1" id="fs-id1165039247933" class="review-challenge" data-sm="./modules/m58293/index.cnxml:542:1">
 <div data-type="exercise" id="fs-id1165039247940" data-sm="./modules/m58293/index.cnxml:544:1" class="os-hasSolution">
 <div data-type="problem" id="fs-id1165039247942" data-sm="./modules/m58293/index.cnxml:545:1">
@@ -33,24 +35,8 @@
 </div>
 
 <!-- Code snippet added by Addison Ballif on March 19, 2025-->
-<p>Use this code chuch to check your answer. This code snippet uses a method called Euler's method to simulate the problem and predict the trajectory of the 
-  projectile. Note that the code won't work until you enter in your answer for the initial speed. 
+<p><strong>Bonus: </strong> Modify an Euler's method code to model this problem, and use it to check your answer. 
 </p>
-
-<!-- The actual code chunk is here: -->
-<textarea id="code.p99c" style="width: 100%;"></textarea>
-<button onclick="evaluatePython('.p99c')">Run</button><button onclick="resetCode('.p99c')">Reset Code</button>
-<textarea id="output.p99c" style="width: 100%;" disabled></textarea>
-<div id="plot.p99c"></div>
-
-<p>Notice that the equations that Euler's method uses to update the position and velocity for each small change in time are simple versions of our kinematic equations. 
-  To update the velocity it uses a constant acceleration equation, and to update the position, it uses a constant velocity equation. Even though the acceleration and velocity 
-  may not be constant, assuming this is true for a small time interval is often a good approximation, and Euler's method uses this assumption for many small time intervals
-  added together to simulate what the projectile will do. 
-</p>
-
-
-<!-- End of modification -->
 
 </div>
 <div data-type="exercise" id="fs-id1165039250105" data-sm="./modules/m58293/index.cnxml:554:1">
@@ -81,174 +67,14 @@
 
 <a href="university-physics-volume-1.toc.html">Back to table of contents</a>
 
-
-<!-- These two source codes are used for code highlighting. -->
+<!-- These scripts run at the end of the file to make code cells work -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/codemirror.min.js"
 		integrity="sha512-XMlgZzPyVXf1I/wbGnofk1Hfdx+zAWyZjh6c21yGo/k1zNC4Ve6xcQnTDTCHrjFGsOrVicJsBURLYktVEu/8vQ=="
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/mode/python/python.min.js"
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/mode/python/python.min.js"
 		integrity="sha512-/mavDpedrvPG/0Grj2Ughxte/fsm42ZmZWWpHz1jCbzd5ECv8CB7PomGtw0NAnhHmE/lkDFkRMupjoohbKNA1Q=="
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<!-- The code that runs all the python code cells -->
-  <script>
-    // Define all the id suffixes on this page
-    const page_cell_ids = ['.p99c'] // id's should be in the form '.#.C#.#' // Actually they just need to start with a period and be consistent
-
-    // This big array gives all the strings of default codes, in order given above for ids
-    const page_code_defaults = [`from numpy import sin, cos, pi
-from matplotlib import pyplot as plt
-
-# initial conditions
-x0, y0 = 0.0, 400.0 #m
-v0 =  #fill this in
-theta0 = 40 *pi/180 # angles need to be converted to radians
-
-g = 9.80 # acceleration due to gravity
-
-# the variable position and velocity
-x = x0 #initially set x to be x0
-y = y0
-vx = v0*cos(theta0)
-vy = v0*sin(theta0)
-
-t = 0 # start the clock at 0 seconds
-
-dt = 0.01 # how big of a time step to use (duration of each "frame")
-
-# making lists we can use to plot the results
-xlist = [x] # initially populated with just the initial values
-ylist = [y]
-
-# now simulate the problem
-while y > 0: 
-    # as long as we are above the ground, update position using simple kinematic equations
-
-    # use velocity to update position
-    x = vx*dt + x
-    y = vy*dt + y
-
-    # now update velocity
-    # vx has not acceleration so vx doesn't change
-    vy = -g*dt + vy
-
-    # update the clock
-    t = t + dt
-
-    # add the points to the lists
-    xlist.append(x)
-    ylist.append(y)
-
-# plot the results
-plt.clf()
-plt.plot(xlist, ylist)
-plt.title('Projectile Trajectory')
-plt.show()
-
-print(f'The final x position is {x:.3g} meters.')
-`]
-
-    var page_code_cm_editors = []
-
-    // init Pyodide
-    async function main() {
-      // start pyodide
-      let pyodide = await loadPyodide();
-
-      // micropip allows installing packages
-      await pyodide.loadPackage("micropip");
-      const micropip = pyodide.pyimport("micropip");
-
-      //install the packages we might use on this page
-      await micropip.install('numpy');
-      await micropip.install('matplotlib')
-      
-      // overwrite the print function so that it looks like it works. 
-      pyodide.runPython(`
-def print(*args):
-    return args
-      `)
-
-      // return the pyodide object for use
-      return pyodide;
-    }
-    let pyodideReadyPromise = main();
-
-    // Initialize code editors
-    for (let i = 0; i < page_cell_ids.length; i++) {
-      const editor = CodeMirror.fromTextArea(document.getElementById("code" + page_cell_ids[i]), { 
-        mode: { 
-          name: "python", 
-          version: 3, 
-          singleLineStringErrors: false
-        }, 
-        lineNumbers: true, 
-        showInvisibles: true,
-        lineWrapping: true,
-        indentUnit: 4, 
-        tabSize: 4,
-        matchBrackets: true
-      }); 
-      editor.setValue(page_code_defaults[i]); 
-      editor.setSize("100%", "auto"); // Full width, automatic height
-      page_code_cm_editors.push(editor);
-    }
-    
-    // This function resets the code editors to default value
-    function resetCode(cellSuffix) {
-      const idx = page_cell_ids.indexOf(cellSuffix);
-      page_code_cm_editors[idx].setValue(page_code_defaults[idx]);
-    }
-
-    
-    
-    // This function runs a given code cell
-    async function evaluatePython(cellSuffix) {
-      const idx = page_cell_ids.indexOf(cellSuffix);
-      const output = document.getElementById("output" + cellSuffix);
-      const plotparent = document.getElementById("plot" + cellSuffix);
-
-      let pyodide = await pyodideReadyPromise;
-      try {
-        
-        // Clear the old graphing stuff
-        while (plotparent.lastElementChild) {
-          plotparent.removeChild(plotparent.lastChild);
-        }
-  
-        // Run the python
-        output.value = pyodide.runPython(page_code_cm_editors[idx].getValue());
-
-        // If it says undefined, then just make it blank because just saying undefined is weird. 
-        if (output.value == 'undefined') {
-          output.value = ""
-        }
-  
-        // MOVE THE PLOTS TO WHERE THEY SHOULD BE
-        const newMplObjects = document.querySelectorAll(`[id*="matplotlib_"]`)
-        // I'm going to rename the new stuff so that these won't show up in the 
-        // query in the future. This also means that this query includes only the stuff from this run. 
-        
-        newMplObjects.forEach(function(element) {
-          var highestObject = element;
-          while (highestObject.parentElement.id.startsWith("matplotlib_")) {
-            highestObject = highestObject.parentElement;
-          }
-          // now we know we have the parent
-          if (!plotparent.querySelector(highestObject.id)) {
-            // If the parent isn't already in the plotparent object
-            plotparent.appendChild(highestObject);
-          }
-  
-          // change the id of the object
-          element.id = "plotobject" + cellSuffix
-        });
-        
-      } catch (err) {
-        output.value = err;
-      }
-    }
-  </script>
-<!-- End of python code -->
+<script type="module" src="../../initialize-pyodide-chunks.js"></script>
 
 </body>
 </html>
