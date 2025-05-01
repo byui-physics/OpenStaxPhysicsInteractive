@@ -1140,9 +1140,9 @@ The angular coordinate of the silver coin is <span class="os-math-in-para"><math
 </section>
 
 
-<div data-type="example" id="fs-id1167132451446" data-sm="./modules/m58278/index.cnxml:155:1"><h3 class="os-title">
-  <span class="os-title-label">Code Example </span>
-  <span class="os-number">2.1</span>
+<div data-type="codeskill" id="fs-id1167132451446" data-sm="./modules/m58278/index.cnxml:155:1"><h3 class="os-title">
+  <span class="os-title-label">Python Skill</span>
+  <span class="os-number"></span>
   <span class="os-divider"> </span>
 </h3>
 <div class="body">
@@ -1157,7 +1157,7 @@ Ay = 4.0
 </python-code-cell>
 
 <p>In many cases, this is a great way to do it. However, as the problems get more complicated, we might want to look for a way that contains all the components of the vector 
-together as one object. In cases like these, we can use a tool from the numpy library called an array. Arrays are similar to lists; they are objects that store multiple numbers. Below is an example. </p>
+together as one object. In cases like these, we can use a tool from the NumPy library called an array. Arrays are similar to lists; they are objects that store multiple numbers. Below is an example. </p>
 
 <python-code-cell>from numpy import array
 Avec = array([3.0, 4.0])
@@ -1169,9 +1169,10 @@ print(Avec)
 </p>
 
 <p>If we want to get the first entry in this vector (the x component), we use the square brackets and specify the entry we want. Python starts counting from 0, so <code>Avec[0]</code>
-would give us the x component of our vector.</p>
+would give us the x component of our vector. (This is also how you do it with lists.)</p>
 
-<python-code-cell>Ax = Avec[0]
+<python-code-cell># This code requires that the previous code cell has been run. 
+Ax = Avec[0]
 Ay = Avec[1]
 
 print(Ax, Ay)

@@ -1,7 +1,7 @@
 from latex2mathml import converter
 
 ''' INPUT PARAMETERS '''
-latex_eq = r"\frac{\text{d}W}{\text{d} t} = (1000\$) e^{t/(5 \text{ years})}"
+latex_eq = r"t = 2.0"
 inline = True # change this depending on what you want
 
 

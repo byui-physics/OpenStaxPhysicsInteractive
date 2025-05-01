@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+
+<a href="university-physics-volume-1.toc.html">Back to table of contents</a><head><title> 
+   Using Computing Tools
+</title>
+<link rel="stylesheet" type="text/css" href="the-style-epub.css"/>
+
+<!-- Add these three lines to add code chunk availability -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
+<script src="https://cdn.jsdelivr.net/pyodide/v0.27.2/full/pyodide.js"></script>
+<script type="module" src="../../code-chunk-resources.js"></script>
+
+</head>
+<body>
+    <div data-type="page" class="chapter-content-module" data-book-content="true"><h2 data-type="document-title">
+<span class="os-divider"> </span>
+<span data-type="" class="os-text">Euler's Method in Multiple Dimension</span>
+</h2>
+<div data-type="abstract"><h3 data-type="title">Learning Objectives</h3>
+<p>By the end of this section, you will be able to:</p>
+<ul>
+<li>Apply Euler's method to kinematics problems in multiple dimensions
+    <ul>
+        <li>using multiple component form,</li>
+        <li>using NumPy arrays.</li>
+    </ul>
+</li>
+</ul>
+</div>
+
+
+<!-- Put a picture here maybe -->
+
+
+<!-- <section data-depth="1" id="fs-id1168329158777" data-sm="./modules/m58275/index.cnxml:34:1"><h3 data-type="title" data-sm="./modules/m58275/index.cnxml:35:1">Solution</h3> -->
+
+<section data-depth="1"><h2 data-type="title">Euler's Method in Multiple Dimension</h2>
+
+    <p>Now that we know how to solve physics problems in multiple dimensions, we can modify our Euler's method code to work for multiple dimension problems. There are two ways we will go about doing this. 
+    The first is to keep track of each direction as a seperate variables. This essentially amounts to doing two Euler's method problems that share the same while loop. The second way we will modify our Euler's method code 
+    is to store all of our dynamical variables (position, velocity, acceleration) as NumPy arrays. The advantage of this second method is that the equations will resembled the vectorized kinematic equations, which we like
+    because of their conciseness and theoretical value. 
+    </p>
+
+    <p>For both methods, we will use an two dimensional example (though it can be easily extended to three dimensions if you wish). Suppose we launch a ball upwards with a velocity of 10 meters per second and an angle of 40 degrees from the horizontal. 
+        In the vertical direction, gravity will cause an acceleration of <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>a</mi><mi>y</mi></msub><mo>&#x0003D;</mo><mo>&#x02212;</mo><mi>g</mi></mrow></math></span>. 
+        In the horizontal direction, suppose there is wind that causes an acceleration of <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>a</mi><mi>x</mi></msub><mo>&#x0003D;</mo><mn>100</mn><mo stretchy="false">&#x00028;</mo><mi>sin</mi><mo stretchy="false">&#x00028;</mo><mn>8</mn><mi>t</mi><mo stretchy="false">&#x00029;</mo><mo>&#x0002B;</mo><mi>sin</mi><mo stretchy="false">&#x00028;</mo><mn>32</mn><mi>t</mi><mo stretchy="false">&#x00029;</mo><mo stretchy="false">&#x00029;</mo></mrow></math></span>. 
+        (This still isn't the most realistic wind example, but we will us it because it makes the problem interesting.)
+        We want to determine the time it takes the ball to hit the ground again. 
+    </p>
+
+</section>
+
+<section data-depth="1"><h3 data-type="title">Keeping Track of Multiple Components</h3>
+
+    <p>Let us first modify our Euler's method code so that we have two variables for each acceleration, velocity, and acceleration. We will label one of them the x version and the other the y version. 
+        Then, let us store both x and y values in our list, so we can plot the trajectory of the ball. The trajectory of the ball is the path we get when we plot y against x rather than plotting y against time. 
+        Below is the modified code. 
+    </p>
+
+    <python-code-cell>from numpy import sin, cos, pi
+g = 9.8 # g is a positive number
+# first define accelerations
+def ax(t):
+    return 100*(sin(8*t) + sin(32*t))
+def ay(t):
+    return -g 
+
+# define initial conditions 
+x = 0
+y = 0 
+v = 10 # this is just the speed (magnitude of velocity)
+theta = 40 *pi/180 # converted to radians 
+vx = v*cos(theta)
+vy = v*sin(theta)
+t = 0
+
+# define empty lists (not arrays) for plotting
+xpoints = []
+ypoints = []
+
+# now loop through 
+dt = 0.001 # define step size
+
+# update this to be greater than OR EQUAL TO (otherwise it will never run since we start at 0)
+while y >= 0: 
+    # add the current values to the list (before we change them)
+    xpoints.append(x)
+    ypoints.append(y)
+
+    # write new y over the old y value and x value
+    y = y + vy*dt # using velocity in y direction 
+    x = x + vx*dt
+
+    # write new v over the old v value (remember that ax and ay are functions)
+    vx = vx + ax(t)*dt 
+    vy = vy + ay(t)*dt 
+
+    # update time 
+    t = t + dt 
+
+# while loop is over. 
+print(f'It took t = {t:.3g} seconds for the ball to hit the ground.')
+
+# plot the results
+from matplotlib import pyplot as plt 
+plt.clf()
+plt.xlabel('Distance (m)')
+plt.ylabel('Height (m)')
+plt.title("Euler's Method Solution (Trajectory)")
+plt.plot(xpoints, ypoints)
+plt.show()
+            </python-code-cell>
+
+
+</section>
+
+<p>We expect the motion in the two directions to be indpendent. Try modifying the acceleration in the x direction. Does it change the time it takes the ball to reach the ground?</p>
+
+<p>Modifying the code in this way wasn't too difficult. However, as the number of dimensions gets larger, we may choose to use the more compact method. </p>
+
+<section data-depth="1"><h3 data-type="title">Using NumPy Arrays</h3>
+
+<p>Let's try to the solve the same problem by instead replacing all of our dynimcal variables (position, velocity, and acceleration) with NumPy arrays. We will keep the problem to two dimensions, 
+    but this method is more easily scalable to larger problems. 
+</p>
+
+<python-code-cell>from numpy import array, sin, cos, pi
+
+g = 9.8 # g is a positive number
+# first define acceleration
+def a(t):
+    return array([ 100*(sin(8*t) + sin(32*t)), -g ]) # instead return an array (2d)
+
+# define initial conditions 
+r = array([ 0, 0 ]) # we often call the position vector r
+theta = 40 *pi/180 # converted to radians 
+v = 10 * array([ cos(theta), sin(theta) ]) # vector velocity
+t = 0
+
+# define empty lists (not arrays) for plotting
+xpoints = []
+ypoints = []
+    
+# now loop through 
+dt = 0.001 # define step size
+while r[1] >= 0: # compare the y value
+    # add the current values to the list (before we change them)
+    xpoints.append(r[0])
+    ypoints.append(r[1])
+
+    # write new r over the old r value
+    r = r + v*dt # constant velocity equation 
+
+    # write new v over the old v value 
+    v = v + a(t)*dt # we need parentheses since a is a function. Use current time for input. 
+
+    # update time 
+    t = t + dt 
+
+# while loop is over. 
+print(f'It took t = {t:.3g} seconds for the ball to hit the ground.')
+
+# plot the results
+from matplotlib import pyplot as plt 
+plt.clf()
+plt.xlabel('Distance (m)')
+plt.ylabel('Height (m)')
+plt.title("Euler's Method Solution (Trajectory)")
+plt.plot(xpoints, ypoints)
+plt.show()
+    </python-code-cell>
+
+<p>Notice that with this method, the inside of the while loop didn't change much. All we did was replace y with r and ypoints with rpoints. 
+The acceleration function changed by return an array instead of a number, and the velocity and position variables are now arrays instead of numbers. 
+</p>
+
+<p>The list that we create are only for plotting purposes, so we make lists only for the variables that we wish to plot. In both cases, notice that we no longer have a 
+    tpoints list, since we want to plot the trajectory rather than the position vs time graph. In this second example, we create a list of xpoints and a list for ypoints, 
+    and we use the two components of r to fill that list. Apart from this change, modifying the code to use arrays leaves most of the code more or less unchanged. 
+</p>
+
+
+    </section>
+  
+
+  <section data-depth="1"><h3 data-type="title">Conclusion</h3>
+
+<p>Now that we can use Euler's method in multiple dimensions, we have a tool that we can use to tackle more real world problems. Notice that we really only made small 
+    changes to a previously existing code, rather than writing a new one from scratch. This is often the case in physics. This is another reason why you shouldn't worry so much about 
+    memorizing code concepts, but instead use this text as a reference. Use these tools to help you better explore physics and solve interesting problems. 
+</p>
+
+
+    </section>
+
+
+<a href="university-physics-volume-1.toc.html">Back to table of contents</a>
+
+<!-- These scripts run at the end of the file to make code cells work -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/codemirror.min.js"
+		integrity="sha512-XMlgZzPyVXf1I/wbGnofk1Hfdx+zAWyZjh6c21yGo/k1zNC4Ve6xcQnTDTCHrjFGsOrVicJsBURLYktVEu/8vQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/mode/python/python.min.js"
+		integrity="sha512-/mavDpedrvPG/0Grj2Ughxte/fsm42ZmZWWpHz1jCbzd5ECv8CB7PomGtw0NAnhHmE/lkDFkRMupjoohbKNA1Q=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="module" src="../../initialize-pyodide-chunks.js"></script>
+
+</body>
+</html>

@@ -456,6 +456,63 @@ Jill’s total displacement is −0.75 km, which means at the end of her trip sh
 
 </div>
 
+<div data-type="codeskill" id="fs-id1168329011730" data-sm="./modules/m58282/index.cnxml:67:1"><h3 class="os-title">
+  <span class="os-title-label">Python Skill </span>
+  <span class="os-number"></span>
+  <span class="os-divider"> </span>
+</h3>
+<div class="body">
+
+<h4>Functions</h4>
+
+<p>Now that we are talking about position as a function of time, we will introduce how to represent a mathematical function in Python. 
+  We will not go into all the details about all that functions in Python can do, but we will describe how they can be used to represent mathematical functions. 
+  Suppose we have the mathematical function 
+  <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>f</mi><mo stretchy="false">&#x00028;</mo><mi>x</mi><mo stretchy="false">&#x00029;</mo><mo>&#x0003D;</mo><mn>3</mn><mi>x</mi><mo>&#x02212;</mo><mn>2</mn></mrow></math></span>. 
+  The way we represent that in Python is shown below. Once we have a function, we can give any input and the code will return the output of the function. 
+  In the example below, we first define a function, and they we use it by plugging in a specific value of <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi></mrow></math></span>. 
+</p>
+
+<python-code-cell># define the function first
+def f(x):
+    return 3*x - 2
+
+# use the function at a specific value x = 2.0
+specific_value = f(2.0)
+print(specific_value)
+</python-code-cell>
+
+<p>Instead of just using an equal sign, Python expects the function expression to be in a new indented line. The indent should be 4 spaces. 
+  The <code>def</code> tells Python that we are defining a function. Then we give the name of the function. The name of a function can be 
+  a whole word but we will often just use a letter. (This is the same as the way we name variables.)
+  The value inside the parenthesis then gives what the input variable is. Here our function took <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi></mrow></math></span>
+  as the input, but often in physics time will be the input. Remember to put a colon after the closing parenthesis. 
+  The <code>return</code> aregument tells Python what the function is going to output, so for our use we will put the mathematical expression right after the <code>return</code> argument. 
+</p>
+
+<p>When we are ready to use the function, we put the name of the function, and then input the specific value of <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi></mrow></math></span> that we want. </p>
+
+<p>Now let's look at a more physical example. Suppose the postion as a function of time is given as <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo stretchy="false">&#x00028;</mo><mi>t</mi><mo stretchy="false">&#x00029;</mo><mo>&#x0003D;</mo><mn>3</mn><mi>t</mi><mo>&#x02212;</mo><mn>2</mn></mrow></math></span>. 
+We want to find the value of the position when <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>t</mi><mo>&#x0003D;</mo><mn>2.0</mn></mrow></math></span>. 
+This is done in the code below. </p>
+
+<python-code-cell># define the function first
+def x(t):
+    return 3*t - 2
+
+# use the function at a specific value t = 2.0
+specific_value = x(2.0)
+print(specific_value)
+  </python-code-cell>
+
+  <p>While this may seem like more to type in for something that we could quickly calculate, functions can be powerful when we need to plug in a large number of different inputs. 
+    They can also be useful for organizing our work into something that is either more meaningful or more computationally efficient. 
+  </p>
+
+  </div>
+  </div>
+
+
 <div data-type="example" id="fs-id1168329011730" data-sm="./modules/m58282/index.cnxml:67:1"><h3 class="os-title">
   <span class="os-title-label">Code Example </span>
   <span class="os-number">3.1</span>
@@ -465,14 +522,18 @@ Jill’s total displacement is −0.75 km, which means at the end of her trip sh
 
   <p>Suppose we have a particle whose position is given as a function of time 
     <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo stretchy="false">&#x00028;</mo><mi>t</mi><mo stretchy="false">&#x00029;</mo><mo>&#x0003D;</mo><mi>sin</mi><mo stretchy="false">&#x00028;</mo><mn>2</mn><mi>t</mi><mo stretchy="false">&#x00029;</mo><mo>&#x0002B;</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>2</mn></mrow></mfrac><mi>t</mi></mrow></math></span>.
-    We can use python to visualize how the particle will move throughout time. 
+    We can use python to visualize how the particle will move throughout time. Because we have a position <em>function</em> of time, we will use a function to make this plot. Luckily for us, the <code>linspace</code> array of our time values can be inputted into our function, and the output will be an array of all the individual outputs. 
   </p>
 
   <python-code-cell>from matplotlib import pyplot as plt # import plotting function 
 from numpy import linspace, sin # this function creates equally spaced t points
+
+# define function 
+def x(t):
+    return sin(2*t) + (1/2)*t
     
 tpoints = linspace(0, 8, 100) # create 100 points from 0 to 8 seconds. 
-xpoints = sin(2*tpoints) + (1/2)*tpoints  # put tpoints array into equation
+xpoints = x(tpoints)  # put tpoints array into function
 
 # plot the results 
 plt.clf()
@@ -491,9 +552,16 @@ plt.show()
 <python-code-cell>from matplotlib import pyplot as plt # import plotting function 
 from numpy import linspace, sin # this function creates equally spaced t points
 
+# definet the two functions 
+def x1(t):
+    return sin(2*t) + (1/2)*t
+def x2(t):
+    return (1/2)*t**2 - 3*t + 2
+
+
 tpoints = linspace(0, 8, 100) # create 100 points from 0 to 8 seconds. 
-xpoints = sin(2*tpoints) + (1/2)*tpoints  # put tpoints array into equation
-xpoints2 = (1/2)*tpoints**2 - 3*tpoints + 2
+xpoints = x1(tpoints)  # put tpoints array into function
+xpoints2 = x2(tpoints)
 
 # plot the results 
 plt.clf()

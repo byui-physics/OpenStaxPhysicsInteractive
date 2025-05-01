@@ -845,21 +845,22 @@ Having found the vector components, we can illustrate the vectors by graphing or
 </div>
 </div>
 
-<p>As we hinted at in Example 2.7, storing our vectors as arrays can often make computing large vector sums easy. Unlike lists, we can do math with arrays. 
-  Arrays follow scalar multiplication and vector addition. When you do math with an array, it does the math seperately on each entry of the array. 
-  If two arrays have the same number of entries, you can perform operations on 
-  them together (for example vector addition or subtraction). The next example performs the same computations from Example 2.9. 
-</p>
 
-<div data-type="example" id="fs-id1167133638055" data-sm="./modules/m58279/index.cnxml:88:1"><h3 class="os-title">
-  <span class="os-title-label">Code Example </span>
-  <span class="os-number">2.2</span>
+
+<div data-type="codeskill" id="fs-id1167133638055" data-sm="./modules/m58279/index.cnxml:88:1"><h3 class="os-title">
+  <span class="os-title-label">Python Skill </span>
+  <span class="os-number"></span>
   <span class="os-divider"> </span>
 </h3>
   <div class="body">
 
-    <p>In this example we will perform the computations from Example 2.9 using python. 
-      We will begin by entering the three vectors in as arrays, using the sine and cosine functions to compute each component.</p>
+    <p>As we hinted at in Example 2.7, storing our vectors as arrays can often make computing large vector sums easy. Unlike lists, we can do math with arrays. 
+      Arrays follow scalar multiplication and vector addition. When you do math with an array, it does the math seperately on each entry of the array. 
+      If two arrays have the same number of entries, you can perform operations on 
+      them together (for example vector addition or subtraction). Now let us look at an example. Let us perform the vector arithmetic from Example 2.9. 
+    </p>
+
+    <p>We will begin by entering the three vectors in as arrays, using the sine and cosine functions to compute each component.</p>
 
 <python-code-cell>from numpy import array, sin, cos, pi
 
@@ -874,7 +875,7 @@ B = 7.0e-2 * array([cos(beta), sin(beta)])
 C = 8.0e-2 * array([cos(gamma), sin(gamma)])
 </python-code-cell>
 
-<p>Notice that since we are using arrays, we can type out the array with just the sin and cosine pieces, and then multiply the entire vector by the magnitude. 
+<p>Notice that since we are using arrays, we can type out the array with just the sin and cosine pieces, and then multiply the entire vector by the magnitude. (This uses the scalar multiplication attribute of vectors/arrays. )
   Now that our vectors are defined as arrays, we can compute the vector sums as instructed. </p>
 
   <python-code-cell># adding up the vectors

@@ -1398,6 +1398,255 @@ nav#toc > ol > .os-toc-index > a::after {
   vertical-align: top;
 }
 
+/* Code example stuff here */
+
+[data-type=codeexample] {
+  margin-bottom: 1.4rem;
+  border-bottom-color: #4f49b9;
+  border-bottom-width: 0.2rem;
+  border-bottom-style: solid;
+  box-decoration-break: slice;
+}
+
+[data-type=codeexample] > .os-title {
+  font-family: Mulish, sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  border-bottom-color: #4f49b9;
+  border-bottom-width: 0.2rem;
+  border-bottom-style: solid;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-bottom: 0.7rem;
+}
+
+[data-type=codeexample] > .os-title::before {
+  background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIzLjAuMywgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMzQuOTcgMzQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDM0Ljk3IDM0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6IzRmNDliOTtzdHJva2U6IzRmNDliOTtzdHJva2Utd2lkdGg6Mi4yNTt9Cgkuc3Qxe2ZpbGw6IzRmNDliOTt9Cjwvc3R5bGU+CjxnPgoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTE3LjY2LDEuODJDOT4xNywxLjgyLDIuMjksOC43LDIuMjksMTcuMTlzNi44OCwxNS4zOCwxNS4zOCwxNS4zOCBNMTcuNjYsMzIuNTcKCQljOC40OSwwLDE1LjM4LTYuODgsMTUuMzgtMTUuMzhTMjYuMTYsMS44MiwxNy42NiwxLjgyIi8+CjwvZz4KPGc+Cgk8cGF0aCBjbGFzcz0ic3QxIiBkPSJNMTEuOTUsMTguN2MtMC41OSwwLTEuMDQtMC4wMy0xLjQ4LDAuMDFjLTEuMjUsMC4xMS0yLjM2LDEtMi41NCwyLjAyYy0wLjE5LDEuMDQsMC40LDIuMTksMS4zNywyLjcKCQljMC45OCwwLjUxLDIuMTIsMC4yNCwzLjA3LTAuNzFjMC40Ny0wLjQ3LDAuNzgtMS4wNiwxLjA0LTEuNjZjMC40My0xLjAyLDEuMi0xLjcsMi4wOC0yLjNjMC4zMS0wLjIxLDAuNTgtMC4xNywwLjg4LDAKCQljMC4zMSwwLjE4LDAuMTksMC40NSwwLjE5LDAuN2MwLDEuMjktMC40OCwyLjQtMS4yNCwzLjQxYy0wLjMxLDAuNDItMC41OCwwLjg3LTAuNjksMS40Yy0wLjIsMS4wMi0wLjAzLDEuOTYsMC43OSwyLjY1CgkJYzAuNzcsMC42NSwxLjY2LDAuNzYsMi41OCwwLjM0YzAuOTUtMC40NCwxLjQxLTEuMjMsMS40Ni0yLjI1YzAuMDUtMC45Mi0wLjM3LTEuNjctMC45MS0yLjM3Yy0wLjcxLTAuOTItMS4yMS0xLjkxLTEuMTUtMy4xMQoJCWMwLjAyLTAuMzEtMC4wNC0wLjYxLDAuMzEtMC44MmMwLjM5LTAuMjMsMC42Ni0wLjAyLDAuOTMsMC4xN2MwLjg5LDAuNjMsMS42NCwxLjM5LDIuMDYsMi40M2MwLjI4LDAuNjksMC42OCwxLjMxLDEuMjgsMS43NwoJCWMwLjc4LDAuNiwxLjYzLDAuODQsMi41OCwwLjQ0YzEuMDQtMC40NCwxLjUyLTEuMjcsMS41NC0yLjM1YzAuMDItMS0wLjU3LTEuNjQtMS40LTIuMTFjLTAuOTEtMC41Mi0xLjg5LTAuNDEtMi44NS0wLjMxCgkJYy0xLjA4LDAuMTEtMi4wMi0wLjE2LTIuOTQtMC42OGMtMC4yNi0wLjE1LTAuNDktMC4yOC0wLjQ1LTAuNjVjMC4wMy0wLjM1LDAuMjUtMC41LDAuNTItMC42M2MxLjAxLTAuNDksMi4wNi0wLjc3LDMuMi0wLjY3CgkJYzAuNTIsMC4wNSwxLjA2LDAuMDQsMS41Ny0wLjAyYzEuMTYtMC4xNCwyLjE0LTEuMDcsMi4zNS0yLjE1YzAuMTgtMC45NC0wLjMyLTEuOTUtMS4yNS0yLjUzYy0wLjg5LTAuNTYtMS45NC0wLjQ0LTIuOTIsMC4zMgoJCWMtMC41NCwwLjQyLTAuOTEsMC45NC0xLjE1LDEuNTdjLTAuNDUsMS4yMS0xLjIzLDIuMTItMi4zMywyLjdjLTAuMjUsMC4xNS0wLjQ1LDAuMjEtMC43MiwwLjA2Yy0wLjI3LTAuMTUtMC4zNi0wLjM3LTAuMzQtMC42NQoJCWMwLjA4LTEuMTcsMC4yOC0yLjI4LDEuMDItMy4yNWMwLjM2LTAuNDgsMC42OC0xLDAuODYtMS41OWMwLjMzLTEuMDcsMC4xNS0yLjA0LTAuNjktMi44MWMtMC43Ni0wLjcxLTEuODUtMC44NC0yLjc4LTAuMzMKCQljLTAuOTgsMC41NC0xLjM2LDEuMzktMS4yOCwyLjVjMC4wNiwwLjg2LDAuNDYsMS41NiwwLjk0LDIuMjJjMC43MiwwLjk5LDEuMSwyLjA4LDEuMSwzLjNjMCwwLjU4LTAuNDYsMC44Ny0wLjk0LDAuNTcKCQljLTAuODUtMC41My0xLjY1LTEuMTItMi4wOS0yLjA4Yy0wLjI1LTAuNTUtMC41My0xLjA5LTAuODUtMS42Yy0wLjY0LTEuMDEtMS43OS0xLjUtMi45Mi0xLjI3Yy0wLjkzLDAuMTktMS42NSwwLjk2LTEuODMsMS45NQoJCWMtMC4xOSwxLjA0LDAuMjUsMS45OSwxLjI1LDIuNmMwLjYsMC4zNywxLjI3LDAuNDgsMS45NywwLjQyYzEuMzItMC4xMSwyLjYyLTAuMTcsMy44MiwwLjU4YzAuMjksMC4xOCwwLjUxLDAuMzMsMC41MiwwLjcKCQljMC4wMSwwLjM3LTAuMjMsMC40OS0wLjQ5LDAuNjRDMTMuOTksMTguNjIsMTIuOTMsMTguODQsMTEuOTUsMTguN3oiLz4KPC9nPgo8L3N2Zz4=") no-repeat top left;
+  background-size: contain;
+  height: 2.8rem;
+  width: 2.8rem;
+  display: inline-block;
+  padding-right: 0.4rem;
+  position: relative;
+  bottom: -0.5rem;
+  content: '';
+}
+
+[data-type=codeexample] > .os-title > .os-title-label {
+  display: inline-block;
+  word-wrap: normal;
+  margin-bottom: 0.2rem;
+}
+
+[data-type=codeexample] > .os-title > .os-number {
+  display: inline-block;
+  word-wrap: normal;
+  margin-bottom: 0.2rem;
+  margin-left: 8px;
+}
+
+[data-type=codeexample] > .os-title > .os-text {
+  display: inline-block;
+  word-wrap: normal;
+  margin-bottom: 0.2rem;
+  margin-left: 8px;
+}
+
+[data-type=codeexample] > .body > ul:not([data-labeled-item=true]) {
+  margin-left: 32px;
+}
+
+[data-type=codeexample] > .body > ul:not([data-labeled-item=true]) > li > ul {
+  margin-left: 24px;
+  margin-bottom: 0;
+}
+
+[data-type=codeexample] > .body > ul:not([data-labeled-item=true]) > li > ol {
+  margin-left: 24px;
+  margin-bottom: 0;
+}
+
+[data-type=codeexample] > .body > ol {
+  margin-left: 32px;
+}
+
+[data-type=codeexample] > .body > ol > li > ul {
+  margin-left: 24px;
+  margin-bottom: 0;
+}
+
+[data-type=codeexample] > .body > ol > li > ol {
+  margin-left: 24px;
+  margin-bottom: 0;
+}
+
+[data-type=codeexample] > .body > h4[data-type=title] {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-family: IBM Plex Sans, sans-serif;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+[data-type=codeexample] > .body > p:first-of-type > h4[data-type=title] {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-family: IBM Plex Sans, sans-serif;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+[data-type=codeexample] > .body > p:not(:first-of-type) > h4[data-type=title] {
+  font-family: IBM Plex Sans, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+[data-type=codeexample] > .body > [data-type=note] > h3[data-type=title] {
+  font-weight: bold;
+  font-family: IBM Plex Sans, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 0.2rem;
+}
+
+[data-type=codeexample] > .body > p > span[data-type=media] {
+  vertical-align: top;
+}
+
+/* End of code example stuff */
+
+/* Python Skill stuff here */
+
+[data-type=codeskill] {
+  margin-bottom: 1.4rem;
+  border-bottom-color: #388b50;
+  border-bottom-width: 0.2rem;
+  border-bottom-style: solid;
+  box-decoration-break: slice;
+}
+
+[data-type=codeskill] > .os-title {
+  font-family: Mulish, sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  border-bottom-color: #388b50;
+  border-bottom-width: 0.2rem;
+  border-bottom-style: solid;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-bottom: 0.7rem;
+}
+
+[data-type=codeskill] > .os-title::before {
+  background: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDM0Ljk3IDM0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAzNC45NyAzNDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+CiAgICAuc3Qwe2ZpbGw6IzM4OGI1MDtzdHJva2U6IzM4OGI1MDtzdHJva2Utd2lkdGg6Mi4yNTt9CiAgICAuc3Qxe2ZpbGw6IzM4OGI1MDt9Cjwvc3R5bGU+PGc+PHBhdGggY2xhc3M9InN0MCIgZD0iTTE3LjY2LDEuODJDOS4xNywxLjgyLDIuMjksOC43LDIuMjksMTcuMTlzNi44OCwxNS4zOCwxNS4zOCwxNS4zOCBNMTcuNjYsMzIuNTdjOC40OSwwLDE1LjM4LTYuODgsMTUuMzgtMTUuMzhTMjYuMTYsMS44MiwxNy42NiwxLjgyIi8+PC9nPjxnPjxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik0xMi42NSwxOC43Yy0wLjU5LDAtMS4wNC0wLjAzLTEuNDgsMC4wMWMtMS4yNSwwLjExLTIuMzYsMS0yLjU0LDIuMDJjLTAuMTksMS4wNCwwLjQsMi4xOSwxLjM3LDIuN2MwLjk4LDAuNTEsMi4xMiwwLjI0LDMuMDctMC43MWMwLjQ3LTAuNDcsMC43OC0xLjA2LDEuMDQtMS42NmMwLjQzLTEuMDIsMS4yLTEuNywyLjA4LTIuM2MwLjMxLTAuMjEsMC41OC0wLjE3LDAuODgsMGMwLjMxLDAuMTgsMC4xOSwwLjQ1LDAuMTksMC43YzAsMS4yOS0wLjQ4LDIuNC0xLjI0LDMuNDFjLTAuMzEsMC40Mi0wLjU4LDAuODctMC42OSwxLjRjLTAuMiwxLjAyLTAuMDMsMS45NiwwLjc5LDIuNjVjMC43NywwLjY1LDEuNjYsMC43NiwyLjU4LDAuMzRjMC45NS0wLjQ0LDEuNDEtMS4yMywxLjQ2LTIuMjVjMC4wNS0wLjkyLTAuMzctMS42Ny0wLjkxLTIuMzdjLTAuNzEtMC45Mi0xLjIxLTEuOTEtMS4xNS0zLjExYzAuMDItMC4zMS0wLjA0LTAuNjEsMC4zMS0wLjgyYzAuMzktMC4yMywwLjY2LTAuMDIsMC45MywwLjE3YzAuODksMC42MywxLjY0LDEuMzksMi4wNiwyLjQzYzAuMjgsMC42OSwwLjY4LDEuMzEsMS4yOCwxLjc3YzAuNzgsMC42LDEuNjMsMC44NCwyLjU4LDAuNDRjMS4wNC0wLjQ0LDEuNTItMS4yNywxLjU0LTIuMzVjMC4wMi0xLTAuNTctMS42NC0xLjQtMi4xMWMtMC45MS0wLjUyLTEuODktMC40MS0yLjg1LTAuMzFjLTEuMDgsMC4xMS0yLjAyLTAuMTYtMi45NC0wLjY4Yy0wLjI2LTAuMTUtMC40OS0wLjI4LTAuNDUtMC42NWMwLjAzLTAuMzUsMC4yNS0wLjUsMC41Mi0wLjYzYzEuMDEtMC40OSwyLjA2LTAuNzcsMy4yLTAuNjdjMC41MiwwLjA1LDEuMDYsMC4wNCwxLjU3LTAuMDJjMS4xNi0wLjE0LDIuMTQtMS4wNywyLjM1LTIuMTVjMC4xOC0wLjk0LTAuMzItMS45NS0xLjI1LTIuNTNjLTAuODktMC41Ni0xLjk0LTAuNDQtMi45MiwwLjMyYy0wLjU0LDAuNDItMC45MSwwLjk0LTEuMTUsMS41N2MtMC40NSwxLjIxLTEuMjMsMi4xMi0yLjMzLDIuNzdjLTAuMjUsMC4xNS0wLjQ1LDAuMjEtMC43MiwwLjA2Yy0wLjI3LTAuMTUtMC4zNi0wLjM3LTAuMzQtMC42NWMwLjA4LTEuMTcsMC4yOC0yLjI4LDEuMDItMy4yNWMwLjM2LTAuNDgsMC42OC0xLDAuODYtMS41OWMwLjMzLTEuMDcsMC4xNS0yLjA0LTAuNjktMi44MWMtMC43Ni0wLjcxLTEuODUtMC44NC0yLjc4LTAuMzNjLTAuOTgsMC41NC0xLjM2LDEuMzktMS4yOCwyLjVjMC4wNiwwLjg2LDAuNDYsMS41NiwwLjk0LDIuMjJjMC43MiwwLjk5LDEuMSwyLjA4LDEuMSwzLjNjMCwwLjU4LTAuNDYsMC44Ny0wLjk0LDAuNTdjLTAuODUtMC41My0xLjY1LTEuMTItMi4wOS0yLjA4Yy0wLjI1LTAuNTUtMC41My0xLjA5LTAuODUtMS42Yy0wLjY0LTEuMDEtMS43OS0xLjUtMi45Mi0xLjI3Yy0wLjkzLDAuMTktMS42NSwwLjk2LTEuODMsMS45NWMtMC4xOSwxLjA0LDAuMjUsMS45OSwxLjI1LDIuNmMwLjYsMC4zNywxLjI3LDAuNDgsMS45NywwLjQyYzEuMzItMC4xMSwyLjYyLTAuMTcsMy44MiwwLjU4YzAuMjksMC4xOCwwLjUxLDAuMzMsMC41MiwwLjdjMC4wMSwwLjM3LTAuMjMsMC40OS0wLjQ5LDAuNjRjLTAuNzksMC40Mi0xLjg1LDAuNjQtMi44NCwwLjUyWiIvPjwvZz48L3N2Zz4=") no-repeat top left;
+  background-size: contain;
+  height: 2.8rem;
+  width: 2.8rem;
+  display: inline-block;
+  padding-right: 0.4rem;
+  position: relative;
+  bottom: -0.5rem;
+  content: '';
+}
+
+[data-type=codeskill] > .os-title > .os-title-label {
+  display: inline-block;
+  word-wrap: normal;
+  margin-bottom: 0.2rem;
+}
+
+[data-type=codeskill] > .os-title > .os-number {
+  display: inline-block;
+  word-wrap: normal;
+  margin-bottom: 0.2rem;
+  margin-left: 8px;
+}
+
+[data-type=codeskill] > .os-title > .os-text {
+  display: inline-block;
+  word-wrap: normal;
+  margin-bottom: 0.2rem;
+  margin-left: 8px;
+}
+
+[data-type=codeskill] > .body > ul:not([data-labeled-item=true]) {
+  margin-left: 32px;
+}
+
+[data-type=codeskill] > .body > ul:not([data-labeled-item=true]) > li > ul {
+  margin-left: 24px;
+  margin-bottom: 0;
+}
+
+[data-type=codeskill] > .body > ul:not([data-labeled-item=true]) > li > ol {
+  margin-left: 24px;
+  margin-bottom: 0;
+}
+
+[data-type=codeskill] > .body > ol {
+  margin-left: 32px;
+}
+
+[data-type=codeskill] > .body > ol > li > ul {
+  margin-left: 24px;
+  margin-bottom: 0;
+}
+
+[data-type=codeskill] > .body > ol > li > ol {
+  margin-left: 24px;
+  margin-bottom: 0;
+}
+
+[data-type=codeskill] > .body > h4[data-type=title] {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-family: IBM Plex Sans, sans-serif;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+[data-type=codeskill] > .body > p:first-of-type > h4[data-type=title] {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-family: IBM Plex Sans, sans-serif;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+[data-type=codeskill] > .body > p:not(:first-of-type) > h4[data-type=title] {
+  font-family: IBM Plex Sans, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+[data-type=codeskill] > .body > [data-type=note] > h3[data-type=title] {
+  font-weight: bold;
+  font-family: IBM Plex Sans, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 0.2rem;
+}
+
+[data-type=codeskill] > .body > p > span[data-type=media] {
+  vertical-align: top;
+}
+
+/* End of code example stuff */
+
+
 .preface {
   column-count: 1;
   column-gap: 2.4rem;
