@@ -1,7 +1,7 @@
 from latex2mathml import converter
 
 ''' INPUT PARAMETERS '''
-latex_eq = r"t = 2.0"
+latex_eq = r"x(t)"
 inline = True # change this depending on what you want
 
 

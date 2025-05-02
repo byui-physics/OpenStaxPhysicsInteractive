@@ -550,8 +550,8 @@ The velocity of the particle gives us direction information, indicating the part
 </div>
 
 
-<div data-type="example" id="fs-id1168329069804" data-sm="./modules/m58283/index.cnxml:151:284"><h3 class="os-title">
-  <span class="os-title-label">Code Example </span>
+<div data-type="codeexample" id="fs-id1168329069804" data-sm="./modules/m58283/index.cnxml:151:284"><h3 class="os-title">
+  <span class="os-title-label">Numerical Method Example </span>
   <span class="os-number">3.2</span>
   <span class="os-divider"> </span>
 </h3>
@@ -559,26 +559,9 @@ The velocity of the particle gives us direction information, indicating the part
 
 <p id="fs-id1168329439120" data-sm="./modules/m58283/index.cnxml:152:1"></p>
 <h4 data-type="title" data-sm="./modules/m58283/index.cnxml:152:31">Instantaneous Velocity For Any Function</h4>
-<p>
-  In this example we will introduce another tool in Python that is powerful, but that you shouldn't feel like you need to master right away. In Python we can define functions similar to 
-  how we would define a function in math (like a position vs time function). Once we have a function, we can plug in numbers and it will output the function value. The code below demonstrates the syntax. 
-</p>
 
-<python-code-cell># first define a position vs time function
-def x(t):
-    return 3*t - 3*t**2
-
-# use the function to calculate position at a certain time 
-xf = x(0.5) # calculate the position at 0.5 seconds 
-print(f'The position at 0.5 seconds is {xf:.3g} m.')
-</python-code-cell>
-
-<p>The <code>def</code> defines the function. Here <code>x</code> is the name of the function. The letter inside the parenthesis is the input variable. This is the letter that should 
-  show up in the formula in the next line. The <code>return</code> marks the output. Note that the return must be indented (with 4 spaces). This is where we put the formula for the math function we are trying to code. 
-  When you want to use the function later, all you do is type the name of the function, and put in the input inside the parenthesis. This is the same as we would do with a math function. 
-  Typing in functions like this can make it easy when we need to calculate the position at many different values of time. </p>
-
-<p>Now let's use functions to explore instantaneous velocity. 
+<p>We will now demonstrate a more advanced numerical method in Python. In the last section we introduced Python functions as a way to represent mathematical functions. 
+Now let's use functions to explore instantaneous velocity. 
 Sometimes the function that models the position of a particle is difficult to differentiate by hand. 
 Consider the particle whose position is given by 
 <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo stretchy="false">&#x00028;</mo><mi>t</mi><mo stretchy="false">&#x00029;</mo><mo>&#x0003D;</mo><mi>sin</mi><mo stretchy="false">&#x00028;</mo><mn>2</mn><mi>t</mi><mo stretchy="false">&#x00029;</mo><mo>&#x0002B;</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>2</mn></mrow></mfrac><mi>t</mi></mrow></math></span>. 
@@ -600,7 +583,7 @@ We might not know how to do the derivative by hand yet, but we can use Python to
   </math>
 In Python we can't take the limit as <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x00394;</mi><mi>t</mi></mrow></math></span> goes to zero, but we can 
 make <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x00394;</mi><mi>t</mi></mrow></math></span> very small. Notice how in the code below we use a very small <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x00394;</mi><mi>t</mi></mrow></math></span> to define the function for velocity. 
-Defining a function for position earlier makes the code look just like the definition of the derivative. In the code below, the definition of the derivative used to find velocity calls the position function that we define earlier. 
+Defining a function for position earlier makes the code look just like the definition of the derivative. In the code below, the definition of the derivative used to define a new function for velocity. Notice that this function calls the position function that we define earlier. 
 </p>
 
 <python-code-cell>from numpy import sin
@@ -618,7 +601,8 @@ def v(t):
 <p>Notice how the definition of the derivative can be found in how we calculated <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>v</mi><mo stretchy="false">&#x00028;</mo><mi>t</mi><mo stretchy="false">&#x00029;</mo></mrow></math></span>. 
   Let's see what the velocity versus time graph looks like. Below is a code that plots both the position versus time and velocity versus time side by side. </p>
 
-<python-code-cell>from numpy import linspace
+<python-code-cell># This code requires the previous cell to have been run
+from numpy import linspace
 from matplotlib import pyplot as plt
 
 # define the tpoints 
@@ -651,10 +635,14 @@ plt.show()
 
 <p>Trying using this code to answer the question in Example 3.4. </p>
 
-<p><strong>Conclusion: </strong>In this example we used functions to make calculating the derivative easier in Python. This allowed us to quickly make plots of any function and its derivative. 
+<!-- <p><strong>Conclusion: </strong>In this example we used functions to make calculating the derivative easier in Python. This allowed us to quickly make plots of any function and its derivative. 
 This can be a powerful tool as we expore different position and velocity functions through this course. Again, don't try memorizing the code, but rather think of it as a tool you can come reference (and copy)
 later to help you learn physics. 
-</p>
+</p> -->
+
+<p>We should give a note about this. Using Python we were able to calculate the derivative of <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo stretchy="false">&#x00028;</mo><mi>t</mi><mo stretchy="false">&#x00029;</mo></mrow></math></span>. 
+However, we did not obtain a <em>symbolic</em> answer; we only obtained a <em>numerical</em> answer. The numerical answer can be plotted or used to find the derivative at a specific time, but it can not be written as a mathematical equation. 
+This can be a powerful tool in many problems, but is often used when the symbolic derivative is either impossible or would be too difficult to obtain by hand. </p>
 
 
 <!-- This thing is a cap before the red line.-->
