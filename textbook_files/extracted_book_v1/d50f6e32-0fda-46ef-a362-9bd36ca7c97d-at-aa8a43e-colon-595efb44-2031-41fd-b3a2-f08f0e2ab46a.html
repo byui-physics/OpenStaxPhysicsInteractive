@@ -7,6 +7,13 @@
 Drawing Free-Body Diagrams
 </title>
 <link rel="stylesheet" type="text/css" href="the-style-epub.css"/>
+
+<!-- Add these three lines to add code chunk availability -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
+<script src="https://cdn.jsdelivr.net/pyodide/v0.27.2/full/pyodide.js"></script>
+<script type="module" src="../../code-chunk-resources.js"></script>
+
 </head>
 <body>
     <div data-type="page" id="page_595efb44-2031-41fd-b3a2-f08f0e2ab46a" class="chapter-content-module" data-book-content="true"><h2 data-type="document-title" data-sm="./modules/m58301/index.cnxml:3:1" id="page_595efb44-2031-41fd-b3a2-f08f0e2ab46a_titlecreatedbycookbook"><span class="os-number">5.7</span>
@@ -229,15 +236,104 @@ Each block accelerates (notice the labels shown for <span class="os-math-in-para
 </div>
 </div>
 
+
+<div data-type="codeexample" id="fs-id1165039245155" data-sm="./modules/m58301/index.cnxml:53:1"><h3 class="os-title">
+  <span class="os-title-label">Numerical Methods Example </span>
+  <span class="os-number"></span>
+  <span class="os-divider"> </span>
+</h3>
+<div class="body">
+
+  <p>Now that we have explored different kinds of forces, let's see an example of how we could use computational methods to simulate a more realistic problem. 
+    Suppose we have an object that is experiencing a spring-like restoring force, and a friction force. For simplicity we will assume the equilibrium position of the spring-like 
+  force is at <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>x</mi><mo>&#x0003D;</mo><mn>0</mn></mrow></math></span>. 
+To make it a little more realistic, we will use a friction force that depends on velocity. Not all friction forces we deal with work this way, but for the sake of this problem, this is the kind we will use at the moment. </p>
+
+<p>Let the spring-like force be given by <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>F</mi><mtext>spring</mtext></msub><mo>&#x0003D;</mo><mo>&#x02212;</mo><mi>k</mi><mi>x</mi></mrow></math></span> where <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>k</mi><mo>&#x0003D;</mo></mrow></math></span>
+   1 N/m. 
+  Notice that the direction of the force is opposite the direction of the displacement (as determined by the minus sign). 
+Let the friction force be given by <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>f</mi><mo>&#x0003D;</mo><mo>&#x02212;</mo><mi>b</mi><mi>v</mi></mrow></math></span> where 
+<span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>b</mi><mo>&#x0003D;</mo></mrow></math></span> 0.01 newton-seconds per meter. 
+This friction force is opposite to the direction of motion (as described by the minus sign).</p>
+
+<p>Suppose the object (with mass <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>m</mi><mo>&#x0003D;</mo></mrow></math></span> 10 grams) 
+   starts with an initial velocity of zero and an initial displacement of <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>x</mi><mn>0</mn></msub><mo>&#x0003D;</mo></mrow></math></span> 
+20 centimeters. We wish to graph the position vs time function and be able to describe the motion. For this we will use our knowledge of forces to determine the acceleration. We will then use Euler's method 
+to determine the position vs time function from the acceleration. </p>
+
+<p>Using Newton's second law, we know that <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>&#x02211;</mo><mi>F</mi><mo>&#x0003D;</mo><mi>m</mi><mi>a</mi></mrow></math></span>. 
+Since we only have two forces, plugging both of them in gives us <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>&#x02212;</mo><mi>k</mi><mi>x</mi><mo>&#x02212;</mo><mi>b</mi><mi>v</mi><mo>&#x0003D;</mo><mi>m</mi><mi>a</mi></mrow></math></span>. To solve for acceleration, all we need to do is divide by the mass of the object. 
+Now that we have acceleration, we can put it into our Euler's method code. However, notice that this acceleration depends on position and velocity rather than time, so we will need to make those the inputs of our acceleration function. 
+</p>
+
+
+<python-code-cell># define knowns
+k = 1 # N/m
+b = 0.01 # Ns/m
+m = 0.01 # kg
+x0 = 0.2 # m 
+
+# define acceleration (function of position and velocity)
+def a(x, v):
+    return -(k*x + b*v)/m
+
+# set up Euler's method
+x = x0 # initial position 
+v = 0 # initial velocity 
+t = 0 # start timer at 0 
+dt = 0.001 # time step
+
+# lists for plotting
+xpoints = []
+tpoints = []
+
+while t < 10: # run for 10 seconds 
+    # save current state to list
+    xpoints.append(x)
+    tpoints.append(t)
+    
+    # update position with velocity
+    x += v*dt # += means add that much
+    
+    # update velocity with acceleration
+    v += a(x, v)*dt # a takes in current x and current v 
+    
+    # update timer
+    t += dt 
+    
+# now plot the results
+from matplotlib import pyplot as plt
+plt.clf()
+plt.plot(tpoints, xpoints)
+plt.title('Position vs Time of Dampened Harmonic Oscillator')
+plt.xlabel('Time (s)')
+plt.ylabel('Position (m)')
+plt.show()</python-code-cell>
+
+
+<p>This system is called a dampened harmonic oscillator, and it shows up in all sorts of places in the real world. The spring-like force creates an oscillation motion, while the friction 
+  force creates dampening. You will likely explore this system more in your future. It is an important application of Newton's second law and of forces because it is so applicable. 
+  In many real world systems, we may either want to avoid/dampen as much as we can the oscillations that naturally occur, or allow them to happen. Understanding where it comes from is a crutial first step. 
+</p>
+
+  </div></div>
+
+
+
+
+
 <div data-type="note" id="fs-id1165039188025" class="media-2" data-sm="./modules/m58301/index.cnxml:97:1"><h3 class="os-title" data-type="title">
   <span class="os-title-label">Interactive</span>
 </h3>
 <div class="os-note-body">
 <p id="fs-id1165039120777" data-sm="./modules/m58301/index.cnxml:98:1">Engage the simulation below to predict, qualitatively, how an external force will affect the speed and direction of an object’s motion. Explain the effects with the help of a free-body diagram. Use free-body diagrams to draw position, velocity, acceleration, and force graphs, and vice versa. Explain how the graphs relate to one another. Given a scenario or a graph, sketch all four graphs.</p>
-<div data-type="media" data-alt="forces in motion phet simulation" data-sm="./modules/m58301/index.cnxml:98:451">
-  <div class="os-has-iframe os-has-link" data-type="switch"><a class="os-is-link" href="https://openstax.org/books/university-physics-volume-1/pages/5-7-drawing-free-body-diagrams" target="_blank" rel="noopener nofollow" data-media="print">Access multimedia content</a>
-</div>
-  </div>
+
+<iframe src="https://phet.colorado.edu/sims/html/forces-and-motion-basics/latest/forces-and-motion-basics_en.html"
+        width="800"
+        height="600"
+        allowfullscreen>
+</iframe>
+
 </div>
 </div>
 
@@ -257,6 +353,16 @@ Each block accelerates (notice the labels shown for <span class="os-math-in-para
   </div>
 
 <a href="university-physics-volume-1.toc.html">Back to table of contents</a>
+
+<!-- These scripts run at the end of the file to make code cells work -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/codemirror.min.js"
+		integrity="sha512-XMlgZzPyVXf1I/wbGnofk1Hfdx+zAWyZjh6c21yGo/k1zNC4Ve6xcQnTDTCHrjFGsOrVicJsBURLYktVEu/8vQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/mode/python/python.min.js"
+		integrity="sha512-/mavDpedrvPG/0Grj2Ughxte/fsm42ZmZWWpHz1jCbzd5ECv8CB7PomGtw0NAnhHmE/lkDFkRMupjoohbKNA1Q=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="module" src="../../initialize-pyodide-chunks.js"></script>
+
 </body>
 </html>
 <!-- # sourceMappingURL=d50f6e32-0fda-46ef-a362-9bd36ca7c97d-at-aa8a43e-colon-595efb44-2031-41fd-b3a2-f08f0e2ab46a.html.map -->

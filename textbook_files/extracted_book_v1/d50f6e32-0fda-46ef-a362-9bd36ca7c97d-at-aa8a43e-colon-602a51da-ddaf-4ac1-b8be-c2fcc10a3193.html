@@ -7,6 +7,13 @@
 Newton’s Third Law
 </title>
 <link rel="stylesheet" type="text/css" href="the-style-epub.css"/>
+
+<!-- Add these three lines to add code chunk availability -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
+<script src="https://cdn.jsdelivr.net/pyodide/v0.27.2/full/pyodide.js"></script>
+<script type="module" src="../../code-chunk-resources.js"></script>
+
 </head>
 <body>
     <div data-type="page" id="page_602a51da-ddaf-4ac1-b8be-c2fcc10a3193" class="chapter-content-module" data-book-content="true"><h2 data-type="document-title" data-sm="./modules/m58299/index.cnxml:3:1" id="page_602a51da-ddaf-4ac1-b8be-c2fcc10a3193_titlecreatedbycookbook"><span class="os-number">5.5</span>
@@ -388,6 +395,24 @@ Newton’s second law is given by
 </semantics>
 </math>
 </div>
+
+<python-code-cell hideable># define knowns 
+F_floor = 150 # N 
+friction = 24.0 # N (I'm plugging it in as a positive number and letting algebra keep track of the minus sign)
+
+mass_cart = 12.0 # kg 
+mass_person = 65.0 # kg 
+mass_equipment = 7.0 # kg 
+
+# calculate Fnet
+Fnet = F_floor - friction # this is where the minus sign comes in 
+# calculate total mass 
+m = mass_cart + mass_person + mass_cart 
+# calculate acceleration 
+a = Fnet/m
+print(f'a = {a:.2g} m/s^2')
+</python-code-cell>
+
 <p id="fs-id1165036894942" data-sm="./modules/m58299/index.cnxml:96:1"></p>
 <h4 data-type="title" data-sm="./modules/m58299/index.cnxml:96:31">Significance</h4>
 None of the forces between components of System 1, such as between the professor’s hands and the cart, contribute to the net external force because they are internal to System 1. Another way to look at this is that forces between components of a system cancel because they are equal in magnitude and opposite in direction. For example, the force exerted by the professor on the cart results in an equal and opposite force back on the professor. In this case, both forces act on the same system and therefore cancel. Thus, internal forces (between components of a system) cancel. Choosing System 1 was crucial to solving this problem.
@@ -471,6 +496,17 @@ Newton’s second law can be used to find <span class="os-math-in-para"><math xm
 </semantics>
 </math>
 </div>
+
+<python-code-cell hideable># this code requires the previous cell to have been run
+
+# calculate Fnet on new system
+m_new_system = mass_cart + mass_equipment
+Fnet_new = a*m_new_system
+
+# calculate Fprof
+Fprof = Fnet_new + friction # using algebra work above
+print(f'Fprof = {Fprof:.2g} N')</python-code-cell>
+
 <p id="fs-id1165038327028" data-sm="./modules/m58299/index.cnxml:117:1"></p>
 <h4 data-type="title" data-sm="./modules/m58299/index.cnxml:117:31">Significance</h4>
 This force is significantly less than the 150-N force the professor exerted backward on the floor. Not all of that 150-N force is transmitted to the cart; some of it accelerates the professor. The choice of a system is an important analytical step both in solving problems and in thoroughly understanding the physics of the situation (which are not necessarily the same things).
@@ -507,6 +543,9 @@ This force is significantly less than the 150-N force the professor exerted back
 </h3>
 <div class="os-note-body">
 <p id="fs-id1165038008845" data-sm="./modules/m58299/index.cnxml:134:1">View this <a href="https://openstax.org/l/21actionreact" data-sm="./modules/m58299/index.cnxml:134:41" target="_blank" rel="noopener nofollow">video</a> to watch examples of action and reaction.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jO6B0yx3FHE?si=hlqaiZhb8afW9nSA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 </div>
 </div>
 
@@ -515,6 +554,9 @@ This force is significantly less than the 150-N force the professor exerted back
 </h3>
 <div class="os-note-body">
 <p id="fs-id1165036773021" data-sm="./modules/m58299/index.cnxml:137:1">View this <a href="https://openstax.org/l/21NewtonsLaws" data-sm="./modules/m58299/index.cnxml:137:41" target="_blank" rel="noopener nofollow">video</a> to watch examples of Newton’s laws and internal and external forces.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kQfM-q4xbfo?si=BBJmDiDP3YaRjXGr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 </div>
 </div>
 
@@ -528,6 +570,16 @@ This force is significantly less than the 150-N force the professor exerted back
   </div>
 
 <a href="university-physics-volume-1.toc.html">Back to table of contents</a>
+
+<!-- These scripts run at the end of the file to make code cells work -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/codemirror.min.js"
+		integrity="sha512-XMlgZzPyVXf1I/wbGnofk1Hfdx+zAWyZjh6c21yGo/k1zNC4Ve6xcQnTDTCHrjFGsOrVicJsBURLYktVEu/8vQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/mode/python/python.min.js"
+		integrity="sha512-/mavDpedrvPG/0Grj2Ughxte/fsm42ZmZWWpHz1jCbzd5ECv8CB7PomGtw0NAnhHmE/lkDFkRMupjoohbKNA1Q=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="module" src="../../initialize-pyodide-chunks.js"></script>
+
 </body>
 </html>
 <!-- # sourceMappingURL=d50f6e32-0fda-46ef-a362-9bd36ca7c97d-at-aa8a43e-colon-602a51da-ddaf-4ac1-b8be-c2fcc10a3193.html.map -->

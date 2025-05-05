@@ -7,6 +7,13 @@
 Mass and Weight
 </title>
 <link rel="stylesheet" type="text/css" href="the-style-epub.css"/>
+
+<!-- Add these three lines to add code chunk availability -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
+<script src="https://cdn.jsdelivr.net/pyodide/v0.27.2/full/pyodide.js"></script>
+<script type="module" src="../../code-chunk-resources.js"></script>
+
 </head>
 <body>
     <div data-type="page" id="page_68003722-b144-499e-859f-615de26fd893" class="chapter-content-module" data-book-content="true"><h2 data-type="document-title" data-sm="./modules/m58298/index.cnxml:3:1" id="page_68003722-b144-499e-859f-615de26fd893_titlecreatedbycookbook"><span class="os-number">5.4</span>
@@ -160,10 +167,12 @@ We were given the weight of the stone, which we use in finding the net force on 
 </math></span>, to determine the mass.
 <p id="fs-id1165038033538" data-sm="./modules/m58298/index.cnxml:47:1"></p>
 <h4 data-type="title" data-sm="./modules/m58298/index.cnxml:47:31">Solution</h4>
-No forces act in the horizontal direction, so we can concentrate on vertical forces, as shown in the following free-body diagram. We label the acceleration to the side; technically, it is not part of the free-body diagram, but it helps to remind us that the object accelerates upward (so the net force is upward).
-<span data-type="media" id="fs-id1165037913135" data-alt="Figure shows a free-body diagram with vector w equal to 180 newtons pointing downwards and vector F of unknown magnitude pointing upwards. Acceleration a is equal to 1.5 meters per second squared." data-sm="./modules/m58298/index.cnxml:49:1">
-<img src="1d40157d05795f307fb4b5ae5420d0526fcbf6d0.jpeg" data-media-type="image/jpeg" alt="Figure shows a free-body diagram with vector w equal to 180 newtons pointing downwards and vector F of unknown magnitude pointing upwards. Acceleration a is equal to 1.5 meters per second squared." data-sm="./modules/m58298/index.cnxml:50:1"/>
-</span>
+No forces act in the horizontal direction, so we can concentrate on vertical forces, as shown in the following free-body diagram. We label the acceleration to the side; technically, it is not part of the free-body diagram, but it helps to remind us that the object accelerates upward (so the net force is upward). 
+<div style="text-align: center;">
+  <span data-type="media" id="fs-id1165037913135" data-alt="Figure shows a free-body diagram with vector w equal to 180 newtons pointing downwards and vector F of unknown magnitude pointing upwards. Acceleration a is equal to 1.5 meters per second squared." data-sm="./modules/m58298/index.cnxml:49:1">
+    <img src="1d40157d05795f307fb4b5ae5420d0526fcbf6d0.jpeg" data-media-type="image/jpeg" alt="Figure shows a free-body diagram with vector w equal to 180 newtons pointing downwards and vector F of unknown magnitude pointing upwards. Acceleration a is equal to 1.5 meters per second squared." data-sm="./modules/m58298/index.cnxml:50:1"/>
+    </span>
+</div>
 <div data-type="equation" id="fs-id1171239071304" class="unnumbered" data-sm="./modules/m58298/index.cnxml:52:1"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtable data-sm="./modules/m58298/index.cnxml:52:62"><mtr data-sm="./modules/m58298/index.cnxml:52:72"><mtd columnalign="right" data-sm="./modules/m58298/index.cnxml:52:79"><mi data-sm="./modules/m58298/index.cnxml:52:106">w</mi></mtd>
 <mtd columnalign="left" data-sm="./modules/m58298/index.cnxml:52:128"><mo data-sm="./modules/m58298/index.cnxml:52:154">=</mo></mtd>
 <mtd columnalign="left" data-sm="./modules/m58298/index.cnxml:52:176"><mi data-sm="./modules/m58298/index.cnxml:52:202">m</mi><mi data-sm="./modules/m58298/index.cnxml:52:216">g</mi></mtd>
@@ -202,6 +211,24 @@ No forces act in the horizontal direction, so we can concentrate on vertical for
 </semantics>
 </math>
 </div>
+
+<python-code-cell hideable># define knowns 
+w = 180 # N 
+g = 9.8 # m/s^2; g is a positive number 
+a = 1.5 # m/s^2 
+
+''' Notice that all these variables are positive. 
+    This is because the minus sign that takes care of the downward direction comes
+    in our algebra work. '''
+
+# calculate mass 
+m = w/g
+
+# calculate applied force 
+F = m*a + w # we found this equation using our algebra work
+print(f'F = {F:.2g} N')
+</python-code-cell>
+
 <p id="fs-id1165036782382" data-sm="./modules/m58298/index.cnxml:53:1"></p>
 <h4 data-type="title" data-sm="./modules/m58298/index.cnxml:53:31">Significance</h4>
 To apply Newton’s second law as the primary equation in solving a problem, we sometimes have to rely on other equations, such as the one for weight or one of the kinematic equations, to complete the solution.
@@ -234,6 +261,16 @@ To apply Newton’s second law as the primary equation in solving a problem, we 
   </div>
 
 <a href="university-physics-volume-1.toc.html">Back to table of contents</a>
+
+<!-- These scripts run at the end of the file to make code cells work -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/codemirror.min.js"
+		integrity="sha512-XMlgZzPyVXf1I/wbGnofk1Hfdx+zAWyZjh6c21yGo/k1zNC4Ve6xcQnTDTCHrjFGsOrVicJsBURLYktVEu/8vQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/mode/python/python.min.js"
+		integrity="sha512-/mavDpedrvPG/0Grj2Ughxte/fsm42ZmZWWpHz1jCbzd5ECv8CB7PomGtw0NAnhHmE/lkDFkRMupjoohbKNA1Q=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="module" src="../../initialize-pyodide-chunks.js"></script>
+
 </body>
 </html>
 <!-- # sourceMappingURL=d50f6e32-0fda-46ef-a362-9bd36ca7c97d-at-aa8a43e-colon-68003722-b144-499e-859f-615de26fd893.html.map -->

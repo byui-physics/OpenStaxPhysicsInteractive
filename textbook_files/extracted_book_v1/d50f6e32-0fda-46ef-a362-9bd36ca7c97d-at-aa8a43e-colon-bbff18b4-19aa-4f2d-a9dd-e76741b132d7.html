@@ -7,6 +7,13 @@
 Newton's Second Law
 </title>
 <link rel="stylesheet" type="text/css" href="the-style-epub.css"/>
+
+<!-- Add these three lines to add code chunk availability -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
+<script src="https://cdn.jsdelivr.net/pyodide/v0.27.2/full/pyodide.js"></script>
+<script type="module" src="../../code-chunk-resources.js"></script>
+
 </head>
 <body>
     <div data-type="page" id="page_bbff18b4-19aa-4f2d-a9dd-e76741b132d7" class="chapter-content-module" data-book-content="true"><h2 data-type="document-title" data-sm="./modules/m58297/index.cnxml:3:1" id="page_bbff18b4-19aa-4f2d-a9dd-e76741b132d7_titlecreatedbycookbook"><span class="os-number">5.3</span>
@@ -561,6 +568,22 @@ The vectors in <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998
 </math>
 </div></li>
 </ol>
+
+<python-code-cell hideable>from numpy import array, arctan, pi
+# define knowns
+a = array([3.00, 7.00]) # m/s^2
+m = 0.400 # kg 
+
+# calculate force 
+F = m*a 
+print(F)
+
+# calculate magnitude and direction 
+Fmag = ( F[0]**2 + F[1]**2 )**0.5
+Fangle = arctan(F[1]/F[0]) * 180/pi # converted to degrees
+print(f'Magnitude: {Fmag:.3g} N; Angle: {Fangle:.3g} degrees')
+</python-code-cell>
+
 <p id="fs-id1165039464375" data-sm="./modules/m58297/index.cnxml:153:1"></p>
 <h4 data-type="title" data-sm="./modules/m58297/index.cnxml:153:31">Significance</h4>
 We must remember that Newton’s second law is a vector equation. In (a), we are multiplying a vector by a scalar to determine the net force in vector form. While the vector form gives a compact representation of the force vector, it does not tell us how “big” it is, or where it goes, in intuitive terms. In (b), we are determining the actual size (magnitude) of this force and the direction in which it travels.
@@ -600,7 +623,7 @@ Vector division is not defined, so <span class="os-math-in-para"><math xmlns="ht
 </mrow>
 </mrow>
 </semantics>
-</math></span>.
+</math></span>. This works because both the force and the acceleration are in the same direction (the y direction), so we are really breaking our vector equation into components and using the y direction component. 
 <p id="fs-id1165039295458" data-sm="./modules/m58297/index.cnxml:161:1"></p>
 <h4 data-type="title" data-sm="./modules/m58297/index.cnxml:161:31">Solution</h4>
 We use <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58297/index.cnxml:162:16"><mi data-sm="./modules/m58297/index.cnxml:162:24">m</mi><mo data-sm="./modules/m58297/index.cnxml:162:38">=</mo><mrow data-sm="./modules/m58297/index.cnxml:162:52"><mrow data-sm="./modules/m58297/index.cnxml:162:60"><msub data-sm="./modules/m58297/index.cnxml:162:68"><mi data-sm="./modules/m58297/index.cnxml:162:76">F</mi><mrow data-sm="./modules/m58297/index.cnxml:162:90"><mtext data-sm="./modules/m58297/index.cnxml:162:98">net</mtext></mrow></msub></mrow>
@@ -625,6 +648,15 @@ We use <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/Ma
 </semantics>
 </math>
 </div>
+
+<python-code-cell hideable># define knowns
+F = -600.0 # N
+a = -0.2 # m/s^2
+
+# calculate mass
+m = F/a
+print(f'Mass: {m:.1g} kg.')</python-code-cell>
+
 <p id="fs-id1165039345542" data-sm="./modules/m58297/index.cnxml:164:1"></p>
 <h4 data-type="title" data-sm="./modules/m58297/index.cnxml:164:31">Significance</h4>
 Force and acceleration were given in the <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mstyle mathvariant="bold" mathsize="normal" data-sm="./modules/m58297/index.cnxml:165:50"><mover accent="true" data-sm="./modules/m58297/index.cnxml:165:97"><mi data-sm="./modules/m58297/index.cnxml:165:120">i</mi><mo data-sm="./modules/m58297/index.cnxml:165:134">^</mo></mover>
@@ -752,13 +784,42 @@ We draw a free-body diagram as shown in <a href="#CNX_UPhysics_05_03_FourForces"
 </semantics>
 </math>
 </div>
-<p id="fs-id1165039458298" data-sm="./modules/m58297/index.cnxml:183:1">which is a vector of magnitude <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58297/index.cnxml:183:70"><mn data-sm="./modules/m58297/index.cnxml:183:78">8.4</mn><mspace width="0.2em" data-sm="./modules/m58297/index.cnxml:183:94"/><msup data-sm="./modules/m58297/index.cnxml:183:119"><mrow data-sm="./modules/m58297/index.cnxml:183:127"><mtext data-sm="./modules/m58297/index.cnxml:183:135">m/s</mtext></mrow><mn data-sm="./modules/m58297/index.cnxml:183:166">2</mn></msup></mrow>
+<p id="fs-id1165039458298" data-sm="./modules/m58297/index.cnxml:183:1">which is a vector of magnitude <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58297/index.cnxml:183:70"><mn data-sm="./modules/m58297/index.cnxml:183:78">8.3</mn><mspace width="0.2em" data-sm="./modules/m58297/index.cnxml:183:94"/><msup data-sm="./modules/m58297/index.cnxml:183:119"><mrow data-sm="./modules/m58297/index.cnxml:183:127"><mtext data-sm="./modules/m58297/index.cnxml:183:135">m/s</mtext></mrow><mn data-sm="./modules/m58297/index.cnxml:183:166">2</mn></msup></mrow>
 </mrow>
 </semantics>
-</math></span> directed at <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58297/index.cnxml:183:228"><mn data-sm="./modules/m58297/index.cnxml:183:236">276</mn><mtext data-sm="./modules/m58297/index.cnxml:183:252">°</mtext></mrow>
+</math></span> directed at <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><semantics><mrow><mrow data-sm="./modules/m58297/index.cnxml:183:228"><mn data-sm="./modules/m58297/index.cnxml:183:236">-84</mn><mtext data-sm="./modules/m58297/index.cnxml:183:252">°</mtext></mrow>
 </mrow>
 </semantics>
 </math></span> to the positive <em data-effect="italics" data-sm="./modules/m58297/index.cnxml:183:307">x</em>-axis.</p>
+
+<!-- I modified the answer to this because I was pretty sure it should be in the fourth quadrant but the answer given is in the second quadrant. 
+ -Addison Ballif May 5, 2025. -->
+
+<python-code-cell hideable>from numpy import array, sin, cos, pi, arctan
+''' In python we don't always need to break it into components. 
+    We can instead use arrays to keep track of both directions at the same time.  '''
+
+# define knowns 
+F1 = 10.0 * array([ cos(pi/6), sin(pi/6) ]) # N
+F2 = array([ 0, -40.0 ]) # N
+F3 = array([ -5, 0 ]) # N
+F4 = array([ 0, 2 ]) # N
+
+m = 4.0 # kg 
+
+# calculate net force 
+F = F1 + F2 + F3 + F4
+# now calculate acceleration
+a = F/m 
+print(a)
+
+# calculate magnitude and direction
+a_mag = ( a[0]**2 + a[1]**2 )**0.5
+a_theta = arctan( a[1]/a[0] ) * 180/pi # converted to degrees
+
+print(f'Magnitude: {a_mag:.2g} m/s^2; Angle: {a_theta:.3g} degrees')
+</python-code-cell>
+
 <p id="fs-id1165039082704" data-sm="./modules/m58297/index.cnxml:184:1"></p>
 <h4 data-type="title" data-sm="./modules/m58297/index.cnxml:184:31">Significance</h4>
 Numerous examples in everyday life can be found that involve three or more forces acting on a single object, such as cables running from the Golden Gate Bridge or a football player being tackled by three defenders. We can see that the solution of this example is just an extension of what we have already done.
@@ -867,8 +928,13 @@ Numerous examples in everyday life can be found that involve three or more force
 <div class="os-note-body">
 <p id="fs-id1165039209657" data-sm="./modules/m58297/index.cnxml:218:1">Explore the <a href="https://openstax.org/l/21forcesatwork" data-sm="./modules/m58297/index.cnxml:218:43" target="_blank" rel="noopener nofollow">forces at work</a> when <a href="https://openstax.org/l/21pullacart" data-sm="./modules/m58297/index.cnxml:218:120" target="_blank" rel="noopener nofollow">pulling a cart</a> or pushing a refrigerator, crate, or person. Put <a href="https://openstax.org/l/21ramp" data-sm="./modules/m58297/index.cnxml:218:238" target="_blank" rel="noopener nofollow">an object on a ramp</a> and see how it affects its motion. Engage the simulation below and see how applied forces make objects move.</p>
 <div data-type="media" data-alt="forces in motion phet simulation" data-sm="./modules/m58297/index.cnxml:218:444">
-  <div class="os-has-iframe os-has-link" data-type="switch"><a class="os-is-link" href="https://openstax.org/books/university-physics-volume-1/pages/5-3-newtons-second-law" target="_blank" rel="noopener nofollow" data-media="print">Access multimedia content</a>
-</div>
+  
+  <iframe src="https://phet.colorado.edu/sims/html/forces-and-motion-basics/latest/forces-and-motion-basics_en.html"
+        width="800"
+        height="600"
+        allowfullscreen>
+</iframe>
+
   </div>
 </div>
 </div>
@@ -884,6 +950,16 @@ Numerous examples in everyday life can be found that involve three or more force
   </div>
 
 <a href="university-physics-volume-1.toc.html">Back to table of contents</a>
+
+<!-- These scripts run at the end of the file to make code cells work -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/codemirror.min.js"
+		integrity="sha512-XMlgZzPyVXf1I/wbGnofk1Hfdx+zAWyZjh6c21yGo/k1zNC4Ve6xcQnTDTCHrjFGsOrVicJsBURLYktVEu/8vQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/mode/python/python.min.js"
+		integrity="sha512-/mavDpedrvPG/0Grj2Ughxte/fsm42ZmZWWpHz1jCbzd5ECv8CB7PomGtw0NAnhHmE/lkDFkRMupjoohbKNA1Q=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="module" src="../../initialize-pyodide-chunks.js"></script>
+
 </body>
 </html>
 <!-- # sourceMappingURL=d50f6e32-0fda-46ef-a362-9bd36ca7c97d-at-aa8a43e-colon-bbff18b4-19aa-4f2d-a9dd-e76741b132d7.html.map -->
