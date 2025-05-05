@@ -192,6 +192,7 @@ class PythonCodeCell extends HTMLElement {
   async resetCode() {
     // set the editor back to the default value
     this.codeEditor.setValue(this.textContent.trim());
+    this.shadowRoot.querySelector('#output').value = '';
   }
 
   // This function copies the code to the clipboard
