@@ -1,7 +1,7 @@
 from latex2mathml import converter
 
 ''' INPUT PARAMETERS '''
-latex_eq = r"m = "
+latex_eq = r"r"
 inline = True # change this depending on what you want
 
 

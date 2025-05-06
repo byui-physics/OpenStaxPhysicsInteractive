@@ -499,6 +499,71 @@ This is just about 87.5 km/h, consistent with a very steeply banked and rather s
 </div>
 </section>
 
+<div data-type="codeexample" id="fs-id1165039113797" data-sm="./modules/m58305/index.cnxml:37:1"><h3 class="os-title">
+  <span class="os-title-label">Numerical Methods Example </span>
+  <span class="os-number"></span>
+  <span class="os-divider"> </span>
+</h3>
+<div class="body">
+
+<p>Suppose we want to model the earth orbiting the sun.  
+We can simulate this problem using Euler's method. The gravitational force from the Sun on the Earth is given by <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>F</mi><mo>&#x0003D;</mo><mo>&#x02212;</mo><mfrac><mrow><mi>G</mi><mi>M</mi><mi>m</mi><mover><mrow><mi mathvariant="bold">r</mi></mrow><mo stretchy="true">&#x02192;</mo></mover></mrow><mrow><msup><mi>r</mi><mn>3</mn></msup></mrow></mfrac></mrow></math></span>
+where <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>M</mi></mrow></math></span> is the mass of the Sun, <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>G</mi></mrow></math></span> is the 
+universal gravitational constant, <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>m</mi></mrow></math></span> is the mass of the earth, and <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mover><mrow><mi mathvariant="bold">r</mi></mrow><mo stretchy="true">&#x02192;</mo></mover></mrow></math></span> is the displacement vector between the Sun and the Earth.
+Since this is the only force on the earth (in an inertial frame; see next section) we can divide by the mass of the Earth to find the acceleration of the earth. Then, using this acceleration, we can use Euler's method in vector form to calculate the trajectrory of the Earth around the Sun. 
+</p>
+
+<python-code-cell>from numpy import array
+# define knowns
+M = 1.989e30 # kg mass of sun
+r0 = 149.6e9 # m initial earth sun distance
+v0 = 29.78e3 # m/s velocity of earth around sun
+G = 6.674e-11 # gravitational constant
+
+# define centripetal acceleration
+def a(r):
+    return -G*M/(r[0]**2 + r[1]**2)**(3/2) * r
+
+# Euler's variables
+r = array([r0, 0.0])
+v = array([0.0, v0])
+t = 0 
+dt = 6*3600 # time step is an hour
+
+# plotting lists
+xpoints = []
+ypoints = []
+
+while t < 10*3600*24*365: # loop for 10 years
+    # add plot points
+    xpoints.append(r[0])
+    ypoints.append(r[1])
+    
+    # update position, velocity, time
+    r += v*dt
+    v += a(r)*dt
+    t += dt
+    
+# plot the results
+from matplotlib import pyplot as plt
+plt.clf()
+plt.plot(xpoints, ypoints, label="Earth Trajectory")
+plt.plot(0, 0, 'yo', label="Sun")
+plt.legend(loc='upper right')
+plt.gca().set_aspect('equal', adjustable='box')
+plt.title("Earth Orbit Path")
+plt.show()</python-code-cell>
+
+<p>The earth's orbit is approximately circular, so we know that <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>a</mi><mo>&#x0003D;</mo><msup><mi>v</mi><mn>2</mn></msup><mo>&#x0002F;</mo><mi>r</mi></mrow></math></span>.
+This relation tells us that in circular motion, these three quantities are dependent on each other. Suppose we change <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi></mrow></math></span> or <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>v</mi></mrow></math></span> without changing the other.
+Then this circular motion relation will no longer be true. We find that when <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>r</mi></mrow></math></span> and <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>v</mi></mrow></math></span> 
+do not relate to each other in a precise way, then the orbit is no longer circular. Try changing the code above to make the orbit non-circular by modifying either <code>r0</code> or <code>v0</code>. Start by changing <code>r0</code> to <code>r0 = 1e11</code>. Then try changing it to something else. Note that if you make too large of a change, you may need to increase the duration that the loop runs, as the period will also change. 
+</p>
+
+</div>
+</div>
+
+
 <section data-depth="1" id="fs-id1165039100184" data-sm="./modules/m58305/index.cnxml:121:1"><h3 data-type="title" data-sm="./modules/m58305/index.cnxml:122:1">Inertial Forces and Noninertial (Accelerated) Frames: The Coriolis Force</h3>
 <p id="fs-id1165038999017" data-sm="./modules/m58305/index.cnxml:123:1">What do taking off in a jet airplane, turning a corner in a car, riding a merry-go-round, and the circular motion of a tropical cyclone have in common? Each exhibits inertial forces—fictitious forces that merely seem to arise from motion, because the observer’s frame of reference is accelerating or rotating. When taking off in a jet, most people would agree it feels as if you are being pushed back into the seat as the airplane accelerates down the runway. Yet a physicist would say that <em data-effect="italics" data-sm="./modules/m58305/index.cnxml:123:522">you</em> tend to remain stationary while the <em data-effect="italics" data-sm="./modules/m58305/index.cnxml:123:600">seat</em> pushes forward on you. An even more common experience occurs when you make a tight curve in your car—say, to the right (<a href="#CNX_UPhysics_06_03_RightTurn" data-sm="./modules/m58305/index.cnxml:123:763" class="autogenerated-content">Figure 6.24</a>). You feel as if you are thrown (that is, <em data-effect="italics" data-sm="./modules/m58305/index.cnxml:123:854">forced</em>) toward the left relative to the car. Again, a physicist would say that <em data-effect="italics" data-sm="./modules/m58305/index.cnxml:123:971">you</em> are going in a straight line (recall Newton’s first law) but the <em data-effect="italics" data-sm="./modules/m58305/index.cnxml:123:1078">car</em> moves to the right, not that you are experiencing a force from the left.</p>
 <div class="os-figure"><figure id="CNX_UPhysics_06_03_RightTurn" data-sm="./modules/m58305/index.cnxml:124:1">

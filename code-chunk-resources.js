@@ -193,6 +193,12 @@ class PythonCodeCell extends HTMLElement {
     // set the editor back to the default value
     this.codeEditor.setValue(this.textContent.trim());
     this.shadowRoot.querySelector('#output').value = '';
+
+    // Clear the old graphing stuff
+    const plotparent = this.shadowRoot.querySelector('#plot')
+    while (plotparent.lastElementChild) {
+      plotparent.removeChild(plotparent.lastChild);
+    }
   }
 
   // This function copies the code to the clipboard
