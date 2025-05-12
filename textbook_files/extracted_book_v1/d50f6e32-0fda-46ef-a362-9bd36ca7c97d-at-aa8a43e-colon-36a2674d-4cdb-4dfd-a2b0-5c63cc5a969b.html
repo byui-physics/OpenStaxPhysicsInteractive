@@ -813,6 +813,84 @@ Now the boat’s limiting position is
 In the both of the previous examples, we found “limiting” values. The terminal velocity is the same as the limiting velocity, which is the velocity of the falling object after a (relatively) long time has passed. Similarly, the limiting distance of the boat is the distance the boat will travel after a long amount of time has passed. Due to the properties of exponential decay, the time involved to reach either of these values is actually not too long (certainly not an infinite amount of time!) but they are quickly found by taking the limit to infinity.
 </div>
 </div>
+
+<div data-type="codeexample"><h3 class="os-title">
+  <span class="os-title-label">Numerical Example</span>
+</h3>
+<div class="body">
+
+  <p>In 2012, Felix Baumgartner successfully jumped from a height of 39.0 km above the surface of the Earth. Consider the complexities that this real-world examples provides.
+For this problem, we must include the force of air drag to get the calculation right.  
+The force of air drag is given by <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>F</mi><mi>d</mi></msub><mo>&#x0003D;</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>2</mn></mrow></mfrac><mi>&#x003C1;</mi><mi>A</mi><mi>C</mi><msup><mi>v</mi><mn>2</mn></msup></mrow></math></span>, 
+with <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>C</mi><mo>&#x0003D;</mo><mn>0.58</mn></mrow></math></span>, and
+<span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>A</mi><mo>&#x0003D;</mo><mn>1.04</mn><msup><mtext>&#x000A0;m</mtext><mn>2</mn></msup></mrow></math></span>.
+Because Felix jumped from such a high altitude, the density of the atmosphere changed as he fell. 
+The density of the atmosphere changes with altitude according to the equation <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>&#x003C1;</mi><mo>&#x0003D;</mo><mn>1.2</mn><msup><mtext>&#x000A0;(kg/m</mtext><mn>3</mn></msup><mtext>)</mtext><msup><mi>e</mi><mrow><mo>&#x02212;</mo><mi>h</mi><mi>&#x000D7;</mi><msup><mn>10</mn><mrow><mo>&#x02212;</mo><mn>4</mn></mrow></msup></mrow></msup></mrow></math></span>.
+The acceleration due to gravity is not constant over the flight, but changes with altitude according to the equation <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>g</mi><mo>&#x0003D;</mo><mrow><mfrac><mrow><mn>9.8</mn><msup><mtext>&#x000A0;m/s</mtext><mn>2</mn></msup></mrow><msup><mrow><mo stretchy="true" fence="true" form="prefix">&#x00028;</mo><mn>1</mn><mo>&#x0002B;</mo><mrow><mfrac><mi>h</mi><msub><mi>R</mi><mi>E</mi></msub></mfrac></mrow><mo stretchy="true" fence="true" form="postfix">&#x00029;</mo></mrow><mn>2</mn></msup></mfrac></mrow></mrow></math></span>,
+where <span class="os-math-in-para"><math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>R</mi><mi>E</mi></msub><mo>&#x0003D;</mo><mn>6.37</mn><mi>&#x000D7;</mi><msup><mn>10</mn><mn>6</mn></msup><mtext>&#x000A0;m</mtext></mrow></math></span>.
+Assume that Felix's mass is 73 kg and that he starts from rest.
+  </p>
+
+  <p>Using these details, we will use Euler's method to calculate the time it takes Felix to reach the earth surface. 
+  </p>
+
+<python-code-cell>from numpy import exp, abs
+# define knowns
+C = 0.58
+A = 1.04 # m^2
+RE = 6.37e6 # m
+m = 73 # kg
+
+# define functions for the variables that change with height
+def rho(h):
+    return 1.2*exp(-h*1e-4) # kg/m^3
+def g(h):
+    return 9.8/(1 + h/RE)**2
+
+# define acceleration (y direction)
+def a(h, v): # this acceleration is a function of two variables
+    return -g(h) + 0.5*rho(h)*A*C*v**2/m # this drag works as long as we are always moving down
+
+# define Euler's method variables
+y = 39.0e3 # m
+v = 0
+t = 0
+dt = 0.1 # s
+ypoints = []
+tpoints = []
+
+while y > 0:
+    # update plotting points 
+    ypoints.append(y/1e3) # adding km value
+    tpoints.append(t/60) # adding minutes value
+    
+    # do kinematics
+    y += v*dt
+    v += a(y, v)*dt
+    t += dt
+    
+print(f'The final time is {t/60:.3g} minutes.')
+
+# plot the results
+from matplotlib import pyplot as plt
+plt.clf()
+plt.plot(tpoints, ypoints)
+plt.xlabel('Time (min)')
+plt.ylabel('Altitude (km)')
+plt.show()</python-code-cell>
+
+
+<p>Felix's actual free fall time was 9 minutes, though he activated a parachute after four and a half minutes into the flight.</p>
+
+<p>If we were to repeat our calculation without the variable gravitational field and air density, the time calculation changes to 14.7 minutes, but neglecting air drag completely, the time goes down to 1.49 minutes. 
+  With a problem like this, we see that being able to account for details is very important to getting an accurate prediction. 
+</p>
+
+
+
+</div>
+</div>
+
 <div data-type="note" id="fs-id1165039483104" class="check-understanding" data-sm="./modules/m58306/index.cnxml:244:1"><h3 class="os-title">
   <span class="os-title-label">Check Your Understanding </span>
   <span class="os-number">6.11</span>
