@@ -7,6 +7,13 @@
 Power
 </title>
 <link rel="stylesheet" type="text/css" href="the-style-epub.css"/>
+
+<!-- Add these three lines to add code chunk availability -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
+<script src="https://cdn.jsdelivr.net/pyodide/v0.27.2/full/pyodide.js"></script>
+<script type="module" src="../../code-chunk-resources.js"></script>
+
 </head>
 <body>
     <div data-type="page" id="page_308d4c7e-a5bc-46f9-ad3f-ea518e78f549" class="chapter-content-module" data-book-content="true"><h2 data-type="document-title" data-sm="./modules/m58310/index.cnxml:3:1" id="page_308d4c7e-a5bc-46f9-ad3f-ea518e78f549_titlecreatedbycookbook"><span class="os-number">7.4</span>
@@ -264,6 +271,26 @@ Carrying out the suggested steps, we find
 </semantics>
 </math>
 </div>
+
+<python-code-cell hideable>from numpy import atan, sin
+# define knowns
+m = 1200 #kg
+g = 9.8 # g is a positive number
+deltax = 90 # m 
+deltat = 3.6 # s
+
+gradient = 0.15
+
+efficiency = 0.75 # the amount of power actually used for going upwards
+
+# calculate intermediate pieces (optional)
+v = deltax / deltat
+theta = atan(gradient)
+
+# calculate power
+P = m*g*v*sin(theta)/efficiency
+print(f'P = {P:.2g} W.')</python-code-cell>
+
 <p id="fs-id1165038050999" data-sm="./modules/m58310/index.cnxml:73:1">or about 78 hp. (You should supply the steps used to convert units.)</p>
 <p id="fs-id1165036899239" data-sm="./modules/m58310/index.cnxml:74:1"></p>
 <h4 data-type="title" data-sm="./modules/m58310/index.cnxml:74:31">Significance</h4>
@@ -290,6 +317,16 @@ This is a reasonable amount of power for the engine of a small to mid-size car t
   </div>
 
 <a href="university-physics-volume-1.toc.html">Back to table of contents</a>
+
+<!-- These scripts run at the end of the file to make code cells work -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/codemirror.min.js"
+		integrity="sha512-XMlgZzPyVXf1I/wbGnofk1Hfdx+zAWyZjh6c21yGo/k1zNC4Ve6xcQnTDTCHrjFGsOrVicJsBURLYktVEu/8vQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/mode/python/python.min.js"
+		integrity="sha512-/mavDpedrvPG/0Grj2Ughxte/fsm42ZmZWWpHz1jCbzd5ECv8CB7PomGtw0NAnhHmE/lkDFkRMupjoohbKNA1Q=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="module" src="../../initialize-pyodide-chunks.js"></script>
+
 </body>
 </html>
 <!-- # sourceMappingURL=d50f6e32-0fda-46ef-a362-9bd36ca7c97d-at-aa8a43e-colon-308d4c7e-a5bc-46f9-ad3f-ea518e78f549.html.map -->
