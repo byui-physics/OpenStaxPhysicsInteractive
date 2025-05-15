@@ -1,0 +1,4 @@
+This folder was added so that if student's had created a bookmark to the old location, 
+they could be redirected to the new volume 1 location. 
+
+The directory reorganization occured May 15, 2025. 
