@@ -1,7 +1,10 @@
 from latex2mathml import converter
 
 ''' INPUT PARAMETERS '''
-latex_eq = r"g = {9.8 \text{ m/s}^2 \over \left(1 + {h\over R_E}\right)^2}"
+latex_eq = r"x(t) = \frac{a}{2}t^2 + v_0 t + x_0"
+
+
+
 inline = True # change this depending on what you want
 
 

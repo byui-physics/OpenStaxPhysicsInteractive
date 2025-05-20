@@ -1,5 +1,0 @@
-To find the file you want to edit, go to the table of contents in a web editor and then navigate
-to the page that you want edit. Note the url that it takes you to, and that will tell you the html
-file that you need to look for in the extracted_book folder. 
-
-The equation-to-mathml.py is a funciton that converts latex to mathml so you can copy and paste it into the html files. 

@@ -1,6 +1,0 @@
-We have decided not to use numpy arrays because we can do 
-Euler's method fine in two dimensions without them. 
-(Atleast not use them for the majority of the 121 course. 
-    Maybe it would be fine to introduce them later on. )
-
-Brother Hatt suggested that functions are a little too abstract for PH121 students. 

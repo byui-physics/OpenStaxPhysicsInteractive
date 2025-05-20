@@ -4,3 +4,6 @@ We are working on adding simple computational material.
 
 Here is the link. 
 https://byui-physics.github.io/OpenStaxPhysicsInteractive/ 
+
+For help on editing the text, go here:
+https://byui-physics.github.io/OpenStaxPhysicsInteractive/howto/modifying-the-text.html 
